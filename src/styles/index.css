@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: 'Noto Sans TC', system-ui, sans-serif;
+  color: #f2f5f4;
+  background: #070a0d;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --color-bg: #070a0d;
+  --color-panel: #10161b;
+  --color-panel-raised: #151c22;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-primary: #32e2b0;
+  --color-positive: #ff5f6d;
+  --color-negative: #39a8ff;
+  --color-muted: #87949c;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--color-bg); }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input { font: inherit; }
+button { -webkit-tap-highlight-color: transparent; }
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 75% -10%, rgba(50, 226, 176, .075), transparent 27rem),
+    linear-gradient(rgba(255,255,255,.012) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.012) 1px, transparent 1px);
+  background-size: auto, 44px 44px, 44px 44px;
+  mask-image: linear-gradient(to bottom, black, transparent 60%);
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #263038; border-radius: 99px; }
+
+@layer components {
+  .panel {
+    @apply rounded-2xl border border-white/[0.07] bg-ink-850/90 shadow-panel;
+  }
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-400;
+  }
+  .mono { font-family: 'DM Mono', monospace; }
+}
+
+@keyframes live-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(50, 226, 176, .4); }
+  50% { opacity: .75; box-shadow: 0 0 0 5px rgba(50, 226, 176, 0); }
+}
+.live-dot { animation: live-pulse 2.2s infinite; }

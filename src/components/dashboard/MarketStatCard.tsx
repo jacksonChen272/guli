@@ -1,0 +1,9 @@
+import { ArrowDownRight, ArrowUpRight } from 'lucide-react'
+import type { PricePoint } from '../../types/market'
+import { MiniSparkline } from '../charts/MiniSparkline'
+
+export function MarketStatCard({ name, code, value, unit = '', change, changePercent, previousValue, trend, decimals = 2 }: { name: string; code: string; value: number; unit?: string; change: number; changePercent: number; previousValue: number; trend: PricePoint[]; decimals?: number }) {
+  const up = change >= 0
+  const format = (number: number) => number.toLocaleString('zh-TW', { minimumFractionDigits: decimals, maximumFractionDigits: decimals })
+  return <article className="panel group relative min-w-[250px] overflow-hidden p-4 transition duration-200 hover:-translate-y-1 hover:border-brand-400/20 hover:shadow-glow sm:min-w-0"><span className={`absolute left-0 top-0 h-full w-0.5 ${up ? 'bg-red-400' : 'bg-emerald-400'}`} /><div className="flex items-start justify-between gap-3"><div><p className="text-xs font-medium text-slate-300">{name}</p><p className="mono mt-1 text-[9px] uppercase tracking-widest text-slate-600">{code}</p></div><span className={`rounded-lg p-1.5 ${up ? 'bg-red-400/10 text-red-400' : 'bg-emerald-400/10 text-emerald-400'}`}>{up ? <ArrowUpRight size={14} /> : <ArrowDownRight size={14} />}</span></div><div className="mt-4 flex items-end justify-between gap-2"><div><p className="mono text-xl font-medium text-white">{format(value)}<span className="ml-1 text-[10px] text-slate-600">{unit}</span></p><p className={`mono mt-2 text-[10px] ${up ? 'text-red-400' : 'text-emerald-400'}`}>{change > 0 ? '+' : ''}{format(change)} · {changePercent > 0 ? '+' : ''}{changePercent.toFixed(2)}%</p></div><MiniSparkline data={trend} positive={up} /></div><p className="mt-3 border-t border-white/[0.05] pt-2.5 text-[10px] text-slate-600">昨日 {format(previousValue)} {unit}</p></article>
+}
