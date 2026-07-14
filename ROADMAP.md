@@ -1,5 +1,10 @@
 # GULI Roadmap
 
+## 0.5.5-alpha.1
+
+- TWSE 上市股票每日盤後 OHLC、成交量值與本益比正式資料 Alpha。
+- 正式報價與 Mock 法人／Derived 健康分數分層。
+
 ## 0.5.4
 
 - Industry Snapshot Engine、產業強弱頁、產業記憶與 Market Snapshot 同日整合。

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.5-alpha.1]
+
+- 新增 TWSE `STOCK_DAY_ALL` 與 `BWIBBU_ALL` 上市個股盤後資料同步。
+- 新增股票資料正規化、驗證、商品分類、Provider、Repository fallback 與資料狀態頁。
+- 個股健檢正式報價採 TWSE，法人與健康分析維持 Mock／derived 並顯示來源 Badge。
+- 更新 GitHub Actions 資料同步順序與資料集 commit。
+
 ## [0.5.3]
 
 - 新增 Market Snapshot 1.0 schema、產生器、Storage、Repository、Diff 與 Market Memory。
