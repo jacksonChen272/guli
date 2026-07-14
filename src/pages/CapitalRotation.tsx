@@ -10,10 +10,11 @@ import { Disclaimer } from '../components/ui/Disclaimer'
 import { SectionHeader } from '../components/ui/SectionHeader'
 import { Select } from '../components/ui/Select'
 import { Tabs } from '../components/ui/Tabs'
-import { mockIndustries } from '../data/mockIndustries'
+import { marketRepository } from '../services/dataRepository'
 import type { InstitutionType, MarketBoard, Period, RotationMode, RotationPoint } from '../types/market'
 
 export function CapitalRotation() {
+  const mockIndustries = marketRepository.getIndustries()
   const [params] = useSearchParams()
   const [mode, setMode] = useState<RotationMode>('stock')
   const [institution, setInstitution] = useState<InstitutionType>('all')

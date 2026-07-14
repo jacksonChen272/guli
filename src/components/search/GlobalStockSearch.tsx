@@ -1,10 +1,13 @@
 import { ArrowUpRight, Search, X } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { mockStocks } from '../../data/mockStocks'
+import { marketRepository } from '../../services/dataRepository'
+
+const mockStocks = marketRepository.getStocks()
 
 export function GlobalStockSearch() {
   const [query, setQuery] = useState('')
+  const [debouncedQuery, setDebouncedQuery] = useState('')
   const [open, setOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [activeIndex, setActiveIndex] = useState(0)
@@ -12,10 +15,10 @@ export function GlobalStockSearch() {
   const inputRef = useRef<HTMLInputElement>(null)
   const navigate = useNavigate()
   const results = useMemo(() => {
-    const value = query.trim().toLowerCase()
+    const value = debouncedQuery.trim().toLowerCase()
     if (!value) return mockStocks.slice(0, 6)
     return mockStocks.filter((stock) => stock.symbol.includes(value) || stock.name.toLowerCase().includes(value)).slice(0, 8)
-  }, [query])
+  }, [debouncedQuery])
 
   const close = () => { setOpen(false); setMobileOpen(false); setQuery(''); setActiveIndex(0) }
   const select = (symbol: string) => { close(); navigate(`/stock/${symbol}`) }
@@ -25,6 +28,7 @@ export function GlobalStockSearch() {
     document.addEventListener('mousedown', clickOutside)
     return () => document.removeEventListener('mousedown', clickOutside)
   }, [])
+  useEffect(() => { const timer = window.setTimeout(() => setDebouncedQuery(query), 180); return () => window.clearTimeout(timer) }, [query])
   useEffect(() => { if (mobileOpen) window.setTimeout(() => inputRef.current?.focus(), 50) }, [mobileOpen])
 
   const onKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {

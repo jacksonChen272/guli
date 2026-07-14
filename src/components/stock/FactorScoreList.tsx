@@ -1,0 +1,6 @@
+import { ArrowDownRight, ArrowUpRight, Minus } from 'lucide-react'
+import type { HealthFactor } from '../../types/insight'
+
+export function FactorScoreList({ factors }: { factors: HealthFactor[] }) {
+  return <div className="space-y-4">{factors.map((factor) => { const delta = factor.score - factor.industryAverage; const Icon = delta > 2 ? ArrowUpRight : delta < -2 ? ArrowDownRight : Minus; return <div key={factor.key}><div className="flex items-center justify-between gap-3"><div><p className="text-xs font-medium text-slate-200">{factor.label} <span className="ml-1 text-[9px] font-normal text-slate-600">權重 {Math.round(factor.weight * 100)}%</span></p><p className="mt-1 text-[10px] leading-4 text-slate-600">{factor.explanation}</p></div><div className="shrink-0 text-right"><span className="mono text-lg text-white">{factor.score}</span><span className={`ml-2 inline-flex items-center text-[9px] ${delta >= 0 ? 'text-red-300' : 'text-emerald-300'}`}><Icon size={11}/>{Math.abs(delta)}</span></div></div><div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/5"><div className="h-full rounded-full bg-brand-400 transition-[width] duration-300" style={{ width: `${factor.score}%` }}/></div></div> })}</div>
+}

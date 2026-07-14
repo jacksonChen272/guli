@@ -6,7 +6,7 @@ export function Card({ title, eyebrow, action, className = '', children, ...prop
   return (
     <section className={`panel ${className}`} {...props}>
       {(title || eyebrow || action) && (
-        <header className="flex items-start justify-between gap-4 border-b border-white/[0.055] px-5 py-4 sm:px-6">
+        <header className="flex items-start justify-between gap-4 border-b border-[var(--border-subtle)] px-5 py-4 sm:px-6">
           <div>
             {eyebrow && <p className="eyebrow mb-1.5">{eyebrow}</p>}
             {title && <h2 className="text-[15px] font-semibold tracking-wide text-white">{title}</h2>}

@@ -1,11 +1,13 @@
 import { Activity, ArrowRight, Building2, TrendingUp } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
-import { mockStocks } from '../../data/mockStocks'
+import { marketRepository } from '../../services/dataRepository'
 import type { RotationPoint } from '../../types/market'
 import { WatchlistButton } from '../watchlist/WatchlistButton'
 import { Badge } from '../ui/Badge'
 import { Button } from '../ui/Button'
 import { Drawer } from '../ui/Drawer'
+
+const mockStocks = marketRepository.getStocks()
 
 export function RotationDetailDrawer({ point, onClose }: { point: RotationPoint | null; onClose: () => void }) {
   const navigate = useNavigate()

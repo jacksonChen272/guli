@@ -7,55 +7,71 @@
 :root {
   color-scheme: dark;
   font-family: 'Noto Sans TC', system-ui, sans-serif;
-  color: #f2f5f4;
-  background: #070a0d;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  --color-bg: #070a0d;
-  --color-panel: #10161b;
-  --color-panel-raised: #151c22;
-  --color-border: rgba(255, 255, 255, 0.08);
-  --color-primary: #32e2b0;
-  --color-positive: #ff5f6d;
-  --color-negative: #39a8ff;
-  --color-muted: #87949c;
+  --bg-page: #080c0f;
+  --bg-sidebar: #0a0f13;
+  --bg-card: #11171c;
+  --bg-elevated: #171e24;
+  --border-subtle: #222b32;
+  --border-strong: #303b43;
+  --text-primary: #edf2f0;
+  --text-secondary: #98a5ac;
+  --text-tertiary: #64717a;
+  --brand: #2fc59a;
+  --brand-strong: #53d9b2;
+  --tech-blue: #4c9ee8;
+  --market-up: #ef6a78;
+  --market-down: #38b987;
+  --warning: #e5b34d;
+  --neutral-100: #d9e0df;
+  --neutral-300: #a7b1b5;
+  --neutral-500: #68767e;
+  --neutral-700: #303a41;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-card: 0 12px 30px rgba(0,0,0,.2);
+  --shadow-elevated: 0 24px 60px rgba(0,0,0,.34);
+  --space-unit: 4px;
+  --duration-fast: 150ms;
+  --duration-normal: 220ms;
 }
 
 * { box-sizing: border-box; }
-html { background: var(--color-bg); }
-body { margin: 0; min-width: 320px; min-height: 100vh; }
-button, input { font: inherit; }
-button { -webkit-tap-highlight-color: transparent; }
+html { background: var(--bg-page); }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: var(--bg-page); color: var(--text-primary); }
+.theme-soft { --bg-page:#101519; --bg-sidebar:#0d1317; --bg-card:#171e23; --bg-elevated:#1d252b; --border-subtle:#2a343b; }
+button, input, select { font: inherit; }
+button { min-height: 44px; -webkit-tap-highlight-color: transparent; }
 
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background:
-    radial-gradient(circle at 75% -10%, rgba(50, 226, 176, .075), transparent 27rem),
-    linear-gradient(rgba(255,255,255,.012) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.012) 1px, transparent 1px);
-  background-size: auto, 44px 44px, 44px 44px;
-  mask-image: linear-gradient(to bottom, black, transparent 60%);
+  background: linear-gradient(rgba(255,255,255,.012) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.012) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: linear-gradient(to bottom, black, transparent 55%);
 }
 
 ::-webkit-scrollbar { width: 8px; height: 8px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #263038; border-radius: 99px; }
+::-webkit-scrollbar-thumb { background: var(--neutral-700); border-radius: 99px; }
 
 @layer components {
-  .panel {
-    @apply rounded-2xl border border-white/[0.07] bg-ink-850/90 shadow-panel;
-  }
-  .eyebrow {
-    @apply text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-400;
-  }
+  .panel { @apply rounded-2xl border shadow-panel; background: color-mix(in srgb, var(--bg-card) 96%, transparent); border-color: var(--border-subtle); }
+  .eyebrow { @apply text-[10px] font-semibold uppercase tracking-[0.2em]; color: var(--brand); }
   .mono { font-family: 'DM Mono', monospace; }
+  .page-enter { animation: page-enter var(--duration-normal) ease-out both; }
+  .card-interactive { transition: transform var(--duration-normal), border-color var(--duration-normal), box-shadow var(--duration-normal); }
+  .card-interactive:hover { transform: translateY(-2px); border-color: var(--border-strong); box-shadow: var(--shadow-card); }
 }
 
-@keyframes live-pulse {
-  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(50, 226, 176, .4); }
-  50% { opacity: .75; box-shadow: 0 0 0 5px rgba(50, 226, 176, 0); }
+@keyframes page-enter { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes live-pulse { 0%,100% { opacity: 1; } 50% { opacity: .45; } }
+.live-dot { animation: live-pulse 2.2s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
-.live-dot { animation: live-pulse 2.2s infinite; }

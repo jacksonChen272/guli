@@ -1,0 +1,19 @@
+import { describe, expect, it } from 'vitest'
+import { marketRepository } from '../dataRepository'
+import { calculateStockHealth, calculateSupportResistance } from '../stockHealthService'
+import type { Stock } from '../../types/stock'
+
+const universe = marketRepository.getStocks()
+const base = universe.find((stock) => stock.symbol === '2330')!
+const clone = (changes: Partial<Stock> = {}): Stock => ({ ...base, priceHistory: base.priceHistory.map((point) => ({ ...point })), institutionalHistory: base.institutionalHistory.map((point) => ({ ...point })), institutions: { ...base.institutions }, ...changes })
+
+describe('stockHealthService', () => {
+  it('健康總分一定介於 0–100', () => { universe.forEach((stock) => expect(calculateStockHealth(stock, universe).totalScore).toBeGreaterThanOrEqual(0)); universe.forEach((stock) => expect(calculateStockHealth(stock, universe).totalScore).toBeLessThanOrEqual(100)) })
+  it('健康總分符合指定權重', () => { const health = calculateStockHealth(base, universe); const weighted = Math.round(health.factors.reduce((sum, factor) => sum + factor.score * factor.weight, 0)); expect(health.totalScore).toBe(weighted); expect(health.factors.map((factor) => factor.weight)).toEqual([.2, .15, .2, .15, .15, .15]) })
+  it('強勢股票分數高於弱勢股票', () => { const rising = base.priceHistory.map((point, index) => ({ ...point, value: 800 + index * 8, volume: 12000 + index * 100 })); const falling = base.priceHistory.map((point, index) => ({ ...point, value: 1300 - index * 8, volume: 4000 - index * 20 })); const buying = base.institutionalHistory.map((point) => ({ ...point, foreign: 500, trust: 250, dealer: 80, total: 830 })); const selling = base.institutionalHistory.map((point) => ({ ...point, foreign: -500, trust: -250, dealer: -80, total: -830 })); const strong = clone({ price: rising[rising.length - 1].value, priceHistory: rising, institutionalHistory: buying, institutions: buying[buying.length - 1], rsi: 66, momentum: 8, volatility: .8, industryStrength: 88, marginChange: -2 }); const weak = clone({ price: falling[falling.length - 1].value, priceHistory: falling, institutionalHistory: selling, institutions: selling[selling.length - 1], rsi: 28, momentum: -8, volatility: 3.5, industryStrength: 25, marginChange: 5 }); expect(calculateStockHealth(strong, [strong, weak]).totalScore).toBeGreaterThan(calculateStockHealth(weak, [strong, weak]).totalScore) })
+  it('高波動會降低風險控制分數', () => { const low = calculateStockHealth(clone({ volatility: .5 }), universe).factors.find((factor) => factor.key === 'riskControl')!.score; const high = calculateStockHealth(clone({ volatility: 4 }), universe).factors.find((factor) => factor.key === 'riskControl')!.score; expect(high).toBeLessThan(low) })
+  it('法人連續買超會提高法人分數', () => { const positive = base.institutionalHistory.map((point) => ({ ...point, foreign: 500, trust: 200, dealer: 50, total: 750 })); const negative = base.institutionalHistory.map((point) => ({ ...point, foreign: -500, trust: -200, dealer: -50, total: -750 })); const score = (history: typeof positive) => calculateStockHealth(clone({ institutionalHistory: history, institutions: history[history.length - 1] }), universe).factors.find((factor) => factor.key === 'institutional')!.score; expect(score(positive)).toBeGreaterThan(score(negative)) })
+  it('RSI 過熱會產生漲幅過大風險', () => { const health = calculateStockHealth(clone({ rsi: 82 }), universe); expect(health.risks.some((risk) => risk.label === '漲幅過大')).toBe(true) })
+  it('支撐價不高於目前價格', () => { calculateSupportResistance(base).filter((level) => level.type === '支撐').forEach((level) => expect(level.price).toBeLessThanOrEqual(base.price)) })
+  it('壓力價不低於目前價格', () => { calculateSupportResistance(base).filter((level) => level.type === '壓力').forEach((level) => expect(level.price).toBeGreaterThanOrEqual(base.price)) })
+})

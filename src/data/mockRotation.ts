@@ -1,6 +1,7 @@
 import type { RotationPoint } from '../types/market'
 import { mockIndustries } from './mockIndustries'
 import { mockStocks, tradingDates } from './mockStocks'
+import { calculateStockHealth } from '../services/stockHealthService'
 
 const makeHistory = (seed: number, flow: number, momentum: number) => tradingDates.map((date, index) => ({
   date,
@@ -17,7 +18,7 @@ export const stockRotationPoints: RotationPoint[] = mockStocks.map((stock, index
   momentum: stock.momentum,
   cumulative20d: stock.cumulative20d,
   changePercent: stock.changePercent,
-  healthScore: stock.healthScore,
+  healthScore: calculateStockHealth(stock, mockStocks).totalScore,
   institutions: stock.institutions,
   history: makeHistory(index, stock.capitalFlow, stock.momentum),
 }))

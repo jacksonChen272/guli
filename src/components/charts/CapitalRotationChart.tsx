@@ -1,15 +1,16 @@
-import type { EChartsOption } from 'echarts'
 import ReactECharts from 'echarts-for-react'
+import { echarts, type EChartsOption } from '../../lib/echarts'
 import { useMemo } from 'react'
-import { mockIndustries } from '../../data/mockIndustries'
-import { industryRotationPoints, stockRotationPoints } from '../../data/mockRotation'
-import { mockStocks } from '../../data/mockStocks'
+import { marketRepository } from '../../services/dataRepository'
 import type { InstitutionType, MarketBoard, Period, RotationMode, RotationPoint } from '../../types/market'
 
 type ChartDatum = { id: string; name: string; industry: string; value: [number, number, number, number, number]; point: RotationPoint; itemStyle: { color: string } }
 type ClickParams = { data?: ChartDatum }
 
 const fallbackColors = ['#32e2b0', '#8b7cff', '#f6b94a', '#ff6b81', '#35a7ff', '#5ed5d1', '#c084fc']
+const mockIndustries = marketRepository.getIndustries()
+const mockStocks = marketRepository.getStocks()
+const { industry: industryRotationPoints, stock: stockRotationPoints } = marketRepository.getRotation()
 const industryColor = new Map(mockIndustries.map((industry) => [industry.name, industry.color]))
 
 export function CapitalRotationChart({ mode, institution, period, board = 'all', industry = 'all', search = '', showTrails = false, dateIndex = 19, compact = false, onSelect }: { mode: RotationMode; institution: InstitutionType; period: Period; board?: MarketBoard; industry?: string; search?: string; showTrails?: boolean; dateIndex?: number; compact?: boolean; onSelect: (point: RotationPoint) => void }) {
@@ -79,5 +80,5 @@ export function CapitalRotationChart({ mode, institution, period, board = 'all',
   }, [chartState, compact, dateIndex, showTrails])
 
   const events = useMemo(() => ({ click: (params: ClickParams) => { if (params.data?.point) onSelect(params.data.point) } }), [onSelect])
-  return <ReactECharts option={option} notMerge lazyUpdate onEvents={events} style={{ height: compact ? 440 : 600, width: '100%' }} opts={{ renderer: 'canvas' }} />
+  return <ReactECharts echarts={echarts} option={option} notMerge lazyUpdate onEvents={events} style={{ height: compact ? 540 : 680, width: '100%' }} opts={{ renderer: 'canvas' }} />
 }

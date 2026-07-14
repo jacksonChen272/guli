@@ -1,8 +1,10 @@
 import { ChevronLeft, ChevronRight, Pause, Play, RotateCcw } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import { tradingDates } from '../../data/mockStocks'
+import { marketRepository } from '../../services/dataRepository'
 import { Button } from '../ui/Button'
 import { Select } from '../ui/Select'
+
+const tradingDates = marketRepository.getTradingDates()
 
 export function RotationPlayback({ dateIndex, onDateChange, showTrails, onTrailsChange }: { dateIndex: number; onDateChange: (index: number) => void; showTrails: boolean; onTrailsChange: (value: boolean) => void }) {
   const [playing, setPlaying] = useState(false)

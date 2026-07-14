@@ -1,0 +1,6 @@
+import { AlertTriangle, ArrowRight, TrendingDown, TrendingUp } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+import type { WatchlistAlert } from '../../types/insight'
+import { Badge } from '../ui/Badge'
+
+export function WatchlistAlertCard({ alert }: { alert: WatchlistAlert }) { const navigate = useNavigate(); const negative = alert.severity === '高' || ['最弱', '法人轉賣', '接近停損', '高風險'].includes(alert.type); const Icon = alert.severity === '高' ? AlertTriangle : negative ? TrendingDown : TrendingUp; return <button type="button" onClick={() => navigate(`/stock/${alert.symbol}`)} className="min-w-[230px] rounded-2xl border border-[var(--border-subtle)] bg-white/[.018] p-4 text-left transition hover:-translate-y-0.5 hover:border-[var(--border-strong)] sm:min-w-0"><div className="flex items-center justify-between gap-2"><Badge tone={negative ? 'warning' : 'brand'}>{alert.type}</Badge><Icon size={14} className={negative ? 'text-amber-300' : 'text-brand-300'}/></div><p className="mt-3 text-xs font-semibold text-white">{alert.title}</p><p className="mt-2 line-clamp-2 text-[10px] leading-5 text-slate-500">{alert.description}</p><span className="mt-3 flex items-center gap-1 text-[9px] text-brand-300">查看健檢<ArrowRight size={11}/></span></button> }

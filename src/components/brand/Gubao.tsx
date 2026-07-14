@@ -1,0 +1,3 @@
+export function GubaoMark({ className = 'h-10 w-10' }: { className?: string }) {
+  return <svg className={className} viewBox="0 0 48 48" role="img" aria-label="股寶"><rect x="5" y="8" width="38" height="30" rx="10" fill="#162229" stroke="#4c9ee8" strokeOpacity=".6" /><path d="M13 27c4-6 7 4 11-2s7-7 11-3" fill="none" stroke="#53d9b2" strokeWidth="2.4" strokeLinecap="round" /><circle cx="16" cy="18" r="2" fill="#edf2f0" /><circle cx="32" cy="18" r="2" fill="#edf2f0" /><path d="M24 8V4m-3 0h6" stroke="#4c9ee8" strokeWidth="2" strokeLinecap="round" /><path d="M17 38v4m14-4v4" stroke="#64717a" strokeWidth="2" strokeLinecap="round" /></svg>
+}

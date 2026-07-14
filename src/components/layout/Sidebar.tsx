@@ -1,43 +1,27 @@
-import { X } from 'lucide-react'
-import { NavLink } from 'react-router-dom'
+import { Info, PanelLeftClose, PanelLeftOpen, Settings, X } from 'lucide-react'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { allPages } from '../../config/navigation'
 import { Logo } from '../brand/Logo'
 
-type SidebarProps = { open: boolean; onClose: () => void }
+type SidebarProps = { open: boolean; collapsed: boolean; onClose: () => void; onToggleCollapse: () => void }
 
-export function Sidebar({ open, onClose }: SidebarProps) {
-  return (
-    <>
-      <button type="button" aria-label="關閉側邊選單" onClick={onClose} className={`fixed inset-0 z-40 bg-black/70 backdrop-blur-sm transition-opacity lg:hidden ${open ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0'}`} />
-      <aside className={`fixed inset-y-0 left-0 z-50 flex w-[268px] flex-col border-r border-white/[0.07] bg-[#090d10]/95 px-4 backdrop-blur-xl transition-transform duration-300 lg:translate-x-0 ${open ? 'translate-x-0' : '-translate-x-full'}`}>
-        <div className="flex h-[76px] items-center justify-between border-b border-white/[0.06] px-2">
-          <Logo />
-          <button type="button" onClick={onClose} className="rounded-lg p-2 text-slate-400 hover:bg-white/5 hover:text-white lg:hidden" aria-label="關閉選單"><X size={19} /></button>
-        </div>
-        <nav className="flex-1 overflow-y-auto py-5" aria-label="主要導覽">
-          <p className="px-3 pb-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-slate-600">Workspace</p>
-          <div className="space-y-1">{allPages.slice(0, 6).map((page) => <NavItem key={page.path} page={page} onClick={onClose} />)}</div>
-          <p className="px-3 pb-3 pt-7 text-[10px] font-semibold uppercase tracking-[0.22em] text-slate-600">Intelligence</p>
-          <div className="space-y-1">{allPages.slice(6).map((page) => <NavItem key={page.path} page={page} onClick={onClose} />)}</div>
-        </nav>
-        <div className="mb-4 rounded-xl border border-brand-400/10 bg-brand-400/[0.045] p-3.5">
-          <div className="mb-1.5 flex items-center gap-2 text-xs font-medium text-slate-300"><span className="live-dot h-1.5 w-1.5 rounded-full bg-brand-400" /> 系統即時連線</div>
-          <p className="mono text-[10px] text-slate-600">TW MARKET · 13:30 CLOSED</p>
-        </div>
-      </aside>
-    </>
-  )
+export function Sidebar({ open, collapsed, onClose, onToggleCollapse }: SidebarProps) {
+  const navigate = useNavigate()
+  return <>
+    <button type="button" aria-label="關閉側邊欄遮罩" onClick={onClose} className={`fixed inset-0 z-40 bg-black/65 backdrop-blur-sm transition-opacity lg:hidden ${open ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0'}`}/>
+    <aside className={`fixed inset-y-0 left-0 z-50 flex flex-col border-r border-[var(--border-subtle)] bg-[var(--bg-sidebar)] transition-[width,transform] duration-200 ${collapsed ? 'w-20' : 'w-[248px]'} ${open ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}>
+      <div className={`flex h-[76px] items-center border-b border-[var(--border-subtle)] ${collapsed ? 'justify-center px-3' : 'justify-between px-5'}`}><Logo compact={collapsed}/><button type="button" onClick={onClose} className="grid h-11 w-11 place-items-center rounded-xl text-slate-500 hover:bg-white/5 hover:text-white lg:hidden" aria-label="關閉側邊欄"><X size={19}/></button></div>
+      <nav className="flex-1 overflow-y-auto px-3 py-5" aria-label="主要導覽"><NavGroup label="市場工具" pages={allPages.slice(0, 6)} collapsed={collapsed} onClick={onClose}/><NavGroup label="系統與助理" pages={allPages.slice(6)} collapsed={collapsed} onClick={onClose}/></nav>
+      <div className="border-t border-[var(--border-subtle)] p-3">
+        {!collapsed && <div className="mb-2 rounded-xl border border-[var(--border-subtle)] bg-white/[0.018] p-3"><div className="flex items-center gap-2 text-[11px] text-slate-300"><span className="live-dot h-1.5 w-1.5 rounded-full bg-brand-400"/>資料服務正常</div><p className="mono mt-1.5 text-[9px] text-slate-600">GULI v0.5.2 · TWSE / MOCK</p></div>}
+        <button type="button" onClick={() => navigate('/settings')} title="資料免責聲明" className={`mb-1 flex min-h-11 w-full items-center rounded-xl text-[11px] text-slate-600 hover:bg-white/[0.035] hover:text-slate-300 ${collapsed ? 'justify-center px-0' : 'gap-3 px-3'}`}><Info size={16}/>{!collapsed && '資料免責聲明'}</button>
+        <button type="button" onClick={() => navigate('/settings')} title="設定" className={`mb-1 flex min-h-11 w-full items-center rounded-xl text-[11px] text-slate-600 hover:bg-white/[0.035] hover:text-slate-300 ${collapsed ? 'justify-center px-0' : 'gap-3 px-3'}`}><Settings size={16}/>{!collapsed && '設定'}</button>
+        <button type="button" onClick={onToggleCollapse} className="hidden min-h-11 w-full items-center justify-center rounded-xl text-slate-600 hover:bg-white/[0.035] hover:text-brand-300 lg:flex" aria-label={collapsed ? '展開側邊欄' : '收合側邊欄'} title={collapsed ? '展開側邊欄' : '收合側邊欄'}>{collapsed ? <PanelLeftOpen size={17}/> : <><PanelLeftClose size={17}/><span className="ml-2 text-[11px]">收合側邊欄</span></>}</button>
+      </div>
+    </aside>
+  </>
 }
 
-function NavItem({ page, onClick }: { page: (typeof allPages)[number]; onClick: () => void }) {
-  const Icon = page.icon
-  return (
-    <NavLink to={page.path} end={page.path === '/'} onClick={onClick} className={({ isActive }) => `group relative flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm transition-all ${isActive ? 'bg-brand-400/[0.09] font-medium text-brand-300' : 'text-slate-500 hover:bg-white/[0.035] hover:text-slate-200'}`}>
-      {({ isActive }) => <>
-        {isActive && <span className="absolute -left-4 h-5 w-0.5 rounded-r bg-brand-400 shadow-[0_0_12px_#32e2b0]" />}
-        <Icon size={17} strokeWidth={isActive ? 2.2 : 1.7} /><span>{page.label}</span>
-        {page.path === '/ai-assistant' && <span className="mono ml-auto rounded border border-brand-400/20 bg-brand-400/10 px-1.5 py-0.5 text-[8px] text-brand-400">AI</span>}
-      </>}
-    </NavLink>
-  )
+function NavGroup({ label, pages, collapsed, onClick }: { label: string; pages: typeof allPages; collapsed: boolean; onClick: () => void }) {
+  return <div className="mb-7">{!collapsed && <p className="mb-2 px-3 text-[9px] font-semibold uppercase tracking-[.2em] text-slate-700">{label}</p>}<div className="space-y-1">{pages.map((page) => { const Icon = page.icon; return <NavLink key={page.path} to={page.path} end={page.path === '/'} onClick={onClick} title={collapsed ? page.label : undefined} className={({ isActive }) => `relative flex min-h-11 items-center rounded-xl text-sm transition-colors ${collapsed ? 'justify-center px-0' : 'gap-3 px-3'} ${isActive ? 'bg-brand-400/[.09] text-brand-300' : 'text-slate-500 hover:bg-white/[.035] hover:text-slate-200'}`}>{({ isActive }) => <>{isActive && <span className="absolute left-0 h-5 w-0.5 rounded-r bg-brand-400"/>}<Icon size={18} strokeWidth={isActive ? 2.1 : 1.7}/>{!collapsed && <span>{page.label}</span>}</>}</NavLink> })}</div></div>
 }

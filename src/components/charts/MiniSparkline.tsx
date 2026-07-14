@@ -1,4 +1,5 @@
 import ReactECharts from 'echarts-for-react'
+import { echarts } from '../../lib/echarts'
 import { useMemo } from 'react'
 import type { PricePoint } from '../../types/market'
 
@@ -16,5 +17,5 @@ export function MiniSparkline({ data, positive }: { data: PricePoint[]; positive
     }],
     tooltip: { show: false },
   }), [color, data])
-  return <ReactECharts option={option} style={{ height: 42, width: 100 }} opts={{ renderer: 'canvas' }} />
+  return <ReactECharts echarts={echarts} option={option} autoResize={false} style={{ height: 42, width: 100 }} opts={{ renderer: 'canvas' }} />
 }

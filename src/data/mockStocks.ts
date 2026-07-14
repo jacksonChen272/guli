@@ -1,75 +1,85 @@
 import type { Stock } from '../types/stock'
 
-export const tradingDates = [
-  '2026-06-15', '2026-06-16', '2026-06-17', '2026-06-18', '2026-06-19',
-  '2026-06-22', '2026-06-23', '2026-06-24', '2026-06-25', '2026-06-26',
-  '2026-06-29', '2026-06-30', '2026-07-01', '2026-07-02', '2026-07-03',
-  '2026-07-06', '2026-07-07', '2026-07-08', '2026-07-09', '2026-07-10',
-]
+const formatDate = (date: Date) => date.toISOString().slice(0, 10)
+const buildTradingDates = (count: number) => {
+  const dates: string[] = []
+  const cursor = new Date('2026-07-10T00:00:00Z')
+  while (dates.length < count) {
+    const day = cursor.getUTCDay()
+    if (day !== 0 && day !== 6) dates.unshift(formatDate(cursor))
+    cursor.setUTCDate(cursor.getUTCDate() - 1)
+  }
+  return dates
+}
 
-type StockSeed = [string, string, string, number, number, number]
+export const tradingDates = buildTradingDates(60)
+
+type StockSeed = [string, string, string, number, number]
 
 const stockSeeds: StockSeed[] = [
-  ['2330', '台積電', '半導體', 1085, 2.36, 96],
-  ['2313', '華通', 'PCB', 82.6, 4.03, 87],
-  ['3006', '晶豪科', '半導體', 91.2, 3.17, 76],
-  ['2382', '廣達', 'AI 伺服器', 314.5, 2.11, 91],
-  ['3231', '緯創', 'AI 伺服器', 126.5, 1.61, 83],
-  ['3017', '奇鋐', '散熱', 688, 5.20, 94],
-  ['3661', '世芯-KY', '半導體', 2875, 1.77, 79],
-  ['2603', '長榮', '航運', 216, -1.37, 53],
-  ['2881', '富邦金', '金融', 93.5, 1.08, 74],
-  ['2303', '聯電', '半導體', 53.4, -0.56, 61],
-  ['2454', '聯發科', '半導體', 1490, 2.41, 89],
-  ['2376', '技嘉', 'AI 伺服器', 298.5, 3.29, 86],
-  ['6669', '緯穎', 'AI 伺服器', 2485, 4.19, 92],
-  ['2383', '台光電', 'PCB', 782, 3.71, 90],
-  ['3037', '欣興', 'PCB', 176.5, 2.32, 82],
-  ['2327', '國巨', '被動元件', 612, -0.81, 58],
-  ['2345', '智邦', '網通', 842, 4.47, 93],
-  ['2615', '萬海', '航運', 92.8, -2.11, 45],
-  ['2882', '國泰金', '金融', 72.4, 0.84, 70],
-  ['2891', '中信金', '金融', 43.1, 1.29, 77],
-  ['2308', '台達電', '電源管理', 442, 1.96, 85],
-  ['2357', '華碩', '電腦週邊', 684, 0.74, 69],
-  ['2379', '瑞昱', '半導體', 574, -0.69, 62],
-  ['3044', '健鼎', 'PCB', 231, 2.67, 80],
-  ['2356', '英業達', 'AI 伺服器', 51.8, 1.17, 68],
-  ['3529', '力旺', '半導體', 2610, -1.51, 57],
-  ['5871', '中租-KY', '金融', 142.5, -0.35, 55],
-  ['1519', '華城', '重電', 856, 3.76, 88],
-  ['9958', '世紀鋼', '綠能', 218.5, -1.13, 51],
-  ['6446', '藥華藥', '生技醫療', 689, 2.53, 81],
+  ['2330', '台積電', '半導體', 1085, 2.36], ['2313', '華通', 'PCB', 82.6, 4.03],
+  ['3006', '晶豪科', '半導體', 91.2, 3.17], ['2382', '廣達', 'AI 伺服器', 314.5, 2.11],
+  ['3231', '緯創', 'AI 伺服器', 126.5, 1.61], ['3017', '奇鋐', '散熱', 688, 5.2],
+  ['3661', '世芯-KY', '半導體', 2875, 1.77], ['2603', '長榮', '航運', 216, -1.37],
+  ['2881', '富邦金', '金融', 93.5, 1.08], ['2303', '聯電', '半導體', 53.4, -0.56],
+  ['2454', '聯發科', '半導體', 1490, 2.41], ['2376', '技嘉', 'AI 伺服器', 298.5, 3.29],
+  ['6669', '緯穎', 'AI 伺服器', 2485, 4.19], ['2383', '台光電', 'PCB', 782, 3.71],
+  ['3037', '欣興', 'PCB', 176.5, 2.32], ['2327', '國巨', '被動元件', 612, -0.81],
+  ['2345', '智邦', '網通', 842, 4.47], ['2615', '萬海', '航運', 92.8, -2.11],
+  ['2882', '國泰金', '金融', 72.4, 0.84], ['2891', '中信金', '金融', 43.1, 1.29],
+  ['2308', '台達電', '電源管理', 442, 1.96], ['2357', '華碩', '電腦週邊', 684, 0.74],
+  ['2379', '瑞昱', '半導體', 574, -0.69], ['3044', '健鼎', 'PCB', 231, 2.67],
+  ['2356', '英業達', 'AI 伺服器', 51.8, 1.17], ['3529', '力旺', '半導體', 2610, -1.51],
+  ['5871', '中租-KY', '金融', 142.5, -0.35], ['1519', '華城', '重電', 856, 3.76],
+  ['9958', '世紀鋼', '綠能', 218.5, -1.13], ['6446', '藥華藥', '生技', 689, 2.53],
 ]
 
 const otcSymbols = new Set(['3006', '3529', '6446'])
+const round = (value: number, digits = 1) => Number(value.toFixed(digits))
 
-export const mockStocks: Stock[] = stockSeeds.map(([symbol, name, industry, price, changePercent, healthScore], stockIndex) => {
+export const mockStocks: Stock[] = stockSeeds.map(([symbol, name, industry, price, changePercent], stockIndex) => {
   const direction = changePercent >= 0 ? 1 : -1
-  const foreign = Math.round((changePercent * 920 + (stockIndex % 5 - 2) * 180) * 10) / 10
-  const trust = Math.round((changePercent * 350 + (stockIndex % 4 - 1) * 90) * 10) / 10
-  const dealer = Math.round((changePercent * 140 - (stockIndex % 3) * 55) * 10) / 10
-  const capitalFlow = Math.round((foreign + trust + dealer) / 100) / 10
-  const momentum = Math.round((changePercent * 1.35 + ((stockIndex % 7) - 3) * .42) * 10) / 10
   const priceHistory = tradingDates.map((date, dayIndex) => {
-    const wave = Math.sin((dayIndex + stockIndex) * .72) * .012
-    const drift = (dayIndex - 19) * (changePercent / 1000)
-    return {
-      date,
-      value: Math.round(price * (1 + drift + wave) * 10) / 10,
-      volume: Math.round((5200 + stockIndex * 830 + dayIndex * 127 + Math.abs(Math.sin(dayIndex)) * 2500)),
-    }
+    const age = dayIndex - (tradingDates.length - 1)
+    const wave = Math.sin((dayIndex + stockIndex) * 0.61) * (0.008 + (stockIndex % 4) * 0.002)
+    const drift = age * (changePercent / 2800 + ((stockIndex % 5) - 2) / 13000)
+    const value = round(price * (1 + drift + wave), price < 100 ? 2 : 1)
+    const baseVolume = 4200 + stockIndex * 720
+    const volume = Math.round(baseVolume * (0.76 + Math.abs(Math.sin(dayIndex * 0.53 + stockIndex)) * 0.55 + Math.max(changePercent, 0) / 14))
+    return { date, value, volume }
   })
-  priceHistory[19].value = price
+  priceHistory[priceHistory.length - 1].value = price
+
+  const institutionalHistory = tradingDates.map((date, dayIndex) => {
+    const cycle = Math.sin(dayIndex * 0.58 + stockIndex)
+    const trend = changePercent * (0.55 + dayIndex / 120)
+    const foreign = round((trend * 620 + cycle * 460 + (stockIndex % 4 - 1) * 90) / 10)
+    const trust = round((trend * 230 + Math.cos(dayIndex * 0.44 + stockIndex) * 170) / 10)
+    const dealer = round((trend * 95 - Math.sin(dayIndex * 0.71) * 110) / 10)
+    return { date, foreign, trust, dealer, total: round(foreign + trust + dealer) }
+  })
+  const latestFlow = institutionalHistory[institutionalHistory.length - 1]
+  const institutions = { foreign: latestFlow.foreign, trust: latestFlow.trust, dealer: latestFlow.dealer, total: latestFlow.total }
+  const capitalFlow = round(institutions.total / 100)
+  const momentum = round(changePercent * 1.35 + ((stockIndex % 7) - 3) * 0.42)
+  const returns = priceHistory.slice(-20).map((point, index, all) => index ? (point.value / all[index - 1].value - 1) * 100 : 0)
+  const mean = returns.reduce((sum, value) => sum + value, 0) / returns.length
+  const volatility = round(Math.sqrt(returns.reduce((sum, value) => sum + (value - mean) ** 2, 0) / returns.length), 2)
+
   return {
-    symbol, name, industry, price, changePercent, healthScore,
+    symbol, name, industry, price, changePercent,
     board: otcSymbols.has(symbol) ? 'otc' : 'listed',
-    change: Math.round(price * changePercent) / 100,
-    volume: priceHistory[19].volume ?? 0,
-    institutions: { foreign, trust, dealer, total: Math.round((foreign + trust + dealer) * 10) / 10 },
+    change: round(price * changePercent / 100, 2),
+    volume: priceHistory[priceHistory.length - 1].volume ?? 0,
+    institutions,
+    institutionalHistory,
     capitalFlow,
     momentum,
-    cumulative20d: Math.round((capitalFlow * (8 + (stockIndex % 9)) + direction * 1.8) * 10) / 10,
+    cumulative20d: round(institutionalHistory.slice(-20).reduce((sum, item) => sum + item.total, 0) / 100),
+    rsi: Math.max(18, Math.min(88, round(50 + changePercent * 5 + momentum * 1.7))),
+    volatility,
+    marginChange: round(((stockIndex % 9) - 4) * 0.72 + changePercent * 0.18, 2),
+    industryStrength: Math.max(15, Math.min(95, round(55 + changePercent * 5.2 + direction * (stockIndex % 6)))),
     priceHistory,
   }
 })
