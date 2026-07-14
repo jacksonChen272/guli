@@ -1,0 +1,9 @@
+import { describe, expect, it } from 'vitest'
+import type { MarketSnapshot } from '../../../types/snapshot'
+import { MarketMemoryService } from '../MarketMemoryService'
+const item = (date: string, temperature: number, status: MarketSnapshot['marketStatus'], industry = 'AI'): MarketSnapshot => ({ schemaVersion: '1.0', snapshotId: date, tradeDate: date, generatedAt: `${date}T08:00:00.000Z`, market: 'TWSE', marketStatus: status, marketTemperature: temperature, confidence: 80, headline: '摘要', overview: { indexValue: 100, change: 1, changePercent: 1, tradingAmount: 1000, advanceCount: null, declineCount: null, unchangedCount: null }, topIndustries: [{ name: industry, changePercent: 1, capitalFlow: 1, momentum: 1, rank: 1, source: 'mock' }], weakIndustries: [{ name: '航運', changePercent: -1, capitalFlow: -1, momentum: -1, rank: 1, source: 'mock' }], risks: [], tags: [], sources: [{ id: 'o', name: 'TWSE', type: 'official', fields: ['overview'], tradeDate: date }], warnings: [] })
+describe('MarketMemoryService', () => {
+  it('只使用實際存在且符合 N 日上限的 Snapshot', () => { const result = new MarketMemoryService().calculate([item('2026-07-13', 70, '偏強'), item('2026-07-12', 50, '中性')], 1); expect(result.snapshotCount).toBe(1); expect(result.averageTemperature).toBe(70) })
+  it('正確統計多空中性與常見產業', () => { const result = new MarketMemoryService().calculate([item('2026-07-13', 70, '偏強'), item('2026-07-12', 50, '中性'), item('2026-07-11', 30, '偏弱')], 5); expect([result.bullishDays, result.neutralDays, result.bearishDays]).toEqual([1, 1, 1]); expect(result.mostFrequentStrongIndustry?.name).toBe('AI') })
+  it('空歷史資料可正常處理', () => { const result = new MarketMemoryService().calculate([], 20); expect(result.snapshotCount).toBe(0); expect(result.averageTemperature).toBeNull(); expect(result.insufficientData).toBe(true) })
+})

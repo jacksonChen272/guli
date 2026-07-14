@@ -2,6 +2,8 @@ import type { MarketOverviewData } from '../types/api'
 import type { OfficialMarketOverview } from '../types/marketData'
 import type { Stock } from '../types/stock'
 import { validateOfficialMarketOverview } from './dataValidationService'
+import type { MarketSnapshot } from '../types/snapshot'
+import { validateMarketSnapshot } from './snapshotValidationService'
 
 export type DataQualityGrade = '優良' | '良好' | '待確認' | '需處理'
 export interface DataQualityReport { score: number; grade: DataQualityGrade; issues: string[]; checkedAt: string }
@@ -28,6 +30,11 @@ export class DataQuality {
     const missingBreadth = [data.advanceCount, data.declineCount, data.unchangedCount].filter((value) => value === null).length
     const score = Math.max(0, 100 - validation.errors.length * 25 - missingBreadth * 5 - (validation.stale ? 15 : 0))
     return { score, grade: gradeFor(score), issues: [...new Set([...validation.errors, ...validation.warnings])], checkedAt: new Date().toISOString() }
+  }
+  evaluateSnapshot(snapshot: MarketSnapshot): DataQualityReport {
+    const validation = validateMarketSnapshot(snapshot)
+    const score = Math.max(0, 100 - validation.errors.length * 20 - validation.warnings.length * 5)
+    return { score, grade: gradeFor(score), issues: [...validation.errors, ...validation.warnings], checkedAt: new Date().toISOString() }
   }
 }
 

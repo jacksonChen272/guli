@@ -33,6 +33,9 @@ jobs:
       - name: Fetch official TWSE market overview
         run: npm run data:twse
 
+      - name: Generate market snapshot
+        run: npm run snapshot:generate
+
       - name: Run tests
         run: npm run test:run
 
@@ -42,12 +45,12 @@ jobs:
       - name: Commit changed snapshot
         shell: bash
         run: |
-          if git diff --quiet -- public/data/twse-market-overview.json; then
-            echo "TWSE snapshot unchanged; skipping commit."
+          if git diff --quiet -- public/data/twse-market-overview.json public/data/history; then
+            echo "Market data and snapshots unchanged; skipping commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/twse-market-overview.json
+          git add public/data/twse-market-overview.json public/data/history
           git commit -m "chore(data): update TWSE market overview"
           git push origin HEAD:main

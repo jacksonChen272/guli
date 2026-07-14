@@ -12,6 +12,7 @@ import { MarketTemperature } from '../components/dashboard/MarketTemperature'
 import { TodayHighlights } from '../components/dashboard/TodayHighlights'
 import { DataSourceInfoCard } from '../components/dashboard/DataSourceInfoCard'
 import { MarketBreadth } from '../components/dashboard/MarketBreadth'
+import { LatestSnapshotCard } from '../components/snapshot/LatestSnapshotCard'
 import { RotationDetailDrawer } from '../components/rotation/RotationDetailDrawer'
 import { Button } from '../components/ui/Button'
 import { Card } from '../components/ui/Card'
@@ -46,6 +47,7 @@ export function Dashboard() {
     <MarketHeadline/>
     <div className="rounded-xl border border-blue-400/15 bg-blue-400/[.04] px-4 py-3 text-[11px] text-blue-200/80">目前部分欄位已接入 TWSE 官方盤後資料，其餘欄位仍為模擬資料。</div>
     <DataSourceInfoCard onReload={() => setDataRevision((value) => value + 1)}/>
+    <section aria-label="今日市場快照"><LatestSnapshotCard/></section>
     <section className="grid grid-cols-1 gap-5 xl:grid-cols-12"><div className="xl:col-span-4"><MarketTemperature/></div><div className="xl:col-span-8"><MarketSummary/></div></section>
     <section aria-label="市場統計" className="-mx-4 flex snap-x gap-3 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 lg:grid-cols-3 2xl:grid-cols-6">{statCards.map((card) => <div className="min-w-[230px] snap-start sm:min-w-0" key={card.code}><MarketStatCard {...card}/></div>)}</section>
     <MarketBreadth data={officialMarket}/>

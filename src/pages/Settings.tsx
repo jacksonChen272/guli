@@ -30,6 +30,6 @@ export function Settings() {
       </article>)}</div>
       <div className="flex flex-col gap-3 border-t border-[var(--border-subtle)] px-5 py-4 sm:flex-row sm:items-center sm:justify-between"><p role="status" className="text-[11px] leading-5 text-slate-500">{message}</p>{activeId === 'twse' && <Button size="sm" variant="ghost" onClick={() => void select('mock')} icon={<RotateCcw size={13}/>}>回到 Mock</Button>}</div>
     </Card>
-    <Card title="版本資訊" eyebrow="SYSTEM"><div className="grid gap-3 p-5 text-[11px] sm:grid-cols-3"><div><p className="text-slate-600">GULI</p><p className="mt-1 text-slate-200">v0.5.2</p></div><div><p className="text-slate-600">市場資料</p><p className="mt-1 text-slate-200">TWSE 官方盤後／Mock</p></div><div><p className="text-slate-600">行情性質</p><p className="mt-1 text-slate-200">非即時行情</p></div></div></Card>
+    <Card title="版本資訊" eyebrow="SYSTEM"><div className="grid gap-3 p-5 text-[11px] sm:grid-cols-3"><div><p className="text-slate-600">GULI</p><p className="mt-1 text-slate-200">v0.5.3</p></div><div><p className="text-slate-600">資料引擎</p><p className="mt-1 text-slate-200">TWSE／Mock／Market Snapshot</p></div><div><p className="text-slate-600">行情性質</p><p className="mt-1 text-slate-200">非即時行情</p></div></div></Card>
   </div>
 }

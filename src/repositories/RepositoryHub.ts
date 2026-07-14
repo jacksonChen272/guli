@@ -12,6 +12,7 @@ import { InstitutionRepository } from './InstitutionRepository'
 import { MarketRepository } from './MarketRepository'
 import { StockRepository } from './StockRepository'
 import { WatchlistRepository } from './WatchlistRepository'
+import { SnapshotRepository } from './SnapshotRepository'
 
 export class RepositoryHub {
   private cache = new MemoryCache()
@@ -21,6 +22,7 @@ export class RepositoryHub {
   industries!: IndustryRepository
   institutions!: InstitutionRepository
   watchlist!: WatchlistRepository
+  readonly snapshots = new SnapshotRepository()
 
   constructor() { this.rebuild(); this.registerRefreshTasks() }
   private rebuild() {

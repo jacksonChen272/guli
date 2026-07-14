@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0",
+  "snapshotId": "twse-2026-07-13",
+  "tradeDate": "2026-07-13",
+  "generatedAt": "2026-07-14T05:02:46.226Z",
+  "market": "TWSE",
+  "marketStatus": "偏強",
+  "marketTemperature": 72,
+  "confidence": 72,
+  "headline": "市場偏強，資金聚焦 AI 伺服器與 PCB，航運動能轉弱。",
+  "overview": {
+    "indexValue": 45380.52,
+    "change": 25.91,
+    "changePercent": 0.06,
+    "tradingAmount": 1067662107060,
+    "advanceCount": null,
+    "declineCount": null,
+    "unchangedCount": null
+  },
+  "topIndustries": [
+    {
+      "name": "AI 伺服器",
+      "changePercent": 3.4,
+      "capitalFlow": 82,
+      "momentum": 76,
+      "rank": 1,
+      "source": "mock"
+    },
+    {
+      "name": "PCB",
+      "changePercent": 2.1,
+      "capitalFlow": 68,
+      "momentum": 64,
+      "rank": 2,
+      "source": "mock"
+    },
+    {
+      "name": "散熱",
+      "changePercent": 1.6,
+      "capitalFlow": 57,
+      "momentum": 61,
+      "rank": 3,
+      "source": "mock"
+    }
+  ],
+  "weakIndustries": [
+    {
+      "name": "航運",
+      "changePercent": -2,
+      "capitalFlow": -54,
+      "momentum": -61,
+      "rank": 1,
+      "source": "mock"
+    },
+    {
+      "name": "金融",
+      "changePercent": -0.8,
+      "capitalFlow": -21,
+      "momentum": -18,
+      "rank": 2,
+      "source": "mock"
+    },
+    {
+      "name": "生技",
+      "changePercent": -0.4,
+      "capitalFlow": -12,
+      "momentum": -15,
+      "rank": 3,
+      "source": "mock"
+    }
+  ],
+  "risks": [
+    {
+      "id": "shipping-weak",
+      "level": "中",
+      "title": "航運動能轉弱",
+      "description": "模擬產業資料顯示資金動能降溫。",
+      "source": "derived"
+    },
+    {
+      "id": "breadth-partial",
+      "level": "中",
+      "title": "市場廣度資料不完整",
+      "description": "官方漲跌家數尚未更新至相同交易日。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "AI 伺服器",
+    "PCB"
+  ],
+  "sources": [
+    {
+      "id": "twse-overview",
+      "name": "臺灣證券交易所（TWSE）",
+      "type": "official",
+      "fields": [
+        "overview"
+      ],
+      "tradeDate": "2026-07-13",
+      "status": "partial"
+    },
+    {
+      "id": "guli-analysis",
+      "name": "GULI 集中 Mock Data",
+      "type": "mock",
+      "fields": [
+        "marketTemperature",
+        "topIndustries",
+        "weakIndustries"
+      ]
+    },
+    {
+      "id": "guli-rules",
+      "name": "GULI 規則引擎",
+      "type": "derived",
+      "fields": [
+        "marketStatus",
+        "confidence",
+        "headline",
+        "risks",
+        "tags"
+      ]
+    }
+  ],
+  "warnings": [
+    "漲跌家數端點沒有同交易日股票統計，相關欄位保留 null。",
+    "TWSE 官方資料缺少完整漲跌家數，本筆資料為部分資料。",
+    "產業、法人、訊號與市場溫度仍使用模擬或規則推導資料。"
+  ]
+}

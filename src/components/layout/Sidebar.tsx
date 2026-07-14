@@ -1,19 +1,21 @@
 import { Info, PanelLeftClose, PanelLeftOpen, Settings, X } from 'lucide-react'
 import { NavLink, useNavigate } from 'react-router-dom'
-import { allPages } from '../../config/navigation'
+import { allPages, dashboardPage, historyPage, routePages } from '../../config/navigation'
 import { Logo } from '../brand/Logo'
 
 type SidebarProps = { open: boolean; collapsed: boolean; onClose: () => void; onToggleCollapse: () => void }
 
 export function Sidebar({ open, collapsed, onClose, onToggleCollapse }: SidebarProps) {
   const navigate = useNavigate()
+  const marketPages = [dashboardPage, historyPage, ...routePages.filter((page) => !['/history', '/ai', '/settings'].includes(page.path))]
+  const systemPages = routePages.filter((page) => ['/ai', '/settings'].includes(page.path))
   return <>
     <button type="button" aria-label="關閉側邊欄遮罩" onClick={onClose} className={`fixed inset-0 z-40 bg-black/65 backdrop-blur-sm transition-opacity lg:hidden ${open ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0'}`}/>
     <aside className={`fixed inset-y-0 left-0 z-50 flex flex-col border-r border-[var(--border-subtle)] bg-[var(--bg-sidebar)] transition-[width,transform] duration-200 ${collapsed ? 'w-20' : 'w-[248px]'} ${open ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}>
       <div className={`flex h-[76px] items-center border-b border-[var(--border-subtle)] ${collapsed ? 'justify-center px-3' : 'justify-between px-5'}`}><Logo compact={collapsed}/><button type="button" onClick={onClose} className="grid h-11 w-11 place-items-center rounded-xl text-slate-500 hover:bg-white/5 hover:text-white lg:hidden" aria-label="關閉側邊欄"><X size={19}/></button></div>
-      <nav className="flex-1 overflow-y-auto px-3 py-5" aria-label="主要導覽"><NavGroup label="市場工具" pages={allPages.slice(0, 6)} collapsed={collapsed} onClick={onClose}/><NavGroup label="系統與助理" pages={allPages.slice(6)} collapsed={collapsed} onClick={onClose}/></nav>
+      <nav className="flex-1 overflow-y-auto px-3 py-5" aria-label="主要導覽"><NavGroup label="市場工具" pages={marketPages} collapsed={collapsed} onClick={onClose}/><NavGroup label="系統與助理" pages={systemPages} collapsed={collapsed} onClick={onClose}/></nav>
       <div className="border-t border-[var(--border-subtle)] p-3">
-        {!collapsed && <div className="mb-2 rounded-xl border border-[var(--border-subtle)] bg-white/[0.018] p-3"><div className="flex items-center gap-2 text-[11px] text-slate-300"><span className="live-dot h-1.5 w-1.5 rounded-full bg-brand-400"/>資料服務正常</div><p className="mono mt-1.5 text-[9px] text-slate-600">GULI v0.5.2 · TWSE / MOCK</p></div>}
+        {!collapsed && <div className="mb-2 rounded-xl border border-[var(--border-subtle)] bg-white/[0.018] p-3"><div className="flex items-center gap-2 text-[11px] text-slate-300"><span className="live-dot h-1.5 w-1.5 rounded-full bg-brand-400"/>資料服務正常</div><p className="mono mt-1.5 text-[9px] text-slate-600">GULI v0.5.3 · SNAPSHOT ENGINE</p></div>}
         <button type="button" onClick={() => navigate('/settings')} title="資料免責聲明" className={`mb-1 flex min-h-11 w-full items-center rounded-xl text-[11px] text-slate-600 hover:bg-white/[0.035] hover:text-slate-300 ${collapsed ? 'justify-center px-0' : 'gap-3 px-3'}`}><Info size={16}/>{!collapsed && '資料免責聲明'}</button>
         <button type="button" onClick={() => navigate('/settings')} title="設定" className={`mb-1 flex min-h-11 w-full items-center rounded-xl text-[11px] text-slate-600 hover:bg-white/[0.035] hover:text-slate-300 ${collapsed ? 'justify-center px-0' : 'gap-3 px-3'}`}><Settings size={16}/>{!collapsed && '設定'}</button>
         <button type="button" onClick={onToggleCollapse} className="hidden min-h-11 w-full items-center justify-center rounded-xl text-slate-600 hover:bg-white/[0.035] hover:text-brand-300 lg:flex" aria-label={collapsed ? '展開側邊欄' : '收合側邊欄'} title={collapsed ? '展開側邊欄' : '收合側邊欄'}>{collapsed ? <PanelLeftOpen size={17}/> : <><PanelLeftClose size={17}/><span className="ml-2 text-[11px]">收合側邊欄</span></>}</button>

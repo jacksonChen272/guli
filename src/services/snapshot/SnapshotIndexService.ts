@@ -1,0 +1,3 @@
+import type { MarketSnapshot, SnapshotIndex, SnapshotIndexItem } from '../../types/snapshot'
+export const toSnapshotIndexItem = (snapshot: MarketSnapshot): SnapshotIndexItem => ({ tradeDate: snapshot.tradeDate, path: `data/history/${snapshot.tradeDate}.json`, marketStatus: snapshot.marketStatus, marketTemperature: snapshot.marketTemperature, headline: snapshot.headline })
+export function upsertSnapshotIndex(index: SnapshotIndex, snapshot: MarketSnapshot): SnapshotIndex { const item = toSnapshotIndexItem(snapshot); return { schemaVersion: '1.0', updatedAt: snapshot.generatedAt, snapshots: [item, ...index.snapshots.filter((entry) => entry.tradeDate !== snapshot.tradeDate)].sort((a, b) => b.tradeDate.localeCompare(a.tradeDate)) } }
