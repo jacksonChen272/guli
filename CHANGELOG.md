@@ -15,3 +15,11 @@
 - 新增 TWSE Provider、資料正規化、驗證、品質評分、Cache 與 Mock fallback。
 - Dashboard 與 Settings 支援逐欄來源標示與 TWSE／Mock 切換。
 - 保留 GitHub Pages `/guli/` base path 與既有功能。
+# Changelog
+
+## [0.5.4]
+
+- 新增 Industry Snapshot Engine、Repository、Diff 與 Industry Memory。
+- 新增產業總覽、產業明細、Dashboard 產業輪動預覽與市場歷史產業記憶。
+- Market Snapshot 優先引用同交易日 Industry Snapshot，失敗時明確回退。
+- GitHub Actions 依序更新 TWSE、Industry Snapshot、Market Snapshot、測試與建置。

@@ -1,12 +1,13 @@
 {
   "name": "guli-fintech-platform",
   "private": true,
-  "version": "0.5.3",
+  "version": "0.5.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "data:twse": "node scripts/fetch-twse-market.mjs",
     "snapshot:generate": "node scripts/generate-market-snapshot.mjs",
+    "industry:snapshot:generate": "node scripts/generate-industry-snapshot.mjs",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "test": "vitest",
