@@ -1,0 +1,60 @@
+{
+  "symbol": "5608",
+  "name": "四維航",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 14.8,
+    "high": 14.85,
+    "low": 14.45,
+    "close": 14.45,
+    "change": -0.15,
+    "changePercent": -1.03,
+    "tradeVolume": 701041,
+    "transactionCount": 432,
+    "tradeValue": 10239996,
+    "peRatio": 62.83
+  },
+  "dailyRangePercent": 2.77,
+  "turnoverAverageValue": 23703.69,
+  "pricePosition": 0,
+  "liquidityScore": 40.5,
+  "priceStrengthScore": 26.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 28,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 62.83 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

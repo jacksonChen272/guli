@@ -1,0 +1,53 @@
+{
+  "symbol": "3006",
+  "name": "晶豪科",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 238,
+    "high": 243.5,
+    "low": 222.5,
+    "close": 228,
+    "change": -9,
+    "changePercent": -3.8,
+    "tradeVolume": 20108316,
+    "transactionCount": 16074,
+    "tradeValue": 4698340784,
+    "peRatio": 27.11
+  },
+  "dailyRangePercent": 9.44,
+  "turnoverAverageValue": 292294.44,
+  "pricePosition": 26.2,
+  "liquidityScore": 95.2,
+  "priceStrengthScore": 29.1,
+  "valuationRiskScore": 55,
+  "snapshotScore": 55.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.44% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

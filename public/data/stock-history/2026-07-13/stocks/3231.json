@@ -1,0 +1,53 @@
+{
+  "symbol": "3231",
+  "name": "緯創",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 147,
+    "high": 148,
+    "low": 142.5,
+    "close": 143.5,
+    "change": -1,
+    "changePercent": -0.69,
+    "tradeVolume": 27031128,
+    "transactionCount": 20717,
+    "tradeValue": 3900747066,
+    "peRatio": 14.39
+  },
+  "dailyRangePercent": 3.86,
+  "turnoverAverageValue": 188287.26,
+  "pricePosition": 18.2,
+  "liquidityScore": 95.7,
+  "priceStrengthScore": 33.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 64.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.2 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

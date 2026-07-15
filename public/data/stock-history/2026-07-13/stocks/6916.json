@@ -1,0 +1,69 @@
+{
+  "symbol": "6916",
+  "name": "華凌",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.1,
+    "high": 20.3,
+    "low": 19.7,
+    "close": 19.8,
+    "change": -0.35,
+    "changePercent": -1.74,
+    "tradeVolume": 75134,
+    "transactionCount": 47,
+    "tradeValue": 1499235,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.05,
+  "turnoverAverageValue": 31898.62,
+  "pricePosition": 16.7,
+  "liquidityScore": 10.9,
+  "priceStrengthScore": 30.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 21.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.9 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

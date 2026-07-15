@@ -8,6 +8,7 @@ export interface MarketSnapshotRisk { id: string; level: '低' | '中' | '高'; 
 export interface MarketSnapshot {
   schemaVersion: '1.0'; snapshotId: string; tradeDate: string; generatedAt: string; market: 'TWSE'
   marketStatus: SnapshotMarketStatus; marketTemperature: number; confidence: number; headline: string
+  stockBreadth?: { strongCount: number; weakCount: number; highRiskCount: number } | null
   overview: MarketSnapshotOverview; topIndustries: MarketSnapshotIndustry[]; weakIndustries: MarketSnapshotIndustry[]
   risks: MarketSnapshotRisk[]; tags: string[]; sources: SnapshotSource[]; warnings: string[]
 }

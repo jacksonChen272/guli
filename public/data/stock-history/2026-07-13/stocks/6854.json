@@ -1,0 +1,62 @@
+{
+  "symbol": "6854",
+  "name": "錼創科技-KY創",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 114,
+    "high": 115,
+    "low": 108,
+    "close": 109,
+    "change": -4.5,
+    "changePercent": -3.96,
+    "tradeVolume": 698641,
+    "transactionCount": 677,
+    "tradeValue": 76612413,
+    "peRatio": null
+  },
+  "dailyRangePercent": 6.48,
+  "turnoverAverageValue": 113164.57,
+  "pricePosition": 14.3,
+  "liquidityScore": 54.6,
+  "priceStrengthScore": 24.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 37.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

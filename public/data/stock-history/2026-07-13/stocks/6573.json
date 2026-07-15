@@ -1,0 +1,53 @@
+{
+  "symbol": "6573",
+  "name": "虹揚-KY",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 27.8,
+    "high": 28.1,
+    "low": 25.2,
+    "close": 26,
+    "change": -1.95,
+    "changePercent": -6.98,
+    "tradeVolume": 1850371,
+    "transactionCount": 1299,
+    "tradeValue": 48454443,
+    "peRatio": 19.85
+  },
+  "dailyRangePercent": 11.51,
+  "turnoverAverageValue": 37301.34,
+  "pricePosition": 27.6,
+  "liquidityScore": 60,
+  "priceStrengthScore": 22.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 44.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.51% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

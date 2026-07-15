@@ -1,0 +1,62 @@
+{
+  "symbol": "4142",
+  "name": "國光生",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.55,
+    "high": 17.55,
+    "low": 16.95,
+    "close": 17.05,
+    "change": -0.6,
+    "changePercent": -3.4,
+    "tradeVolume": 2324953,
+    "transactionCount": 1582,
+    "tradeValue": 39811819,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.54,
+  "turnoverAverageValue": 25165.5,
+  "pricePosition": 16.7,
+  "liquidityScore": 60.8,
+  "priceStrengthScore": 26.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 41.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

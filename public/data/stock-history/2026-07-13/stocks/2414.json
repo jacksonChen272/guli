@@ -1,0 +1,53 @@
+{
+  "symbol": "2414",
+  "name": "精技",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 66.2,
+    "high": 67.7,
+    "low": 62.5,
+    "close": 63.8,
+    "change": 2.2,
+    "changePercent": 3.57,
+    "tradeVolume": 1176243,
+    "transactionCount": 1156,
+    "tradeValue": 76341620,
+    "peRatio": 18.07
+  },
+  "dailyRangePercent": 8.32,
+  "turnoverAverageValue": 66039.46,
+  "pricePosition": 25,
+  "liquidityScore": 59.5,
+  "priceStrengthScore": 45.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 54.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.32% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

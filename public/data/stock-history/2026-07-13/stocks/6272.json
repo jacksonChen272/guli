@@ -1,0 +1,53 @@
+{
+  "symbol": "6272",
+  "name": "驊陞",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 31.45,
+    "high": 31.45,
+    "low": 30,
+    "close": 30,
+    "change": -1.45,
+    "changePercent": -4.61,
+    "tradeVolume": 335436,
+    "transactionCount": 316,
+    "tradeValue": 10160126,
+    "peRatio": 12.4
+  },
+  "dailyRangePercent": 4.83,
+  "turnoverAverageValue": 32152.3,
+  "pricePosition": 0,
+  "liquidityScore": 34.1,
+  "priceStrengthScore": 18.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 36.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

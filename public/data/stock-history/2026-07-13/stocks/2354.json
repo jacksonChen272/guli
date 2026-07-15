@@ -1,0 +1,53 @@
+{
+  "symbol": "2354",
+  "name": "鴻準",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 57.2,
+    "high": 57.9,
+    "low": 56.5,
+    "close": 56.6,
+    "change": -0.4,
+    "changePercent": -0.7,
+    "tradeVolume": 3489999,
+    "transactionCount": 2604,
+    "tradeValue": 198919043,
+    "peRatio": 26.82
+  },
+  "dailyRangePercent": 2.48,
+  "turnoverAverageValue": 76389.8,
+  "pricePosition": 7.1,
+  "liquidityScore": 73.9,
+  "priceStrengthScore": 29.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 48.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

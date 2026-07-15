@@ -1,0 +1,60 @@
+{
+  "symbol": "7721",
+  "name": "微程式",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 71,
+    "high": 73.2,
+    "low": 68.5,
+    "close": 69.3,
+    "change": -1.7,
+    "changePercent": -2.39,
+    "tradeVolume": 227264,
+    "transactionCount": 212,
+    "tradeValue": 16048438,
+    "peRatio": 117.46
+  },
+  "dailyRangePercent": 6.86,
+  "turnoverAverageValue": 75700.18,
+  "pricePosition": 17,
+  "liquidityScore": 32.6,
+  "priceStrengthScore": 29.1,
+  "valuationRiskScore": 90,
+  "snapshotScore": 26.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 117.46 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

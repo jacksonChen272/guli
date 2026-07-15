@@ -1,0 +1,4 @@
+import { describe,expect,it } from 'vitest'
+import { decisionEngine } from '../DecisionEngine'
+import { marketSnapshot } from './decisionTestFixtures'
+describe('market decision',()=>{it('bullish data produces bullish direction',()=>expect(decisionEngine.market(marketSnapshot()).direction).toBe('bullish'));it('bearish data produces bearish label',()=>{const result=decisionEngine.market(marketSnapshot({marketTemperature:20,stockBreadth:{strongCount:10,weakCount:500,highRiskCount:300},overview:{indexValue:20000,change:-500,changePercent:-3,tradingAmount:500000000000,advanceCount:100,declineCount:800,unchangedCount:20}}));expect(result.direction).toBe('bearish')});it('missing breadth remains missing',()=>expect(decisionEngine.market(marketSnapshot({stockBreadth:null})).factors.find((item)=>item.code==='risk_distribution')!.normalizedScore).toBeNull())})

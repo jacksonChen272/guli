@@ -1,0 +1,53 @@
+{
+  "symbol": "2373",
+  "name": "震旦行",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 53.9,
+    "high": 54,
+    "low": 53.6,
+    "close": 53.8,
+    "change": -0.1,
+    "changePercent": -0.19,
+    "tradeVolume": 23645,
+    "transactionCount": 55,
+    "tradeValue": 1270406,
+    "peRatio": 13.79
+  },
+  "dailyRangePercent": 0.75,
+  "turnoverAverageValue": 23098.29,
+  "pricePosition": 50,
+  "liquidityScore": 7.7,
+  "priceStrengthScore": 45.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 39.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.7 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

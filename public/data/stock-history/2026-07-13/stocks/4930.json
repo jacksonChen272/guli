@@ -1,0 +1,62 @@
+{
+  "symbol": "4930",
+  "name": "燦星網",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.8,
+    "high": 16.85,
+    "low": 16.65,
+    "close": 16.85,
+    "change": -0.05,
+    "changePercent": -0.3,
+    "tradeVolume": 39696,
+    "transactionCount": 126,
+    "tradeValue": 665815,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.2,
+  "turnoverAverageValue": 5284.25,
+  "pricePosition": 100,
+  "liquidityScore": 8.3,
+  "priceStrengthScore": 70.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 43.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.3 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "symbol": "6164",
+  "name": "華興",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 15.05,
+    "high": 15.4,
+    "low": 14.15,
+    "close": 14.35,
+    "change": -0.6,
+    "changePercent": -4.01,
+    "tradeVolume": 2130776,
+    "transactionCount": 1126,
+    "tradeValue": 30908383,
+    "peRatio": 717.5
+  },
+  "dailyRangePercent": 8.83,
+  "turnoverAverageValue": 27449.72,
+  "pricePosition": 16,
+  "liquidityScore": 57.2,
+  "priceStrengthScore": 25.1,
+  "valuationRiskScore": 90,
+  "snapshotScore": 33.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.83% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 717.50 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

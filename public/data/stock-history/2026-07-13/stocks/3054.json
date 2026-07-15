@@ -1,0 +1,53 @@
+{
+  "symbol": "3054",
+  "name": "立萬利",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 63.4,
+    "high": 63.4,
+    "low": 60.2,
+    "close": 60.3,
+    "change": -3.1,
+    "changePercent": -4.89,
+    "tradeVolume": 62484,
+    "transactionCount": 117,
+    "tradeValue": 3816649,
+    "peRatio": 17.79
+  },
+  "dailyRangePercent": 5.32,
+  "turnoverAverageValue": 32620.93,
+  "pricePosition": 3.1,
+  "liquidityScore": 16.3,
+  "priceStrengthScore": 18.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 27.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 3.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

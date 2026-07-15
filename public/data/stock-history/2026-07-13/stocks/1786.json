@@ -1,0 +1,53 @@
+{
+  "symbol": "1786",
+  "name": "科妍",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 54.4,
+    "high": 55.1,
+    "low": 53.8,
+    "close": 53.8,
+    "change": -2.2,
+    "changePercent": -3.93,
+    "tradeVolume": 319256,
+    "transactionCount": 471,
+    "tradeValue": 17344313,
+    "peRatio": 31.65
+  },
+  "dailyRangePercent": 2.42,
+  "turnoverAverageValue": 36824.44,
+  "pricePosition": 0,
+  "liquidityScore": 38.6,
+  "priceStrengthScore": 19.7,
+  "valuationRiskScore": 55,
+  "snapshotScore": 31.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

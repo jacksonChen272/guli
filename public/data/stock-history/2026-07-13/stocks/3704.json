@@ -1,0 +1,53 @@
+{
+  "symbol": "3704",
+  "name": "合勤控",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 48,
+    "high": 49.85,
+    "low": 47.95,
+    "close": 49.85,
+    "change": 4.5,
+    "changePercent": 9.92,
+    "tradeVolume": 16834669,
+    "transactionCount": 8911,
+    "tradeValue": 836693103,
+    "peRatio": 43.35
+  },
+  "dailyRangePercent": 3.96,
+  "turnoverAverageValue": 93894.41,
+  "pricePosition": 100,
+  "liquidityScore": 88.4,
+  "priceStrengthScore": 93.8,
+  "valuationRiskScore": 75,
+  "snapshotScore": 78.2,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.92% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

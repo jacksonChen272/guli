@@ -1,0 +1,53 @@
+{
+  "symbol": "1904",
+  "name": "正隆",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.05,
+    "high": 23.3,
+    "low": 21.9,
+    "close": 21.9,
+    "change": -1.5,
+    "changePercent": -6.41,
+    "tradeVolume": 3584438,
+    "transactionCount": 3743,
+    "tradeValue": 79854139,
+    "peRatio": 17.95
+  },
+  "dailyRangePercent": 6.39,
+  "turnoverAverageValue": 21334.26,
+  "pricePosition": 0,
+  "liquidityScore": 70.2,
+  "priceStrengthScore": 14.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 43.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

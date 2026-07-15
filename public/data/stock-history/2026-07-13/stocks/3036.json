@@ -1,0 +1,53 @@
+{
+  "symbol": "3036",
+  "name": "文曄",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 213,
+    "high": 221.5,
+    "low": 209,
+    "close": 211,
+    "change": -0.5,
+    "changePercent": -0.24,
+    "tradeVolume": 8848448,
+    "transactionCount": 7097,
+    "tradeValue": 1889821481,
+    "peRatio": 14.96
+  },
+  "dailyRangePercent": 5.98,
+  "turnoverAverageValue": 266284.55,
+  "pricePosition": 16,
+  "liquidityScore": 88.9,
+  "priceStrengthScore": 33.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 62.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

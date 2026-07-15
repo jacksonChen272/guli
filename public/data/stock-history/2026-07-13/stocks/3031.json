@@ -1,0 +1,60 @@
+{
+  "symbol": "3031",
+  "name": "佰鴻",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 31.2,
+    "high": 31.3,
+    "low": 28.9,
+    "close": 29.05,
+    "change": -1.8,
+    "changePercent": -5.83,
+    "tradeVolume": 1942797,
+    "transactionCount": 1482,
+    "tradeValue": 57571833,
+    "peRatio": 25.94
+  },
+  "dailyRangePercent": 8.3,
+  "turnoverAverageValue": 38847.39,
+  "pricePosition": 6.3,
+  "liquidityScore": 61.6,
+  "priceStrengthScore": 17.6,
+  "valuationRiskScore": 55,
+  "snapshotScore": 38.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.30% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

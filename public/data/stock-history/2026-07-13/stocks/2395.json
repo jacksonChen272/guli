@@ -1,0 +1,60 @@
+{
+  "symbol": "2395",
+  "name": "研華",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 557,
+    "high": 593,
+    "low": 535,
+    "close": 536,
+    "change": -4,
+    "changePercent": -0.74,
+    "tradeVolume": 4473042,
+    "transactionCount": 5777,
+    "tradeValue": 2472705333,
+    "peRatio": 41.58
+  },
+  "dailyRangePercent": 10.84,
+  "turnoverAverageValue": 428025.85,
+  "pricePosition": 1.7,
+  "liquidityScore": 86.9,
+  "priceStrengthScore": 27.4,
+  "valuationRiskScore": 75,
+  "snapshotScore": 47.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.84% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 1.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

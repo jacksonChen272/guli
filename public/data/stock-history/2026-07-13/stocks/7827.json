@@ -1,0 +1,76 @@
+{
+  "symbol": "7827",
+  "name": "漢康-KY創",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 183.5,
+    "high": 187,
+    "low": 167.5,
+    "close": 171,
+    "change": -14,
+    "changePercent": -7.57,
+    "tradeVolume": 806692,
+    "transactionCount": 1918,
+    "tradeValue": 143165081,
+    "peRatio": null
+  },
+  "dailyRangePercent": 11.64,
+  "turnoverAverageValue": 74642.9,
+  "pricePosition": 17.9,
+  "liquidityScore": 62.3,
+  "priceStrengthScore": 17.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 37.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.57% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.64% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.9 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,4 @@
+export function IndustryStrengthGauge({ score, label = '產業強度' }: { score: number; label?: string }) {
+  const color = score >= 66 ? '#fb7185' : score <= 35 ? '#34d399' : '#60a5fa'
+  return <div className="flex items-center gap-4"><div className="relative grid h-24 w-24 shrink-0 place-items-center rounded-full" style={{ background: `conic-gradient(${color} ${score * 3.6}deg, rgba(148,163,184,.12) 0)` }}><div className="grid h-[76px] w-[76px] place-items-center rounded-full bg-[var(--bg-card)]"><div className="text-center"><strong className="mono text-2xl text-white">{score}</strong><p className="text-[9px] text-slate-500">/ 100</p></div></div></div><div><p className="text-xs text-slate-500">{label}</p><p className="mt-1 text-sm font-semibold text-white">{score >= 81 ? '強勢' : score >= 66 ? '偏強' : score >= 51 ? '中性' : score >= 36 ? '偏弱' : '弱勢'}</p><p className="mt-1 text-[10px] leading-5 text-slate-600">紅色代表相對強勢、綠色代表相對弱勢，並搭配文字判讀。</p></div></div>
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "6695",
+  "name": "芯鼎",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 54.4,
+    "high": 55.2,
+    "low": 53.1,
+    "close": 54.1,
+    "change": 0.4,
+    "changePercent": 0.74,
+    "tradeVolume": 713116,
+    "transactionCount": 641,
+    "tradeValue": 38524019,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.95,
+  "turnoverAverageValue": 60099.87,
+  "pricePosition": 47.6,
+  "liquidityScore": 50.1,
+  "priceStrengthScore": 46.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 48.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

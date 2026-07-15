@@ -1,0 +1,67 @@
+{
+  "symbol": "2356",
+  "name": "英業達",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 70,
+    "high": 71.3,
+    "low": 64.5,
+    "close": 64.7,
+    "change": -5.1,
+    "changePercent": -7.31,
+    "tradeVolume": 64016763,
+    "transactionCount": 47725,
+    "tradeValue": 4301102819,
+    "peRatio": 24.6
+  },
+  "dailyRangePercent": 10.54,
+  "turnoverAverageValue": 90122.64,
+  "pricePosition": 2.9,
+  "liquidityScore": 97.3,
+  "priceStrengthScore": 13.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 53,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.31% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.54% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 2.9 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

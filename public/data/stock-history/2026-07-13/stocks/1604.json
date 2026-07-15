@@ -1,0 +1,53 @@
+{
+  "symbol": "1604",
+  "name": "聲寶",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.5,
+    "high": 23.65,
+    "low": 23.4,
+    "close": 23.45,
+    "change": 0.05,
+    "changePercent": 0.21,
+    "tradeVolume": 420740,
+    "transactionCount": 294,
+    "tradeValue": 9877696,
+    "peRatio": 14.21
+  },
+  "dailyRangePercent": 1.07,
+  "turnoverAverageValue": 33597.61,
+  "pricePosition": 20,
+  "liquidityScore": 35.2,
+  "priceStrengthScore": 36,
+  "valuationRiskScore": 20,
+  "snapshotScore": 44.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

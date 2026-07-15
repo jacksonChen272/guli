@@ -1,0 +1,4 @@
+import { ShieldAlert } from 'lucide-react'
+import type { DecisionRisk } from '../../types/decision'
+import { Badge } from '../ui/Badge'
+export function DecisionRiskPanel({risks}:{risks:DecisionRisk[]}){if(!risks.length)return <p className="rounded-xl border border-white/[.06] p-4 text-xs text-slate-500">目前沒有規則型風險項目。</p>;return <div className="space-y-2">{risks.map((risk)=><div key={risk.code} className="rounded-xl border border-amber-400/15 bg-amber-400/[.025] p-3"><div className="flex items-center justify-between gap-3"><span className="flex items-center gap-2 text-xs text-white"><ShieldAlert size={14} className="text-amber-300"/>{risk.title}</span><Badge tone={risk.severity==='high'?'up':'warning'}>{risk.severity}</Badge></div><p className="mt-2 text-[10px] leading-5 text-slate-500">{risk.explanation}</p></div>)}</div>}

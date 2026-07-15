@@ -1,0 +1,76 @@
+{
+  "symbol": "7799",
+  "name": "禾榮科",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 439,
+    "high": 441,
+    "low": 397,
+    "close": 402.5,
+    "change": -33,
+    "changePercent": -7.58,
+    "tradeVolume": 1332154,
+    "transactionCount": 2223,
+    "tradeValue": 545605707,
+    "peRatio": null
+  },
+  "dailyRangePercent": 11.08,
+  "turnoverAverageValue": 245436.67,
+  "pricePosition": 12.5,
+  "liquidityScore": 71.7,
+  "priceStrengthScore": 15.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 40.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.58% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.08% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

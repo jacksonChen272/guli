@@ -1,0 +1,53 @@
+{
+  "symbol": "1410",
+  "name": "南染",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 26.65,
+    "high": 26.65,
+    "low": 25.4,
+    "close": 25.4,
+    "change": -0.85,
+    "changePercent": -3.24,
+    "tradeVolume": 158403,
+    "transactionCount": 180,
+    "tradeValue": 4092614,
+    "peRatio": 47.04
+  },
+  "dailyRangePercent": 4.92,
+  "turnoverAverageValue": 22736.74,
+  "pricePosition": 0,
+  "liquidityScore": 22.1,
+  "priceStrengthScore": 21.2,
+  "valuationRiskScore": 75,
+  "snapshotScore": 22.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

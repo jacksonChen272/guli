@@ -13,6 +13,9 @@ import { MarketRepository } from './MarketRepository'
 import { StockRepository } from './StockRepository'
 import { WatchlistRepository } from './WatchlistRepository'
 import { SnapshotRepository } from './SnapshotRepository'
+import { IndustrySnapshotRepository } from './IndustrySnapshotRepository'
+import { StockSnapshotRepository } from './StockSnapshotRepository'
+import { DecisionRepository } from './DecisionRepository'
 
 export class RepositoryHub {
   private cache = new MemoryCache()
@@ -23,6 +26,9 @@ export class RepositoryHub {
   institutions!: InstitutionRepository
   watchlist!: WatchlistRepository
   readonly snapshots = new SnapshotRepository()
+  readonly industrySnapshots = new IndustrySnapshotRepository()
+  readonly stockSnapshots = new StockSnapshotRepository()
+  decisions!: DecisionRepository
 
   constructor() { this.rebuild(); this.registerRefreshTasks() }
   private rebuild() {
@@ -34,6 +40,7 @@ export class RepositoryHub {
     this.industries = new IndustryRepository(mockProvider, this.cache, this.policy)
     this.institutions = new InstitutionRepository(mockProvider, this.cache, this.policy)
     this.watchlist = new WatchlistRepository(this.cache, this.policy)
+    this.decisions = new DecisionRepository(this.snapshots, this.industrySnapshots, this.stockSnapshots, this.stocks)
   }
   private registerRefreshTasks() {
     refreshScheduler.register({ id: 'market-overview', intervalMs: this.policy.getTtl('market'), run: async () => { await this.market.refresh(undefined) } })

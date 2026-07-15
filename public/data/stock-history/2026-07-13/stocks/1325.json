@@ -1,0 +1,55 @@
+{
+  "symbol": "1325",
+  "name": "恆大",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 24.55,
+    "high": 24.55,
+    "low": 24.15,
+    "close": 24.25,
+    "change": -0.2,
+    "changePercent": -0.82,
+    "tradeVolume": 133830,
+    "transactionCount": 132,
+    "tradeValue": 3248894,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.66,
+  "turnoverAverageValue": 24612.83,
+  "pricePosition": 25,
+  "liquidityScore": 19.2,
+  "priceStrengthScore": 35.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 28.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "symbol": "6645",
+  "name": "金萬林-創",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.3,
+    "high": 16.45,
+    "low": 15.25,
+    "close": 15.6,
+    "change": -0.2,
+    "changePercent": -1.27,
+    "tradeVolume": 25021,
+    "transactionCount": 19,
+    "tradeValue": 398280,
+    "peRatio": null
+  },
+  "dailyRangePercent": 7.87,
+  "turnoverAverageValue": 20962.11,
+  "pricePosition": 29.2,
+  "liquidityScore": 3.5,
+  "priceStrengthScore": 35.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 21.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 3.5 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

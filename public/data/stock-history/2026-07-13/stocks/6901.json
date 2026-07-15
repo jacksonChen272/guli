@@ -1,0 +1,76 @@
+{
+  "symbol": "6901",
+  "name": "鑽石投資",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.8,
+    "high": 20.8,
+    "low": 18.7,
+    "close": 18.75,
+    "change": -2,
+    "changePercent": -9.64,
+    "tradeVolume": 9787884,
+    "transactionCount": 4993,
+    "tradeValue": 188986450,
+    "peRatio": null
+  },
+  "dailyRangePercent": 11.23,
+  "turnoverAverageValue": 37850.28,
+  "pricePosition": 2.4,
+  "liquidityScore": 79.2,
+  "priceStrengthScore": 7.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 39,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.64% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.23% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 2.4 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

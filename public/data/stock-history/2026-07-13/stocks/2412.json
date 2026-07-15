@@ -1,0 +1,53 @@
+{
+  "symbol": "2412",
+  "name": "中華電",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 134.5,
+    "high": 135.5,
+    "low": 133,
+    "close": 133.5,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 20063542,
+    "transactionCount": 12938,
+    "tradeValue": 2680976494,
+    "peRatio": 26.54
+  },
+  "dailyRangePercent": 1.88,
+  "turnoverAverageValue": 207217.23,
+  "pricePosition": 20,
+  "liquidityScore": 94,
+  "priceStrengthScore": 35.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 57.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

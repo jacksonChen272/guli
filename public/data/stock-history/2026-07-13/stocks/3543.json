@@ -1,0 +1,76 @@
+{
+  "symbol": "3543",
+  "name": "州巧",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 33.3,
+    "high": 33.4,
+    "low": 30.3,
+    "close": 30.75,
+    "change": -2.65,
+    "changePercent": -7.93,
+    "tradeVolume": 2288817,
+    "transactionCount": 1510,
+    "tradeValue": 72485247,
+    "peRatio": null
+  },
+  "dailyRangePercent": 10.23,
+  "turnoverAverageValue": 48003.47,
+  "pricePosition": 14.5,
+  "liquidityScore": 64.3,
+  "priceStrengthScore": 15.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 37,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.93% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.23% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.5 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

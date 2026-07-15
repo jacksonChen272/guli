@@ -1,0 +1,53 @@
+{
+  "symbol": "2911",
+  "name": "麗嬰房",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 8,
+    "high": 8,
+    "low": 7.46,
+    "close": 7.5,
+    "change": -0.34,
+    "changePercent": -4.34,
+    "tradeVolume": 342142,
+    "transactionCount": 280,
+    "tradeValue": 2629761,
+    "peRatio": 1.95
+  },
+  "dailyRangePercent": 7.24,
+  "turnoverAverageValue": 9392,
+  "pricePosition": 7.4,
+  "liquidityScore": 26.3,
+  "priceStrengthScore": 21.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 34.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

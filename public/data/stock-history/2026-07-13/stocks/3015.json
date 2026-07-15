@@ -1,0 +1,53 @@
+{
+  "symbol": "3015",
+  "name": "全漢",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 64.1,
+    "high": 65.7,
+    "low": 62.6,
+    "close": 63.2,
+    "change": -1,
+    "changePercent": -1.56,
+    "tradeVolume": 1251593,
+    "transactionCount": 991,
+    "tradeValue": 79590454,
+    "peRatio": 31.13
+  },
+  "dailyRangePercent": 4.95,
+  "turnoverAverageValue": 80313.27,
+  "pricePosition": 19.4,
+  "liquidityScore": 59.4,
+  "priceStrengthScore": 31.8,
+  "valuationRiskScore": 55,
+  "snapshotScore": 44.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 19.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

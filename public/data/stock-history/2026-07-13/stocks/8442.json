@@ -1,0 +1,53 @@
+{
+  "symbol": "8442",
+  "name": "威宏-KY",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 45.5,
+    "high": 45.9,
+    "low": 43.8,
+    "close": 44,
+    "change": -1.5,
+    "changePercent": -3.3,
+    "tradeVolume": 146774,
+    "transactionCount": 130,
+    "tradeValue": 6525944,
+    "peRatio": 24.58
+  },
+  "dailyRangePercent": 4.79,
+  "turnoverAverageValue": 50199.57,
+  "pricePosition": 9.5,
+  "liquidityScore": 22.9,
+  "priceStrengthScore": 24.4,
+  "valuationRiskScore": 35,
+  "snapshotScore": 32,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

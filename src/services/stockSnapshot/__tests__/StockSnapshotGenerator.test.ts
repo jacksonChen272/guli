@@ -1,0 +1,19 @@
+import { describe, expect, it } from 'vitest'
+import { StockSnapshotGenerator } from '../StockSnapshotGenerator'
+import type { OfficialStockDailyDataset, OfficialStockDailyRecord } from '../../../types/officialStockData'
+const record=(overrides:Partial<OfficialStockDailyRecord>={}):OfficialStockDailyRecord=>({symbol:'2330',name:'台積電',tradeDate:'2026-07-13',market:'TWSE',instrumentType:'stock',tradeVolume:10_000_000,transactionCount:20_000,tradeValue:20_000_000_000,open:100,high:110,low:98,close:108,changeDirection:'up',change:8,bidPrice:null,bidVolume:null,askPrice:null,askVolume:null,peRatio:25,source:'TWSE',fetchedAt:'2026-07-14T08:00:00.000Z',status:'official',warnings:[],...overrides})
+const dataset=(records:OfficialStockDailyRecord[]):OfficialStockDailyDataset=>({schemaVersion:'1.0',market:'TWSE',tradeDate:'2026-07-13',fetchedAt:'2026-07-14T08:00:00.000Z',records,source:{name:'TWSE',endpoint:'https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL'},status:'official',warnings:[]})
+describe('StockSnapshotGenerator',()=>{const generator=new StockSnapshotGenerator()
+ it('generates a valid official stock snapshot',()=>expect(generator.generate(dataset([record()])).records[0].symbol).toBe('2330'))
+ it('keeps only stock instruments',()=>expect(generator.generate(dataset([record(),record({symbol:'0050',instrumentType:'etf'})])).records).toHaveLength(1))
+ it('excludes invalid records',()=>expect(generator.generate(dataset([record({status:'invalid'})])).records).toHaveLength(0))
+ it('keeps every score within 0 to 100',()=>{const item=generator.generate(dataset([record()])).records[0];[item.snapshotScore,item.priceStrengthScore,item.liquidityScore,item.valuationRiskScore].forEach((score)=>expect(score).toBeGreaterThanOrEqual(0));[item.snapshotScore,item.priceStrengthScore,item.liquidityScore,item.valuationRiskScore].forEach((score)=>expect(score).toBeLessThanOrEqual(100))})
+ it('scores an up day above a down day',()=>{const rows=generator.generate(dataset([record({symbol:'1111'}),record({symbol:'2222',open:108,close:100,change:-8,changeDirection:'down'})])).records;expect(rows[0].priceStrengthScore).toBeGreaterThan(rows[1].priceStrengthScore!)})
+ it('scores a close near high above a close near low',()=>{const rows=generator.generate(dataset([record({symbol:'1111',change:0,close:109}),record({symbol:'2222',change:0,close:99})])).records;expect(rows[0].priceStrengthScore).toBeGreaterThan(rows[1].priceStrengthScore!)})
+ it('uses cross-sectional percentiles for liquidity',()=>{const rows=generator.generate(dataset([record({symbol:'1111'}),record({symbol:'2222',tradeVolume:10,tradeValue:100,transactionCount:2})])).records;expect(rows[0].liquidityScore).toBeGreaterThan(rows[1].liquidityScore!)})
+ it('raises valuation risk for a high PE',()=>{const rows=generator.generate(dataset([record({symbol:'1111',peRatio:15}),record({symbol:'2222',peRatio:80})])).records;expect(rows[1].valuationRiskScore).toBeGreaterThan(rows[0].valuationRiskScore!)})
+ it('does not turn missing PE into zero',()=>expect(generator.generate(dataset([record({peRatio:null})])).records[0].valuationRiskScore).toBeNull())
+ it('emits missing_pe risk',()=>expect(generator.generate(dataset([record({peRatio:null})])).records[0].risks.map((item)=>item.code)).toContain('missing_pe'))
+ it('emits high PE risk without an industry claim',()=>{const item=generator.generate(dataset([record({peRatio:80})])).records[0];expect(item.risks.map((entry)=>entry.code)).toContain('unusually_high_pe');expect(item.risks.find((entry)=>entry.code==='unusually_high_pe')?.reason).toContain('未做產業比較')})
+ it('emits extreme move and wide-range risks deterministically',()=>{const codes=generator.generate(dataset([record({open:100,low:90,high:112,close:110,change:10})])).records[0].risks.map((item)=>item.code);expect(codes).toContain('extreme_daily_gain');expect(codes).toContain('wide_daily_range')})
+})

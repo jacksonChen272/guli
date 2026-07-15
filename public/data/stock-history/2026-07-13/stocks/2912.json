@@ -1,0 +1,53 @@
+{
+  "symbol": "2912",
+  "name": "統一超",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 240,
+    "high": 244,
+    "low": 239,
+    "close": 239.5,
+    "change": -1.5,
+    "changePercent": -0.62,
+    "tradeVolume": 2352106,
+    "transactionCount": 2305,
+    "tradeValue": 565690379,
+    "peRatio": 21.83
+  },
+  "dailyRangePercent": 2.09,
+  "turnoverAverageValue": 245418.82,
+  "pricePosition": 10,
+  "liquidityScore": 75.7,
+  "priceStrengthScore": 30.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 53.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

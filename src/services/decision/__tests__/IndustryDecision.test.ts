@@ -1,0 +1,4 @@
+import { describe,expect,it } from 'vitest'
+import { decisionEngine } from '../DecisionEngine'
+import { industryItem } from './decisionTestFixtures'
+describe('industry decision',()=>{it('strong industry is scored above weak industry',()=>expect(decisionEngine.industry(industryItem(),'2026-07-13').score).toBeGreaterThan(decisionEngine.industry(industryItem({strengthScore:20,momentumScore:20,capitalFlowScore:20,breadthScore:20,riskScore:80}),'2026-07-13').score!));it('rank trend uses actual rank change',()=>expect(decisionEngine.industry(industryItem({rankChange:2}),'2026-07-13').factors.find((item)=>item.code==='rank_trend')!.normalizedScore).toBe(66));it('missing rank history triggers normalization',()=>expect(decisionEngine.industry(industryItem({rankChange:null,previousRank:null}),'2026-07-13').trace.normalizationApplied).toBe(true))})

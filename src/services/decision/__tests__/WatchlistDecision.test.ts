@@ -1,0 +1,4 @@
+import { describe,expect,it } from 'vitest'
+import { decisionEngine } from '../DecisionEngine'
+import { stockSnapshot } from './decisionTestFixtures'
+describe('watchlist decision',()=>{it('aggregates stock decisions',()=>{const rows=[decisionEngine.stock(stockSnapshot({symbol:'1111'}),null,null,null),decisionEngine.stock(stockSnapshot({symbol:'2222'}),null,null,null)];expect(decisionEngine.watchlist(rows).score).not.toBeNull()});it('reflects high-risk holdings',()=>{const risky=decisionEngine.stock(stockSnapshot({risks:[{code:'wide_daily_range',severity:'high',title:'x',reason:'x',source:'derived'}]}),null,null,null);expect(decisionEngine.watchlist([risky]).risks).toHaveLength(1)});it('empty watchlist returns insufficient data',()=>expect(decisionEngine.watchlist([]).label).toBe('資料不足'))})

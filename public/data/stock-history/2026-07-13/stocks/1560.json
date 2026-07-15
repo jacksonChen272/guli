@@ -1,0 +1,60 @@
+{
+  "symbol": "1560",
+  "name": "中砂",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 727,
+    "high": 727,
+    "low": 695,
+    "close": 700,
+    "change": -9,
+    "changePercent": -1.27,
+    "tradeVolume": 721561,
+    "transactionCount": 1668,
+    "tradeValue": 511795162,
+    "peRatio": 69.03
+  },
+  "dailyRangePercent": 4.6,
+  "turnoverAverageValue": 306831.63,
+  "pricePosition": 15.6,
+  "liquidityScore": 66.9,
+  "priceStrengthScore": 31.1,
+  "valuationRiskScore": 90,
+  "snapshotScore": 39.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.6 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 69.03 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

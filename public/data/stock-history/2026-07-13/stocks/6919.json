@@ -1,0 +1,55 @@
+{
+  "symbol": "6919",
+  "name": "康霈*",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 108,
+    "high": 108.5,
+    "low": 105.5,
+    "close": 107.5,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 4953364,
+    "transactionCount": 2996,
+    "tradeValue": 530263459,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.84,
+  "turnoverAverageValue": 176990.47,
+  "pricePosition": 66.7,
+  "liquidityScore": 79.7,
+  "priceStrengthScore": 51.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 64,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

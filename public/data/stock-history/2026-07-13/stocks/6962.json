@@ -1,0 +1,53 @@
+{
+  "symbol": "6962",
+  "name": "奕力-KY",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 36.75,
+    "high": 36.75,
+    "low": 34.5,
+    "close": 34.9,
+    "change": -1.05,
+    "changePercent": -2.92,
+    "tradeVolume": 3543010,
+    "transactionCount": 2264,
+    "tradeValue": 124595319,
+    "peRatio": 23.9
+  },
+  "dailyRangePercent": 6.52,
+  "turnoverAverageValue": 55033.27,
+  "pricePosition": 17.8,
+  "liquidityScore": 71,
+  "priceStrengthScore": 28.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 50.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

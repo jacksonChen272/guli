@@ -1,0 +1,67 @@
+{
+  "symbol": "6197",
+  "name": "佳必琪",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 364,
+    "high": 364,
+    "low": 324.5,
+    "close": 328.5,
+    "change": -30,
+    "changePercent": -8.37,
+    "tradeVolume": 4809830,
+    "transactionCount": 8701,
+    "tradeValue": 1613649304,
+    "peRatio": 32.05
+  },
+  "dailyRangePercent": 12.17,
+  "turnoverAverageValue": 185455.61,
+  "pricePosition": 10.1,
+  "liquidityScore": 86.7,
+  "priceStrengthScore": 13.2,
+  "valuationRiskScore": 55,
+  "snapshotScore": 45.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.37% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 12.17% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

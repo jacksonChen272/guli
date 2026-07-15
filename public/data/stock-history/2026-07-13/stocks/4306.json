@@ -1,0 +1,53 @@
+{
+  "symbol": "4306",
+  "name": "炎洲",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 15,
+    "high": 15.1,
+    "low": 14.7,
+    "close": 14.75,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 1801512,
+    "transactionCount": 907,
+    "tradeValue": 26791334,
+    "peRatio": 38.82
+  },
+  "dailyRangePercent": 2.72,
+  "turnoverAverageValue": 29538.41,
+  "pricePosition": 12.5,
+  "liquidityScore": 54.4,
+  "priceStrengthScore": 32.9,
+  "valuationRiskScore": 55,
+  "snapshotScore": 42.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

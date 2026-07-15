@@ -1,0 +1,53 @@
+{
+  "symbol": "2528",
+  "name": "皇普",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 22.4,
+    "high": 22.4,
+    "low": 21.25,
+    "close": 21.4,
+    "change": -1.05,
+    "changePercent": -4.68,
+    "tradeVolume": 1016644,
+    "transactionCount": 735,
+    "tradeValue": 21979066,
+    "peRatio": 8.95
+  },
+  "dailyRangePercent": 5.41,
+  "turnoverAverageValue": 29903.49,
+  "pricePosition": 13,
+  "liquidityScore": 48.9,
+  "priceStrengthScore": 22.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 43.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 13.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

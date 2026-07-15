@@ -1,0 +1,74 @@
+{
+  "symbol": "2484",
+  "name": "希華",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 91.3,
+    "high": 93.6,
+    "low": 83.7,
+    "close": 84.3,
+    "change": -6.4,
+    "changePercent": -7.06,
+    "tradeVolume": 36599637,
+    "transactionCount": 23977,
+    "tradeValue": 3219595065,
+    "peRatio": 113.92
+  },
+  "dailyRangePercent": 11.83,
+  "turnoverAverageValue": 134278.48,
+  "pricePosition": 6.1,
+  "liquidityScore": 96.1,
+  "priceStrengthScore": 14.8,
+  "valuationRiskScore": 90,
+  "snapshotScore": 42.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.06% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.83% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 113.92 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

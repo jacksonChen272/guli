@@ -1,0 +1,60 @@
+{
+  "symbol": "6641",
+  "name": "基士德-KY",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.05,
+    "high": 19.05,
+    "low": 18.05,
+    "close": 18.2,
+    "change": -0.35,
+    "changePercent": -1.89,
+    "tradeVolume": 99309,
+    "transactionCount": 68,
+    "tradeValue": 1810938,
+    "peRatio": 37.92
+  },
+  "dailyRangePercent": 5.54,
+  "turnoverAverageValue": 26631.44,
+  "pricePosition": 15,
+  "liquidityScore": 13.1,
+  "priceStrengthScore": 29.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 26.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.1 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

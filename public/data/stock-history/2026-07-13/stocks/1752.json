@@ -1,0 +1,53 @@
+{
+  "symbol": "1752",
+  "name": "南光",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 32.4,
+    "high": 32.4,
+    "low": 31.5,
+    "close": 31.7,
+    "change": -0.1,
+    "changePercent": -0.31,
+    "tradeVolume": 71170,
+    "transactionCount": 89,
+    "tradeValue": 2253397,
+    "peRatio": 15.62
+  },
+  "dailyRangePercent": 2.86,
+  "turnoverAverageValue": 25319.07,
+  "pricePosition": 22.2,
+  "liquidityScore": 13.3,
+  "priceStrengthScore": 35.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 33.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.3 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

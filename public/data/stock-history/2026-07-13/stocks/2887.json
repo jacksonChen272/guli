@@ -1,0 +1,53 @@
+{
+  "symbol": "2887",
+  "name": "台新新光金",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 37.3,
+    "high": 37.75,
+    "low": 35.6,
+    "close": 35.75,
+    "change": -1.1,
+    "changePercent": -2.99,
+    "tradeVolume": 86952795,
+    "transactionCount": 43174,
+    "tradeValue": 3160637001,
+    "peRatio": 17.52
+  },
+  "dailyRangePercent": 6.04,
+  "turnoverAverageValue": 73206.95,
+  "pricePosition": 7,
+  "liquidityScore": 97.1,
+  "priceStrengthScore": 24.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 57.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2387",
+  "name": "精元",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 39.9,
+    "high": 39.95,
+    "low": 38.75,
+    "close": 38.85,
+    "change": -1,
+    "changePercent": -2.51,
+    "tradeVolume": 474947,
+    "transactionCount": 480,
+    "tradeValue": 18568863,
+    "peRatio": 13.63
+  },
+  "dailyRangePercent": 3.1,
+  "turnoverAverageValue": 38685.13,
+  "pricePosition": 8.3,
+  "liquidityScore": 41.4,
+  "priceStrengthScore": 25.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 42.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

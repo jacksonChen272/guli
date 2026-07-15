@@ -17,56 +17,61 @@
     "declineCount": null,
     "unchangedCount": null
   },
+  "stockBreadth": {
+    "strongCount": 74,
+    "weakCount": 705,
+    "highRiskCount": 78
+  },
   "topIndustries": [
     {
       "name": "AI 伺服器",
-      "changePercent": 3.4,
-      "capitalFlow": 82,
-      "momentum": 76,
+      "changePercent": 2.6366666666666667,
+      "capitalFlow": 96,
+      "momentum": 100,
       "rank": 1,
-      "source": "mock"
+      "source": "derived"
     },
     {
       "name": "PCB",
-      "changePercent": 2.1,
-      "capitalFlow": 68,
-      "momentum": 64,
+      "changePercent": 3.3533333333333335,
+      "capitalFlow": 80,
+      "momentum": 100,
       "rank": 2,
-      "source": "mock"
+      "source": "derived"
     },
     {
       "name": "散熱",
-      "changePercent": 1.6,
-      "capitalFlow": 57,
-      "momentum": 61,
+      "changePercent": 5.2,
+      "capitalFlow": 80,
+      "momentum": 100,
       "rank": 3,
-      "source": "mock"
+      "source": "derived"
     }
   ],
   "weakIndustries": [
     {
       "name": "航運",
-      "changePercent": -2,
-      "capitalFlow": -54,
-      "momentum": -61,
+      "changePercent": -1.74,
+      "capitalFlow": 21,
+      "momentum": 3,
       "rank": 1,
-      "source": "mock"
+      "source": "derived"
+    },
+    {
+      "name": "被動元件",
+      "changePercent": -0.81,
+      "capitalFlow": 41,
+      "momentum": 40,
+      "rank": 2,
+      "source": "derived"
     },
     {
       "name": "金融",
-      "changePercent": -0.8,
-      "capitalFlow": -21,
-      "momentum": -18,
-      "rank": 2,
-      "source": "mock"
-    },
-    {
-      "name": "生技",
-      "changePercent": -0.4,
-      "capitalFlow": -12,
-      "momentum": -15,
+      "changePercent": 1.07,
+      "capitalFlow": 58,
+      "momentum": 69,
       "rank": 3,
-      "source": "mock"
+      "source": "derived"
     }
   ],
   "risks": [
@@ -102,18 +107,27 @@
       "status": "partial"
     },
     {
-      "id": "guli-analysis",
-      "name": "GULI 集中 Mock Data",
-      "type": "mock",
+      "id": "industry-snapshot",
+      "name": "GULI Industry Snapshot Engine",
+      "type": "derived",
       "fields": [
-        "marketTemperature",
         "topIndustries",
         "weakIndustries"
-      ]
+      ],
+      "tradeDate": "2026-07-13"
+    },
+    {
+      "id": "stock-snapshot",
+      "name": "GULI Stock Snapshot Engine",
+      "type": "derived",
+      "fields": [
+        "stockBreadth"
+      ],
+      "tradeDate": "2026-07-13"
     },
     {
       "id": "guli-rules",
-      "name": "GULI 規則引擎",
+      "name": "GULI Rules Engine",
       "type": "derived",
       "fields": [
         "marketStatus",
@@ -127,6 +141,7 @@
   "warnings": [
     "漲跌家數端點沒有同交易日股票統計，相關欄位保留 null。",
     "TWSE 官方資料缺少完整漲跌家數，本筆資料為部分資料。",
-    "產業、法人、訊號與市場溫度仍使用模擬或規則推導資料。"
+    "產業、個股與法人欄位目前為集中管理的模擬資料；TWSE 僅提供本快照交易日期。",
+    "Market temperature and non-official fields still use mock data and deterministic rules."
   ]
 }

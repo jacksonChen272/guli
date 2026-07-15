@@ -1,0 +1,53 @@
+{
+  "symbol": "1439",
+  "name": "雋揚",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.5,
+    "high": 24.85,
+    "low": 23.5,
+    "close": 24.8,
+    "change": 1.3,
+    "changePercent": 5.53,
+    "tradeVolume": 47264,
+    "transactionCount": 30,
+    "tradeValue": 1134034,
+    "peRatio": 8.05
+  },
+  "dailyRangePercent": 5.74,
+  "turnoverAverageValue": 37801.13,
+  "pricePosition": 96.3,
+  "liquidityScore": 8.1,
+  "priceStrengthScore": 82.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 56.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.1 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

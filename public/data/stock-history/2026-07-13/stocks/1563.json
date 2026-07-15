@@ -1,0 +1,67 @@
+{
+  "symbol": "1563",
+  "name": "巧新",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 68.5,
+    "high": 69.5,
+    "low": 63.8,
+    "close": 64.3,
+    "change": -3.4,
+    "changePercent": -5.02,
+    "tradeVolume": 2252054,
+    "transactionCount": 1292,
+    "tradeValue": 148026475,
+    "peRatio": 146.14
+  },
+  "dailyRangePercent": 8.93,
+  "turnoverAverageValue": 114571.58,
+  "pricePosition": 8.8,
+  "liquidityScore": 67,
+  "priceStrengthScore": 20.3,
+  "valuationRiskScore": 90,
+  "snapshotScore": 34.6,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.93% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.8 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 146.14 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

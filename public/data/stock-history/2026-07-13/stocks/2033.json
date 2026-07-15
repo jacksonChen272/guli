@@ -1,0 +1,60 @@
+{
+  "symbol": "2033",
+  "name": "佳大",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 15.8,
+    "high": 15.8,
+    "low": 15.3,
+    "close": 15.3,
+    "change": -0.5,
+    "changePercent": -3.16,
+    "tradeVolume": 119130,
+    "transactionCount": 82,
+    "tradeValue": 1848984,
+    "peRatio": 46.36
+  },
+  "dailyRangePercent": 3.27,
+  "turnoverAverageValue": 22548.59,
+  "pricePosition": 0,
+  "liquidityScore": 14.4,
+  "priceStrengthScore": 21.4,
+  "valuationRiskScore": 75,
+  "snapshotScore": 19.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.4 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

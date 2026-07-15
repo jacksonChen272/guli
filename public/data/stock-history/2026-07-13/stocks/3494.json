@@ -1,0 +1,62 @@
+{
+  "symbol": "3494",
+  "name": "誠研",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 7.8,
+    "high": 7.93,
+    "low": 7.7,
+    "close": 7.84,
+    "change": 0.06,
+    "changePercent": 0.77,
+    "tradeVolume": 91708,
+    "transactionCount": 95,
+    "tradeValue": 712885,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.99,
+  "turnoverAverageValue": 7504.05,
+  "pricePosition": 60.9,
+  "liquidityScore": 10.1,
+  "priceStrengthScore": 59.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 37.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.1 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

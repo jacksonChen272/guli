@@ -1,0 +1,53 @@
+{
+  "symbol": "1612",
+  "name": "宏泰",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 33.65,
+    "high": 33.95,
+    "low": 32.65,
+    "close": 32.8,
+    "change": -0.75,
+    "changePercent": -2.24,
+    "tradeVolume": 1714630,
+    "transactionCount": 1102,
+    "tradeValue": 56755420,
+    "peRatio": 10.93
+  },
+  "dailyRangePercent": 3.98,
+  "turnoverAverageValue": 51502.2,
+  "pricePosition": 11.5,
+  "liquidityScore": 59.4,
+  "priceStrengthScore": 27.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 49.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

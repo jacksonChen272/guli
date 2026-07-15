@@ -1,0 +1,55 @@
+{
+  "symbol": "1909",
+  "name": "榮成",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.25,
+    "high": 10.45,
+    "low": 10.15,
+    "close": 10.25,
+    "change": -0.05,
+    "changePercent": -0.49,
+    "tradeVolume": 4285957,
+    "transactionCount": 1023,
+    "tradeValue": 44119212,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.96,
+  "turnoverAverageValue": 43127.28,
+  "pricePosition": 33.3,
+  "liquidityScore": 63.1,
+  "priceStrengthScore": 43.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 51.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

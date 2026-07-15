@@ -1,0 +1,60 @@
+{
+  "symbol": "6531",
+  "name": "愛普*",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 931,
+    "high": 947,
+    "low": 888,
+    "close": 893,
+    "change": -29,
+    "changePercent": -3.15,
+    "tradeVolume": 2260805,
+    "transactionCount": 4690,
+    "tradeValue": 2068726844,
+    "peRatio": 90.75
+  },
+  "dailyRangePercent": 6.64,
+  "turnoverAverageValue": 441093.14,
+  "pricePosition": 8.5,
+  "liquidityScore": 82.5,
+  "priceStrengthScore": 24.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 41.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.5 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 90.75 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

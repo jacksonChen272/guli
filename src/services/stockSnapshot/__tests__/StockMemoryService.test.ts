@@ -1,0 +1,5 @@
+import { describe,expect,it } from 'vitest'
+import { StockMemoryService } from '../StockMemoryService'
+import type { StockSnapshotItem } from '../../../types/stockSnapshot'
+const item=(date:string,close:number):StockSnapshotItem=>({symbol:'2330',name:'台積電',tradeDate:date,market:'TWSE',instrumentType:'stock',quote:{open:close,high:close,low:close,close,change:0,changePercent:0,tradeVolume:100,transactionCount:10,tradeValue:1000,peRatio:20},dailyRangePercent:0,turnoverAverageValue:100,pricePosition:50,liquidityScore:50,priceStrengthScore:50,valuationRiskScore:35,snapshotScore:50,status:'中性',risks:[],tags:[],sources:[],warnings:[]})
+describe('StockMemoryService',()=>{const service=new StockMemoryService();it('uses actual snapshots only',()=>expect(service.calculate('2330',[item('2026-07-12',100),item('2026-07-13',110)],5).actualDays).toBe(2));it('does not claim sufficient history',()=>expect(service.calculate('2330',[item('2026-07-13',100)],5).sufficient).toBe(false));it('calculates cumulative change',()=>expect(service.calculate('2330',[item('2026-07-12',100),item('2026-07-13',110)],2).cumulativeChangePercent).toBe(10))})

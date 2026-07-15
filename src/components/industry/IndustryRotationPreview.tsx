@@ -1,0 +1,16 @@
+import { ArrowDown, ArrowRight, ArrowUp } from 'lucide-react'
+import { useEffect, useMemo, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { industrySnapshotService } from '../../services/industrySnapshot/IndustrySnapshotService'
+import type { IndustrySnapshot, IndustrySnapshotDiff } from '../../types/industrySnapshot'
+import { Button } from '../ui/Button'
+import { Card } from '../ui/Card'
+
+export function IndustryRotationPreview() {
+  const navigate = useNavigate(); const [snapshot, setSnapshot] = useState<IndustrySnapshot | null>(null); const [diff, setDiff] = useState<IndustrySnapshotDiff | null>(null)
+  useEffect(() => { let active = true; void industrySnapshotService.getLatest().then(async (value) => { if (!active) return; setSnapshot(value); setDiff(await industrySnapshotService.getDiff(value.tradeDate)) }).catch(() => undefined); return () => { active = false } }, [])
+  const movers = useMemo(() => [...(diff?.changes ?? [])].filter((item) => item.rankChange !== null && item.rankChange !== 0), [diff])
+  if (!snapshot) return <Card title="產業輪動快照" eyebrow="INDUSTRY SNAPSHOT"><div className="p-5 text-xs text-slate-600">正在讀取產業快照，若資料不存在將保留原有市場功能。</div></Card>
+  const list = (title: string, items: typeof snapshot.industries, weak = false) => <div><p className="mb-2 text-[10px] font-medium text-slate-500">{title}</p><div className="space-y-2">{items.map((item) => <button key={item.industryId} onClick={() => navigate(`/industries/${item.industryId}`)} className="flex min-h-11 w-full items-center justify-between rounded-xl border border-white/[.05] bg-white/[.015] px-3 text-left transition hover:border-brand-400/20"><span className="text-xs text-slate-200">#{item.rank} {item.industryName}</span><span className={`mono text-xs ${weak ? 'text-emerald-300' : 'text-red-300'}`}>{item.strengthScore}</span></button>)}</div></div>
+  return <Card title="產業輪動快照" eyebrow={`INDUSTRY SNAPSHOT · ${snapshot.tradeDate}`} action={<Button size="sm" variant="ghost" onClick={() => navigate('/industries')} icon={<ArrowRight size={13}/>}>完整產業分析</Button>}><div className="grid gap-5 p-5 md:grid-cols-2 xl:grid-cols-4">{list('前三強產業', snapshot.industries.slice(0, 3))}{list('後三弱產業', snapshot.industries.slice(-3).reverse(), true)}<div><p className="mb-2 text-[10px] font-medium text-slate-500">排名變化</p><div className="space-y-2">{movers.slice(0, 4).map((item) => <div key={item.industryId} className="flex min-h-11 items-center justify-between rounded-xl border border-white/[.05] px-3"><span className="text-xs text-slate-300">{item.industryName}</span><span className={item.rankChange! > 0 ? 'text-red-300' : 'text-emerald-300'}>{item.rankChange! > 0 ? <ArrowUp size={14}/> : <ArrowDown size={14}/>}</span></div>)}{!movers.length && <p className="text-[10px] text-slate-600">尚無前期資料可比較。</p>}</div></div><div><p className="mb-2 text-[10px] font-medium text-slate-500">新進前五名</p><div className="flex flex-wrap gap-2">{diff?.enteredTopFive.length ? diff.enteredTopFive.map((name) => <span key={name} className="rounded-lg bg-blue-400/10 px-2.5 py-2 text-[10px] text-blue-300">{name}</span>) : <span className="text-[10px] text-slate-600">目前無新進產業</span>}</div><p className="mt-5 text-[10px] leading-5 text-slate-600">產業分數由資金流、動能、漲跌家數、相對強度與風險調整依固定權重計算。</p></div></div></Card>
+}

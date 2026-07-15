@@ -1,0 +1,53 @@
+{
+  "symbol": "6024",
+  "name": "群益期",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 65,
+    "high": 65.4,
+    "low": 63.7,
+    "close": 63.8,
+    "change": -0.7,
+    "changePercent": -1.09,
+    "tradeVolume": 477198,
+    "transactionCount": 961,
+    "tradeValue": 30723153,
+    "peRatio": 10.69
+  },
+  "dailyRangePercent": 2.67,
+  "turnoverAverageValue": 31969.98,
+  "pricePosition": 5.9,
+  "liquidityScore": 47,
+  "priceStrengthScore": 28.1,
+  "valuationRiskScore": 20,
+  "snapshotScore": 45.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.9 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

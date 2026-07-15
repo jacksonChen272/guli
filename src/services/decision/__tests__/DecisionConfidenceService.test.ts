@@ -1,0 +1,5 @@
+import { describe,expect,it } from 'vitest'
+import { DecisionConfidenceService } from '../DecisionConfidenceService'
+import { factor } from './decisionTestFixtures'
+const input=(factors= [factor('a',70,1,'official')])=>({entityType:'market' as const,entityId:'x',entityName:'x',tradeDate:'2026-07-13',factors,risks:[],sources:[],warnings:[]})
+describe('DecisionConfidenceService',()=>{const service=new DecisionConfidenceService();it('stays in 0-100',()=>expect(service.calculate({...input(),warnings:Array(100).fill('x')}).score).toBeGreaterThanOrEqual(0));it('penalizes mock data',()=>expect(service.calculate(input([factor('a',70,1,'mock')])).score).toBeLessThan(service.calculate(input()).score));it('penalizes fallback and stale data',()=>expect(service.calculate({...input([factor('a',70,1,'fallback')]),stale:true}).score).toBeLessThan(80));it('penalizes missing factors',()=>expect(service.calculate(input([factor('a',null,1,'missing')])).score).toBeLessThan(service.calculate(input()).score))})

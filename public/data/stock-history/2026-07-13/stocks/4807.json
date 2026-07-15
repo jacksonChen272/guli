@@ -1,0 +1,53 @@
+{
+  "symbol": "4807",
+  "name": "日成-KY",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 39.85,
+    "high": 41.4,
+    "low": 39,
+    "close": 41.4,
+    "change": 3.75,
+    "changePercent": 9.96,
+    "tradeVolume": 508338,
+    "transactionCount": 315,
+    "tradeValue": 20884273,
+    "peRatio": 30.22
+  },
+  "dailyRangePercent": 6.15,
+  "turnoverAverageValue": 66299.28,
+  "pricePosition": 100,
+  "liquidityScore": 40.6,
+  "priceStrengthScore": 93.9,
+  "valuationRiskScore": 55,
+  "snapshotScore": 65.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.96% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

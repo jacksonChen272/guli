@@ -1,0 +1,53 @@
+{
+  "symbol": "2317",
+  "name": "鴻海",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 242,
+    "high": 242.5,
+    "low": 236.5,
+    "close": 236.5,
+    "change": -1,
+    "changePercent": -0.42,
+    "tradeVolume": 37504587,
+    "transactionCount": 30781,
+    "tradeValue": 8964234781,
+    "peRatio": 16.8
+  },
+  "dailyRangePercent": 2.54,
+  "turnoverAverageValue": 291226.24,
+  "pricePosition": 0,
+  "liquidityScore": 97.8,
+  "priceStrengthScore": 27.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 59.7,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

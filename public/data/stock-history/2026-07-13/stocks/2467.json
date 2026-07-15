@@ -1,0 +1,60 @@
+{
+  "symbol": "2467",
+  "name": "志聖",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 580,
+    "high": 609,
+    "low": 577,
+    "close": 595,
+    "change": 39,
+    "changePercent": 7.01,
+    "tradeVolume": 2269356,
+    "transactionCount": 4073,
+    "tradeValue": 1348445308,
+    "peRatio": 79.12
+  },
+  "dailyRangePercent": 5.55,
+  "turnoverAverageValue": 331069.31,
+  "pricePosition": 56.3,
+  "liquidityScore": 80.7,
+  "priceStrengthScore": 72,
+  "valuationRiskScore": 90,
+  "snapshotScore": 62.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 7.01% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 79.12 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

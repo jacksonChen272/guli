@@ -1,0 +1,60 @@
+{
+  "symbol": "6753",
+  "name": "龍德造船",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 150,
+    "high": 162.5,
+    "low": 150,
+    "close": 159.5,
+    "change": 11.5,
+    "changePercent": 7.77,
+    "tradeVolume": 6958720,
+    "transactionCount": 6214,
+    "tradeValue": 1096999363,
+    "peRatio": 22.43
+  },
+  "dailyRangePercent": 8.33,
+  "turnoverAverageValue": 176536.75,
+  "pricePosition": 76,
+  "liquidityScore": 85.8,
+  "priceStrengthScore": 80.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 79.3,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 7.77% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.33% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

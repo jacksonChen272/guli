@@ -1,0 +1,60 @@
+{
+  "symbol": "2527",
+  "name": "宏璟",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 43,
+    "high": 46.5,
+    "low": 43,
+    "close": 45.65,
+    "change": 3.05,
+    "changePercent": 7.16,
+    "tradeVolume": 3445397,
+    "transactionCount": 2250,
+    "tradeValue": 156607925,
+    "peRatio": 9
+  },
+  "dailyRangePercent": 8.14,
+  "turnoverAverageValue": 69603.52,
+  "pricePosition": 75.7,
+  "liquidityScore": 71.9,
+  "priceStrengthScore": 79.1,
+  "valuationRiskScore": 20,
+  "snapshotScore": 76.8,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 7.16% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.14% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

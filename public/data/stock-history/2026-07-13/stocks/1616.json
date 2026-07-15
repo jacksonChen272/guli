@@ -1,0 +1,53 @@
+{
+  "symbol": "1616",
+  "name": "億泰",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 22,
+    "high": 22.05,
+    "low": 21.25,
+    "close": 21.25,
+    "change": -0.55,
+    "changePercent": -2.52,
+    "tradeVolume": 454272,
+    "transactionCount": 367,
+    "tradeValue": 9825322,
+    "peRatio": 17.28
+  },
+  "dailyRangePercent": 3.76,
+  "turnoverAverageValue": 26771.99,
+  "pricePosition": 0,
+  "liquidityScore": 36.3,
+  "priceStrengthScore": 22.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 36,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

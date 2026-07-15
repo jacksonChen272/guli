@@ -1,0 +1,53 @@
+{
+  "symbol": "8222",
+  "name": "寶一",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 40.65,
+    "high": 42.5,
+    "low": 40.5,
+    "close": 41.35,
+    "change": 1.35,
+    "changePercent": 3.38,
+    "tradeVolume": 2906469,
+    "transactionCount": 2641,
+    "tradeValue": 121209232,
+    "peRatio": 67.79
+  },
+  "dailyRangePercent": 4.94,
+  "turnoverAverageValue": 45895.2,
+  "pricePosition": 42.5,
+  "liquidityScore": 70.6,
+  "priceStrengthScore": 59,
+  "valuationRiskScore": 90,
+  "snapshotScore": 53.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 67.79 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "5283",
+  "name": "禾聯碩",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 53.5,
+    "high": 53.5,
+    "low": 52.9,
+    "close": 53.3,
+    "change": 0.3,
+    "changePercent": 0.57,
+    "tradeVolume": 52359,
+    "transactionCount": 98,
+    "tradeValue": 2782786,
+    "peRatio": 9.02
+  },
+  "dailyRangePercent": 1.13,
+  "turnoverAverageValue": 28395.78,
+  "pricePosition": 66.7,
+  "liquidityScore": 13.8,
+  "priceStrengthScore": 53.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 44.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.8 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

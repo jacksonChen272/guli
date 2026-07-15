@@ -1,0 +1,69 @@
+{
+  "symbol": "1626",
+  "name": "艾美特-KY",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.8,
+    "high": 10.8,
+    "low": 10.2,
+    "close": 10.25,
+    "change": -0.65,
+    "changePercent": -5.96,
+    "tradeVolume": 78462,
+    "transactionCount": 166,
+    "tradeValue": 819104,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.88,
+  "turnoverAverageValue": 4934.36,
+  "pricePosition": 8.3,
+  "liquidityScore": 11.8,
+  "priceStrengthScore": 18,
+  "valuationRiskScore": null,
+  "snapshotScore": 15.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 11.8 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

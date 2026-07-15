@@ -1,0 +1,60 @@
+{
+  "symbol": "3017",
+  "name": "奇鋐",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 2420,
+    "high": 2420,
+    "low": 2210,
+    "close": 2225,
+    "change": -125,
+    "changePercent": -5.32,
+    "tradeVolume": 2704759,
+    "transactionCount": 24265,
+    "tradeValue": 6140607380,
+    "peRatio": 36.56
+  },
+  "dailyRangePercent": 9.5,
+  "turnoverAverageValue": 253064.39,
+  "pricePosition": 7.1,
+  "liquidityScore": 88.8,
+  "priceStrengthScore": 19,
+  "valuationRiskScore": 55,
+  "snapshotScore": 48.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.50% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

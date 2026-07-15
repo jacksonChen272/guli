@@ -1,0 +1,55 @@
+{
+  "symbol": "1536",
+  "name": "和大",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 55.4,
+    "high": 57.2,
+    "low": 54,
+    "close": 56.1,
+    "change": 1.1,
+    "changePercent": 2,
+    "tradeVolume": 13299989,
+    "transactionCount": 9311,
+    "tradeValue": 746207925,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.93,
+  "turnoverAverageValue": 80142.62,
+  "pricePosition": 65.6,
+  "liquidityScore": 87.5,
+  "priceStrengthScore": 64,
+  "valuationRiskScore": null,
+  "snapshotScore": 74.3,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

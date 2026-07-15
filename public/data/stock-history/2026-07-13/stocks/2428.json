@@ -1,0 +1,67 @@
+{
+  "symbol": "2428",
+  "name": "興勤",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 320.5,
+    "high": 322.5,
+    "low": 292.5,
+    "close": 295.5,
+    "change": -29.5,
+    "changePercent": -9.08,
+    "tradeVolume": 2864189,
+    "transactionCount": 9787,
+    "tradeValue": 870272878,
+    "peRatio": 26.86
+  },
+  "dailyRangePercent": 10.26,
+  "turnoverAverageValue": 88921.31,
+  "pricePosition": 10,
+  "liquidityScore": 82.8,
+  "priceStrengthScore": 11.6,
+  "valuationRiskScore": 55,
+  "snapshotScore": 43.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.08% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.26% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

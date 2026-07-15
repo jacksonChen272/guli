@@ -1,0 +1,60 @@
+{
+  "symbol": "8940",
+  "name": "新天地",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.45,
+    "high": 16.85,
+    "low": 16.2,
+    "close": 16.2,
+    "change": -0.15,
+    "changePercent": -0.92,
+    "tradeVolume": 28725,
+    "transactionCount": 93,
+    "tradeValue": 470027,
+    "peRatio": 25.71
+  },
+  "dailyRangePercent": 4.01,
+  "turnoverAverageValue": 5054.05,
+  "pricePosition": 0,
+  "liquidityScore": 6.1,
+  "priceStrengthScore": 26.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 23,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 6.1 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

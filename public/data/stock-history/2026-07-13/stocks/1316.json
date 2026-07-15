@@ -1,0 +1,55 @@
+{
+  "symbol": "1316",
+  "name": "上曜",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.4,
+    "high": 10.45,
+    "low": 10.2,
+    "close": 10.3,
+    "change": -0.05,
+    "changePercent": -0.48,
+    "tradeVolume": 1237872,
+    "transactionCount": 663,
+    "tradeValue": 12746784,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.45,
+  "turnoverAverageValue": 19225.92,
+  "pricePosition": 40,
+  "liquidityScore": 46.6,
+  "priceStrengthScore": 41.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 43.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

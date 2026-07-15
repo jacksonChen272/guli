@@ -1,0 +1,53 @@
+{
+  "symbol": "8438",
+  "name": "昶昕",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 96,
+    "high": 96.7,
+    "low": 91,
+    "close": 91.8,
+    "change": -2,
+    "changePercent": -2.13,
+    "tradeVolume": 304693,
+    "transactionCount": 1158,
+    "tradeValue": 28281510,
+    "peRatio": 34.9
+  },
+  "dailyRangePercent": 6.26,
+  "turnoverAverageValue": 24422.72,
+  "pricePosition": 14,
+  "liquidityScore": 44.7,
+  "priceStrengthScore": 28.6,
+  "valuationRiskScore": 55,
+  "snapshotScore": 37.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

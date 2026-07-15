@@ -1,0 +1,53 @@
+{
+  "symbol": "6414",
+  "name": "樺漢",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 394.5,
+    "high": 407.5,
+    "low": 384,
+    "close": 388.5,
+    "change": -5.5,
+    "changePercent": -1.4,
+    "tradeVolume": 1800091,
+    "transactionCount": 2230,
+    "tradeValue": 706153841,
+    "peRatio": 18.05
+  },
+  "dailyRangePercent": 6.12,
+  "turnoverAverageValue": 316660.92,
+  "pricePosition": 19.1,
+  "liquidityScore": 75.1,
+  "priceStrengthScore": 32,
+  "valuationRiskScore": 35,
+  "snapshotScore": 53.7,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 19.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

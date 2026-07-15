@@ -1,0 +1,53 @@
+{
+  "symbol": "9945",
+  "name": "潤泰新",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 25.85,
+    "high": 26,
+    "low": 25.3,
+    "close": 25.4,
+    "change": -0.45,
+    "changePercent": -1.74,
+    "tradeVolume": 5728891,
+    "transactionCount": 2454,
+    "tradeValue": 146305605,
+    "peRatio": 7.13
+  },
+  "dailyRangePercent": 2.77,
+  "turnoverAverageValue": 59619.24,
+  "pricePosition": 14.3,
+  "liquidityScore": 73.8,
+  "priceStrengthScore": 29.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 55.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

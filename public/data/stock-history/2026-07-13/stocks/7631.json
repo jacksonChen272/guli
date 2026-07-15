@@ -1,0 +1,60 @@
+{
+  "symbol": "7631",
+  "name": "聚賢研發-創",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 158,
+    "high": 158,
+    "low": 145,
+    "close": 145,
+    "change": -8.5,
+    "changePercent": -5.54,
+    "tradeVolume": 161057,
+    "transactionCount": 301,
+    "tradeValue": 23755320,
+    "peRatio": 20.11
+  },
+  "dailyRangePercent": 8.97,
+  "turnoverAverageValue": 78921.33,
+  "pricePosition": 0,
+  "liquidityScore": 34.7,
+  "priceStrengthScore": 16,
+  "valuationRiskScore": 35,
+  "snapshotScore": 32.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.97% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

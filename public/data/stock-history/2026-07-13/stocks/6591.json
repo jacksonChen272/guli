@@ -1,0 +1,53 @@
+{
+  "symbol": "6591",
+  "name": "動力-KY",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 49.85,
+    "high": 49.85,
+    "low": 47.4,
+    "close": 47.75,
+    "change": -1.65,
+    "changePercent": -3.34,
+    "tradeVolume": 371836,
+    "transactionCount": 422,
+    "tradeValue": 17851674,
+    "peRatio": 11.13
+  },
+  "dailyRangePercent": 5.17,
+  "turnoverAverageValue": 42302.55,
+  "pricePosition": 14.3,
+  "liquidityScore": 39.4,
+  "priceStrengthScore": 26,
+  "valuationRiskScore": 20,
+  "snapshotScore": 41.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

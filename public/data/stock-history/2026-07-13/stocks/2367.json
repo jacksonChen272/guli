@@ -1,0 +1,55 @@
+{
+  "symbol": "2367",
+  "name": "燿華",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 51.6,
+    "high": 52,
+    "low": 50,
+    "close": 50.5,
+    "change": -1,
+    "changePercent": -1.94,
+    "tradeVolume": 14693380,
+    "transactionCount": 9637,
+    "tradeValue": 745139541,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4,
+  "turnoverAverageValue": 77320.7,
+  "pricePosition": 25,
+  "liquidityScore": 87.8,
+  "priceStrengthScore": 32.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 56.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

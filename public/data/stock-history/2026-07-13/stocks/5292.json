@@ -1,0 +1,53 @@
+{
+  "symbol": "5292",
+  "name": "華懋",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 191,
+    "high": 193,
+    "low": 180,
+    "close": 180,
+    "change": -12.5,
+    "changePercent": -6.49,
+    "tradeVolume": 516709,
+    "transactionCount": 1484,
+    "tradeValue": 95136559,
+    "peRatio": 17.8
+  },
+  "dailyRangePercent": 7.22,
+  "turnoverAverageValue": 64108.19,
+  "pricePosition": 0,
+  "liquidityScore": 56.4,
+  "priceStrengthScore": 13.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 39,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

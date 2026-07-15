@@ -1,0 +1,53 @@
+{
+  "symbol": "2915",
+  "name": "潤泰全",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 52,
+    "high": 52.5,
+    "low": 50.4,
+    "close": 50.4,
+    "change": -1.6,
+    "changePercent": -3.08,
+    "tradeVolume": 3559869,
+    "transactionCount": 1673,
+    "tradeValue": 182756460,
+    "peRatio": 5.91
+  },
+  "dailyRangePercent": 4.17,
+  "turnoverAverageValue": 109238.77,
+  "pricePosition": 0,
+  "liquidityScore": 71.9,
+  "priceStrengthScore": 21.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 50.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

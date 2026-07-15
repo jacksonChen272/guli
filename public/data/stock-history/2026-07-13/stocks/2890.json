@@ -1,0 +1,53 @@
+{
+  "symbol": "2890",
+  "name": "永豐金",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 41.75,
+    "high": 41.75,
+    "low": 40,
+    "close": 40.2,
+    "change": -0.25,
+    "changePercent": -0.62,
+    "tradeVolume": 31611423,
+    "transactionCount": 10168,
+    "tradeValue": 1280791773,
+    "peRatio": 19.23
+  },
+  "dailyRangePercent": 4.38,
+  "turnoverAverageValue": 125963,
+  "pricePosition": 11.4,
+  "liquidityScore": 91.9,
+  "priceStrengthScore": 31.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 59.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

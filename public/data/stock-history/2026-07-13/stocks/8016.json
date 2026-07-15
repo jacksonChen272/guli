@@ -1,0 +1,67 @@
+{
+  "symbol": "8016",
+  "name": "矽創",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 367.5,
+    "high": 368,
+    "low": 327,
+    "close": 327,
+    "change": -36,
+    "changePercent": -9.92,
+    "tradeVolume": 3354086,
+    "transactionCount": 8946,
+    "tradeValue": 1133281513,
+    "peRatio": 20.54
+  },
+  "dailyRangePercent": 12.54,
+  "turnoverAverageValue": 126680.25,
+  "pricePosition": 0,
+  "liquidityScore": 84,
+  "priceStrengthScore": 6.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 45.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.92% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 12.54% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

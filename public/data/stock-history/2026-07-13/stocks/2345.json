@@ -1,0 +1,53 @@
+{
+  "symbol": "2345",
+  "name": "智邦",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 2565,
+    "high": 2565,
+    "low": 2400,
+    "close": 2405,
+    "change": -65,
+    "changePercent": -2.63,
+    "tradeVolume": 2111638,
+    "transactionCount": 6270,
+    "tradeValue": 5182175855,
+    "peRatio": 45.48
+  },
+  "dailyRangePercent": 6.88,
+  "turnoverAverageValue": 826503.33,
+  "pricePosition": 3,
+  "liquidityScore": 84.7,
+  "priceStrengthScore": 23.7,
+  "valuationRiskScore": 75,
+  "snapshotScore": 45.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 3.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

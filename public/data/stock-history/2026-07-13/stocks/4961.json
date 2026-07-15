@@ -1,0 +1,53 @@
+{
+  "symbol": "4961",
+  "name": "天鈺",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 178.5,
+    "high": 179.5,
+    "low": 165,
+    "close": 171,
+    "change": -5,
+    "changePercent": -2.84,
+    "tradeVolume": 1324174,
+    "transactionCount": 1666,
+    "tradeValue": 225729489,
+    "peRatio": 20.5
+  },
+  "dailyRangePercent": 8.79,
+  "turnoverAverageValue": 135491.89,
+  "pricePosition": 41.4,
+  "liquidityScore": 67,
+  "priceStrengthScore": 36.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 52.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.79% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

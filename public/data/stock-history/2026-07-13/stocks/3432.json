@@ -1,0 +1,62 @@
+{
+  "symbol": "3432",
+  "name": "台端",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 18.1,
+    "high": 18.3,
+    "low": 17.9,
+    "close": 18.2,
+    "change": 0.1,
+    "changePercent": 0.55,
+    "tradeVolume": 52233,
+    "transactionCount": 36,
+    "tradeValue": 945454,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.23,
+  "turnoverAverageValue": 26262.61,
+  "pricePosition": 75,
+  "liquidityScore": 7.8,
+  "priceStrengthScore": 64,
+  "valuationRiskScore": null,
+  "snapshotScore": 39.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.8 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

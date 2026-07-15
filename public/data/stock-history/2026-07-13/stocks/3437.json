@@ -1,0 +1,62 @@
+{
+  "symbol": "3437",
+  "name": "榮創",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.9,
+    "high": 21.1,
+    "low": 20.2,
+    "close": 20.25,
+    "change": -0.5,
+    "changePercent": -2.41,
+    "tradeVolume": 793422,
+    "transactionCount": 550,
+    "tradeValue": 16184026,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.46,
+  "turnoverAverageValue": 29425.5,
+  "pricePosition": 5.6,
+  "liquidityScore": 44.7,
+  "priceStrengthScore": 25.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 33.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.6 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

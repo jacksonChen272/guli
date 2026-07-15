@@ -1,0 +1,60 @@
+{
+  "symbol": "6719",
+  "name": "力智",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 270,
+    "high": 273.5,
+    "low": 247.5,
+    "close": 252.5,
+    "change": -14,
+    "changePercent": -5.25,
+    "tradeVolume": 3298235,
+    "transactionCount": 4653,
+    "tradeValue": 844649216,
+    "peRatio": 35.17
+  },
+  "dailyRangePercent": 10.51,
+  "turnoverAverageValue": 181527.88,
+  "pricePosition": 19.2,
+  "liquidityScore": 81.4,
+  "priceStrengthScore": 23.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 48,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.51% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 19.2 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

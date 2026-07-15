@@ -1,0 +1,3 @@
+import type { DecisionFactor } from '../../types/decision'
+import { DecisionTraceService } from './DecisionTraceService'
+export class DecisionScoringService { constructor(private readonly traceService=new DecisionTraceService()){} score(factors:DecisionFactor[]){const trace=this.traceService.build(factors);if(trace.availableWeight<=0)return{score:null,factors,trace};const score=Math.max(0,Math.min(100,Math.round((50+trace.totalContribution)*10)/10));const mapped=factors.map((factor)=>({...factor,contribution:factor.normalizedScore===null||factor.weight<=0?null:Math.round(((factor.normalizedScore-50)*(factor.weight/trace.availableWeight))*100)/100}));return{score,factors:mapped,trace}} }

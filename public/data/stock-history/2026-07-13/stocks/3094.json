@@ -1,0 +1,67 @@
+{
+  "symbol": "3094",
+  "name": "聯傑",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 40.6,
+    "high": 41.2,
+    "low": 37.75,
+    "close": 38.4,
+    "change": -1.95,
+    "changePercent": -4.83,
+    "tradeVolume": 2704622,
+    "transactionCount": 4092,
+    "tradeValue": 105451644,
+    "peRatio": 147.69
+  },
+  "dailyRangePercent": 9.14,
+  "turnoverAverageValue": 25770.2,
+  "pricePosition": 18.8,
+  "liquidityScore": 70.7,
+  "priceStrengthScore": 24.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 37.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.14% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.8 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 147.69 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "4949",
+  "name": "有成精密",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 80.5,
+    "high": 85.8,
+    "low": 79.5,
+    "close": 80.7,
+    "change": 1.7,
+    "changePercent": 2.15,
+    "tradeVolume": 2796852,
+    "transactionCount": 2358,
+    "tradeValue": 228445487,
+    "peRatio": 30
+  },
+  "dailyRangePercent": 7.92,
+  "turnoverAverageValue": 96881.04,
+  "pricePosition": 19,
+  "liquidityScore": 73.4,
+  "priceStrengthScore": 48,
+  "valuationRiskScore": 55,
+  "snapshotScore": 56.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 19.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

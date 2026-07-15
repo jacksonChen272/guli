@@ -1,0 +1,53 @@
+{
+  "symbol": "2353",
+  "name": "宏碁",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 32.75,
+    "high": 33.1,
+    "low": 31.7,
+    "close": 31.95,
+    "change": -0.55,
+    "changePercent": -1.69,
+    "tradeVolume": 27816944,
+    "transactionCount": 11169,
+    "tradeValue": 895931105,
+    "peRatio": 24.2
+  },
+  "dailyRangePercent": 4.42,
+  "turnoverAverageValue": 80215.87,
+  "pricePosition": 17.9,
+  "liquidityScore": 90.8,
+  "priceStrengthScore": 31,
+  "valuationRiskScore": 35,
+  "snapshotScore": 58.7,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.9 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

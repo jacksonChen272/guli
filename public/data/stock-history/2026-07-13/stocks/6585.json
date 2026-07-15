@@ -1,0 +1,53 @@
+{
+  "symbol": "6585",
+  "name": "鼎基",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 125.5,
+    "high": 128.5,
+    "low": 123,
+    "close": 124,
+    "change": -0.5,
+    "changePercent": -0.4,
+    "tradeVolume": 236547,
+    "transactionCount": 266,
+    "tradeValue": 29706029,
+    "peRatio": 25.31
+  },
+  "dailyRangePercent": 4.47,
+  "turnoverAverageValue": 111676.8,
+  "pricePosition": 18.2,
+  "liquidityScore": 37.6,
+  "priceStrengthScore": 34,
+  "valuationRiskScore": 55,
+  "snapshotScore": 37.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.2 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

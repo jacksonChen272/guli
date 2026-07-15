@@ -1,0 +1,53 @@
+{
+  "symbol": "8429",
+  "name": "金麗-KY",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 6.26,
+    "high": 6.31,
+    "low": 6.21,
+    "close": 6.22,
+    "change": -0.03,
+    "changePercent": -0.48,
+    "tradeVolume": 160609,
+    "transactionCount": 140,
+    "tradeValue": 1008800,
+    "peRatio": 56.55
+  },
+  "dailyRangePercent": 1.61,
+  "turnoverAverageValue": 7205.71,
+  "pricePosition": 10,
+  "liquidityScore": 15.4,
+  "priceStrengthScore": 30.9,
+  "valuationRiskScore": 75,
+  "snapshotScore": 24.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

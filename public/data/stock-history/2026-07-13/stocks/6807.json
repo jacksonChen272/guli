@@ -1,0 +1,53 @@
+{
+  "symbol": "6807",
+  "name": "峰源-KY",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 33,
+    "high": 33.3,
+    "low": 33,
+    "close": 33.3,
+    "change": -0.05,
+    "changePercent": -0.15,
+    "tradeVolume": 8000,
+    "transactionCount": 7,
+    "tradeValue": 264600,
+    "peRatio": 9.77
+  },
+  "dailyRangePercent": 0.91,
+  "turnoverAverageValue": 37800,
+  "pricePosition": 100,
+  "liquidityScore": 1.3,
+  "priceStrengthScore": 71.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 48.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 1.3 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

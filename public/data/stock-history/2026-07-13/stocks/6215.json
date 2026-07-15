@@ -1,0 +1,53 @@
+{
+  "symbol": "6215",
+  "name": "和椿",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 113.5,
+    "high": 119.5,
+    "low": 111,
+    "close": 111,
+    "change": -2.5,
+    "changePercent": -2.2,
+    "tradeVolume": 2026650,
+    "transactionCount": 1968,
+    "tradeValue": 232945786,
+    "peRatio": 38.95
+  },
+  "dailyRangePercent": 7.66,
+  "turnoverAverageValue": 118366.76,
+  "pricePosition": 0,
+  "liquidityScore": 70.7,
+  "priceStrengthScore": 23.6,
+  "valuationRiskScore": 55,
+  "snapshotScore": 44.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

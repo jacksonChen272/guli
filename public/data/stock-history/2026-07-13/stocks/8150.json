@@ -1,0 +1,60 @@
+{
+  "symbol": "8150",
+  "name": "南茂",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 121.5,
+    "high": 123,
+    "low": 112.5,
+    "close": 115,
+    "change": -2,
+    "changePercent": -1.71,
+    "tradeVolume": 106971602,
+    "transactionCount": 62286,
+    "tradeValue": 12612048437,
+    "peRatio": 97.46
+  },
+  "dailyRangePercent": 9.33,
+  "turnoverAverageValue": 202486.09,
+  "pricePosition": 23.8,
+  "liquidityScore": 99,
+  "priceStrengthScore": 33,
+  "valuationRiskScore": 90,
+  "snapshotScore": 51.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.33% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 97.46 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

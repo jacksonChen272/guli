@@ -1,0 +1,62 @@
+{
+  "symbol": "1441",
+  "name": "大東",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 9.36,
+    "high": 9.36,
+    "low": 9.22,
+    "close": 9.27,
+    "change": -0.09,
+    "changePercent": -0.96,
+    "tradeVolume": 11590,
+    "transactionCount": 131,
+    "tradeValue": 107528,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.52,
+  "turnoverAverageValue": 820.82,
+  "pricePosition": 35.7,
+  "liquidityScore": 4.6,
+  "priceStrengthScore": 38.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 23.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 4.6 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

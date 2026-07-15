@@ -1,0 +1,53 @@
+{
+  "symbol": "2385",
+  "name": "群光",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 108,
+    "high": 108.5,
+    "low": 105.5,
+    "close": 106,
+    "change": -1,
+    "changePercent": -0.93,
+    "tradeVolume": 3723953,
+    "transactionCount": 2168,
+    "tradeValue": 397016911,
+    "peRatio": 11.96
+  },
+  "dailyRangePercent": 2.84,
+  "turnoverAverageValue": 183125.88,
+  "pricePosition": 16.7,
+  "liquidityScore": 76.6,
+  "priceStrengthScore": 32.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 57.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

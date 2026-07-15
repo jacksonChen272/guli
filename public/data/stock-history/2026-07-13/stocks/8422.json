@@ -1,0 +1,53 @@
+{
+  "symbol": "8422",
+  "name": "可寧衛*",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 27.1,
+    "high": 27.15,
+    "low": 26.4,
+    "close": 26.55,
+    "change": -0.45,
+    "changePercent": -1.67,
+    "tradeVolume": 11249130,
+    "transactionCount": 6578,
+    "tradeValue": 300417859,
+    "peRatio": 24.58
+  },
+  "dailyRangePercent": 2.84,
+  "turnoverAverageValue": 45670.09,
+  "pricePosition": 20,
+  "liquidityScore": 82.3,
+  "priceStrengthScore": 31.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 56.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

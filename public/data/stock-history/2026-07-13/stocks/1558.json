@@ -1,0 +1,53 @@
+{
+  "symbol": "1558",
+  "name": "伸興",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 92.4,
+    "high": 92.8,
+    "low": 92.3,
+    "close": 92.6,
+    "change": 0.2,
+    "changePercent": 0.22,
+    "tradeVolume": 45501,
+    "transactionCount": 68,
+    "tradeValue": 4209684,
+    "peRatio": 16.48
+  },
+  "dailyRangePercent": 0.54,
+  "turnoverAverageValue": 61907.12,
+  "pricePosition": 60,
+  "liquidityScore": 14.6,
+  "priceStrengthScore": 58,
+  "valuationRiskScore": 35,
+  "snapshotScore": 44.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.6 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

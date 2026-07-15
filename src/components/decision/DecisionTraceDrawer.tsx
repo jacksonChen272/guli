@@ -1,0 +1,7 @@
+import type { DecisionResult } from '../../types/decision'
+import { Drawer } from '../ui/Drawer'
+import { DecisionFactorTable } from './DecisionFactorTable'
+import { DecisionRiskPanel } from './DecisionRiskPanel'
+import { DecisionSourceList } from './DecisionSourceList'
+export function DecisionTraceDrawer({decision,open,onClose}:{decision:DecisionResult|null;open:boolean;onClose:()=>void}){return <Drawer open={open} onClose={onClose} title="Decision Trace">{decision&&<div className="space-y-5 p-5"><div className="grid grid-cols-2 gap-3"><Metric label="公式版本" value={decision.trace.formulaVersion}/><Metric label="可用權重" value={`${(decision.trace.availableWeight*100).toFixed(0)}%`}/><Metric label="缺少權重" value={`${(decision.trace.missingWeight*100).toFixed(0)}%`}/><Metric label="權重正規化" value={decision.trace.normalizationApplied?'已套用':'未套用'}/></div><div><h3 className="mb-3 text-xs text-white">因子與貢獻</h3><DecisionFactorTable factors={decision.factors}/></div><div><h3 className="mb-3 text-xs text-white">計算步驟</h3>{decision.trace.calculationSteps.map((step,index)=><p key={step} className="mb-2 text-[10px] text-slate-500">{index+1}. {step}</p>)}</div><DecisionRiskPanel risks={decision.risks}/><DecisionSourceList sources={decision.sources} warnings={decision.warnings}/></div>}</Drawer>}
+function Metric({label,value}:{label:string;value:string}){return <div className="rounded-xl border border-white/[.06] p-3"><p className="text-[9px] text-slate-600">{label}</p><p className="mt-2 text-xs text-white">{value}</p></div>}

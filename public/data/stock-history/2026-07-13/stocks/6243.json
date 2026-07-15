@@ -1,0 +1,76 @@
+{
+  "symbol": "6243",
+  "name": "迅杰",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 39.55,
+    "high": 40.45,
+    "low": 36.05,
+    "close": 36.05,
+    "change": -3.5,
+    "changePercent": -8.85,
+    "tradeVolume": 465847,
+    "transactionCount": 484,
+    "tradeValue": 17541710,
+    "peRatio": null
+  },
+  "dailyRangePercent": 12.21,
+  "turnoverAverageValue": 36243.2,
+  "pricePosition": 0,
+  "liquidityScore": 41,
+  "priceStrengthScore": 8.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 22.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.85% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 12.21% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

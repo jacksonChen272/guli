@@ -1,0 +1,74 @@
+{
+  "symbol": "4169",
+  "name": "泰宗",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 270,
+    "high": 270,
+    "low": 243,
+    "close": 243,
+    "change": -27,
+    "changePercent": -10,
+    "tradeVolume": 591694,
+    "transactionCount": 1099,
+    "tradeValue": 148225991,
+    "peRatio": 759.38
+  },
+  "dailyRangePercent": 11.11,
+  "turnoverAverageValue": 134873.51,
+  "pricePosition": 0,
+  "liquidityScore": 58.2,
+  "priceStrengthScore": 6,
+  "valuationRiskScore": 90,
+  "snapshotScore": 25.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -10.00% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.11% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 759.38 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

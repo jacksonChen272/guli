@@ -1,0 +1,60 @@
+{
+  "symbol": "8411",
+  "name": "福貞-KY",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.35,
+    "high": 12.45,
+    "low": 12.25,
+    "close": 12.45,
+    "change": 0.05,
+    "changePercent": 0.4,
+    "tradeVolume": 79951,
+    "transactionCount": 71,
+    "tradeValue": 987858,
+    "peRatio": 124.5
+  },
+  "dailyRangePercent": 1.63,
+  "turnoverAverageValue": 13913.49,
+  "pricePosition": 100,
+  "liquidityScore": 10.2,
+  "priceStrengthScore": 72.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 38.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.2 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 124.50 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

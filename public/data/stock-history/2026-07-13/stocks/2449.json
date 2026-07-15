@@ -1,0 +1,53 @@
+{
+  "symbol": "2449",
+  "name": "京元電子",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 315,
+    "high": 321,
+    "low": 306,
+    "close": 307,
+    "change": -1.5,
+    "changePercent": -0.49,
+    "tradeVolume": 19383018,
+    "transactionCount": 22746,
+    "tradeValue": 6055621735,
+    "peRatio": 41.66
+  },
+  "dailyRangePercent": 4.9,
+  "turnoverAverageValue": 266227.98,
+  "pricePosition": 6.7,
+  "liquidityScore": 95.6,
+  "priceStrengthScore": 29.8,
+  "valuationRiskScore": 75,
+  "snapshotScore": 51.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

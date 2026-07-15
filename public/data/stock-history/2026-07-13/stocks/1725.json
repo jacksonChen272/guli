@@ -1,0 +1,53 @@
+{
+  "symbol": "1725",
+  "name": "元禎",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 31.6,
+    "high": 31.6,
+    "low": 30.05,
+    "close": 30.2,
+    "change": -1.4,
+    "changePercent": -4.43,
+    "tradeVolume": 240465,
+    "transactionCount": 202,
+    "tradeValue": 7359038,
+    "peRatio": 18.64
+  },
+  "dailyRangePercent": 5.16,
+  "turnoverAverageValue": 36430.88,
+  "pricePosition": 9.7,
+  "liquidityScore": 28.1,
+  "priceStrengthScore": 22,
+  "valuationRiskScore": 35,
+  "snapshotScore": 32.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

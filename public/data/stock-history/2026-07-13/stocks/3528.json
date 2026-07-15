@@ -1,0 +1,60 @@
+{
+  "symbol": "3528",
+  "name": "安馳",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 99.3,
+    "high": 99.5,
+    "low": 91.2,
+    "close": 92.8,
+    "change": -6.5,
+    "changePercent": -6.55,
+    "tradeVolume": 728436,
+    "transactionCount": 913,
+    "tradeValue": 68965682,
+    "peRatio": 29.94
+  },
+  "dailyRangePercent": 9.1,
+  "turnoverAverageValue": 75537.44,
+  "pricePosition": 19.3,
+  "liquidityScore": 55.3,
+  "priceStrengthScore": 20.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 37.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.10% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 19.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

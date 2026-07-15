@@ -1,0 +1,53 @@
+{
+  "symbol": "6770",
+  "name": "力積電",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 72.4,
+    "high": 73,
+    "low": 68.1,
+    "close": 69,
+    "change": -2.1,
+    "changePercent": -2.95,
+    "tradeVolume": 117782988,
+    "transactionCount": 61742,
+    "tradeValue": 8279438686,
+    "peRatio": 38.98
+  },
+  "dailyRangePercent": 7.2,
+  "turnoverAverageValue": 134097.35,
+  "pricePosition": 18.4,
+  "liquidityScore": 98.8,
+  "priceStrengthScore": 28.3,
+  "valuationRiskScore": 55,
+  "snapshotScore": 56.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

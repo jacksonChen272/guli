@@ -1,0 +1,53 @@
+{
+  "symbol": "2368",
+  "name": "金像電",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 1085,
+    "high": 1105,
+    "low": 1040,
+    "close": 1045,
+    "change": -30,
+    "changePercent": -2.79,
+    "tradeVolume": 4210045,
+    "transactionCount": 11151,
+    "tradeValue": 4475208520,
+    "peRatio": 47.18
+  },
+  "dailyRangePercent": 6.25,
+  "turnoverAverageValue": 401328,
+  "pricePosition": 7.7,
+  "liquidityScore": 89.6,
+  "priceStrengthScore": 24.9,
+  "valuationRiskScore": 75,
+  "snapshotScore": 47.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

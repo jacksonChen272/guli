@@ -1,0 +1,67 @@
+{
+  "symbol": "6861",
+  "name": "睿生光電",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 288,
+    "high": 288,
+    "low": 263,
+    "close": 263,
+    "change": -29,
+    "changePercent": -9.93,
+    "tradeVolume": 1009014,
+    "transactionCount": 1664,
+    "tradeValue": 270843223,
+    "peRatio": 53.46
+  },
+  "dailyRangePercent": 9.51,
+  "turnoverAverageValue": 162766.36,
+  "pricePosition": 0,
+  "liquidityScore": 66.6,
+  "priceStrengthScore": 6.2,
+  "valuationRiskScore": 75,
+  "snapshotScore": 31.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.93% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.51% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

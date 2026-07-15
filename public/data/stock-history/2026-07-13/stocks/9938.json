@@ -1,0 +1,53 @@
+{
+  "symbol": "9938",
+  "name": "百和",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 46.2,
+    "high": 47.1,
+    "low": 45.8,
+    "close": 45.95,
+    "change": -0.2,
+    "changePercent": -0.43,
+    "tradeVolume": 1717013,
+    "transactionCount": 984,
+    "tradeValue": 79905930,
+    "peRatio": 13.36
+  },
+  "dailyRangePercent": 2.84,
+  "turnoverAverageValue": 81205.21,
+  "pricePosition": 11.5,
+  "liquidityScore": 61.7,
+  "priceStrengthScore": 31.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 51.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

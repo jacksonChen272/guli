@@ -1,0 +1,67 @@
+{
+  "symbol": "2495",
+  "name": "普安",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 52.8,
+    "high": 52.8,
+    "low": 47.25,
+    "close": 47.4,
+    "change": -5.1,
+    "changePercent": -9.71,
+    "tradeVolume": 15621209,
+    "transactionCount": 11812,
+    "tradeValue": 758351702,
+    "peRatio": 41.95
+  },
+  "dailyRangePercent": 11.75,
+  "turnoverAverageValue": 64201.8,
+  "pricePosition": 2.7,
+  "liquidityScore": 88.6,
+  "priceStrengthScore": 7.6,
+  "valuationRiskScore": 75,
+  "snapshotScore": 39.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.71% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.75% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 2.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

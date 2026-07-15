@@ -1,0 +1,60 @@
+{
+  "symbol": "3003",
+  "name": "健和興",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 67.2,
+    "high": 67.2,
+    "low": 63.4,
+    "close": 64.1,
+    "change": -2,
+    "changePercent": -3.03,
+    "tradeVolume": 937847,
+    "transactionCount": 855,
+    "tradeValue": 60675021,
+    "peRatio": 63.47
+  },
+  "dailyRangePercent": 5.99,
+  "turnoverAverageValue": 70964.94,
+  "pricePosition": 18.4,
+  "liquidityScore": 55.7,
+  "priceStrengthScore": 28.1,
+  "valuationRiskScore": 90,
+  "snapshotScore": 34.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.4 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 63.47 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

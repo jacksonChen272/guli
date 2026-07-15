@@ -1,0 +1,67 @@
+{
+  "symbol": "6672",
+  "name": "騰輝電子-KY",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 300.5,
+    "high": 303.5,
+    "low": 273,
+    "close": 275,
+    "change": -23,
+    "changePercent": -7.72,
+    "tradeVolume": 3858200,
+    "transactionCount": 5923,
+    "tradeValue": 1094065496,
+    "peRatio": 49.73
+  },
+  "dailyRangePercent": 11.17,
+  "turnoverAverageValue": 184714.76,
+  "pricePosition": 6.6,
+  "liquidityScore": 83.7,
+  "priceStrengthScore": 13.4,
+  "valuationRiskScore": 75,
+  "snapshotScore": 40.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.72% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.17% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.6 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

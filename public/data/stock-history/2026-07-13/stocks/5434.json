@@ -1,0 +1,53 @@
+{
+  "symbol": "5434",
+  "name": "崇越",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 536,
+    "high": 559,
+    "low": 527,
+    "close": 559,
+    "change": 50,
+    "changePercent": 9.82,
+    "tradeVolume": 3038091,
+    "transactionCount": 3451,
+    "tradeValue": 1673038873,
+    "peRatio": 23.72
+  },
+  "dailyRangePercent": 6.07,
+  "turnoverAverageValue": 484798.28,
+  "pricePosition": 100,
+  "liquidityScore": 82.8,
+  "priceStrengthScore": 93.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 84.1,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.82% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

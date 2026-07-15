@@ -1,0 +1,53 @@
+{
+  "symbol": "5222",
+  "name": "全訊",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 124.5,
+    "high": 126.5,
+    "low": 123,
+    "close": 126,
+    "change": 3,
+    "changePercent": 2.44,
+    "tradeVolume": 529279,
+    "transactionCount": 940,
+    "tradeValue": 66144947,
+    "peRatio": 67.38
+  },
+  "dailyRangePercent": 2.85,
+  "turnoverAverageValue": 70366.96,
+  "pricePosition": 85.7,
+  "liquidityScore": 52.8,
+  "priceStrengthScore": 72,
+  "valuationRiskScore": 90,
+  "snapshotScore": 52.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 67.38 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

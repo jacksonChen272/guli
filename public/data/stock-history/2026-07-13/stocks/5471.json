@@ -1,0 +1,60 @@
+{
+  "symbol": "5471",
+  "name": "松翰",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 68,
+    "high": 69.1,
+    "low": 64.7,
+    "close": 65,
+    "change": -2.6,
+    "changePercent": -3.85,
+    "tradeVolume": 10565999,
+    "transactionCount": 11861,
+    "tradeValue": 709784415,
+    "peRatio": 67.01
+  },
+  "dailyRangePercent": 6.8,
+  "turnoverAverageValue": 59841.87,
+  "pricePosition": 6.8,
+  "liquidityScore": 87.2,
+  "priceStrengthScore": 22.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 42.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.8 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 67.01 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

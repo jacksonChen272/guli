@@ -1,0 +1,74 @@
+{
+  "symbol": "6831",
+  "name": "邁科",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 800,
+    "high": 800,
+    "low": 713,
+    "close": 724,
+    "change": -58,
+    "changePercent": -7.42,
+    "tradeVolume": 911470,
+    "transactionCount": 2375,
+    "tradeValue": 677670529,
+    "peRatio": 147.15
+  },
+  "dailyRangePercent": 12.2,
+  "turnoverAverageValue": 285334.96,
+  "pricePosition": 12.6,
+  "liquidityScore": 70.9,
+  "priceStrengthScore": 16.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 34.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.42% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 12.20% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.6 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 147.15 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

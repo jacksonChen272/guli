@@ -1,0 +1,62 @@
+{
+  "symbol": "4960",
+  "name": "誠美材",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 24.1,
+    "high": 24.85,
+    "low": 22.9,
+    "close": 23.35,
+    "change": -0.3,
+    "changePercent": -1.27,
+    "tradeVolume": 3660900,
+    "transactionCount": 2014,
+    "tradeValue": 87101425,
+    "peRatio": null
+  },
+  "dailyRangePercent": 8.52,
+  "turnoverAverageValue": 43247.98,
+  "pricePosition": 23.1,
+  "liquidityScore": 69.1,
+  "priceStrengthScore": 33.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 49.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.52% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,2 @@
+import { AlertTriangle } from 'lucide-react'
+export function IndustryRiskPanel({ risks }: { risks: string[] }) { return <div className="space-y-2">{risks.length ? risks.map((risk) => <div key={risk} className="flex gap-3 rounded-xl border border-amber-400/15 bg-amber-400/[.04] p-3 text-[11px] leading-5 text-amber-100/80"><AlertTriangle size={15} className="mt-0.5 shrink-0 text-amber-300"/>{risk}</div>) : <div className="rounded-xl border border-brand-400/15 bg-brand-400/[.04] p-3 text-[11px] text-brand-200">目前規則未偵測到顯著產業風險。</div>}</div> }

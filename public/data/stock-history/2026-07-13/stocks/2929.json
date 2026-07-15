@@ -1,0 +1,69 @@
+{
+  "symbol": "2929",
+  "name": "淘帝-KY",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 5.82,
+    "high": 5.93,
+    "low": 5.81,
+    "close": 5.81,
+    "change": 0.02,
+    "changePercent": 0.35,
+    "tradeVolume": 118352,
+    "transactionCount": 91,
+    "tradeValue": 694003,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.07,
+  "turnoverAverageValue": 7626.41,
+  "pricePosition": 0,
+  "liquidityScore": 10.9,
+  "priceStrengthScore": 29.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 21.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.9 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

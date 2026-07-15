@@ -1,0 +1,53 @@
+{
+  "symbol": "2548",
+  "name": "華固",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 101,
+    "high": 102,
+    "low": 100,
+    "close": 100,
+    "change": -1,
+    "changePercent": -0.99,
+    "tradeVolume": 1526928,
+    "transactionCount": 1515,
+    "tradeValue": 153070628,
+    "peRatio": 7.8
+  },
+  "dailyRangePercent": 2,
+  "turnoverAverageValue": 101036.72,
+  "pricePosition": 0,
+  "liquidityScore": 65.9,
+  "priceStrengthScore": 26.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 50.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

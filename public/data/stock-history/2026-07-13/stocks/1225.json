@@ -1,0 +1,60 @@
+{
+  "symbol": "1225",
+  "name": "福懋油",
+  "tradeDate": "2026-07-13",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 28.05,
+    "high": 28.1,
+    "low": 26,
+    "close": 26.4,
+    "change": -1.7,
+    "changePercent": -6.05,
+    "tradeVolume": 478163,
+    "transactionCount": 519,
+    "tradeValue": 12782783,
+    "peRatio": 15.44
+  },
+  "dailyRangePercent": 8.08,
+  "turnoverAverageValue": 24629.64,
+  "pricePosition": 19,
+  "liquidityScore": 39.8,
+  "priceStrengthScore": 21.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 36.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.08% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 19.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}
