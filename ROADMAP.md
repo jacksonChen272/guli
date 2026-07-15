@@ -1,5 +1,17 @@
 # GULI Roadmap
 
+## 0.6.0
+
+- 可解釋市場、產業、個股與自選股決策。
+- Decision Trace、來源分層、缺值正規化與信心扣分。
+- 下一階段：官方產業 mapping、更多實際歷史、決策回測與公式版本遷移。
+
+## 0.5.5-alpha.2
+
+- TWSE 上市個股 Stock Snapshot、Diff 與實際歷史 Memory。
+- 分頁快照排行與資料來源分層；不混用既有健康分數。
+- 下一階段：累積更多交易日、官方產業 mapping、TPEX 與正式長期因子。
+
 ## 0.5.5-alpha.1
 
 - TWSE 上市股票每日盤後 OHLC、成交量值與本益比正式資料 Alpha。

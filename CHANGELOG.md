@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.6.0]
+
+- 新增 deterministic AI Decision Engine 與 `decision-v1.0` 公式版本。
+- 新增市場、產業、個股及自選股 DecisionResult、Confidence 與 Decision Trace。
+- 新增決策中心、Dashboard 決策摘要、個股決策面板與股寶規則問答。
+- 新增靜態決策產檔、Repository Cache、GitHub Actions 步驟及 28 項規則測試。
+
+## [0.5.5-alpha.2]
+
+- 新增 TWSE 上市個股 Stock Snapshot Engine、日期索引與單股歷史檔。
+- 新增價格強度、流動性、估值風險與快照總分的 deterministic 規則。
+- 新增個股快照總覽、Dashboard 預覽、個股頁快照／Diff／Memory 面板。
+- 更新 Repository、GitHub Actions 產生順序與規則測試。
+
 ## [0.5.5-alpha.1]
 
 - 新增 TWSE `STOCK_DAY_ALL` 與 `BWIBBU_ALL` 上市個股盤後資料同步。
