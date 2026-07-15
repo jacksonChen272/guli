@@ -1,0 +1,53 @@
+{
+  "symbol": "2855",
+  "name": "統一證",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 49.75,
+    "high": 49.75,
+    "low": 46.2,
+    "close": 46.65,
+    "change": -3,
+    "changePercent": -6.04,
+    "tradeVolume": 11515978,
+    "transactionCount": 5591,
+    "tradeValue": 543875823,
+    "peRatio": 10.44
+  },
+  "dailyRangePercent": 7.68,
+  "turnoverAverageValue": 97277.02,
+  "pricePosition": 12.7,
+  "liquidityScore": 83.6,
+  "priceStrengthScore": 19.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 54,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

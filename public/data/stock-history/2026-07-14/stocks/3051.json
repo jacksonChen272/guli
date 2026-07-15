@@ -1,0 +1,53 @@
+{
+  "symbol": "3051",
+  "name": "力特",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 24.7,
+    "high": 24.8,
+    "low": 22.65,
+    "close": 23.6,
+    "change": -1.05,
+    "changePercent": -4.26,
+    "tradeVolume": 1276818,
+    "transactionCount": 865,
+    "tradeValue": 29968223,
+    "peRatio": 22.91
+  },
+  "dailyRangePercent": 9.49,
+  "turnoverAverageValue": 34645.34,
+  "pricePosition": 44.2,
+  "liquidityScore": 50.2,
+  "priceStrengthScore": 34.4,
+  "valuationRiskScore": 35,
+  "snapshotScore": 46.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.49% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2374",
+  "name": "佳能",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 76.1,
+    "high": 76.1,
+    "low": 69.7,
+    "close": 72.3,
+    "change": -3.2,
+    "changePercent": -4.24,
+    "tradeVolume": 5665913,
+    "transactionCount": 5381,
+    "tradeValue": 408670977,
+    "peRatio": 26.01
+  },
+  "dailyRangePercent": 9.18,
+  "turnoverAverageValue": 75947.03,
+  "pricePosition": 40.6,
+  "liquidityScore": 79.7,
+  "priceStrengthScore": 33.2,
+  "valuationRiskScore": 55,
+  "snapshotScore": 51.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.18% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

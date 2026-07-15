@@ -1,0 +1,53 @@
+{
+  "symbol": "2454",
+  "name": "聯發科",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 3830,
+    "high": 3860,
+    "low": 3515,
+    "close": 3660,
+    "change": -165,
+    "changePercent": -4.31,
+    "tradeVolume": 12479607,
+    "transactionCount": 152816,
+    "tradeValue": 45583723365,
+    "peRatio": 58.33
+  },
+  "dailyRangePercent": 9.82,
+  "turnoverAverageValue": 298291.56,
+  "pricePosition": 42,
+  "liquidityScore": 96.3,
+  "priceStrengthScore": 33.5,
+  "valuationRiskScore": 75,
+  "snapshotScore": 53.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.82% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

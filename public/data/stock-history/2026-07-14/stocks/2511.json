@@ -1,0 +1,53 @@
+{
+  "symbol": "2511",
+  "name": "太子",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 8.56,
+    "high": 8.56,
+    "low": 8.4,
+    "close": 8.42,
+    "change": -0.08,
+    "changePercent": -0.94,
+    "tradeVolume": 1436698,
+    "transactionCount": 559,
+    "tradeValue": 12138599,
+    "peRatio": 24.06
+  },
+  "dailyRangePercent": 1.9,
+  "turnoverAverageValue": 21714.85,
+  "pricePosition": 12.5,
+  "liquidityScore": 43.8,
+  "priceStrengthScore": 30.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 42.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2442",
+  "name": "新美齊",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.35,
+    "high": 19.35,
+    "low": 19.05,
+    "close": 19.1,
+    "change": -0.15,
+    "changePercent": -0.78,
+    "tradeVolume": 1278325,
+    "transactionCount": 552,
+    "tradeValue": 24496934,
+    "peRatio": 3.64
+  },
+  "dailyRangePercent": 1.57,
+  "turnoverAverageValue": 44378.5,
+  "pricePosition": 16.7,
+  "liquidityScore": 47.2,
+  "priceStrengthScore": 32.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 47.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

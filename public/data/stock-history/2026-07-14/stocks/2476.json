@@ -1,0 +1,53 @@
+{
+  "symbol": "2476",
+  "name": "鉅祥",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 126.5,
+    "high": 127,
+    "low": 117,
+    "close": 122,
+    "change": -4.5,
+    "changePercent": -3.56,
+    "tradeVolume": 4919661,
+    "transactionCount": 4778,
+    "tradeValue": 592684357,
+    "peRatio": 27.92
+  },
+  "dailyRangePercent": 8.55,
+  "turnoverAverageValue": 124044.44,
+  "pricePosition": 50,
+  "liquidityScore": 80,
+  "priceStrengthScore": 38,
+  "valuationRiskScore": 55,
+  "snapshotScore": 54.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.55% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

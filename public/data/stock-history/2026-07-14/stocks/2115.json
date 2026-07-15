@@ -1,0 +1,53 @@
+{
+  "symbol": "2115",
+  "name": "六暉-KY",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 21.85,
+    "high": 21.85,
+    "low": 21.4,
+    "close": 21.55,
+    "change": -0.2,
+    "changePercent": -0.92,
+    "tradeVolume": 90311,
+    "transactionCount": 80,
+    "tradeValue": 1948654,
+    "peRatio": 16.97
+  },
+  "dailyRangePercent": 2.1,
+  "turnoverAverageValue": 24358.18,
+  "pricePosition": 33.3,
+  "liquidityScore": 11.3,
+  "priceStrengthScore": 38.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 34.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 11.3 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

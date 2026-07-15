@@ -1,0 +1,60 @@
+{
+  "symbol": "3189",
+  "name": "景碩",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 793,
+    "high": 805,
+    "low": 738,
+    "close": 805,
+    "change": -14,
+    "changePercent": -1.71,
+    "tradeVolume": 3717468,
+    "transactionCount": 6764,
+    "tradeValue": 2873799356,
+    "peRatio": 226.76
+  },
+  "dailyRangePercent": 9.08,
+  "turnoverAverageValue": 424866.85,
+  "pricePosition": 100,
+  "liquidityScore": 85.5,
+  "priceStrengthScore": 67.7,
+  "valuationRiskScore": 90,
+  "snapshotScore": 62.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.08% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 226.76 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

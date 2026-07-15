@@ -1,0 +1,53 @@
+{
+  "symbol": "1519",
+  "name": "華城",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 720,
+    "high": 727,
+    "low": 656,
+    "close": 692,
+    "change": -35,
+    "changePercent": -4.81,
+    "tradeVolume": 3696850,
+    "transactionCount": 16189,
+    "tradeValue": 2536238831,
+    "peRatio": 47.56
+  },
+  "dailyRangePercent": 10.82,
+  "turnoverAverageValue": 156664.33,
+  "pricePosition": 50.7,
+  "liquidityScore": 87,
+  "priceStrengthScore": 35.4,
+  "valuationRiskScore": 75,
+  "snapshotScore": 51.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.82% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

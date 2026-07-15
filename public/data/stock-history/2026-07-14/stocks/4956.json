@@ -1,0 +1,62 @@
+{
+  "symbol": "4956",
+  "name": "光鋐",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 34.6,
+    "high": 34.95,
+    "low": 31.75,
+    "close": 33.4,
+    "change": -1.55,
+    "changePercent": -4.43,
+    "tradeVolume": 1595942,
+    "transactionCount": 1460,
+    "tradeValue": 52625028,
+    "peRatio": null
+  },
+  "dailyRangePercent": 10.08,
+  "turnoverAverageValue": 36044.54,
+  "pricePosition": 51.6,
+  "liquidityScore": 57.4,
+  "priceStrengthScore": 36.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 45.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.08% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

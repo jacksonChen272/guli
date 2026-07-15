@@ -1,0 +1,53 @@
+{
+  "symbol": "2227",
+  "name": "裕日車",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 50.4,
+    "high": 50.4,
+    "low": 49.35,
+    "close": 49.85,
+    "change": -0.05,
+    "changePercent": -0.1,
+    "tradeVolume": 55241,
+    "transactionCount": 94,
+    "tradeValue": 2742882,
+    "peRatio": 53.6
+  },
+  "dailyRangePercent": 2.13,
+  "turnoverAverageValue": 29179.6,
+  "pricePosition": 47.6,
+  "liquidityScore": 11.3,
+  "priceStrengthScore": 44.9,
+  "valuationRiskScore": 75,
+  "snapshotScore": 29.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 11.3 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

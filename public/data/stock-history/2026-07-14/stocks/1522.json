@@ -1,0 +1,60 @@
+{
+  "symbol": "1522",
+  "name": "堤維西",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 30.6,
+    "high": 30.6,
+    "low": 29.8,
+    "close": 29.85,
+    "change": -0.55,
+    "changePercent": -1.81,
+    "tradeVolume": 1049355,
+    "transactionCount": 669,
+    "tradeValue": 31399307,
+    "peRatio": 96.29
+  },
+  "dailyRangePercent": 2.68,
+  "turnoverAverageValue": 46934.69,
+  "pricePosition": 6.3,
+  "liquidityScore": 47.6,
+  "priceStrengthScore": 26.7,
+  "valuationRiskScore": 90,
+  "snapshotScore": 30.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 96.29 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

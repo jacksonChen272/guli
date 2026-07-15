@@ -1,0 +1,55 @@
+{
+  "symbol": "7827",
+  "name": "漢康-KY創",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 171,
+    "high": 171,
+    "low": 162,
+    "close": 164.5,
+    "change": -6.5,
+    "changePercent": -3.8,
+    "tradeVolume": 356547,
+    "transactionCount": 750,
+    "tradeValue": 58880009,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.56,
+  "turnoverAverageValue": 78506.68,
+  "pricePosition": 27.8,
+  "liquidityScore": 45,
+  "priceStrengthScore": 29.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 36.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

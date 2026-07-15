@@ -1,0 +1,55 @@
+{
+  "symbol": "3686",
+  "name": "達能",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.2,
+    "high": 16.25,
+    "low": 15.6,
+    "close": 16.15,
+    "change": -0.05,
+    "changePercent": -0.31,
+    "tradeVolume": 292234,
+    "transactionCount": 201,
+    "tradeValue": 4645419,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.17,
+  "turnoverAverageValue": 23111.54,
+  "pricePosition": 84.6,
+  "liquidityScore": 23.1,
+  "priceStrengthScore": 57.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 42.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

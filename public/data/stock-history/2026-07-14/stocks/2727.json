@@ -1,0 +1,53 @@
+{
+  "symbol": "2727",
+  "name": "王品",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 239,
+    "high": 239,
+    "low": 232,
+    "close": 232.5,
+    "change": -6.5,
+    "changePercent": -2.72,
+    "tradeVolume": 1048499,
+    "transactionCount": 2266,
+    "tradeValue": 245601426,
+    "peRatio": 13.97
+  },
+  "dailyRangePercent": 3.02,
+  "turnoverAverageValue": 108385.45,
+  "pricePosition": 7.1,
+  "liquidityScore": 64.7,
+  "priceStrengthScore": 24.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 49.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

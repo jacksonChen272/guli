@@ -1,0 +1,53 @@
+{
+  "symbol": "2009",
+  "name": "第一銅",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 38.55,
+    "high": 38.55,
+    "low": 37.35,
+    "close": 37.8,
+    "change": -0.1,
+    "changePercent": -0.26,
+    "tradeVolume": 1260091,
+    "transactionCount": 998,
+    "tradeValue": 47510837,
+    "peRatio": 66.32
+  },
+  "dailyRangePercent": 3.21,
+  "turnoverAverageValue": 47606.05,
+  "pricePosition": 37.5,
+  "liquidityScore": 53.6,
+  "priceStrengthScore": 41,
+  "valuationRiskScore": 90,
+  "snapshotScore": 39.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 66.32 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

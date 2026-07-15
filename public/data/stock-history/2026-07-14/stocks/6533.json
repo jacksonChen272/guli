@@ -1,0 +1,62 @@
+{
+  "symbol": "6533",
+  "name": "晶心科",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 216,
+    "high": 228,
+    "low": 211,
+    "close": 225,
+    "change": 14.5,
+    "changePercent": 6.89,
+    "tradeVolume": 3124829,
+    "transactionCount": 3696,
+    "tradeValue": 685355207,
+    "peRatio": null
+  },
+  "dailyRangePercent": 8.06,
+  "turnoverAverageValue": 185431.6,
+  "pricePosition": 82.4,
+  "liquidityScore": 77.4,
+  "priceStrengthScore": 80.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 79.3,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.06% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "symbol": "8104",
+  "name": "錸寶",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 39.75,
+    "high": 40.5,
+    "low": 37,
+    "close": 38.65,
+    "change": -1.95,
+    "changePercent": -4.8,
+    "tradeVolume": 1293327,
+    "transactionCount": 1052,
+    "tradeValue": 49695007,
+    "peRatio": null
+  },
+  "dailyRangePercent": 9.46,
+  "turnoverAverageValue": 47238.6,
+  "pricePosition": 47.1,
+  "liquidityScore": 54.5,
+  "priceStrengthScore": 34.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 43.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.46% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

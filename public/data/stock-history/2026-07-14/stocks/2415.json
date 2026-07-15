@@ -1,0 +1,53 @@
+{
+  "symbol": "2415",
+  "name": "錩新",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 36.9,
+    "high": 36.9,
+    "low": 34.1,
+    "close": 35.6,
+    "change": -0.6,
+    "changePercent": -1.66,
+    "tradeVolume": 769057,
+    "transactionCount": 672,
+    "tradeValue": 26945232,
+    "peRatio": 18.54
+  },
+  "dailyRangePercent": 8.21,
+  "turnoverAverageValue": 40097.07,
+  "pricePosition": 53.6,
+  "liquidityScore": 44.7,
+  "priceStrengthScore": 43.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 48.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.21% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

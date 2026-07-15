@@ -1,0 +1,164 @@
+{
+  "entityType": "market",
+  "entityId": "TWSE",
+  "entityName": "臺股市場",
+  "tradeDate": "2026-07-14",
+  "score": 39.4,
+  "label": "偏弱",
+  "direction": "bearish",
+  "confidence": 82,
+  "summary": "偏弱，風險分布為主要貢獻。",
+  "factors": [
+    {
+      "code": "market_temperature",
+      "name": "市場溫度",
+      "rawValue": 72,
+      "normalizedScore": 72,
+      "weight": 0.25,
+      "contribution": 6.88,
+      "direction": "positive",
+      "explanation": "市場溫度: 72",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "index_momentum",
+      "name": "指數動能",
+      "rawValue": -1.42,
+      "normalizedScore": 38.6,
+      "weight": 0.2,
+      "contribution": -2.85,
+      "direction": "negative",
+      "explanation": "指數動能: 38.6",
+      "evidence": [],
+      "sourceType": "official"
+    },
+    {
+      "code": "market_breadth",
+      "name": "市場廣度",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.2,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "official"
+    },
+    {
+      "code": "liquidity_environment",
+      "name": "流動性環境",
+      "rawValue": 1245206538568,
+      "normalizedScore": 38.7,
+      "weight": 0.15,
+      "contribution": -2.12,
+      "direction": "negative",
+      "explanation": "流動性環境: 38.7",
+      "evidence": [],
+      "sourceType": "official"
+    },
+    {
+      "code": "risk_distribution",
+      "name": "風險分布",
+      "rawValue": 0,
+      "normalizedScore": 0,
+      "weight": 0.2,
+      "contribution": -12.5,
+      "direction": "negative",
+      "explanation": "風險分布: 0",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "data_quality",
+      "name": "資料品質",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "derived"
+    }
+  ],
+  "risks": [
+    {
+      "code": "shipping-weak",
+      "severity": "medium",
+      "title": "航運動能轉弱",
+      "explanation": "模擬產業資料顯示資金動能降溫。",
+      "sourceType": "derived"
+    },
+    {
+      "code": "breadth-partial",
+      "severity": "medium",
+      "title": "市場廣度資料不完整",
+      "explanation": "官方漲跌家數尚未更新至相同交易日。",
+      "sourceType": "official"
+    }
+  ],
+  "trace": {
+    "formulaVersion": "decision-v1.0",
+    "totalPositiveContribution": 6.88,
+    "totalNegativeContribution": -17.47,
+    "totalContribution": -10.59,
+    "availableWeight": 0.8,
+    "missingWeight": 0.2,
+    "normalizationApplied": true,
+    "calculationSteps": [
+      "availableWeight=0.8",
+      "missingWeight=0.2",
+      "normalized=true"
+    ]
+  },
+  "sources": [
+    {
+      "id": "twse-overview",
+      "name": "臺灣證券交易所（TWSE）",
+      "type": "official",
+      "fields": [
+        "overview"
+      ],
+      "tradeDate": "2026-07-14",
+      "status": "partial"
+    },
+    {
+      "id": "industry-snapshot",
+      "name": "GULI Industry Snapshot Engine",
+      "type": "derived",
+      "fields": [
+        "topIndustries",
+        "weakIndustries"
+      ],
+      "tradeDate": "2026-07-14"
+    },
+    {
+      "id": "stock-snapshot",
+      "name": "GULI Stock Snapshot Engine",
+      "type": "derived",
+      "fields": [
+        "stockBreadth"
+      ],
+      "tradeDate": "2026-07-14"
+    },
+    {
+      "id": "guli-rules",
+      "name": "GULI Rules Engine",
+      "type": "derived",
+      "fields": [
+        "marketStatus",
+        "confidence",
+        "headline",
+        "risks",
+        "tags"
+      ]
+    }
+  ],
+  "warnings": [
+    "漲跌家數端點沒有同交易日股票統計，相關欄位保留 null。",
+    "TWSE 官方資料缺少完整漲跌家數，本筆資料為部分資料。",
+    "產業、個股與法人欄位目前為集中管理的模擬資料；TWSE 僅提供本快照交易日期。",
+    "Market temperature and non-official fields still use mock data and deterministic rules."
+  ]
+}

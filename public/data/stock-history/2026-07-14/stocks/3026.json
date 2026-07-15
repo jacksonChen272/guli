@@ -1,0 +1,74 @@
+{
+  "symbol": "3026",
+  "name": "禾伸堂",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 884,
+    "high": 924,
+    "low": 815,
+    "close": 815,
+    "change": -90,
+    "changePercent": -9.94,
+    "tradeVolume": 15339717,
+    "transactionCount": 22285,
+    "tradeValue": 13177442737,
+    "peRatio": 105.03
+  },
+  "dailyRangePercent": 13.37,
+  "turnoverAverageValue": 591314.46,
+  "pricePosition": 0,
+  "liquidityScore": 95.8,
+  "priceStrengthScore": 6.1,
+  "valuationRiskScore": 90,
+  "snapshotScore": 38.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.94% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 13.37% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 105.03 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

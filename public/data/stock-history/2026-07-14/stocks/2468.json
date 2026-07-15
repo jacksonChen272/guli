@@ -1,0 +1,53 @@
+{
+  "symbol": "2468",
+  "name": "華經",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 38.4,
+    "high": 38.4,
+    "low": 35.5,
+    "close": 36.45,
+    "change": -1.55,
+    "changePercent": -4.08,
+    "tradeVolume": 653230,
+    "transactionCount": 992,
+    "tradeValue": 24020696,
+    "peRatio": 28.48
+  },
+  "dailyRangePercent": 8.17,
+  "turnoverAverageValue": 24214.41,
+  "pricePosition": 32.8,
+  "liquidityScore": 44.5,
+  "priceStrengthScore": 30.8,
+  "valuationRiskScore": 55,
+  "snapshotScore": 38.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.17% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

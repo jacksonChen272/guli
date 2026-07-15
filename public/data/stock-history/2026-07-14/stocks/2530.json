@@ -1,0 +1,53 @@
+{
+  "symbol": "2530",
+  "name": "華建",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.8,
+    "high": 19.85,
+    "low": 19.05,
+    "close": 19.1,
+    "change": -0.5,
+    "changePercent": -2.55,
+    "tradeVolume": 1064869,
+    "transactionCount": 544,
+    "tradeValue": 20568740,
+    "peRatio": 9.74
+  },
+  "dailyRangePercent": 4.2,
+  "turnoverAverageValue": 37810.18,
+  "pricePosition": 6.3,
+  "liquidityScore": 44.4,
+  "priceStrengthScore": 25,
+  "valuationRiskScore": 20,
+  "snapshotScore": 42.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

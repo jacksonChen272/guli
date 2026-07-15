@@ -1,0 +1,62 @@
+{
+  "symbol": "1452",
+  "name": "宏益",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.6,
+    "high": 11.75,
+    "low": 11.55,
+    "close": 11.75,
+    "change": 0.15,
+    "changePercent": 1.29,
+    "tradeVolume": 134743,
+    "transactionCount": 78,
+    "tradeValue": 1569541,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.73,
+  "turnoverAverageValue": 20122.32,
+  "pricePosition": 100,
+  "liquidityScore": 12.6,
+  "priceStrengthScore": 74.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 47.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.6 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

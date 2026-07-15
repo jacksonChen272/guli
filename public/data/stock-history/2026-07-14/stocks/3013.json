@@ -1,0 +1,53 @@
+{
+  "symbol": "3013",
+  "name": "晟銘電",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 99,
+    "high": 99.5,
+    "low": 90.5,
+    "close": 96.3,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 2556534,
+    "transactionCount": 2754,
+    "tradeValue": 240777051,
+    "peRatio": 21.12
+  },
+  "dailyRangePercent": 9.94,
+  "turnoverAverageValue": 87428.12,
+  "pricePosition": 64.4,
+  "liquidityScore": 70.8,
+  "priceStrengthScore": 51,
+  "valuationRiskScore": 35,
+  "snapshotScore": 60.7,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.94% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2504",
+  "name": "國產",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 31.45,
+    "high": 31.45,
+    "low": 30.3,
+    "close": 30.3,
+    "change": -0.9,
+    "changePercent": -2.88,
+    "tradeVolume": 3594939,
+    "transactionCount": 2251,
+    "tradeValue": 110236427,
+    "peRatio": 9.21
+  },
+  "dailyRangePercent": 3.8,
+  "turnoverAverageValue": 48972.2,
+  "pricePosition": 0,
+  "liquidityScore": 67.9,
+  "priceStrengthScore": 22,
+  "valuationRiskScore": 20,
+  "snapshotScore": 49.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

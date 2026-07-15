@@ -1,0 +1,53 @@
+{
+  "symbol": "8261",
+  "name": "富鼎",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 278,
+    "high": 307,
+    "low": 263.5,
+    "close": 307,
+    "change": 14.5,
+    "changePercent": 4.96,
+    "tradeVolume": 6416190,
+    "transactionCount": 9245,
+    "tradeValue": 1789713126,
+    "peRatio": 52.57
+  },
+  "dailyRangePercent": 16.51,
+  "turnoverAverageValue": 193587.14,
+  "pricePosition": 100,
+  "liquidityScore": 87.6,
+  "priceStrengthScore": 82.7,
+  "valuationRiskScore": 75,
+  "snapshotScore": 72.9,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 16.51% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

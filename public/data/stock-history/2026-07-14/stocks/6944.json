@@ -1,0 +1,53 @@
+{
+  "symbol": "6944",
+  "name": "兆聯實業",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 1020,
+    "high": 1030,
+    "low": 950,
+    "close": 985,
+    "change": -60,
+    "changePercent": -5.74,
+    "tradeVolume": 717984,
+    "transactionCount": 3035,
+    "tradeValue": 706412005,
+    "peRatio": 27.72
+  },
+  "dailyRangePercent": 8.42,
+  "turnoverAverageValue": 232755.19,
+  "pricePosition": 43.8,
+  "liquidityScore": 67.7,
+  "priceStrengthScore": 30.9,
+  "valuationRiskScore": 55,
+  "snapshotScore": 46.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.42% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

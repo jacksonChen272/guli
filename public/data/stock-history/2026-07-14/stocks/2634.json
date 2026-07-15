@@ -1,0 +1,60 @@
+{
+  "symbol": "2634",
+  "name": "漢翔",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 66,
+    "high": 69.5,
+    "low": 64,
+    "close": 67.1,
+    "change": 3.3,
+    "changePercent": 5.17,
+    "tradeVolume": 139359123,
+    "transactionCount": 75047,
+    "tradeValue": 9271123619,
+    "peRatio": 83.88
+  },
+  "dailyRangePercent": 8.59,
+  "turnoverAverageValue": 123537.56,
+  "pricePosition": 56.4,
+  "liquidityScore": 98.6,
+  "priceStrengthScore": 67.9,
+  "valuationRiskScore": 90,
+  "snapshotScore": 67.1,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.59% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 83.88 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

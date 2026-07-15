@@ -1,0 +1,143 @@
+{
+  "entityType": "stock",
+  "entityId": "3504",
+  "entityName": "揚明光",
+  "tradeDate": "2026-07-14",
+  "score": 46.5,
+  "label": "偏弱",
+  "direction": "bearish",
+  "confidence": 82,
+  "summary": "偏弱，當日價格強度為主要貢獻。",
+  "factors": [
+    {
+      "code": "stock_health",
+      "name": "既有健康分數",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.25,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "daily_price_strength",
+      "name": "當日價格強度",
+      "rawValue": 23.1,
+      "normalizedScore": 23.1,
+      "weight": 0.2,
+      "contribution": -8.97,
+      "direction": "negative",
+      "explanation": "當日價格強度: 23.1",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "liquidity",
+      "name": "流動性",
+      "rawValue": 60.4,
+      "normalizedScore": 60.4,
+      "weight": 0.15,
+      "contribution": 2.6,
+      "direction": "positive",
+      "explanation": "流動性: 60.4",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "market_environment",
+      "name": "市場環境",
+      "rawValue": 39.4,
+      "normalizedScore": 39.4,
+      "weight": 0.15,
+      "contribution": -2.65,
+      "direction": "negative",
+      "explanation": "市場環境: 39.4",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "industry_environment",
+      "name": "產業環境",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.15,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "risk_control",
+      "name": "風險控制",
+      "rawValue": 83,
+      "normalizedScore": 83,
+      "weight": 0.1,
+      "contribution": 5.5,
+      "direction": "positive",
+      "explanation": "風險控制: 83",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "data_quality",
+      "name": "資料品質",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "derived"
+    }
+  ],
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "explanation": "單日振幅 12.35% 達 8% 門檻。",
+      "sourceType": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "explanation": "官方資料未提供本益比，估值風險不計分。",
+      "sourceType": "official"
+    }
+  ],
+  "trace": {
+    "formulaVersion": "decision-v1.0",
+    "totalPositiveContribution": 8.1,
+    "totalNegativeContribution": -11.62,
+    "totalContribution": -3.52,
+    "availableWeight": 0.6,
+    "missingWeight": 0.4,
+    "normalizationApplied": true,
+    "calculationSteps": [
+      "availableWeight=0.6",
+      "missingWeight=0.4",
+      "normalized=true"
+    ]
+  },
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。",
+    "Static generation has no verified industry mapping or mock health input; weights were normalized."
+  ]
+}

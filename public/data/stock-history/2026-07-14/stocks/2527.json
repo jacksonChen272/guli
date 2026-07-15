@@ -1,0 +1,67 @@
+{
+  "symbol": "2527",
+  "name": "宏璟",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 45.65,
+    "high": 45.8,
+    "low": 41.4,
+    "close": 41.75,
+    "change": -3.9,
+    "changePercent": -8.54,
+    "tradeVolume": 2340071,
+    "transactionCount": 1595,
+    "tradeValue": 100743629,
+    "peRatio": 8.23
+  },
+  "dailyRangePercent": 10.63,
+  "turnoverAverageValue": 63162.15,
+  "pricePosition": 8,
+  "liquidityScore": 64,
+  "priceStrengthScore": 12.1,
+  "valuationRiskScore": 20,
+  "snapshotScore": 43.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.54% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.63% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

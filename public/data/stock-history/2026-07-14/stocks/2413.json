@@ -1,0 +1,53 @@
+{
+  "symbol": "2413",
+  "name": "環科",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 45.4,
+    "high": 46.9,
+    "low": 43,
+    "close": 44,
+    "change": -1.75,
+    "changePercent": -3.83,
+    "tradeVolume": 3365200,
+    "transactionCount": 2495,
+    "tradeValue": 151626938,
+    "peRatio": 57.14
+  },
+  "dailyRangePercent": 9.07,
+  "turnoverAverageValue": 60772.32,
+  "pricePosition": 25.6,
+  "liquidityScore": 69.8,
+  "priceStrengthScore": 28.9,
+  "valuationRiskScore": 75,
+  "snapshotScore": 42.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.07% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

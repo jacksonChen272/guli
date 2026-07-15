@@ -1,0 +1,60 @@
+{
+  "symbol": "8487",
+  "name": "愛爾達-創",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 76.8,
+    "high": 77.6,
+    "low": 75.8,
+    "close": 75.9,
+    "change": -1.1,
+    "changePercent": -1.43,
+    "tradeVolume": 40039,
+    "transactionCount": 96,
+    "tradeValue": 3057504,
+    "peRatio": 13.55
+  },
+  "dailyRangePercent": 2.37,
+  "turnoverAverageValue": 31849,
+  "pricePosition": 5.6,
+  "liquidityScore": 10.8,
+  "priceStrengthScore": 27.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 32.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.6 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.8 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

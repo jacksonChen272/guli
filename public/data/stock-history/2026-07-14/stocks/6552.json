@@ -1,0 +1,62 @@
+{
+  "symbol": "6552",
+  "name": "易華電",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 28.7,
+    "high": 28.7,
+    "low": 26.3,
+    "close": 27.65,
+    "change": -0.65,
+    "changePercent": -2.3,
+    "tradeVolume": 332104,
+    "transactionCount": 383,
+    "tradeValue": 9007791,
+    "peRatio": null
+  },
+  "dailyRangePercent": 9.13,
+  "turnoverAverageValue": 23519.04,
+  "pricePosition": 56.2,
+  "liquidityScore": 30,
+  "priceStrengthScore": 43,
+  "valuationRiskScore": null,
+  "snapshotScore": 37.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.13% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "1467",
+  "name": "南緯",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 8.23,
+    "high": 8.58,
+    "low": 8.11,
+    "close": 8.49,
+    "change": 0.28,
+    "changePercent": 3.41,
+    "tradeVolume": 687349,
+    "transactionCount": 387,
+    "tradeValue": 5749043,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.8,
+  "turnoverAverageValue": 14855.41,
+  "pricePosition": 80.9,
+  "liquidityScore": 32.8,
+  "priceStrengthScore": 72.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 55.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

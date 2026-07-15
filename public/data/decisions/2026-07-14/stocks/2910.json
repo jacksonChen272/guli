@@ -1,0 +1,142 @@
+{
+  "entityType": "stock",
+  "entityId": "2910",
+  "entityName": "統領",
+  "tradeDate": "2026-07-14",
+  "score": 57.7,
+  "label": "中性",
+  "direction": "neutral",
+  "confidence": 85,
+  "summary": "中性，當日價格強度為主要貢獻。",
+  "factors": [
+    {
+      "code": "stock_health",
+      "name": "既有健康分數",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.25,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "daily_price_strength",
+      "name": "當日價格強度",
+      "rawValue": 93.6,
+      "normalizedScore": 93.6,
+      "weight": 0.2,
+      "contribution": 14.53,
+      "direction": "positive",
+      "explanation": "當日價格強度: 93.6",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "liquidity",
+      "name": "流動性",
+      "rawValue": 24.6,
+      "normalizedScore": 24.6,
+      "weight": 0.15,
+      "contribution": -6.35,
+      "direction": "negative",
+      "explanation": "流動性: 24.6",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "market_environment",
+      "name": "市場環境",
+      "rawValue": 39.4,
+      "normalizedScore": 39.4,
+      "weight": 0.15,
+      "contribution": -2.65,
+      "direction": "negative",
+      "explanation": "市場環境: 39.4",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "industry_environment",
+      "name": "產業環境",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.15,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "risk_control",
+      "name": "風險控制",
+      "rawValue": 63,
+      "normalizedScore": 63,
+      "weight": 0.1,
+      "contribution": 2.17,
+      "direction": "positive",
+      "explanation": "風險控制: 63",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "data_quality",
+      "name": "資料品質",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "derived"
+    }
+  ],
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "explanation": "單日漲幅 9.84% 達 7% 門檻。",
+      "sourceType": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "explanation": "單日振幅 9.35% 達 8% 門檻。",
+      "sourceType": "derived"
+    }
+  ],
+  "trace": {
+    "formulaVersion": "decision-v1.0",
+    "totalPositiveContribution": 16.7,
+    "totalNegativeContribution": -9,
+    "totalContribution": 7.7,
+    "availableWeight": 0.6,
+    "missingWeight": 0.4,
+    "normalizationApplied": true,
+    "calculationSteps": [
+      "availableWeight=0.6",
+      "missingWeight=0.4",
+      "normalized=true"
+    ]
+  },
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "Static generation has no verified industry mapping or mock health input; weights were normalized."
+  ]
+}

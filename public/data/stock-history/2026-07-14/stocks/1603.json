@@ -1,0 +1,53 @@
+{
+  "symbol": "1603",
+  "name": "華電",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 29.85,
+    "high": 30,
+    "low": 29.05,
+    "close": 29.15,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 599942,
+    "transactionCount": 441,
+    "tradeValue": 17571761,
+    "peRatio": 10.84
+  },
+  "dailyRangePercent": 3.27,
+  "turnoverAverageValue": 39845.26,
+  "pricePosition": 10.5,
+  "liquidityScore": 38.8,
+  "priceStrengthScore": 32.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 44.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

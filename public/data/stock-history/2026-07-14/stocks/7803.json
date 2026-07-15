@@ -1,0 +1,55 @@
+{
+  "symbol": "7803",
+  "name": "雲象科技-創",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 22.75,
+    "high": 22.75,
+    "low": 22.1,
+    "close": 22.5,
+    "change": 0.35,
+    "changePercent": 1.58,
+    "tradeVolume": 164029,
+    "transactionCount": 91,
+    "tradeValue": 3664192,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.94,
+  "turnoverAverageValue": 40265.85,
+  "pricePosition": 61.5,
+  "liquidityScore": 16.6,
+  "priceStrengthScore": 53.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 37.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

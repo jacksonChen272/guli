@@ -1,0 +1,60 @@
+{
+  "symbol": "6936",
+  "name": "永鴻生技",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 32.3,
+    "high": 32.55,
+    "low": 31.75,
+    "close": 31.85,
+    "change": -0.45,
+    "changePercent": -1.39,
+    "tradeVolume": 62892,
+    "transactionCount": 68,
+    "tradeValue": 2016317,
+    "peRatio": 16.85
+  },
+  "dailyRangePercent": 2.52,
+  "turnoverAverageValue": 29651.72,
+  "pricePosition": 12.5,
+  "liquidityScore": 10.1,
+  "priceStrengthScore": 29.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 29.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.1 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

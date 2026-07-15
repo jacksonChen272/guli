@@ -1,0 +1,60 @@
+{
+  "symbol": "7768",
+  "name": "頌勝科技",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 346,
+    "high": 346,
+    "low": 318.5,
+    "close": 329,
+    "change": -13,
+    "changePercent": -3.8,
+    "tradeVolume": 140955,
+    "transactionCount": 311,
+    "tradeValue": 45892889,
+    "peRatio": 107.17
+  },
+  "dailyRangePercent": 8.63,
+  "turnoverAverageValue": 147565.56,
+  "pricePosition": 38.2,
+  "liquidityScore": 35.2,
+  "priceStrengthScore": 33.3,
+  "valuationRiskScore": 90,
+  "snapshotScore": 29.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.63% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 107.17 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

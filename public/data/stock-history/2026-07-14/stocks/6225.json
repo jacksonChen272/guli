@@ -1,0 +1,62 @@
+{
+  "symbol": "6225",
+  "name": "天瀚",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 24,
+    "high": 25.5,
+    "low": 24,
+    "close": 24.65,
+    "change": 0.45,
+    "changePercent": 1.86,
+    "tradeVolume": 21050,
+    "transactionCount": 15,
+    "tradeValue": 520880,
+    "peRatio": null
+  },
+  "dailyRangePercent": 6.25,
+  "turnoverAverageValue": 34725.33,
+  "pricePosition": 43.3,
+  "liquidityScore": 2.6,
+  "priceStrengthScore": 55.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 32.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 2.6 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

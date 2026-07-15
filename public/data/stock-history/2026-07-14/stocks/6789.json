@@ -1,0 +1,74 @@
+{
+  "symbol": "6789",
+  "name": "采鈺",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 523,
+    "high": 524,
+    "low": 481.5,
+    "close": 482,
+    "change": -53,
+    "changePercent": -9.91,
+    "tradeVolume": 5315169,
+    "transactionCount": 9969,
+    "tradeValue": 2610541475,
+    "peRatio": 103.66
+  },
+  "dailyRangePercent": 8.83,
+  "turnoverAverageValue": 261865.93,
+  "pricePosition": 1.2,
+  "liquidityScore": 88.1,
+  "priceStrengthScore": 6.6,
+  "valuationRiskScore": 90,
+  "snapshotScore": 35.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.91% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.83% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 1.2 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 103.66 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

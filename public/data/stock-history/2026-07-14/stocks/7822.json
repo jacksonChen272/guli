@@ -1,0 +1,60 @@
+{
+  "symbol": "7822",
+  "name": "倍利科",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 978,
+    "high": 978,
+    "low": 873,
+    "close": 917,
+    "change": -52,
+    "changePercent": -5.37,
+    "tradeVolume": 302773,
+    "transactionCount": 2281,
+    "tradeValue": 274465547,
+    "peRatio": 71.81
+  },
+  "dailyRangePercent": 12.03,
+  "turnoverAverageValue": 120326.85,
+  "pricePosition": 41.9,
+  "liquidityScore": 56.8,
+  "priceStrengthScore": 31.1,
+  "valuationRiskScore": 90,
+  "snapshotScore": 35.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 12.03% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 71.81 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

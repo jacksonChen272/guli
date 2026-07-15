@@ -1,0 +1,55 @@
+{
+  "symbol": "1517",
+  "name": "利奇",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.65,
+    "high": 10.8,
+    "low": 10.4,
+    "close": 10.75,
+    "change": 0.3,
+    "changePercent": 2.87,
+    "tradeVolume": 518776,
+    "transactionCount": 288,
+    "tradeValue": 5496544,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.85,
+  "turnoverAverageValue": 19085.22,
+  "pricePosition": 87.5,
+  "liquidityScore": 29.7,
+  "priceStrengthScore": 73.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 54.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

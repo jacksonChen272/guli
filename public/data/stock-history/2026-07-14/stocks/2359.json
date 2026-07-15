@@ -1,0 +1,60 @@
+{
+  "symbol": "2359",
+  "name": "所羅門",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 147.5,
+    "high": 147.5,
+    "low": 136.5,
+    "close": 142.5,
+    "change": -5.5,
+    "changePercent": -3.72,
+    "tradeVolume": 6109319,
+    "transactionCount": 12225,
+    "tradeValue": 864151782,
+    "peRatio": 73.45
+  },
+  "dailyRangePercent": 8.06,
+  "turnoverAverageValue": 70687.26,
+  "pricePosition": 54.5,
+  "liquidityScore": 85.5,
+  "priceStrengthScore": 39.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 49.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.06% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 73.45 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

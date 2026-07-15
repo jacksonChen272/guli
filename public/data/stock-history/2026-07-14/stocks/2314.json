@@ -1,0 +1,69 @@
+{
+  "symbol": "2314",
+  "name": "台揚",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.4,
+    "high": 13.85,
+    "low": 13.15,
+    "close": 13.25,
+    "change": -0.25,
+    "changePercent": -1.85,
+    "tradeVolume": 79278,
+    "transactionCount": 109,
+    "tradeValue": 1055952,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.32,
+  "turnoverAverageValue": 9687.63,
+  "pricePosition": 14.3,
+  "liquidityScore": 10,
+  "priceStrengthScore": 29.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 20.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.0 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

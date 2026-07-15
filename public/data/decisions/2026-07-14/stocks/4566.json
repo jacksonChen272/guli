@@ -1,0 +1,135 @@
+{
+  "entityType": "stock",
+  "entityId": "4566",
+  "entityName": "時碩工業",
+  "tradeDate": "2026-07-14",
+  "score": 66.5,
+  "label": "偏強",
+  "direction": "bullish",
+  "confidence": 85,
+  "summary": "偏強，當日價格強度為主要貢獻。",
+  "factors": [
+    {
+      "code": "stock_health",
+      "name": "既有健康分數",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.25,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "daily_price_strength",
+      "name": "當日價格強度",
+      "rawValue": 76.2,
+      "normalizedScore": 76.2,
+      "weight": 0.2,
+      "contribution": 8.73,
+      "direction": "positive",
+      "explanation": "當日價格強度: 76.2",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "liquidity",
+      "name": "流動性",
+      "rawValue": 66.5,
+      "normalizedScore": 66.5,
+      "weight": 0.15,
+      "contribution": 4.13,
+      "direction": "positive",
+      "explanation": "流動性: 66.5",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "market_environment",
+      "name": "市場環境",
+      "rawValue": 39.4,
+      "normalizedScore": 39.4,
+      "weight": 0.15,
+      "contribution": -2.65,
+      "direction": "negative",
+      "explanation": "市場環境: 39.4",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "industry_environment",
+      "name": "產業環境",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.15,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "risk_control",
+      "name": "風險控制",
+      "rawValue": 88,
+      "normalizedScore": 88,
+      "weight": 0.1,
+      "contribution": 6.33,
+      "direction": "positive",
+      "explanation": "風險控制: 88",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "data_quality",
+      "name": "資料品質",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "derived"
+    }
+  ],
+  "risks": [
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "explanation": "官方本益比 72.50 達一般性 60 倍門檻；未做產業比較。",
+      "sourceType": "official"
+    }
+  ],
+  "trace": {
+    "formulaVersion": "decision-v1.0",
+    "totalPositiveContribution": 19.19,
+    "totalNegativeContribution": -2.65,
+    "totalContribution": 16.54,
+    "availableWeight": 0.6,
+    "missingWeight": 0.4,
+    "normalizationApplied": true,
+    "calculationSteps": [
+      "availableWeight=0.6",
+      "missingWeight=0.4",
+      "normalized=true"
+    ]
+  },
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "Static generation has no verified industry mapping or mock health input; weights were normalized."
+  ]
+}

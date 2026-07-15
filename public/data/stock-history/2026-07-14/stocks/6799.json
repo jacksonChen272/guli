@@ -1,0 +1,53 @@
+{
+  "symbol": "6799",
+  "name": "來頡",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 96,
+    "high": 97.1,
+    "low": 87.5,
+    "close": 91.1,
+    "change": -4.7,
+    "changePercent": -4.91,
+    "tradeVolume": 738737,
+    "transactionCount": 792,
+    "tradeValue": 67615573,
+    "peRatio": 25.1
+  },
+  "dailyRangePercent": 10.97,
+  "turnoverAverageValue": 85373.2,
+  "pricePosition": 37.5,
+  "liquidityScore": 51.2,
+  "priceStrengthScore": 30.6,
+  "valuationRiskScore": 55,
+  "snapshotScore": 40.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.97% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

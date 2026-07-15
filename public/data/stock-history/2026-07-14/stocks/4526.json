@@ -1,0 +1,53 @@
+{
+  "symbol": "4526",
+  "name": "東台",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 36.6,
+    "high": 36.75,
+    "low": 33.6,
+    "close": 34.9,
+    "change": -2.25,
+    "changePercent": -6.06,
+    "tradeVolume": 3876089,
+    "transactionCount": 2657,
+    "tradeValue": 135372580,
+    "peRatio": 33.56
+  },
+  "dailyRangePercent": 9.37,
+  "turnoverAverageValue": 50949.41,
+  "pricePosition": 41.3,
+  "liquidityScore": 70.3,
+  "priceStrengthScore": 29.3,
+  "valuationRiskScore": 55,
+  "snapshotScore": 46.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.37% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

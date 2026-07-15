@@ -1,0 +1,53 @@
+{
+  "symbol": "3563",
+  "name": "牧德",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 689,
+    "high": 700,
+    "low": 635,
+    "close": 668,
+    "change": -23,
+    "changePercent": -3.33,
+    "tradeVolume": 992897,
+    "transactionCount": 2961,
+    "tradeValue": 658095561,
+    "peRatio": 42.66
+  },
+  "dailyRangePercent": 10.24,
+  "turnoverAverageValue": 222254.5,
+  "pricePosition": 50.8,
+  "liquidityScore": 69.6,
+  "priceStrengthScore": 38.8,
+  "valuationRiskScore": 75,
+  "snapshotScore": 46.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.24% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

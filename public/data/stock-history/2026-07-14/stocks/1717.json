@@ -1,0 +1,53 @@
+{
+  "symbol": "1717",
+  "name": "長興",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 72.9,
+    "high": 72.9,
+    "low": 66.6,
+    "close": 70,
+    "change": -2.6,
+    "changePercent": -3.58,
+    "tradeVolume": 19053752,
+    "transactionCount": 13951,
+    "tradeValue": 1315963008,
+    "peRatio": 47.3
+  },
+  "dailyRangePercent": 9.46,
+  "turnoverAverageValue": 94327.5,
+  "pricePosition": 54,
+  "liquidityScore": 91.1,
+  "priceStrengthScore": 39.3,
+  "valuationRiskScore": 75,
+  "snapshotScore": 54.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.46% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

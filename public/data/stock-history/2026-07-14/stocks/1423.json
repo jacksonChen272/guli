@@ -1,0 +1,60 @@
+{
+  "symbol": "1423",
+  "name": "利華",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 37.2,
+    "high": 39.05,
+    "low": 36.5,
+    "close": 36.7,
+    "change": -0.2,
+    "changePercent": -0.54,
+    "tradeVolume": 86244,
+    "transactionCount": 87,
+    "tradeValue": 3187282,
+    "peRatio": 9.73
+  },
+  "dailyRangePercent": 6.99,
+  "turnoverAverageValue": 36635.43,
+  "pricePosition": 7.8,
+  "liquidityScore": 13,
+  "priceStrengthScore": 30,
+  "valuationRiskScore": 20,
+  "snapshotScore": 34.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.8 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.0 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

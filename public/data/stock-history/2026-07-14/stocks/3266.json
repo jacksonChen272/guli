@@ -1,0 +1,53 @@
+{
+  "symbol": "3266",
+  "name": "昇陽",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.7,
+    "high": 13.7,
+    "low": 13.3,
+    "close": 13.5,
+    "change": -0.1,
+    "changePercent": -0.74,
+    "tradeVolume": 78139,
+    "transactionCount": 67,
+    "tradeValue": 1053738,
+    "peRatio": 21.09
+  },
+  "dailyRangePercent": 3.01,
+  "turnoverAverageValue": 15727.43,
+  "pricePosition": 50,
+  "liquidityScore": 8.9,
+  "priceStrengthScore": 44.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 36.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.9 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

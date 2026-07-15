@@ -1,0 +1,53 @@
+{
+  "symbol": "2365",
+  "name": "昆盈",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 32.4,
+    "high": 33.2,
+    "low": 31,
+    "close": 31.85,
+    "change": -0.65,
+    "changePercent": -2,
+    "tradeVolume": 3620098,
+    "transactionCount": 1508,
+    "tradeValue": 115021252,
+    "peRatio": 81.67
+  },
+  "dailyRangePercent": 7.1,
+  "turnoverAverageValue": 76274.04,
+  "pricePosition": 38.6,
+  "liquidityScore": 66.8,
+  "priceStrengthScore": 37.5,
+  "valuationRiskScore": 90,
+  "snapshotScore": 42.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 81.67 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

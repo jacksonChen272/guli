@@ -1,0 +1,76 @@
+{
+  "symbol": "2342",
+  "name": "茂矽",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 49.15,
+    "high": 50.8,
+    "low": 44.75,
+    "close": 45.95,
+    "change": -3.75,
+    "changePercent": -7.55,
+    "tradeVolume": 7353382,
+    "transactionCount": 5316,
+    "tradeValue": 339487917,
+    "peRatio": null
+  },
+  "dailyRangePercent": 13.52,
+  "turnoverAverageValue": 63861.53,
+  "pricePosition": 19.8,
+  "liquidityScore": 79.9,
+  "priceStrengthScore": 18.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 45.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.55% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 13.52% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 19.8 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

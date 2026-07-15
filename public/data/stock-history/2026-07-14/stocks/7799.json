@@ -1,0 +1,55 @@
+{
+  "symbol": "7799",
+  "name": "禾榮科",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 402.5,
+    "high": 408,
+    "low": 380,
+    "close": 396,
+    "change": -6.5,
+    "changePercent": -1.61,
+    "tradeVolume": 670172,
+    "transactionCount": 1457,
+    "tradeValue": 262746738,
+    "peRatio": null
+  },
+  "dailyRangePercent": 7.37,
+  "turnoverAverageValue": 180334.07,
+  "pricePosition": 57.1,
+  "liquidityScore": 60.6,
+  "priceStrengthScore": 44.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 51.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

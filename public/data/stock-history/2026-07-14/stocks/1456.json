@@ -1,0 +1,53 @@
+{
+  "symbol": "1456",
+  "name": "怡華",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.95,
+    "high": 14,
+    "low": 13.4,
+    "close": 13.75,
+    "change": -0.2,
+    "changePercent": -1.43,
+    "tradeVolume": 143271,
+    "transactionCount": 94,
+    "tradeValue": 1957782,
+    "peRatio": 3.99
+  },
+  "dailyRangePercent": 4.48,
+  "turnoverAverageValue": 20827.47,
+  "pricePosition": 58.3,
+  "liquidityScore": 13.8,
+  "priceStrengthScore": 45.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 41.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.8 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "8028",
+  "name": "昇陽半導體",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 298.5,
+    "high": 302.5,
+    "low": 276,
+    "close": 291.5,
+    "change": -11.5,
+    "changePercent": -3.8,
+    "tradeVolume": 4719000,
+    "transactionCount": 6560,
+    "tradeValue": 1355587213,
+    "peRatio": 64.49
+  },
+  "dailyRangePercent": 9.6,
+  "turnoverAverageValue": 206644.39,
+  "pricePosition": 58.5,
+  "liquidityScore": 84.3,
+  "priceStrengthScore": 40.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 49.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.60% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 64.49 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

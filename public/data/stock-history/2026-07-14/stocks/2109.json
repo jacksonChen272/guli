@@ -1,0 +1,53 @@
+{
+  "symbol": "2109",
+  "name": "華豐",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 14.75,
+    "high": 14.75,
+    "low": 14.4,
+    "close": 14.6,
+    "change": -0.15,
+    "changePercent": -1.02,
+    "tradeVolume": 143820,
+    "transactionCount": 131,
+    "tradeValue": 2091740,
+    "peRatio": 12.17
+  },
+  "dailyRangePercent": 2.43,
+  "turnoverAverageValue": 15967.48,
+  "pricePosition": 57.1,
+  "liquidityScore": 14.8,
+  "priceStrengthScore": 46.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 42,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.8 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

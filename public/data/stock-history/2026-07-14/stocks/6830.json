@@ -1,0 +1,62 @@
+{
+  "symbol": "6830",
+  "name": "汎銓",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 392,
+    "high": 396.5,
+    "low": 355.5,
+    "close": 379,
+    "change": -15.5,
+    "changePercent": -3.93,
+    "tradeVolume": 2102989,
+    "transactionCount": 4114,
+    "tradeValue": 776511483,
+    "peRatio": null
+  },
+  "dailyRangePercent": 11.53,
+  "turnoverAverageValue": 188748.54,
+  "pricePosition": 57.3,
+  "liquidityScore": 76.3,
+  "priceStrengthScore": 39.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 55.7,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.53% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2537",
+  "name": "聯上發",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.95,
+    "high": 11.05,
+    "low": 10.9,
+    "close": 10.9,
+    "change": -0.1,
+    "changePercent": -0.91,
+    "tradeVolume": 921084,
+    "transactionCount": 321,
+    "tradeValue": 10072739,
+    "peRatio": 34.06
+  },
+  "dailyRangePercent": 1.38,
+  "turnoverAverageValue": 31379.25,
+  "pricePosition": 0,
+  "liquidityScore": 37.1,
+  "priceStrengthScore": 26.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 33.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

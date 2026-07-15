@@ -1,0 +1,53 @@
+{
+  "symbol": "1525",
+  "name": "江申",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 67.7,
+    "high": 67.7,
+    "low": 65.1,
+    "close": 65.9,
+    "change": -0.4,
+    "changePercent": -0.6,
+    "tradeVolume": 13221,
+    "transactionCount": 22,
+    "tradeValue": 879852,
+    "peRatio": 41.19
+  },
+  "dailyRangePercent": 3.99,
+  "turnoverAverageValue": 39993.27,
+  "pricePosition": 30.8,
+  "liquidityScore": 3.6,
+  "priceStrengthScore": 37.9,
+  "valuationRiskScore": 75,
+  "snapshotScore": 23.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 3.6 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

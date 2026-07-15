@@ -1,0 +1,53 @@
+{
+  "symbol": "8110",
+  "name": "華東",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 48.4,
+    "high": 49.3,
+    "low": 44.25,
+    "close": 47.9,
+    "change": -0.9,
+    "changePercent": -1.84,
+    "tradeVolume": 7806161,
+    "transactionCount": 5772,
+    "tradeValue": 361820591,
+    "peRatio": 17.55
+  },
+  "dailyRangePercent": 11.41,
+  "turnoverAverageValue": 62685.48,
+  "pricePosition": 72.3,
+  "liquidityScore": 80.8,
+  "priceStrengthScore": 49.7,
+  "valuationRiskScore": 35,
+  "snapshotScore": 63.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.41% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

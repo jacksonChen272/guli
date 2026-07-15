@@ -1,0 +1,62 @@
+{
+  "symbol": "6668",
+  "name": "中揚光",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 38.15,
+    "high": 38.15,
+    "low": 34.65,
+    "close": 36.05,
+    "change": -1.85,
+    "changePercent": -4.88,
+    "tradeVolume": 865309,
+    "transactionCount": 700,
+    "tradeValue": 31126222,
+    "peRatio": null
+  },
+  "dailyRangePercent": 10.1,
+  "turnoverAverageValue": 44466.03,
+  "pricePosition": 40,
+  "liquidityScore": 46.5,
+  "priceStrengthScore": 31.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 38.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.10% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

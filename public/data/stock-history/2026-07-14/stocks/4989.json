@@ -1,0 +1,62 @@
+{
+  "symbol": "4989",
+  "name": "榮科",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 83,
+    "high": 83.5,
+    "low": 74.8,
+    "close": 80,
+    "change": -2.7,
+    "changePercent": -3.26,
+    "tradeVolume": 10748547,
+    "transactionCount": 8466,
+    "tradeValue": 850150736,
+    "peRatio": null
+  },
+  "dailyRangePercent": 11.63,
+  "turnoverAverageValue": 100419.41,
+  "pricePosition": 59.8,
+  "liquidityScore": 86.8,
+  "priceStrengthScore": 42.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 61.7,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.63% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

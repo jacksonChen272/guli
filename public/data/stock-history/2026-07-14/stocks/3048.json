@@ -1,0 +1,53 @@
+{
+  "symbol": "3048",
+  "name": "益登",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 57,
+    "high": 58,
+    "low": 52.2,
+    "close": 55.6,
+    "change": -1.8,
+    "changePercent": -3.14,
+    "tradeVolume": 3881361,
+    "transactionCount": 2897,
+    "tradeValue": 212200359,
+    "peRatio": 20
+  },
+  "dailyRangePercent": 11.11,
+  "turnoverAverageValue": 73248.31,
+  "pricePosition": 58.6,
+  "liquidityScore": 72.6,
+  "priceStrengthScore": 41.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 57.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.11% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

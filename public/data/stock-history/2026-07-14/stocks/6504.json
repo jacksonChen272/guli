@@ -1,0 +1,62 @@
+{
+  "symbol": "6504",
+  "name": "南六",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 36.3,
+    "high": 36.3,
+    "low": 35,
+    "close": 35.9,
+    "change": 0.3,
+    "changePercent": 0.84,
+    "tradeVolume": 51045,
+    "transactionCount": 46,
+    "tradeValue": 1815709,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.71,
+  "turnoverAverageValue": 39471.93,
+  "pricePosition": 69.2,
+  "liquidityScore": 8.4,
+  "priceStrengthScore": 54.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 34.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.4 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

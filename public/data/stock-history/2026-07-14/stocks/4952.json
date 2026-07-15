@@ -1,0 +1,53 @@
+{
+  "symbol": "4952",
+  "name": "凌通",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 55.2,
+    "high": 57.1,
+    "low": 51.2,
+    "close": 54.1,
+    "change": -1.4,
+    "changePercent": -2.52,
+    "tradeVolume": 969975,
+    "transactionCount": 966,
+    "tradeValue": 51799599,
+    "peRatio": 48.74
+  },
+  "dailyRangePercent": 11.52,
+  "turnoverAverageValue": 53622.77,
+  "pricePosition": 49.2,
+  "liquidityScore": 52.1,
+  "priceStrengthScore": 40.1,
+  "valuationRiskScore": 75,
+  "snapshotScore": 41.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.52% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

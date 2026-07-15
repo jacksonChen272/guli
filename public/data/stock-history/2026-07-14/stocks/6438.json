@@ -1,0 +1,53 @@
+{
+  "symbol": "6438",
+  "name": "迅得",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 154,
+    "high": 154,
+    "low": 141,
+    "close": 146.5,
+    "change": -7,
+    "changePercent": -4.56,
+    "tradeVolume": 799802,
+    "transactionCount": 1373,
+    "tradeValue": 116235061,
+    "peRatio": 26.83
+  },
+  "dailyRangePercent": 9.22,
+  "turnoverAverageValue": 84657.73,
+  "pricePosition": 42.3,
+  "liquidityScore": 57.3,
+  "priceStrengthScore": 33,
+  "valuationRiskScore": 55,
+  "snapshotScore": 43.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.22% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

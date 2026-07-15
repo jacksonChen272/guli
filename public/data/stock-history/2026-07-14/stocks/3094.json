@@ -1,0 +1,60 @@
+{
+  "symbol": "3094",
+  "name": "聯傑",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 38,
+    "high": 38.55,
+    "low": 35,
+    "close": 36.8,
+    "change": -1.6,
+    "changePercent": -4.17,
+    "tradeVolume": 2037549,
+    "transactionCount": 2622,
+    "tradeValue": 74250093,
+    "peRatio": 141.54
+  },
+  "dailyRangePercent": 10.14,
+  "turnoverAverageValue": 28318.11,
+  "pricePosition": 50.7,
+  "liquidityScore": 63.2,
+  "priceStrengthScore": 36.9,
+  "valuationRiskScore": 90,
+  "snapshotScore": 40.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.14% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 141.54 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

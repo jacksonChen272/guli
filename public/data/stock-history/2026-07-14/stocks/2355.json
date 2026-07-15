@@ -1,0 +1,53 @@
+{
+  "symbol": "2355",
+  "name": "敬鵬",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 49,
+    "high": 49.25,
+    "low": 45.4,
+    "close": 47.2,
+    "change": -1.85,
+    "changePercent": -3.77,
+    "tradeVolume": 7247490,
+    "transactionCount": 4798,
+    "tradeValue": 339526681,
+    "peRatio": 27.93
+  },
+  "dailyRangePercent": 8.48,
+  "turnoverAverageValue": 70764.21,
+  "pricePosition": 46.8,
+  "liquidityScore": 79.5,
+  "priceStrengthScore": 36.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 53.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.48% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

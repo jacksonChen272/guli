@@ -1,0 +1,53 @@
+{
+  "symbol": "1464",
+  "name": "得力",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.8,
+    "high": 10.8,
+    "low": 10.5,
+    "close": 10.55,
+    "change": -0.1,
+    "changePercent": -0.94,
+    "tradeVolume": 491860,
+    "transactionCount": 288,
+    "tradeValue": 5195769,
+    "peRatio": 28.51
+  },
+  "dailyRangePercent": 2.86,
+  "turnoverAverageValue": 18040.86,
+  "pricePosition": 16.7,
+  "liquidityScore": 28.8,
+  "priceStrengthScore": 32.2,
+  "valuationRiskScore": 55,
+  "snapshotScore": 33.6,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

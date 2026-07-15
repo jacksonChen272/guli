@@ -1,0 +1,53 @@
+{
+  "symbol": "2501",
+  "name": "國建",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 22.2,
+    "high": 22.6,
+    "low": 21.5,
+    "close": 21.6,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 10901506,
+    "transactionCount": 4337,
+    "tradeValue": 238655788,
+    "peRatio": 5.58
+  },
+  "dailyRangePercent": 5.12,
+  "turnoverAverageValue": 55027.85,
+  "pricePosition": 9.1,
+  "liquidityScore": 79.2,
+  "priceStrengthScore": 31.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 58,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

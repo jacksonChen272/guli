@@ -1,0 +1,55 @@
+{
+  "symbol": "6108",
+  "name": "競國",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 18.3,
+    "high": 18.3,
+    "low": 17.1,
+    "close": 17.45,
+    "change": -0.7,
+    "changePercent": -3.86,
+    "tradeVolume": 1146343,
+    "transactionCount": 515,
+    "tradeValue": 20043186,
+    "peRatio": null
+  },
+  "dailyRangePercent": 7.02,
+  "turnoverAverageValue": 38918.81,
+  "pricePosition": 29.2,
+  "liquidityScore": 44.6,
+  "priceStrengthScore": 30,
+  "valuationRiskScore": null,
+  "snapshotScore": 36.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

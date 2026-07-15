@@ -1,0 +1,53 @@
+{
+  "symbol": "6239",
+  "name": "力成",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 308.5,
+    "high": 316.5,
+    "low": 287,
+    "close": 304,
+    "change": -8.5,
+    "changePercent": -2.72,
+    "tradeVolume": 25028861,
+    "transactionCount": 27202,
+    "tradeValue": 7454787380,
+    "peRatio": 36.19
+  },
+  "dailyRangePercent": 10.28,
+  "turnoverAverageValue": 274052.91,
+  "pricePosition": 57.6,
+  "liquidityScore": 96.3,
+  "priceStrengthScore": 42.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 61.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.28% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

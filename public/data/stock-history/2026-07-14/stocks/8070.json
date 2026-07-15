@@ -1,0 +1,53 @@
+{
+  "symbol": "8070",
+  "name": "長華*",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 52.3,
+    "high": 52.8,
+    "low": 48.55,
+    "close": 50.2,
+    "change": -2.2,
+    "changePercent": -4.2,
+    "tradeVolume": 5819486,
+    "transactionCount": 3682,
+    "tradeValue": 290556797,
+    "peRatio": 47.36
+  },
+  "dailyRangePercent": 8.75,
+  "turnoverAverageValue": 78912.76,
+  "pricePosition": 38.8,
+  "liquidityScore": 77,
+  "priceStrengthScore": 32.6,
+  "valuationRiskScore": 75,
+  "snapshotScore": 46.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.75% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

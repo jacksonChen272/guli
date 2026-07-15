@@ -1,0 +1,69 @@
+{
+  "symbol": "2429",
+  "name": "銘旺科",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 43.45,
+    "high": 47.75,
+    "low": 42.55,
+    "close": 47.75,
+    "change": 4.3,
+    "changePercent": 9.9,
+    "tradeVolume": 1696294,
+    "transactionCount": 1157,
+    "tradeValue": 77577462,
+    "peRatio": null
+  },
+  "dailyRangePercent": 12.22,
+  "turnoverAverageValue": 67050.53,
+  "pricePosition": 100,
+  "liquidityScore": 59.5,
+  "priceStrengthScore": 93.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 78.8,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.90% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 12.22% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "4119",
+  "name": "旭富",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 45.8,
+    "high": 45.8,
+    "low": 44.5,
+    "close": 44.6,
+    "change": -0.9,
+    "changePercent": -1.98,
+    "tradeVolume": 137807,
+    "transactionCount": 295,
+    "tradeValue": 6184311,
+    "peRatio": 55.75
+  },
+  "dailyRangePercent": 2.92,
+  "turnoverAverageValue": 20963.77,
+  "pricePosition": 7.7,
+  "liquidityScore": 22.7,
+  "priceStrengthScore": 26.7,
+  "valuationRiskScore": 75,
+  "snapshotScore": 25,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

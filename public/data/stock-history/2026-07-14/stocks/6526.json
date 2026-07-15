@@ -1,0 +1,53 @@
+{
+  "symbol": "6526",
+  "name": "達發",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 675,
+    "high": 680,
+    "low": 616,
+    "close": 646,
+    "change": -36,
+    "changePercent": -5.28,
+    "tradeVolume": 858207,
+    "transactionCount": 2509,
+    "tradeValue": 549411763,
+    "peRatio": 37.08
+  },
+  "dailyRangePercent": 10.39,
+  "turnoverAverageValue": 218976.39,
+  "pricePosition": 46.9,
+  "liquidityScore": 67.1,
+  "priceStrengthScore": 33,
+  "valuationRiskScore": 55,
+  "snapshotScore": 47.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.39% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

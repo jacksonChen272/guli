@@ -1,0 +1,53 @@
+{
+  "symbol": "4904",
+  "name": "遠傳",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 96.5,
+    "high": 96.9,
+    "low": 95,
+    "close": 95.1,
+    "change": -1,
+    "changePercent": -1.04,
+    "tradeVolume": 15081323,
+    "transactionCount": 7183,
+    "tradeValue": 1441661490,
+    "peRatio": 24.14
+  },
+  "dailyRangePercent": 2,
+  "turnoverAverageValue": 200704.65,
+  "pricePosition": 5.3,
+  "liquidityScore": 89.4,
+  "priceStrengthScore": 28,
+  "valuationRiskScore": 35,
+  "snapshotScore": 56.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

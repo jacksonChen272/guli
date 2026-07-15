@@ -1,0 +1,55 @@
+{
+  "symbol": "3346",
+  "name": "麗清",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.75,
+    "high": 23.8,
+    "low": 22.05,
+    "close": 22.9,
+    "change": -0.95,
+    "changePercent": -3.98,
+    "tradeVolume": 1185594,
+    "transactionCount": 804,
+    "tradeValue": 27048114,
+    "peRatio": null
+  },
+  "dailyRangePercent": 7.94,
+  "turnoverAverageValue": 33641.93,
+  "pricePosition": 48.6,
+  "liquidityScore": 48.6,
+  "priceStrengthScore": 36.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 41.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

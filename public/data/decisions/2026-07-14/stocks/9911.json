@@ -1,0 +1,127 @@
+{
+  "entityType": "stock",
+  "entityId": "9911",
+  "entityName": "櫻花",
+  "tradeDate": "2026-07-14",
+  "score": 47.4,
+  "label": "偏弱",
+  "direction": "bearish",
+  "confidence": 85,
+  "summary": "偏弱，風險控制為主要貢獻。",
+  "factors": [
+    {
+      "code": "stock_health",
+      "name": "既有健康分數",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.25,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "daily_price_strength",
+      "name": "當日價格強度",
+      "rawValue": 37.6,
+      "normalizedScore": 37.6,
+      "weight": 0.2,
+      "contribution": -4.13,
+      "direction": "negative",
+      "explanation": "當日價格強度: 37.6",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "liquidity",
+      "name": "流動性",
+      "rawValue": 33.6,
+      "normalizedScore": 33.6,
+      "weight": 0.15,
+      "contribution": -4.1,
+      "direction": "negative",
+      "explanation": "流動性: 33.6",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "market_environment",
+      "name": "市場環境",
+      "rawValue": 39.4,
+      "normalizedScore": 39.4,
+      "weight": 0.15,
+      "contribution": -2.65,
+      "direction": "negative",
+      "explanation": "市場環境: 39.4",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "industry_environment",
+      "name": "產業環境",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.15,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "risk_control",
+      "name": "風險控制",
+      "rawValue": 100,
+      "normalizedScore": 100,
+      "weight": 0.1,
+      "contribution": 8.33,
+      "direction": "positive",
+      "explanation": "風險控制: 100",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "data_quality",
+      "name": "資料品質",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "derived"
+    }
+  ],
+  "risks": [],
+  "trace": {
+    "formulaVersion": "decision-v1.0",
+    "totalPositiveContribution": 8.33,
+    "totalNegativeContribution": -10.88,
+    "totalContribution": -2.55,
+    "availableWeight": 0.6,
+    "missingWeight": 0.4,
+    "normalizationApplied": true,
+    "calculationSteps": [
+      "availableWeight=0.6",
+      "missingWeight=0.4",
+      "normalized=true"
+    ]
+  },
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "Static generation has no verified industry mapping or mock health input; weights were normalized."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "6278",
+  "name": "台表科",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 177.5,
+    "high": 181,
+    "low": 164.5,
+    "close": 172.5,
+    "change": -8,
+    "changePercent": -4.43,
+    "tradeVolume": 8605345,
+    "transactionCount": 8866,
+    "tradeValue": 1467969797,
+    "peRatio": 19.69
+  },
+  "dailyRangePercent": 10.03,
+  "turnoverAverageValue": 165572.95,
+  "pricePosition": 48.5,
+  "liquidityScore": 88,
+  "priceStrengthScore": 35.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 59.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.03% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

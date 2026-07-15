@@ -1,0 +1,53 @@
+{
+  "symbol": "4164",
+  "name": "承業醫",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 28.55,
+    "high": 28.65,
+    "low": 27.1,
+    "close": 27.35,
+    "change": -1.4,
+    "changePercent": -4.87,
+    "tradeVolume": 1578634,
+    "transactionCount": 2181,
+    "tradeValue": 43634033,
+    "peRatio": 26.3
+  },
+  "dailyRangePercent": 5.72,
+  "turnoverAverageValue": 20006.43,
+  "pricePosition": 16.1,
+  "liquidityScore": 57.4,
+  "priceStrengthScore": 23.2,
+  "valuationRiskScore": 55,
+  "snapshotScore": 39.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2496",
+  "name": "卓越",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 61.1,
+    "high": 61.2,
+    "low": 60.8,
+    "close": 61,
+    "change": -0.2,
+    "changePercent": -0.33,
+    "tradeVolume": 7294,
+    "transactionCount": 20,
+    "tradeValue": 444737,
+    "peRatio": 9.53
+  },
+  "dailyRangePercent": 0.66,
+  "turnoverAverageValue": 22236.85,
+  "pricePosition": 50,
+  "liquidityScore": 1.6,
+  "priceStrengthScore": 45.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 36.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 1.6 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

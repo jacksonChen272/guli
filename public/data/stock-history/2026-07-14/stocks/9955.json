@@ -1,0 +1,53 @@
+{
+  "symbol": "9955",
+  "name": "佳龍",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 25.55,
+    "high": 25.85,
+    "low": 24.4,
+    "close": 24.5,
+    "change": -1.05,
+    "changePercent": -4.11,
+    "tradeVolume": 542408,
+    "transactionCount": 733,
+    "tradeValue": 13393471,
+    "peRatio": 34.51
+  },
+  "dailyRangePercent": 5.94,
+  "turnoverAverageValue": 18272.13,
+  "pricePosition": 6.9,
+  "liquidityScore": 38.5,
+  "priceStrengthScore": 21.7,
+  "valuationRiskScore": 55,
+  "snapshotScore": 32.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.9 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

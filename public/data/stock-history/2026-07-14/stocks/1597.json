@@ -1,0 +1,60 @@
+{
+  "symbol": "1597",
+  "name": "直得",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 139,
+    "high": 139.5,
+    "low": 126,
+    "close": 133.5,
+    "change": -6.5,
+    "changePercent": -4.64,
+    "tradeVolume": 1318233,
+    "transactionCount": 2377,
+    "tradeValue": 173212641,
+    "peRatio": 112.18
+  },
+  "dailyRangePercent": 10.71,
+  "turnoverAverageValue": 72870.27,
+  "pricePosition": 55.6,
+  "liquidityScore": 65.3,
+  "priceStrengthScore": 37.5,
+  "valuationRiskScore": 90,
+  "snapshotScore": 41.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.71% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 112.18 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "6949",
+  "name": "沛爾生醫-創",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 899,
+    "high": 935,
+    "low": 872,
+    "close": 935,
+    "change": 35,
+    "changePercent": 3.89,
+    "tradeVolume": 287267,
+    "transactionCount": 457,
+    "tradeValue": 260991462,
+    "peRatio": null
+  },
+  "dailyRangePercent": 7.22,
+  "turnoverAverageValue": 571097.29,
+  "pricePosition": 100,
+  "liquidityScore": 49.9,
+  "priceStrengthScore": 80.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 67,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

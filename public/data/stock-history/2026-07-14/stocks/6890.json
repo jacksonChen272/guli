@@ -1,0 +1,53 @@
+{
+  "symbol": "6890",
+  "name": "來億-KY",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 181.5,
+    "high": 186.5,
+    "low": 178,
+    "close": 178,
+    "change": -3.5,
+    "changePercent": -1.93,
+    "tradeVolume": 448775,
+    "transactionCount": 577,
+    "tradeValue": 81409747,
+    "peRatio": 17.61
+  },
+  "dailyRangePercent": 4.78,
+  "turnoverAverageValue": 141091.42,
+  "pricePosition": 0,
+  "liquidityScore": 47.8,
+  "priceStrengthScore": 24.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 40.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

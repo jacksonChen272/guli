@@ -1,0 +1,62 @@
+{
+  "symbol": "2464",
+  "name": "盟立",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 166,
+    "high": 167.5,
+    "low": 152.5,
+    "close": 159,
+    "change": -7,
+    "changePercent": -4.22,
+    "tradeVolume": 9422369,
+    "transactionCount": 9633,
+    "tradeValue": 1494524729,
+    "peRatio": null
+  },
+  "dailyRangePercent": 9.84,
+  "turnoverAverageValue": 155146.34,
+  "pricePosition": 43.3,
+  "liquidityScore": 88.7,
+  "priceStrengthScore": 34.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 58,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.84% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

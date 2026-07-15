@@ -1,0 +1,53 @@
+{
+  "symbol": "2363",
+  "name": "矽統",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 65,
+    "high": 65.2,
+    "low": 59.1,
+    "close": 62.1,
+    "change": -3.4,
+    "changePercent": -5.19,
+    "tradeVolume": 12840585,
+    "transactionCount": 8146,
+    "tradeValue": 794633181,
+    "peRatio": 36.53
+  },
+  "dailyRangePercent": 10.32,
+  "turnoverAverageValue": 97548.88,
+  "pricePosition": 49.2,
+  "liquidityScore": 87.1,
+  "priceStrengthScore": 34,
+  "valuationRiskScore": 55,
+  "snapshotScore": 54.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.32% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

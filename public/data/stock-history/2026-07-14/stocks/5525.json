@@ -1,0 +1,53 @@
+{
+  "symbol": "5525",
+  "name": "順天",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 22.35,
+    "high": 22.35,
+    "low": 21.7,
+    "close": 22.05,
+    "change": -0.15,
+    "changePercent": -0.68,
+    "tradeVolume": 126203,
+    "transactionCount": 102,
+    "tradeValue": 2770425,
+    "peRatio": 8.78
+  },
+  "dailyRangePercent": 3,
+  "turnoverAverageValue": 27161.03,
+  "pricePosition": 53.8,
+  "liquidityScore": 14.7,
+  "priceStrengthScore": 45.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 41.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.7 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

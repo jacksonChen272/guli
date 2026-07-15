@@ -1,0 +1,53 @@
+{
+  "symbol": "3312",
+  "name": "弘憶股",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 56.1,
+    "high": 56.1,
+    "low": 50.5,
+    "close": 53.4,
+    "change": -2.1,
+    "changePercent": -3.78,
+    "tradeVolume": 1878253,
+    "transactionCount": 1914,
+    "tradeValue": 98470282,
+    "peRatio": 31.98
+  },
+  "dailyRangePercent": 11.09,
+  "turnoverAverageValue": 51447.38,
+  "pricePosition": 51.8,
+  "liquidityScore": 63.1,
+  "priceStrengthScore": 38.1,
+  "valuationRiskScore": 55,
+  "snapshotScore": 48.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.09% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

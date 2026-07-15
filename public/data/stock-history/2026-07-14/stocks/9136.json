@@ -1,0 +1,55 @@
+{
+  "symbol": "9136",
+  "name": "巨騰-DR",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13,
+    "high": 13,
+    "low": 12.3,
+    "close": 12.5,
+    "change": -0.3,
+    "changePercent": -2.34,
+    "tradeVolume": 342180,
+    "transactionCount": 131,
+    "tradeValue": 4283987,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.69,
+  "turnoverAverageValue": 32702.19,
+  "pricePosition": 28.6,
+  "liquidityScore": 22.3,
+  "priceStrengthScore": 33.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 28.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "symbol": "1514",
+  "name": "亞力",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 120,
+    "high": 120.5,
+    "low": 108.5,
+    "close": 109.5,
+    "change": -11,
+    "changePercent": -9.13,
+    "tradeVolume": 20000137,
+    "transactionCount": 10851,
+    "tradeValue": 2198909305,
+    "peRatio": 31.92
+  },
+  "dailyRangePercent": 11.06,
+  "turnoverAverageValue": 202645.78,
+  "pricePosition": 8.3,
+  "liquidityScore": 92.4,
+  "priceStrengthScore": 10.8,
+  "valuationRiskScore": 55,
+  "snapshotScore": 46.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.13% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.06% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

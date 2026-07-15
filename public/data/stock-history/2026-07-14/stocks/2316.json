@@ -1,0 +1,53 @@
+{
+  "symbol": "2316",
+  "name": "楠梓電",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 180,
+    "high": 184,
+    "low": 169,
+    "close": 184,
+    "change": -1.5,
+    "changePercent": -0.81,
+    "tradeVolume": 4473612,
+    "transactionCount": 4275,
+    "tradeValue": 787589575,
+    "peRatio": 11.92
+  },
+  "dailyRangePercent": 8.88,
+  "turnoverAverageValue": 184231.48,
+  "pricePosition": 100,
+  "liquidityScore": 80.9,
+  "priceStrengthScore": 69.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 75.7,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.88% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

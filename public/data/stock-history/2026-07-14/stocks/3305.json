@@ -1,0 +1,53 @@
+{
+  "symbol": "3305",
+  "name": "昇貿",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 121.5,
+    "high": 124,
+    "low": 114,
+    "close": 119.5,
+    "change": -4,
+    "changePercent": -3.24,
+    "tradeVolume": 3541825,
+    "transactionCount": 2939,
+    "tradeValue": 420529767,
+    "peRatio": 33.66
+  },
+  "dailyRangePercent": 8.77,
+  "turnoverAverageValue": 143086,
+  "pricePosition": 55,
+  "liquidityScore": 75.6,
+  "priceStrengthScore": 40.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 53.7,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.77% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

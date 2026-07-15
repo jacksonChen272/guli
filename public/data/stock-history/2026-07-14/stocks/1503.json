@@ -1,0 +1,53 @@
+{
+  "symbol": "1503",
+  "name": "士電",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 217,
+    "high": 218.5,
+    "low": 200,
+    "close": 205,
+    "change": -15,
+    "changePercent": -6.82,
+    "tradeVolume": 4364008,
+    "transactionCount": 7153,
+    "tradeValue": 901331432,
+    "peRatio": 30.55
+  },
+  "dailyRangePercent": 9.25,
+  "turnoverAverageValue": 126007.47,
+  "pricePosition": 27,
+  "liquidityScore": 82.8,
+  "priceStrengthScore": 22.6,
+  "valuationRiskScore": 55,
+  "snapshotScore": 48.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.25% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "9925",
+  "name": "新保",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 41.45,
+    "high": 41.45,
+    "low": 41,
+    "close": 41.05,
+    "change": -0.25,
+    "changePercent": -0.61,
+    "tradeVolume": 354076,
+    "transactionCount": 308,
+    "tradeValue": 14568887,
+    "peRatio": 17.03
+  },
+  "dailyRangePercent": 1.1,
+  "turnoverAverageValue": 47301.58,
+  "pricePosition": 11.1,
+  "liquidityScore": 33,
+  "priceStrengthScore": 31,
+  "valuationRiskScore": 35,
+  "snapshotScore": 38.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

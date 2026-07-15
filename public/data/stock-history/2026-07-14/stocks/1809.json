@@ -1,0 +1,60 @@
+{
+  "symbol": "1809",
+  "name": "中釉",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 47.55,
+    "high": 47.95,
+    "low": 42.9,
+    "close": 46.2,
+    "change": -1.45,
+    "changePercent": -3.04,
+    "tradeVolume": 3890624,
+    "transactionCount": 2989,
+    "tradeValue": 174852550,
+    "peRatio": 243.16
+  },
+  "dailyRangePercent": 11.77,
+  "turnoverAverageValue": 58498.68,
+  "pricePosition": 65.3,
+  "liquidityScore": 72.2,
+  "priceStrengthScore": 44.5,
+  "valuationRiskScore": 90,
+  "snapshotScore": 47.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.77% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 243.16 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

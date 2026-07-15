@@ -1,0 +1,53 @@
+{
+  "symbol": "6133",
+  "name": "金橋",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 24.05,
+    "high": 24.4,
+    "low": 22.05,
+    "close": 23.2,
+    "change": -0.8,
+    "changePercent": -3.33,
+    "tradeVolume": 1559056,
+    "transactionCount": 970,
+    "tradeValue": 36026350,
+    "peRatio": 31.78
+  },
+  "dailyRangePercent": 10.66,
+  "turnoverAverageValue": 37140.57,
+  "pricePosition": 48.9,
+  "liquidityScore": 52.8,
+  "priceStrengthScore": 38.1,
+  "valuationRiskScore": 55,
+  "snapshotScore": 44.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.66% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

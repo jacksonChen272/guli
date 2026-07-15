@@ -1,0 +1,60 @@
+{
+  "symbol": "8033",
+  "name": "雷虎",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 256,
+    "high": 265.5,
+    "low": 235,
+    "close": 264,
+    "change": 14.5,
+    "changePercent": 5.81,
+    "tradeVolume": 9545030,
+    "transactionCount": 12076,
+    "tradeValue": 2433061464,
+    "peRatio": 394.03
+  },
+  "dailyRangePercent": 12.98,
+  "turnoverAverageValue": 201479.09,
+  "pricePosition": 95.1,
+  "liquidityScore": 90.8,
+  "priceStrengthScore": 82.9,
+  "valuationRiskScore": 90,
+  "snapshotScore": 71.1,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 12.98% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 394.03 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

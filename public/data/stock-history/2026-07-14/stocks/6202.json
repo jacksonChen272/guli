@@ -1,0 +1,60 @@
+{
+  "symbol": "6202",
+  "name": "盛群",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 69.2,
+    "high": 71.8,
+    "low": 63.7,
+    "close": 67.7,
+    "change": -2.5,
+    "changePercent": -3.56,
+    "tradeVolume": 8441607,
+    "transactionCount": 6042,
+    "tradeValue": 568540008,
+    "peRatio": 102.58
+  },
+  "dailyRangePercent": 12.72,
+  "turnoverAverageValue": 94097.98,
+  "pricePosition": 49.4,
+  "liquidityScore": 82.7,
+  "priceStrengthScore": 37.8,
+  "valuationRiskScore": 90,
+  "snapshotScore": 48,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 12.72% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 102.58 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

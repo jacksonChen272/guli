@@ -1,0 +1,53 @@
+{
+  "symbol": "6952",
+  "name": "大武山",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 35.15,
+    "high": 35.55,
+    "low": 35.05,
+    "close": 35.2,
+    "change": 0.3,
+    "changePercent": 0.86,
+    "tradeVolume": 15862,
+    "transactionCount": 23,
+    "tradeValue": 559704,
+    "peRatio": 45.71
+  },
+  "dailyRangePercent": 1.43,
+  "turnoverAverageValue": 24334.96,
+  "pricePosition": 30,
+  "liquidityScore": 2.6,
+  "priceStrengthScore": 48.9,
+  "valuationRiskScore": 75,
+  "snapshotScore": 27.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 2.6 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

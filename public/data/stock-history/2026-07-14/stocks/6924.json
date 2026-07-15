@@ -1,0 +1,60 @@
+{
+  "symbol": "6924",
+  "name": "榮惠-KY創",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 122,
+    "high": 122,
+    "low": 112.5,
+    "close": 116,
+    "change": -9,
+    "changePercent": -7.2,
+    "tradeVolume": 81374,
+    "transactionCount": 93,
+    "tradeValue": 9307841,
+    "peRatio": 17.39
+  },
+  "dailyRangePercent": 8.44,
+  "turnoverAverageValue": 100084.31,
+  "pricePosition": 36.8,
+  "liquidityScore": 19.1,
+  "priceStrengthScore": 25.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 31,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.20% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.44% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

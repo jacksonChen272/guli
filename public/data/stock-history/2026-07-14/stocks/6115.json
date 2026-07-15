@@ -1,0 +1,53 @@
+{
+  "symbol": "6115",
+  "name": "鎰勝",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 46.35,
+    "high": 46.35,
+    "low": 45.1,
+    "close": 45.25,
+    "change": -0.5,
+    "changePercent": -1.09,
+    "tradeVolume": 301505,
+    "transactionCount": 268,
+    "tradeValue": 13670838,
+    "peRatio": 15.93
+  },
+  "dailyRangePercent": 2.77,
+  "turnoverAverageValue": 51010.59,
+  "pricePosition": 12,
+  "liquidityScore": 30.8,
+  "priceStrengthScore": 30.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 37.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

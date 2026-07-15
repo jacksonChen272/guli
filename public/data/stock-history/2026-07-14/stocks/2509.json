@@ -1,0 +1,62 @@
+{
+  "symbol": "2509",
+  "name": "全坤建",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.35,
+    "high": 13.35,
+    "low": 13.1,
+    "close": 13.2,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 135567,
+    "transactionCount": 97,
+    "tradeValue": 1786706,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.91,
+  "turnoverAverageValue": 18419.65,
+  "pricePosition": 40,
+  "liquidityScore": 13.3,
+  "priceStrengthScore": 42.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 29.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.3 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "symbol": "8374",
+  "name": "羅昇",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 88,
+    "high": 88,
+    "low": 79.1,
+    "close": 81.7,
+    "change": -4.7,
+    "changePercent": -5.44,
+    "tradeVolume": 589781,
+    "transactionCount": 3876,
+    "tradeValue": 48166990,
+    "peRatio": null
+  },
+  "dailyRangePercent": 11.25,
+  "turnoverAverageValue": 12426.98,
+  "pricePosition": 29.2,
+  "liquidityScore": 53,
+  "priceStrengthScore": 26.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 38.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.25% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "3035",
+  "name": "智原",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 212,
+    "high": 214,
+    "low": 194,
+    "close": 207,
+    "change": -6,
+    "changePercent": -2.82,
+    "tradeVolume": 7975462,
+    "transactionCount": 9261,
+    "tradeValue": 1617240479,
+    "peRatio": 110.11
+  },
+  "dailyRangePercent": 10.31,
+  "turnoverAverageValue": 174629.14,
+  "pricePosition": 65,
+  "liquidityScore": 88.2,
+  "priceStrengthScore": 44.9,
+  "valuationRiskScore": 90,
+  "snapshotScore": 53.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.31% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 110.11 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

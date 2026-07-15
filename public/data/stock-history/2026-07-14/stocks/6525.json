@@ -1,0 +1,53 @@
+{
+  "symbol": "6525",
+  "name": "捷敏-KY",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 194,
+    "high": 194,
+    "low": 173.5,
+    "close": 181.5,
+    "change": -11,
+    "changePercent": -5.71,
+    "tradeVolume": 5412647,
+    "transactionCount": 6003,
+    "tradeValue": 980741753,
+    "peRatio": 29.9
+  },
+  "dailyRangePercent": 11.82,
+  "turnoverAverageValue": 163375.27,
+  "pricePosition": 39,
+  "liquidityScore": 83.6,
+  "priceStrengthScore": 29.3,
+  "valuationRiskScore": 55,
+  "snapshotScore": 51.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.82% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

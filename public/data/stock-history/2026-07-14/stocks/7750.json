@@ -1,0 +1,53 @@
+{
+  "symbol": "7750",
+  "name": "新代",
+  "tradeDate": "2026-07-14",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 2030,
+    "high": 2045,
+    "low": 1835,
+    "close": 2035,
+    "change": 5,
+    "changePercent": 0.25,
+    "tradeVolume": 379573,
+    "transactionCount": 2165,
+    "tradeValue": 733064930,
+    "peRatio": 50.77
+  },
+  "dailyRangePercent": 11.44,
+  "turnoverAverageValue": 338598.12,
+  "pricePosition": 95.2,
+  "liquidityScore": 62.4,
+  "priceStrengthScore": 70.4,
+  "valuationRiskScore": 75,
+  "snapshotScore": 58.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.44% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}
