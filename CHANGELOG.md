@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.0]
+
+- 將自選股升級為智慧觀察中心，新增四大摘要、Today Action、完整排序篩選與同頁 Detail Drawer。
+- 新增 Watchlist Score、Observation Status、快速標籤、風險排行與 Observation Timeline 固定規則。
+- 新增 WatchlistDashboardRepository 與 Decision／Snapshot／Watchlist 指紋快取。
+- Dashboard 新增自選股摘要，股寶新增五項引用 DecisionResult 的自選股問答。
+- 新增 38 項智慧觀察中心規則、Repository、Cache 與 Drawer 測試。
+
 ## [0.6.0]
 
 - 新增 deterministic AI Decision Engine 與 `decision-v1.0` 公式版本。
