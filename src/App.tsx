@@ -8,8 +8,8 @@ import { historyPage, routePages } from './config/navigation'
 
 const Dashboard = lazy(() => import('./pages/Dashboard').then((module) => ({ default: module.Dashboard })))
 const CapitalRotation = lazy(() => import('./pages/CapitalRotation').then((module) => ({ default: module.CapitalRotation })))
-const StockDetailWithDecision = lazy(() => import('./pages/StockDetailWithSnapshot').then((module) => ({ default: module.StockDetailWithSnapshot })))
-const Watchlist = lazy(() => import('./pages/Watchlist').then((module) => ({ default: module.Watchlist })))
+const StockDetailWithSnapshot = lazy(() => import('./pages/StockDetailWithSnapshot').then((module) => ({ default: module.StockDetailWithSnapshot })))
+const WatchlistDashboard = lazy(() => import('./pages/WatchlistDashboard').then((module) => ({ default: module.WatchlistDashboard })))
 const MarketFocus = lazy(() => import('./pages/MarketFocus').then((module) => ({ default: module.MarketFocus })))
 const GubaoPageWithDecision = lazy(() => import('./pages/GubaoPageWithDecision').then((module) => ({ default: module.GubaoPageWithDecision })))
 const SettingsWithDecision = lazy(() => import('./pages/SettingsWithDecision').then((module) => ({ default: module.SettingsWithDecision })))
@@ -33,8 +33,8 @@ export default function App() {
     <Route index element={<RouteShell resource="overview"><Dashboard/></RouteShell>}/>
     <Route path="/capital-flow" element={<RouteShell resource="industries"><CapitalRotation/></RouteShell>}/>
     <Route path="/market-focus" element={<RouteShell resource="events"><MarketFocus/></RouteShell>}/>
-    <Route path="/stock/:symbol" element={<RouteShell resource="stocks"><StockDetailWithDecision/></RouteShell>}/>
-    <Route path="/watchlist" element={<RouteShell resource="stocks"><Watchlist/></RouteShell>}/>
+    <Route path="/stock/:symbol" element={<RouteShell resource="stocks"><StockDetailWithSnapshot/></RouteShell>}/>
+    <Route path="/watchlist" element={<RouteShell resource="stocks"><WatchlistDashboard/></RouteShell>}/>
     <Route path="/ai" element={<RouteShell resource="overview"><GubaoPageWithDecision/></RouteShell>}/>
     <Route path="/settings" element={<RouteShell resource="overview"><SettingsWithDecision/></RouteShell>}/>
     <Route path={historyPage.path} element={<RouteShell resource="overview"><MarketHistory/></RouteShell>}/>

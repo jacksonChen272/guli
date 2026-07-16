@@ -1,0 +1,71 @@
+import { readFileSync } from 'node:fs'
+import { fileURLToPath } from 'node:url'
+import { describe, expect, it } from 'vitest'
+import { decisionWeights } from '../../../config/decisionFormula'
+import { uiRules } from '../../../config/uiDesignSystem'
+import { formatAmount, formatConfidence, formatDate, formatDecisionScore, formatSignedChange, formatStockPrice, formatTime, formatWholeScore } from '../../../lib/formatters'
+
+const read = (relative: string) => readFileSync(fileURLToPath(new URL(relative, import.meta.url)), 'utf8')
+const dashboard = read('../../../pages/Dashboard.tsx')
+const app = read('../../../App.tsx')
+const appLayout = read('../../layout/AppLayout.tsx')
+const decisionCard = read('../../dashboard/DecisionDashboardCard.tsx')
+const dataCard = read('../../dashboard/DataSourceInfoCard.tsx')
+const watchlistPreview = read('../../dashboard/WatchlistDashboardPreview.tsx')
+const watchlistTable = read('../../watchlist/WatchlistDashboardTable.tsx')
+const decisionCenter = read('../../../pages/DecisionCenter.tsx')
+const marketDecision = read('../../decision/DecisionMarketOverviewCard.tsx')
+const trace = read('../../decision/DecisionTraceDrawer.tsx')
+const stockOverview = read('../../stock/StockScoreOverview.tsx')
+const stockDecision = read('../../decision/StockDecisionPanel.tsx')
+const search = read('../../search/GlobalStockSearch.tsx')
+const sidebar = read('../../layout/Sidebar.tsx')
+const card = read('../Card.tsx')
+const css = read('../../../styles/index.css')
+
+describe('GULI v0.7.2 Professional Workspace ViewModel', () => {
+  it('Decision 固定顯示一位小數', () => expect(formatDecisionScore(78.26)).toBe('78.3'))
+  it('Confidence 固定顯示整數百分比', () => expect(formatConfidence(81.6)).toBe('82%'))
+  it('健康與 Snapshot 顯示整數', () => expect(formatWholeScore(65.6)).toBe('66'))
+  it('高價股採零位小數', () => expect(formatStockPrice(1050.4)).toBe('1,050'))
+  it('百元股採一位小數', () => expect(formatStockPrice(233.25)).toBe('233.3'))
+  it('低價股採兩位小數', () => expect(formatStockPrice(42.5)).toBe('42.50'))
+  it('漲跌保留正號與兩位小數', () => expect(formatSignedChange(1.236, '%')).toBe('+1.24%'))
+  it('日期格式統一為 YYYY/MM/DD', () => expect(formatDate('2026-07-10')).toBe('2026/07/10'))
+  it('時間格式統一為 HH:mm', () => expect(formatTime('13:35:22')).toBe('13:35'))
+  it('金額依億與萬縮寫', () => { expect(formatAmount(250_000_000)).toContain('億'); expect(formatAmount(25_000)).toContain('萬') })
+})
+
+describe('Dashboard 與資料狀態密度契約', () => {
+  it('Dashboard 先掛載資料狀態與市場一句話', () => { expect(dashboard.indexOf('<DataSourceInfoCard')).toBeLessThan(dashboard.indexOf('<DecisionDashboardCard')); expect(dashboard).toContain('<MarketHeadline') })
+  it('手機以 order 將市場一句話提前', () => expect(dashboard).toContain('order-1 lg:order-2'))
+  it('Decision 摘要包含四個 KPI', () => ['市場 Decision Score', '市場方向', 'Confidence', '高風險候選'].forEach((label) => expect(decisionCard).toContain(label)))
+  it('Decision 摘要有前三項正向與壓力因子', () => { expect(decisionCard).toContain('正向因子 Top 3'); expect(decisionCard).toContain('壓力因子 Top 3') })
+  it('前期不存在時有明確說明', () => expect(decisionCard).toContain('尚無前期資料'))
+  it('資料平台警示預設使用 details 折疊', () => expect(dataCard).toContain('<details'))
+  it('資料平台呈現 Provider、Cache、Stale 與公式', () => ['Provider', 'Cache', 'Stale', 'Decision 公式'].forEach((label) => expect(dataCard).toContain(label)))
+  it('自選股預覽提供四個 KPI 與五項洞察', () => ['今日最佳', '最高風險', '平均 Decision', '今日提醒', 'Decision 上升最多', 'Decision 下降最多', 'Confidence 最低', 'Snapshot 變化最大', '官方資料覆蓋'].forEach((label) => expect(watchlistPreview).toContain(label)))
+  it('自選股預覽點擊開啟同頁 Drawer', () => expect(watchlistPreview).toContain('<WatchlistDetailDrawer'))
+})
+
+describe('交易工作區、決策與行動可存取性契約', () => {
+  it('實際 Router 直接使用 v0.7.2 頁面而非舊 wrapper', () => { expect(app).toContain('<Dashboard/>'); expect(app).toContain('<WatchlistDashboard/>'); expect(app).toContain('<DecisionCenter/>'); expect(app).toContain('<StockDetailWithSnapshot/>'); expect(app).not.toContain("import('./pages/Watchlist')") })
+  it('手機開啟 Sidebar 時會清除桌面收合狀態', () => { expect(appLayout).toContain('setSidebarCollapsed(false)'); expect(appLayout).toContain('onMenuClick={openMobileSidebar}') })
+  it('Sidebar 收合 handle 僅在桌面顯示', () => { expect(sidebar).toContain('data-testid="desktop-sidebar-collapse"'); expect(sidebar).toContain('hidden min-h-11'); expect(sidebar).toContain('lg:flex') })
+  it('主內容使用指定 Safari safe-area padding', () => { expect(appLayout).toContain('app-main-content'); expect(css).toContain('padding-bottom: calc(24px + env(safe-area-inset-bottom))') })
+  it('自選股列高落在 76 至 84px', () => { expect(uiRules.watchlistRowHeight).toBeGreaterThanOrEqual(76); expect(uiRules.watchlistRowHeight).toBeLessThanOrEqual(84) })
+  it('桌面表格具有 sticky header', () => expect(css).toContain('position: sticky'))
+  it('Decision 與 Confidence 有可存取進度條', () => { expect(watchlistTable).toContain('role="progressbar"'); expect(watchlistTable).toContain('aria-valuenow') })
+  it('自選股桌面股票欄包含群組與 Observation Status', () => { expect(watchlistTable).toContain('groupName(row.symbol)'); expect(watchlistTable).toContain('observationStatusMeta') })
+  it('自選股手機改用資料卡', () => expect(watchlistTable).toContain('mobile-data-card'))
+  it('決策中心提供四組個股排行', () => ['Decision Top 10', 'Decision Bottom 10', 'Confidence 最低 10', 'Decision 變化最大 10'].forEach((label) => expect(read('../../decision/DecisionRankingSummary.tsx')).toContain(label)))
+  it('決策中心有 Loading、Empty、Error、Stale 與 Partial', () => ['LoadingState', 'EmptyState', 'error', 'Stale', 'Partial'].forEach((label) => expect(decisionCenter).toContain(label)))
+  it('市場決策卡採雙欄且保留 Trace', () => { expect(marketDecision).toContain('lg:grid-cols'); expect(marketDecision).toContain('Decision Trace') })
+  it('個股三分數皆標示來源與更新', () => { expect(stockOverview).toContain('來源：'); expect(stockOverview).toContain('更新：'); expect(stockOverview).toContain('Decision Score') })
+  it('因子卡分成正向、壓力與缺值', () => { ['正向因子', '壓力因子', '缺值因子'].forEach((label) => expect(stockDecision).toContain(label)); expect(trace).toContain('缺值與資料不足') })
+  it('行動搜尋為全螢幕且有最近搜尋', () => { expect(search).toContain('fixed inset-0'); expect(search).toContain('最近搜尋'); expect(search).toContain("event.key === 'Escape'") })
+  it('Header 與 Drawer 觸控區保留 safe area', () => { expect(css).toContain('safe-area-inset-bottom'); expect(search).toContain('safe-area-inset-bottom') })
+  it('Sidebar 顯示 v0.7.2 產品狀態', () => { expect(sidebar).toContain('GULI v0.7.2'); expect(sidebar).toContain('Decision Engine v1.0'); expect(sidebar).toContain('Snapshot Engine') })
+  it('Card 向後相容 compact、standard、spacious', () => expect(card).toContain("'compact' | 'standard' | 'spacious'"))
+  it('本次 UI 不改變 Decision 權重', () => expect(decisionWeights.stock).toEqual({ stock_health: .25, daily_price_strength: .2, liquidity: .15, market_environment: .15, industry_environment: .15, risk_control: .1, data_quality: 0 }))
+})

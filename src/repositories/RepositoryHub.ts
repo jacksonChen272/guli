@@ -16,6 +16,7 @@ import { SnapshotRepository } from './SnapshotRepository'
 import { IndustrySnapshotRepository } from './IndustrySnapshotRepository'
 import { StockSnapshotRepository } from './StockSnapshotRepository'
 import { DecisionRepository } from './DecisionRepository'
+import { WatchlistDashboardRepository } from './WatchlistDashboardRepository'
 
 export class RepositoryHub {
   private cache = new MemoryCache()
@@ -29,6 +30,7 @@ export class RepositoryHub {
   readonly industrySnapshots = new IndustrySnapshotRepository()
   readonly stockSnapshots = new StockSnapshotRepository()
   decisions!: DecisionRepository
+  watchlistDashboard!: WatchlistDashboardRepository
 
   constructor() { this.rebuild(); this.registerRefreshTasks() }
   private rebuild() {
@@ -41,6 +43,18 @@ export class RepositoryHub {
     this.institutions = new InstitutionRepository(mockProvider, this.cache, this.policy)
     this.watchlist = new WatchlistRepository(this.cache, this.policy)
     this.decisions = new DecisionRepository(this.snapshots, this.industrySnapshots, this.stockSnapshots, this.stocks)
+    this.watchlistDashboard = new WatchlistDashboardRepository({
+      getWatchlist: () => this.watchlist.getSnapshot(),
+      getStocks: () => this.stocks.getSnapshot(),
+      getMarketDecision: () => this.decisions.getMarketDecision(),
+      getStockDecision: (symbol, date) => this.decisions.getStockDecision(symbol, date),
+      getStockComparison: (symbol, currentDate) => this.decisions.getDecisionComparison('stock', symbol, currentDate),
+      getSnapshotIndex: () => this.stockSnapshots.getLatestIndex(),
+      getStockSnapshot: (symbol, date) => this.stockSnapshots.getBySymbol(symbol, date),
+      getStockDiff: (symbol, currentDate) => this.stockSnapshots.getDiff(symbol, currentDate),
+      getIndustrySnapshot: () => this.industrySnapshots.getLatest(),
+      getIndustryDecision: (industryId) => this.decisions.getIndustryDecision(industryId),
+    })
   }
   private registerRefreshTasks() {
     refreshScheduler.register({ id: 'market-overview', intervalMs: this.policy.getTtl('market'), run: async () => { await this.market.refresh(undefined) } })

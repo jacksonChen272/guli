@@ -51,15 +51,15 @@ export function Drawer({ open, onClose, title, children }: DrawerProps) {
         role="dialog"
         aria-modal="true"
         aria-label={title}
-        className="absolute inset-0 w-full max-w-none overflow-y-auto bg-[#0b1014] shadow-2xl sm:inset-y-0 sm:left-auto sm:max-w-md sm:border-l sm:border-white/[0.08]"
+        className="absolute inset-0 w-full max-w-none overflow-y-auto bg-[#0b1014] pb-[env(safe-area-inset-bottom)] shadow-2xl sm:inset-y-0 sm:left-auto sm:max-w-xl sm:border-l sm:border-white/[0.08]"
       >
-        <header className="sticky top-0 z-10 flex h-[72px] items-center justify-between border-b border-white/[0.07] bg-[#0b1014]/95 px-5 backdrop-blur">
-          <h2 className="text-sm font-semibold text-white">{title}</h2>
+        <header className="sticky top-0 z-10 flex h-[76px] items-center justify-between border-b border-white/[0.07] bg-[#0b1014]/95 px-5 backdrop-blur sm:px-6">
+          <h2 className="text-[22px] font-semibold tracking-tight text-white">{title}</h2>
           <button
             ref={closeRef}
             type="button"
             onClick={onClose}
-            className="rounded-lg p-2 text-slate-500 hover:bg-white/5 hover:text-white"
+            className="icon-button grid place-items-center rounded-xl text-slate-400 hover:bg-white/5 hover:text-white"
             aria-label="關閉"
           >
             <X size={18} />

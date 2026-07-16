@@ -11,7 +11,7 @@ export const routePages: PageConfig[] = [
   { path: '/market-focus', label: '市場焦點', title: '市場焦點', description: '彙整今日市場訊號、事件與風險。', icon: Radar, eyebrow: 'Market Focus' },
   { path: '/stock-analysis', label: '個股分析', title: '個股分析', description: '搜尋股票代號或名稱進行規則型健檢。', icon: ChartCandlestick, eyebrow: 'Stock Analysis' },
   { path: '/swing-strategy', label: '波段策略', title: '波段策略', description: '整理趨勢、動能與風險條件。', icon: Crosshair, eyebrow: 'Swing Strategy' },
-  { path: '/watchlist', label: '自選股', title: '智慧自選股', description: '管理觀察清單、價格與規則提醒。', icon: Star, eyebrow: 'Watchlist' },
+  { path: '/watchlist', label: '我的自選股', title: '智慧觀察中心', description: '整合 Decision、Snapshot、Confidence 與風險規則的每日觀察中心。', icon: Star, eyebrow: 'Smart Watchlist' },
   { path: '/ai', label: '股寶', title: '股寶', description: '使用規則型分析回答常見市場問題。', icon: Bot, eyebrow: 'GULI Assistant' },
   { path: '/stock-snapshots', label: '個股快照', title: '上市個股快照', description: '使用官方盤後價量資料產生可追溯的規則型個股快照。', icon: ChartCandlestick, eyebrow: 'Stock Snapshots' },
   { path: '/decisions', label: '決策中心', title: 'GULI 決策中心', description: '檢視市場、產業、個股與自選股的可追溯規則決策。', icon: Radar, eyebrow: 'Decision Center' },
