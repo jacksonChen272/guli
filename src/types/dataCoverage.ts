@@ -1,0 +1,1 @@
+export interface DataCoverageReport { marketOfficialPercent: number; stockOfficialPercent: number; institutionalOfficialPercent: number; industryOfficialPercent: number; historyDays: number; mockFields: string[]; derivedFields: string[]; missingFields: string[]; updatedAt: string | null; stale: boolean }

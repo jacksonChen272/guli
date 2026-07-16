@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react'
-import { Bot, Building2, ChartCandlestick, CircleDollarSign, Crosshair, Database, Gauge, History, Radar, Settings, Star } from 'lucide-react'
+import { Bot, Building2, ChartCandlestick, CircleDollarSign, Crosshair, Database, Gauge, History, Radar, Settings, ShieldCheck, Star } from 'lucide-react'
 export type PageConfig = { path: string; label: string; title: string; description: string; icon: LucideIcon; eyebrow: string }
 export const dashboardPage: PageConfig = { path: '/', label: '市場總覽', title: '台股市場總覽', description: '整合市場脈動、資金輪動與可解釋的規則洞察。', icon: Gauge, eyebrow: 'Dashboard' }
 export const historyPage: PageConfig = { path: '/history', label: '市場歷史', title: '市場歷史', description: '依實際存在的 Market Snapshot 追蹤市場狀態。', icon: History, eyebrow: 'Market History' }
@@ -16,6 +16,7 @@ export const routePages: PageConfig[] = [
   { path: '/stock-snapshots', label: '個股快照', title: '上市個股快照', description: '使用官方盤後價量資料產生可追溯的規則型個股快照。', icon: ChartCandlestick, eyebrow: 'Stock Snapshots' },
   { path: '/decisions', label: '決策中心', title: 'GULI 決策中心', description: '檢視市場、產業、個股與自選股的可追溯規則決策。', icon: Radar, eyebrow: 'Decision Center' },
   stockDataStatusPage,
+  { path: '/data-coverage', label: '資料覆蓋率', title: '資料覆蓋率', description: '檢視官方、推導、模擬、回退、過期與缺失資料的覆蓋情況。', icon: ShieldCheck, eyebrow: 'Beta Data Coverage' },
   { path: '/settings', label: '設定', title: '系統設定', description: '管理資料來源與平台資訊。', icon: Settings, eyebrow: 'Settings' },
 ]
 export const allPages = [dashboardPage, ...routePages]

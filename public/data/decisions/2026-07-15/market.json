@@ -3,11 +3,11 @@
   "entityId": "TWSE",
   "entityName": "臺股市場",
   "tradeDate": "2026-07-15",
-  "score": 47,
-  "label": "偏弱",
-  "direction": "bearish",
-  "confidence": 82,
-  "summary": "偏弱，風險分布為主要貢獻。",
+  "score": 55.1,
+  "label": "中性",
+  "direction": "neutral",
+  "confidence": 91,
+  "summary": "中性，風險分布為主要貢獻。",
   "factors": [
     {
       "code": "market_temperature",
@@ -15,7 +15,7 @@
       "rawValue": 72,
       "normalizedScore": 72,
       "weight": 0.25,
-      "contribution": 6.88,
+      "contribution": 5.5,
       "direction": "positive",
       "explanation": "市場溫度: 72",
       "evidence": [],
@@ -27,7 +27,7 @@
       "rawValue": 2,
       "normalizedScore": 66,
       "weight": 0.2,
-      "contribution": 4,
+      "contribution": 3.2,
       "direction": "positive",
       "explanation": "指數動能: 66",
       "evidence": [],
@@ -36,12 +36,12 @@
     {
       "code": "market_breadth",
       "name": "市場廣度",
-      "rawValue": null,
-      "normalizedScore": null,
+      "rawValue": 87.573385518591,
+      "normalizedScore": 87.6,
       "weight": 0.2,
-      "contribution": null,
-      "direction": "unknown",
-      "explanation": "Missing verified data.",
+      "contribution": 7.52,
+      "direction": "positive",
+      "explanation": "市場廣度: 87.6",
       "evidence": [],
       "sourceType": "official"
     },
@@ -51,7 +51,7 @@
       "rawValue": 1024385500649,
       "normalizedScore": 35.4,
       "weight": 0.15,
-      "contribution": -2.74,
+      "contribution": -2.19,
       "direction": "negative",
       "explanation": "流動性環境: 35.4",
       "evidence": [],
@@ -63,7 +63,7 @@
       "rawValue": 5.4,
       "normalizedScore": 5.4,
       "weight": 0.2,
-      "contribution": -11.15,
+      "contribution": -8.92,
       "direction": "negative",
       "explanation": "風險分布: 5.4",
       "evidence": [],
@@ -100,16 +100,16 @@
   ],
   "trace": {
     "formulaVersion": "decision-v1.0",
-    "totalPositiveContribution": 10.88,
-    "totalNegativeContribution": -13.89,
-    "totalContribution": -3.01,
-    "availableWeight": 0.8,
-    "missingWeight": 0.2,
-    "normalizationApplied": true,
+    "totalPositiveContribution": 16.22,
+    "totalNegativeContribution": -11.11,
+    "totalContribution": 5.11,
+    "availableWeight": 1,
+    "missingWeight": 0,
+    "normalizationApplied": false,
     "calculationSteps": [
-      "availableWeight=0.8",
-      "missingWeight=0.2",
-      "normalized=true"
+      "availableWeight=1",
+      "missingWeight=0",
+      "normalized=false"
     ]
   },
   "sources": [
@@ -121,7 +121,7 @@
         "overview"
       ],
       "tradeDate": "2026-07-15",
-      "status": "partial"
+      "status": "official"
     },
     {
       "id": "industry-snapshot",
@@ -156,8 +156,7 @@
     }
   ],
   "warnings": [
-    "漲跌家數端點沒有同交易日股票統計，相關欄位保留 null。",
-    "TWSE 官方資料缺少完整漲跌家數，本筆資料為部分資料。",
+    "twtazu_od 尚未發布同交易日統計；市場廣度由 TWSE STOCK_DAY_ALL 官方股票資料彙整，漲跌停家數依漲跌幅 9.5% 門檻推導。",
     "產業、個股與法人欄位目前為集中管理的模擬資料；TWSE 僅提供本快照交易日期。",
     "Market temperature and non-official fields still use mock data and deterministic rules."
   ]

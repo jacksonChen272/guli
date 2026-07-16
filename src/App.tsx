@@ -19,10 +19,11 @@ const IndustryDetail = lazy(() => import('./pages/IndustryDetail').then((module)
 const StockDataStatus = lazy(() => import('./pages/StockDataStatus').then((module) => ({ default: module.StockDataStatus })))
 const StockSnapshotOverview = lazy(() => import('./pages/StockSnapshotOverview').then((module) => ({ default: module.StockSnapshotOverview })))
 const DecisionCenter = lazy(() => import('./pages/DecisionCenter').then((module) => ({ default: module.DecisionCenter })))
+const DataCoverage = lazy(() => import('./pages/DataCoverage').then((module) => ({ default: module.DataCoverage })))
 const EmptyPage = lazy(() => import('./pages/EmptyPage').then((module) => ({ default: module.EmptyPage })))
 
 type Resource = 'overview' | 'stocks' | 'industries' | 'events'
-const completedPaths = new Set(['/capital-flow', '/market-focus', '/watchlist', '/ai', '/settings', '/history', '/industries', '/data-status/stocks', '/stock-snapshots', '/decisions'])
+const completedPaths = new Set(['/capital-flow', '/market-focus', '/watchlist', '/ai', '/settings', '/history', '/industries', '/data-status/stocks', '/stock-snapshots', '/decisions', '/data-coverage'])
 
 function RouteShell({ resource, children }: { resource: Resource; children: ReactNode }) {
   return <AppErrorBoundary><Suspense fallback={<div className="panel"><LoadingState rows={6}/></div>}><PageDataGate resource={resource}>{children}</PageDataGate></Suspense></AppErrorBoundary>
@@ -43,6 +44,7 @@ export default function App() {
     <Route path="/data-status/stocks" element={<RouteShell resource="stocks"><StockDataStatus/></RouteShell>}/>
     <Route path="/stock-snapshots" element={<RouteShell resource="stocks"><StockSnapshotOverview/></RouteShell>}/>
     <Route path="/decisions" element={<RouteShell resource="overview"><DecisionCenter/></RouteShell>}/>
+    <Route path="/data-coverage" element={<RouteShell resource="overview"><DataCoverage/></RouteShell>}/>
     <Route path="/ai-assistant" element={<Navigate to="/ai" replace/>}/>
     {routePages.filter((page) => !completedPaths.has(page.path)).map((page) => <Route key={page.path} path={page.path} element={<RouteShell resource="overview"><EmptyPage page={page}/></RouteShell>}/>) }
     <Route path="*" element={<Navigate to="/" replace/>}/>

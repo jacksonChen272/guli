@@ -4,6 +4,7 @@ import type { IndustrySnapshotItem } from '../../types/industrySnapshot'
 import type { MarketSnapshot } from '../../types/snapshot'
 import type { StockSnapshotItem } from '../../types/stockSnapshot'
 import type { DecisionFactor, DecisionInput, DecisionResult } from '../../types/decision'
+import type { OfficialStockInstitutionalRecord } from '../../types/officialInstitutionalData'
 import { DecisionConfidenceService } from './DecisionConfidenceService'
 import { DecisionExplanationService } from './DecisionExplanationService'
 import { decisionFactorRegistry as registry } from './DecisionFactorRegistry'
@@ -76,7 +77,7 @@ export class DecisionEngine {
       sources:item.sources.map((source)=>({ id:source.id,name:source.name,type:source.type,tradeDate:source.tradeDate,fields:source.fields })), warnings, historyInsufficient:item.previousRank===null })
   }
 
-  stock(snapshot:StockSnapshotItem, health:StockHealthResult|null, market:DecisionResult|null, industry:DecisionResult|null):DecisionResult {
+  stock(snapshot:StockSnapshotItem, health:StockHealthResult|null, market:DecisionResult|null, industry:DecisionResult|null, institutional:OfficialStockInstitutionalRecord|null=null):DecisionResult {
     const penalty = snapshot.risks.reduce((sum,risk)=>sum+(risk.severity==='high'?decisionRiskThresholds.highPenalty:risk.severity==='medium'?decisionRiskThresholds.mediumPenalty:decisionRiskThresholds.lowPenalty),0)
     const factors:DecisionFactor[] = [
       registry.create('stock','stock_health',health?.totalScore??null,health?'mock':'missing',health?.totalScore??null,[],health?text.health:text.healthMissing),
@@ -88,8 +89,8 @@ export class DecisionEngine {
     ]
     return this.evaluate({ entityType:'stock',entityId:snapshot.symbol,entityName:snapshot.name,tradeDate:snapshot.tradeDate,factors,
       risks:snapshot.risks.map((risk)=>({ code:risk.code,severity:risk.severity,title:risk.title,explanation:risk.reason,sourceType:risk.source })),
-      sources:[{ id:'twse-stock',name:'TWSE official stock close',type:'official',tradeDate:snapshot.tradeDate,fields:['quote'] },{ id:'stock-snapshot',name:'GULI Stock Snapshot',type:'derived',tradeDate:snapshot.tradeDate,fields:['priceStrengthScore','liquidityScore','risks'] },...(health?[{ id:'stock-health',name:'GULI Stock Health',type:'mock' as const,fields:['stock_health'] }]:[])],
-      warnings:[...snapshot.warnings,...(industry?[]:[text.industryMissing])],
+      sources:[{ id:'twse-stock',name:'TWSE official stock close',type:'official',tradeDate:snapshot.tradeDate,fields:['quote'] },{ id:'stock-snapshot',name:'GULI Stock Snapshot',type:'derived',tradeDate:snapshot.tradeDate,fields:['priceStrengthScore','liquidityScore','risks'] },...(institutional?[{id:'twse-institutional',name:'TWSE official institutional trades',type:'official' as const,tradeDate:institutional.tradeDate,fields:['foreignNetShares','trustNetShares','dealerNetShares','totalNetShares']}]:[{id:'institutional-missing',name:'TWSE institutional trades unavailable',type:'missing' as const,fields:['institutional']}]),...(health?[{ id:'stock-health',name:'GULI Stock Health',type:'mock' as const,fields:['stock_health'] }]:[])],
+      warnings:[...snapshot.warnings,...(industry?[]:[text.industryMissing]),...(institutional?['官方法人單日資料已附加至 Decision Trace；decision-v1.0 權重與分數公式維持不變。',...(institutional.tradeDate===snapshot.tradeDate?[]:[`法人交易日 ${institutional.tradeDate} 與 Decision 快照 ${snapshot.tradeDate} 不同，僅列來源且不參與計分。`])]:['官方法人單日資料未取得；Decision Score 不以虛構法人值補入。'])],
     })
   }
 

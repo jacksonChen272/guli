@@ -3,10 +3,10 @@
   "entityId": "2484",
   "entityName": "希華",
   "tradeDate": "2026-07-15",
-  "score": 70,
+  "score": 72,
   "label": "偏強",
   "direction": "bullish",
-  "confidence": 85,
+  "confidence": 79,
   "summary": "偏強，流動性為主要貢獻。",
   "factors": [
     {
@@ -48,12 +48,12 @@
     {
       "code": "market_environment",
       "name": "市場環境",
-      "rawValue": 47,
-      "normalizedScore": 47,
+      "rawValue": 55.1,
+      "normalizedScore": 55.1,
       "weight": 0.15,
-      "contribution": -0.75,
-      "direction": "neutral",
-      "explanation": "市場環境: 47",
+      "contribution": 1.28,
+      "direction": "positive",
+      "explanation": "市場環境: 55.1",
       "evidence": [],
       "sourceType": "derived"
     },
@@ -105,9 +105,9 @@
   ],
   "trace": {
     "formulaVersion": "decision-v1.0",
-    "totalPositiveContribution": 20.71,
-    "totalNegativeContribution": -0.75,
-    "totalContribution": 19.96,
+    "totalPositiveContribution": 21.99,
+    "totalNegativeContribution": 0,
+    "totalContribution": 21.99,
     "availableWeight": 0.6,
     "missingWeight": 0.4,
     "normalizationApplied": true,
@@ -127,9 +127,23 @@
       "type": "derived",
       "name": "GULI deterministic rules",
       "field": "scores"
+    },
+    {
+      "id": "twse-institutional",
+      "name": "TWSE official institutional trades",
+      "type": "official",
+      "tradeDate": "2026-07-16",
+      "fields": [
+        "foreignNetShares",
+        "trustNetShares",
+        "dealerNetShares",
+        "totalNetShares"
+      ]
     }
   ],
   "warnings": [
-    "Static generation has no verified industry mapping or mock health input; weights were normalized."
+    "Static generation has no verified industry mapping or mock health input; weights were normalized.",
+    "Official institutional data is attached to trace; decision-v1.0 score weights are unchanged.",
+    "Institutional trade date 2026-07-16 differs from decision 2026-07-15; trace only, not scored."
   ]
 }

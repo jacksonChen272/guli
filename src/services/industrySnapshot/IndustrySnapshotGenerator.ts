@@ -43,7 +43,7 @@ export class IndustrySnapshotGenerator {
   async generateFromRepositories(tradeDate: string, previous?: IndustrySnapshot | null) {
     if (!this.industryRepository || !this.stockRepository || !this.institutionRepository) throw new Error('產業快照產生器尚未設定 Repository。')
     const [industryResult, stockResult] = await Promise.all([this.industryRepository.read(undefined), this.stockRepository.read(undefined)])
-    await this.institutionRepository.read(tradeDate)
+    await this.institutionRepository.read(undefined)
     return this.generate({ tradeDate, industries: industryResult.data, stocks: stockResult.data, previous })
   }
 

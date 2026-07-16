@@ -3,10 +3,10 @@
   "entityId": "3593",
   "entityName": "力銘",
   "tradeDate": "2026-07-15",
-  "score": 46.2,
+  "score": 48.2,
   "label": "偏弱",
   "direction": "bearish",
-  "confidence": 82,
+  "confidence": 76,
   "summary": "偏弱，流動性為主要貢獻。",
   "factors": [
     {
@@ -48,12 +48,12 @@
     {
       "code": "market_environment",
       "name": "市場環境",
-      "rawValue": 47,
-      "normalizedScore": 47,
+      "rawValue": 55.1,
+      "normalizedScore": 55.1,
       "weight": 0.15,
-      "contribution": -0.75,
-      "direction": "neutral",
-      "explanation": "市場環境: 47",
+      "contribution": 1.28,
+      "direction": "positive",
+      "explanation": "市場環境: 55.1",
       "evidence": [],
       "sourceType": "derived"
     },
@@ -112,9 +112,9 @@
   ],
   "trace": {
     "formulaVersion": "decision-v1.0",
-    "totalPositiveContribution": 8.37,
-    "totalNegativeContribution": -12.2,
-    "totalContribution": -3.83,
+    "totalPositiveContribution": 9.65,
+    "totalNegativeContribution": -11.45,
+    "totalContribution": -1.8,
     "availableWeight": 0.6,
     "missingWeight": 0.4,
     "normalizationApplied": true,
@@ -134,10 +134,24 @@
       "type": "derived",
       "name": "GULI deterministic rules",
       "field": "scores"
+    },
+    {
+      "id": "twse-institutional",
+      "name": "TWSE official institutional trades",
+      "type": "official",
+      "tradeDate": "2026-07-16",
+      "fields": [
+        "foreignNetShares",
+        "trustNetShares",
+        "dealerNetShares",
+        "totalNetShares"
+      ]
     }
   ],
   "warnings": [
     "本益比缺值，snapshotScore 以可用權重重新正規化。",
-    "Static generation has no verified industry mapping or mock health input; weights were normalized."
+    "Static generation has no verified industry mapping or mock health input; weights were normalized.",
+    "Official institutional data is attached to trace; decision-v1.0 score weights are unchanged.",
+    "Institutional trade date 2026-07-16 differs from decision 2026-07-15; trace only, not scored."
   ]
 }

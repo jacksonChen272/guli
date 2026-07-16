@@ -10,6 +10,7 @@ import { MarketSession } from '../../services/MarketSession'
 import { RefreshScheduler } from '../../services/RefreshScheduler'
 import { IndustryRepository } from '../IndustryRepository'
 import { InstitutionRepository } from '../InstitutionRepository'
+import type { TWSEInstitutionalProvider } from '../../providers/TWSEInstitutionalProvider'
 import { MarketRepository } from '../MarketRepository'
 import { StockRepository } from '../StockRepository'
 import { WatchlistRepository } from '../WatchlistRepository'
@@ -62,11 +63,12 @@ describe('GULI repositories', () => {
   })
 
   it('InstitutionRepository 依日期回傳法人資料', async () => {
-    const repository = new InstitutionRepository(provider, cache, policy)
-    const date = provider.getSnapshot().tradingDates.at(-1) ?? '2026-07-11'
-    const records = await repository.read(date)
-    expect(records.data.length).toBeGreaterThanOrEqual(30)
-    expect(records.data.every((record) => record.date === date)).toBe(true)
+    const dataset = { schemaVersion: '1.0', market: 'TWSE', tradeDate: '2026-07-16', fetchedAt: '2026-07-16T08:00:00.000Z', units: { marketTotals: 'TWD', stockNet: 'shares' }, marketTotals: { foreign: { buyAmount: 10, sellAmount: 8, netAmount: 2 }, trust: { buyAmount: 5, sellAmount: 4, netAmount: 1 }, dealer: { buyAmount: 3, sellAmount: 5, netAmount: -2 }, total: { buyAmount: 18, sellAmount: 17, netAmount: 1 } }, records: [{ symbol: '2330', name: '台積電', foreignNetShares: 1000, trustNetShares: 200, dealerNetShares: -100, totalNetShares: 1100, tradeDate: '2026-07-16', source: 'TWSE', fetchedAt: '2026-07-16T08:00:00.000Z', status: 'official', warnings: [] }], source: { name: '臺灣證券交易所（TWSE）', marketEndpoint: 'https://www.twse.com.tw/rwd/zh/fund/BFI82U', stockEndpoint: 'https://www.twse.com.tw/rwd/zh/fund/T86' }, status: 'official', warnings: [] } as const
+    const officialProvider = { getLatestDataset: async () => dataset, getStatus: async () => ({ available: true, tradeDate: dataset.tradeDate, fetchedAt: dataset.fetchedAt, recordCount: 1, status: 'official', stale: false, warnings: [] }), clearCache: () => undefined } as unknown as TWSEInstitutionalProvider
+    const repository = new InstitutionRepository(cache, policy, officialProvider)
+    const records = await repository.read(undefined)
+    expect(records.data.records).toHaveLength(1)
+    expect((await repository.getStockInstitutional('2330'))?.source).toBe('TWSE')
   })
 
   it('WatchlistRepository 經 store 讀取預設自選股', async () => {

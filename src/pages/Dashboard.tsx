@@ -3,6 +3,7 @@ import { useCallback, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { CapitalRotationChart } from '../components/charts/CapitalRotationChart'
 import { DataSourceInfoCard } from '../components/dashboard/DataSourceInfoCard'
+import { InstitutionalOverview } from '../components/dashboard/InstitutionalOverview'
 import { DecisionDashboardCard } from '../components/dashboard/DecisionDashboardCard'
 import { GubaoInsight } from '../components/dashboard/GubaoInsight'
 import { MarketBreadth } from '../components/dashboard/MarketBreadth'
@@ -82,6 +83,8 @@ export function Dashboard() {
       <div className="-mx-4 flex snap-x gap-4 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 lg:grid-cols-3">{statCards.map((card) => <div className="min-w-[240px] snap-start sm:min-w-0" key={card.code}><MarketStatCard {...card} /></div>)}</div>
       <MarketBreadth data={officialMarket} />
     </section>
+
+    <InstitutionalOverview />
 
     <section aria-label="產業輪動快照"><IndustryRotationPreview /></section>
     <section aria-label="個股快照"><StockSnapshotPreview /></section>
