@@ -1,0 +1,53 @@
+{
+  "symbol": "4438",
+  "name": "廣越",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 62.4,
+    "high": 62.4,
+    "low": 61,
+    "close": 61.8,
+    "change": 0.9,
+    "changePercent": 1.48,
+    "tradeVolume": 41111,
+    "transactionCount": 46,
+    "tradeValue": 2531401,
+    "peRatio": 15.65
+  },
+  "dailyRangePercent": 2.3,
+  "turnoverAverageValue": 55030.46,
+  "pricePosition": 57.1,
+  "liquidityScore": 11,
+  "priceStrengthScore": 51.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 40.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 11.0 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

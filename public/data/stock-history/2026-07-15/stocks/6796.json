@@ -1,0 +1,62 @@
+{
+  "symbol": "6796",
+  "name": "晉弘",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 57.7,
+    "high": 60,
+    "low": 57.7,
+    "close": 59.7,
+    "change": 2,
+    "changePercent": 3.47,
+    "tradeVolume": 49492,
+    "transactionCount": 35,
+    "tradeValue": 2904768,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.99,
+  "turnoverAverageValue": 82993.37,
+  "pricePosition": 87,
+  "liquidityScore": 12,
+  "priceStrengthScore": 74.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 47.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.0 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

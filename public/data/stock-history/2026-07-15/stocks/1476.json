@@ -1,0 +1,53 @@
+{
+  "symbol": "1476",
+  "name": "儒鴻",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 341.5,
+    "high": 342.5,
+    "low": 328.5,
+    "close": 331,
+    "change": -12.5,
+    "changePercent": -3.64,
+    "tradeVolume": 1178290,
+    "transactionCount": 1970,
+    "tradeValue": 391362554,
+    "peRatio": 16.01
+  },
+  "dailyRangePercent": 4.26,
+  "turnoverAverageValue": 198661.19,
+  "pricePosition": 17.9,
+  "liquidityScore": 73.2,
+  "priceStrengthScore": 26.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 50.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.9 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

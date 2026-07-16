@@ -1,0 +1,53 @@
+{
+  "symbol": "3576",
+  "name": "聯合再生",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.7,
+    "high": 18.25,
+    "low": 17.6,
+    "close": 17.7,
+    "change": 0.2,
+    "changePercent": 1.14,
+    "tradeVolume": 23998674,
+    "transactionCount": 8004,
+    "tradeValue": 429367979,
+    "peRatio": 42.14
+  },
+  "dailyRangePercent": 3.69,
+  "turnoverAverageValue": 53644.18,
+  "pricePosition": 15.4,
+  "liquidityScore": 88.4,
+  "priceStrengthScore": 40.5,
+  "valuationRiskScore": 75,
+  "snapshotScore": 54.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

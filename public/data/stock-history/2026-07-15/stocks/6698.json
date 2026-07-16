@@ -1,0 +1,55 @@
+{
+  "symbol": "6698",
+  "name": "旭暉應材",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 38.6,
+    "high": 40,
+    "low": 38.25,
+    "close": 39.15,
+    "change": 0.6,
+    "changePercent": 1.56,
+    "tradeVolume": 203743,
+    "transactionCount": 186,
+    "tradeValue": 7966230,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.58,
+  "turnoverAverageValue": 42829.19,
+  "pricePosition": 51.4,
+  "liquidityScore": 31.2,
+  "priceStrengthScore": 58,
+  "valuationRiskScore": null,
+  "snapshotScore": 46.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "6152",
+  "name": "百一",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.6,
+    "high": 13.45,
+    "low": 12.6,
+    "close": 13.2,
+    "change": 0.45,
+    "changePercent": 3.53,
+    "tradeVolume": 682646,
+    "transactionCount": 357,
+    "tradeValue": 8845285,
+    "peRatio": null
+  },
+  "dailyRangePercent": 6.75,
+  "turnoverAverageValue": 24776.71,
+  "pricePosition": 70.6,
+  "liquidityScore": 42.6,
+  "priceStrengthScore": 69.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 57.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "entityType": "stock",
+  "entityId": "6792",
+  "entityName": "詠業",
+  "tradeDate": "2026-07-15",
+  "score": 52.1,
+  "label": "中性",
+  "direction": "neutral",
+  "confidence": 85,
+  "summary": "中性，流動性為主要貢獻。",
+  "factors": [
+    {
+      "code": "stock_health",
+      "name": "既有健康分數",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.25,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "daily_price_strength",
+      "name": "當日價格強度",
+      "rawValue": 66.7,
+      "normalizedScore": 66.7,
+      "weight": 0.2,
+      "contribution": 5.57,
+      "direction": "positive",
+      "explanation": "當日價格強度: 66.7",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "liquidity",
+      "name": "流動性",
+      "rawValue": 13.9,
+      "normalizedScore": 13.9,
+      "weight": 0.15,
+      "contribution": -9.02,
+      "direction": "negative",
+      "explanation": "流動性: 13.9",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "market_environment",
+      "name": "市場環境",
+      "rawValue": 47,
+      "normalizedScore": 47,
+      "weight": 0.15,
+      "contribution": -0.75,
+      "direction": "neutral",
+      "explanation": "市場環境: 47",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "industry_environment",
+      "name": "產業環境",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.15,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "risk_control",
+      "name": "風險控制",
+      "rawValue": 88,
+      "normalizedScore": 88,
+      "weight": 0.1,
+      "contribution": 6.33,
+      "direction": "positive",
+      "explanation": "風險控制: 88",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "data_quality",
+      "name": "資料品質",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "derived"
+    }
+  ],
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "explanation": "當日流動性分數 13.9 不高於 15。",
+      "sourceType": "derived"
+    }
+  ],
+  "trace": {
+    "formulaVersion": "decision-v1.0",
+    "totalPositiveContribution": 11.9,
+    "totalNegativeContribution": -9.77,
+    "totalContribution": 2.13,
+    "availableWeight": 0.6,
+    "missingWeight": 0.4,
+    "normalizationApplied": true,
+    "calculationSteps": [
+      "availableWeight=0.6",
+      "missingWeight=0.4",
+      "normalized=true"
+    ]
+  },
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "Static generation has no verified industry mapping or mock health input; weights were normalized."
+  ]
+}

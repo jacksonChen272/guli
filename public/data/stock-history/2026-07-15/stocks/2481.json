@@ -1,0 +1,53 @@
+{
+  "symbol": "2481",
+  "name": "強茂",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 183,
+    "high": 183,
+    "low": 168.5,
+    "close": 174.5,
+    "change": -1.5,
+    "changePercent": -0.85,
+    "tradeVolume": 20125262,
+    "transactionCount": 18936,
+    "tradeValue": 3502274731,
+    "peRatio": 55.4
+  },
+  "dailyRangePercent": 8.61,
+  "turnoverAverageValue": 184953.25,
+  "pricePosition": 41.4,
+  "liquidityScore": 95.2,
+  "priceStrengthScore": 41.1,
+  "valuationRiskScore": 75,
+  "snapshotScore": 56.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.61% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

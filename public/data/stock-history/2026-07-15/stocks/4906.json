@@ -1,0 +1,55 @@
+{
+  "symbol": "4906",
+  "name": "正文",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 37.95,
+    "high": 38.95,
+    "low": 37.8,
+    "close": 38.8,
+    "change": 1.2,
+    "changePercent": 3.19,
+    "tradeVolume": 4039423,
+    "transactionCount": 2477,
+    "tradeValue": 154904505,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.04,
+  "turnoverAverageValue": 62537.14,
+  "pricePosition": 87,
+  "liquidityScore": 75.7,
+  "priceStrengthScore": 74.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 74.9,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

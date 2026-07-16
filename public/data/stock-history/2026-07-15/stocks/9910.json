@@ -1,0 +1,53 @@
+{
+  "symbol": "9910",
+  "name": "豐泰",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 67,
+    "high": 67.5,
+    "low": 66.8,
+    "close": 66.8,
+    "change": -0.1,
+    "changePercent": -0.15,
+    "tradeVolume": 781494,
+    "transactionCount": 725,
+    "tradeValue": 52386672,
+    "peRatio": 14.46
+  },
+  "dailyRangePercent": 1.05,
+  "turnoverAverageValue": 72257.48,
+  "pricePosition": 0,
+  "liquidityScore": 57.5,
+  "priceStrengthScore": 28.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 48.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

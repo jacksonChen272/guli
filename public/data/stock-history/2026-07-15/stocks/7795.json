@@ -1,0 +1,60 @@
+{
+  "symbol": "7795",
+  "name": "長廣",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 562,
+    "high": 600,
+    "low": 550,
+    "close": 592,
+    "change": 38,
+    "changePercent": 6.86,
+    "tradeVolume": 559507,
+    "transactionCount": 1580,
+    "tradeValue": 325529202,
+    "peRatio": 212.19
+  },
+  "dailyRangePercent": 9.09,
+  "turnoverAverageValue": 206031.14,
+  "pricePosition": 84,
+  "liquidityScore": 66.9,
+  "priceStrengthScore": 81.3,
+  "valuationRiskScore": 90,
+  "snapshotScore": 62,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.09% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 212.19 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

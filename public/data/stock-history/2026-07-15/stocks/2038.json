@@ -1,0 +1,55 @@
+{
+  "symbol": "2038",
+  "name": "海光",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.95,
+    "high": 13.2,
+    "low": 12.85,
+    "close": 13.15,
+    "change": 0.25,
+    "changePercent": 1.94,
+    "tradeVolume": 272883,
+    "transactionCount": 229,
+    "tradeValue": 3554913,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.72,
+  "turnoverAverageValue": 15523.64,
+  "pricePosition": 85.7,
+  "liquidityScore": 28.7,
+  "priceStrengthScore": 70.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 52.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

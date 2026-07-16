@@ -1,0 +1,53 @@
+{
+  "symbol": "6285",
+  "name": "啟碁",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 253.5,
+    "high": 269.5,
+    "low": 253.5,
+    "close": 267,
+    "change": 19.5,
+    "changePercent": 7.88,
+    "tradeVolume": 12892534,
+    "transactionCount": 14411,
+    "tradeValue": 3389743838,
+    "peRatio": 39.38
+  },
+  "dailyRangePercent": 6.31,
+  "turnoverAverageValue": 235219.2,
+  "pricePosition": 84.4,
+  "liquidityScore": 94.2,
+  "priceStrengthScore": 83.8,
+  "valuationRiskScore": 55,
+  "snapshotScore": 79.7,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 7.88% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

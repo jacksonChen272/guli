@@ -1,0 +1,55 @@
+{
+  "symbol": "2239",
+  "name": "英利-KY",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.5,
+    "high": 20.9,
+    "low": 20.2,
+    "close": 20.35,
+    "change": -0.3,
+    "changePercent": -1.45,
+    "tradeVolume": 121297,
+    "transactionCount": 97,
+    "tradeValue": 2462633,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.47,
+  "turnoverAverageValue": 25387.97,
+  "pricePosition": 21.4,
+  "liquidityScore": 17.6,
+  "priceStrengthScore": 32.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 26.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

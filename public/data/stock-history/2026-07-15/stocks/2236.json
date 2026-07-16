@@ -1,0 +1,55 @@
+{
+  "symbol": "2236",
+  "name": "百達-KY",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 171,
+    "high": 171,
+    "low": 163,
+    "close": 165.5,
+    "change": -2.5,
+    "changePercent": -1.49,
+    "tradeVolume": 420280,
+    "transactionCount": 434,
+    "tradeValue": 69830331,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.91,
+  "turnoverAverageValue": 160899.38,
+  "pricePosition": 31.3,
+  "liquidityScore": 53.1,
+  "priceStrengthScore": 36.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 43.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

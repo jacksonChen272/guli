@@ -1,0 +1,53 @@
+{
+  "symbol": "2379",
+  "name": "瑞昱",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 776,
+    "high": 783,
+    "low": 750,
+    "close": 753,
+    "change": -1,
+    "changePercent": -0.13,
+    "tradeVolume": 2864143,
+    "transactionCount": 4939,
+    "tradeValue": 2180004830,
+    "peRatio": 27.11
+  },
+  "dailyRangePercent": 4.4,
+  "turnoverAverageValue": 441385.87,
+  "pricePosition": 9.1,
+  "liquidityScore": 86.2,
+  "priceStrengthScore": 31.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 53.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

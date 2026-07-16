@@ -1,0 +1,55 @@
+{
+  "symbol": "1762",
+  "name": "中化生",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 37.4,
+    "high": 37.65,
+    "low": 36.85,
+    "close": 37.6,
+    "change": 0.25,
+    "changePercent": 0.67,
+    "tradeVolume": 102528,
+    "transactionCount": 128,
+    "tradeValue": 3829969,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.17,
+  "turnoverAverageValue": 29921.63,
+  "pricePosition": 93.8,
+  "liquidityScore": 20.4,
+  "priceStrengthScore": 70.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 48.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

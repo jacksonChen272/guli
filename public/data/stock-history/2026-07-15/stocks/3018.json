@@ -1,0 +1,62 @@
+{
+  "symbol": "3018",
+  "name": "隆銘綠能",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.7,
+    "high": 11.85,
+    "low": 11.65,
+    "close": 11.85,
+    "change": 0.15,
+    "changePercent": 1.28,
+    "tradeVolume": 29209,
+    "transactionCount": 48,
+    "tradeValue": 341655,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.72,
+  "turnoverAverageValue": 7117.81,
+  "pricePosition": 100,
+  "liquidityScore": 4.6,
+  "priceStrengthScore": 74.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 43.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 4.6 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

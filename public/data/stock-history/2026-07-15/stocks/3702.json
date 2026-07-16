@@ -1,0 +1,53 @@
+{
+  "symbol": "3702",
+  "name": "大聯大",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 123,
+    "high": 123,
+    "low": 115,
+    "close": 116.5,
+    "change": -3,
+    "changePercent": -2.51,
+    "tradeVolume": 22451855,
+    "transactionCount": 13138,
+    "tradeValue": 2653488521,
+    "peRatio": 14.22
+  },
+  "dailyRangePercent": 6.96,
+  "turnoverAverageValue": 201970.51,
+  "pricePosition": 18.8,
+  "liquidityScore": 94.5,
+  "priceStrengthScore": 29.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 62.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

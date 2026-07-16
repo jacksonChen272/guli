@@ -1,0 +1,69 @@
+{
+  "symbol": "1444",
+  "name": "力麗",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 8.11,
+    "high": 8.87,
+    "low": 8.02,
+    "close": 8.87,
+    "change": 0.8,
+    "changePercent": 9.91,
+    "tradeVolume": 6368468,
+    "transactionCount": 2646,
+    "tradeValue": 54822452,
+    "peRatio": null
+  },
+  "dailyRangePercent": 10.6,
+  "turnoverAverageValue": 20718.99,
+  "pricePosition": 100,
+  "liquidityScore": 72.1,
+  "priceStrengthScore": 93.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 84.3,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.91% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.60% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

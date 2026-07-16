@@ -1,0 +1,53 @@
+{
+  "symbol": "3130",
+  "name": "一零四",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 206,
+    "high": 206,
+    "low": 203.5,
+    "close": 204,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 79948,
+    "transactionCount": 337,
+    "tradeValue": 16334146,
+    "peRatio": 13.53
+  },
+  "dailyRangePercent": 1.23,
+  "turnoverAverageValue": 48469.28,
+  "pricePosition": 20,
+  "liquidityScore": 32.5,
+  "priceStrengthScore": 35.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 43.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

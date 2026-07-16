@@ -1,0 +1,69 @@
+{
+  "symbol": "2923",
+  "name": "鼎固-KY",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 29.9,
+    "high": 34,
+    "low": 28.8,
+    "close": 33.9,
+    "change": 2.7,
+    "changePercent": 8.65,
+    "tradeVolume": 271386,
+    "transactionCount": 413,
+    "tradeValue": 8570420,
+    "peRatio": null
+  },
+  "dailyRangePercent": 18.06,
+  "turnoverAverageValue": 20751.62,
+  "pricePosition": 98.1,
+  "liquidityScore": 36.9,
+  "priceStrengthScore": 90.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 66.9,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 8.65% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 18.06% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

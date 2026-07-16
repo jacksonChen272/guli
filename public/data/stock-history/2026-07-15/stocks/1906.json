@@ -1,0 +1,62 @@
+{
+  "symbol": "1906",
+  "name": "寶隆",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.85,
+    "high": 11.25,
+    "low": 10.85,
+    "close": 11.2,
+    "change": 0.25,
+    "changePercent": 2.28,
+    "tradeVolume": 110873,
+    "transactionCount": 92,
+    "tradeValue": 1232681,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.69,
+  "turnoverAverageValue": 13398.71,
+  "pricePosition": 87.5,
+  "liquidityScore": 14,
+  "priceStrengthScore": 72.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 46.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.0 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "1721",
+  "name": "三晃",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.85,
+    "high": 23.85,
+    "low": 23.05,
+    "close": 23.35,
+    "change": 0.1,
+    "changePercent": 0.43,
+    "tradeVolume": 981708,
+    "transactionCount": 669,
+    "tradeValue": 22816440,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.47,
+  "turnoverAverageValue": 34105.29,
+  "pricePosition": 37.5,
+  "liquidityScore": 53.7,
+  "priceStrengthScore": 42.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 47.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

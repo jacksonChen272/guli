@@ -1,0 +1,150 @@
+{
+  "entityType": "stock",
+  "entityId": "6958",
+  "entityName": "日盛台駿",
+  "tradeDate": "2026-07-15",
+  "score": 55.3,
+  "label": "中性",
+  "direction": "neutral",
+  "confidence": 82,
+  "summary": "中性，當日價格強度為主要貢獻。",
+  "factors": [
+    {
+      "code": "stock_health",
+      "name": "既有健康分數",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.25,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "daily_price_strength",
+      "name": "當日價格強度",
+      "rawValue": 86.8,
+      "normalizedScore": 86.8,
+      "weight": 0.2,
+      "contribution": 12.27,
+      "direction": "positive",
+      "explanation": "當日價格強度: 86.8",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "liquidity",
+      "name": "流動性",
+      "rawValue": 19.7,
+      "normalizedScore": 19.7,
+      "weight": 0.15,
+      "contribution": -7.57,
+      "direction": "negative",
+      "explanation": "流動性: 19.7",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "market_environment",
+      "name": "市場環境",
+      "rawValue": 47,
+      "normalizedScore": 47,
+      "weight": 0.15,
+      "contribution": -0.75,
+      "direction": "neutral",
+      "explanation": "市場環境: 47",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "industry_environment",
+      "name": "產業環境",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.15,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "risk_control",
+      "name": "風險控制",
+      "rawValue": 58,
+      "normalizedScore": 58,
+      "weight": 0.1,
+      "contribution": 1.33,
+      "direction": "positive",
+      "explanation": "風險控制: 58",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "data_quality",
+      "name": "資料品質",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "derived"
+    }
+  ],
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "explanation": "單日漲幅 7.87% 達 7% 門檻。",
+      "sourceType": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "explanation": "單日振幅 8.45% 達 8% 門檻。",
+      "sourceType": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "explanation": "官方資料未提供本益比，估值風險不計分。",
+      "sourceType": "official"
+    }
+  ],
+  "trace": {
+    "formulaVersion": "decision-v1.0",
+    "totalPositiveContribution": 13.6,
+    "totalNegativeContribution": -8.32,
+    "totalContribution": 5.28,
+    "availableWeight": 0.6,
+    "missingWeight": 0.4,
+    "normalizationApplied": true,
+    "calculationSteps": [
+      "availableWeight=0.6",
+      "missingWeight=0.4",
+      "normalized=true"
+    ]
+  },
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。",
+    "Static generation has no verified industry mapping or mock health input; weights were normalized."
+  ]
+}

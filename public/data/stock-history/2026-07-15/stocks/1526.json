@@ -1,0 +1,62 @@
+{
+  "symbol": "1526",
+  "name": "日馳",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 14,
+    "high": 14.75,
+    "low": 14,
+    "close": 14.3,
+    "change": 0.1,
+    "changePercent": 0.7,
+    "tradeVolume": 90374,
+    "transactionCount": 80,
+    "tradeValue": 1277578,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.36,
+  "turnoverAverageValue": 15969.73,
+  "pricePosition": 40,
+  "liquidityScore": 12.6,
+  "priceStrengthScore": 52.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 34.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.6 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

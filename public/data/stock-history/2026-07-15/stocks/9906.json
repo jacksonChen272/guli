@@ -1,0 +1,53 @@
+{
+  "symbol": "9906",
+  "name": "欣巴巴",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 40.55,
+    "high": 41.4,
+    "low": 40.45,
+    "close": 40.85,
+    "change": 0.55,
+    "changePercent": 1.36,
+    "tradeVolume": 60900,
+    "transactionCount": 79,
+    "tradeValue": 2480916,
+    "peRatio": 15.36
+  },
+  "dailyRangePercent": 2.35,
+  "turnoverAverageValue": 31404,
+  "pricePosition": 42.1,
+  "liquidityScore": 13.4,
+  "priceStrengthScore": 54.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 42.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.4 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

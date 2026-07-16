@@ -1,0 +1,53 @@
+{
+  "symbol": "3515",
+  "name": "華擎",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 206,
+    "high": 209,
+    "low": 202.5,
+    "close": 203.5,
+    "change": 0.5,
+    "changePercent": 0.25,
+    "tradeVolume": 1243819,
+    "transactionCount": 1161,
+    "tradeValue": 254080067,
+    "peRatio": 12.84
+  },
+  "dailyRangePercent": 3.21,
+  "turnoverAverageValue": 218845.88,
+  "pricePosition": 15.4,
+  "liquidityScore": 70.1,
+  "priceStrengthScore": 34.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 56.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "8463",
+  "name": "潤泰材",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 21.25,
+    "high": 21.7,
+    "low": 21.15,
+    "close": 21.7,
+    "change": 0.55,
+    "changePercent": 2.6,
+    "tradeVolume": 82875,
+    "transactionCount": 66,
+    "tradeValue": 1773161,
+    "peRatio": 10.24
+  },
+  "dailyRangePercent": 2.6,
+  "turnoverAverageValue": 26866.08,
+  "pricePosition": 100,
+  "liquidityScore": 12.7,
+  "priceStrengthScore": 77.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 55.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.7 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

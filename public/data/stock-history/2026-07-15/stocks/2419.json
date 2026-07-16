@@ -1,0 +1,55 @@
+{
+  "symbol": "2419",
+  "name": "仲琦",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 27,
+    "high": 27.45,
+    "low": 26.9,
+    "close": 27.3,
+    "change": 0.45,
+    "changePercent": 1.68,
+    "tradeVolume": 456380,
+    "transactionCount": 406,
+    "tradeValue": 12395998,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.04,
+  "turnoverAverageValue": 30532.01,
+  "pricePosition": 72.7,
+  "liquidityScore": 42,
+  "priceStrengthScore": 65.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 55.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

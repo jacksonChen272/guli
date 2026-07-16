@@ -1,0 +1,60 @@
+{
+  "symbol": "1303",
+  "name": "南亞",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 217,
+    "high": 230,
+    "low": 214,
+    "close": 227.5,
+    "change": 17.5,
+    "changePercent": 8.33,
+    "tradeVolume": 158308088,
+    "transactionCount": 101686,
+    "tradeValue": 35268981858,
+    "peRatio": 98.48
+  },
+  "dailyRangePercent": 7.48,
+  "turnoverAverageValue": 346842.06,
+  "pricePosition": 84.4,
+  "liquidityScore": 99.6,
+  "priceStrengthScore": 84.8,
+  "valuationRiskScore": 90,
+  "snapshotScore": 75,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 8.33% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 98.48 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

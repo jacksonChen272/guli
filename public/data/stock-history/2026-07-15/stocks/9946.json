@@ -1,0 +1,53 @@
+{
+  "symbol": "9946",
+  "name": "三發地產",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 18.7,
+    "high": 18.7,
+    "low": 18.1,
+    "close": 18.15,
+    "change": -0.3,
+    "changePercent": -1.63,
+    "tradeVolume": 470073,
+    "transactionCount": 304,
+    "tradeValue": 8564737,
+    "peRatio": 4.36
+  },
+  "dailyRangePercent": 3.31,
+  "turnoverAverageValue": 28173.48,
+  "pricePosition": 8.3,
+  "liquidityScore": 38.8,
+  "priceStrengthScore": 27.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 42.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,62 @@
+{
+  "symbol": "6405",
+  "name": "悅城",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 52.7,
+    "high": 52.7,
+    "low": 49.9,
+    "close": 50,
+    "change": -0.7,
+    "changePercent": -1.38,
+    "tradeVolume": 733806,
+    "transactionCount": 651,
+    "tradeValue": 37022125,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.61,
+  "turnoverAverageValue": 56869.62,
+  "pricePosition": 3.6,
+  "liquidityScore": 54.8,
+  "priceStrengthScore": 26.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 39,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 3.6 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

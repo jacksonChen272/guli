@@ -1,0 +1,53 @@
+{
+  "symbol": "1319",
+  "name": "東陽",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 76.3,
+    "high": 76.8,
+    "low": 75.6,
+    "close": 75.6,
+    "change": 0.2,
+    "changePercent": 0.27,
+    "tradeVolume": 1938785,
+    "transactionCount": 1611,
+    "tradeValue": 147028372,
+    "peRatio": 13.57
+  },
+  "dailyRangePercent": 1.59,
+  "turnoverAverageValue": 91265.28,
+  "pricePosition": 0,
+  "liquidityScore": 70.7,
+  "priceStrengthScore": 29.1,
+  "valuationRiskScore": 20,
+  "snapshotScore": 53.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

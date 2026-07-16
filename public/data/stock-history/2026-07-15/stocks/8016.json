@@ -1,0 +1,53 @@
+{
+  "symbol": "8016",
+  "name": "矽創",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 318,
+    "high": 319,
+    "low": 302,
+    "close": 302,
+    "change": -7.5,
+    "changePercent": -2.42,
+    "tradeVolume": 1719691,
+    "transactionCount": 2719,
+    "tradeValue": 525338645,
+    "peRatio": 18.97
+  },
+  "dailyRangePercent": 5.63,
+  "turnoverAverageValue": 193210.24,
+  "pricePosition": 0,
+  "liquidityScore": 77.1,
+  "priceStrengthScore": 23.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 50.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "4552",
+  "name": "力達-KY",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.15,
+    "high": 19.65,
+    "low": 19.15,
+    "close": 19.65,
+    "change": 0.5,
+    "changePercent": 2.61,
+    "tradeVolume": 108170,
+    "transactionCount": 65,
+    "tradeValue": 2089363,
+    "peRatio": 12.76
+  },
+  "dailyRangePercent": 2.61,
+  "turnoverAverageValue": 32144.05,
+  "pricePosition": 100,
+  "liquidityScore": 14.9,
+  "priceStrengthScore": 77.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 56,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.9 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

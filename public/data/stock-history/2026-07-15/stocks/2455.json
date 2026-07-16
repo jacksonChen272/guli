@@ -1,0 +1,60 @@
+{
+  "symbol": "2455",
+  "name": "全新",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 326,
+    "high": 332,
+    "low": 312.5,
+    "close": 315.5,
+    "change": 1,
+    "changePercent": 0.32,
+    "tradeVolume": 5337416,
+    "transactionCount": 6865,
+    "tradeValue": 1716813418,
+    "peRatio": 99.53
+  },
+  "dailyRangePercent": 6.24,
+  "turnoverAverageValue": 250082.07,
+  "pricePosition": 15.4,
+  "liquidityScore": 88.7,
+  "priceStrengthScore": 34.6,
+  "valuationRiskScore": 90,
+  "snapshotScore": 48.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.4 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 99.53 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

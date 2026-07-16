@@ -1,0 +1,53 @@
+{
+  "symbol": "2430",
+  "name": "燦坤",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.95,
+    "high": 18,
+    "low": 17.9,
+    "close": 18,
+    "change": 0.05,
+    "changePercent": 0.28,
+    "tradeVolume": 85982,
+    "transactionCount": 85,
+    "tradeValue": 1544366,
+    "peRatio": 37.5
+  },
+  "dailyRangePercent": 0.56,
+  "turnoverAverageValue": 18169.01,
+  "pricePosition": 100,
+  "liquidityScore": 13.2,
+  "priceStrengthScore": 72.1,
+  "valuationRiskScore": 55,
+  "snapshotScore": 46.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.2 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

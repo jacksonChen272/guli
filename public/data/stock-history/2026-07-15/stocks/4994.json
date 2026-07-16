@@ -1,0 +1,53 @@
+{
+  "symbol": "4994",
+  "name": "傳奇",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 89.7,
+    "high": 91.8,
+    "low": 89.7,
+    "close": 91.5,
+    "change": 2.2,
+    "changePercent": 2.46,
+    "tradeVolume": 20000,
+    "transactionCount": 20,
+    "tradeValue": 1819000,
+    "peRatio": 58.65
+  },
+  "dailyRangePercent": 2.34,
+  "turnoverAverageValue": 90950,
+  "pricePosition": 85.7,
+  "liquidityScore": 6.9,
+  "priceStrengthScore": 72,
+  "valuationRiskScore": 75,
+  "snapshotScore": 39.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 6.9 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

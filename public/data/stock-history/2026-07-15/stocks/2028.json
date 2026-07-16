@@ -1,0 +1,53 @@
+{
+  "symbol": "2028",
+  "name": "威致",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 15.75,
+    "high": 16,
+    "low": 15.65,
+    "close": 16,
+    "change": 0.4,
+    "changePercent": 2.56,
+    "tradeVolume": 99251,
+    "transactionCount": 88,
+    "tradeValue": 1569027,
+    "peRatio": 45.71
+  },
+  "dailyRangePercent": 2.24,
+  "turnoverAverageValue": 17829.85,
+  "pricePosition": 100,
+  "liquidityScore": 14.2,
+  "priceStrengthScore": 77.3,
+  "valuationRiskScore": 75,
+  "snapshotScore": 44.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.2 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

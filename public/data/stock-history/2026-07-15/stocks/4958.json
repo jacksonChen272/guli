@@ -1,0 +1,60 @@
+{
+  "symbol": "4958",
+  "name": "臻鼎-KY",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 645,
+    "high": 656,
+    "low": 615,
+    "close": 618,
+    "change": -11,
+    "changePercent": -1.75,
+    "tradeVolume": 57171302,
+    "transactionCount": 69117,
+    "tradeValue": 36430989850,
+    "peRatio": 87.17
+  },
+  "dailyRangePercent": 6.67,
+  "turnoverAverageValue": 527091.6,
+  "pricePosition": 7.3,
+  "liquidityScore": 99.2,
+  "priceStrengthScore": 27.1,
+  "valuationRiskScore": 90,
+  "snapshotScore": 48.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 87.17 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

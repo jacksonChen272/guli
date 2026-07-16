@@ -1,0 +1,53 @@
+{
+  "symbol": "4915",
+  "name": "致伸",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 67.7,
+    "high": 68.2,
+    "low": 67.4,
+    "close": 67.5,
+    "change": 0.1,
+    "changePercent": 0.15,
+    "tradeVolume": 1235174,
+    "transactionCount": 1015,
+    "tradeValue": 83538949,
+    "peRatio": 12.81
+  },
+  "dailyRangePercent": 1.19,
+  "turnoverAverageValue": 82304.38,
+  "pricePosition": 12.5,
+  "liquidityScore": 64.2,
+  "priceStrengthScore": 33.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 53.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,62 @@
+{
+  "symbol": "6838",
+  "name": "台新藥",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.6,
+    "high": 24.2,
+    "low": 23.5,
+    "close": 24.2,
+    "change": 0.6,
+    "changePercent": 2.54,
+    "tradeVolume": 88510,
+    "transactionCount": 82,
+    "tradeValue": 2114470,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.98,
+  "turnoverAverageValue": 25786.22,
+  "pricePosition": 100,
+  "liquidityScore": 14.8,
+  "priceStrengthScore": 77.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 49.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.8 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

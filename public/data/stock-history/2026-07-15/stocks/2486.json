@@ -1,0 +1,60 @@
+{
+  "symbol": "2486",
+  "name": "一詮",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 239,
+    "high": 257,
+    "low": 238.5,
+    "close": 257,
+    "change": 23,
+    "changePercent": 9.83,
+    "tradeVolume": 10902829,
+    "transactionCount": 9186,
+    "tradeValue": 2756416364,
+    "peRatio": 503.92
+  },
+  "dailyRangePercent": 7.76,
+  "turnoverAverageValue": 300067.1,
+  "pricePosition": 100,
+  "liquidityScore": 92.8,
+  "priceStrengthScore": 93.6,
+  "valuationRiskScore": 90,
+  "snapshotScore": 76.6,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.83% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 503.92 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

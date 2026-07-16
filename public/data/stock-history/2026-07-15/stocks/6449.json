@@ -1,0 +1,53 @@
+{
+  "symbol": "6449",
+  "name": "鈺邦",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 310,
+    "high": 310,
+    "low": 289,
+    "close": 291.5,
+    "change": -7.5,
+    "changePercent": -2.51,
+    "tradeVolume": 1507921,
+    "transactionCount": 3650,
+    "tradeValue": 442740629,
+    "peRatio": 37.91
+  },
+  "dailyRangePercent": 7.27,
+  "turnoverAverageValue": 121298.8,
+  "pricePosition": 11.9,
+  "liquidityScore": 76.7,
+  "priceStrengthScore": 27,
+  "valuationRiskScore": 55,
+  "snapshotScore": 48,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.9 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

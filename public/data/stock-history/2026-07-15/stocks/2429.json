@@ -1,0 +1,55 @@
+{
+  "symbol": "2429",
+  "name": "銘旺科",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 50.1,
+    "high": 51.2,
+    "low": 48.1,
+    "close": 49,
+    "change": 1.25,
+    "changePercent": 2.62,
+    "tradeVolume": 2680428,
+    "transactionCount": 2073,
+    "tradeValue": 133711017,
+    "peRatio": null
+  },
+  "dailyRangePercent": 6.44,
+  "turnoverAverageValue": 64501.21,
+  "pricePosition": 29,
+  "liquidityScore": 72.7,
+  "priceStrengthScore": 44.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 56.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "1308",
+  "name": "亞聚",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 14.65,
+    "high": 15.05,
+    "low": 14.6,
+    "close": 14.95,
+    "change": 0.4,
+    "changePercent": 2.75,
+    "tradeVolume": 2229769,
+    "transactionCount": 1029,
+    "tradeValue": 33063479,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.08,
+  "turnoverAverageValue": 32131.66,
+  "pricePosition": 77.8,
+  "liquidityScore": 61.8,
+  "priceStrengthScore": 69.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 66.4,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

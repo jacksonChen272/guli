@@ -1,0 +1,53 @@
+{
+  "symbol": "2705",
+  "name": "六福",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.3,
+    "high": 16.3,
+    "low": 16.1,
+    "close": 16.3,
+    "change": 0.1,
+    "changePercent": 0.62,
+    "tradeVolume": 87317,
+    "transactionCount": 149,
+    "tradeValue": 1416643,
+    "peRatio": 18.31
+  },
+  "dailyRangePercent": 1.24,
+  "turnoverAverageValue": 9507.67,
+  "pricePosition": 100,
+  "liquidityScore": 14.8,
+  "priceStrengthScore": 68.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 49.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.8 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

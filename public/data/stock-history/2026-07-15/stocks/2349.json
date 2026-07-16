@@ -1,0 +1,55 @@
+{
+  "symbol": "2349",
+  "name": "錸德",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.95,
+    "high": 12.25,
+    "low": 11.95,
+    "close": 12.15,
+    "change": 0.2,
+    "changePercent": 1.67,
+    "tradeVolume": 2141155,
+    "transactionCount": 945,
+    "tradeValue": 25965449,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.51,
+  "turnoverAverageValue": 27476.67,
+  "pricePosition": 66.7,
+  "liquidityScore": 59.8,
+  "priceStrengthScore": 63.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 61.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

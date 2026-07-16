@@ -1,0 +1,60 @@
+{
+  "symbol": "3028",
+  "name": "增你強",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 70.7,
+    "high": 77,
+    "low": 70.6,
+    "close": 77,
+    "change": 7,
+    "changePercent": 10,
+    "tradeVolume": 3714828,
+    "transactionCount": 3130,
+    "tradeValue": 278941265,
+    "peRatio": 15.07
+  },
+  "dailyRangePercent": 9.07,
+  "turnoverAverageValue": 89118.62,
+  "pricePosition": 100,
+  "liquidityScore": 78.6,
+  "priceStrengthScore": 94,
+  "valuationRiskScore": 35,
+  "snapshotScore": 82.8,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 10.00% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.07% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,62 @@
+{
+  "symbol": "3593",
+  "name": "力銘",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.5,
+    "high": 16.5,
+    "low": 15.75,
+    "close": 16.35,
+    "change": 0.15,
+    "changePercent": 0.93,
+    "tradeVolume": 27212,
+    "transactionCount": 37,
+    "tradeValue": 440925,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.76,
+  "turnoverAverageValue": 11916.89,
+  "pricePosition": 80,
+  "liquidityScore": 4.2,
+  "priceStrengthScore": 58.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 34.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 4.2 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

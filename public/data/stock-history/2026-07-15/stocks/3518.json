@@ -1,0 +1,53 @@
+{
+  "symbol": "3518",
+  "name": "柏騰",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 29.3,
+    "high": 29.8,
+    "low": 29.05,
+    "close": 29.2,
+    "change": 0.05,
+    "changePercent": 0.17,
+    "tradeVolume": 298218,
+    "transactionCount": 251,
+    "tradeValue": 8748936,
+    "peRatio": 13.33
+  },
+  "dailyRangePercent": 2.58,
+  "turnoverAverageValue": 34856.32,
+  "pricePosition": 20,
+  "liquidityScore": 35.4,
+  "priceStrengthScore": 35.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 44.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

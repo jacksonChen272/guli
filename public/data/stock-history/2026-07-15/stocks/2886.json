@@ -1,0 +1,53 @@
+{
+  "symbol": "2886",
+  "name": "兆豐金",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 46.85,
+    "high": 47.3,
+    "low": 45.8,
+    "close": 46,
+    "change": -1,
+    "changePercent": -2.13,
+    "tradeVolume": 26433301,
+    "transactionCount": 22582,
+    "tradeValue": 1221278960,
+    "peRatio": 18.7
+  },
+  "dailyRangePercent": 3.28,
+  "turnoverAverageValue": 54081.97,
+  "pricePosition": 13.3,
+  "liquidityScore": 93.2,
+  "priceStrengthScore": 28.4,
+  "valuationRiskScore": 35,
+  "snapshotScore": 58.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 13.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

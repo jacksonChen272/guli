@@ -1,0 +1,53 @@
+{
+  "symbol": "4569",
+  "name": "六方科-KY",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 162.5,
+    "high": 166.5,
+    "low": 162.5,
+    "close": 166.5,
+    "change": 4.5,
+    "changePercent": 2.78,
+    "tradeVolume": 24816,
+    "transactionCount": 44,
+    "tradeValue": 4098978,
+    "peRatio": 34.33
+  },
+  "dailyRangePercent": 2.46,
+  "turnoverAverageValue": 93158.59,
+  "pricePosition": 100,
+  "liquidityScore": 12.7,
+  "priceStrengthScore": 77.8,
+  "valuationRiskScore": 55,
+  "snapshotScore": 48.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.7 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

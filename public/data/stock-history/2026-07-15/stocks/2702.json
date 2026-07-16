@@ -1,0 +1,55 @@
+{
+  "symbol": "2702",
+  "name": "華園",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.2,
+    "high": 13.2,
+    "low": 12.75,
+    "close": 13.2,
+    "change": 0.1,
+    "changePercent": 0.76,
+    "tradeVolume": 108785,
+    "transactionCount": 144,
+    "tradeValue": 1408352,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.53,
+  "turnoverAverageValue": 9780.22,
+  "pricePosition": 100,
+  "liquidityScore": 15.9,
+  "priceStrengthScore": 69.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 45.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

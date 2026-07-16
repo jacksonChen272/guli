@@ -1,0 +1,69 @@
+{
+  "symbol": "6958",
+  "name": "日盛台駿",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.2,
+    "high": 18.6,
+    "low": 17.15,
+    "close": 18.5,
+    "change": 1.35,
+    "changePercent": 7.87,
+    "tradeVolume": 140222,
+    "transactionCount": 127,
+    "tradeValue": 2500337,
+    "peRatio": null
+  },
+  "dailyRangePercent": 8.45,
+  "turnoverAverageValue": 19687.69,
+  "pricePosition": 93.1,
+  "liquidityScore": 19.7,
+  "priceStrengthScore": 86.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 57.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 7.87% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.45% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

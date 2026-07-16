@@ -1,0 +1,53 @@
+{
+  "symbol": "8464",
+  "name": "億豐",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 365.5,
+    "high": 365.5,
+    "low": 352,
+    "close": 352,
+    "change": -12,
+    "changePercent": -3.3,
+    "tradeVolume": 494268,
+    "transactionCount": 717,
+    "tradeValue": 175742087,
+    "peRatio": 15.94
+  },
+  "dailyRangePercent": 3.84,
+  "turnoverAverageValue": 245107.51,
+  "pricePosition": 0,
+  "liquidityScore": 60.7,
+  "priceStrengthScore": 21.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 43.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

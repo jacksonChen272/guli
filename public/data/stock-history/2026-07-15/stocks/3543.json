@@ -1,0 +1,55 @@
+{
+  "symbol": "3543",
+  "name": "州巧",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 31.7,
+    "high": 31.95,
+    "low": 30.55,
+    "close": 31.8,
+    "change": 0.65,
+    "changePercent": 2.09,
+    "tradeVolume": 788445,
+    "transactionCount": 567,
+    "tradeValue": 24815043,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.58,
+  "turnoverAverageValue": 43765.51,
+  "pricePosition": 89.3,
+  "liquidityScore": 51.9,
+  "priceStrengthScore": 72.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 63.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

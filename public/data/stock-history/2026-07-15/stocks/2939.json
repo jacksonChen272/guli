@@ -1,0 +1,62 @@
+{
+  "symbol": "2939",
+  "name": "永邑-KY",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 18.9,
+    "high": 19.5,
+    "low": 18.6,
+    "close": 18.8,
+    "change": -0.05,
+    "changePercent": -0.27,
+    "tradeVolume": 12000,
+    "transactionCount": 12,
+    "tradeValue": 225950,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.84,
+  "turnoverAverageValue": 18829.17,
+  "pricePosition": 22.2,
+  "liquidityScore": 1.4,
+  "priceStrengthScore": 35.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 20.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 1.4 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

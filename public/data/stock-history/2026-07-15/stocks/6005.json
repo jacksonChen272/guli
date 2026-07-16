@@ -1,0 +1,53 @@
+{
+  "symbol": "6005",
+  "name": "群益證",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 34.5,
+    "high": 34.75,
+    "low": 34.35,
+    "close": 34.4,
+    "change": 0.3,
+    "changePercent": 0.88,
+    "tradeVolume": 4952639,
+    "transactionCount": 3298,
+    "tradeValue": 171118030,
+    "peRatio": 9.61
+  },
+  "dailyRangePercent": 1.16,
+  "turnoverAverageValue": 51885.39,
+  "pricePosition": 12.5,
+  "liquidityScore": 77.8,
+  "priceStrengthScore": 34.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 58.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

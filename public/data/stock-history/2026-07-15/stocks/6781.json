@@ -1,0 +1,53 @@
+{
+  "symbol": "6781",
+  "name": "AES-KY",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 1060,
+    "high": 1070,
+    "low": 1040,
+    "close": 1040,
+    "change": -20,
+    "changePercent": -1.89,
+    "tradeVolume": 844443,
+    "transactionCount": 3380,
+    "tradeValue": 886244765,
+    "peRatio": 26.58
+  },
+  "dailyRangePercent": 2.88,
+  "turnoverAverageValue": 262202.59,
+  "pricePosition": 0,
+  "liquidityScore": 75.3,
+  "priceStrengthScore": 24.3,
+  "valuationRiskScore": 55,
+  "snapshotScore": 46.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

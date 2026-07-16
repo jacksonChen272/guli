@@ -1,0 +1,53 @@
+{
+  "symbol": "8462",
+  "name": "柏文",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 168,
+    "high": 168,
+    "low": 160,
+    "close": 161,
+    "change": -6,
+    "changePercent": -3.59,
+    "tradeVolume": 370819,
+    "transactionCount": 1283,
+    "tradeValue": 60568969,
+    "peRatio": 17.35
+  },
+  "dailyRangePercent": 5,
+  "turnoverAverageValue": 47208.86,
+  "pricePosition": 12.5,
+  "liquidityScore": 55.3,
+  "priceStrengthScore": 24.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 43.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2477",
+  "name": "美隆電",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 21.05,
+    "high": 21.55,
+    "low": 20.95,
+    "close": 21.4,
+    "change": 0.3,
+    "changePercent": 1.42,
+    "tradeVolume": 85275,
+    "transactionCount": 96,
+    "tradeValue": 1812952,
+    "peRatio": 13.21
+  },
+  "dailyRangePercent": 2.86,
+  "turnoverAverageValue": 18884.92,
+  "pricePosition": 75,
+  "liquidityScore": 14.1,
+  "priceStrengthScore": 65.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 50.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.1 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

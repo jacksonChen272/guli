@@ -1,0 +1,53 @@
+{
+  "symbol": "5007",
+  "name": "三星",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 55.9,
+    "high": 56.4,
+    "low": 55.7,
+    "close": 56.4,
+    "change": 0.5,
+    "changePercent": 0.89,
+    "tradeVolume": 43040,
+    "transactionCount": 40,
+    "tradeValue": 2414232,
+    "peRatio": 18.55
+  },
+  "dailyRangePercent": 1.26,
+  "turnoverAverageValue": 60355.8,
+  "pricePosition": 100,
+  "liquidityScore": 10.5,
+  "priceStrengthScore": 73.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 49.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.5 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,62 @@
+{
+  "symbol": "1626",
+  "name": "艾美特-KY",
+  "tradeDate": "2026-07-15",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.15,
+    "high": 10.45,
+    "low": 10.15,
+    "close": 10.4,
+    "change": 0.25,
+    "changePercent": 2.46,
+    "tradeVolume": 77700,
+    "transactionCount": 75,
+    "tradeValue": 801088,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.96,
+  "turnoverAverageValue": 10681.17,
+  "pricePosition": 83.3,
+  "liquidityScore": 10.1,
+  "priceStrengthScore": 71.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 44.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.1 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}
