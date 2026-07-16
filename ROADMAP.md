@@ -1,5 +1,11 @@
 # GULI Roadmap
 
+## 0.7.2
+
+- 完成 Professional Trading Workspace 的資訊密度、工作流程與響應式掃讀體驗。
+- 維持 Decision、Health、Snapshot 與資料平台規則不變，集中處理 ViewModel 與顯示格式。
+- 下一階段建議：累積多交易日 Decision／Snapshot 歷史，以啟用更完整的變化排行與回測視圖。
+
 ## 0.7.1
 
 - 完成 UI 2.0 可讀性、資訊層級、共用資料表與手機操作品質。

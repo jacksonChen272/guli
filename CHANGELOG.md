@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.2]
+
+- 將 Dashboard 重排為資料狀態、市場結論、Decision、自選股、Snapshot 與產業／個股工作流。
+- 壓縮 Decision 與資料平台卡片，新增前期比較、正負因子、警示折疊與明確 Loading／Empty／Error／Stale／Partial 狀態。
+- 升級智慧自選股預覽與桌面表格，加入迷你進度、群組／Observation metadata、同頁 Drawer 與手機資料卡。
+- 決策中心新增市場決策雙欄卡與四組個股雷達排行；個股頁與 Decision Trace 統一因子卡格式。
+- 新增集中 formatter、Card `spacious` 密度、全螢幕行動搜尋、safe area 與工作區可存取性規範。
+
 ## [0.7.1]
 
 - 建立 Typography、Spacing、Card、Badge 與 DataTable UI 2.0 共用規範。
