@@ -1,5 +1,11 @@
 # GULI Roadmap
 
+## 0.7.1
+
+- 完成 UI 2.0 可讀性、資訊層級、共用資料表與手機操作品質。
+- 保持 Decision、Health、Snapshot 公式與 Repository／Provider／Cache 資料流程不變。
+- 下一階段：以真實裝置與使用者測試持續校準高資訊密度畫面的掃讀效率。
+
 ## 0.6.0
 
 - 可解釋市場、產業、個股與自選股決策。

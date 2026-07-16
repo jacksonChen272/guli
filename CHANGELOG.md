@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.1]
+
+- 建立 Typography、Spacing、Card、Badge 與 DataTable UI 2.0 共用規範。
+- 重整智慧自選股為資料狀態、今日工作台、快速洞察與響應式清單四層結構。
+- 依市場結論、決策、快照、統計、產業與自選股重新排列 Dashboard 資訊層級。
+- 個股頁新增三分數 Score Overview，決策中心與股寶強化 Decision／Confidence／Trace 可讀性。
+- 補強手機資料卡、Drawer safe area、44px 觸控區、ARIA 與 reduced-motion 測試。
+
 ## [0.7.0]
 
 - 將自選股升級為智慧觀察中心，新增四大摘要、Today Action、完整排序篩選與同頁 Detail Drawer。
