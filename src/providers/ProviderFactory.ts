@@ -6,7 +6,7 @@ import type { GuliDataProvider, ProviderDescriptor, ProviderId } from './Provide
 
 export class ProviderFactory {
   private readonly providers = new Map<ProviderId, GuliDataProvider>([['mock', new MockProvider()], ['twse', new TWSEProvider()], ['finmind', new FutureFinMindProvider()], ['yahoo', new FutureYahooProvider()]])
-  private activeId: ProviderId = 'mock'
+  private activeId: ProviderId = 'twse'
   create(id: ProviderId): GuliDataProvider { const provider = this.providers.get(id); if (!provider) throw new Error(`未知資料來源：${id}`); return provider }
   getActive() { return this.create(this.activeId) }
   getActiveId() { return this.activeId }

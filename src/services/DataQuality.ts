@@ -27,7 +27,7 @@ export class DataQuality {
 
   evaluateOfficial(data: OfficialMarketOverview, now = new Date()): DataQualityReport {
     const validation = validateOfficialMarketOverview(data, now)
-    const missingBreadth = [data.advanceCount, data.declineCount, data.unchangedCount].filter((value) => value === null).length
+    const missingBreadth = [data.advanceCount, data.declineCount, data.unchangedCount, data.limitUpCount, data.limitDownCount].filter((value) => value === null).length
     const score = Math.max(0, 100 - validation.errors.length * 25 - missingBreadth * 5 - (validation.stale ? 15 : 0))
     return { score, grade: gradeFor(score), issues: [...new Set([...validation.errors, ...validation.warnings])], checkedAt: new Date().toISOString() }
   }

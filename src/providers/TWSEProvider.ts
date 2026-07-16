@@ -27,7 +27,7 @@ export class TWSEProvider extends FutureProviderBase {
     const official: OfficialMarketOverview = payload
     const validation = validateOfficialMarketOverview(official)
     if (!validation.valid) throw new ProviderDataError('TWSE_DATA_INVALID', 'TWSE 市場資料驗證失敗。', validation.errors)
-    const data: OfficialMarketOverview = { ...official, status: official.status === 'fallback' ? 'fallback' : validation.warnings.length ? 'partial' : 'official', warnings: validation.warnings }
+    const data: OfficialMarketOverview = { ...official, status: official.status, warnings: validation.warnings }
     this.lastUpdatedAt = data.fetchedAt
     return { data, source: data.source, updatedAt: data.fetchedAt, status: validation.stale ? 'stale' : 'success', warnings: data.warnings }
   }

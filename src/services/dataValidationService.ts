@@ -66,10 +66,33 @@ export function validateOfficialMarketOverview(data: OfficialMarketOverview, now
   if (!Number.isFinite(data.change)) errors.push('漲跌點必須為有限數值。')
   if (!Number.isFinite(data.changePercent)) errors.push('漲跌幅必須為有限數值。')
   if (!Number.isFinite(data.tradingAmount) || data.tradingAmount < 0) errors.push('成交金額不可為負數。')
-  for (const [label, value] of [['上漲家數', data.advanceCount], ['下跌家數', data.declineCount], ['平盤家數', data.unchangedCount]] as const) if (value !== null && (!Number.isFinite(value) || value < 0)) errors.push(`${label}不可為負數。`)
+  if (!Number.isFinite(data.tradingVolume) || data.tradingVolume < 0) errors.push('成交量不可為負數。')
+  if (!Number.isInteger(data.transactionCount) || data.transactionCount < 0) errors.push('成交筆數必須為非負整數。')
+  for (const [label, value] of [
+    ['上漲家數', data.advanceCount], ['下跌家數', data.declineCount], ['平盤家數', data.unchangedCount],
+    ['漲停家數', data.limitUpCount], ['跌停家數', data.limitDownCount],
+  ] as const) if (value !== null && (!Number.isInteger(value) || value < 0)) errors.push(`${label}必須為非負整數。`)
+  if (!['twtazu_od', 'stock_day_all'].includes(data.breadthSource)) errors.push('市場廣度來源無效。')
+  if (!data.tradingHistory.length) errors.push('市場成交歷史不可為空。')
+  for (const point of data.tradingHistory) {
+    if (!isIsoDate(point.tradeDate) || point.tradeDate > data.tradeDate) errors.push('市場成交歷史日期無效。')
+    if (!Number.isFinite(point.indexValue) || point.indexValue <= 0) errors.push('市場成交歷史指數值無效。')
+    if (!Number.isFinite(point.tradingAmount) || point.tradingAmount < 0 || !Number.isFinite(point.tradingVolume) || point.tradingVolume < 0) errors.push('市場成交歷史量值無效。')
+  }
+  for (const [label, items] of [
+    ['成交值排行', data.rankings.tradingAmount], ['成交量排行', data.rankings.tradingVolume],
+    ['漲幅排行', data.rankings.gainers], ['跌幅排行', data.rankings.losers],
+  ] as const) {
+    if (items.length !== 10) errors.push(`${label}必須包含 10 筆。`)
+    if (new Set(items.map((item) => item.symbol)).size !== items.length) errors.push(`${label}不可包含重複股票。`)
+    for (const item of items) if (!/^\d{4}$/.test(item.symbol) || /^00/.test(item.symbol) || !item.name || !Number.isFinite(item.close) || item.close <= 0
+      || !Number.isFinite(item.change) || !Number.isFinite(item.changePercent) || !Number.isFinite(item.tradingAmount) || item.tradingAmount < 0
+      || !Number.isFinite(item.tradingVolume) || item.tradingVolume < 0) errors.push(`${label}包含無效資料。`)
+  }
   if (!isValidIsoTimestamp(data.fetchedAt)) errors.push('抓取時間必須是有效 ISO 日期。')
   if (data.source !== TWSE_SOURCE || !data.sourceUrl?.includes('openapi.twse.com.tw')) errors.push('來源必須是 TWSE 官方 OpenAPI。')
-  if ([data.advanceCount, data.declineCount, data.unchangedCount].some((value) => value === null) && !warnings.includes('TWSE 官方資料缺少完整漲跌家數，本筆資料為部分資料。')) warnings.push('TWSE 官方資料缺少完整漲跌家數，本筆資料為部分資料。')
+  if ([data.advanceCount, data.declineCount, data.unchangedCount, data.limitUpCount, data.limitDownCount].some((value) => value === null)
+    && !warnings.includes('TWSE 官方市場廣度欄位不完整，缺值保留 null。')) warnings.push('TWSE 官方市場廣度欄位不完整，缺值保留 null。')
   const stale = isIsoDate(data.tradeDate) && businessDaysBetween(data.tradeDate, now) > 2
   if (stale) warnings.push('資料已超過兩個合理交易日，請確認同步工作是否正常。')
   return { valid: errors.length === 0, stale, errors, warnings: [...new Set(warnings)] }

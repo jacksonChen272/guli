@@ -6,7 +6,7 @@ import { Badge } from '../ui/Badge'
 import { Tooltip } from '../ui/Tooltip'
 
 const sourceMeta: Record<MarketFieldSource, { label: string; tone: 'brand' | 'neutral' | 'warning' | 'info' }> = {
-  official: { label: '官方 TWSE', tone: 'brand' }, mock: { label: '模擬資料', tone: 'neutral' },
+  official: { label: 'TWSE Official', tone: 'brand' }, mock: { label: '模擬資料', tone: 'neutral' },
   fallback: { label: '回退資料', tone: 'warning' }, partial: { label: '部分資料', tone: 'info' },
 }
 

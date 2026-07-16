@@ -79,7 +79,7 @@ describe('GULI repositories', () => {
 describe('Provider、Cache 與平台服務', () => {
   it('ProviderFactory 允許 Mock 與 TWSE，其他未來 Provider 保持停用', () => {
     const factory = new ProviderFactory()
-    expect(factory.getActiveId()).toBe('mock')
+    expect(factory.getActiveId()).toBe('twse')
     expect(factory.select('twse')).toBe(true)
     expect(factory.create('twse')).toBeInstanceOf(TWSEProvider)
     expect(factory.select('finmind')).toBe(false)
