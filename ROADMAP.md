@@ -1,5 +1,12 @@
 # GULI Roadmap
 
+## 0.8.0-beta.1
+
+- 完成 TWSE 官方三大法人盤後市場金額與上市普通股買賣超資料。
+- 完成 Public Beta Data Guard、資料覆蓋率與 Missing／Stale／Fallback 呈現規則。
+- 維持 `decision-v1.0` 權重；官方法人資料先納入 Trace 與來源揭露。
+- 下一階段：累積多交易日官方法人歷史、建立正式產業 mapping，經版本化評估後再決定是否新增 Decision 法人因子。
+
 ## 0.7.2
 
 - 完成 Professional Trading Workspace 的資訊密度、工作流程與響應式掃讀體驗。

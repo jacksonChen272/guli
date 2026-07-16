@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.8.0-beta.1]
+
+- 接入 TWSE BFI82U 與 T86 官方三大法人盤後資料，建立原子同步、歷史檔、Provider、Repository、快取與排行榜。
+- Dashboard 新增外資及陸資、投信、自營商、三大法人合計與個股買賣超 Top 10；個股頁新增官方法人單日區塊。
+- 將近似漲跌停改名為「漲幅 ≥ 9.5%」與「跌幅 ≤ -9.5%」，標示 Derived 並補充非官方統計說明。
+- 建立 Public Beta Data Guard、資料可信度摘要、公開測試模式與 `/data-coverage` 覆蓋率頁面。
+- Decision Trace 附加官方法人來源；`decision-v1.0` 權重與分數公式不變。
+- GitHub Actions 依序同步市場、個股、法人，再產生 Snapshot、Decision、測試與建置。
+
 ## [0.7.2]
 
 - 將 Dashboard 重排為資料狀態、市場結論、Decision、自選股、Snapshot 與產業／個股工作流。
