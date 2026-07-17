@@ -26,7 +26,7 @@ describe('Today Dashboard recommendation rules', () => {
 describe('Today Dashboard information flow', () => {
   const dashboard = source('../../../pages/Dashboard.tsx')
   it('首頁順序為市場、推薦、族群、技術、排行、消息、資料完整度', () => {
-    const components = ['<TodayMarketHero', '<TodayRecommendations', '<IndustryRotationPreview', '<TechnicalScreenerPreview', '<MarketRanking', '<MarketNewsPlaceholder', '<DataCoverageSummary']
+    const components = ['<TodayMarketHero', '<TodayRecommendations', '<MarketHeatmap', '<IndustryRotationPreview', '<TechnicalScreenerPreview', '<MarketRanking', '<MarketNewsPlaceholder', '<DataCoverageSummary']
     components.reduce((previous, component) => { const current = dashboard.indexOf(component); expect(current).toBeGreaterThan(previous); return current }, -1)
   })
   it('首頁不再掛載舊 Data Platform 大卡', () => expect(dashboard).not.toContain('<DataSourceInfoCard'))

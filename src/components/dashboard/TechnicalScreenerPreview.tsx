@@ -26,7 +26,7 @@ export function TechnicalScreenerPreview({ dataset, loading }: { dataset: Screen
         return <button type="button" key={opportunity.id} onClick={() => navigate(`/screener?preset=${opportunity.id}`)} className="panel card-interactive min-h-[210px] min-w-0 p-5 text-left sm:p-6" aria-label={`查看${opportunity.label}選股`}>
           <div className="flex items-start justify-between gap-3"><span className={`grid h-11 w-11 place-items-center rounded-xl border ${opportunity.tone}`}><Icon size={20}/></span><span className="mono text-3xl font-semibold text-white">{summary?.matchedCount ?? matches.length}</span></div>
           <h3 className="mt-5 text-base font-semibold text-white">{opportunity.label}</h3><p className="mt-2 text-sm leading-6 text-slate-500">{opportunity.description}</p>
-          <div className="mt-4 flex min-w-0 items-center justify-between gap-2"><div className="flex min-w-0 gap-1.5">{matches.slice(0, 2).map((row) => <Badge key={row.symbol} tone="neutral">{row.symbol}</Badge>)}</div><ArrowRight className="shrink-0 text-slate-600" size={16}/></div>
+          <div className="mt-4 flex min-w-0 items-end justify-between gap-2"><div className="flex min-w-0 flex-wrap gap-1.5">{matches.slice(0, 3).map((row) => <Badge key={row.symbol} tone="neutral">{row.symbol} {row.name}</Badge>)}</div><ArrowRight className="mb-1 shrink-0 text-slate-600" size={16}/></div>
         </button>
       })}</div>
     )}

@@ -1,0 +1,32 @@
+import { readFileSync } from 'node:fs'
+import { describe, expect, it } from 'vitest'
+
+const source = (path: string) => readFileSync(new URL(path, import.meta.url), 'utf8')
+
+describe('Market Heatmap dashboard wiring', () => {
+  const dashboard = source('../../../pages/Dashboard.tsx')
+  const heatmap = source('../MarketHeatmap.tsx')
+  const hero = source('../TodayMarketHero.tsx')
+  const observations = source('../TodayRecommendations.tsx')
+  it('places Heatmap after observations and before hot industries', () => { expect(dashboard.indexOf('<MarketHeatmap')).toBeGreaterThan(dashboard.indexOf('<TodayRecommendations')); expect(dashboard.indexOf('<MarketHeatmap')).toBeLessThan(dashboard.indexOf('<IndustryRotationPreview')) })
+  it('lazy loads the Heatmap component', () => expect(dashboard).toContain("lazy(() => import('../components/dashboard/MarketHeatmap')"))
+  it('loads Heatmap data through RepositoryHub', () => { const hook = source('../../../hooks/useTodayDashboardData.ts'); expect(hook).toContain('repositoryHub.marketHeatmap.getLatest()'); expect(heatmap).not.toContain('fetch(') })
+  it('uses the shared ECharts instance', () => { expect(heatmap).toContain("from '../../lib/echarts'"); expect(source('../../../lib/echarts.ts')).toContain('TreemapChart') })
+  it('cleans up ResizeObserver', () => { expect(heatmap).toContain('new ResizeObserver'); expect(heatmap).toContain('observer.disconnect()') })
+  it('limits stock mode to 100 actual samples', () => expect(heatmap).toContain('industryId, 100'))
+  it('keeps GitHub Pages base path', () => expect(source('../../../../vite.config.ts')).toContain("base: '/guli/'"))
+  it('keeps BrowserRouter basename', () => expect(source('../../../main.tsx')).toContain('basename="/guli"'))
+  it('uses the investor-facing observation title', () => { expect(observations).toContain('今日觀察 Top 3'); expect(observations).not.toContain('今日推薦') })
+  it('shows source summary for every observation', () => expect(observations).toContain('row.sourceSummary'))
+  it('adds the existing GlobalStockSearch to Hero', () => { expect(hero).toContain('GlobalStockSearch'); expect(hero).toContain('variant="hero"') })
+  it('exposes fixed narrative evidence', () => { expect(hero).toContain('為什麼？'); expect(hero).toContain('formulaVersion') })
+  it('does not contain prohibited trading claims', () => expect(`${hero}\n${observations}`).not.toMatch(/買進|賣出|必漲|保證獲利/))
+  it('shows three actual preset previews', () => expect(source('../TechnicalScreenerPreview.tsx')).toContain('matches.slice(0, 3)'))
+  it('shows exact sample counts in coverage', () => { const coverage = source('../DataCoverageSummary.tsx'); expect(coverage).toContain('industryMappedCount'); expect(coverage).toContain('資料持續分批同步中') })
+  it('adds Heatmap generation after Screener in the daily workflow', () => { const workflow = source('../../../../.github/workflows/update-market-data.yml'); expect(workflow.indexOf('npm run heatmap:generate')).toBeGreaterThan(workflow.indexOf('npm run screener:generate')) })
+  it('adds JSON validation for Heatmap output', () => expect(source('../../../../scripts/validate-public-json.mjs')).toContain('validateMarketHeatmapDataset'))
+  it('uses atomic JSON writes and parses the temporary file', () => { const script = source('../../../../scripts/generate-market-heatmap.mjs'); expect(script).toContain('rename(temporary, file)'); expect(script).toContain('JSON.parse(await readFile(temporary') })
+  it('rejects conflict markers and replacement characters', () => { const script = source('../../../../scripts/generate-market-heatmap.mjs'); expect(script).toContain('CONFLICT_PATTERN'); expect(script).toContain("text.includes('\\uFFFD')") })
+  it('verifies readable Chinese before publishing JSON', () => expect(source('../../../../scripts/generate-market-heatmap.mjs')).toContain('\\u3400-\\u9fff'))
+  it('never uses random Heatmap data', () => expect(source('../../../../scripts/generate-market-heatmap.mjs')).not.toContain('Math.random'))
+})

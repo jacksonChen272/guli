@@ -17,6 +17,7 @@ import { IndustryRepository } from './IndustryRepository'
 import { IndustrySnapshotRepository } from './IndustrySnapshotRepository'
 import { InstitutionRepository } from './InstitutionRepository'
 import { MarketRepository } from './MarketRepository'
+import { MarketHeatmapRepository } from './MarketHeatmapRepository'
 import { SnapshotRepository } from './SnapshotRepository'
 import { StockRepository } from './StockRepository'
 import { StockHistoryRepository } from './StockHistoryRepository'
@@ -43,6 +44,7 @@ export class RepositoryHub {
   stocks!: StockRepository
   stockHistory!: StockHistoryRepository
   readonly screener = new ScreenerRepository()
+  readonly marketHeatmap = new MarketHeatmapRepository()
   industries!: IndustryRepository
   institutions!: InstitutionRepository
   watchlist!: WatchlistRepository

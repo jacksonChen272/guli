@@ -7,7 +7,7 @@ import { marketRepository } from '../../services/dataRepository'
 const stocks = marketRepository.getStocks()
 const recentKey = 'guli-recent-stock-searches'
 
-export function GlobalStockSearch() {
+export function GlobalStockSearch({ variant = 'topbar' }: { variant?: 'topbar' | 'hero' } = {}) {
   const [query, setQuery] = useState('')
   const [debouncedQuery, setDebouncedQuery] = useState('')
   const [open, setOpen] = useState(false)
@@ -18,6 +18,7 @@ export function GlobalStockSearch() {
   const mobileInputRef = useRef<HTMLInputElement>(null)
   const closeRef = useRef<HTMLButtonElement>(null)
   const navigate = useNavigate()
+  const hero = variant === 'hero'
   const results = useMemo(() => {
     const value = debouncedQuery.trim().toLowerCase()
     if (!value) {
@@ -70,11 +71,11 @@ export function GlobalStockSearch() {
     if (event.key === 'Enter' && results[activeIndex]) select(results[activeIndex].symbol)
   }
 
-  const searchInput = (mobile = false) => <div className="flex h-11 items-center gap-2.5 rounded-xl border border-white/[0.08] bg-white/[0.025] px-3 text-slate-400 focus-within:border-brand-400/40"><Search size={17} /><input ref={mobile ? mobileInputRef : undefined} value={query} onChange={(event) => { setQuery(event.target.value); setActiveIndex(0); setOpen(true) }} onFocus={() => setOpen(true)} onKeyDown={onKeyDown} className="w-full bg-transparent text-[15px] text-slate-100 outline-none placeholder:text-slate-500" placeholder="搜尋代號或股票名稱" aria-label="搜尋股票" aria-expanded={open} role="combobox" /><span className="mono hidden text-xs text-slate-500 lg:block">⌘K</span></div>
+  const searchInput = (mobile = false) => <div className="flex h-11 items-center gap-2.5 rounded-xl border border-white/[0.08] bg-white/[0.025] px-3 text-slate-400 focus-within:border-brand-400/40"><Search size={17} /><input ref={mobile ? mobileInputRef : undefined} value={query} onChange={(event) => { setQuery(event.target.value); setActiveIndex(0); setOpen(true) }} onFocus={() => setOpen(true)} onKeyDown={onKeyDown} className="w-full bg-transparent text-[15px] text-slate-100 outline-none placeholder:text-slate-500" placeholder="輸入股票代號或名稱" aria-label="搜尋股票" aria-expanded={open} role="combobox" /><span className="mono hidden text-xs text-slate-500 lg:block">⌘K</span></div>
 
-  return <div ref={rootRef} className="relative">
-    <div className="hidden w-72 md:block">{searchInput()}{open && <ResultPanel query={query} results={results} activeIndex={activeIndex} onHover={setActiveIndex} onSelect={select} />}</div>
-    <button type="button" onClick={() => { setMobileOpen(true); setOpen(true) }} className="icon-button grid place-items-center rounded-xl border border-white/[0.07] bg-white/[0.025] text-slate-400 md:hidden" aria-label="開啟股票搜尋"><Search size={18} /></button>
+  return <div ref={rootRef} className={`relative ${hero ? 'w-full' : ''}`}>
+    <div className={`hidden md:block ${hero ? 'w-full' : 'w-72'}`}>{searchInput()}{open && <ResultPanel query={query} results={results} activeIndex={activeIndex} onHover={setActiveIndex} onSelect={select} />}</div>
+    <button type="button" onClick={() => { setMobileOpen(true); setOpen(true) }} className={`min-h-11 rounded-xl border border-white/[0.07] bg-white/[0.025] text-slate-400 md:hidden ${hero ? 'flex w-full items-center gap-2.5 px-3 text-left text-sm' : 'icon-button grid place-items-center'}`} aria-label="開啟股票搜尋"><Search size={18} />{hero && <span>輸入股票代號或名稱</span>}</button>
     {mobileOpen && <section role="dialog" aria-modal="true" aria-label="全域股票搜尋" className="fixed inset-0 z-[90] overflow-y-auto bg-ink-950 px-4 pb-[max(24px,env(safe-area-inset-bottom))] pt-[max(16px,env(safe-area-inset-top))] md:hidden">
       <div className="flex items-center gap-3"><button ref={closeRef} type="button" onClick={close} className="icon-button grid place-items-center rounded-xl border border-white/[0.08] text-slate-300" aria-label="返回並關閉股票搜尋"><ArrowLeft size={20} /></button><div className="flex-1">{searchInput(true)}</div><button type="button" onClick={close} className="icon-button grid place-items-center rounded-xl text-slate-300" aria-label="關閉股票搜尋"><X size={20} /></button></div>
       <div className="mt-5 flex items-center gap-2 text-sm text-slate-500"><Clock3 size={15} />{query ? `搜尋結果 ${results.length} 筆` : recent.length ? '最近搜尋' : '熱門股票'}</div>

@@ -62,7 +62,7 @@ export function Settings() {
 
   return (
     <div className="space-y-8">
-      <SectionHeader eyebrow="DATA PLATFORM SETTINGS · GULI v1.0.0-beta.1" title="資料來源設定" description="公開測試模式會分開揭露 Official、Derived、Mock、Fallback、Stale 與 Missing。"/>
+      <SectionHeader eyebrow="DATA PLATFORM SETTINGS · GULI v1.0.0-beta.3" title="資料來源設定" description="公開測試模式會分開揭露 Official、Derived、Mock、Fallback、Stale 與 Missing。"/>
       <Card title="公開測試模式" eyebrow="BETA DATA GUARD">
         <div className="flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex gap-3"><ShieldCheck size={20} className="mt-1 shrink-0 text-brand-300"/><div><p className="font-medium text-white">Mock 不得偽裝為真實行情</p><p className="mt-1 text-sm leading-6 text-slate-400">預設啟用；缺資料顯示尚未取得，所有核心頁面保留資料可信度與免責提示。</p></div></div>
@@ -75,7 +75,8 @@ export function Settings() {
         <p className="border-t border-[var(--border-subtle)] px-5 py-4 text-sm leading-6 text-slate-400 sm:px-6">{message}</p>
       </Card>
       <Card title="資料平台最終狀態" eyebrow="PROVENANCE"><div className="grid gap-4 p-5 sm:grid-cols-2 xl:grid-cols-4"><Metric label="市場" value={platform?.market ?? '讀取中'}/><Metric label="個股" value={platform?.stocks ?? '讀取中'}/><Metric label="法人" value={platform?.institutions ?? '讀取中'}/><Metric label="產業" value={platform?.industry ?? '讀取中'}/></div><div className="flex flex-wrap gap-3 border-t border-white/[.05] p-5"><Button onClick={() => navigate('/data-status/stocks')}>個股資料狀態</Button><Button variant="ghost" onClick={() => navigate('/data-coverage')}>資料覆蓋率</Button></div></Card>
-      <Card title="版本資訊" eyebrow="SYSTEM"><div className="grid gap-4 p-5 sm:grid-cols-3"><Metric label="GULI" value="v1.0.0-beta.1"/><Metric label="正式資料" value="TWSE 市場／個股／法人／個股歷史盤後"/><Metric label="規則推導" value="技術指標、固定訊號、Decision 與部分產業分析"/></div></Card>
+      <Card title="版本資訊" eyebrow="SYSTEM"><div className="grid gap-4 p-5 sm:grid-cols-3"><Metric label="GULI" value="v1.0.0-beta.3"/><Metric label="正式資料" value="TWSE 市場／個股／法人／個股歷史盤後"/><Metric label="規則推導" value="技術指標、固定訊號、Decision、Heatmap 與部分產業分析"/></div></Card>
+      <Card title="資料免責聲明" eyebrow="INFORMATION ONLY"><div className="p-5 text-sm leading-7 text-slate-400"><p>市場熱力圖、今日市場摘要與觀察名單均由固定規則整理；產業 mapping 仍含規則推導或模擬成分。</p><p className="mt-2">部分樣本不代表全市場，缺值不以 0 補入。本平台內容僅供資訊參考，不構成投資建議、買賣邀約或獲利保證。</p></div></Card>
     </div>
   )
 }
