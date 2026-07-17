@@ -2,6 +2,9 @@
 
 ## [1.0.0-beta.1]
 
+- 首頁升級為 Today Dashboard，依序呈現今日市場、推薦候選、熱門族群、技術機會、排行榜、最新消息與資料完整度。
+- 首頁文案改為一般投資人易懂的市場判讀，並保留 TWSE、法人、Screener、產業與覆蓋率既有 Repository。
+
 - 新增可續跑、可分批及具 checkpoint 的 TWSE 上市普通股歷史行情回補。
 - 新增 technical-v1.0、全市場技術索引與十種固定規則 Preset。
 - 新增智慧選股中心、Dashboard compact 預覽、股寶選股問答及 Data Coverage 進度。

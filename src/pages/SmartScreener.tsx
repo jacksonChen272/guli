@@ -1,5 +1,6 @@
 import { ChevronLeft, ChevronRight, Download, Filter, Search, Settings2 } from 'lucide-react'
 import { cloneElement, useEffect, useMemo, useState, type ReactElement } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { ScreenerQuickDrawer } from '../components/screener/ScreenerQuickDrawer'
 import { Badge } from '../components/ui/Badge'
 import { Button } from '../components/ui/Button'
@@ -18,9 +19,12 @@ import { exportScreenerCsv } from '../services/screener/ScreenerSummaryService'
 import type { ScreenerDataset, ScreenerFilters, ScreenerPresetId, ScreenerResult } from '../types/screener'
 
 export function SmartScreener() {
+  const [searchParams] = useSearchParams()
   const [dataset, setDataset] = useState<ScreenerDataset | null>(null)
   const [loadState, setLoadState] = useState<'loading' | 'success' | 'error'>('loading')
-  const [preset, setPreset] = useState<ScreenerPresetId>('strong-trend')
+  const requestedPreset = searchParams.get('preset')
+  const initialPreset = screenerPresets.some((item) => item.id === requestedPreset) ? requestedPreset as ScreenerPresetId : 'strong-trend'
+  const [preset, setPreset] = useState<ScreenerPresetId>(initialPreset)
   const [query, setQuery] = useState('')
   const [sortKey, setSortKey] = useState<ScreenerSortKey>('technicalScore')
   const [page, setPage] = useState(1)

@@ -37,8 +37,8 @@ describe('GULI v0.7.2 Professional Workspace ViewModel', () => {
 })
 
 describe('Dashboard 與資料狀態密度契約', () => {
-  it('Dashboard 先掛載資料狀態與市場一句話', () => { expect(dashboard.indexOf('<DataSourceInfoCard')).toBeLessThan(dashboard.indexOf('<DecisionDashboardCard')); expect(dashboard).toContain('<MarketHeadline') })
-  it('手機以 order 將市場一句話提前', () => expect(dashboard).toContain('order-1 lg:order-2'))
+  it('Dashboard 先呈現今日市場再進入推薦候選', () => { expect(dashboard.indexOf('<TodayMarketHero')).toBeLessThan(dashboard.indexOf('<TodayRecommendations')); expect(dashboard).toContain('data-testid="today-dashboard"') })
+  it('首頁各區塊保留 min-width 防止手機水平溢出', () => expect(dashboard).toContain('min-w-0'))
   it('Decision 摘要包含四個 KPI', () => ['市場 Decision Score', '市場方向', 'Confidence', '高風險候選'].forEach((label) => expect(decisionCard).toContain(label)))
   it('Decision 摘要有前三項正向與壓力因子', () => { expect(decisionCard).toContain('正向因子 Top 3'); expect(decisionCard).toContain('壓力因子 Top 3') })
   it('前期不存在時有明確說明', () => expect(decisionCard).toContain('尚無前期資料'))

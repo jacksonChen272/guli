@@ -44,7 +44,7 @@ describe('Full-market foundation and GitHub Pages guard', () => {
     expect(await text('src/components/layout/Sidebar.tsx')).toContain('marketNavigationPaths')
   })
   it('Decision v1.0 權重檔未被 Technical Score 取代', async () => { const source = await text('src/config/decisionFormula.ts'); expect(source).toContain('decision-v1.0'); expect(source).not.toContain('technicalScoreWeights') })
-  it('Dashboard 只掛 compact 選股預覽', async () => expect(await text('src/pages/Dashboard.tsx')).toContain('<TechnicalScreenerPreview />'))
+  it('Dashboard 掛載技術機會預覽', async () => expect(await text('src/pages/Dashboard.tsx')).toContain('<TechnicalScreenerPreview'))
   it('手機選股使用卡片模式', async () => expect(await text('src/pages/SmartScreener.tsx')).toContain('md:hidden'))
   it('工作流程不在 push 時執行全市場 backfill', async () => expect(await text('.github/workflows/backfill-stock-history.yml')).not.toContain('push:'))
 })

@@ -2,6 +2,9 @@
 
 ## GULI v1.0.0-beta.1
 
+- [x] Today Dashboard 首頁資訊流與 375px 響應式改版
+- [x] 今日推薦、熱門族群、技術機會、排行榜、新聞預留區與資料完整度整合
+
 - [x] 全市場分批歷史行情回補基礎
 - [x] Technical Index 與 Technical Score technical-v1.0
 - [x] 智慧選股規則、Repository、UI 與 CSV 匯出
