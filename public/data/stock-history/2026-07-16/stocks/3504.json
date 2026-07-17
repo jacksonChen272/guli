@@ -1,0 +1,55 @@
+{
+  "symbol": "3504",
+  "name": "揚明光",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 69.8,
+    "high": 72,
+    "low": 67.2,
+    "close": 69.6,
+    "change": 0.4,
+    "changePercent": 0.58,
+    "tradeVolume": 1048433,
+    "transactionCount": 1055,
+    "tradeValue": 73228715,
+    "peRatio": null
+  },
+  "dailyRangePercent": 7.14,
+  "turnoverAverageValue": 69411.1,
+  "pricePosition": 50,
+  "liquidityScore": 62.5,
+  "priceStrengthScore": 47.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 54,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

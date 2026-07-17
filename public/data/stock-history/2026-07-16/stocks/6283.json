@@ -1,0 +1,69 @@
+{
+  "symbol": "6283",
+  "name": "淳安",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 22.25,
+    "high": 22.25,
+    "low": 21.75,
+    "close": 21.85,
+    "change": -0.1,
+    "changePercent": -0.46,
+    "tradeVolume": 57000,
+    "transactionCount": 42,
+    "tradeValue": 1247600,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.3,
+  "turnoverAverageValue": 29704.76,
+  "pricePosition": 20,
+  "liquidityScore": 11.2,
+  "priceStrengthScore": 34.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 24.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 11.2 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

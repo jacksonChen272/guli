@@ -1,0 +1,53 @@
+{
+  "symbol": "6271",
+  "name": "同欣電",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 222,
+    "high": 234,
+    "low": 212.5,
+    "close": 224,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 7888408,
+    "transactionCount": 7464,
+    "tradeValue": 1756842753,
+    "peRatio": 33.23
+  },
+  "dailyRangePercent": 10.12,
+  "turnoverAverageValue": 235375.5,
+  "pricePosition": 53.5,
+  "liquidityScore": 91.1,
+  "priceStrengthScore": 55.2,
+  "valuationRiskScore": 55,
+  "snapshotScore": 65.7,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.12% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

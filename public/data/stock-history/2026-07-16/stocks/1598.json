@@ -1,0 +1,55 @@
+{
+  "symbol": "1598",
+  "name": "岱宇",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.85,
+    "high": 20.35,
+    "low": 19.15,
+    "close": 20.3,
+    "change": 0.5,
+    "changePercent": 2.53,
+    "tradeVolume": 310747,
+    "transactionCount": 214,
+    "tradeValue": 6176895,
+    "peRatio": null
+  },
+  "dailyRangePercent": 6.27,
+  "turnoverAverageValue": 28864,
+  "pricePosition": 95.8,
+  "liquidityScore": 34.7,
+  "priceStrengthScore": 75.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 57.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

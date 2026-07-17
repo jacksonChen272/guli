@@ -1,0 +1,53 @@
+{
+  "symbol": "8103",
+  "name": "瀚荃",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 85.5,
+    "high": 85.9,
+    "low": 83.3,
+    "close": 83.4,
+    "change": -2.4,
+    "changePercent": -2.8,
+    "tradeVolume": 714433,
+    "transactionCount": 853,
+    "tradeValue": 60045411,
+    "peRatio": 17.97
+  },
+  "dailyRangePercent": 3.12,
+  "turnoverAverageValue": 70393.21,
+  "pricePosition": 3.8,
+  "liquidityScore": 58.8,
+  "priceStrengthScore": 23.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 44.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 3.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

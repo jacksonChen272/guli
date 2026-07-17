@@ -1,0 +1,53 @@
+{
+  "symbol": "2645",
+  "name": "長榮航太",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 242,
+    "high": 247,
+    "low": 231.5,
+    "close": 231.5,
+    "change": -10.5,
+    "changePercent": -4.34,
+    "tradeVolume": 6726196,
+    "transactionCount": 6584,
+    "tradeValue": 1597237653,
+    "peRatio": 35.34
+  },
+  "dailyRangePercent": 6.7,
+  "turnoverAverageValue": 242593.81,
+  "pricePosition": 0,
+  "liquidityScore": 90.1,
+  "priceStrengthScore": 18.7,
+  "valuationRiskScore": 55,
+  "snapshotScore": 49,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

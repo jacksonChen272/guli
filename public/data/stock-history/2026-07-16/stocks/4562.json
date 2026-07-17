@@ -1,0 +1,55 @@
+{
+  "symbol": "4562",
+  "name": "穎漢",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 33.45,
+    "high": 33.75,
+    "low": 32.75,
+    "close": 33.3,
+    "change": -0.25,
+    "changePercent": -0.75,
+    "tradeVolume": 186604,
+    "transactionCount": 166,
+    "tradeValue": 6211034,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.05,
+  "turnoverAverageValue": 37415.87,
+  "pricePosition": 55,
+  "liquidityScore": 30.8,
+  "priceStrengthScore": 46.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 39.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

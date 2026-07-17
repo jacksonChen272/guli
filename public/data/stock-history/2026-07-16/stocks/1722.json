@@ -1,0 +1,53 @@
+{
+  "symbol": "1722",
+  "name": "台肥",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 48.1,
+    "high": 48.5,
+    "low": 47.7,
+    "close": 47.8,
+    "change": -0.25,
+    "changePercent": -0.52,
+    "tradeVolume": 1140767,
+    "transactionCount": 834,
+    "tradeValue": 54802619,
+    "peRatio": 45.96
+  },
+  "dailyRangePercent": 1.68,
+  "turnoverAverageValue": 65710.57,
+  "pricePosition": 12.5,
+  "liquidityScore": 61.6,
+  "priceStrengthScore": 31.7,
+  "valuationRiskScore": 75,
+  "snapshotScore": 40.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

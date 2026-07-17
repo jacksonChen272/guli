@@ -1,0 +1,55 @@
+{
+  "symbol": "1101",
+  "name": "台泥",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.5,
+    "high": 24.1,
+    "low": 23.45,
+    "close": 23.95,
+    "change": 0.4,
+    "changePercent": 1.7,
+    "tradeVolume": 27846368,
+    "transactionCount": 8509,
+    "tradeValue": 662502407,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.77,
+  "turnoverAverageValue": 77859.02,
+  "pricePosition": 76.9,
+  "liquidityScore": 90.7,
+  "priceStrengthScore": 67.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 77.5,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

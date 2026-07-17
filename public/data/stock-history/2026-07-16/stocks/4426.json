@@ -1,0 +1,55 @@
+{
+  "symbol": "4426",
+  "name": "利勤",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 8.35,
+    "high": 8.53,
+    "low": 8.35,
+    "close": 8.47,
+    "change": 0.18,
+    "changePercent": 2.17,
+    "tradeVolume": 135159,
+    "transactionCount": 89,
+    "tradeValue": 1141251,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.16,
+  "turnoverAverageValue": 12823.04,
+  "pricePosition": 66.7,
+  "liquidityScore": 17.3,
+  "priceStrengthScore": 64.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 44,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

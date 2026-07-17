@@ -1,0 +1,62 @@
+{
+  "symbol": "1528",
+  "name": "恩德",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 22.25,
+    "high": 22.25,
+    "low": 21.55,
+    "close": 21.6,
+    "change": -0.65,
+    "changePercent": -2.92,
+    "tradeVolume": 924123,
+    "transactionCount": 715,
+    "tradeValue": 20099333,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.25,
+  "turnoverAverageValue": 28110.96,
+  "pricePosition": 7.1,
+  "liquidityScore": 53.2,
+  "priceStrengthScore": 24.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 37,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

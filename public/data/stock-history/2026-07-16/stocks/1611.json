@@ -1,0 +1,60 @@
+{
+  "symbol": "1611",
+  "name": "中電",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.85,
+    "high": 12.9,
+    "low": 12.6,
+    "close": 12.65,
+    "change": -0.15,
+    "changePercent": -1.17,
+    "tradeVolume": 217922,
+    "transactionCount": 240,
+    "tradeValue": 2773153,
+    "peRatio": 316.25
+  },
+  "dailyRangePercent": 2.38,
+  "turnoverAverageValue": 11554.8,
+  "pricePosition": 16.7,
+  "liquidityScore": 28.4,
+  "priceStrengthScore": 31.7,
+  "valuationRiskScore": 90,
+  "snapshotScore": 26.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 316.25 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

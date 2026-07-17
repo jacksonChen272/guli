@@ -1,0 +1,60 @@
+{
+  "symbol": "2024",
+  "name": "志聯",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.9,
+    "high": 14.1,
+    "low": 13.75,
+    "close": 14.05,
+    "change": 0.15,
+    "changePercent": 1.08,
+    "tradeVolume": 11065,
+    "transactionCount": 20,
+    "tradeValue": 154204,
+    "peRatio": 200.71
+  },
+  "dailyRangePercent": 2.55,
+  "turnoverAverageValue": 7710.2,
+  "pricePosition": 85.7,
+  "liquidityScore": 1.7,
+  "priceStrengthScore": 68.9,
+  "valuationRiskScore": 90,
+  "snapshotScore": 33.6,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 1.7 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 200.71 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

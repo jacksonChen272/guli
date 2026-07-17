@@ -1,0 +1,60 @@
+{
+  "symbol": "2483",
+  "name": "百容",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 52.5,
+    "high": 52.9,
+    "low": 48.2,
+    "close": 48.3,
+    "change": -2.7,
+    "changePercent": -5.29,
+    "tradeVolume": 4866234,
+    "transactionCount": 3603,
+    "tradeValue": 242515481,
+    "peRatio": 52.5
+  },
+  "dailyRangePercent": 9.75,
+  "turnoverAverageValue": 67309.32,
+  "pricePosition": 2.1,
+  "liquidityScore": 80.8,
+  "priceStrengthScore": 17.4,
+  "valuationRiskScore": 75,
+  "snapshotScore": 41.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.75% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 2.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

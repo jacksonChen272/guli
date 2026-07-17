@@ -1,0 +1,53 @@
+{
+  "symbol": "2108",
+  "name": "南帝",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 28.85,
+    "high": 29.15,
+    "low": 28.55,
+    "close": 28.55,
+    "change": -0.2,
+    "changePercent": -0.7,
+    "tradeVolume": 623436,
+    "transactionCount": 484,
+    "tradeValue": 17975700,
+    "peRatio": 32.82
+  },
+  "dailyRangePercent": 2.1,
+  "turnoverAverageValue": 37139.88,
+  "pricePosition": 0,
+  "liquidityScore": 48.7,
+  "priceStrengthScore": 26.9,
+  "valuationRiskScore": 55,
+  "snapshotScore": 38.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

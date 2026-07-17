@@ -1,0 +1,53 @@
+{
+  "symbol": "6909",
+  "name": "創控",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 47.95,
+    "high": 48.3,
+    "low": 46.9,
+    "close": 46.9,
+    "change": -1.05,
+    "changePercent": -2.19,
+    "tradeVolume": 407354,
+    "transactionCount": 374,
+    "tradeValue": 19337567,
+    "peRatio": 57.9
+  },
+  "dailyRangePercent": 2.99,
+  "turnoverAverageValue": 51704.72,
+  "pricePosition": 0,
+  "liquidityScore": 45.8,
+  "priceStrengthScore": 23.6,
+  "valuationRiskScore": 75,
+  "snapshotScore": 31.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

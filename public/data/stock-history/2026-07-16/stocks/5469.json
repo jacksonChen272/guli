@@ -1,0 +1,53 @@
+{
+  "symbol": "5469",
+  "name": "瀚宇博",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 75.6,
+    "high": 75.6,
+    "low": 73.1,
+    "close": 73.2,
+    "change": -3.5,
+    "changePercent": -4.56,
+    "tradeVolume": 3472534,
+    "transactionCount": 3272,
+    "tradeValue": 256185235,
+    "peRatio": 12.77
+  },
+  "dailyRangePercent": 3.42,
+  "turnoverAverageValue": 78296.22,
+  "pricePosition": 4,
+  "liquidityScore": 78.6,
+  "priceStrengthScore": 19.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 52.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 4.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2495",
+  "name": "普安",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 45,
+    "high": 45,
+    "low": 42.6,
+    "close": 42.6,
+    "change": -2.45,
+    "changePercent": -5.44,
+    "tradeVolume": 3074091,
+    "transactionCount": 2409,
+    "tradeValue": 133155297,
+    "peRatio": 37.7
+  },
+  "dailyRangePercent": 5.63,
+  "turnoverAverageValue": 55274.1,
+  "pricePosition": 0,
+  "liquidityScore": 73.9,
+  "priceStrengthScore": 16.3,
+  "valuationRiskScore": 55,
+  "snapshotScore": 42.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

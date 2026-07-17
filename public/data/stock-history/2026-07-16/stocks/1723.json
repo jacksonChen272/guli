@@ -1,0 +1,53 @@
+{
+  "symbol": "1723",
+  "name": "中碳",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 85.6,
+    "high": 92.6,
+    "low": 84.7,
+    "close": 89.7,
+    "change": 4.1,
+    "changePercent": 4.79,
+    "tradeVolume": 2152513,
+    "transactionCount": 2028,
+    "tradeValue": 192718627,
+    "peRatio": 36.17
+  },
+  "dailyRangePercent": 9.33,
+  "turnoverAverageValue": 95028.91,
+  "pricePosition": 63.3,
+  "liquidityScore": 73.9,
+  "priceStrengthScore": 69.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 66.1,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.33% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

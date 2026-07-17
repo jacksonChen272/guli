@@ -1,0 +1,55 @@
+{
+  "symbol": "1304",
+  "name": "台聚",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.75,
+    "high": 14.15,
+    "low": 13.65,
+    "close": 14,
+    "change": 0.2,
+    "changePercent": 1.45,
+    "tradeVolume": 7348479,
+    "transactionCount": 2630,
+    "tradeValue": 102065165,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.66,
+  "turnoverAverageValue": 38808.05,
+  "pricePosition": 70,
+  "liquidityScore": 76.9,
+  "priceStrengthScore": 64.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 69.8,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2851",
+  "name": "中再保",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 37.95,
+    "high": 37.95,
+    "low": 36.85,
+    "close": 36.9,
+    "change": -1.6,
+    "changePercent": -4.16,
+    "tradeVolume": 3411869,
+    "transactionCount": 2114,
+    "tradeValue": 126833345,
+    "peRatio": 7.12
+  },
+  "dailyRangePercent": 2.99,
+  "turnoverAverageValue": 59996.85,
+  "pricePosition": 4.5,
+  "liquidityScore": 73.8,
+  "priceStrengthScore": 20.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 51.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 4.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

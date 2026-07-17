@@ -1,0 +1,69 @@
+{
+  "symbol": "6225",
+  "name": "天瀚",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 27.2,
+    "high": 27.2,
+    "low": 25.5,
+    "close": 25.55,
+    "change": -0.75,
+    "changePercent": -2.85,
+    "tradeVolume": 29450,
+    "transactionCount": 28,
+    "tradeValue": 768402,
+    "peRatio": null
+  },
+  "dailyRangePercent": 6.67,
+  "turnoverAverageValue": 27442.93,
+  "pricePosition": 2.9,
+  "liquidityScore": 6.6,
+  "priceStrengthScore": 23.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 15.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 2.9 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 6.6 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

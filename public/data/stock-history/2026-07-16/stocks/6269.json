@@ -1,0 +1,62 @@
+{
+  "symbol": "6269",
+  "name": "台郡",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 61.6,
+    "high": 64,
+    "low": 60.5,
+    "close": 61.1,
+    "change": -0.5,
+    "changePercent": -0.81,
+    "tradeVolume": 3686867,
+    "transactionCount": 2773,
+    "tradeValue": 229014443,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.79,
+  "turnoverAverageValue": 82587.25,
+  "pricePosition": 17.1,
+  "liquidityScore": 78,
+  "priceStrengthScore": 32.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 52.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "8163",
+  "name": "達方",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 35.9,
+    "high": 36.4,
+    "low": 35.2,
+    "close": 35.35,
+    "change": -0.5,
+    "changePercent": -1.39,
+    "tradeVolume": 664306,
+    "transactionCount": 708,
+    "tradeValue": 23736733,
+    "peRatio": 69.31
+  },
+  "dailyRangePercent": 3.41,
+  "turnoverAverageValue": 33526.46,
+  "pricePosition": 12.5,
+  "liquidityScore": 52.1,
+  "priceStrengthScore": 29.8,
+  "valuationRiskScore": 90,
+  "snapshotScore": 33.6,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 69.31 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

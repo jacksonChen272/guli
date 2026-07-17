@@ -1,0 +1,55 @@
+{
+  "symbol": "4976",
+  "name": "佳凌",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 35.3,
+    "high": 36.3,
+    "low": 34.85,
+    "close": 35.3,
+    "change": -0.15,
+    "changePercent": -0.42,
+    "tradeVolume": 722504,
+    "transactionCount": 645,
+    "tradeValue": 25587432,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.16,
+  "turnoverAverageValue": 39670.44,
+  "pricePosition": 31,
+  "liquidityScore": 53,
+  "priceStrengthScore": 42.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 47,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

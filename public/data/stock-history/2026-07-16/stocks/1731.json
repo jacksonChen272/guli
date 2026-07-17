@@ -1,0 +1,53 @@
+{
+  "symbol": "1731",
+  "name": "美吾華",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.75,
+    "high": 20.8,
+    "low": 20.6,
+    "close": 20.7,
+    "change": -0.05,
+    "changePercent": -0.24,
+    "tradeVolume": 69052,
+    "transactionCount": 49,
+    "tradeValue": 1428880,
+    "peRatio": 14.79
+  },
+  "dailyRangePercent": 0.97,
+  "turnoverAverageValue": 29160.82,
+  "pricePosition": 50,
+  "liquidityScore": 13.5,
+  "priceStrengthScore": 45.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 41.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.5 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

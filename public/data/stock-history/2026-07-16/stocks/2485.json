@@ -1,0 +1,60 @@
+{
+  "symbol": "2485",
+  "name": "兆赫",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 49,
+    "high": 49.6,
+    "low": 47.05,
+    "close": 47.3,
+    "change": -2.1,
+    "changePercent": -4.25,
+    "tradeVolume": 4647658,
+    "transactionCount": 3500,
+    "tradeValue": 222338959,
+    "peRatio": 1182.5
+  },
+  "dailyRangePercent": 5.42,
+  "turnoverAverageValue": 63525.42,
+  "pricePosition": 9.8,
+  "liquidityScore": 80.2,
+  "priceStrengthScore": 22.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 40.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.8 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 1182.50 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

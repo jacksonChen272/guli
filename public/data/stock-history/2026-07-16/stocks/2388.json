@@ -1,0 +1,60 @@
+{
+  "symbol": "2388",
+  "name": "威盛",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 75,
+    "high": 77.7,
+    "low": 72.6,
+    "close": 72.6,
+    "change": -3.2,
+    "changePercent": -4.22,
+    "tradeVolume": 8728761,
+    "transactionCount": 5823,
+    "tradeValue": 652706200,
+    "peRatio": 403.33
+  },
+  "dailyRangePercent": 7.02,
+  "turnoverAverageValue": 112091.05,
+  "pricePosition": 0,
+  "liquidityScore": 87.7,
+  "priceStrengthScore": 19,
+  "valuationRiskScore": 90,
+  "snapshotScore": 41.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 403.33 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

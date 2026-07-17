@@ -1,0 +1,55 @@
+{
+  "symbol": "5907",
+  "name": "大洋-KY",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 4.98,
+    "high": 5.03,
+    "low": 4.89,
+    "close": 4.93,
+    "change": -0.02,
+    "changePercent": -0.4,
+    "tradeVolume": 292014,
+    "transactionCount": 107,
+    "tradeValue": 1451298,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.86,
+  "turnoverAverageValue": 13563.53,
+  "pricePosition": 28.6,
+  "liquidityScore": 24,
+  "priceStrengthScore": 37.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 31.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

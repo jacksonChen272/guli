@@ -1,0 +1,60 @@
+{
+  "symbol": "2103",
+  "name": "台橡",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 27.6,
+    "high": 27.6,
+    "low": 24.3,
+    "close": 24.55,
+    "change": -1.05,
+    "changePercent": -4.1,
+    "tradeVolume": 20009859,
+    "transactionCount": 8744,
+    "tradeValue": 511312552,
+    "peRatio": 36.64
+  },
+  "dailyRangePercent": 13.58,
+  "turnoverAverageValue": 58475.82,
+  "pricePosition": 7.6,
+  "liquidityScore": 89.3,
+  "priceStrengthScore": 21.9,
+  "valuationRiskScore": 55,
+  "snapshotScore": 50.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 13.58% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.6 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

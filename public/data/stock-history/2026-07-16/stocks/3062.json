@@ -1,0 +1,55 @@
+{
+  "symbol": "3062",
+  "name": "建漢",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.15,
+    "high": 23.15,
+    "low": 22.8,
+    "close": 22.9,
+    "change": -0.35,
+    "changePercent": -1.51,
+    "tradeVolume": 1618135,
+    "transactionCount": 990,
+    "tradeValue": 37169588,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.54,
+  "turnoverAverageValue": 37545.04,
+  "pricePosition": 28.6,
+  "liquidityScore": 61,
+  "priceStrengthScore": 35.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 46.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

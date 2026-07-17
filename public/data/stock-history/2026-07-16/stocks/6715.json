@@ -1,0 +1,67 @@
+{
+  "symbol": "6715",
+  "name": "嘉基",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 372,
+    "high": 411,
+    "low": 358.5,
+    "close": 411,
+    "change": 37,
+    "changePercent": 9.89,
+    "tradeVolume": 478571,
+    "transactionCount": 640,
+    "tradeValue": 187911608,
+    "peRatio": 194.79
+  },
+  "dailyRangePercent": 14.64,
+  "turnoverAverageValue": 293611.89,
+  "pricePosition": 100,
+  "liquidityScore": 61.2,
+  "priceStrengthScore": 93.8,
+  "valuationRiskScore": 90,
+  "snapshotScore": 65.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.89% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 14.64% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 194.79 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,76 @@
+{
+  "symbol": "6226",
+  "name": "光鼎",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 27.05,
+    "high": 27.5,
+    "low": 25.05,
+    "close": 25.05,
+    "change": -2.75,
+    "changePercent": -9.89,
+    "tradeVolume": 3049045,
+    "transactionCount": 1550,
+    "tradeValue": 80029947,
+    "peRatio": null
+  },
+  "dailyRangePercent": 9.78,
+  "turnoverAverageValue": 51632.22,
+  "pricePosition": 0,
+  "liquidityScore": 69.6,
+  "priceStrengthScore": 6.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 33.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.89% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.78% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

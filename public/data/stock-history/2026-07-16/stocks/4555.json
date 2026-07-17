@@ -1,0 +1,60 @@
+{
+  "symbol": "4555",
+  "name": "氣立",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 48.45,
+    "high": 50.8,
+    "low": 47,
+    "close": 49.9,
+    "change": 1.55,
+    "changePercent": 3.21,
+    "tradeVolume": 359386,
+    "transactionCount": 354,
+    "tradeValue": 17866818,
+    "peRatio": 216.96
+  },
+  "dailyRangePercent": 8.09,
+  "turnoverAverageValue": 50471.24,
+  "pricePosition": 76.3,
+  "liquidityScore": 44.2,
+  "priceStrengthScore": 70.5,
+  "valuationRiskScore": 90,
+  "snapshotScore": 49.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.09% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 216.96 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

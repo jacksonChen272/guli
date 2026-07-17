@@ -1,0 +1,53 @@
+{
+  "symbol": "9914",
+  "name": "美利達",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 81.6,
+    "high": 84.2,
+    "low": 80.1,
+    "close": 84.2,
+    "change": 7.6,
+    "changePercent": 9.92,
+    "tradeVolume": 13074086,
+    "transactionCount": 7627,
+    "tradeValue": 1096444437,
+    "peRatio": 22.76
+  },
+  "dailyRangePercent": 5.12,
+  "turnoverAverageValue": 143758.28,
+  "pricePosition": 100,
+  "liquidityScore": 90.5,
+  "priceStrengthScore": 93.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 86.9,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.92% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

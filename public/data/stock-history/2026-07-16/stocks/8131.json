@@ -1,0 +1,60 @@
+{
+  "symbol": "8131",
+  "name": "福懋科",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 81.2,
+    "high": 83.9,
+    "low": 76.5,
+    "close": 76.6,
+    "change": -4.6,
+    "changePercent": -5.67,
+    "tradeVolume": 20055538,
+    "transactionCount": 14417,
+    "tradeValue": 1605838462,
+    "peRatio": 38.69
+  },
+  "dailyRangePercent": 9.67,
+  "turnoverAverageValue": 111385.06,
+  "pricePosition": 1.4,
+  "liquidityScore": 93.6,
+  "priceStrengthScore": 16.3,
+  "valuationRiskScore": 55,
+  "snapshotScore": 49.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.67% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 1.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

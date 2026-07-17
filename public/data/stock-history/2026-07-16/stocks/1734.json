@@ -1,0 +1,53 @@
+{
+  "symbol": "1734",
+  "name": "杏輝",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 32.85,
+    "high": 32.85,
+    "low": 32.45,
+    "close": 32.5,
+    "change": -0.35,
+    "changePercent": -1.07,
+    "tradeVolume": 829092,
+    "transactionCount": 334,
+    "tradeValue": 27012808,
+    "peRatio": 18.9
+  },
+  "dailyRangePercent": 1.23,
+  "turnoverAverageValue": 80876.67,
+  "pricePosition": 12.5,
+  "liquidityScore": 52.1,
+  "priceStrengthScore": 30.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 45,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

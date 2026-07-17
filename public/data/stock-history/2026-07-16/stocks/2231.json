@@ -1,0 +1,62 @@
+{
+  "symbol": "2231",
+  "name": "為升",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 124.5,
+    "high": 126,
+    "low": 118,
+    "close": 118,
+    "change": -8.5,
+    "changePercent": -6.72,
+    "tradeVolume": 2026048,
+    "transactionCount": 1900,
+    "tradeValue": 247204804,
+    "peRatio": null
+  },
+  "dailyRangePercent": 6.78,
+  "turnoverAverageValue": 130107.79,
+  "pricePosition": 0,
+  "liquidityScore": 74.2,
+  "priceStrengthScore": 13.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 40,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

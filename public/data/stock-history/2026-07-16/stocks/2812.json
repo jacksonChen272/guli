@@ -1,0 +1,53 @@
+{
+  "symbol": "2812",
+  "name": "台中銀",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.3,
+    "high": 20.45,
+    "low": 20.2,
+    "close": 20.25,
+    "change": -0.05,
+    "changePercent": -0.25,
+    "tradeVolume": 14709032,
+    "transactionCount": 2625,
+    "tradeValue": 298677792,
+    "peRatio": 13.06
+  },
+  "dailyRangePercent": 1.24,
+  "turnoverAverageValue": 113782.02,
+  "pricePosition": 20,
+  "liquidityScore": 83.3,
+  "priceStrengthScore": 35,
+  "valuationRiskScore": 20,
+  "snapshotScore": 60.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

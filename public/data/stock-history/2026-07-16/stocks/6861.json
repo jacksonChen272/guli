@@ -1,0 +1,53 @@
+{
+  "symbol": "6861",
+  "name": "睿生光電",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 252,
+    "high": 258,
+    "low": 237.5,
+    "close": 250,
+    "change": 11.5,
+    "changePercent": 4.82,
+    "tradeVolume": 1209956,
+    "transactionCount": 1406,
+    "tradeValue": 300006818,
+    "peRatio": 50.81
+  },
+  "dailyRangePercent": 8.63,
+  "turnoverAverageValue": 213376.12,
+  "pricePosition": 61,
+  "liquidityScore": 71.4,
+  "priceStrengthScore": 60.7,
+  "valuationRiskScore": 75,
+  "snapshotScore": 57.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.63% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

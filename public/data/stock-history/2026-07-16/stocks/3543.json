@@ -1,0 +1,62 @@
+{
+  "symbol": "3543",
+  "name": "州巧",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 32.1,
+    "high": 32.1,
+    "low": 30.8,
+    "close": 30.95,
+    "change": -0.85,
+    "changePercent": -2.67,
+    "tradeVolume": 460565,
+    "transactionCount": 356,
+    "tradeValue": 14349196,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.22,
+  "turnoverAverageValue": 40306.73,
+  "pricePosition": 11.5,
+  "liquidityScore": 44.8,
+  "priceStrengthScore": 26.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 34.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.5 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

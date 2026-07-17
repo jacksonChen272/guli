@@ -1,0 +1,60 @@
+{
+  "symbol": "6955",
+  "name": "邦睿生技-創",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 114,
+    "high": 114.5,
+    "low": 113,
+    "close": 113,
+    "change": -2,
+    "changePercent": -1.74,
+    "tradeVolume": 8129,
+    "transactionCount": 10,
+    "tradeValue": 924333,
+    "peRatio": 27.36
+  },
+  "dailyRangePercent": 1.33,
+  "turnoverAverageValue": 92433.3,
+  "pricePosition": 0,
+  "liquidityScore": 4.3,
+  "priceStrengthScore": 24.6,
+  "valuationRiskScore": 55,
+  "snapshotScore": 21.6,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 4.3 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "6655",
+  "name": "科定",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 117.5,
+    "high": 118.5,
+    "low": 116.5,
+    "close": 118.5,
+    "change": -1.5,
+    "changePercent": -1.25,
+    "tradeVolume": 15448,
+    "transactionCount": 21,
+    "tradeValue": 1811786,
+    "peRatio": 29.19
+  },
+  "dailyRangePercent": 1.72,
+  "turnoverAverageValue": 86275.52,
+  "pricePosition": 100,
+  "liquidityScore": 8.6,
+  "priceStrengthScore": 68.7,
+  "valuationRiskScore": 55,
+  "snapshotScore": 42.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.6 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

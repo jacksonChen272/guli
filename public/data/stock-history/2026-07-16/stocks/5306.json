@@ -1,0 +1,60 @@
+{
+  "symbol": "5306",
+  "name": "桂盟",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 90.1,
+    "high": 99.4,
+    "low": 90.1,
+    "close": 99.2,
+    "change": 8.8,
+    "changePercent": 9.73,
+    "tradeVolume": 1812476,
+    "transactionCount": 5037,
+    "tradeValue": 177806635,
+    "peRatio": 15.65
+  },
+  "dailyRangePercent": 10.32,
+  "turnoverAverageValue": 35300.11,
+  "pricePosition": 97.8,
+  "liquidityScore": 75.2,
+  "priceStrengthScore": 92.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 81,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.73% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.32% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

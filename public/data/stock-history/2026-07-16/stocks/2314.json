@@ -1,0 +1,62 @@
+{
+  "symbol": "2314",
+  "name": "台揚",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.95,
+    "high": 13.4,
+    "low": 12.95,
+    "close": 13.35,
+    "change": -0.05,
+    "changePercent": -0.37,
+    "tradeVolume": 58241,
+    "transactionCount": 87,
+    "tradeValue": 774561,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.47,
+  "turnoverAverageValue": 8903,
+  "pricePosition": 88.9,
+  "liquidityScore": 11.7,
+  "priceStrengthScore": 66.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 42.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 11.7 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

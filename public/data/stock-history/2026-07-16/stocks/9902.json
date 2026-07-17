@@ -1,0 +1,62 @@
+{
+  "symbol": "9902",
+  "name": "台火",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 14,
+    "high": 14.05,
+    "low": 13.85,
+    "close": 13.9,
+    "change": -0.05,
+    "changePercent": -0.36,
+    "tradeVolume": 76466,
+    "transactionCount": 61,
+    "tradeValue": 1065892,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.44,
+  "turnoverAverageValue": 17473.64,
+  "pricePosition": 25,
+  "liquidityScore": 12.6,
+  "priceStrengthScore": 36.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 26,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.6 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

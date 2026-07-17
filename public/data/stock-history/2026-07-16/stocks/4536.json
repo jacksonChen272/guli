@@ -1,0 +1,53 @@
+{
+  "symbol": "4536",
+  "name": "拓凱",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 164.5,
+    "high": 167.5,
+    "low": 163.5,
+    "close": 163.5,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 1123412,
+    "transactionCount": 597,
+    "tradeValue": 185111496,
+    "peRatio": 12.18
+  },
+  "dailyRangePercent": 2.45,
+  "turnoverAverageValue": 310069.51,
+  "pricePosition": 0,
+  "liquidityScore": 66.1,
+  "priceStrengthScore": 28.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 52,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

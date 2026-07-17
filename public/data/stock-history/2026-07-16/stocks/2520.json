@@ -1,0 +1,53 @@
+{
+  "symbol": "2520",
+  "name": "冠德",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 36.35,
+    "high": 36.85,
+    "low": 35.9,
+    "close": 35.9,
+    "change": -0.45,
+    "changePercent": -1.24,
+    "tradeVolume": 2171221,
+    "transactionCount": 1391,
+    "tradeValue": 78906651,
+    "peRatio": 14.9
+  },
+  "dailyRangePercent": 2.65,
+  "turnoverAverageValue": 56726.56,
+  "pricePosition": 0,
+  "liquidityScore": 67.7,
+  "priceStrengthScore": 25.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 51.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

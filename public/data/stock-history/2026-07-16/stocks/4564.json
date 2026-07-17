@@ -1,0 +1,55 @@
+{
+  "symbol": "4564",
+  "name": "元翎",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.55,
+    "high": 21.05,
+    "low": 19.6,
+    "close": 20,
+    "change": -1.2,
+    "changePercent": -5.66,
+    "tradeVolume": 4235684,
+    "transactionCount": 2341,
+    "tradeValue": 85694286,
+    "peRatio": null
+  },
+  "dailyRangePercent": 7.4,
+  "turnoverAverageValue": 36605.85,
+  "pricePosition": 27.6,
+  "liquidityScore": 73.4,
+  "priceStrengthScore": 25.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 46.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

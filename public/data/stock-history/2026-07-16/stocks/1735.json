@@ -1,0 +1,53 @@
+{
+  "symbol": "1735",
+  "name": "日勝化",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 21.4,
+    "high": 21.7,
+    "low": 21.2,
+    "close": 21.3,
+    "change": -0.1,
+    "changePercent": -0.47,
+    "tradeVolume": 162436,
+    "transactionCount": 157,
+    "tradeValue": 3483561,
+    "peRatio": 26.3
+  },
+  "dailyRangePercent": 2.36,
+  "turnoverAverageValue": 22188.29,
+  "pricePosition": 20,
+  "liquidityScore": 26.8,
+  "priceStrengthScore": 34.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 33.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

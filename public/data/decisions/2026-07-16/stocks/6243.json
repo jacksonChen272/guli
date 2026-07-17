@@ -1,0 +1,157 @@
+{
+  "entityType": "stock",
+  "entityId": "6243",
+  "entityName": "迅杰",
+  "tradeDate": "2026-07-16",
+  "score": 71.2,
+  "label": "偏強",
+  "direction": "bullish",
+  "confidence": 76,
+  "summary": "偏強，當日價格強度為主要貢獻。",
+  "factors": [
+    {
+      "code": "stock_health",
+      "name": "既有健康分數",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.25,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "daily_price_strength",
+      "name": "當日價格強度",
+      "rawValue": 90,
+      "normalizedScore": 90,
+      "weight": 0.2,
+      "contribution": 13.33,
+      "direction": "positive",
+      "explanation": "當日價格強度: 90",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "liquidity",
+      "name": "流動性",
+      "rawValue": 77.6,
+      "normalizedScore": 77.6,
+      "weight": 0.15,
+      "contribution": 6.9,
+      "direction": "positive",
+      "explanation": "流動性: 77.6",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "market_environment",
+      "name": "市場環境",
+      "rawValue": 40.7,
+      "normalizedScore": 40.7,
+      "weight": 0.15,
+      "contribution": -2.32,
+      "direction": "negative",
+      "explanation": "市場環境: 40.7",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "industry_environment",
+      "name": "產業環境",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.15,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "risk_control",
+      "name": "風險控制",
+      "rawValue": 70,
+      "normalizedScore": 70,
+      "weight": 0.1,
+      "contribution": 3.33,
+      "direction": "positive",
+      "explanation": "風險控制: 70",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "data_quality",
+      "name": "資料品質",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "derived"
+    }
+  ],
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "explanation": "單日漲幅 9.98% 達 7% 門檻。",
+      "sourceType": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "explanation": "官方資料未提供本益比，估值風險不計分。",
+      "sourceType": "official"
+    }
+  ],
+  "trace": {
+    "formulaVersion": "decision-v1.0",
+    "totalPositiveContribution": 23.56,
+    "totalNegativeContribution": -2.32,
+    "totalContribution": 21.24,
+    "availableWeight": 0.6,
+    "missingWeight": 0.4,
+    "normalizationApplied": true,
+    "calculationSteps": [
+      "availableWeight=0.6",
+      "missingWeight=0.4",
+      "normalized=true"
+    ]
+  },
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    },
+    {
+      "id": "twse-institutional",
+      "name": "TWSE official institutional trades",
+      "type": "official",
+      "tradeDate": "2026-07-17",
+      "fields": [
+        "foreignNetShares",
+        "trustNetShares",
+        "dealerNetShares",
+        "totalNetShares"
+      ]
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。",
+    "Static generation has no verified industry mapping or mock health input; weights were normalized.",
+    "Official institutional data is attached to trace; decision-v1.0 score weights are unchanged.",
+    "Institutional trade date 2026-07-17 differs from decision 2026-07-16; trace only, not scored."
+  ]
+}

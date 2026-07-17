@@ -1,0 +1,53 @@
+{
+  "symbol": "1795",
+  "name": "美時",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 204.5,
+    "high": 208,
+    "low": 198,
+    "close": 198,
+    "change": -4.5,
+    "changePercent": -2.22,
+    "tradeVolume": 2124976,
+    "transactionCount": 2646,
+    "tradeValue": 431117330,
+    "peRatio": 13.51
+  },
+  "dailyRangePercent": 5.05,
+  "turnoverAverageValue": 162931.72,
+  "pricePosition": 0,
+  "liquidityScore": 78.1,
+  "priceStrengthScore": 23.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 53.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "3669",
+  "name": "圓展",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 35.65,
+    "high": 35.65,
+    "low": 35.1,
+    "close": 35.3,
+    "change": -0.05,
+    "changePercent": -0.14,
+    "tradeVolume": 40551,
+    "transactionCount": 43,
+    "tradeValue": 1433032,
+    "peRatio": 19.4
+  },
+  "dailyRangePercent": 1.57,
+  "turnoverAverageValue": 33326.33,
+  "pricePosition": 36.4,
+  "liquidityScore": 11,
+  "priceStrengthScore": 40.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 35.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 11.0 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

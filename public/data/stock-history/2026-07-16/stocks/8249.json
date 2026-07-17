@@ -1,0 +1,53 @@
+{
+  "symbol": "8249",
+  "name": "菱光",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 47.65,
+    "high": 47.65,
+    "low": 46.55,
+    "close": 46.65,
+    "change": -0.6,
+    "changePercent": -1.27,
+    "tradeVolume": 148598,
+    "transactionCount": 177,
+    "tradeValue": 6951338,
+    "peRatio": 17.41
+  },
+  "dailyRangePercent": 2.36,
+  "turnoverAverageValue": 39273.1,
+  "pricePosition": 9.1,
+  "liquidityScore": 30.4,
+  "priceStrengthScore": 28.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 36.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

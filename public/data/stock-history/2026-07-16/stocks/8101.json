@@ -1,0 +1,55 @@
+{
+  "symbol": "8101",
+  "name": "華冠",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.4,
+    "high": 13.4,
+    "low": 13.4,
+    "close": 13.4,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 476100,
+    "transactionCount": 10,
+    "tradeValue": 6379735,
+    "peRatio": null
+  },
+  "dailyRangePercent": 0,
+  "turnoverAverageValue": 637973.5,
+  "pricePosition": 50,
+  "liquidityScore": 30.9,
+  "priceStrengthScore": 50,
+  "valuationRiskScore": null,
+  "snapshotScore": 41.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

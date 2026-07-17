@@ -1,0 +1,62 @@
+{
+  "symbol": "2321",
+  "name": "東訊",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 15.55,
+    "high": 15.55,
+    "low": 15.55,
+    "close": 15.55,
+    "change": -0.05,
+    "changePercent": -0.32,
+    "tradeVolume": 1144,
+    "transactionCount": 3,
+    "tradeValue": 17666,
+    "peRatio": null
+  },
+  "dailyRangePercent": 0,
+  "turnoverAverageValue": 5888.67,
+  "pricePosition": 50,
+  "liquidityScore": 0.3,
+  "priceStrengthScore": 49.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 27.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 0.3 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

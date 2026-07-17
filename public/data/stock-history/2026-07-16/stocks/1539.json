@@ -1,0 +1,60 @@
+{
+  "symbol": "1539",
+  "name": "巨庭",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.1,
+    "high": 17.3,
+    "low": 16,
+    "close": 16.95,
+    "change": 1.1,
+    "changePercent": 6.94,
+    "tradeVolume": 1118579,
+    "transactionCount": 579,
+    "tradeValue": 18663718,
+    "peRatio": 423.75
+  },
+  "dailyRangePercent": 8.13,
+  "turnoverAverageValue": 32234.4,
+  "pricePosition": 73.1,
+  "liquidityScore": 53.2,
+  "priceStrengthScore": 77.7,
+  "valuationRiskScore": 90,
+  "snapshotScore": 55.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.13% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 423.75 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

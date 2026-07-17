@@ -1,0 +1,53 @@
+{
+  "symbol": "1220",
+  "name": "台榮",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.35,
+    "high": 11.35,
+    "low": 11.2,
+    "close": 11.3,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 182892,
+    "transactionCount": 452,
+    "tradeValue": 2057591,
+    "peRatio": 565
+  },
+  "dailyRangePercent": 1.34,
+  "turnoverAverageValue": 4552.19,
+  "pricePosition": 66.7,
+  "liquidityScore": 28.2,
+  "priceStrengthScore": 51.8,
+  "valuationRiskScore": 90,
+  "snapshotScore": 35.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 565.00 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

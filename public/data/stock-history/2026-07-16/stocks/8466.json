@@ -1,0 +1,62 @@
+{
+  "symbol": "8466",
+  "name": "美吉吉-KY",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.7,
+    "high": 18.45,
+    "low": 17.55,
+    "close": 17.75,
+    "change": 0.45,
+    "changePercent": 2.6,
+    "tradeVolume": 47530,
+    "transactionCount": 41,
+    "tradeValue": 841514,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.13,
+  "turnoverAverageValue": 20524.73,
+  "pricePosition": 22.2,
+  "liquidityScore": 9,
+  "priceStrengthScore": 50.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 32.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 9.0 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2375",
+  "name": "凱美",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 167,
+    "high": 172,
+    "low": 163,
+    "close": 164.5,
+    "change": -5.5,
+    "changePercent": -3.24,
+    "tradeVolume": 6641958,
+    "transactionCount": 6298,
+    "tradeValue": 1113517066,
+    "peRatio": 50
+  },
+  "dailyRangePercent": 5.52,
+  "turnoverAverageValue": 176804.87,
+  "pricePosition": 16.7,
+  "liquidityScore": 88.8,
+  "priceStrengthScore": 27.1,
+  "valuationRiskScore": 75,
+  "snapshotScore": 48.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

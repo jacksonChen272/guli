@@ -1,0 +1,55 @@
+{
+  "symbol": "4545",
+  "name": "銘鈺",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 35.1,
+    "high": 35.5,
+    "low": 34.5,
+    "close": 35.15,
+    "change": 0.1,
+    "changePercent": 0.29,
+    "tradeVolume": 80243,
+    "transactionCount": 86,
+    "tradeValue": 2812035,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.9,
+  "turnoverAverageValue": 32698.08,
+  "pricePosition": 65,
+  "liquidityScore": 19.2,
+  "priceStrengthScore": 59.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 42.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

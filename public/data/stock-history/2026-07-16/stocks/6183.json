@@ -1,0 +1,53 @@
+{
+  "symbol": "6183",
+  "name": "關貿",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 91.2,
+    "high": 91.2,
+    "low": 89,
+    "close": 91.1,
+    "change": 0.2,
+    "changePercent": 0.22,
+    "tradeVolume": 20387,
+    "transactionCount": 65,
+    "tradeValue": 1834184,
+    "peRatio": 22.49
+  },
+  "dailyRangePercent": 2.47,
+  "turnoverAverageValue": 28218.22,
+  "pricePosition": 95.5,
+  "liquidityScore": 11.4,
+  "priceStrengthScore": 62.4,
+  "valuationRiskScore": 35,
+  "snapshotScore": 45.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 11.4 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

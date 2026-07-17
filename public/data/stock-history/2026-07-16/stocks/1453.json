@@ -1,0 +1,60 @@
+{
+  "symbol": "1453",
+  "name": "大將",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.45,
+    "high": 11.5,
+    "low": 11.2,
+    "close": 11.3,
+    "change": 0.05,
+    "changePercent": 0.44,
+    "tradeVolume": 20197,
+    "transactionCount": 52,
+    "tradeValue": 228739,
+    "peRatio": 102.73
+  },
+  "dailyRangePercent": 2.68,
+  "turnoverAverageValue": 4398.83,
+  "pricePosition": 33.3,
+  "liquidityScore": 4.3,
+  "priceStrengthScore": 41.1,
+  "valuationRiskScore": 90,
+  "snapshotScore": 22,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 4.3 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 102.73 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

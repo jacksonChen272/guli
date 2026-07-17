@@ -1,0 +1,53 @@
+{
+  "symbol": "6671",
+  "name": "三能-KY",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 24,
+    "high": 24,
+    "low": 23.9,
+    "close": 23.95,
+    "change": -0.05,
+    "changePercent": -0.21,
+    "tradeVolume": 48011,
+    "transactionCount": 27,
+    "tradeValue": 1151019,
+    "peRatio": 10.6
+  },
+  "dailyRangePercent": 0.42,
+  "turnoverAverageValue": 42630.33,
+  "pricePosition": 50,
+  "liquidityScore": 9.5,
+  "priceStrengthScore": 45.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 39.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 9.5 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

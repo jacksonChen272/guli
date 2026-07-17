@@ -1,0 +1,60 @@
+{
+  "symbol": "7788",
+  "name": "松川精密",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 266,
+    "high": 271.5,
+    "low": 260.5,
+    "close": 261,
+    "change": -8.5,
+    "changePercent": -3.15,
+    "tradeVolume": 1293955,
+    "transactionCount": 1795,
+    "tradeValue": 342871927,
+    "peRatio": 69.05
+  },
+  "dailyRangePercent": 4.22,
+  "turnoverAverageValue": 191015,
+  "pricePosition": 4.5,
+  "liquidityScore": 73.4,
+  "priceStrengthScore": 23,
+  "valuationRiskScore": 90,
+  "snapshotScore": 38,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 4.5 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 69.05 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

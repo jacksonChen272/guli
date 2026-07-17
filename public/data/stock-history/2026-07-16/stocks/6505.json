@@ -1,0 +1,60 @@
+{
+  "symbol": "6505",
+  "name": "台塑化",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 74.5,
+    "high": 80,
+    "low": 73.2,
+    "close": 80,
+    "change": 7.2,
+    "changePercent": 9.89,
+    "tradeVolume": 101601924,
+    "transactionCount": 49855,
+    "tradeValue": 7894483748,
+    "peRatio": 28.67
+  },
+  "dailyRangePercent": 9.29,
+  "turnoverAverageValue": 158348.89,
+  "pricePosition": 100,
+  "liquidityScore": 98.5,
+  "priceStrengthScore": 93.8,
+  "valuationRiskScore": 55,
+  "snapshotScore": 85.7,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.89% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.29% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

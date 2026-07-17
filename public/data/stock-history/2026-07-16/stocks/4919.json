@@ -1,0 +1,69 @@
+{
+  "symbol": "4919",
+  "name": "新唐",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 165,
+    "high": 165,
+    "low": 156,
+    "close": 156.5,
+    "change": -12,
+    "changePercent": -7.12,
+    "tradeVolume": 7810246,
+    "transactionCount": 8540,
+    "tradeValue": 1249277993,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.77,
+  "turnoverAverageValue": 146285.48,
+  "pricePosition": 5.6,
+  "liquidityScore": 90.3,
+  "priceStrengthScore": 14.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 47.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.12% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.6 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "6931",
+  "name": "青松健康",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 39.55,
+    "high": 39.85,
+    "low": 39.55,
+    "close": 39.6,
+    "change": 0.05,
+    "changePercent": 0.13,
+    "tradeVolume": 35081,
+    "transactionCount": 44,
+    "tradeValue": 1391193,
+    "peRatio": 20.52
+  },
+  "dailyRangePercent": 0.76,
+  "turnoverAverageValue": 31618.02,
+  "pricePosition": 16.7,
+  "liquidityScore": 9.9,
+  "priceStrengthScore": 42.7,
+  "valuationRiskScore": 35,
+  "snapshotScore": 35.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 9.9 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

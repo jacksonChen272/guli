@@ -1,0 +1,60 @@
+{
+  "symbol": "3033",
+  "name": "威健",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 56,
+    "high": 59.4,
+    "low": 53.3,
+    "close": 54.2,
+    "change": -1.4,
+    "changePercent": -2.52,
+    "tradeVolume": 61211448,
+    "transactionCount": 33260,
+    "tradeValue": 3415637476,
+    "peRatio": 20.61
+  },
+  "dailyRangePercent": 11.44,
+  "turnoverAverageValue": 102695.05,
+  "pricePosition": 14.8,
+  "liquidityScore": 97.1,
+  "priceStrengthScore": 28,
+  "valuationRiskScore": 35,
+  "snapshotScore": 59.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.44% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

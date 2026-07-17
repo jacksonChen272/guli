@@ -1,0 +1,53 @@
+{
+  "symbol": "5258",
+  "name": "虹堡",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 54.5,
+    "high": 56.1,
+    "low": 54,
+    "close": 54,
+    "change": -0.6,
+    "changePercent": -1.1,
+    "tradeVolume": 884982,
+    "transactionCount": 704,
+    "tradeValue": 48842251,
+    "peRatio": 16.12
+  },
+  "dailyRangePercent": 3.89,
+  "turnoverAverageValue": 69378.2,
+  "pricePosition": 0,
+  "liquidityScore": 58.2,
+  "priceStrengthScore": 26,
+  "valuationRiskScore": 35,
+  "snapshotScore": 45.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

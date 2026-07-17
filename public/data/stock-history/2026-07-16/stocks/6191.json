@@ -1,0 +1,53 @@
+{
+  "symbol": "6191",
+  "name": "精成科",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 96,
+    "high": 96,
+    "low": 93.3,
+    "close": 93.5,
+    "change": -3.4,
+    "changePercent": -3.51,
+    "tradeVolume": 4997136,
+    "transactionCount": 4709,
+    "tradeValue": 469169181,
+    "peRatio": 14.56
+  },
+  "dailyRangePercent": 2.89,
+  "turnoverAverageValue": 99632.44,
+  "pricePosition": 7.4,
+  "liquidityScore": 84.7,
+  "priceStrengthScore": 23.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 56.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

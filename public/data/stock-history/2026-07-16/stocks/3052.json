@@ -1,0 +1,53 @@
+{
+  "symbol": "3052",
+  "name": "夆典",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.95,
+    "high": 11,
+    "low": 10.85,
+    "close": 10.85,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 219869,
+    "transactionCount": 217,
+    "tradeValue": 2403444,
+    "peRatio": 11.42
+  },
+  "dailyRangePercent": 1.38,
+  "turnoverAverageValue": 11075.78,
+  "pricePosition": 0,
+  "liquidityScore": 27.2,
+  "priceStrengthScore": 28.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 38.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

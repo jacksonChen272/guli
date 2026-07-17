@@ -1,0 +1,62 @@
+{
+  "symbol": "6128",
+  "name": "上福",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.45,
+    "high": 20.75,
+    "low": 20.3,
+    "close": 20.6,
+    "change": 0.15,
+    "changePercent": 0.73,
+    "tradeVolume": 57878,
+    "transactionCount": 49,
+    "tradeValue": 1187318,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.22,
+  "turnoverAverageValue": 24230.98,
+  "pricePosition": 66.7,
+  "liquidityScore": 11.4,
+  "priceStrengthScore": 61.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 39.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 11.4 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

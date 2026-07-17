@@ -1,0 +1,53 @@
+{
+  "symbol": "6184",
+  "name": "大豐電",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 43.1,
+    "high": 43.1,
+    "low": 42.7,
+    "close": 42.95,
+    "change": -0.15,
+    "changePercent": -0.35,
+    "tradeVolume": 32919,
+    "transactionCount": 40,
+    "tradeValue": 1409531,
+    "peRatio": 18.12
+  },
+  "dailyRangePercent": 0.94,
+  "turnoverAverageValue": 35238.28,
+  "pricePosition": 62.5,
+  "liquidityScore": 10,
+  "priceStrengthScore": 49.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 38.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.0 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

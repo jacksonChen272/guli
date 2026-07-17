@@ -1,0 +1,60 @@
+{
+  "symbol": "3016",
+  "name": "嘉晶",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 120.5,
+    "high": 122,
+    "low": 115.5,
+    "close": 116,
+    "change": -7,
+    "changePercent": -5.69,
+    "tradeVolume": 6596435,
+    "transactionCount": 5778,
+    "tradeValue": 776948054,
+    "peRatio": 282.93
+  },
+  "dailyRangePercent": 5.63,
+  "turnoverAverageValue": 134466.61,
+  "pricePosition": 7.7,
+  "liquidityScore": 87.6,
+  "priceStrengthScore": 18.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 40.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.7 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 282.93 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

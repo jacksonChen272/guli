@@ -1,0 +1,53 @@
+{
+  "symbol": "5388",
+  "name": "中磊",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 88.8,
+    "high": 89.2,
+    "low": 86.5,
+    "close": 86.6,
+    "change": -2.8,
+    "changePercent": -3.13,
+    "tradeVolume": 5017963,
+    "transactionCount": 4191,
+    "tradeValue": 439283847,
+    "peRatio": 21.65
+  },
+  "dailyRangePercent": 3.12,
+  "turnoverAverageValue": 104816,
+  "pricePosition": 3.7,
+  "liquidityScore": 84,
+  "priceStrengthScore": 22.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 52.7,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 3.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

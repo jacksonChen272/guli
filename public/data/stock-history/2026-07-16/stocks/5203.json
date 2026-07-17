@@ -1,0 +1,53 @@
+{
+  "symbol": "5203",
+  "name": "訊連",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 67.4,
+    "high": 68.4,
+    "low": 67.3,
+    "close": 67.4,
+    "change": -0.5,
+    "changePercent": -0.74,
+    "tradeVolume": 69423,
+    "transactionCount": 83,
+    "tradeValue": 4713017,
+    "peRatio": 18.42
+  },
+  "dailyRangePercent": 1.63,
+  "turnoverAverageValue": 56783.34,
+  "pricePosition": 9.1,
+  "liquidityScore": 21.5,
+  "priceStrengthScore": 34,
+  "valuationRiskScore": 35,
+  "snapshotScore": 35.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

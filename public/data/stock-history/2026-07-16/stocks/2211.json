@@ -1,0 +1,53 @@
+{
+  "symbol": "2211",
+  "name": "長榮鋼",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 95.7,
+    "high": 95.7,
+    "low": 95.1,
+    "close": 95.2,
+    "change": -0.3,
+    "changePercent": -0.31,
+    "tradeVolume": 775842,
+    "transactionCount": 659,
+    "tradeValue": 73934322,
+    "peRatio": 11.64
+  },
+  "dailyRangePercent": 0.63,
+  "turnoverAverageValue": 112191.69,
+  "pricePosition": 16.7,
+  "liquidityScore": 59.1,
+  "priceStrengthScore": 33.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 51.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

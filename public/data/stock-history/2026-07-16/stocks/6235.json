@@ -1,0 +1,53 @@
+{
+  "symbol": "6235",
+  "name": "華孚",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 44,
+    "high": 44,
+    "low": 42.35,
+    "close": 42.35,
+    "change": -1.85,
+    "changePercent": -4.19,
+    "tradeVolume": 885248,
+    "transactionCount": 740,
+    "tradeValue": 37949743,
+    "peRatio": 16.35
+  },
+  "dailyRangePercent": 3.9,
+  "turnoverAverageValue": 51283.44,
+  "pricePosition": 0,
+  "liquidityScore": 57.1,
+  "priceStrengthScore": 19.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 41.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

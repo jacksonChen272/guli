@@ -1,0 +1,53 @@
+{
+  "symbol": "3530",
+  "name": "晶相光",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 61.5,
+    "high": 62.4,
+    "low": 61,
+    "close": 61,
+    "change": -0.4,
+    "changePercent": -0.65,
+    "tradeVolume": 109782,
+    "transactionCount": 133,
+    "tradeValue": 6745108,
+    "peRatio": 30.05
+  },
+  "dailyRangePercent": 2.3,
+  "turnoverAverageValue": 50715.1,
+  "pricePosition": 0,
+  "liquidityScore": 27.1,
+  "priceStrengthScore": 27.1,
+  "valuationRiskScore": 55,
+  "snapshotScore": 30.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "6558",
+  "name": "興能高",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 29.15,
+    "high": 29.45,
+    "low": 28.7,
+    "close": 28.95,
+    "change": -0.2,
+    "changePercent": -0.69,
+    "tradeVolume": 182385,
+    "transactionCount": 148,
+    "tradeValue": 5293264,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.61,
+  "turnoverAverageValue": 35765.3,
+  "pricePosition": 33.3,
+  "liquidityScore": 29.2,
+  "priceStrengthScore": 38.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 34.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

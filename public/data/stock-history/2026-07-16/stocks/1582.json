@@ -1,0 +1,53 @@
+{
+  "symbol": "1582",
+  "name": "信錦",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 77.2,
+    "high": 77.6,
+    "low": 76.5,
+    "close": 76.6,
+    "change": -1.6,
+    "changePercent": -2.05,
+    "tradeVolume": 510895,
+    "transactionCount": 655,
+    "tradeValue": 39375199,
+    "peRatio": 27.85
+  },
+  "dailyRangePercent": 1.44,
+  "turnoverAverageValue": 60114.81,
+  "pricePosition": 9.1,
+  "liquidityScore": 53.4,
+  "priceStrengthScore": 27.1,
+  "valuationRiskScore": 55,
+  "snapshotScore": 39.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

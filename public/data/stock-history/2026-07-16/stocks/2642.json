@@ -1,0 +1,62 @@
+{
+  "symbol": "2642",
+  "name": "宅配通",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.85,
+    "high": 20.9,
+    "low": 20.65,
+    "close": 20.75,
+    "change": -0.1,
+    "changePercent": -0.48,
+    "tradeVolume": 30771,
+    "transactionCount": 81,
+    "tradeValue": 638208,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.21,
+  "turnoverAverageValue": 7879.11,
+  "pricePosition": 40,
+  "liquidityScore": 8.6,
+  "priceStrengthScore": 41.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 27.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.6 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

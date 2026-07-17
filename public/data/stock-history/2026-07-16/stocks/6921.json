@@ -1,0 +1,67 @@
+{
+  "symbol": "6921",
+  "name": "嘉雨思-創",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 62.4,
+    "high": 68,
+    "low": 62.4,
+    "close": 67.8,
+    "change": 0.1,
+    "changePercent": 0.15,
+    "tradeVolume": 11300,
+    "transactionCount": 12,
+    "tradeValue": 747320,
+    "peRatio": 199.41
+  },
+  "dailyRangePercent": 8.97,
+  "turnoverAverageValue": 62276.67,
+  "pricePosition": 96.4,
+  "liquidityScore": 3.9,
+  "priceStrengthScore": 70.6,
+  "valuationRiskScore": 90,
+  "snapshotScore": 35.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.97% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 3.9 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 199.41 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

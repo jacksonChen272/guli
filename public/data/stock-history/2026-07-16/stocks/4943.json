@@ -1,0 +1,69 @@
+{
+  "symbol": "4943",
+  "name": "康控-KY",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 9.05,
+    "high": 9.05,
+    "low": 8.33,
+    "close": 8.69,
+    "change": 0.36,
+    "changePercent": 4.32,
+    "tradeVolume": 26230,
+    "transactionCount": 32,
+    "tradeValue": 222332,
+    "peRatio": null
+  },
+  "dailyRangePercent": 8.64,
+  "turnoverAverageValue": 6947.88,
+  "pricePosition": 50,
+  "liquidityScore": 4.1,
+  "priceStrengthScore": 55.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 33.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.64% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 4.1 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

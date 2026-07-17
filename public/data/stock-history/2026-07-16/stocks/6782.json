@@ -1,0 +1,53 @@
+{
+  "symbol": "6782",
+  "name": "視陽",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 199,
+    "high": 203,
+    "low": 198,
+    "close": 199,
+    "change": -2,
+    "changePercent": -1,
+    "tradeVolume": 150113,
+    "transactionCount": 221,
+    "tradeValue": 29966529,
+    "peRatio": 13.43
+  },
+  "dailyRangePercent": 2.53,
+  "turnoverAverageValue": 135595.15,
+  "pricePosition": 20,
+  "liquidityScore": 40.4,
+  "priceStrengthScore": 37.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 46.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

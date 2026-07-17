@@ -1,0 +1,69 @@
+{
+  "symbol": "6141",
+  "name": "柏承",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 39.6,
+    "high": 43.75,
+    "low": 38.5,
+    "close": 43.75,
+    "change": 3.95,
+    "changePercent": 9.92,
+    "tradeVolume": 7322123,
+    "transactionCount": 10872,
+    "tradeValue": 314961641,
+    "peRatio": null
+  },
+  "dailyRangePercent": 13.64,
+  "turnoverAverageValue": 28969.98,
+  "pricePosition": 100,
+  "liquidityScore": 85.6,
+  "priceStrengthScore": 93.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 90.2,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.92% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 13.64% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "symbol": "3092",
+  "name": "鴻碩",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 26.05,
+    "high": 26.05,
+    "low": 25.25,
+    "close": 25.4,
+    "change": -0.65,
+    "changePercent": -2.5,
+    "tradeVolume": 375107,
+    "transactionCount": 353,
+    "tradeValue": 9586050,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.17,
+  "turnoverAverageValue": 27155.95,
+  "pricePosition": 18.7,
+  "liquidityScore": 40.3,
+  "priceStrengthScore": 29.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 34.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.7 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

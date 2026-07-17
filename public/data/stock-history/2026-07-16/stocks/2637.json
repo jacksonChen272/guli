@@ -1,0 +1,53 @@
+{
+  "symbol": "2637",
+  "name": "慧洋-KY",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 84.2,
+    "high": 84.2,
+    "low": 82.1,
+    "close": 82.5,
+    "change": -1.4,
+    "changePercent": -1.67,
+    "tradeVolume": 1727406,
+    "transactionCount": 1537,
+    "tradeValue": 143415100,
+    "peRatio": 11.6
+  },
+  "dailyRangePercent": 2.56,
+  "turnoverAverageValue": 93308.46,
+  "pricePosition": 19,
+  "liquidityScore": 70,
+  "priceStrengthScore": 31.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 54.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 19.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

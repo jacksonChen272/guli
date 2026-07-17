@@ -1,0 +1,53 @@
+{
+  "symbol": "3008",
+  "name": "大立光",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 4040,
+    "high": 4350,
+    "low": 4000,
+    "close": 4260,
+    "change": 220,
+    "changePercent": 5.45,
+    "tradeVolume": 3074549,
+    "transactionCount": 14987,
+    "tradeValue": 12900775415,
+    "peRatio": 26.59
+  },
+  "dailyRangePercent": 8.75,
+  "turnoverAverageValue": 860797.72,
+  "pricePosition": 74.3,
+  "liquidityScore": 90.8,
+  "priceStrengthScore": 74.8,
+  "valuationRiskScore": 55,
+  "snapshotScore": 74.4,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.75% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

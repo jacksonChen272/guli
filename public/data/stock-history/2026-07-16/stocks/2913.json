@@ -1,0 +1,55 @@
+{
+  "symbol": "2913",
+  "name": "農林",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.35,
+    "high": 11.7,
+    "low": 11.3,
+    "close": 11.5,
+    "change": 0.1,
+    "changePercent": 0.88,
+    "tradeVolume": 4029702,
+    "transactionCount": 1010,
+    "tradeValue": 46551232,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.54,
+  "turnoverAverageValue": 46090.33,
+  "pricePosition": 50,
+  "liquidityScore": 67.2,
+  "priceStrengthScore": 56,
+  "valuationRiskScore": null,
+  "snapshotScore": 60.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

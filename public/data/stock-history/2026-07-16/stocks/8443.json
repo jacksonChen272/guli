@@ -1,0 +1,62 @@
+{
+  "symbol": "8443",
+  "name": "阿瘦",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.4,
+    "high": 11.45,
+    "low": 11.3,
+    "close": 11.4,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 41212,
+    "transactionCount": 58,
+    "tradeValue": 468583,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.33,
+  "turnoverAverageValue": 8079.02,
+  "pricePosition": 66.7,
+  "liquidityScore": 8,
+  "priceStrengthScore": 55.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 34.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.0 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "2034",
+  "name": "允強",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.1,
+    "high": 20.35,
+    "low": 20.05,
+    "close": 20.25,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 1558740,
+    "transactionCount": 767,
+    "tradeValue": 31479363,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.5,
+  "turnoverAverageValue": 41042.19,
+  "pricePosition": 66.7,
+  "liquidityScore": 59.2,
+  "priceStrengthScore": 59.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 59.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

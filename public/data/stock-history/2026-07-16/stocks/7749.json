@@ -1,0 +1,53 @@
+{
+  "symbol": "7749",
+  "name": "意騰-KY",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 391,
+    "high": 393.5,
+    "low": 385.5,
+    "close": 387,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 74724,
+    "transactionCount": 220,
+    "tradeValue": 29098955,
+    "peRatio": 31.06
+  },
+  "dailyRangePercent": 2.08,
+  "turnoverAverageValue": 132267.98,
+  "pricePosition": 18.8,
+  "liquidityScore": 36.5,
+  "priceStrengthScore": 35.1,
+  "valuationRiskScore": 55,
+  "snapshotScore": 37.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "1524",
+  "name": "耿鼎",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 27.65,
+    "high": 27.7,
+    "low": 27.4,
+    "close": 27.4,
+    "change": -0.3,
+    "changePercent": -1.08,
+    "tradeVolume": 317434,
+    "transactionCount": 483,
+    "tradeValue": 8737323,
+    "peRatio": 18.27
+  },
+  "dailyRangePercent": 1.09,
+  "turnoverAverageValue": 18089.7,
+  "pricePosition": 0,
+  "liquidityScore": 39.8,
+  "priceStrengthScore": 26.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 38.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

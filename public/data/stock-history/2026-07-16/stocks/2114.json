@@ -1,0 +1,53 @@
+{
+  "symbol": "2114",
+  "name": "鑫永銓",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 88.4,
+    "high": 89.3,
+    "low": 87.5,
+    "close": 89.3,
+    "change": -0.2,
+    "changePercent": -0.22,
+    "tradeVolume": 27885,
+    "transactionCount": 39,
+    "tradeValue": 2485070,
+    "peRatio": 15.53
+  },
+  "dailyRangePercent": 2.06,
+  "turnoverAverageValue": 63719.74,
+  "pricePosition": 100,
+  "liquidityScore": 12.4,
+  "priceStrengthScore": 71,
+  "valuationRiskScore": 35,
+  "snapshotScore": 49.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.4 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

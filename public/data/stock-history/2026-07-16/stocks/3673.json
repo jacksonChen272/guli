@@ -1,0 +1,53 @@
+{
+  "symbol": "3673",
+  "name": "TPK-KY",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 72.3,
+    "high": 74.1,
+    "low": 71.6,
+    "close": 71.6,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 4593139,
+    "transactionCount": 3701,
+    "tradeValue": 332840602,
+    "peRatio": 19.67
+  },
+  "dailyRangePercent": 3.49,
+  "turnoverAverageValue": 89932.61,
+  "pricePosition": 0,
+  "liquidityScore": 82,
+  "priceStrengthScore": 28.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 54.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

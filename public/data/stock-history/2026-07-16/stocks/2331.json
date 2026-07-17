@@ -1,0 +1,53 @@
+{
+  "symbol": "2331",
+  "name": "精英",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.7,
+    "high": 20.85,
+    "low": 20.3,
+    "close": 20.4,
+    "change": -0.25,
+    "changePercent": -1.21,
+    "tradeVolume": 1423790,
+    "transactionCount": 763,
+    "tradeValue": 29153851,
+    "peRatio": 40.8
+  },
+  "dailyRangePercent": 2.71,
+  "turnoverAverageValue": 38209.5,
+  "pricePosition": 18.2,
+  "liquidityScore": 58.5,
+  "priceStrengthScore": 32.2,
+  "valuationRiskScore": 75,
+  "snapshotScore": 40,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.2 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

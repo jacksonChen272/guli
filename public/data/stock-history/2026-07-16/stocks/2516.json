@@ -1,0 +1,53 @@
+{
+  "symbol": "2516",
+  "name": "新建",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.95,
+    "high": 14.15,
+    "low": 13.75,
+    "close": 13.75,
+    "change": -0.1,
+    "changePercent": -0.72,
+    "tradeVolume": 102382,
+    "transactionCount": 84,
+    "tradeValue": 1415373,
+    "peRatio": 11.65
+  },
+  "dailyRangePercent": 2.91,
+  "turnoverAverageValue": 16849.68,
+  "pricePosition": 0,
+  "liquidityScore": 16.8,
+  "priceStrengthScore": 26.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 34,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

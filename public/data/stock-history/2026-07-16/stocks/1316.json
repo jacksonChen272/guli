@@ -1,0 +1,62 @@
+{
+  "symbol": "1316",
+  "name": "上曜",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.5,
+    "high": 10.55,
+    "low": 10.3,
+    "close": 10.35,
+    "change": -0.1,
+    "changePercent": -0.96,
+    "tradeVolume": 1329505,
+    "transactionCount": 531,
+    "tradeValue": 13821841,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.43,
+  "turnoverAverageValue": 26029.83,
+  "pricePosition": 20,
+  "liquidityScore": 52.3,
+  "priceStrengthScore": 33.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 41.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

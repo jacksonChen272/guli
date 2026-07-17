@@ -1,0 +1,62 @@
+{
+  "symbol": "5546",
+  "name": "永固-KY",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.65,
+    "high": 16.75,
+    "low": 16.5,
+    "close": 16.75,
+    "change": 0.2,
+    "changePercent": 1.21,
+    "tradeVolume": 23746,
+    "transactionCount": 24,
+    "tradeValue": 396683,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.52,
+  "turnoverAverageValue": 16528.46,
+  "pricePosition": 100,
+  "liquidityScore": 4.3,
+  "priceStrengthScore": 74.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 43.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 4.3 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

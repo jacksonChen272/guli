@@ -1,0 +1,53 @@
+{
+  "symbol": "4532",
+  "name": "瑞智",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 25.5,
+    "high": 25.8,
+    "low": 25.35,
+    "close": 25.4,
+    "change": -0.3,
+    "changePercent": -1.17,
+    "tradeVolume": 821030,
+    "transactionCount": 630,
+    "tradeValue": 20969905,
+    "peRatio": 13.88
+  },
+  "dailyRangePercent": 1.78,
+  "turnoverAverageValue": 33285.56,
+  "pricePosition": 11.1,
+  "liquidityScore": 52.4,
+  "priceStrengthScore": 29.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 47.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

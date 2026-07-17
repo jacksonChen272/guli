@@ -1,0 +1,60 @@
+{
+  "symbol": "1459",
+  "name": "聯發",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.75,
+    "high": 11.9,
+    "low": 11.65,
+    "close": 11.7,
+    "change": -0.1,
+    "changePercent": -0.85,
+    "tradeVolume": 70358,
+    "transactionCount": 57,
+    "tradeValue": 824849,
+    "peRatio": 7.55
+  },
+  "dailyRangePercent": 2.15,
+  "turnoverAverageValue": 14471.04,
+  "pricePosition": 20,
+  "liquidityScore": 11.4,
+  "priceStrengthScore": 33.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 35.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 11.4 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

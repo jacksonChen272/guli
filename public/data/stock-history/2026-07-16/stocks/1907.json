@@ -1,0 +1,53 @@
+{
+  "symbol": "1907",
+  "name": "永豐餘",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 29.2,
+    "high": 29.7,
+    "low": 28.35,
+    "close": 28.4,
+    "change": -0.8,
+    "changePercent": -2.74,
+    "tradeVolume": 2706466,
+    "transactionCount": 1579,
+    "tradeValue": 78095898,
+    "peRatio": 20.29
+  },
+  "dailyRangePercent": 4.76,
+  "turnoverAverageValue": 49459.09,
+  "pricePosition": 3.7,
+  "liquidityScore": 69,
+  "priceStrengthScore": 23.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 47.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 3.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

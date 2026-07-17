@@ -1,0 +1,62 @@
+{
+  "symbol": "2406",
+  "name": "國碩",
+  "tradeDate": "2026-07-16",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 34.55,
+    "high": 35.1,
+    "low": 33.75,
+    "close": 33.95,
+    "change": -1.05,
+    "changePercent": -3,
+    "tradeVolume": 6888825,
+    "transactionCount": 4080,
+    "tradeValue": 235822135,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4,
+  "turnoverAverageValue": 57799.54,
+  "pricePosition": 14.8,
+  "liquidityScore": 82,
+  "priceStrengthScore": 26.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 51,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.8 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}
