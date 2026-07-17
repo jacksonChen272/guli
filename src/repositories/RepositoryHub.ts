@@ -20,6 +20,7 @@ import { MarketRepository } from './MarketRepository'
 import { SnapshotRepository } from './SnapshotRepository'
 import { StockRepository } from './StockRepository'
 import { StockHistoryRepository } from './StockHistoryRepository'
+import { ScreenerRepository } from './ScreenerRepository'
 import { StockSnapshotRepository } from './StockSnapshotRepository'
 import { TWSEStockHistoryProvider } from '../providers/TWSEStockHistoryProvider'
 import { WatchlistDashboardRepository } from './WatchlistDashboardRepository'
@@ -41,6 +42,7 @@ export class RepositoryHub {
   market!: MarketRepository
   stocks!: StockRepository
   stockHistory!: StockHistoryRepository
+  readonly screener = new ScreenerRepository()
   industries!: IndustryRepository
   institutions!: InstitutionRepository
   watchlist!: WatchlistRepository

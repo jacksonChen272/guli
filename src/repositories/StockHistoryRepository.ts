@@ -16,6 +16,7 @@ export class StockHistoryRepository {
   getAvailableSymbols() { return this.provider.getAvailableSymbols() }
   getDatasetStatus() { return this.provider.getDatasetStatus() }
   getTechnicalSnapshot() { return this.provider.getIndex().then((index) => index.summary) }
+  getBackfillProgress() { return this.provider.getBackfillProgress() }
   getResolvedUrl(symbol: string) { return this.provider.getResolvedHistoryUrl(symbol) }
 
   async getHistory(symbol: string, force = false): Promise<OfficialStockHistory> {

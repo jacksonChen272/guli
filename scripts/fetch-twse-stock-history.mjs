@@ -5,6 +5,7 @@ const ROOT = process.cwd()
 const OUTPUT_ROOT = path.join(ROOT, 'public', 'data', 'twse-stock-history')
 const STOCK_DIR = path.join(OUTPUT_ROOT, 'stocks')
 const STOCK_DAILY_PATH = path.join(ROOT, 'public', 'data', 'twse-stocks', 'latest.json')
+const CHECKPOINT_PATH = path.join(OUTPUT_ROOT, 'backfill-progress.json')
 const ENDPOINT = 'https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY'
 const TARGET_DAYS = 250
 const PRIORITY_SYMBOLS = ['2330', '2317', '2454', '2313', '3006', '2303', '2382', '3231', '3017', '2603', '2615', '2881', '2882', '2891', '1301', '1303']
@@ -18,7 +19,7 @@ const round = (value, digits = 4) => Number(value.toFixed(digits))
 const hasInvalidText = (text) => /<<<<<<<|=======|>>>>>>>|\uFFFD/.test(text)
 
 function parseArgs(argv) {
-  const options = { mode: 'priority', symbols: [], offset: 0, batchSize: Number.POSITIVE_INFINITY, targetDays: TARGET_DAYS }
+  const options = { mode: 'priority', symbols: [], offset: 0, batchSize: Number.POSITIVE_INFINITY, targetDays: TARGET_DAYS, resume: false, retryFailedOnly: false, timeout: FETCH_TIMEOUT_MS, retries: MAX_RETRIES, rateLimit: RATE_LIMIT_MS }
   for (let index = 0; index < argv.length; index += 1) {
     const value = argv[index]
     if (value === '--watchlist') options.mode = 'watchlist'
@@ -30,8 +31,19 @@ function parseArgs(argv) {
     else if (value === '--offset') options.offset = Number(argv[++index] ?? 0)
     else if (value === '--batch-size') options.batchSize = Number(argv[++index] ?? options.batchSize)
     else if (value === '--target-days') options.targetDays = Number(argv[++index] ?? TARGET_DAYS)
+    else if (value === '--resume') options.resume = true
+    else if (value === '--retry-failed-only') options.retryFailedOnly = true
+    else if (value === '--timeout') options.timeout = Number(argv[++index] ?? FETCH_TIMEOUT_MS)
+    else if (value === '--retries') options.retries = Number(argv[++index] ?? MAX_RETRIES)
+    else if (value === '--rate-limit') options.rateLimit = Number(argv[++index] ?? RATE_LIMIT_MS)
   }
   options.symbols = [...new Set(options.symbols.map((symbol) => symbol.trim()).filter((symbol) => /^\d{4}$/.test(symbol)))]
+  if (!Number.isFinite(options.offset) || options.offset < 0) options.offset = 0
+  if (!Number.isFinite(options.batchSize) || options.batchSize <= 0) options.batchSize = Number.POSITIVE_INFINITY
+  if (!Number.isFinite(options.targetDays) || options.targetDays < 60) options.targetDays = TARGET_DAYS
+  options.timeout = Math.max(5_000, options.timeout)
+  options.retries = Math.max(1, Math.min(5, options.retries))
+  options.rateLimit = Math.max(350, options.rateLimit)
   return options
 }
 
@@ -97,11 +109,11 @@ function mergePrices(existing, incoming) {
   return [...byDate.values()].sort((left, right) => left.tradeDate.localeCompare(right.tradeDate))
 }
 
-async function fetchJson(url) {
+async function fetchJson(url, options) {
   let lastError
-  for (let attempt = 1; attempt <= MAX_RETRIES; attempt += 1) {
+  for (let attempt = 1; attempt <= options.retries; attempt += 1) {
     const controller = new AbortController()
-    const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS)
+    const timer = setTimeout(() => controller.abort(), options.timeout)
     try {
       const response = await fetch(url, { signal: controller.signal, headers: { accept: 'application/json', 'user-agent': 'GULI-data-sync/0.9' } })
       if (!response.ok) {
@@ -115,7 +127,7 @@ async function fetchJson(url) {
       return JSON.parse(text)
     } catch (error) {
       lastError = error
-      if (attempt < MAX_RETRIES) await sleep(attempt * 700)
+      if (attempt < options.retries) await sleep(attempt * 700)
     } finally {
       clearTimeout(timer)
     }
@@ -167,7 +179,8 @@ function extractName(payload, fallback) {
 
 async function loadStockUniverse() {
   const dataset = await readJson(STOCK_DAILY_PATH, { records: [] })
-  return new Map((dataset.records ?? []).filter((record) => record.instrumentType === 'stock' && /^\d{4}$/.test(record.symbol)).map((record) => [record.symbol, record.name]))
+  const records = (dataset.records ?? []).filter((record) => record.instrumentType === 'stock' && /^\d{4}$/.test(record.symbol) && record.status !== 'invalid')
+  return { stocks: new Map(records.map((record) => [record.symbol, record.name])), tradeDate: dataset.tradeDate ?? null }
 }
 
 function isStale(date) {
@@ -218,23 +231,25 @@ function technicalSummary(prices) {
   }
 }
 
-async function syncSymbol(symbol, fallbackName, targetDays) {
+async function syncSymbol(symbol, fallbackName, options, latestTradeDate) {
   const output = path.join(STOCK_DIR, `${symbol}.json`)
   const existing = await readJson(output, null)
+  if (existing?.recordCount >= options.targetDays && latestTradeDate && existing.lastTradeDate === latestTradeDate) return { dataset: existing, skipped: true }
   let prices = Array.isArray(existing?.prices) ? existing.prices : []
   const warnings = []
   let name = existing?.name || fallbackName || symbol
-  const months = prices.length >= targetDays ? monthKeys(new Date(), 2) : monthKeys(new Date(), 18)
+  const requiredMonths = Math.max(2, Math.ceil(Math.max(0, options.targetDays - prices.length) / 18) + 2)
+  const months = prices.length >= options.targetDays ? monthKeys(new Date(), 2) : monthKeys(new Date(), Math.min(30, requiredMonths))
   let fetchedMonths = 0
   for (const date of months) {
     const url = `${ENDPOINT}?date=${date}&stockNo=${symbol}&response=json`
-    const payload = await fetchJson(url)
+    const payload = await fetchJson(url, options)
     if (payload.stat && payload.stat !== 'OK') { warnings.push(`${date.slice(0, 6)}：${payload.stat}`); continue }
     name = extractName(payload, name)
     prices = mergePrices(prices, normalizeMonth(payload, warnings))
     fetchedMonths += 1
-    await sleep(RATE_LIMIT_MS)
-    if (prices.length >= targetDays && (!existing?.prices?.length || fetchedMonths >= 2)) break
+    await sleep(options.rateLimit)
+    if (prices.length >= options.targetDays && (!existing?.prices?.length || fetchedMonths >= 2)) break
   }
   const errors = prices.flatMap((point) => validatePoint(point).map((error) => `${point.tradeDate}: ${error}`))
   if (errors.length) throw new Error(errors.slice(0, 3).join('；'))
@@ -247,7 +262,7 @@ async function syncSymbol(symbol, fallbackName, targetDays) {
     status: stale ? 'stale' : warnings.length ? 'partial' : 'official', warnings: [...new Set(warnings)], prices,
   }
   await atomicWriteJson(output, dataset)
-  return dataset
+  return { dataset, skipped: false }
 }
 
 async function rebuildIndex(failedSymbols = []) {
@@ -288,24 +303,43 @@ async function main() {
   const options = parseArgs(process.argv.slice(2))
   await mkdir(STOCK_DIR, { recursive: true })
   const universe = await loadStockUniverse()
-  let symbols = options.symbols.length ? options.symbols : options.mode === 'all' ? [...universe.keys()] : options.mode === 'watchlist' ? WATCHLIST_SYMBOLS : PRIORITY_SYMBOLS
+  const previousCheckpoint = await readJson(CHECKPOINT_PATH, null)
+  let symbols = options.symbols.length ? options.symbols : options.mode === 'all' ? [...universe.stocks.keys()] : options.mode === 'watchlist' ? WATCHLIST_SYMBOLS : PRIORITY_SYMBOLS
+  if (options.retryFailedOnly) symbols = (previousCheckpoint?.failedSymbols ?? []).filter((symbol) => universe.stocks.has(symbol))
+  if (options.resume && previousCheckpoint?.status === 'running' && !options.symbols.length) options.offset = Math.max(options.offset, previousCheckpoint.currentOffset ?? 0)
   symbols = symbols.slice(Math.max(0, options.offset), Math.max(0, options.offset) + Math.max(0, options.batchSize))
   console.log(`[history] 模式=${options.mode}，本批 ${symbols.length} 檔，目標至少 ${options.targetDays} 個交易日。`)
   const failed = []
   let updated = 0
-  for (const symbol of symbols) {
+  let skipped = 0
+  const checkpoint = { totalSymbols: symbols.length, completedSymbols: 0, failedSymbols: [], skippedSymbols: 0, currentOffset: options.offset, lastCompletedSymbol: null, startedAt: new Date().toISOString(), updatedAt: new Date().toISOString(), targetDays: options.targetDays, status: 'running' }
+  await atomicWriteJson(CHECKPOINT_PATH, checkpoint)
+  for (let batchIndex = 0; batchIndex < symbols.length; batchIndex += 1) {
+    const symbol = symbols[batchIndex]
     try {
-      const dataset = await syncSymbol(symbol, universe.get(symbol) ?? symbol, options.targetDays)
-      updated += 1
+      const result = await syncSymbol(symbol, universe.stocks.get(symbol) ?? symbol, options, universe.tradeDate)
+      const dataset = result.dataset
+      if (result.skipped) skipped += 1
+      else updated += 1
       console.log(`[history] ${symbol} ${dataset.name}: ${dataset.recordCount} 日，${dataset.firstTradeDate}～${dataset.lastTradeDate}，${dataset.status}`)
     } catch (error) {
       failed.push(symbol)
       console.error(`[history] ${symbol} 失敗；保留既有有效檔案：${error instanceof Error ? error.message : String(error)}`)
     }
+    checkpoint.completedSymbols = batchIndex + 1 - failed.length
+    checkpoint.failedSymbols = [...failed]
+    checkpoint.skippedSymbols = skipped
+    checkpoint.currentOffset = options.offset + batchIndex + 1
+    checkpoint.lastCompletedSymbol = symbol
+    checkpoint.updatedAt = new Date().toISOString()
+    await atomicWriteJson(CHECKPOINT_PATH, checkpoint)
   }
   const index = await rebuildIndex(failed)
+  checkpoint.status = failed.length ? 'partial' : 'completed'
+  checkpoint.updatedAt = new Date().toISOString()
+  await atomicWriteJson(CHECKPOINT_PATH, checkpoint)
   console.log(`[history] 完成：更新 ${updated}、失敗 ${failed.length}、可用 ${index.summary.availableSymbols}、250 日完整 ${index.summary.complete250Count}。`)
-  if (failed.length) process.exitCode = 1
+  if (failed.length) console.warn(`[history] ${failed.length} 檔未完成，已保留於 checkpoint failedSymbols；成功檔案仍可進入驗證與索引產生。`)
 }
 
 main().catch((error) => {

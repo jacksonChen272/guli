@@ -7,14 +7,23 @@ on:
         description: Start offset in the TWSE common-stock universe
         required: true
         default: '0'
-      batch_size:
-        description: Number of symbols to backfill in this run
+      batchSize:
+        description: Number of symbols in this batch
         required: true
-        default: '25'
-      target_days:
+        default: '40'
+      targetDays:
         description: Minimum actual trading days per symbol
         required: true
         default: '250'
+      retryFailedOnly:
+        description: Retry only symbols in the last checkpoint failed list
+        type: boolean
+        required: true
+        default: false
+      symbols:
+        description: Optional comma-separated symbols (overrides universe batch)
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -26,12 +35,13 @@ concurrency:
 jobs:
   backfill:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -42,18 +52,36 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Sync latest TWSE stock universe
+        run: npm run data:twse:stocks
+
       - name: Backfill selected batch
         shell: bash
+        env:
+          OFFSET: ${{ inputs.offset }}
+          BATCH_SIZE: ${{ inputs.batchSize }}
+          TARGET_DAYS: ${{ inputs.targetDays }}
+          RETRY_FAILED: ${{ inputs.retryFailedOnly }}
+          SYMBOLS: ${{ inputs.symbols }}
         run: |
-          npm run data:twse:history:all -- --offset "${{ inputs.offset }}" --batch-size "${{ inputs.batch_size }}" --target-days "${{ inputs.target_days }}" 2>&1 | tee stock-history-backfill.log
+          ARGS=(--all --offset "$OFFSET" --batch-size "$BATCH_SIZE" --target-days "$TARGET_DAYS" --resume)
+          if [[ "$RETRY_FAILED" == "true" ]]; then ARGS+=(--retry-failed-only); fi
+          if [[ -n "$SYMBOLS" ]]; then ARGS+=(--symbols "$SYMBOLS"); fi
+          npm run data:twse:history -- "${ARGS[@]}" 2>&1 | tee stock-history-backfill.log
 
       - name: Validate static datasets
         run: npm run data:validate
 
-      - name: Run tests
+      - name: Generate technical index
+        run: npm run technical:index:generate
+
+      - name: Generate screener results
+        run: npm run screener:generate
+
+      - name: Run related tests
         run: npm run test:run
 
-      - name: Upload backfill log
+      - name: Upload execution log
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -61,16 +89,18 @@ jobs:
           path: stock-history-backfill.log
           if-no-files-found: warn
 
-      - name: Commit changed history datasets
+      - name: Commit changed history and indexes
         shell: bash
+        env:
+          OFFSET: ${{ inputs.offset }}
         run: |
-          if git diff --quiet -- public/data/twse-stock-history; then
-            echo "Stock history unchanged; skipping commit."
+          if git diff --quiet -- public/data/twse-stock-history public/data/technical-index public/data/screener; then
+            echo "Backfill output unchanged; skipping commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/twse-stock-history
-          git commit -m "chore(data): backfill TWSE stock history"
-          git push origin HEAD:main
-
+          git add public/data/twse-stock-history public/data/technical-index public/data/screener
+          git commit -m "chore(data): backfill TWSE stock history batch ${OFFSET}"
+          git pull --rebase origin main
+          git push origin HEAD:main || { git pull --rebase origin main && git push origin HEAD:main; }

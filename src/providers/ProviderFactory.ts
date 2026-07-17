@@ -136,7 +136,7 @@ export class ProviderFactory {
         isExplicitMock: false,
         migrationNotice: migratedFromMock
           ? '偵測到舊版 Mock 資料來源設定，已自動遷移至 TWSE 官方資料。'
-          : '資料來源設定已更新為 GULI v0.9.0-rc.1 格式。',
+          : '資料來源設定已更新為 GULI v1.0.0-beta.1 格式。',
       }
       this.persistPreference(nextId)
     }

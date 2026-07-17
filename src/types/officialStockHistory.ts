@@ -82,3 +82,16 @@ export interface StockHistoryDatasetStatus {
   warnings: string[]
 }
 
+export interface StockHistoryBackfillProgress {
+  totalSymbols: number
+  completedSymbols: number
+  failedSymbols: string[]
+  skippedSymbols: number
+  currentOffset: number
+  lastCompletedSymbol: string | null
+  startedAt: string
+  updatedAt: string
+  targetDays: number
+  status: 'running' | 'completed' | 'partial'
+}
+

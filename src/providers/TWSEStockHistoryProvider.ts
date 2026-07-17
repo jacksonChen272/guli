@@ -1,5 +1,5 @@
 import { validateOfficialStockHistory } from '../services/stockHistory/StockHistoryValidator'
-import type { OfficialStockHistory, StockHistoryDatasetStatus, StockHistoryIndex } from '../types/officialStockHistory'
+import type { OfficialStockHistory, StockHistoryBackfillProgress, StockHistoryDatasetStatus, StockHistoryIndex } from '../types/officialStockHistory'
 
 type Fetcher = (input: RequestInfo | URL, init?: RequestInit) => Promise<Response>
 
@@ -55,6 +55,8 @@ export class TWSEStockHistoryProvider {
   }
 
   getIndex() { return this.read('data/twse-stock-history/index.json', isIndex) }
+
+  getBackfillProgress() { return this.read('data/twse-stock-history/backfill-progress.json', (value): value is StockHistoryBackfillProgress => Boolean(value && typeof value === 'object' && 'totalSymbols' in value && 'completedSymbols' in value && 'status' in value)) }
 
   getHistory(symbol: string) {
     return this.read(this.getHistoryPath(symbol), (value): value is OfficialStockHistory => {

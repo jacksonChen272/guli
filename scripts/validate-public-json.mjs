@@ -16,8 +16,41 @@ export function validateJsonText(text, file = 'unknown.json') {
   return { valid: errors.length === 0, errors, value }
 }
 
+export function validateStockHistoryDataset(value, file) {
+  const errors = []
+  if (!value || typeof value !== 'object') return [`${file}: 歷史行情根節點無效`]
+  const expectedSymbol = path.basename(file, '.json')
+  if (value.symbol !== expectedSymbol) errors.push(`${file}: symbol 與檔名不一致`)
+  if (typeof value.name !== 'string' || !value.name.trim()) errors.push(`${file}: name 不可空白`)
+  if (typeof value.name === 'string' && (/\uFFFD/.test(value.name) || /\?{3,}/.test(value.name))) errors.push(`${file}: name 含疑似亂碼`)
+  if (value.source !== 'TWSE') errors.push(`${file}: source 必須為 TWSE`)
+  if (!Number.isFinite(Date.parse(value.fetchedAt))) errors.push(`${file}: fetchedAt 必須為有效 ISO 日期`)
+  if (!Array.isArray(value.prices) || !value.prices.length) return [...errors, `${file}: prices 必須為非空陣列`]
+  const dates = new Set()
+  let previousDate = ''
+  for (const point of value.prices) {
+    if (!point || typeof point !== 'object' || typeof point.tradeDate !== 'string') { errors.push(`${file}: prices 包含無效項目`); continue }
+    if (dates.has(point.tradeDate)) errors.push(`${file}: 重複交易日期 ${point.tradeDate}`)
+    if (previousDate && point.tradeDate <= previousDate) errors.push(`${file}: 日期未嚴格升冪 ${point.tradeDate}`)
+    dates.add(point.tradeDate); previousDate = point.tradeDate
+    for (const field of ['open', 'high', 'low', 'close']) if (point[field] !== null && (!Number.isFinite(point[field]) || point[field] < 0)) errors.push(`${file}: ${point.tradeDate} ${field} 無效`)
+    for (const field of ['volume', 'tradingAmount', 'transactionCount']) if (point[field] !== null && (!Number.isFinite(point[field]) || point[field] < 0)) errors.push(`${file}: ${point.tradeDate} ${field} 不可為負`)
+    if ([point.open, point.high, point.low, point.close].every((number) => number !== null)) {
+      if (point.high < Math.max(point.open, point.close, point.low)) errors.push(`${file}: ${point.tradeDate} high 低於其他 OHLC`)
+      if (point.low > Math.min(point.open, point.close, point.high)) errors.push(`${file}: ${point.tradeDate} low 高於其他 OHLC`)
+    }
+  }
+  if (value.recordCount !== value.prices.length) errors.push(`${file}: recordCount 與 prices 長度不一致`)
+  if (value.firstTradeDate !== value.prices[0].tradeDate) errors.push(`${file}: firstTradeDate 與第一筆不一致`)
+  if (value.lastTradeDate !== value.prices.at(-1).tradeDate) errors.push(`${file}: lastTradeDate 與最後一筆不一致`)
+  return errors
+}
+
 export function validateJsonShape(value, file) {
   const errors = []
+  if (file.includes('twse-stock-history/stocks/')) errors.push(...validateStockHistoryDataset(value, file))
+  if (file.includes('technical-index/latest.json') && (value?.formulaVersion !== 'technical-v1.0' || !Array.isArray(value?.records))) errors.push(`${file}: 技術索引 schema 不完整`)
+  if (file.includes('screener/latest.json') && (value?.formulaVersion !== 'screener-v1.0' || !Array.isArray(value?.results) || !Array.isArray(value?.presets))) errors.push(`${file}: 選股結果 schema 不完整`)
   if (value === null || typeof value !== 'object') return [`${file}: JSON 根節點必須為物件或陣列`]
   if (file.includes('twse-stock-history/stocks/')) {
     const required = ['schemaVersion', 'symbol', 'name', 'market', 'source', 'sourceUrl', 'fetchedAt', 'firstTradeDate', 'lastTradeDate', 'recordCount', 'status', 'warnings', 'prices']
