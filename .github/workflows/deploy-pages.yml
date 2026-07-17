@@ -35,6 +35,9 @@ jobs:
       - name: Run tests
         run: npm run test:run
 
+      - name: Validate static JSON datasets
+        run: npm run data:validate
+
       - name: Build Vite application
         run: npm run build
 

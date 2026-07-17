@@ -1,0 +1,76 @@
+name: Backfill TWSE stock history
+
+on:
+  workflow_dispatch:
+    inputs:
+      offset:
+        description: Start offset in the TWSE common-stock universe
+        required: true
+        default: '0'
+      batch_size:
+        description: Number of symbols to backfill in this run
+        required: true
+        default: '25'
+      target_days:
+        description: Minimum actual trading days per symbol
+        required: true
+        default: '250'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: twse-stock-history-backfill
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Backfill selected batch
+        shell: bash
+        run: |
+          npm run data:twse:history:all -- --offset "${{ inputs.offset }}" --batch-size "${{ inputs.batch_size }}" --target-days "${{ inputs.target_days }}" 2>&1 | tee stock-history-backfill.log
+
+      - name: Validate static datasets
+        run: npm run data:validate
+
+      - name: Run tests
+        run: npm run test:run
+
+      - name: Upload backfill log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stock-history-backfill-${{ github.run_id }}
+          path: stock-history-backfill.log
+          if-no-files-found: warn
+
+      - name: Commit changed history datasets
+        shell: bash
+        run: |
+          if git diff --quiet -- public/data/twse-stock-history; then
+            echo "Stock history unchanged; skipping commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/twse-stock-history
+          git commit -m "chore(data): backfill TWSE stock history"
+          git push origin HEAD:main
+

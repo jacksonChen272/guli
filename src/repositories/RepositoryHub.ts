@@ -19,7 +19,9 @@ import { InstitutionRepository } from './InstitutionRepository'
 import { MarketRepository } from './MarketRepository'
 import { SnapshotRepository } from './SnapshotRepository'
 import { StockRepository } from './StockRepository'
+import { StockHistoryRepository } from './StockHistoryRepository'
 import { StockSnapshotRepository } from './StockSnapshotRepository'
+import { TWSEStockHistoryProvider } from '../providers/TWSEStockHistoryProvider'
 import { WatchlistDashboardRepository } from './WatchlistDashboardRepository'
 import { WatchlistRepository } from './WatchlistRepository'
 
@@ -38,6 +40,7 @@ export class RepositoryHub {
   private readonly policy = new CachePolicy()
   market!: MarketRepository
   stocks!: StockRepository
+  stockHistory!: StockHistoryRepository
   industries!: IndustryRepository
   institutions!: InstitutionRepository
   watchlist!: WatchlistRepository
@@ -58,6 +61,7 @@ export class RepositoryHub {
     this.cache = new MemoryCache()
     this.market = new MarketRepository(provider, this.cache, this.policy)
     this.stocks = new StockRepository(mockProvider, this.cache, this.policy)
+    this.stockHistory = new StockHistoryRepository(new TWSEStockHistoryProvider(), this.cache, this.policy)
     this.industries = new IndustryRepository(mockProvider, this.cache, this.policy)
     this.institutions = new InstitutionRepository(this.cache, this.policy)
     this.watchlist = new WatchlistRepository(this.cache, this.policy)

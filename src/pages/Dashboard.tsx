@@ -3,6 +3,7 @@ import { useCallback, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { CapitalRotationChart } from '../components/charts/CapitalRotationChart'
 import { DataSourceInfoCard } from '../components/dashboard/DataSourceInfoCard'
+import { TechnicalMarketSnapshot } from '../components/dashboard/TechnicalMarketSnapshot'
 import { InstitutionalOverview } from '../components/dashboard/InstitutionalOverview'
 import { DecisionDashboardCard } from '../components/dashboard/DecisionDashboardCard'
 import { GubaoInsight } from '../components/dashboard/GubaoInsight'
@@ -84,6 +85,7 @@ export function Dashboard() {
       <MarketBreadth data={officialMarket} />
     </section>
 
+    <TechnicalMarketSnapshot />
     <InstitutionalOverview />
 
     <section aria-label="產業輪動快照"><IndustryRotationPreview /></section>

@@ -65,7 +65,7 @@ describe('交易工作區、決策與行動可存取性契約', () => {
   it('因子卡分成正向、壓力與缺值', () => { ['正向因子', '壓力因子', '缺值因子'].forEach((label) => expect(stockDecision).toContain(label)); expect(trace).toContain('缺值與資料不足') })
   it('行動搜尋為全螢幕且有最近搜尋', () => { expect(search).toContain('fixed inset-0'); expect(search).toContain('最近搜尋'); expect(search).toContain("event.key === 'Escape'") })
   it('Header 與 Drawer 觸控區保留 safe area', () => { expect(css).toContain('safe-area-inset-bottom'); expect(search).toContain('safe-area-inset-bottom') })
-  it('Sidebar 顯示 v0.8.0 beta 資料狀態', () => { expect(sidebar).toContain('GULI v0.8.0-beta.1'); expect(sidebar).toContain('Decision Engine v1.0'); expect(sidebar).toContain('Beta Data Guard') })
+  it('Sidebar 顯示 v0.9.0 rc 歷史行情基礎', () => { expect(sidebar).toContain('GULI v0.9.0-rc.1'); expect(sidebar).toContain('Decision Engine v1.0'); expect(sidebar).toContain('Technical Foundation') })
   it('Card 向後相容 compact、standard、spacious', () => expect(card).toContain("'compact' | 'standard' | 'spacious'"))
   it('本次 UI 不改變 Decision 權重', () => expect(decisionWeights.stock).toEqual({ stock_health: .25, daily_price_strength: .2, liquidity: .15, market_environment: .15, industry_environment: .15, risk_control: .1, data_quality: 0 }))
 })

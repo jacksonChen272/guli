@@ -43,6 +43,9 @@ jobs:
       - name: Fetch official TWSE institutional dataset
         run: npm run data:twse:institutional
 
+      - name: Incrementally update priority stock history
+        run: npm run data:twse:history
+
       - name: Generate stock snapshots
         run: npm run stock:snapshot:generate
 
@@ -55,6 +58,9 @@ jobs:
       - name: Generate decisions
         run: npm run decision:generate
 
+      - name: Validate all public JSON
+        run: npm run data:validate
+
       - name: Run tests
         run: npm run test:run
 
@@ -64,12 +70,12 @@ jobs:
       - name: Commit changed snapshot
         shell: bash
         run: |
-          if git diff --quiet -- public/data/twse-market-overview.json public/data/twse-stocks public/data/twse-institutional public/data/stock-history public/data/history public/data/industry-history public/data/decisions; then
+          if git diff --quiet -- public/data/twse-market-overview.json public/data/twse-stocks public/data/twse-institutional public/data/twse-stock-history public/data/stock-history public/data/history public/data/industry-history public/data/decisions; then
             echo "Market data and snapshots unchanged; skipping commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/twse-market-overview.json public/data/twse-stocks public/data/twse-institutional public/data/stock-history public/data/history public/data/industry-history public/data/decisions
+          git add public/data/twse-market-overview.json public/data/twse-stocks public/data/twse-institutional public/data/twse-stock-history public/data/stock-history public/data/history public/data/industry-history public/data/decisions
           git commit -m "chore(data): update TWSE datasets, snapshots and decisions"
           git push origin HEAD:main

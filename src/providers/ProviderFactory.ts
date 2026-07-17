@@ -4,7 +4,7 @@ import { FutureYahooProvider } from './FutureYahooProvider'
 import { MockProvider } from './MockProvider'
 import type { GuliDataProvider, ProviderDescriptor, ProviderId } from './ProviderTypes'
 
-export const PROVIDER_PREFERENCE_VERSION = '0.8.0-beta.1'
+export const PROVIDER_PREFERENCE_VERSION = '0.9.0-rc.1'
 export const PROVIDER_PREFERENCE_KEY = 'guli-provider-selection'
 
 const LEGACY_PROVIDER_KEYS = [
@@ -136,7 +136,7 @@ export class ProviderFactory {
         isExplicitMock: false,
         migrationNotice: migratedFromMock
           ? '偵測到舊版 Mock 資料來源設定，已自動遷移至 TWSE 官方資料。'
-          : '資料來源設定已更新為 GULI v0.8.0-beta.1 格式。',
+          : '資料來源設定已更新為 GULI v0.9.0-rc.1 格式。',
       }
       this.persistPreference(nextId)
     }
