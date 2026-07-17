@@ -1,5 +1,14 @@
 # GULI Roadmap
 
+## GULI v1.0.0-beta.3
+
+- [x] 每日市場熱力圖靜態索引、Repository、來源分層與 JSON Guard
+- [x] 首頁產業／個股 Treemap、Tooltip、鑽取、返回上層與 100 檔上限
+- [x] `today-narrative-v1.0` 固定規則摘要、Hero 操作環境與「為什麼？」依據
+- [x] 今日觀察 Top 3、熱門族群、技術機會及資料完整度資訊升級
+- [ ] 以正式產業分類來源逐批提高目前產業 mapping 覆蓋率
+- [ ] 持續回補全市場歷史行情，提高 Technical Index 實際樣本數
+
 ## GULI v1.0.0-beta.1
 
 - [x] Today Dashboard 首頁資訊流與 375px 響應式改版

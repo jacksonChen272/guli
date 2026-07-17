@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.0-beta.3]
+
+- 新增由每日靜態索引驅動的市場熱力圖，支援產業／個股、成交金額／成交量，以及漲跌幅／Technical／Decision 顏色切換。
+- 新增 `MarketHeatmapRepository`、可重現生成腳本、JSON Guard、來源分層、樣本覆蓋率與每日資料 workflow 接線。
+- 首頁市場摘要升級為 `today-narrative-v1.0` 固定規則，並加入「為什麼？」、今日操作環境及既有全域股票搜尋入口。
+- 「今日推薦」更名為「今日觀察 Top 3」，完整揭露分數、信心、風險、資料日期與資料來源。
+- 熱門族群、技術機會與資料完整度補上實際樣本數及規則推導標示；Decision Engine v1.0 與 Technical Score 權重未變更。
+
 ## [1.0.0-beta.1]
 
 - 首頁升級為 Today Dashboard，依序呈現今日市場、推薦候選、熱門族群、技術機會、排行榜、最新消息與資料完整度。
