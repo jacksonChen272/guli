@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.9.0-rc.1]
+
+- 新增 TWSE 官方個股歷史行情同步、增量合併、原子寫入與公開 JSON 驗證。
+- 新增 StockHistory Provider／Repository 與 250 個實際交易日覆蓋狀態。
+- 新增 MA、EMA、RSI、KD、MACD、布林通道、ATR、量比、報酬與波動率固定公式。
+- 個股頁導入 TradingView Lightweight Charts v5 K 線、成交量、均線與布林通道。
+- Dashboard 與資料覆蓋率頁新增歷史行情技術快照；技術推導不外推至全市場。
+- 新增日常增量同步與分批 backfill GitHub Actions，部署前強制驗證公開 JSON。
+- Decision v1.0、健康分數與 Snapshot 既有權重及商業規則維持不變。
+
 ## [0.8.0-beta.1]
 
 - 接入 TWSE BFI82U 與 T86 官方三大法人盤後資料，建立原子同步、歷史檔、Provider、Repository、快取與排行榜。

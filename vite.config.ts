@@ -8,6 +8,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks(id) {
+          if (id.includes('node_modules/lightweight-charts')) return 'lightweight-charts'
           if (id.includes('node_modules/echarts') || id.includes('node_modules/zrender') || id.includes('node_modules/echarts-for-react')) return 'echarts'
           if (id.includes('node_modules/react-router')) return 'router'
           if (id.includes('node_modules/zustand')) return 'state'
