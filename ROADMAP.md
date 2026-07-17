@@ -1,5 +1,14 @@
 # GULI Roadmap
 
+## GULI v1.0.0-beta.1
+
+- [x] 全市場分批歷史行情回補基礎
+- [x] Technical Index 與 Technical Score technical-v1.0
+- [x] 智慧選股規則、Repository、UI 與 CSV 匯出
+- [x] Dashboard、股寶與 Data Coverage 整合
+- [ ] 以多批 GitHub Actions 持續完成全部上市普通股 250 日覆蓋
+- [ ] 公開測試後評估櫃買市場與更長週期資料
+
 ## 0.9.0-rc.1
 
 - 已完成 TWSE 上市普通股歷史行情資料層與優先股票 250 日基礎。

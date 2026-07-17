@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.0-beta.1]
+
+- 新增可續跑、可分批及具 checkpoint 的 TWSE 上市普通股歷史行情回補。
+- 新增 technical-v1.0、全市場技術索引與十種固定規則 Preset。
+- 新增智慧選股中心、Dashboard compact 預覽、股寶選股問答及 Data Coverage 進度。
+- GitHub Actions 分離每日增量更新與全市場 backfill；資料驗證失敗即停止後續 build。
+- Decision Engine v1.0、Health Score 與 Stock Snapshot Score 權重維持不變。
+
 ## [0.9.0-rc.1]
 
 - 新增 TWSE 官方個股歷史行情同步、增量合併、原子寫入與公開 JSON 驗證。
