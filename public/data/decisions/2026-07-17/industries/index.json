@@ -1074,191 +1074,14 @@
     },
     {
       "entityType": "industry",
-      "entityId": "17",
-      "entityName": "金融保險",
+      "entityId": "14",
+      "entityName": "建材營造",
       "tradeDate": "2026-07-17",
-      "score": 48.6,
+      "score": 46,
       "label": "偏弱",
       "direction": "bearish",
       "confidence": 94,
       "summary": "偏弱，風險控制為主要貢獻。",
-      "factors": [
-        {
-          "code": "industry_strength",
-          "name": "產業強度",
-          "rawValue": 54.8,
-          "normalizedScore": 54.8,
-          "weight": 0.25,
-          "contribution": 1.2,
-          "direction": "neutral",
-          "explanation": "產業強度: 54.8",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "industry_momentum",
-          "name": "產業動能",
-          "rawValue": 32.9,
-          "normalizedScore": 32.9,
-          "weight": 0.2,
-          "contribution": -3.42,
-          "direction": "negative",
-          "explanation": "產業動能: 32.9",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "capital_flow",
-          "name": "資金流向",
-          "rawValue": 53.3,
-          "normalizedScore": 53.3,
-          "weight": 0.2,
-          "contribution": 0.66,
-          "direction": "neutral",
-          "explanation": "資金流向: 53.3",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "breadth",
-          "name": "產業廣度",
-          "rawValue": 28.1,
-          "normalizedScore": 28.1,
-          "weight": 0.15,
-          "contribution": -3.28,
-          "direction": "negative",
-          "explanation": "產業廣度: 28.1",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "rank_trend",
-          "name": "排名趨勢",
-          "rawValue": 34,
-          "normalizedScore": 34,
-          "weight": 0.1,
-          "contribution": -1.6,
-          "direction": "negative",
-          "explanation": "排名趨勢: 34",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "risk_control",
-          "name": "風險控制",
-          "rawValue": 100,
-          "normalizedScore": 100,
-          "weight": 0.1,
-          "contribution": 5,
-          "direction": "positive",
-          "explanation": "風險控制: 100",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "data_quality",
-          "name": "資料品質",
-          "rawValue": null,
-          "normalizedScore": null,
-          "weight": 0,
-          "contribution": null,
-          "direction": "unknown",
-          "explanation": "Missing verified data.",
-          "evidence": [],
-          "sourceType": "derived"
-        }
-      ],
-      "risks": [],
-      "trace": {
-        "formulaVersion": "decision-v1.0",
-        "totalPositiveContribution": 6.86,
-        "totalNegativeContribution": -8.3,
-        "totalContribution": -1.44,
-        "availableWeight": 1,
-        "missingWeight": 0,
-        "normalizationApplied": false,
-        "calculationSteps": [
-          "availableWeight=1",
-          "missingWeight=0",
-          "normalized=false"
-        ]
-      },
-      "sources": [
-        {
-          "id": "twse-stock-daily",
-          "name": "TWSE 個股盤後資料",
-          "type": "official",
-          "fields": [
-            "return1d",
-            "tradingAmount",
-            "tradingVolume",
-            "breadth",
-            "leaders"
-          ]
-        },
-        {
-          "id": "twse-industry-mapping",
-          "name": "TWSE 上市公司產業分類",
-          "type": "official",
-          "fields": [
-            "industryCode",
-            "industryName",
-            "constituents"
-          ]
-        },
-        {
-          "id": "twse-institutional",
-          "name": "TWSE 三大法人盤後資料",
-          "type": "official",
-          "fields": [
-            "institutionalNetBuy"
-          ]
-        },
-        {
-          "id": "guli-technical-index",
-          "name": "GULI Technical Index",
-          "type": "derived",
-          "fields": [
-            "return20d",
-            "technicalAverage",
-            "highRiskCount"
-          ]
-        },
-        {
-          "id": "guli-decision-index",
-          "name": "GULI Decision Repository",
-          "type": "derived",
-          "fields": [
-            "decisionAverage"
-          ]
-        },
-        {
-          "id": "guli-industry-rules",
-          "name": "GULI Industry Snapshot Engine",
-          "type": "derived",
-          "fields": [
-            "scores",
-            "rank",
-            "status",
-            "risks"
-          ]
-        }
-      ],
-      "warnings": [
-        "技術資料與行情交易日不一致，僅聚合可用樣本。",
-        "Decision 資料與行情交易日不一致，僅聚合可用樣本。"
-      ]
-    },
-    {
-      "entityType": "industry",
-      "entityId": "14",
-      "entityName": "建材營造",
-      "tradeDate": "2026-07-17",
-      "score": 45.2,
-      "label": "偏弱",
-      "direction": "bearish",
-      "confidence": 94,
-      "summary": "偏弱，排名趨勢為主要貢獻。",
       "factors": [
         {
           "code": "industry_strength",
@@ -1311,12 +1134,12 @@
         {
           "code": "rank_trend",
           "name": "排名趨勢",
-          "rawValue": 2,
-          "normalizedScore": 2,
+          "rawValue": 10,
+          "normalizedScore": 10,
           "weight": 0.1,
-          "contribution": -4.8,
+          "contribution": -4,
           "direction": "negative",
-          "explanation": "排名趨勢: 2",
+          "explanation": "排名趨勢: 10",
           "evidence": [],
           "sourceType": "derived"
         },
@@ -1349,8 +1172,8 @@
       "trace": {
         "formulaVersion": "decision-v1.0",
         "totalPositiveContribution": 6.21,
-        "totalNegativeContribution": -11.04,
-        "totalContribution": -4.83,
+        "totalNegativeContribution": -10.24,
+        "totalContribution": -4.03,
         "availableWeight": 1,
         "missingWeight": 0,
         "normalizationApplied": false,
@@ -1431,7 +1254,7 @@
       "entityId": "04",
       "entityName": "紡織纖維",
       "tradeDate": "2026-07-17",
-      "score": 52.3,
+      "score": 53.1,
       "label": "中性",
       "direction": "neutral",
       "confidence": 94,
@@ -1488,12 +1311,12 @@
         {
           "code": "rank_trend",
           "name": "排名趨勢",
-          "rawValue": 90,
-          "normalizedScore": 90,
+          "rawValue": 98,
+          "normalizedScore": 98,
           "weight": 0.1,
-          "contribution": 4,
+          "contribution": 4.8,
           "direction": "positive",
-          "explanation": "排名趨勢: 90",
+          "explanation": "排名趨勢: 98",
           "evidence": [],
           "sourceType": "derived"
         },
@@ -1533,9 +1356,186 @@
       ],
       "trace": {
         "formulaVersion": "decision-v1.0",
-        "totalPositiveContribution": 8.27,
+        "totalPositiveContribution": 9.07,
         "totalNegativeContribution": -5.93,
-        "totalContribution": 2.34,
+        "totalContribution": 3.14,
+        "availableWeight": 1,
+        "missingWeight": 0,
+        "normalizationApplied": false,
+        "calculationSteps": [
+          "availableWeight=1",
+          "missingWeight=0",
+          "normalized=false"
+        ]
+      },
+      "sources": [
+        {
+          "id": "twse-stock-daily",
+          "name": "TWSE 個股盤後資料",
+          "type": "official",
+          "fields": [
+            "return1d",
+            "tradingAmount",
+            "tradingVolume",
+            "breadth",
+            "leaders"
+          ]
+        },
+        {
+          "id": "twse-industry-mapping",
+          "name": "TWSE 上市公司產業分類",
+          "type": "official",
+          "fields": [
+            "industryCode",
+            "industryName",
+            "constituents"
+          ]
+        },
+        {
+          "id": "twse-institutional",
+          "name": "TWSE 三大法人盤後資料",
+          "type": "official",
+          "fields": [
+            "institutionalNetBuy"
+          ]
+        },
+        {
+          "id": "guli-technical-index",
+          "name": "GULI Technical Index",
+          "type": "derived",
+          "fields": [
+            "return20d",
+            "technicalAverage",
+            "highRiskCount"
+          ]
+        },
+        {
+          "id": "guli-decision-index",
+          "name": "GULI Decision Repository",
+          "type": "derived",
+          "fields": [
+            "decisionAverage"
+          ]
+        },
+        {
+          "id": "guli-industry-rules",
+          "name": "GULI Industry Snapshot Engine",
+          "type": "derived",
+          "fields": [
+            "scores",
+            "rank",
+            "status",
+            "risks"
+          ]
+        }
+      ],
+      "warnings": [
+        "技術資料與行情交易日不一致，僅聚合可用樣本。",
+        "Decision 資料與行情交易日不一致，僅聚合可用樣本。"
+      ]
+    },
+    {
+      "entityType": "industry",
+      "entityId": "17",
+      "entityName": "金融保險",
+      "tradeDate": "2026-07-17",
+      "score": 44.6,
+      "label": "偏弱",
+      "direction": "bearish",
+      "confidence": 94,
+      "summary": "偏弱，產業動能為主要貢獻。",
+      "factors": [
+        {
+          "code": "industry_strength",
+          "name": "產業強度",
+          "rawValue": 52.6,
+          "normalizedScore": 52.6,
+          "weight": 0.25,
+          "contribution": 0.65,
+          "direction": "neutral",
+          "explanation": "產業強度: 52.6",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "industry_momentum",
+          "name": "產業動能",
+          "rawValue": 24.8,
+          "normalizedScore": 24.8,
+          "weight": 0.2,
+          "contribution": -5.04,
+          "direction": "negative",
+          "explanation": "產業動能: 24.8",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "capital_flow",
+          "name": "資金流向",
+          "rawValue": 53.3,
+          "normalizedScore": 53.3,
+          "weight": 0.2,
+          "contribution": 0.66,
+          "direction": "neutral",
+          "explanation": "資金流向: 53.3",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "breadth",
+          "name": "產業廣度",
+          "rawValue": 28.1,
+          "normalizedScore": 28.1,
+          "weight": 0.15,
+          "contribution": -3.28,
+          "direction": "negative",
+          "explanation": "產業廣度: 28.1",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "rank_trend",
+          "name": "排名趨勢",
+          "rawValue": 18,
+          "normalizedScore": 18,
+          "weight": 0.1,
+          "contribution": -3.2,
+          "direction": "negative",
+          "explanation": "排名趨勢: 18",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "risk_control",
+          "name": "風險控制",
+          "rawValue": 98.1,
+          "normalizedScore": 98.1,
+          "weight": 0.1,
+          "contribution": 4.81,
+          "direction": "positive",
+          "explanation": "風險控制: 98.1",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "data_quality",
+          "name": "資料品質",
+          "rawValue": null,
+          "normalizedScore": null,
+          "weight": 0,
+          "contribution": null,
+          "direction": "unknown",
+          "explanation": "Missing verified data.",
+          "evidence": [],
+          "sourceType": "derived"
+        }
+      ],
+      "risks": [],
+      "trace": {
+        "formulaVersion": "decision-v1.0",
+        "totalPositiveContribution": 6.12,
+        "totalNegativeContribution": -11.52,
+        "totalContribution": -5.4,
         "availableWeight": 1,
         "missingWeight": 0,
         "normalizationApplied": false,
@@ -2868,10 +2868,187 @@
     },
     {
       "entityType": "industry",
+      "entityId": "15",
+      "entityName": "航運業",
+      "tradeDate": "2026-07-17",
+      "score": 51.1,
+      "label": "中性",
+      "direction": "neutral",
+      "confidence": 94,
+      "summary": "中性，產業廣度為主要貢獻。",
+      "factors": [
+        {
+          "code": "industry_strength",
+          "name": "產業強度",
+          "rawValue": 49.2,
+          "normalizedScore": 49.2,
+          "weight": 0.25,
+          "contribution": -0.2,
+          "direction": "neutral",
+          "explanation": "產業強度: 49.2",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "industry_momentum",
+          "name": "產業動能",
+          "rawValue": 37.8,
+          "normalizedScore": 37.8,
+          "weight": 0.2,
+          "contribution": -2.44,
+          "direction": "negative",
+          "explanation": "產業動能: 37.8",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "capital_flow",
+          "name": "資金流向",
+          "rawValue": 54.5,
+          "normalizedScore": 54.5,
+          "weight": 0.2,
+          "contribution": 0.9,
+          "direction": "neutral",
+          "explanation": "資金流向: 54.5",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "breadth",
+          "name": "產業廣度",
+          "rawValue": 3.6,
+          "normalizedScore": 3.6,
+          "weight": 0.15,
+          "contribution": -6.96,
+          "direction": "negative",
+          "explanation": "產業廣度: 3.6",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "rank_trend",
+          "name": "排名趨勢",
+          "rawValue": 106,
+          "normalizedScore": 100,
+          "weight": 0.1,
+          "contribution": 5,
+          "direction": "positive",
+          "explanation": "排名趨勢: 100",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "risk_control",
+          "name": "風險控制",
+          "rawValue": 97.9,
+          "normalizedScore": 97.9,
+          "weight": 0.1,
+          "contribution": 4.79,
+          "direction": "positive",
+          "explanation": "風險控制: 97.9",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "data_quality",
+          "name": "資料品質",
+          "rawValue": null,
+          "normalizedScore": null,
+          "weight": 0,
+          "contribution": null,
+          "direction": "unknown",
+          "explanation": "Missing verified data.",
+          "evidence": [],
+          "sourceType": "derived"
+        }
+      ],
+      "risks": [],
+      "trace": {
+        "formulaVersion": "decision-v1.0",
+        "totalPositiveContribution": 10.69,
+        "totalNegativeContribution": -9.6,
+        "totalContribution": 1.09,
+        "availableWeight": 1,
+        "missingWeight": 0,
+        "normalizationApplied": false,
+        "calculationSteps": [
+          "availableWeight=1",
+          "missingWeight=0",
+          "normalized=false"
+        ]
+      },
+      "sources": [
+        {
+          "id": "twse-stock-daily",
+          "name": "TWSE 個股盤後資料",
+          "type": "official",
+          "fields": [
+            "return1d",
+            "tradingAmount",
+            "tradingVolume",
+            "breadth",
+            "leaders"
+          ]
+        },
+        {
+          "id": "twse-industry-mapping",
+          "name": "TWSE 上市公司產業分類",
+          "type": "official",
+          "fields": [
+            "industryCode",
+            "industryName",
+            "constituents"
+          ]
+        },
+        {
+          "id": "twse-institutional",
+          "name": "TWSE 三大法人盤後資料",
+          "type": "official",
+          "fields": [
+            "institutionalNetBuy"
+          ]
+        },
+        {
+          "id": "guli-technical-index",
+          "name": "GULI Technical Index",
+          "type": "derived",
+          "fields": [
+            "return20d",
+            "technicalAverage",
+            "highRiskCount"
+          ]
+        },
+        {
+          "id": "guli-decision-index",
+          "name": "GULI Decision Repository",
+          "type": "derived",
+          "fields": [
+            "decisionAverage"
+          ]
+        },
+        {
+          "id": "guli-industry-rules",
+          "name": "GULI Industry Snapshot Engine",
+          "type": "derived",
+          "fields": [
+            "scores",
+            "rank",
+            "status",
+            "risks"
+          ]
+        }
+      ],
+      "warnings": [
+        "技術資料與行情交易日不一致，僅聚合可用樣本。",
+        "Decision 資料與行情交易日不一致，僅聚合可用樣本。"
+      ]
+    },
+    {
+      "entityType": "industry",
       "entityId": "12",
       "entityName": "汽車工業",
       "tradeDate": "2026-07-17",
-      "score": 46.8,
+      "score": 46,
       "label": "偏弱",
       "direction": "bearish",
       "confidence": 94,
@@ -2928,12 +3105,12 @@
         {
           "code": "rank_trend",
           "name": "排名趨勢",
-          "rawValue": 66,
-          "normalizedScore": 66,
+          "rawValue": 58,
+          "normalizedScore": 58,
           "weight": 0.1,
-          "contribution": 1.6,
+          "contribution": 0.8,
           "direction": "positive",
-          "explanation": "排名趨勢: 66",
+          "explanation": "排名趨勢: 58",
           "evidence": [],
           "sourceType": "derived"
         },
@@ -2965,9 +3142,9 @@
       "risks": [],
       "trace": {
         "formulaVersion": "decision-v1.0",
-        "totalPositiveContribution": 7.32,
+        "totalPositiveContribution": 6.52,
         "totalNegativeContribution": -10.55,
-        "totalContribution": -3.23,
+        "totalContribution": -4.03,
         "availableWeight": 1,
         "missingWeight": 0,
         "normalizationApplied": false,
@@ -3048,7 +3225,7 @@
       "entityId": "36",
       "entityName": "數位雲端",
       "tradeDate": "2026-07-17",
-      "score": 43.1,
+      "score": 42.3,
       "label": "偏弱",
       "direction": "bearish",
       "confidence": 94,
@@ -3105,12 +3282,12 @@
         {
           "code": "rank_trend",
           "name": "排名趨勢",
-          "rawValue": 34,
-          "normalizedScore": 34,
+          "rawValue": 26,
+          "normalizedScore": 26,
           "weight": 0.1,
-          "contribution": -1.6,
+          "contribution": -2.4,
           "direction": "negative",
-          "explanation": "排名趨勢: 34",
+          "explanation": "排名趨勢: 26",
           "evidence": [],
           "sourceType": "derived"
         },
@@ -3143,8 +3320,8 @@
       "trace": {
         "formulaVersion": "decision-v1.0",
         "totalPositiveContribution": 5.52,
-        "totalNegativeContribution": -12.38,
-        "totalContribution": -6.86,
+        "totalNegativeContribution": -13.18,
+        "totalContribution": -7.66,
         "availableWeight": 1,
         "missingWeight": 0,
         "normalizationApplied": false,
@@ -3282,7 +3459,7 @@
         {
           "code": "rank_trend",
           "name": "排名趨勢",
-          "rawValue": -46,
+          "rawValue": -54,
           "normalizedScore": 0,
           "weight": 0.1,
           "contribution": -5,
@@ -3330,183 +3507,6 @@
         "totalPositiveContribution": 4.67,
         "totalNegativeContribution": -16.44,
         "totalContribution": -11.77,
-        "availableWeight": 1,
-        "missingWeight": 0,
-        "normalizationApplied": false,
-        "calculationSteps": [
-          "availableWeight=1",
-          "missingWeight=0",
-          "normalized=false"
-        ]
-      },
-      "sources": [
-        {
-          "id": "twse-stock-daily",
-          "name": "TWSE 個股盤後資料",
-          "type": "official",
-          "fields": [
-            "return1d",
-            "tradingAmount",
-            "tradingVolume",
-            "breadth",
-            "leaders"
-          ]
-        },
-        {
-          "id": "twse-industry-mapping",
-          "name": "TWSE 上市公司產業分類",
-          "type": "official",
-          "fields": [
-            "industryCode",
-            "industryName",
-            "constituents"
-          ]
-        },
-        {
-          "id": "twse-institutional",
-          "name": "TWSE 三大法人盤後資料",
-          "type": "official",
-          "fields": [
-            "institutionalNetBuy"
-          ]
-        },
-        {
-          "id": "guli-technical-index",
-          "name": "GULI Technical Index",
-          "type": "derived",
-          "fields": [
-            "return20d",
-            "technicalAverage",
-            "highRiskCount"
-          ]
-        },
-        {
-          "id": "guli-decision-index",
-          "name": "GULI Decision Repository",
-          "type": "derived",
-          "fields": [
-            "decisionAverage"
-          ]
-        },
-        {
-          "id": "guli-industry-rules",
-          "name": "GULI Industry Snapshot Engine",
-          "type": "derived",
-          "fields": [
-            "scores",
-            "rank",
-            "status",
-            "risks"
-          ]
-        }
-      ],
-      "warnings": [
-        "技術資料與行情交易日不一致，僅聚合可用樣本。",
-        "Decision 資料與行情交易日不一致，僅聚合可用樣本。"
-      ]
-    },
-    {
-      "entityType": "industry",
-      "entityId": "15",
-      "entityName": "航運業",
-      "tradeDate": "2026-07-17",
-      "score": 47.3,
-      "label": "偏弱",
-      "direction": "bearish",
-      "confidence": 94,
-      "summary": "偏弱，產業廣度為主要貢獻。",
-      "factors": [
-        {
-          "code": "industry_strength",
-          "name": "產業強度",
-          "rawValue": 47.3,
-          "normalizedScore": 47.3,
-          "weight": 0.25,
-          "contribution": -0.68,
-          "direction": "neutral",
-          "explanation": "產業強度: 47.3",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "industry_momentum",
-          "name": "產業動能",
-          "rawValue": 30.2,
-          "normalizedScore": 30.2,
-          "weight": 0.2,
-          "contribution": -3.96,
-          "direction": "negative",
-          "explanation": "產業動能: 30.2",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "capital_flow",
-          "name": "資金流向",
-          "rawValue": 54.5,
-          "normalizedScore": 54.5,
-          "weight": 0.2,
-          "contribution": 0.9,
-          "direction": "neutral",
-          "explanation": "資金流向: 54.5",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "breadth",
-          "name": "產業廣度",
-          "rawValue": 3.6,
-          "normalizedScore": 3.6,
-          "weight": 0.15,
-          "contribution": -6.96,
-          "direction": "negative",
-          "explanation": "產業廣度: 3.6",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "rank_trend",
-          "name": "排名趨勢",
-          "rawValue": 82,
-          "normalizedScore": 82,
-          "weight": 0.1,
-          "contribution": 3.2,
-          "direction": "positive",
-          "explanation": "排名趨勢: 82",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "risk_control",
-          "name": "風險控制",
-          "rawValue": 97.9,
-          "normalizedScore": 97.9,
-          "weight": 0.1,
-          "contribution": 4.79,
-          "direction": "positive",
-          "explanation": "風險控制: 97.9",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "data_quality",
-          "name": "資料品質",
-          "rawValue": null,
-          "normalizedScore": null,
-          "weight": 0,
-          "contribution": null,
-          "direction": "unknown",
-          "explanation": "Missing verified data.",
-          "evidence": [],
-          "sourceType": "derived"
-        }
-      ],
-      "risks": [],
-      "trace": {
-        "formulaVersion": "decision-v1.0",
-        "totalPositiveContribution": 8.89,
-        "totalNegativeContribution": -11.6,
-        "totalContribution": -2.71,
         "availableWeight": 1,
         "missingWeight": 0,
         "normalizationApplied": false,
@@ -3769,202 +3769,10 @@
     },
     {
       "entityType": "industry",
-      "entityId": "03",
-      "entityName": "塑膠工業",
-      "tradeDate": "2026-07-17",
-      "score": 37.4,
-      "label": "偏弱",
-      "direction": "bearish",
-      "confidence": 94,
-      "summary": "偏弱，產業廣度為主要貢獻。",
-      "factors": [
-        {
-          "code": "industry_strength",
-          "name": "產業強度",
-          "rawValue": 45.4,
-          "normalizedScore": 45.4,
-          "weight": 0.25,
-          "contribution": -1.15,
-          "direction": "neutral",
-          "explanation": "產業強度: 45.4",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "industry_momentum",
-          "name": "產業動能",
-          "rawValue": 48.6,
-          "normalizedScore": 48.6,
-          "weight": 0.2,
-          "contribution": -0.28,
-          "direction": "neutral",
-          "explanation": "產業動能: 48.6",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "capital_flow",
-          "name": "資金流向",
-          "rawValue": 48.3,
-          "normalizedScore": 48.3,
-          "weight": 0.2,
-          "contribution": -0.34,
-          "direction": "neutral",
-          "explanation": "資金流向: 48.3",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "breadth",
-          "name": "產業廣度",
-          "rawValue": 2.4,
-          "normalizedScore": 2.4,
-          "weight": 0.15,
-          "contribution": -7.14,
-          "direction": "negative",
-          "explanation": "產業廣度: 2.4",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "rank_trend",
-          "name": "排名趨勢",
-          "rawValue": -54,
-          "normalizedScore": 0,
-          "weight": 0.1,
-          "contribution": -5,
-          "direction": "negative",
-          "explanation": "排名趨勢: 0",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "risk_control",
-          "name": "風險控制",
-          "rawValue": 62.9,
-          "normalizedScore": 62.9,
-          "weight": 0.1,
-          "contribution": 1.29,
-          "direction": "positive",
-          "explanation": "風險控制: 62.9",
-          "evidence": [],
-          "sourceType": "derived"
-        },
-        {
-          "code": "data_quality",
-          "name": "資料品質",
-          "rawValue": null,
-          "normalizedScore": null,
-          "weight": 0,
-          "contribution": null,
-          "direction": "unknown",
-          "explanation": "Missing verified data.",
-          "evidence": [],
-          "sourceType": "derived"
-        }
-      ],
-      "risks": [
-        {
-          "code": "industry-0",
-          "severity": "medium",
-          "title": "高風險成分股比例偏高",
-          "explanation": "高風險成分股比例偏高",
-          "sourceType": "derived"
-        },
-        {
-          "code": "industry-1",
-          "severity": "medium",
-          "title": "法人資金淨流出",
-          "explanation": "法人資金淨流出",
-          "sourceType": "derived"
-        }
-      ],
-      "trace": {
-        "formulaVersion": "decision-v1.0",
-        "totalPositiveContribution": 1.29,
-        "totalNegativeContribution": -13.91,
-        "totalContribution": -12.62,
-        "availableWeight": 1,
-        "missingWeight": 0,
-        "normalizationApplied": false,
-        "calculationSteps": [
-          "availableWeight=1",
-          "missingWeight=0",
-          "normalized=false"
-        ]
-      },
-      "sources": [
-        {
-          "id": "twse-stock-daily",
-          "name": "TWSE 個股盤後資料",
-          "type": "official",
-          "fields": [
-            "return1d",
-            "tradingAmount",
-            "tradingVolume",
-            "breadth",
-            "leaders"
-          ]
-        },
-        {
-          "id": "twse-industry-mapping",
-          "name": "TWSE 上市公司產業分類",
-          "type": "official",
-          "fields": [
-            "industryCode",
-            "industryName",
-            "constituents"
-          ]
-        },
-        {
-          "id": "twse-institutional",
-          "name": "TWSE 三大法人盤後資料",
-          "type": "official",
-          "fields": [
-            "institutionalNetBuy"
-          ]
-        },
-        {
-          "id": "guli-technical-index",
-          "name": "GULI Technical Index",
-          "type": "derived",
-          "fields": [
-            "return20d",
-            "technicalAverage",
-            "highRiskCount"
-          ]
-        },
-        {
-          "id": "guli-decision-index",
-          "name": "GULI Decision Repository",
-          "type": "derived",
-          "fields": [
-            "decisionAverage"
-          ]
-        },
-        {
-          "id": "guli-industry-rules",
-          "name": "GULI Industry Snapshot Engine",
-          "type": "derived",
-          "fields": [
-            "scores",
-            "rank",
-            "status",
-            "risks"
-          ]
-        }
-      ],
-      "warnings": [
-        "技術資料與行情交易日不一致，僅聚合可用樣本。",
-        "Decision 資料與行情交易日不一致，僅聚合可用樣本。"
-      ]
-    },
-    {
-      "entityType": "industry",
       "entityId": "27",
       "entityName": "通信網路業",
       "tradeDate": "2026-07-17",
-      "score": 43.1,
+      "score": 44,
       "label": "偏弱",
       "direction": "bearish",
       "confidence": 94,
@@ -3973,12 +3781,12 @@
         {
           "code": "industry_strength",
           "name": "產業強度",
-          "rawValue": 44.3,
-          "normalizedScore": 44.3,
+          "rawValue": 44.4,
+          "normalizedScore": 44.4,
           "weight": 0.25,
-          "contribution": -1.43,
+          "contribution": -1.4,
           "direction": "negative",
-          "explanation": "產業強度: 44.3",
+          "explanation": "產業強度: 44.4",
           "evidence": [],
           "sourceType": "derived"
         },
@@ -3997,12 +3805,12 @@
         {
           "code": "capital_flow",
           "name": "資金流向",
-          "rawValue": 55.1,
-          "normalizedScore": 55.1,
+          "rawValue": 55.2,
+          "normalizedScore": 55.2,
           "weight": 0.2,
-          "contribution": 1.02,
+          "contribution": 1.04,
           "direction": "positive",
-          "explanation": "資金流向: 55.1",
+          "explanation": "資金流向: 55.2",
           "evidence": [],
           "sourceType": "derived"
         },
@@ -4021,12 +3829,12 @@
         {
           "code": "rank_trend",
           "name": "排名趨勢",
-          "rawValue": 50,
-          "normalizedScore": 50,
+          "rawValue": 58,
+          "normalizedScore": 58,
           "weight": 0.1,
-          "contribution": 0,
-          "direction": "neutral",
-          "explanation": "排名趨勢: 50",
+          "contribution": 0.8,
+          "direction": "positive",
+          "explanation": "排名趨勢: 58",
           "evidence": [],
           "sourceType": "derived"
         },
@@ -4058,9 +3866,9 @@
       "risks": [],
       "trace": {
         "formulaVersion": "decision-v1.0",
-        "totalPositiveContribution": 6.02,
-        "totalNegativeContribution": -12.9,
-        "totalContribution": -6.88,
+        "totalPositiveContribution": 6.84,
+        "totalNegativeContribution": -12.87,
+        "totalContribution": -6.03,
         "availableWeight": 1,
         "missingWeight": 0,
         "normalizationApplied": false,
@@ -4141,7 +3949,7 @@
       "entityId": "05",
       "entityName": "電機機械",
       "tradeDate": "2026-07-17",
-      "score": 39.3,
+      "score": 40.1,
       "label": "偏弱",
       "direction": "bearish",
       "confidence": 94,
@@ -4198,12 +4006,12 @@
         {
           "code": "rank_trend",
           "name": "排名趨勢",
-          "rawValue": 18,
-          "normalizedScore": 18,
+          "rawValue": 26,
+          "normalizedScore": 26,
           "weight": 0.1,
-          "contribution": -3.2,
+          "contribution": -2.4,
           "direction": "negative",
-          "explanation": "排名趨勢: 18",
+          "explanation": "排名趨勢: 26",
           "evidence": [],
           "sourceType": "derived"
         },
@@ -4236,8 +4044,200 @@
       "trace": {
         "formulaVersion": "decision-v1.0",
         "totalPositiveContribution": 5.42,
-        "totalNegativeContribution": -16.17,
-        "totalContribution": -10.75,
+        "totalNegativeContribution": -15.37,
+        "totalContribution": -9.95,
+        "availableWeight": 1,
+        "missingWeight": 0,
+        "normalizationApplied": false,
+        "calculationSteps": [
+          "availableWeight=1",
+          "missingWeight=0",
+          "normalized=false"
+        ]
+      },
+      "sources": [
+        {
+          "id": "twse-stock-daily",
+          "name": "TWSE 個股盤後資料",
+          "type": "official",
+          "fields": [
+            "return1d",
+            "tradingAmount",
+            "tradingVolume",
+            "breadth",
+            "leaders"
+          ]
+        },
+        {
+          "id": "twse-industry-mapping",
+          "name": "TWSE 上市公司產業分類",
+          "type": "official",
+          "fields": [
+            "industryCode",
+            "industryName",
+            "constituents"
+          ]
+        },
+        {
+          "id": "twse-institutional",
+          "name": "TWSE 三大法人盤後資料",
+          "type": "official",
+          "fields": [
+            "institutionalNetBuy"
+          ]
+        },
+        {
+          "id": "guli-technical-index",
+          "name": "GULI Technical Index",
+          "type": "derived",
+          "fields": [
+            "return20d",
+            "technicalAverage",
+            "highRiskCount"
+          ]
+        },
+        {
+          "id": "guli-decision-index",
+          "name": "GULI Decision Repository",
+          "type": "derived",
+          "fields": [
+            "decisionAverage"
+          ]
+        },
+        {
+          "id": "guli-industry-rules",
+          "name": "GULI Industry Snapshot Engine",
+          "type": "derived",
+          "fields": [
+            "scores",
+            "rank",
+            "status",
+            "risks"
+          ]
+        }
+      ],
+      "warnings": [
+        "技術資料與行情交易日不一致，僅聚合可用樣本。",
+        "Decision 資料與行情交易日不一致，僅聚合可用樣本。"
+      ]
+    },
+    {
+      "entityType": "industry",
+      "entityId": "03",
+      "entityName": "塑膠工業",
+      "tradeDate": "2026-07-17",
+      "score": 35.8,
+      "label": "極弱",
+      "direction": "bearish",
+      "confidence": 94,
+      "summary": "極弱，產業廣度為主要貢獻。",
+      "factors": [
+        {
+          "code": "industry_strength",
+          "name": "產業強度",
+          "rawValue": 43.9,
+          "normalizedScore": 43.9,
+          "weight": 0.25,
+          "contribution": -1.53,
+          "direction": "negative",
+          "explanation": "產業強度: 43.9",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "industry_momentum",
+          "name": "產業動能",
+          "rawValue": 42.4,
+          "normalizedScore": 42.4,
+          "weight": 0.2,
+          "contribution": -1.52,
+          "direction": "negative",
+          "explanation": "產業動能: 42.4",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "capital_flow",
+          "name": "資金流向",
+          "rawValue": 48.6,
+          "normalizedScore": 48.6,
+          "weight": 0.2,
+          "contribution": -0.28,
+          "direction": "neutral",
+          "explanation": "資金流向: 48.6",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "breadth",
+          "name": "產業廣度",
+          "rawValue": 2.4,
+          "normalizedScore": 2.4,
+          "weight": 0.15,
+          "contribution": -7.14,
+          "direction": "negative",
+          "explanation": "產業廣度: 2.4",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "rank_trend",
+          "name": "排名趨勢",
+          "rawValue": -70,
+          "normalizedScore": 0,
+          "weight": 0.1,
+          "contribution": -5,
+          "direction": "negative",
+          "explanation": "排名趨勢: 0",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "risk_control",
+          "name": "風險控制",
+          "rawValue": 62.9,
+          "normalizedScore": 62.9,
+          "weight": 0.1,
+          "contribution": 1.29,
+          "direction": "positive",
+          "explanation": "風險控制: 62.9",
+          "evidence": [],
+          "sourceType": "derived"
+        },
+        {
+          "code": "data_quality",
+          "name": "資料品質",
+          "rawValue": null,
+          "normalizedScore": null,
+          "weight": 0,
+          "contribution": null,
+          "direction": "unknown",
+          "explanation": "Missing verified data.",
+          "evidence": [],
+          "sourceType": "derived"
+        }
+      ],
+      "risks": [
+        {
+          "code": "industry-0",
+          "severity": "medium",
+          "title": "高風險成分股比例偏高",
+          "explanation": "高風險成分股比例偏高",
+          "sourceType": "derived"
+        },
+        {
+          "code": "industry-1",
+          "severity": "medium",
+          "title": "法人資金淨流出",
+          "explanation": "法人資金淨流出",
+          "sourceType": "derived"
+        }
+      ],
+      "trace": {
+        "formulaVersion": "decision-v1.0",
+        "totalPositiveContribution": 1.29,
+        "totalNegativeContribution": -15.47,
+        "totalContribution": -14.18,
         "availableWeight": 1,
         "missingWeight": 0,
         "normalizationApplied": false,
@@ -4846,84 +4846,84 @@
     },
     {
       "entityType": "industry",
-      "entityId": "25",
-      "entityName": "電腦及週邊設備業",
+      "entityId": "26",
+      "entityName": "光電業",
       "tradeDate": "2026-07-17",
-      "score": 38.2,
+      "score": 37.4,
       "label": "偏弱",
       "direction": "bearish",
       "confidence": 94,
-      "summary": "偏弱，產業廣度為主要貢獻。",
+      "summary": "偏弱，產業動能為主要貢獻。",
       "factors": [
         {
           "code": "industry_strength",
           "name": "產業強度",
-          "rawValue": 40.4,
-          "normalizedScore": 40.4,
+          "rawValue": 38.6,
+          "normalizedScore": 38.6,
           "weight": 0.25,
-          "contribution": -2.4,
+          "contribution": -2.85,
           "direction": "negative",
-          "explanation": "產業強度: 40.4",
+          "explanation": "產業強度: 38.6",
           "evidence": [],
           "sourceType": "derived"
         },
         {
           "code": "industry_momentum",
           "name": "產業動能",
-          "rawValue": 15.5,
-          "normalizedScore": 15.5,
+          "rawValue": 13.3,
+          "normalizedScore": 13.3,
           "weight": 0.2,
-          "contribution": -6.9,
+          "contribution": -7.34,
           "direction": "negative",
-          "explanation": "產業動能: 15.5",
+          "explanation": "產業動能: 13.3",
           "evidence": [],
           "sourceType": "derived"
         },
         {
           "code": "capital_flow",
           "name": "資金流向",
-          "rawValue": 51.8,
-          "normalizedScore": 51.8,
+          "rawValue": 52.7,
+          "normalizedScore": 52.7,
           "weight": 0.2,
-          "contribution": 0.36,
+          "contribution": 0.54,
           "direction": "neutral",
-          "explanation": "資金流向: 51.8",
+          "explanation": "資金流向: 52.7",
           "evidence": [],
           "sourceType": "derived"
         },
         {
           "code": "breadth",
           "name": "產業廣度",
-          "rawValue": 3.9,
-          "normalizedScore": 3.9,
+          "rawValue": 7.4,
+          "normalizedScore": 7.4,
           "weight": 0.15,
-          "contribution": -6.91,
+          "contribution": -6.39,
           "direction": "negative",
-          "explanation": "產業廣度: 3.9",
+          "explanation": "產業廣度: 7.4",
           "evidence": [],
           "sourceType": "derived"
         },
         {
           "code": "rank_trend",
           "name": "排名趨勢",
-          "rawValue": 42,
-          "normalizedScore": 42,
+          "rawValue": 34,
+          "normalizedScore": 34,
           "weight": 0.1,
-          "contribution": -0.8,
+          "contribution": -1.6,
           "direction": "negative",
-          "explanation": "排名趨勢: 42",
+          "explanation": "排名趨勢: 34",
           "evidence": [],
           "sourceType": "derived"
         },
         {
           "code": "risk_control",
           "name": "風險控制",
-          "rawValue": 98.1,
-          "normalizedScore": 98.1,
+          "rawValue": 100,
+          "normalizedScore": 100,
           "weight": 0.1,
-          "contribution": 4.81,
+          "contribution": 5,
           "direction": "positive",
-          "explanation": "風險控制: 98.1",
+          "explanation": "風險控制: 100",
           "evidence": [],
           "sourceType": "derived"
         },
@@ -4943,9 +4943,9 @@
       "risks": [],
       "trace": {
         "formulaVersion": "decision-v1.0",
-        "totalPositiveContribution": 5.17,
-        "totalNegativeContribution": -17.01,
-        "totalContribution": -11.84,
+        "totalPositiveContribution": 5.54,
+        "totalNegativeContribution": -18.18,
+        "totalContribution": -12.64,
         "availableWeight": 1,
         "missingWeight": 0,
         "normalizationApplied": false,
@@ -5023,84 +5023,84 @@
     },
     {
       "entityType": "industry",
-      "entityId": "26",
-      "entityName": "光電業",
+      "entityId": "25",
+      "entityName": "電腦及週邊設備業",
       "tradeDate": "2026-07-17",
-      "score": 36.9,
-      "label": "偏弱",
+      "score": 34.3,
+      "label": "極弱",
       "direction": "bearish",
       "confidence": 94,
-      "summary": "偏弱，產業動能為主要貢獻。",
+      "summary": "極弱，產業動能為主要貢獻。",
       "factors": [
         {
           "code": "industry_strength",
           "name": "產業強度",
-          "rawValue": 39,
-          "normalizedScore": 39,
+          "rawValue": 37.5,
+          "normalizedScore": 37.5,
           "weight": 0.25,
-          "contribution": -2.75,
+          "contribution": -3.12,
           "direction": "negative",
-          "explanation": "產業強度: 39",
+          "explanation": "產業強度: 37.5",
           "evidence": [],
           "sourceType": "derived"
         },
         {
           "code": "industry_momentum",
           "name": "產業動能",
-          "rawValue": 13.3,
-          "normalizedScore": 13.3,
+          "rawValue": 4.5,
+          "normalizedScore": 4.5,
           "weight": 0.2,
-          "contribution": -7.34,
+          "contribution": -9.1,
           "direction": "negative",
-          "explanation": "產業動能: 13.3",
+          "explanation": "產業動能: 4.5",
           "evidence": [],
           "sourceType": "derived"
         },
         {
           "code": "capital_flow",
           "name": "資金流向",
-          "rawValue": 54,
-          "normalizedScore": 54,
+          "rawValue": 51.8,
+          "normalizedScore": 51.8,
           "weight": 0.2,
-          "contribution": 0.8,
+          "contribution": 0.36,
           "direction": "neutral",
-          "explanation": "資金流向: 54",
+          "explanation": "資金流向: 51.8",
           "evidence": [],
           "sourceType": "derived"
         },
         {
           "code": "breadth",
           "name": "產業廣度",
-          "rawValue": 7.4,
-          "normalizedScore": 7.4,
+          "rawValue": 3.9,
+          "normalizedScore": 3.9,
           "weight": 0.15,
-          "contribution": -6.39,
+          "contribution": -6.91,
           "direction": "negative",
-          "explanation": "產業廣度: 7.4",
+          "explanation": "產業廣度: 3.9",
           "evidence": [],
           "sourceType": "derived"
         },
         {
           "code": "rank_trend",
           "name": "排名趨勢",
-          "rawValue": 26,
-          "normalizedScore": 26,
+          "rawValue": 34,
+          "normalizedScore": 34,
           "weight": 0.1,
-          "contribution": -2.4,
+          "contribution": -1.6,
           "direction": "negative",
-          "explanation": "排名趨勢: 26",
+          "explanation": "排名趨勢: 34",
           "evidence": [],
           "sourceType": "derived"
         },
         {
           "code": "risk_control",
           "name": "風險控制",
-          "rawValue": 100,
-          "normalizedScore": 100,
+          "rawValue": 97.2,
+          "normalizedScore": 97.2,
           "weight": 0.1,
-          "contribution": 5,
+          "contribution": 4.72,
           "direction": "positive",
-          "explanation": "風險控制: 100",
+          "explanation": "風險控制: 97.2",
           "evidence": [],
           "sourceType": "derived"
         },
@@ -5120,9 +5120,9 @@
       "risks": [],
       "trace": {
         "formulaVersion": "decision-v1.0",
-        "totalPositiveContribution": 5.8,
-        "totalNegativeContribution": -18.88,
-        "totalContribution": -13.08,
+        "totalPositiveContribution": 5.08,
+        "totalNegativeContribution": -20.73,
+        "totalContribution": -15.65,
         "availableWeight": 1,
         "missingWeight": 0,
         "normalizationApplied": false,
@@ -5203,7 +5203,7 @@
       "entityId": "31",
       "entityName": "其他電子業",
       "tradeDate": "2026-07-17",
-      "score": 31.7,
+      "score": 30.6,
       "label": "極弱",
       "direction": "bearish",
       "confidence": 94,
@@ -5212,24 +5212,24 @@
         {
           "code": "industry_strength",
           "name": "產業強度",
-          "rawValue": 37.5,
-          "normalizedScore": 37.5,
+          "rawValue": 36.4,
+          "normalizedScore": 36.4,
           "weight": 0.25,
-          "contribution": -3.12,
+          "contribution": -3.4,
           "direction": "negative",
-          "explanation": "產業強度: 37.5",
+          "explanation": "產業強度: 36.4",
           "evidence": [],
           "sourceType": "derived"
         },
         {
           "code": "industry_momentum",
           "name": "產業動能",
-          "rawValue": 7,
-          "normalizedScore": 7,
+          "rawValue": 2.7,
+          "normalizedScore": 2.7,
           "weight": 0.2,
-          "contribution": -8.6,
+          "contribution": -9.46,
           "direction": "negative",
-          "explanation": "產業動能: 7",
+          "explanation": "產業動能: 2.7",
           "evidence": [],
           "sourceType": "derived"
         },
@@ -5298,8 +5298,8 @@
       "trace": {
         "formulaVersion": "decision-v1.0",
         "totalPositiveContribution": 5.31,
-        "totalNegativeContribution": -23.57,
-        "totalContribution": -18.26,
+        "totalNegativeContribution": -24.71,
+        "totalContribution": -19.4,
         "availableWeight": 1,
         "missingWeight": 0,
         "normalizationApplied": false,
@@ -5380,7 +5380,7 @@
       "entityId": "28",
       "entityName": "電子零組件業",
       "tradeDate": "2026-07-17",
-      "score": 33.6,
+      "score": 32.3,
       "label": "極弱",
       "direction": "bearish",
       "confidence": 94,
@@ -5389,36 +5389,36 @@
         {
           "code": "industry_strength",
           "name": "產業強度",
-          "rawValue": 34.4,
-          "normalizedScore": 34.4,
+          "rawValue": 33.2,
+          "normalizedScore": 33.2,
           "weight": 0.25,
-          "contribution": -3.9,
+          "contribution": -4.2,
           "direction": "negative",
-          "explanation": "產業強度: 34.4",
+          "explanation": "產業強度: 33.2",
           "evidence": [],
           "sourceType": "derived"
         },
         {
           "code": "industry_momentum",
           "name": "產業動能",
-          "rawValue": 5.2,
-          "normalizedScore": 5.2,
+          "rawValue": 0,
+          "normalizedScore": 0,
           "weight": 0.2,
-          "contribution": -8.96,
+          "contribution": -10,
           "direction": "negative",
-          "explanation": "產業動能: 5.2",
+          "explanation": "產業動能: 0",
           "evidence": [],
           "sourceType": "derived"
         },
         {
           "code": "capital_flow",
           "name": "資金流向",
-          "rawValue": 52.1,
-          "normalizedScore": 52.1,
+          "rawValue": 52.3,
+          "normalizedScore": 52.3,
           "weight": 0.2,
-          "contribution": 0.42,
+          "contribution": 0.46,
           "direction": "neutral",
-          "explanation": "資金流向: 52.1",
+          "explanation": "資金流向: 52.3",
           "evidence": [],
           "sourceType": "derived"
         },
@@ -5474,9 +5474,9 @@
       "risks": [],
       "trace": {
         "formulaVersion": "decision-v1.0",
-        "totalPositiveContribution": 5.36,
-        "totalNegativeContribution": -21.81,
-        "totalContribution": -16.45,
+        "totalPositiveContribution": 5.4,
+        "totalNegativeContribution": -23.15,
+        "totalContribution": -17.75,
         "availableWeight": 1,
         "missingWeight": 0,
         "normalizationApplied": false,
@@ -5557,7 +5557,7 @@
       "entityId": "24",
       "entityName": "半導體業",
       "tradeDate": "2026-07-17",
-      "score": 32.5,
+      "score": 31.1,
       "label": "極弱",
       "direction": "bearish",
       "confidence": 94,
@@ -5566,24 +5566,24 @@
         {
           "code": "industry_strength",
           "name": "產業強度",
-          "rawValue": 32.3,
-          "normalizedScore": 32.3,
+          "rawValue": 31,
+          "normalizedScore": 31,
           "weight": 0.25,
-          "contribution": -4.43,
+          "contribution": -4.75,
           "direction": "negative",
-          "explanation": "產業強度: 32.3",
+          "explanation": "產業強度: 31",
           "evidence": [],
           "sourceType": "derived"
         },
         {
           "code": "industry_momentum",
           "name": "產業動能",
-          "rawValue": 5,
-          "normalizedScore": 5,
+          "rawValue": 0,
+          "normalizedScore": 0,
           "weight": 0.2,
-          "contribution": -9,
+          "contribution": -10,
           "direction": "negative",
-          "explanation": "產業動能: 5",
+          "explanation": "產業動能: 0",
           "evidence": [],
           "sourceType": "derived"
         },
@@ -5626,12 +5626,12 @@
         {
           "code": "risk_control",
           "name": "風險控制",
-          "rawValue": 98.1,
-          "normalizedScore": 98.1,
+          "rawValue": 97.5,
+          "normalizedScore": 97.5,
           "weight": 0.1,
-          "contribution": 4.81,
+          "contribution": 4.75,
           "direction": "positive",
-          "explanation": "風險控制: 98.1",
+          "explanation": "風險控制: 97.5",
           "evidence": [],
           "sourceType": "derived"
         },
@@ -5659,9 +5659,9 @@
       ],
       "trace": {
         "formulaVersion": "decision-v1.0",
-        "totalPositiveContribution": 4.81,
-        "totalNegativeContribution": -22.33,
-        "totalContribution": -17.52,
+        "totalPositiveContribution": 4.75,
+        "totalNegativeContribution": -23.65,
+        "totalContribution": -18.9,
         "availableWeight": 1,
         "missingWeight": 0,
         "normalizationApplied": false,
