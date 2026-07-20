@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.0-beta.3.1]
+
+- GitHub Pages 部署固定由 `deploy-pages.yml` 上傳 `./dist`，不再修改 repository。
+- 每日資料更新改寫入 `automation/data-updates` 並建立或更新 Pull Request，不再直接 push `main`。
+- 歷史行情回補改為 artifact-only，不再 commit 或 rebase 遠端主分支。
+- 新增 `git:check`，檢查 rebase、未合併路徑、JSON、conflict marker 與遠端同步狀態。
+- 新增發布流程文件與 workflow 靜態保護測試；分析公式及 UI 商業功能未變更。
+
 ## [1.0.0-beta.3]
 
 - 新增由每日靜態索引驅動的市場熱力圖，支援產業／個股、成交金額／成交量，以及漲跌幅／Technical／Decision 顏色切換。

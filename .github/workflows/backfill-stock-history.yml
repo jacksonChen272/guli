@@ -27,10 +27,14 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
-  group: twse-stock-history-backfill
+  group: stock-history-backfill
   cancel-in-progress: false
+
+env:
+  BACKFILL_BRANCH: automation/history-backfill
 
 jobs:
   backfill:
@@ -43,6 +47,18 @@ jobs:
           ref: main
           fetch-depth: 0
 
+      - name: Prepare history backfill branch
+        shell: bash
+        run: |
+          git fetch origin main
+          if git ls-remote --exit-code --heads origin "$BACKFILL_BRANCH" >/dev/null 2>&1; then
+            git fetch origin "$BACKFILL_BRANCH:refs/remotes/origin/$BACKFILL_BRANCH"
+            git checkout -B "$BACKFILL_BRANCH" "origin/$BACKFILL_BRANCH"
+            git merge --no-edit -X ours origin/main
+          else
+            git checkout -b "$BACKFILL_BRANCH" origin/main
+          fi
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -51,9 +67,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Sync latest TWSE stock universe
-        run: npm run data:twse:stocks
 
       - name: Backfill selected batch
         shell: bash
@@ -69,16 +82,21 @@ jobs:
           if [[ -n "$SYMBOLS" ]]; then ARGS+=(--symbols "$SYMBOLS"); fi
           npm run data:twse:history -- "${ARGS[@]}" 2>&1 | tee stock-history-backfill.log
 
-      - name: Validate static datasets
-        run: npm run data:validate
-
       - name: Generate technical index
         run: npm run technical:index:generate
 
       - name: Generate screener results
         run: npm run screener:generate
 
+      - name: Generate market heatmap
+        run: npm run heatmap:generate
+
+      - name: Validate generated datasets
+        id: validate_backfill
+        run: npm run data:validate
+
       - name: Run related tests
+        id: test_backfill
         run: npm run test:run
 
       - name: Upload execution log
@@ -89,18 +107,50 @@ jobs:
           path: stock-history-backfill.log
           if-no-files-found: warn
 
-      - name: Commit changed history and indexes
+      - name: Commit allowed backfill datasets
+        id: commit_backfill
         shell: bash
-        env:
-          OFFSET: ${{ inputs.offset }}
         run: |
-          if git diff --quiet -- public/data/twse-stock-history public/data/technical-index public/data/screener; then
-            echo "Backfill output unchanged; skipping commit."
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/twse-stock-history public/data/technical-index public/data/screener
-          git commit -m "chore(data): backfill TWSE stock history batch ${OFFSET}"
-          git pull --rebase origin main
-          git push origin HEAD:main || { git pull --rebase origin main && git push origin HEAD:main; }
+          git add public/data/twse-stock-history public/data/technical-index public/data/screener public/data/market-heatmap
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Backfill output unchanged; no commit or pull request update is required."
+            exit 0
+          fi
+          git commit -m "chore(data): backfill GULI stock history batch ${{ inputs.offset }}"
+          git push origin "HEAD:$BACKFILL_BRANCH"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Create or update backfill pull request
+        if: steps.commit_backfill.outputs.changed == 'true'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          HISTORY_DATE=$(jq -r '[.symbols[].lastTradeDate] | max // "尚未取得"' public/data/twse-stock-history/index.json)
+          TECHNICAL_DATE=$(jq -r '.tradeDate // "尚未取得"' public/data/technical-index/latest.json)
+          SCREENER_DATE=$(jq -r '.tradeDate // "尚未取得"' public/data/screener/latest.json)
+          HEATMAP_DATE=$(jq -r '.tradeDate // "尚未取得"' public/data/market-heatmap/latest.json)
+          PR_BODY=$(cat <<EOF
+          ## GULI 歷史行情回補
+
+          - 批次 offset：${{ inputs.offset }}
+          - 批次大小：${{ inputs.batchSize }}
+          - 歷史行情最新交易日：$HISTORY_DATE
+          - Technical Index 日期：$TECHNICAL_DATE
+          - Screener 日期：$SCREENER_DATE
+          - Heatmap 日期：$HEATMAP_DATE
+          - JSON 驗證結果：${{ steps.validate_backfill.outcome }}
+          - 測試結果：${{ steps.test_backfill.outcome }}
+
+          僅包含允許的歷史行情與衍生資料路徑，請人工審查後合併。
+          EOF
+          )
+
+          if gh pr view "$BACKFILL_BRANCH" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh pr edit "$BACKFILL_BRANCH" --repo "$GITHUB_REPOSITORY" --title "chore(data): backfill GULI stock history" --body "$PR_BODY"
+          else
+            gh pr create --repo "$GITHUB_REPOSITORY" --base main --head "$BACKFILL_BRANCH" --title "chore(data): backfill GULI stock history" --body "$PR_BODY"
+          fi

@@ -10,10 +10,14 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
-  group: update-twse-official-daily-data
+  group: market-data-update
   cancel-in-progress: false
+
+env:
+  DATA_UPDATE_BRANCH: automation/data-updates
 
 jobs:
   update:
@@ -24,6 +28,19 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 0
+
+      - name: Prepare data update branch
+        shell: bash
+        run: |
+          git fetch origin main
+          if git ls-remote --exit-code --heads origin "$DATA_UPDATE_BRANCH" >/dev/null 2>&1; then
+            git fetch origin "$DATA_UPDATE_BRANCH:refs/remotes/origin/$DATA_UPDATE_BRANCH"
+            git checkout -B "$DATA_UPDATE_BRANCH" "origin/$DATA_UPDATE_BRANCH"
+            git merge --no-edit -X ours origin/main
+          else
+            git checkout -b "$DATA_UPDATE_BRANCH" origin/main
+          fi
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -68,23 +85,73 @@ jobs:
         run: npm run heatmap:generate
 
       - name: Validate all public JSON
+        id: validate_data
         run: npm run data:validate
 
-      - name: Run tests
+      - name: Run required tests
+        id: test_data
         run: npm run test:run
 
-      - name: Build application
-        run: npm run build
-
-      - name: Commit changed snapshot
+      - name: Commit generated data to automation branch
+        id: commit_data
         shell: bash
         run: |
-          if git diff --quiet -- public/data/twse-market-overview.json public/data/twse-stocks public/data/twse-institutional public/data/twse-stock-history public/data/stock-history public/data/history public/data/industry-history public/data/decisions public/data/technical-index public/data/screener public/data/market-heatmap; then
-            echo "Market data and snapshots unchanged; skipping commit."
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/twse-market-overview.json public/data/twse-stocks public/data/twse-institutional public/data/twse-stock-history public/data/stock-history public/data/history public/data/industry-history public/data/decisions public/data/technical-index public/data/screener public/data/market-heatmap
-          git commit -m "chore(data): update TWSE datasets, snapshots and decisions"
-          git push origin HEAD:main
+          git add public/data
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Market data and snapshots unchanged; no commit or pull request update is required."
+            exit 0
+          fi
+          git commit -m "chore(data): update GULI market datasets"
+          git push origin "HEAD:$DATA_UPDATE_BRANCH"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Create or update data pull request
+        if: steps.commit_data.outputs.changed == 'true'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          read_date() {
+            local file="$1"
+            if [[ -f "$file" ]]; then
+              jq -r '.tradeDate // .lastTradeDate // .updatedAt // "尚未取得"' "$file"
+            else
+              echo "尚未產生"
+            fi
+          }
+
+          MARKET_DATE=$(read_date public/data/twse-market-overview.json)
+          STOCK_DATE=$(read_date public/data/twse-stocks/latest.json)
+          INSTITUTION_DATE=$(read_date public/data/twse-institutional/latest.json)
+          SNAPSHOT_DATE=$(read_date public/data/history/latest.json)
+          DECISION_DATE=$(read_date public/data/decisions/latest.json)
+          TECHNICAL_DATE=$(read_date public/data/technical-index/latest.json)
+          SCREENER_DATE=$(read_date public/data/screener/latest.json)
+          HEATMAP_DATE=$(read_date public/data/market-heatmap/latest.json)
+
+          PR_BODY=$(cat <<EOF
+          ## GULI 自動資料更新
+
+          - 市場交易日：$MARKET_DATE
+          - 個股交易日：$STOCK_DATE
+          - 法人交易日：$INSTITUTION_DATE
+          - Snapshot 日期：$SNAPSHOT_DATE
+          - Decision 日期：$DECISION_DATE
+          - Technical Index 日期：$TECHNICAL_DATE
+          - Screener 日期：$SCREENER_DATE
+          - Heatmap 日期：$HEATMAP_DATE
+          - JSON 驗證結果：${{ steps.validate_data.outcome }}
+          - 測試結果：${{ steps.test_data.outcome }}
+
+          此 Pull Request 僅包含 \`public/data/**\`。請確認資料日期與 workflow 驗證結果後再合併。
+          EOF
+          )
+
+          if gh pr view "$DATA_UPDATE_BRANCH" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh pr edit "$DATA_UPDATE_BRANCH" --repo "$GITHUB_REPOSITORY" --title "chore(data): update GULI market datasets" --body "$PR_BODY"
+          else
+            gh pr create --repo "$GITHUB_REPOSITORY" --base main --head "$DATA_UPDATE_BRANCH" --title "chore(data): update GULI market datasets" --body "$PR_BODY"
+          fi

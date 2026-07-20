@@ -1,5 +1,12 @@
 # GULI Roadmap
 
+## GULI v1.0.0-beta.3.1
+
+- [x] GitHub Pages 與資料同步 workflow 完全分離。
+- [x] 自動資料更新改由 `automation/data-updates` Pull Request 審查後合併。
+- [x] 歷史資料回補改採 artifact 交付，停止 Actions 直接寫入 `main`。
+- [x] 加入 Git push 前的 repository、JSON 與遠端同步安全檢查。
+
 ## GULI v1.0.0-beta.3
 
 - [x] 每日市場熱力圖靜態索引、Repository、來源分層與 JSON Guard

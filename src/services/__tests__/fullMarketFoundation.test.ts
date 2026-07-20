@@ -19,7 +19,7 @@ describe('Full-market foundation and GitHub Pages guard', () => {
   it('BrowserRouter basename 保留', async () => expect(await text('src/main.tsx')).toContain('basename="/guli"'))
   it('Repository 只讀 technical index 與 screener summary', async () => { const fetcher = vi.fn(async () => new Response(JSON.stringify({ schemaVersion:'1.0', formulaVersion:'screener-v1.0', tradeDate:null, generatedAt:'x', technicalIndexGeneratedAt:'x', sampleCount:0, complete250Count:0, highRiskCount:0, presets:[], results:[], warnings:[] }), { status: 200 })); const repository = new ScreenerRepository(fetcher, '/guli/'); await repository.getDataset(); expect(fetcher).toHaveBeenCalledWith('/guli/data/screener/latest.json', expect.any(Object)) })
   it('Repository Cache 避免重複讀取', async () => { const fetcher = vi.fn(async () => new Response(JSON.stringify({ schemaVersion:'1.0', formulaVersion:'screener-v1.0', tradeDate:null, generatedAt:'x', technicalIndexGeneratedAt:'x', sampleCount:0, complete250Count:0, highRiskCount:0, presets:[], results:[], warnings:[] }), { status: 200 })); const repository = new ScreenerRepository(fetcher, '/guli/'); await repository.getDataset(); await repository.getDataset(); expect(fetcher).toHaveBeenCalledTimes(1) })
-  it('Sidebar 顯示 v1.0.0-beta.3', async () => expect(await text('src/components/layout/Sidebar.tsx')).toContain('GULI v1.0.0-beta.3'))
+  it('Sidebar 顯示 v1.0.0-beta.3.1', async () => expect(await text('src/components/layout/Sidebar.tsx')).toContain('GULI v1.0.0-beta.3.1'))
   it('Sidebar 使用固定市場工具順序且包含智慧選股', async () => {
     const navigation = await text('src/config/navigation.ts')
     const expectedOrder = [

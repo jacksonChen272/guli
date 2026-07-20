@@ -1,7 +1,7 @@
 {
   "name": "guli-fintech-platform",
   "private": true,
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.3.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -19,6 +19,7 @@
     "technical:index:generate": "node scripts/generate-technical-index.mjs",
     "screener:generate": "node scripts/generate-screener-results.mjs",
     "heatmap:generate": "node scripts/generate-market-heatmap.mjs",
+    "git:check": "node scripts/check-git-state.mjs",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "test": "vitest",
