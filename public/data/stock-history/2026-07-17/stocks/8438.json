@@ -1,0 +1,67 @@
+{
+  "symbol": "8438",
+  "name": "昶昕",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 83.9,
+    "high": 85.8,
+    "low": 76.6,
+    "close": 77.5,
+    "change": -7.6,
+    "changePercent": -8.93,
+    "tradeVolume": 710389,
+    "transactionCount": 1832,
+    "tradeValue": 55987938,
+    "peRatio": 29.47
+  },
+  "dailyRangePercent": 12.01,
+  "turnoverAverageValue": 30561.1,
+  "pricePosition": 9.8,
+  "liquidityScore": 54.5,
+  "priceStrengthScore": 11.9,
+  "valuationRiskScore": 55,
+  "snapshotScore": 33.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.93% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 12.01% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "3025",
+  "name": "星通",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 57.4,
+    "high": 57.7,
+    "low": 55.6,
+    "close": 55.8,
+    "change": -2.6,
+    "changePercent": -4.45,
+    "tradeVolume": 503976,
+    "transactionCount": 565,
+    "tradeValue": 28458319,
+    "peRatio": 13.95
+  },
+  "dailyRangePercent": 3.78,
+  "turnoverAverageValue": 50368.71,
+  "pricePosition": 9.5,
+  "liquidityScore": 41.9,
+  "priceStrengthScore": 21.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 40.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

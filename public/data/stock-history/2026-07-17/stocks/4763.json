@@ -1,0 +1,53 @@
+{
+  "symbol": "4763",
+  "name": "材料*-KY",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 46.8,
+    "high": 47.75,
+    "low": 45.1,
+    "close": 45.35,
+    "change": -2.1,
+    "changePercent": -4.43,
+    "tradeVolume": 9555433,
+    "transactionCount": 5880,
+    "tradeValue": 441613776,
+    "peRatio": 8.77
+  },
+  "dailyRangePercent": 5.88,
+  "turnoverAverageValue": 75104.38,
+  "pricePosition": 9.4,
+  "liquidityScore": 83.2,
+  "priceStrengthScore": 21.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 54.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

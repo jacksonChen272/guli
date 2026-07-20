@@ -1,0 +1,53 @@
+{
+  "symbol": "6165",
+  "name": "浪凡",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 50.5,
+    "high": 50.6,
+    "low": 49.4,
+    "close": 49.5,
+    "change": -1.4,
+    "changePercent": -2.75,
+    "tradeVolume": 2184948,
+    "transactionCount": 410,
+    "tradeValue": 108324404,
+    "peRatio": 11.87
+  },
+  "dailyRangePercent": 2.43,
+  "turnoverAverageValue": 264205.86,
+  "pricePosition": 8.3,
+  "liquidityScore": 59.1,
+  "priceStrengthScore": 25.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 48,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "6768",
+  "name": "志強-KY",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 70.3,
+    "high": 71.1,
+    "low": 69.9,
+    "close": 70,
+    "change": -1,
+    "changePercent": -1.41,
+    "tradeVolume": 595020,
+    "transactionCount": 508,
+    "tradeValue": 41797791,
+    "peRatio": 13.26
+  },
+  "dailyRangePercent": 1.72,
+  "turnoverAverageValue": 82279.12,
+  "pricePosition": 8.3,
+  "liquidityScore": 45.6,
+  "priceStrengthScore": 28.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 44.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

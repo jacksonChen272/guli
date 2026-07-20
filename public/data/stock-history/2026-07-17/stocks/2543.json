@@ -1,0 +1,53 @@
+{
+  "symbol": "2543",
+  "name": "皇昌",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 39.5,
+    "high": 40.6,
+    "low": 38.2,
+    "close": 38.25,
+    "change": -1.5,
+    "changePercent": -3.77,
+    "tradeVolume": 2345321,
+    "transactionCount": 1293,
+    "tradeValue": 91937696,
+    "peRatio": 15.42
+  },
+  "dailyRangePercent": 6.28,
+  "turnoverAverageValue": 71104.17,
+  "pricePosition": 2.1,
+  "liquidityScore": 63.2,
+  "priceStrengthScore": 20.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 44.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 2.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

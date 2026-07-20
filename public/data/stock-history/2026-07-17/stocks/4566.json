@@ -1,0 +1,67 @@
+{
+  "symbol": "4566",
+  "name": "時碩工業",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 65,
+    "high": 65.3,
+    "low": 60.5,
+    "close": 60.6,
+    "change": -5.3,
+    "changePercent": -8.04,
+    "tradeVolume": 1225369,
+    "transactionCount": 1162,
+    "tradeValue": 76183842,
+    "peRatio": 65.87
+  },
+  "dailyRangePercent": 7.93,
+  "turnoverAverageValue": 65562.69,
+  "pricePosition": 2.1,
+  "liquidityScore": 57.8,
+  "priceStrengthScore": 11.1,
+  "valuationRiskScore": 90,
+  "snapshotScore": 27.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.04% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 2.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 65.87 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

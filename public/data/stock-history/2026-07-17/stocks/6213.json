@@ -1,0 +1,60 @@
+{
+  "symbol": "6213",
+  "name": "聯茂",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 312.5,
+    "high": 336,
+    "low": 311,
+    "close": 319,
+    "change": -6,
+    "changePercent": -1.85,
+    "tradeVolume": 28504801,
+    "transactionCount": 26934,
+    "tradeValue": 9260069327,
+    "peRatio": 78
+  },
+  "dailyRangePercent": 8.04,
+  "turnoverAverageValue": 343805.95,
+  "pricePosition": 32,
+  "liquidityScore": 96.7,
+  "priceStrengthScore": 43.6,
+  "valuationRiskScore": 90,
+  "snapshotScore": 55.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.04% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 78.00 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

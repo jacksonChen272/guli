@@ -1,0 +1,53 @@
+{
+  "symbol": "3617",
+  "name": "碩天",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 212,
+    "high": 214.5,
+    "low": 204,
+    "close": 204,
+    "change": -9.5,
+    "changePercent": -4.45,
+    "tradeVolume": 591379,
+    "transactionCount": 899,
+    "tradeValue": 123458047,
+    "peRatio": 14.45
+  },
+  "dailyRangePercent": 5.15,
+  "turnoverAverageValue": 137328.19,
+  "pricePosition": 0,
+  "liquidityScore": 54.6,
+  "priceStrengthScore": 18.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 43.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

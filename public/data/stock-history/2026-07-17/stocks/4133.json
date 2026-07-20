@@ -1,0 +1,67 @@
+{
+  "symbol": "4133",
+  "name": "亞諾法",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.35,
+    "high": 22.35,
+    "low": 20.35,
+    "close": 22.35,
+    "change": 2,
+    "changePercent": 9.83,
+    "tradeVolume": 1530488,
+    "transactionCount": 913,
+    "tradeValue": 33705140,
+    "peRatio": 745
+  },
+  "dailyRangePercent": 9.83,
+  "turnoverAverageValue": 36916.91,
+  "pricePosition": 100,
+  "liquidityScore": 52.8,
+  "priceStrengthScore": 93.6,
+  "valuationRiskScore": 90,
+  "snapshotScore": 62.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.83% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.83% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 745.00 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

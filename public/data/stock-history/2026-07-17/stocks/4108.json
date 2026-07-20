@@ -1,0 +1,55 @@
+{
+  "symbol": "4108",
+  "name": "懷特",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12,
+    "high": 12,
+    "low": 11.55,
+    "close": 11.7,
+    "change": -0.3,
+    "changePercent": -2.5,
+    "tradeVolume": 267143,
+    "transactionCount": 285,
+    "tradeValue": 3137548,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.9,
+  "turnoverAverageValue": 11008.94,
+  "pricePosition": 33.3,
+  "liquidityScore": 21.6,
+  "priceStrengthScore": 34.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 28.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "6472",
+  "name": "保瑞",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 412,
+    "high": 417,
+    "low": 392.5,
+    "close": 396,
+    "change": -19.5,
+    "changePercent": -4.69,
+    "tradeVolume": 1636354,
+    "transactionCount": 3901,
+    "tradeValue": 654392153,
+    "peRatio": 31.38
+  },
+  "dailyRangePercent": 6.24,
+  "turnoverAverageValue": 167749.85,
+  "pricePosition": 14.3,
+  "liquidityScore": 74.7,
+  "priceStrengthScore": 23,
+  "valuationRiskScore": 55,
+  "snapshotScore": 45.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

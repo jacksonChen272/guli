@@ -1,0 +1,53 @@
+{
+  "symbol": "3044",
+  "name": "健鼎",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 408,
+    "high": 412,
+    "low": 394,
+    "close": 397.5,
+    "change": -24.5,
+    "changePercent": -5.81,
+    "tradeVolume": 4152785,
+    "transactionCount": 6493,
+    "tradeValue": 1663164659,
+    "peRatio": 19.31
+  },
+  "dailyRangePercent": 4.57,
+  "turnoverAverageValue": 256147.34,
+  "pricePosition": 19.4,
+  "liquidityScore": 85.5,
+  "priceStrengthScore": 22.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 52.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 19.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

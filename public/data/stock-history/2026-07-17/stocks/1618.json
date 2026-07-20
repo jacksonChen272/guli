@@ -1,0 +1,53 @@
+{
+  "symbol": "1618",
+  "name": "合機",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 37.8,
+    "high": 38.05,
+    "low": 37.3,
+    "close": 37.35,
+    "change": -0.85,
+    "changePercent": -2.23,
+    "tradeVolume": 1020585,
+    "transactionCount": 744,
+    "tradeValue": 38300717,
+    "peRatio": 8.21
+  },
+  "dailyRangePercent": 2.01,
+  "turnoverAverageValue": 51479.46,
+  "pricePosition": 6.7,
+  "liquidityScore": 50.5,
+  "priceStrengthScore": 25.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 45.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

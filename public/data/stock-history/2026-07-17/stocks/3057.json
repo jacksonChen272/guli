@@ -1,0 +1,62 @@
+{
+  "symbol": "3057",
+  "name": "喬鼎",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.4,
+    "high": 16.4,
+    "low": 15.6,
+    "close": 15.7,
+    "change": -1.15,
+    "changePercent": -6.82,
+    "tradeVolume": 159855,
+    "transactionCount": 264,
+    "tradeValue": 2547938,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.13,
+  "turnoverAverageValue": 9651.28,
+  "pricePosition": 12.5,
+  "liquidityScore": 17.8,
+  "priceStrengthScore": 17.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 17.6,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "6689",
+  "name": "伊雲谷",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 62.3,
+    "high": 63,
+    "low": 60.6,
+    "close": 60.9,
+    "change": -2.3,
+    "changePercent": -3.64,
+    "tradeVolume": 260768,
+    "transactionCount": 340,
+    "tradeValue": 15979153,
+    "peRatio": 26.95
+  },
+  "dailyRangePercent": 3.96,
+  "turnoverAverageValue": 46997.51,
+  "pricePosition": 12.5,
+  "liquidityScore": 30.9,
+  "priceStrengthScore": 24.7,
+  "valuationRiskScore": 55,
+  "snapshotScore": 30.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

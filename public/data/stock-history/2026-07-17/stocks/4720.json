@@ -1,0 +1,60 @@
+{
+  "symbol": "4720",
+  "name": "德淵",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 21.3,
+    "high": 21.35,
+    "low": 20.2,
+    "close": 20.35,
+    "change": -1.55,
+    "changePercent": -7.08,
+    "tradeVolume": 1461971,
+    "transactionCount": 875,
+    "tradeValue": 30196234,
+    "peRatio": 33.36
+  },
+  "dailyRangePercent": 5.69,
+  "turnoverAverageValue": 34509.98,
+  "pricePosition": 13,
+  "liquidityScore": 51.8,
+  "priceStrengthScore": 17.1,
+  "valuationRiskScore": 55,
+  "snapshotScore": 34.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.08% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 13.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

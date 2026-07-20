@@ -1,0 +1,53 @@
+{
+  "symbol": "1713",
+  "name": "國化",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 48.05,
+    "high": 48.05,
+    "low": 47.3,
+    "close": 47.4,
+    "change": -0.8,
+    "changePercent": -1.66,
+    "tradeVolume": 205816,
+    "transactionCount": 139,
+    "tradeValue": 9776458,
+    "peRatio": 10.58
+  },
+  "dailyRangePercent": 1.59,
+  "turnoverAverageValue": 70334.23,
+  "pricePosition": 13.3,
+  "liquidityScore": 24.4,
+  "priceStrengthScore": 29.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 37.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 13.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,62 @@
+{
+  "symbol": "3545",
+  "name": "敦泰",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 51,
+    "high": 51.1,
+    "low": 48.5,
+    "close": 48.5,
+    "change": -3.5,
+    "changePercent": -6.73,
+    "tradeVolume": 1657344,
+    "transactionCount": 1682,
+    "tradeValue": 82366747,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.36,
+  "turnoverAverageValue": 48969.53,
+  "pricePosition": 0,
+  "liquidityScore": 61.7,
+  "priceStrengthScore": 13.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 34.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

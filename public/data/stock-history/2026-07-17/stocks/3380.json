@@ -1,0 +1,69 @@
+{
+  "symbol": "3380",
+  "name": "明泰",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 31.8,
+    "high": 31.8,
+    "low": 29.7,
+    "close": 29.8,
+    "change": -2.4,
+    "changePercent": -7.45,
+    "tradeVolume": 3844346,
+    "transactionCount": 2348,
+    "tradeValue": 117031154,
+    "peRatio": null
+  },
+  "dailyRangePercent": 7.07,
+  "turnoverAverageValue": 49842.91,
+  "pricePosition": 4.8,
+  "liquidityScore": 69.9,
+  "priceStrengthScore": 13.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 38.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.45% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 4.8 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

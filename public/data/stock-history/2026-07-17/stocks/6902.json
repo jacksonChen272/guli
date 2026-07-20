@@ -1,0 +1,53 @@
+{
+  "symbol": "6902",
+  "name": "GOGOLOOK",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 128,
+    "high": 129.5,
+    "low": 124,
+    "close": 125,
+    "change": -6,
+    "changePercent": -4.58,
+    "tradeVolume": 135103,
+    "transactionCount": 294,
+    "tradeValue": 17037825,
+    "peRatio": 42.66
+  },
+  "dailyRangePercent": 4.44,
+  "turnoverAverageValue": 57951.79,
+  "pricePosition": 18.2,
+  "liquidityScore": 28.2,
+  "priceStrengthScore": 24.6,
+  "valuationRiskScore": 75,
+  "snapshotScore": 25.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.2 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,67 @@
+{
+  "symbol": "2441",
+  "name": "超豐",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 135,
+    "high": 136,
+    "low": 125.5,
+    "close": 126.5,
+    "change": -12.5,
+    "changePercent": -8.99,
+    "tradeVolume": 9771318,
+    "transactionCount": 9702,
+    "tradeValue": 1263901644,
+    "peRatio": 27.09
+  },
+  "dailyRangePercent": 8.37,
+  "turnoverAverageValue": 130272.28,
+  "pricePosition": 9.5,
+  "liquidityScore": 89.1,
+  "priceStrengthScore": 11.6,
+  "valuationRiskScore": 55,
+  "snapshotScore": 45.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.99% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.37% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

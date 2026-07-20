@@ -1,0 +1,53 @@
+{
+  "symbol": "1446",
+  "name": "宏和",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 14.45,
+    "high": 14.45,
+    "low": 14,
+    "close": 14,
+    "change": -0.4,
+    "changePercent": -2.78,
+    "tradeVolume": 353881,
+    "transactionCount": 224,
+    "tradeValue": 5006680,
+    "peRatio": 8.24
+  },
+  "dailyRangePercent": 3.21,
+  "turnoverAverageValue": 22351.25,
+  "pricePosition": 0,
+  "liquidityScore": 25.4,
+  "priceStrengthScore": 22.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 34.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "4766",
+  "name": "南寶",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 338,
+    "high": 345,
+    "low": 331.5,
+    "close": 332,
+    "change": -7,
+    "changePercent": -2.06,
+    "tradeVolume": 441177,
+    "transactionCount": 712,
+    "tradeValue": 148231008,
+    "peRatio": 15.99
+  },
+  "dailyRangePercent": 4.07,
+  "turnoverAverageValue": 208189.62,
+  "pricePosition": 3.7,
+  "liquidityScore": 52.7,
+  "priceStrengthScore": 25.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 42.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 3.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

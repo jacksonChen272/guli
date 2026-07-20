@@ -1,0 +1,53 @@
+{
+  "symbol": "5306",
+  "name": "桂盟",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 96.8,
+    "high": 100,
+    "low": 94.9,
+    "close": 95.9,
+    "change": -3.3,
+    "changePercent": -3.33,
+    "tradeVolume": 1237890,
+    "transactionCount": 1627,
+    "tradeValue": 120622612,
+    "peRatio": 15.13
+  },
+  "dailyRangePercent": 5.37,
+  "turnoverAverageValue": 74138.05,
+  "pricePosition": 19.6,
+  "liquidityScore": 61.8,
+  "priceStrengthScore": 27.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 47.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 19.6 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

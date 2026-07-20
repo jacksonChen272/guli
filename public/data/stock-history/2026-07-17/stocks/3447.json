@@ -1,0 +1,53 @@
+{
+  "symbol": "3447",
+  "name": "展達",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 32,
+    "high": 32,
+    "low": 30.15,
+    "close": 30.25,
+    "change": -2.25,
+    "changePercent": -6.92,
+    "tradeVolume": 539505,
+    "transactionCount": 458,
+    "tradeValue": 16584457,
+    "peRatio": 21.15
+  },
+  "dailyRangePercent": 6.14,
+  "turnoverAverageValue": 36210.6,
+  "pricePosition": 5.4,
+  "liquidityScore": 37.9,
+  "priceStrengthScore": 14.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 32.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

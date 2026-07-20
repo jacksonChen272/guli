@@ -1,0 +1,60 @@
+{
+  "symbol": "6415",
+  "name": "矽力*-KY",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 441,
+    "high": 468.5,
+    "low": 434.5,
+    "close": 435,
+    "change": -38,
+    "changePercent": -8.03,
+    "tradeVolume": 8284139,
+    "transactionCount": 9174,
+    "tradeValue": 3721698667,
+    "peRatio": 58.47
+  },
+  "dailyRangePercent": 7.83,
+  "turnoverAverageValue": 405678.95,
+  "pricePosition": 1.5,
+  "liquidityScore": 91.3,
+  "priceStrengthScore": 11,
+  "valuationRiskScore": 75,
+  "snapshotScore": 41.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.03% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 1.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

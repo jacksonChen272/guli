@@ -1,0 +1,149 @@
+{
+  "entityType": "stock",
+  "entityId": "6416",
+  "entityName": "瑞祺電通",
+  "tradeDate": "2026-07-17",
+  "score": 41.8,
+  "label": "偏弱",
+  "direction": "bearish",
+  "confidence": 79,
+  "summary": "偏弱，當日價格強度為主要貢獻。",
+  "factors": [
+    {
+      "code": "stock_health",
+      "name": "既有健康分數",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.25,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "daily_price_strength",
+      "name": "當日價格強度",
+      "rawValue": 24.1,
+      "normalizedScore": 24.1,
+      "weight": 0.2,
+      "contribution": -8.63,
+      "direction": "negative",
+      "explanation": "當日價格強度: 24.1",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "liquidity",
+      "name": "流動性",
+      "rawValue": 50.5,
+      "normalizedScore": 50.5,
+      "weight": 0.15,
+      "contribution": 0.13,
+      "direction": "neutral",
+      "explanation": "流動性: 50.5",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "market_environment",
+      "name": "市場環境",
+      "rawValue": 25.7,
+      "normalizedScore": 25.7,
+      "weight": 0.15,
+      "contribution": -6.07,
+      "direction": "negative",
+      "explanation": "市場環境: 25.7",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "industry_environment",
+      "name": "產業環境",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.15,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "risk_control",
+      "name": "風險控制",
+      "rawValue": 88,
+      "normalizedScore": 88,
+      "weight": 0.1,
+      "contribution": 6.33,
+      "direction": "positive",
+      "explanation": "風險控制: 88",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "data_quality",
+      "name": "資料品質",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "derived"
+    }
+  ],
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "explanation": "收盤位於當日區間第 11.8 百分位。",
+      "sourceType": "derived"
+    }
+  ],
+  "trace": {
+    "formulaVersion": "decision-v1.0",
+    "totalPositiveContribution": 6.46,
+    "totalNegativeContribution": -14.7,
+    "totalContribution": -8.24,
+    "availableWeight": 0.6,
+    "missingWeight": 0.4,
+    "normalizationApplied": true,
+    "calculationSteps": [
+      "availableWeight=0.6",
+      "missingWeight=0.4",
+      "normalized=true"
+    ]
+  },
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    },
+    {
+      "id": "twse-institutional",
+      "name": "TWSE official institutional trades",
+      "type": "official",
+      "tradeDate": "2026-07-20",
+      "fields": [
+        "foreignNetShares",
+        "trustNetShares",
+        "dealerNetShares",
+        "totalNetShares"
+      ]
+    }
+  ],
+  "warnings": [
+    "Static generation has no verified industry mapping or mock health input; weights were normalized.",
+    "Official institutional data is attached to trace; decision-v1.0 score weights are unchanged.",
+    "Institutional trade date 2026-07-20 differs from decision 2026-07-17; trace only, not scored."
+  ]
+}

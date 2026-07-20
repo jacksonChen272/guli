@@ -1,0 +1,55 @@
+{
+  "symbol": "1236",
+  "name": "宏亞",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.1,
+    "high": 24.1,
+    "low": 23,
+    "close": 23.55,
+    "change": 0.4,
+    "changePercent": 1.73,
+    "tradeVolume": 196101,
+    "transactionCount": 192,
+    "tradeValue": 4648012,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.78,
+  "turnoverAverageValue": 24208.4,
+  "pricePosition": 50,
+  "liquidityScore": 20.6,
+  "priceStrengthScore": 57.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 41.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

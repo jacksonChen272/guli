@@ -1,0 +1,53 @@
+{
+  "symbol": "1737",
+  "name": "臺鹽",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 32,
+    "high": 32.05,
+    "low": 31.85,
+    "close": 31.85,
+    "change": -0.15,
+    "changePercent": -0.47,
+    "tradeVolume": 140806,
+    "transactionCount": 173,
+    "tradeValue": 4494451,
+    "peRatio": 16.01
+  },
+  "dailyRangePercent": 0.63,
+  "turnoverAverageValue": 25979.49,
+  "pricePosition": 0,
+  "liquidityScore": 18.6,
+  "priceStrengthScore": 27.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 31.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

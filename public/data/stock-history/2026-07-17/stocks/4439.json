@@ -1,0 +1,53 @@
+{
+  "symbol": "4439",
+  "name": "冠星-KY",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 100,
+    "high": 102.5,
+    "low": 98.5,
+    "close": 100,
+    "change": -0.5,
+    "changePercent": -0.5,
+    "tradeVolume": 24810,
+    "transactionCount": 36,
+    "tradeValue": 2482582,
+    "peRatio": 12.08
+  },
+  "dailyRangePercent": 4.06,
+  "turnoverAverageValue": 68960.61,
+  "pricePosition": 37.5,
+  "liquidityScore": 7.6,
+  "priceStrengthScore": 44.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 38.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.6 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

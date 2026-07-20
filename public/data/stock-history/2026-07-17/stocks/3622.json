@@ -1,0 +1,53 @@
+{
+  "symbol": "3622",
+  "name": "洋華",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 55.2,
+    "high": 55.2,
+    "low": 53.1,
+    "close": 53.2,
+    "change": -2,
+    "changePercent": -3.62,
+    "tradeVolume": 558894,
+    "transactionCount": 430,
+    "tradeValue": 30011036,
+    "peRatio": 9.11
+  },
+  "dailyRangePercent": 3.95,
+  "turnoverAverageValue": 69793.11,
+  "pricePosition": 4.8,
+  "liquidityScore": 41.7,
+  "priceStrengthScore": 22,
+  "valuationRiskScore": 20,
+  "snapshotScore": 40.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 4.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "1108",
+  "name": "幸福",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.6,
+    "high": 12.6,
+    "low": 12.25,
+    "close": 12.25,
+    "change": -0.4,
+    "changePercent": -3.16,
+    "tradeVolume": 1010498,
+    "transactionCount": 471,
+    "tradeValue": 12530340,
+    "peRatio": 6.06
+  },
+  "dailyRangePercent": 2.86,
+  "turnoverAverageValue": 26603.69,
+  "pricePosition": 0,
+  "liquidityScore": 40.7,
+  "priceStrengthScore": 21.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 39.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

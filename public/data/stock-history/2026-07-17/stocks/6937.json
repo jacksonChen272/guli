@@ -1,0 +1,67 @@
+{
+  "symbol": "6937",
+  "name": "天虹",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 281.5,
+    "high": 291,
+    "low": 264,
+    "close": 269,
+    "change": -19.5,
+    "changePercent": -6.76,
+    "tradeVolume": 971123,
+    "transactionCount": 1207,
+    "tradeValue": 269883068,
+    "peRatio": 83.02
+  },
+  "dailyRangePercent": 10.23,
+  "turnoverAverageValue": 223598.23,
+  "pricePosition": 18.5,
+  "liquidityScore": 64.1,
+  "priceStrengthScore": 19.8,
+  "valuationRiskScore": 90,
+  "snapshotScore": 33.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.23% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.5 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 83.02 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "3002",
+  "name": "歐格",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.2,
+    "high": 19.2,
+    "low": 17.9,
+    "close": 18.15,
+    "change": -1.15,
+    "changePercent": -5.96,
+    "tradeVolume": 415990,
+    "transactionCount": 360,
+    "tradeValue": 7612513,
+    "peRatio": 55
+  },
+  "dailyRangePercent": 7.26,
+  "turnoverAverageValue": 21145.87,
+  "pricePosition": 19.2,
+  "liquidityScore": 30.5,
+  "priceStrengthScore": 21.8,
+  "valuationRiskScore": 75,
+  "snapshotScore": 25.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 19.2 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

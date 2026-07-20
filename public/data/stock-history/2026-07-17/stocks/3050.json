@@ -1,0 +1,62 @@
+{
+  "symbol": "3050",
+  "name": "鈺德",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.9,
+    "high": 12.1,
+    "low": 11.5,
+    "close": 11.5,
+    "change": -0.75,
+    "changePercent": -6.12,
+    "tradeVolume": 876015,
+    "transactionCount": 479,
+    "tradeValue": 10265348,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.22,
+  "turnoverAverageValue": 21430.79,
+  "pricePosition": 0,
+  "liquidityScore": 39,
+  "priceStrengthScore": 14.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 25.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

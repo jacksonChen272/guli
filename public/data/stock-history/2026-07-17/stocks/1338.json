@@ -1,0 +1,62 @@
+{
+  "symbol": "1338",
+  "name": "廣華-KY",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.6,
+    "high": 16.6,
+    "low": 15.85,
+    "close": 16.25,
+    "change": -0.3,
+    "changePercent": -1.81,
+    "tradeVolume": 110364,
+    "transactionCount": 114,
+    "tradeValue": 1778392,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.73,
+  "turnoverAverageValue": 15599.93,
+  "pricePosition": 53.3,
+  "liquidityScore": 12.4,
+  "priceStrengthScore": 43.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 29.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.4 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

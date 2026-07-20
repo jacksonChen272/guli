@@ -1,0 +1,53 @@
+{
+  "symbol": "3046",
+  "name": "建碁",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 53,
+    "high": 54.1,
+    "low": 52.1,
+    "close": 52.4,
+    "change": -1.8,
+    "changePercent": -3.32,
+    "tradeVolume": 357480,
+    "transactionCount": 321,
+    "tradeValue": 18947703,
+    "peRatio": 12.78
+  },
+  "dailyRangePercent": 3.84,
+  "turnoverAverageValue": 59027.11,
+  "pricePosition": 15,
+  "liquidityScore": 34.8,
+  "priceStrengthScore": 26.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 40,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

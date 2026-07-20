@@ -1,0 +1,60 @@
+{
+  "symbol": "2329",
+  "name": "華泰",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 47,
+    "high": 47.75,
+    "low": 44.8,
+    "close": 45.15,
+    "change": -3.8,
+    "changePercent": -7.76,
+    "tradeVolume": 7799389,
+    "transactionCount": 5787,
+    "tradeValue": 358091959,
+    "peRatio": 20.43
+  },
+  "dailyRangePercent": 6.58,
+  "turnoverAverageValue": 61878.69,
+  "pricePosition": 11.9,
+  "liquidityScore": 81.8,
+  "priceStrengthScore": 15.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 48.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.76% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.9 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

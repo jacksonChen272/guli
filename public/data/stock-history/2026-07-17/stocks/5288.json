@@ -1,0 +1,53 @@
+{
+  "symbol": "5288",
+  "name": "豐祥-KY",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 186,
+    "high": 190,
+    "low": 183.5,
+    "close": 184.5,
+    "change": -3,
+    "changePercent": -1.6,
+    "tradeVolume": 190031,
+    "transactionCount": 198,
+    "tradeValue": 35403790,
+    "peRatio": 15.34
+  },
+  "dailyRangePercent": 3.54,
+  "turnoverAverageValue": 178807.02,
+  "pricePosition": 15.4,
+  "liquidityScore": 32.8,
+  "priceStrengthScore": 30.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 38.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

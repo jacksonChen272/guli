@@ -1,0 +1,53 @@
+{
+  "symbol": "2832",
+  "name": "台產",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 56.9,
+    "high": 57.5,
+    "low": 56.4,
+    "close": 56.4,
+    "change": -0.8,
+    "changePercent": -1.4,
+    "tradeVolume": 225664,
+    "transactionCount": 184,
+    "tradeValue": 12821646,
+    "peRatio": 10.85
+  },
+  "dailyRangePercent": 1.95,
+  "turnoverAverageValue": 69682.86,
+  "pricePosition": 0,
+  "liquidityScore": 27,
+  "priceStrengthScore": 25.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 36.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

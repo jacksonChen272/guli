@@ -1,0 +1,53 @@
+{
+  "symbol": "6189",
+  "name": "豐藝",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 49.3,
+    "high": 49.3,
+    "low": 47.3,
+    "close": 47.35,
+    "change": -1.7,
+    "changePercent": -3.47,
+    "tradeVolume": 879700,
+    "transactionCount": 992,
+    "tradeValue": 42179439,
+    "peRatio": 18
+  },
+  "dailyRangePercent": 4.23,
+  "turnoverAverageValue": 42519.6,
+  "pricePosition": 2.5,
+  "liquidityScore": 51.6,
+  "priceStrengthScore": 21.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 40.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 2.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

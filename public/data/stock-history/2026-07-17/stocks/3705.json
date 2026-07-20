@@ -1,0 +1,53 @@
+{
+  "symbol": "3705",
+  "name": "永信",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 55.6,
+    "high": 55.6,
+    "low": 54.2,
+    "close": 54.2,
+    "change": -1.3,
+    "changePercent": -2.34,
+    "tradeVolume": 265888,
+    "transactionCount": 189,
+    "tradeValue": 14585717,
+    "peRatio": 18.25
+  },
+  "dailyRangePercent": 2.58,
+  "turnoverAverageValue": 77173.11,
+  "pricePosition": 0,
+  "liquidityScore": 28.5,
+  "priceStrengthScore": 23.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 33.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

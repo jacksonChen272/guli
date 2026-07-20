@@ -1,0 +1,74 @@
+{
+  "symbol": "1727",
+  "name": "中華化",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 88.5,
+    "high": 89.2,
+    "low": 81.9,
+    "close": 82.4,
+    "change": -8.6,
+    "changePercent": -9.45,
+    "tradeVolume": 4358116,
+    "transactionCount": 4000,
+    "tradeValue": 365157829,
+    "peRatio": 222.7
+  },
+  "dailyRangePercent": 8.91,
+  "turnoverAverageValue": 91289.46,
+  "pricePosition": 6.8,
+  "liquidityScore": 78.1,
+  "priceStrengthScore": 9.6,
+  "valuationRiskScore": 90,
+  "snapshotScore": 33.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.45% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.91% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.8 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 222.70 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

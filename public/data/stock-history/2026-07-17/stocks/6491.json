@@ -1,0 +1,53 @@
+{
+  "symbol": "6491",
+  "name": "晶碩",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 353,
+    "high": 356.5,
+    "low": 333,
+    "close": 335,
+    "change": -24.5,
+    "changePercent": -6.82,
+    "tradeVolume": 613660,
+    "transactionCount": 1276,
+    "tradeValue": 209945949,
+    "peRatio": 16.11
+  },
+  "dailyRangePercent": 7.06,
+  "turnoverAverageValue": 164534.44,
+  "pricePosition": 8.5,
+  "liquidityScore": 59.6,
+  "priceStrengthScore": 16.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 41.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

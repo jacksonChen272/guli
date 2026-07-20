@@ -1,0 +1,53 @@
+{
+  "symbol": "1457",
+  "name": "宜進",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 14.3,
+    "high": 14.4,
+    "low": 14.1,
+    "close": 14.25,
+    "change": -0.15,
+    "changePercent": -1.04,
+    "tradeVolume": 66043,
+    "transactionCount": 81,
+    "tradeValue": 940227,
+    "peRatio": 15.66
+  },
+  "dailyRangePercent": 2.13,
+  "turnoverAverageValue": 11607.74,
+  "pricePosition": 50,
+  "liquidityScore": 7.5,
+  "priceStrengthScore": 43.7,
+  "valuationRiskScore": 35,
+  "snapshotScore": 35.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.5 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

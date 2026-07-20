@@ -1,0 +1,53 @@
+{
+  "symbol": "4440",
+  "name": "宜新實業",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.3,
+    "high": 17.55,
+    "low": 17.3,
+    "close": 17.5,
+    "change": -0.25,
+    "changePercent": -1.41,
+    "tradeVolume": 54318,
+    "transactionCount": 43,
+    "tradeValue": 948621,
+    "peRatio": 10.23
+  },
+  "dailyRangePercent": 1.45,
+  "turnoverAverageValue": 22060.95,
+  "pricePosition": 80,
+  "liquidityScore": 6.1,
+  "priceStrengthScore": 61.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 45.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 6.1 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

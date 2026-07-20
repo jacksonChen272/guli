@@ -1,0 +1,55 @@
+{
+  "symbol": "9919",
+  "name": "康那香",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 14.1,
+    "high": 14.1,
+    "low": 13.8,
+    "close": 13.95,
+    "change": -0.15,
+    "changePercent": -1.06,
+    "tradeVolume": 660802,
+    "transactionCount": 372,
+    "tradeValue": 9190183,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.17,
+  "turnoverAverageValue": 24704.79,
+  "pricePosition": 50,
+  "liquidityScore": 34.9,
+  "priceStrengthScore": 43.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 39.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

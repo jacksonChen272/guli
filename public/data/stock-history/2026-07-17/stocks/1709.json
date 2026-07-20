@@ -1,0 +1,53 @@
+{
+  "symbol": "1709",
+  "name": "和益",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 26.7,
+    "high": 27.9,
+    "low": 25.95,
+    "close": 26.05,
+    "change": -1.15,
+    "changePercent": -4.23,
+    "tradeVolume": 5891152,
+    "transactionCount": 2862,
+    "tradeValue": 157296325,
+    "peRatio": 18.74
+  },
+  "dailyRangePercent": 7.51,
+  "turnoverAverageValue": 54960.28,
+  "pricePosition": 5.1,
+  "liquidityScore": 74.3,
+  "priceStrengthScore": 20.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 48.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

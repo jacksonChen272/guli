@@ -1,0 +1,53 @@
+{
+  "symbol": "1568",
+  "name": "倉佑",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 31,
+    "high": 31.5,
+    "low": 30,
+    "close": 30.3,
+    "change": -1.45,
+    "changePercent": -4.57,
+    "tradeVolume": 539950,
+    "transactionCount": 474,
+    "tradeValue": 16491639,
+    "peRatio": 22.61
+  },
+  "dailyRangePercent": 5,
+  "turnoverAverageValue": 34792.49,
+  "pricePosition": 20,
+  "liquidityScore": 38,
+  "priceStrengthScore": 25.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 37.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

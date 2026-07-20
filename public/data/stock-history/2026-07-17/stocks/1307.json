@@ -1,0 +1,53 @@
+{
+  "symbol": "1307",
+  "name": "三芳",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 32.7,
+    "high": 32.85,
+    "low": 31.9,
+    "close": 32.05,
+    "change": -0.65,
+    "changePercent": -1.99,
+    "tradeVolume": 1005377,
+    "transactionCount": 643,
+    "tradeValue": 32420264,
+    "peRatio": 11.7
+  },
+  "dailyRangePercent": 2.98,
+  "turnoverAverageValue": 50420.32,
+  "pricePosition": 15.8,
+  "liquidityScore": 48.3,
+  "priceStrengthScore": 29.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 46.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

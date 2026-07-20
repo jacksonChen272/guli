@@ -1,0 +1,53 @@
+{
+  "symbol": "1438",
+  "name": "三地開發",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 21.5,
+    "high": 21.5,
+    "low": 20.8,
+    "close": 20.95,
+    "change": -0.45,
+    "changePercent": -2.1,
+    "tradeVolume": 70073,
+    "transactionCount": 51,
+    "tradeValue": 1472363,
+    "peRatio": 7.59
+  },
+  "dailyRangePercent": 3.37,
+  "turnoverAverageValue": 28869.86,
+  "pricePosition": 21.4,
+  "liquidityScore": 8.4,
+  "priceStrengthScore": 31.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 33,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.4 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

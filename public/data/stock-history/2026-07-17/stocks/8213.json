@@ -1,0 +1,53 @@
+{
+  "symbol": "8213",
+  "name": "志超",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 33.8,
+    "high": 33.9,
+    "low": 32.8,
+    "close": 32.8,
+    "change": -1.3,
+    "changePercent": -3.81,
+    "tradeVolume": 942037,
+    "transactionCount": 818,
+    "tradeValue": 31278566,
+    "peRatio": 16.99
+  },
+  "dailyRangePercent": 3.35,
+  "turnoverAverageValue": 38237.86,
+  "pricePosition": 0,
+  "liquidityScore": 48.8,
+  "priceStrengthScore": 20,
+  "valuationRiskScore": 35,
+  "snapshotScore": 39.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

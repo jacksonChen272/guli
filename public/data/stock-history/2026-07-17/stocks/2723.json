@@ -1,0 +1,62 @@
+{
+  "symbol": "2723",
+  "name": "美食-KY",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 65.3,
+    "high": 65.4,
+    "low": 63,
+    "close": 63,
+    "change": -2.3,
+    "changePercent": -3.52,
+    "tradeVolume": 384232,
+    "transactionCount": 241,
+    "tradeValue": 24516388,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.81,
+  "turnoverAverageValue": 101727.75,
+  "pricePosition": 0,
+  "liquidityScore": 35.8,
+  "priceStrengthScore": 20.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 27.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

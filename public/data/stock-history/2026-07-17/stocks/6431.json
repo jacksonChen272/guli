@@ -1,0 +1,62 @@
+{
+  "symbol": "6431",
+  "name": "光麗-KY",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.5,
+    "high": 18.1,
+    "low": 16.5,
+    "close": 17.5,
+    "change": -0.5,
+    "changePercent": -2.78,
+    "tradeVolume": 245112,
+    "transactionCount": 141,
+    "tradeValue": 4184386,
+    "peRatio": null
+  },
+  "dailyRangePercent": 9.7,
+  "turnoverAverageValue": 29676.5,
+  "pricePosition": 62.5,
+  "liquidityScore": 19.9,
+  "priceStrengthScore": 48.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 35.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.70% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2458",
+  "name": "義隆",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 170.5,
+    "high": 172,
+    "low": 163,
+    "close": 164.5,
+    "change": -11,
+    "changePercent": -6.27,
+    "tradeVolume": 3391412,
+    "transactionCount": 4513,
+    "tradeValue": 566038339,
+    "peRatio": 18.12
+  },
+  "dailyRangePercent": 5.52,
+  "turnoverAverageValue": 125423.96,
+  "pricePosition": 16.7,
+  "liquidityScore": 78.6,
+  "priceStrengthScore": 20.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 49.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "9958",
+  "name": "世紀鋼",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 116.5,
+    "high": 118,
+    "low": 111,
+    "close": 111,
+    "change": -7.5,
+    "changePercent": -6.33,
+    "tradeVolume": 2818095,
+    "transactionCount": 2536,
+    "tradeValue": 320018344,
+    "peRatio": 14.16
+  },
+  "dailyRangePercent": 6.31,
+  "turnoverAverageValue": 126190.2,
+  "pricePosition": 0,
+  "liquidityScore": 73.6,
+  "priceStrengthScore": 14.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 48.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

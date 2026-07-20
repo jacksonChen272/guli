@@ -1,0 +1,67 @@
+{
+  "symbol": "6573",
+  "name": "虹揚-KY",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.6,
+    "high": 21.7,
+    "low": 19.95,
+    "close": 20.25,
+    "change": -1.8,
+    "changePercent": -8.16,
+    "tradeVolume": 1113852,
+    "transactionCount": 703,
+    "tradeValue": 22749735,
+    "peRatio": 15.46
+  },
+  "dailyRangePercent": 8.77,
+  "turnoverAverageValue": 32360.93,
+  "pricePosition": 17.1,
+  "liquidityScore": 47.4,
+  "priceStrengthScore": 16.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 36.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.16% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.77% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

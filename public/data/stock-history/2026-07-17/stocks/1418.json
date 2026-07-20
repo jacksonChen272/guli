@@ -1,0 +1,62 @@
+{
+  "symbol": "1418",
+  "name": "東華",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 18.95,
+    "high": 18.95,
+    "low": 18.05,
+    "close": 18.35,
+    "change": -0.15,
+    "changePercent": -0.81,
+    "tradeVolume": 12865,
+    "transactionCount": 48,
+    "tradeValue": 236330,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.99,
+  "turnoverAverageValue": 4923.54,
+  "pricePosition": 33.3,
+  "liquidityScore": 2.3,
+  "priceStrengthScore": 38.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 22.6,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 2.3 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

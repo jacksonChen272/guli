@@ -1,0 +1,62 @@
+{
+  "symbol": "4999",
+  "name": "鑫禾",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.75,
+    "high": 19.75,
+    "low": 19.3,
+    "close": 19.35,
+    "change": -0.4,
+    "changePercent": -2.03,
+    "tradeVolume": 105997,
+    "transactionCount": 285,
+    "tradeValue": 2063609,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.33,
+  "turnoverAverageValue": 7240.73,
+  "pricePosition": 11.1,
+  "liquidityScore": 15.5,
+  "priceStrengthScore": 27.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 22.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

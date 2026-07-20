@@ -1,0 +1,67 @@
+{
+  "symbol": "6205",
+  "name": "詮欣",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 66,
+    "high": 66,
+    "low": 61,
+    "close": 61.4,
+    "change": -5.4,
+    "changePercent": -8.08,
+    "tradeVolume": 768301,
+    "transactionCount": 769,
+    "tradeValue": 48126766,
+    "peRatio": 36.55
+  },
+  "dailyRangePercent": 8.2,
+  "turnoverAverageValue": 62583.57,
+  "pricePosition": 8,
+  "liquidityScore": 50.2,
+  "priceStrengthScore": 13.1,
+  "valuationRiskScore": 55,
+  "snapshotScore": 32.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.08% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.20% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

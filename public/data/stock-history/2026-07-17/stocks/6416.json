@@ -1,0 +1,53 @@
+{
+  "symbol": "6416",
+  "name": "瑞祺電通",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 93.2,
+    "high": 95.8,
+    "low": 90.7,
+    "close": 91.3,
+    "change": -3.6,
+    "changePercent": -3.79,
+    "tradeVolume": 646995,
+    "transactionCount": 723,
+    "tradeValue": 60048215,
+    "peRatio": 20.07
+  },
+  "dailyRangePercent": 5.62,
+  "turnoverAverageValue": 83054.24,
+  "pricePosition": 11.8,
+  "liquidityScore": 50.5,
+  "priceStrengthScore": 24.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 41.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

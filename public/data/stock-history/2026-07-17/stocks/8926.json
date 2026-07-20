@@ -1,0 +1,53 @@
+{
+  "symbol": "8926",
+  "name": "台汽電",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 65.9,
+    "high": 67.1,
+    "low": 65.3,
+    "close": 65.5,
+    "change": -1.5,
+    "changePercent": -2.24,
+    "tradeVolume": 4995161,
+    "transactionCount": 4399,
+    "tradeValue": 329346838,
+    "peRatio": 16.05
+  },
+  "dailyRangePercent": 2.76,
+  "turnoverAverageValue": 74868.57,
+  "pricePosition": 11.1,
+  "liquidityScore": 78.6,
+  "priceStrengthScore": 27.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 52.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

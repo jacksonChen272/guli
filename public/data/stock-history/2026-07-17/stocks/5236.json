@@ -1,0 +1,53 @@
+{
+  "symbol": "5236",
+  "name": "凌陽創新",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 150,
+    "high": 150,
+    "low": 144,
+    "close": 144.5,
+    "change": -8,
+    "changePercent": -5.25,
+    "tradeVolume": 329775,
+    "transactionCount": 501,
+    "tradeValue": 48265412,
+    "peRatio": 15.16
+  },
+  "dailyRangePercent": 4.17,
+  "turnoverAverageValue": 96338.15,
+  "pricePosition": 8.3,
+  "liquidityScore": 42.6,
+  "priceStrengthScore": 19.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 36.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

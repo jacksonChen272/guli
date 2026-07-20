@@ -1,0 +1,60 @@
+{
+  "symbol": "1587",
+  "name": "吉茂",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 26.15,
+    "high": 26.15,
+    "low": 25.1,
+    "close": 25.1,
+    "change": -1.05,
+    "changePercent": -4.02,
+    "tradeVolume": 625056,
+    "transactionCount": 449,
+    "tradeValue": 15887062,
+    "peRatio": 61.22
+  },
+  "dailyRangePercent": 4.18,
+  "turnoverAverageValue": 35383.21,
+  "pricePosition": 0,
+  "liquidityScore": 38.4,
+  "priceStrengthScore": 19.5,
+  "valuationRiskScore": 90,
+  "snapshotScore": 24.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 61.22 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

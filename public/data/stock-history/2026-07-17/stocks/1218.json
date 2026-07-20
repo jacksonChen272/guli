@@ -1,0 +1,53 @@
+{
+  "symbol": "1218",
+  "name": "泰山",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.55,
+    "high": 16.6,
+    "low": 16.35,
+    "close": 16.4,
+    "change": -0.3,
+    "changePercent": -1.8,
+    "tradeVolume": 1366421,
+    "transactionCount": 894,
+    "tradeValue": 22504328,
+    "peRatio": 10.65
+  },
+  "dailyRangePercent": 1.53,
+  "turnoverAverageValue": 25172.63,
+  "pricePosition": 20,
+  "liquidityScore": 49.6,
+  "priceStrengthScore": 31.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 47.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

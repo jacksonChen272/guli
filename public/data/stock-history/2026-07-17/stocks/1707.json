@@ -1,0 +1,53 @@
+{
+  "symbol": "1707",
+  "name": "葡萄王",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 92.5,
+    "high": 93.1,
+    "low": 90.9,
+    "close": 90.9,
+    "change": -1.6,
+    "changePercent": -1.73,
+    "tradeVolume": 447377,
+    "transactionCount": 672,
+    "tradeValue": 41104195,
+    "peRatio": 11.36
+  },
+  "dailyRangePercent": 2.42,
+  "turnoverAverageValue": 61166.96,
+  "pricePosition": 0,
+  "liquidityScore": 45,
+  "priceStrengthScore": 24.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 42.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

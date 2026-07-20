@@ -1,0 +1,60 @@
+{
+  "symbol": "3376",
+  "name": "新日興",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 192,
+    "high": 194,
+    "low": 186,
+    "close": 187,
+    "change": -7.5,
+    "changePercent": -3.86,
+    "tradeVolume": 4050712,
+    "transactionCount": 5028,
+    "tradeValue": 766178076,
+    "peRatio": 275
+  },
+  "dailyRangePercent": 4.3,
+  "turnoverAverageValue": 152382.27,
+  "pricePosition": 12.5,
+  "liquidityScore": 81.5,
+  "priceStrengthScore": 24.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 41.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 275.00 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

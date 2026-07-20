@@ -1,0 +1,67 @@
+{
+  "symbol": "6669",
+  "name": "緯穎",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 4900,
+    "high": 4995,
+    "low": 4620,
+    "close": 4620,
+    "change": -495,
+    "changePercent": -9.68,
+    "tradeVolume": 1627532,
+    "transactionCount": 20066,
+    "tradeValue": 7766703780,
+    "peRatio": 15.49
+  },
+  "dailyRangePercent": 8.12,
+  "turnoverAverageValue": 387057.9,
+  "pricePosition": 0,
+  "liquidityScore": 85,
+  "priceStrengthScore": 6.7,
+  "valuationRiskScore": 35,
+  "snapshotScore": 45.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.68% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.12% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

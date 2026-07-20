@@ -1,0 +1,60 @@
+{
+  "symbol": "2540",
+  "name": "愛山林",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 54.3,
+    "high": 54.5,
+    "low": 53.5,
+    "close": 53.5,
+    "change": -0.8,
+    "changePercent": -1.47,
+    "tradeVolume": 715388,
+    "transactionCount": 598,
+    "tradeValue": 38597741,
+    "peRatio": 89.17
+  },
+  "dailyRangePercent": 1.87,
+  "turnoverAverageValue": 64544.72,
+  "pricePosition": 0,
+  "liquidityScore": 46.9,
+  "priceStrengthScore": 25.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 29.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 89.17 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}
