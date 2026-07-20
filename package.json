@@ -1,12 +1,13 @@
 {
   "name": "guli-fintech-platform",
   "private": true,
-  "version": "1.0.0-beta.3.1",
+  "version": "1.0.0-beta.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "data:twse": "node scripts/fetch-twse-market.mjs",
     "data:twse:stocks": "node scripts/fetch-twse-stocks.mjs",
+    "data:twse:industries": "node scripts/fetch-twse-industry-mapping.mjs",
     "data:twse:institutional": "node scripts/fetch-twse-institutional.mjs",
     "data:twse:history": "node scripts/fetch-twse-stock-history.mjs",
     "data:twse:history:watchlist": "node scripts/fetch-twse-stock-history.mjs --watchlist",

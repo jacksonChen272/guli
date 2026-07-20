@@ -2,7 +2,7 @@ import type { ProviderId } from '../providers/ProviderTypes'
 
 export type MarketPlatformState = 'Official' | 'Mock' | 'Missing'
 export type OfficialDatasetPlatformState = 'Official' | 'Partial' | 'Missing'
-export type IndustryPlatformState = 'Mock' | 'Derived' | 'Missing'
+export type IndustryPlatformState = 'Official' | 'Partial' | 'Mock' | 'Derived' | 'Missing'
 
 export interface DataPlatformStatus {
   providerId: ProviderId

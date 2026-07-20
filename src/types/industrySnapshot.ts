@@ -37,9 +37,22 @@ export interface IndustrySnapshotItem {
   return20d: number | null
   institutionalNetBuy: number | null
   tradingAmount: number | null
+  tradingVolume?: number | null
+  averageChangePercent?: number | null
+  weightedChangePercent?: number | null
   advanceCount: number | null
   declineCount: number | null
   unchangedCount: number | null
+  advanceRatio?: number | null
+  constituentCount?: number
+  officialMappedCount?: number
+  derivedMappedCount?: number
+  technicalAverage?: number | null
+  technicalSampleCount?: number
+  decisionAverage?: number | null
+  decisionSampleCount?: number
+  highRiskCount?: number
+  dataStatus?: 'Official' | 'Mixed' | 'Partial'
   leaderStocks: IndustryStockSummary[]
   laggardStocks: IndustryStockSummary[]
   risks: string[]

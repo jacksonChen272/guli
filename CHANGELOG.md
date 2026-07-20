@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.0-beta.4]
+
+- 新增 TWSE 上市公司基本資料同步腳本，產出可追溯、可驗證的官方產業分類靜態 JSON。
+- 新增 `TWSEIndustryMappingProvider`、`IndustryMappingRepository`、正規化、驗證、合併與覆蓋率服務。
+- Market Heatmap 與 Industry Snapshot 改為官方分類優先；缺值才使用明確標示的衍生群組，其他股票保留為未分類。
+- Today Dashboard 熱門族群與 Data Coverage 顯示實際普通股總數、官方分類數、未分類數、樣本數與更新時間。
+- Decision、Technical、Health、Market Snapshot 與 Stock Snapshot 的既有公式及權重未變更。
+
 ## [1.0.0-beta.3.1]
 
 - GitHub Pages 部署固定由 `deploy-pages.yml` 上傳 `./dist`，不再修改 repository。

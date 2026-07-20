@@ -3,6 +3,16 @@ export interface DataCoverageReport {
   stockOfficialPercent: number
   institutionalOfficialPercent: number
   industryOfficialPercent: number
+  industryMappedStockCount: number
+  industryUnmappedStockCount: number
+  industryCount: number
+  industryCoveragePercent: number
+  heatmapStockCount: number
+  industrySnapshotCount: number
+  industryTechnicalJoinCount: number
+  industryDecisionJoinCount: number
+  industryMappingUpdatedAt: string | null
+  industryMappingStale: boolean
   historyDays: number
   historyStockCoverageCount: number
   historyAverageDays: number

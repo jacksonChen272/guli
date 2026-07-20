@@ -5,6 +5,10 @@ export interface HeatmapSummary {
   mappedStockCount: number
   unmappedStockCount: number
   coverageRate: number
+  officialMappedStockCount: number
+  derivedMappedStockCount: number
+  officialCoverageRate: number
+  derivedCoverageRate: number
   advanceCount: number
   declineCount: number
   unchangedCount: number
@@ -19,6 +23,10 @@ export function summarizeHeatmap(dataset: MarketHeatmapDataset): HeatmapSummary 
     mappedStockCount: dataset.mappedStockCount,
     unmappedStockCount: dataset.unmappedStockCount,
     coverageRate: dataset.coverageRate,
+    officialMappedStockCount: dataset.officialMappedStockCount ?? dataset.mappedStockCount,
+    derivedMappedStockCount: dataset.derivedMappedStockCount ?? 0,
+    officialCoverageRate: dataset.officialCoverageRate ?? dataset.coverageRate,
+    derivedCoverageRate: dataset.derivedCoverageRate ?? 0,
     advanceCount: stocks.filter((node) => (node.changePercent ?? 0) > 0).length,
     declineCount: stocks.filter((node) => (node.changePercent ?? 0) < 0).length,
     unchangedCount: stocks.filter((node) => node.changePercent === 0).length,

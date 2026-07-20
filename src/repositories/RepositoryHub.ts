@@ -14,6 +14,7 @@ import type {
 } from '../types/dataPlatformStatus'
 import { DecisionRepository } from './DecisionRepository'
 import { IndustryRepository } from './IndustryRepository'
+import { IndustryMappingRepository } from './IndustryMappingRepository'
 import { IndustrySnapshotRepository } from './IndustrySnapshotRepository'
 import { InstitutionRepository } from './InstitutionRepository'
 import { MarketRepository } from './MarketRepository'
@@ -45,6 +46,7 @@ export class RepositoryHub {
   stockHistory!: StockHistoryRepository
   readonly screener = new ScreenerRepository()
   readonly marketHeatmap = new MarketHeatmapRepository()
+  readonly industryMapping = new IndustryMappingRepository()
   industries!: IndustryRepository
   institutions!: InstitutionRepository
   watchlist!: WatchlistRepository
@@ -156,7 +158,7 @@ export class RepositoryHub {
       ? await this.market.refresh(undefined)
       : await this.market.read(undefined)
 
-    const [stockStatus, institutionalStatus, industrySnapshot] = await Promise.all([
+    const [stockStatus, institutionalStatus, industrySnapshot, industryMappingStatus] = await Promise.all([
       force
         ? this.stocks.refreshOfficialData()
             .then(() => this.stocks.getOfficialDatasetStatus())
@@ -168,6 +170,7 @@ export class RepositoryHub {
             .catch(() => this.institutions.getDatasetStatus())
         : this.institutions.getDatasetStatus(),
       this.industrySnapshots.getLatest().catch(() => null),
+      force ? this.industryMapping.refresh().then(() => this.industryMapping.getStatus()).catch(() => this.industryMapping.getStatus()) : this.industryMapping.getStatus(),
     ])
 
     const officialMarket = marketResult.data.officialMarket
@@ -187,7 +190,9 @@ export class RepositoryHub {
     )
 
     let industry: IndustryPlatformState = 'Missing'
-    if (industrySnapshot) industry = 'Derived'
+    if (industryMappingStatus.available && !industryMappingStatus.stale && industryMappingStatus.coverageRate === 100) industry = 'Official'
+    else if (industryMappingStatus.available) industry = 'Partial'
+    else if (industrySnapshot) industry = 'Derived'
     else if (this.industries.getSnapshot().length > 0) industry = 'Mock'
 
     const allCoreOfficial = market === 'Official' && stocks === 'Official' && institutions === 'Official'
@@ -202,6 +207,7 @@ export class RepositoryHub {
       ...(officialMarket?.warnings ?? []),
       ...stockStatus.warnings,
       ...institutionalStatus.warnings,
+      ...industryMappingStatus.warnings,
     ]
 
     return {

@@ -11,6 +11,9 @@ export interface MarketHeatmapNode {
   name: string
   industryId: string | null
   industryName: string
+  officialIndustryName?: string | null
+  displayIndustryGroup?: string
+  mappingStatus?: 'official' | 'derived' | 'missing'
   tradeDate: string
   close: number | null
   changePercent: number | null
@@ -43,6 +46,13 @@ export interface MarketHeatmapDataset {
   mappedStockCount: number
   unmappedStockCount: number
   coverageRate: number
+  officialMappedStockCount?: number
+  derivedMappedStockCount?: number
+  officialCoverageRate?: number
+  derivedCoverageRate?: number
+  mappingStatus?: 'Official' | 'Mixed' | 'Partial'
+  mappingUpdatedAt?: string | null
+  mappingEffectiveDate?: string | null
   sizingMetric: HeatmapSizingMetric
   colorMetric: HeatmapColorMetric
   industries: MarketHeatmapNode[]

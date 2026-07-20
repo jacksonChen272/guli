@@ -15,6 +15,10 @@ export interface TodayCoverage {
   historyStockCount: number
   technicalStockCount: number
   industryMappedCount: number
+  industryUnmappedCount: number
+  industryCount: number
+  industryCoverageRate: number
+  industryMappingUpdatedAt: string | null
   updatedAt: string | null
 }
 
@@ -37,6 +41,10 @@ const emptyCoverage: TodayCoverage = {
   historyStockCount: 0,
   technicalStockCount: 0,
   industryMappedCount: 0,
+  industryUnmappedCount: 0,
+  industryCount: 0,
+  industryCoverageRate: 0,
+  industryMappingUpdatedAt: null,
   updatedAt: null,
 }
 
@@ -61,7 +69,7 @@ export function useTodayDashboardData() {
     setLoading(true)
     setError(null)
     let heatmapError: string | null = null
-    const [marketDecision, institutionTotals, screener, industries, platform, stocks, history, institutionStatus, heatmap] = await Promise.all([
+    const [marketDecision, institutionTotals, screener, industries, platform, stocks, history, institutionStatus, heatmap, industryMapping] = await Promise.all([
       repositoryHub.decisions.getMarketDecision().catch(() => null),
       repositoryHub.institutions.getMarketTotals().catch(() => null),
       repositoryHub.screener.getDataset().catch(() => null),
@@ -74,6 +82,7 @@ export function useTodayDashboardData() {
         heatmapError = reason instanceof Error ? reason.message : '市場熱力圖資料暫時無法讀取。'
         return null
       }),
+      repositoryHub.industryMapping.getStatus(),
     ])
 
     const commonStocks = stocks.filter((stock) => /^\d{4}$/.test(stock.symbol) && stock.instrumentType === 'stock')
@@ -88,12 +97,16 @@ export function useTodayDashboardData() {
       heatmapError,
       narrative: generateTodayMarketNarrative({ market, decision: marketDecision, institutions: institutionTotals, industries, screener }),
       coverage: {
-        totalCommonStocks: commonStocks.length,
+        totalCommonStocks: industryMapping.totalStocks || commonStocks.length,
         officialStockCount: commonStocks.length,
         institutionalStockCount: institutionStatus?.recordCount ?? 0,
         historyStockCount: history?.availableSymbols ?? 0,
         technicalStockCount: screener?.sampleCount ?? 0,
-        industryMappedCount: heatmap?.mappedStockCount ?? 0,
+        industryMappedCount: industryMapping.mappedStocks,
+        industryUnmappedCount: industryMapping.unmappedStocks,
+        industryCount: industryMapping.industryCount,
+        industryCoverageRate: industryMapping.coverageRate,
+        industryMappingUpdatedAt: industryMapping.fetchedAt,
         updatedAt: heatmap?.generatedAt ?? history?.updatedAt ?? institutionStatus?.fetchedAt ?? platform?.updatedAt ?? null,
       },
     })

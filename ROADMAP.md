@@ -1,5 +1,13 @@
 # GULI Roadmap
 
+## GULI v1.0.0-beta.4
+
+- [x] 接入 TWSE 上市公司官方產業分類，保留 MOPS 官方 CSV 備援。
+- [x] Heatmap、Industry Snapshot、Today Dashboard 與 Data Coverage 共用同一個官方 mapping Repository。
+- [x] 將未分類、衍生群組、Technical 與 Decision 實際樣本數分開揭露。
+- [x] 每日資料 Pull Request workflow 先同步產業分類，再產生下游快照與 Heatmap。
+- [ ] 待上櫃官方分類來源納入後，再擴充 TPEX universe；本版只處理 TWSE 上市普通股。
+
 ## GULI v1.0.0-beta.3.1
 
 - [x] GitHub Pages 與資料同步 workflow 完全分離。
