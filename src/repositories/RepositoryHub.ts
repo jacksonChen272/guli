@@ -27,6 +27,10 @@ import { StockSnapshotRepository } from './StockSnapshotRepository'
 import { TWSEStockHistoryProvider } from '../providers/TWSEStockHistoryProvider'
 import { WatchlistDashboardRepository } from './WatchlistDashboardRepository'
 import { WatchlistRepository } from './WatchlistRepository'
+import { MarketSentimentRepository } from './MarketSentimentRepository'
+import { HotStocksRepository } from './HotStocksRepository'
+import { RecentSearchRepository } from './RecentSearchRepository'
+import { DashboardLayoutRepository } from './DashboardLayoutRepository'
 
 const mapOfficialDatasetState = (
   available: boolean,
@@ -55,6 +59,10 @@ export class RepositoryHub {
   readonly stockSnapshots = new StockSnapshotRepository()
   decisions!: DecisionRepository
   watchlistDashboard!: WatchlistDashboardRepository
+  marketSentiment!: MarketSentimentRepository
+  hotStocks!: HotStocksRepository
+  readonly recentSearch = new RecentSearchRepository()
+  readonly dashboardLayout = new DashboardLayoutRepository()
 
   constructor() {
     this.rebuild()
@@ -70,7 +78,7 @@ export class RepositoryHub {
     this.stockHistory = new StockHistoryRepository(new TWSEStockHistoryProvider(), this.cache, this.policy)
     this.industries = new IndustryRepository(mockProvider, this.cache, this.policy)
     this.institutions = new InstitutionRepository(this.cache, this.policy)
-    this.watchlist = new WatchlistRepository(this.cache, this.policy)
+    this.watchlist = new WatchlistRepository(this.cache, this.policy, (symbols) => this.stocks.getOfficialStocks(symbols))
     this.decisions = new DecisionRepository(
       this.snapshots,
       this.industrySnapshots,
@@ -90,18 +98,26 @@ export class RepositoryHub {
       getIndustrySnapshot: () => this.industrySnapshots.getLatest(),
       getIndustryDecision: (industryId) => this.decisions.getIndustryDecision(industryId),
     })
+    this.marketSentiment = new MarketSentimentRepository({
+      getInput: async () => ({
+        market: this.getSnapshot().overview.officialMarket ?? null,
+        institutions: await this.institutions.getMarketTotals().catch(() => null),
+        decision: await this.decisions.getMarketDecision().catch(() => null),
+      }),
+    })
+    this.hotStocks = new HotStocksRepository({ getStocks: () => this.stocks.getOfficialStocks() })
   }
 
   private registerRefreshTasks() {
     refreshScheduler.register({
       id: 'market-overview',
       intervalMs: this.policy.getTtl('market'),
-      run: async () => { await this.market.refresh(undefined) },
+      run: async () => { await this.market.refresh(undefined); this.marketSentiment.clearCache() },
     })
     refreshScheduler.register({
       id: 'stocks',
       intervalMs: this.policy.getTtl('stocks'),
-      run: async () => { await this.stocks.refresh(undefined) },
+      run: async () => { await this.stocks.refresh(undefined); this.hotStocks.clearCache() },
     })
     refreshScheduler.register({
       id: 'industries',
@@ -111,7 +127,7 @@ export class RepositoryHub {
     refreshScheduler.register({
       id: 'institutions',
       intervalMs: this.policy.getTtl('institutions'),
-      run: async () => { await this.institutions.refresh() },
+      run: async () => { await this.institutions.refresh(); this.marketSentiment.clearCache() },
     })
   }
 
@@ -121,7 +137,7 @@ export class RepositoryHub {
     return changed
   }
 
-  refreshMarket() { return this.market.refresh(undefined) }
+  async refreshMarket() { const result = await this.market.refresh(undefined); this.marketSentiment.clearCache(); return result }
   getProvider() { return providerFactory.getActive() }
   getSnapshot() { return this.market.getSnapshot() }
 

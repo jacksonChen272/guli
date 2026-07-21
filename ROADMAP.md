@@ -1,5 +1,14 @@
 # GULI Roadmap
 
+## GULI v1.1.0-beta.1
+
+- [x] Market Intelligence Dashboard 單一首頁資訊流與 Widget Layout。
+- [x] `market-sentiment-v1`、固定規則今日摘要與完整來源揭露。
+- [x] TWSE Official 熱門股票 Top 5、最近 10 筆搜尋與自選股盤後預覽。
+- [x] 全部 Dashboard Widget 拖曳／按鈕排序及 LocalStorage 持久化。
+- [x] Today Events Coming Soon，不虛構事件。
+- [ ] 後續版本串接可驗證的官方事件與新聞來源；本版不推測事件內容。
+
 ## GULI v1.0.0-rc.1
 
 - [x] 個股分析 2.0 單一路由與集中資料 hook。

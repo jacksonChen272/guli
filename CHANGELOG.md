@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0-beta.1]
+
+- 首頁升級為 Market Intelligence Dashboard，依「市場情緒、今日摘要、熱門股票、最近搜尋、自選股、今日觀察、熱力圖、族群、技術機會、排行、事件與資料覆蓋」形成每日資訊流。
+- 新增 `market-sentiment-v1` 固定規則、ECharts 半圓儀表、規則型今日摘要，以及以 TWSE 官方成交值、成交量與漲跌幅計算的熱門股票 Top 5。
+- 最近搜尋改由 `RecentSearchRepository` 保存最近 10 筆；自選股預覽由既有 `WatchlistRepository` 取得官方盤後行情。
+- Dashboard 全部 Widget 支援拖曳、鍵盤／觸控排序按鈕與 LocalStorage 排列持久化。
+- Today Events 僅提供 Coming Soon 類別，不建立虛構事件；Decision、Technical、Health 與 Snapshot 既有公式均未變更。
+
 ## [1.0.0-rc.1]
 
 - 個股頁整併為唯一的 Stock Analysis 2.0 實際路由，集中載入官方行情、歷史、法人、產業與既有四項分數。
