@@ -30,6 +30,6 @@ describe('Market Intelligence Dashboard wiring', () => {
   it('三個新 Repository 全部掛進 RepositoryHub', () => { const hub = source('../../../repositories/RepositoryHub.ts'); expect(hub).toContain('MarketSentimentRepository'); expect(hub).toContain('HotStocksRepository'); expect(hub).toContain('RecentSearchRepository') })
   it('技術機會連到智慧選股 preset', () => expect(source('../TechnicalScreenerPreview.tsx')).toContain('/screener?preset='))
   it('事件區明確標示 Coming Soon 且不虛構事件', () => { const events = source('../TodayEventsCard.tsx'); expect(events).toContain('Coming Soon'); expect(events).toContain('避免虛構市場事件') })
-  it('搜尋元件不再直接操作 localStorage', () => { const search = source('../../search/GlobalStockSearch.tsx'); expect(search).toContain('repositoryHub.recentSearch'); expect(search).not.toContain('localStorage') })
+  it('搜尋元件只透過 SearchRepository 操作資料', () => { const search = source('../../search/GlobalStockSearch.tsx'); expect(search).toContain('repositoryHub.searchRepository'); expect(search).not.toContain('repositoryHub.recentSearch'); expect(search).not.toContain('localStorage') })
   it('Widget 排序支援拖曳及 44px 觸控按鈕', () => { const layout = source('../DashboardWidgetLayout.tsx'); expect(layout).toContain('draggable'); expect(layout).toContain('onDrop'); expect(layout).toContain('h-11 w-11') })
 })

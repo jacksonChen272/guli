@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.0-beta.2]
+
+- 既有 `GlobalStockSearch` 升級為全站智慧搜尋中心，支援股票與功能命令、Ctrl/⌘+K、完整鍵盤操作及桌面 Quick Preview。
+- 新增 `SearchRepository`、`StockDataStatusRepository`、`SearchRankingService` 與啟動時全市場索引；元件不再逐次篩選 Mock 股票清單。
+- 搜尋排序固定為代碼完全符合、代碼開頭、名稱開頭、名稱包含與模糊搜尋，並使用可重現的熱門權重穩定同層級順序。
+- 最近搜尋統一由 SearchRepository 管理，保留最近 10 筆、去重、最新置頂，首頁與搜尋中心同步。
+- 搜尋資訊卡與預覽揭露 TWSE 行情、產業、四項既有分數與資料可用狀態；缺值顯示「等待資料」，不輸出 null、undefined 或 NaN。
+- Settings 新增由實際 Repository Index 即時計算的上市、歷史、Technical、Decision 與 Snapshot 覆蓋數量。
+- Decision、Technical、Health、Snapshot 既有公式與權重未變更；GitHub Pages base 與 Router basename 維持 `/guli`。
+
 ## [1.1.0-beta.1]
 
 - 首頁升級為 Market Intelligence Dashboard，依「市場情緒、今日摘要、熱門股票、最近搜尋、自選股、今日觀察、熱力圖、族群、技術機會、排行、事件與資料覆蓋」形成每日資訊流。

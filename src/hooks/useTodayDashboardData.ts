@@ -115,7 +115,7 @@ export function useTodayDashboardData() {
       sentiment,
       todaySummary: generateTodaySummary({ sentiment, market, institutions: institutionTotals }),
       hotStocks,
-      recentSearches: repositoryHub.recentSearch.getRecent(10),
+      recentSearches: repositoryHub.searchRepository.getRecentSymbols(10),
       watchlist,
       coverage: {
         totalCommonStocks: industryMapping.totalStocks || commonStocks.length,
@@ -136,6 +136,6 @@ export function useTodayDashboardData() {
   }, [])
 
   useEffect(() => { void load() }, [load])
-  useEffect(() => repositoryHub.recentSearch.subscribe((recentSearches) => setData((current) => ({ ...current, recentSearches }))), [])
+  useEffect(() => repositoryHub.searchRepository.subscribeRecent((recentSearches) => setData((current) => ({ ...current, recentSearches }))), [])
   return { data, loading, error, reload: load }
 }

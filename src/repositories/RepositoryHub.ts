@@ -31,6 +31,8 @@ import { MarketSentimentRepository } from './MarketSentimentRepository'
 import { HotStocksRepository } from './HotStocksRepository'
 import { RecentSearchRepository } from './RecentSearchRepository'
 import { DashboardLayoutRepository } from './DashboardLayoutRepository'
+import { SearchRepository } from './SearchRepository'
+import { StockDataStatusRepository } from './StockDataStatusRepository'
 
 const mapOfficialDatasetState = (
   available: boolean,
@@ -61,7 +63,9 @@ export class RepositoryHub {
   watchlistDashboard!: WatchlistDashboardRepository
   marketSentiment!: MarketSentimentRepository
   hotStocks!: HotStocksRepository
-  readonly recentSearch = new RecentSearchRepository()
+  private readonly recentSearch = new RecentSearchRepository()
+  stockDataStatus!: StockDataStatusRepository
+  searchRepository!: SearchRepository
   readonly dashboardLayout = new DashboardLayoutRepository()
 
   constructor() {
@@ -86,6 +90,22 @@ export class RepositoryHub {
       this.stocks,
       this.institutions,
     )
+    this.stockDataStatus = new StockDataStatusRepository({
+      getStocks: () => this.stocks.getOfficialStocks(),
+      getIndustryMapping: () => this.industryMapping.getLatest(),
+      getHistorySymbols: () => this.stockHistory.getAvailableSymbols(),
+      getTechnicalIndex: () => this.screener.getTechnicalIndex(),
+      getScreener: () => this.screener.getDataset(),
+      getSnapshotIndex: () => this.stockSnapshots.getLatestIndex(),
+      getDecisionSummary: () => this.decisions.getDatasetSummary(),
+      getDecision: (symbol) => this.decisions.getStockDecision(symbol),
+      getSnapshot: (symbol) => this.stockSnapshots.getBySymbol(symbol),
+      getMockStocks: () => {
+        try { return this.stocks.getSnapshot() } catch { return [] }
+      },
+    })
+    this.searchRepository = new SearchRepository(this.stockDataStatus, this.recentSearch)
+    void this.searchRepository.initialize().catch(() => undefined)
     this.watchlistDashboard = new WatchlistDashboardRepository({
       getWatchlist: () => this.watchlist.getSnapshot(),
       getStocks: () => this.stocks.getSnapshot(),
@@ -117,7 +137,7 @@ export class RepositoryHub {
     refreshScheduler.register({
       id: 'stocks',
       intervalMs: this.policy.getTtl('stocks'),
-      run: async () => { await this.stocks.refresh(undefined); this.hotStocks.clearCache() },
+      run: async () => { await this.stocks.refresh(undefined); this.hotStocks.clearCache(); await this.searchRepository.initialize(true).catch(() => undefined) },
     })
     refreshScheduler.register({
       id: 'industries',

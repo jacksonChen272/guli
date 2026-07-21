@@ -1,5 +1,15 @@
 # GULI Roadmap
 
+## GULI v1.1.0-beta.2
+
+- [x] 單一全市場 Search Index 與 RepositoryHub 搜尋資料入口。
+- [x] 五層固定排序規則、股票／功能命令搜尋及熱門搜尋管理。
+- [x] Ctrl/⌘+K Command Palette、方向鍵、Tab、Enter、Escape 與焦點樣式。
+- [x] 股票資訊卡、四項分數、Hover Quick Preview 與加入自選股。
+- [x] 最近 10 筆搜尋跨首頁同步，僅由 SearchRepository 操作 LocalStorage。
+- [x] Official Data、History、Technical、Decision 狀態與即時計算覆蓋率。
+- [ ] 待官方英文公司名稱資料源可驗證後，再補齊英文名稱索引；目前不推測或虛構英文名稱。
+
 ## GULI v1.1.0-beta.1
 
 - [x] Market Intelligence Dashboard 單一首頁資訊流與 Widget Layout。
