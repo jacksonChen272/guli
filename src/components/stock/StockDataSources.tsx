@@ -1,0 +1,19 @@
+import { Database, History, Layers3, ShieldCheck } from 'lucide-react'
+import type { StockAnalysisData } from '../../hooks/useStockAnalysisData'
+import { Badge } from '../ui/Badge'
+import { Card } from '../ui/Card'
+import { Disclaimer } from '../ui/Disclaimer'
+
+export function StockDataSources({ data }: { data: StockAnalysisData }) {
+  const sources = [
+    { name: '個股盤後行情', source: data.quote ? 'TWSE Official' : 'Missing', date: data.quote?.tradeDate ?? null, fetchedAt: data.quote?.fetchedAt ?? null, type: data.quote ? 'official' : 'missing' },
+    { name: '個股歷史行情', source: data.history ? 'TWSE Official History' : 'Missing', date: data.history?.lastTradeDate ?? null, fetchedAt: data.history?.fetchedAt ?? null, type: data.history ? 'official' : 'missing' },
+    { name: '三大法人', source: data.institutional.record ? 'TWSE Official' : 'Missing', date: data.institutional.record?.tradeDate ?? null, fetchedAt: data.institutional.record?.fetchedAt ?? null, type: data.institutional.record ? 'official' : 'missing' },
+    { name: '產業分類', source: data.industryMapping ? 'TWSE Official' : 'Missing', date: data.industryMapping?.updatedAt?.slice(0, 10) ?? null, fetchedAt: data.industryMapping?.updatedAt ?? null, type: data.industryMapping ? 'official' : 'missing' },
+    { name: '技術分析', source: 'GULI Derived', date: data.indicators?.lastTradeDate ?? null, fetchedAt: null, type: data.indicators ? 'derived' : 'missing' },
+    { name: 'Decision', source: data.decision?.trace.formulaVersion ?? 'Missing', date: data.decision?.tradeDate ?? null, fetchedAt: null, type: data.decision ? 'derived' : 'missing' },
+    { name: '健康分數', source: data.health ? 'Derived（含模擬因子）' : 'Missing', date: data.quote?.tradeDate ?? null, fetchedAt: null, type: data.health ? 'mock' : 'missing' },
+    { name: '單日快照', source: data.snapshot ? 'GULI Derived' : 'Missing', date: data.snapshot?.tradeDate ?? null, fetchedAt: null, type: data.snapshot ? 'derived' : 'missing' },
+  ]
+  return <Card title="資料來源與限制" eyebrow="SOURCE DISCLOSURE" action={<Badge tone={data.dateConsistency.mismatched ? 'warning' : 'brand'}>{data.dateConsistency.status}</Badge>}><div className="grid gap-3 p-5 sm:grid-cols-2 xl:grid-cols-4">{sources.map((source) => <article key={source.name} className="rounded-xl border border-white/[.06] p-4"><div className="flex items-start justify-between gap-2"><p className="text-sm font-medium text-white">{source.name}</p><Badge tone={source.type === 'official' ? 'info' : source.type === 'derived' ? 'brand' : source.type === 'mock' ? 'warning' : 'neutral'}>{source.type}</Badge></div><p className="mt-3 text-xs text-slate-400">{source.source}</p><p className="mt-2 text-[10px] leading-5 text-slate-600">交易日 {source.date ?? '尚未取得'}<br/>抓取時間 {source.fetchedAt ?? '不適用'}</p></article>)}</div><details className="border-t border-white/[.06] px-5 py-3"><summary className="flex min-h-11 cursor-pointer items-center gap-2 text-sm text-slate-300"><Layers3 size={16}/>查看日期一致性與警示</summary><div className="grid gap-2 py-3 sm:grid-cols-2">{data.dateConsistency.dates.map((row) => <div key={row.id} className="flex items-center justify-between rounded-lg border border-white/[.05] px-3 py-2 text-xs"><span className="text-slate-500">{row.label}</span><span className="mono text-slate-300">{row.tradeDate ?? 'Missing'}</span></div>)}</div>{[...data.warnings, ...data.errors].map((warning) => <p key={warning} className="mt-1 text-xs text-amber-200/80">• {warning}</p>)}</details><div className="space-y-3 border-t border-white/[.06] p-5"><div className="flex flex-wrap gap-2 text-xs text-slate-500"><span className="flex items-center gap-1"><Database size={13}/>官方行情為盤後資料</span><span className="flex items-center gap-1"><History size={13}/>歷史資料依已完成回補範圍</span><span className="flex items-center gap-1"><ShieldCheck size={13}/>缺值不以 0 或虛構數值補齊</span></div><Disclaimer>所有行情與法人欄位均非即時資訊；分析結果為固定規則推導。本內容僅供資訊參考，不構成投資建議。</Disclaimer></div></Card>
+}

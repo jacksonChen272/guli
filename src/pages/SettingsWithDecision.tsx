@@ -1,5 +1,4 @@
 import { Card } from '../components/ui/Card'
 import { SettingsWithSnapshot } from './SettingsWithSnapshot'
-
-export function SettingsWithDecision(){return <div className="space-y-8"><SettingsWithSnapshot/><Card title="Decision Engine 與技術分析基礎" eyebrow="SYSTEM"><div className="grid gap-4 p-5 sm:grid-cols-3 sm:p-6"><Metric label="產品版本" value="GULI v1.0.0-beta.4"/><Metric label="公式版本" value="decision-v1.0 · 權重不變"/><Metric label="資料基礎" value="TWSE Official History · Industry Mapping"/></div></Card></div>}
-function Metric({label,value}:{label:string;value:string}){return <div className="rounded-xl border border-white/[.06] p-4"><p className="text-sm text-slate-400">{label}</p><p className="mt-2 text-base font-medium text-white">{value}</p></div>}
+export function SettingsWithDecision() { return <div className="space-y-8"><SettingsWithSnapshot/><Card title="規則分析與技術資料基礎" eyebrow="SYSTEM"><div className="grid gap-4 p-5 sm:grid-cols-3 sm:p-6"><Metric label="產品版本" value="GULI v1.0.0-rc.1"/><Metric label="公式版本" value="decision-v1.0 · 權重不變"/><Metric label="資料基礎" value="TWSE Official History · Industry Mapping"/></div></Card></div> }
+function Metric({ label, value }: { label: string; value: string }) { return <div className="rounded-xl border border-white/[.06] p-4"><p className="text-sm text-slate-400">{label}</p><p className="mt-2 text-base font-medium text-white">{value}</p></div> }
