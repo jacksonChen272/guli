@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.0-rc.1]
+
+- 個股頁整併為唯一的 Stock Analysis 2.0 實際路由，集中載入官方行情、歷史、法人、產業與既有四項分數。
+- 新增固定規則個股判讀、價格結構、支撐壓力區、風險評估與完整資料來源揭露。
+- 既有 Lightweight Charts 加入 MA120、支撐壓力區、指標切換與完整 Tooltip，維持個股頁 lazy load。
+- Decision v1.0、Technical、Health 與 Stock Snapshot 既有權重及商業邏輯維持不變。
+
 ## [1.0.0-beta.4]
 
 - 新增 TWSE 上市公司基本資料同步腳本，產出可追溯、可驗證的官方產業分類靜態 JSON。
