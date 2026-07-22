@@ -1,0 +1,106 @@
+name: TWSE history backfill
+
+on:
+  workflow_dispatch:
+    inputs:
+      batchSize:
+        description: Stocks per internal batch (recommended 20)
+        required: true
+        default: '20'
+      startSymbol:
+        description: Start from this listed common-stock symbol
+        required: false
+        default: ''
+      limit:
+        description: Stocks in this run (recommended 50-100)
+        required: true
+        default: '50'
+      forceRefresh:
+        description: Refresh already valid files
+        type: boolean
+        required: true
+        default: false
+      retryFailedOnly:
+        description: Retry only failures recorded by history-progress-v1
+        type: boolean
+        required: true
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: stock-history-backfill
+  cancel-in-progress: false
+
+env:
+  BACKFILL_BRANCH: automation/history-backfill
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Prepare automation branch
+        shell: bash
+        run: |
+          git fetch origin main
+          if git ls-remote --exit-code --heads origin "$BACKFILL_BRANCH" >/dev/null 2>&1; then
+            git fetch origin "$BACKFILL_BRANCH:refs/remotes/origin/$BACKFILL_BRANCH"
+            git checkout -B "$BACKFILL_BRANCH" "origin/$BACKFILL_BRANCH"
+            git merge --no-edit -X ours origin/main
+          else
+            git checkout -b "$BACKFILL_BRANCH" origin/main
+          fi
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Backfill one bounded batch
+        shell: bash
+        env:
+          BATCH_SIZE: ${{ inputs.batchSize }}
+          START_SYMBOL: ${{ inputs.startSymbol }}
+          LIMIT: ${{ inputs.limit }}
+          FORCE: ${{ inputs.forceRefresh }}
+          RETRY_FAILED: ${{ inputs.retryFailedOnly }}
+        run: |
+          ARGS=(--batch-size="$BATCH_SIZE" --limit="$LIMIT" --target-days=500 --resume)
+          if [[ -n "$START_SYMBOL" ]]; then ARGS+=(--start-symbol="$START_SYMBOL"); fi
+          if [[ "$FORCE" == "true" ]]; then ARGS+=(--force-refresh); fi
+          if [[ "$RETRY_FAILED" == "true" ]]; then ARGS+=(--retry-failed-only); fi
+          npm run data:history:backfill -- "${ARGS[@]}"
+      - run: npm run data:technical:rebuild
+      - run: npm run data:history:validate
+      - run: npm run screener:generate
+      - run: npm run heatmap:generate
+      - run: npm run data:validate
+      - run: npm run test:run
+      - run: npm run build
+      - name: Commit generated data to automation branch
+        id: commit
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data data/history reports
+          if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git commit -m "chore(data): backfill TWSE stock history"
+          git push origin "HEAD:$BACKFILL_BRANCH"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Create or update pull request
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh pr view "$BACKFILL_BRANCH" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh pr edit "$BACKFILL_BRANCH" --repo "$GITHUB_REPOSITORY" --title "chore(data): backfill TWSE stock history" --body "分批回補 TWSE 官方歷史行情；已完成驗證、技術指標、測試與建置。"
+          else
+            gh pr create --repo "$GITHUB_REPOSITORY" --base main --head "$BACKFILL_BRANCH" --title "chore(data): backfill TWSE stock history" --body "分批回補 TWSE 官方歷史行情；已完成驗證、技術指標、測試與建置。"
+          fi

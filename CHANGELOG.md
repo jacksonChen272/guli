@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1]
+
+- 建立可分批、限流、重試、續跑與單檔執行的 TWSE 上市普通股歷史行情回補管線；沿用既有 `twse-stock-history` 單一資料架構。
+- 新增 `history-progress-v1`、History Manifest、Technical Manifest，以及回補、驗證、技術產生與 94/92 技術缺口報告。
+- 新增每日增量合併、去重與完整技術索引重建；`technical-v1.0` 權重及既有 Decision、Health、Snapshot 公式不變。
+- GitHub Actions 分離限量 backfill 與每日同步，資料只提交至 automation 分支並以 Pull Request 合併，不直接推送 main。
+- 第一階段僅執行 20 檔，後續依 100、300、600、全市場分階段驗證後擴大。
+
 ## [1.1.0-beta.2]
 
 - 既有 `GlobalStockSearch` 升級為全站智慧搜尋中心，支援股票與功能命令、Ctrl/⌘+K、完整鍵盤操作及桌面 Quick Preview。

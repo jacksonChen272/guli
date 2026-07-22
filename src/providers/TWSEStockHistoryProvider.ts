@@ -1,5 +1,5 @@
 import { validateOfficialStockHistory } from '../services/stockHistory/StockHistoryValidator'
-import type { OfficialStockHistory, StockHistoryBackfillProgress, StockHistoryDatasetStatus, StockHistoryIndex } from '../types/officialStockHistory'
+import type { OfficialStockHistory, StockHistoryBackfillProgress, StockHistoryDatasetStatus, StockHistoryIndex, StockHistoryManifest } from '../types/officialStockHistory'
 
 type Fetcher = (input: RequestInfo | URL, init?: RequestInit) => Promise<Response>
 
@@ -14,6 +14,12 @@ const isIndex = (value: unknown): value is StockHistoryIndex => {
   if (!value || typeof value !== 'object') return false
   const index = value as Partial<StockHistoryIndex>
   return index.schemaVersion === '1.0' && index.source === 'TWSE' && Array.isArray(index.symbols) && Boolean(index.summary)
+}
+
+const isManifest = (value: unknown): value is StockHistoryManifest => {
+  if (!value || typeof value !== 'object') return false
+  const manifest = value as Partial<StockHistoryManifest>
+  return manifest.schemaVersion === 'history-manifest-v1' && manifest.source === 'TWSE' && Array.isArray(manifest.items) && Boolean(manifest.summary)
 }
 
 export class TWSEStockHistoryProvider {
@@ -55,6 +61,8 @@ export class TWSEStockHistoryProvider {
   }
 
   getIndex() { return this.read('data/twse-stock-history/index.json', isIndex) }
+
+  getManifest() { return this.read('data/history/history-manifest.json', isManifest) }
 
   getBackfillProgress() { return this.read('data/twse-stock-history/backfill-progress.json', (value): value is StockHistoryBackfillProgress => Boolean(value && typeof value === 'object' && 'totalSymbols' in value && 'completedSymbols' in value && 'status' in value)) }
 

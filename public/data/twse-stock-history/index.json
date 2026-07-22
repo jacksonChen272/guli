@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.0",
   "source": "TWSE",
-  "updatedAt": "2026-07-17T10:57:42.497Z",
-  "targetTradingDays": 250,
+  "updatedAt": "2026-07-21T09:06:24.391Z",
+  "targetTradingDays": 300,
   "symbols": [
     {
       "symbol": "1101",
@@ -10,14 +10,16 @@
       "path": "data/twse-stock-history/stocks/1101.json",
       "firstTradeDate": "2025-07-01",
       "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
-      "status": "official",
+      "recordCount": 253,
+      "status": "partial",
       "stale": false,
-      "warnings": [],
+      "warnings": [
+        "排除 1 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
+      ],
       "technical": {
         "aboveMa20": true,
         "rsiOverbought": false,
-        "macdGoldenCross": null,
+        "macdGoldenCross": true,
         "volumeExpansion": false,
         "indicatorComputable": true
       }
@@ -77,12 +79,48 @@
       }
     },
     {
+      "symbol": "1108",
+      "name": "幸福",
+      "path": "data/twse-stock-history/stocks/1108.json",
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
+      "status": "official",
+      "stale": false,
+      "warnings": [],
+      "technical": {
+        "aboveMa20": false,
+        "rsiOverbought": false,
+        "macdGoldenCross": false,
+        "volumeExpansion": false,
+        "indicatorComputable": true
+      }
+    },
+    {
+      "symbol": "1109",
+      "name": "信大",
+      "path": "data/twse-stock-history/stocks/1109.json",
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
+      "status": "official",
+      "stale": false,
+      "warnings": [],
+      "technical": {
+        "aboveMa20": false,
+        "rsiOverbought": false,
+        "macdGoldenCross": false,
+        "volumeExpansion": false,
+        "indicatorComputable": true
+      }
+    },
+    {
       "symbol": "1110",
       "name": "東泥",
       "path": "data/twse-stock-history/stocks/1110.json",
-      "firstTradeDate": "2025-07-01",
-      "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
       "status": "official",
       "stale": false,
       "warnings": [],
@@ -98,9 +136,9 @@
       "symbol": "1201",
       "name": "味全",
       "path": "data/twse-stock-history/stocks/1201.json",
-      "firstTradeDate": "2025-07-01",
-      "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
       "status": "official",
       "stale": false,
       "warnings": [],
@@ -108,7 +146,7 @@
         "aboveMa20": true,
         "rsiOverbought": false,
         "macdGoldenCross": false,
-        "volumeExpansion": true,
+        "volumeExpansion": false,
         "indicatorComputable": true
       }
     },
@@ -116,16 +154,18 @@
       "symbol": "1203",
       "name": "味王",
       "path": "data/twse-stock-history/stocks/1203.json",
-      "firstTradeDate": "2025-07-01",
+      "firstTradeDate": "2025-04-01",
       "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
+      "recordCount": 314,
       "status": "official",
       "stale": false,
-      "warnings": [],
+      "warnings": [
+        "排除 1 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
+      ],
       "technical": {
         "aboveMa20": true,
         "rsiOverbought": false,
-        "macdGoldenCross": false,
+        "macdGoldenCross": true,
         "volumeExpansion": true,
         "indicatorComputable": true
       }
@@ -134,9 +174,9 @@
       "symbol": "1210",
       "name": "大成",
       "path": "data/twse-stock-history/stocks/1210.json",
-      "firstTradeDate": "2025-07-01",
-      "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
       "status": "official",
       "stale": false,
       "warnings": [],
@@ -152,27 +192,29 @@
       "symbol": "1213",
       "name": "大飲",
       "path": "data/twse-stock-history/stocks/1213.json",
-      "firstTradeDate": "2025-07-01",
-      "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
+      "firstTradeDate": "2025-03-03",
+      "lastTradeDate": "2026-07-15",
+      "recordCount": 317,
       "status": "official",
       "stale": false,
-      "warnings": [],
+      "warnings": [
+        "排除 19 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
+      ],
       "technical": {
-        "aboveMa20": null,
+        "aboveMa20": false,
         "rsiOverbought": false,
-        "macdGoldenCross": null,
+        "macdGoldenCross": false,
         "volumeExpansion": false,
-        "indicatorComputable": false
+        "indicatorComputable": true
       }
     },
     {
       "symbol": "1215",
       "name": "卜蜂",
       "path": "data/twse-stock-history/stocks/1215.json",
-      "firstTradeDate": "2025-07-01",
-      "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
       "status": "official",
       "stale": false,
       "warnings": [],
@@ -188,9 +230,9 @@
       "symbol": "1216",
       "name": "統一",
       "path": "data/twse-stock-history/stocks/1216.json",
-      "firstTradeDate": "2025-07-01",
-      "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
       "status": "official",
       "stale": false,
       "warnings": [],
@@ -206,9 +248,9 @@
       "symbol": "1217",
       "name": "愛之味",
       "path": "data/twse-stock-history/stocks/1217.json",
-      "firstTradeDate": "2025-07-01",
-      "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
       "status": "official",
       "stale": false,
       "warnings": [],
@@ -224,9 +266,9 @@
       "symbol": "1218",
       "name": "泰山",
       "path": "data/twse-stock-history/stocks/1218.json",
-      "firstTradeDate": "2025-07-01",
-      "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
       "status": "official",
       "stale": false,
       "warnings": [],
@@ -242,14 +284,14 @@
       "symbol": "1219",
       "name": "福壽",
       "path": "data/twse-stock-history/stocks/1219.json",
-      "firstTradeDate": "2025-07-01",
-      "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
       "status": "official",
       "stale": false,
       "warnings": [],
       "technical": {
-        "aboveMa20": true,
+        "aboveMa20": false,
         "rsiOverbought": false,
         "macdGoldenCross": true,
         "volumeExpansion": false,
@@ -260,9 +302,9 @@
       "symbol": "1220",
       "name": "台榮",
       "path": "data/twse-stock-history/stocks/1220.json",
-      "firstTradeDate": "2025-07-01",
-      "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
       "status": "official",
       "stale": false,
       "warnings": [],
@@ -278,12 +320,14 @@
       "symbol": "1225",
       "name": "福懋油",
       "path": "data/twse-stock-history/stocks/1225.json",
-      "firstTradeDate": "2025-07-01",
-      "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
+      "firstTradeDate": "2025-02-03",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 305,
       "status": "official",
       "stale": false,
-      "warnings": [],
+      "warnings": [
+        "202505 無官方交易資料"
+      ],
       "technical": {
         "aboveMa20": false,
         "rsiOverbought": false,
@@ -296,9 +340,9 @@
       "symbol": "1227",
       "name": "佳格",
       "path": "data/twse-stock-history/stocks/1227.json",
-      "firstTradeDate": "2025-07-01",
-      "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
       "status": "official",
       "stale": false,
       "warnings": [],
@@ -314,9 +358,9 @@
       "symbol": "1229",
       "name": "聯華",
       "path": "data/twse-stock-history/stocks/1229.json",
-      "firstTradeDate": "2025-07-01",
-      "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
       "status": "official",
       "stale": false,
       "warnings": [],
@@ -332,9 +376,9 @@
       "symbol": "1231",
       "name": "聯華食",
       "path": "data/twse-stock-history/stocks/1231.json",
-      "firstTradeDate": "2025-07-01",
-      "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
       "status": "official",
       "stale": false,
       "warnings": [],
@@ -342,7 +386,7 @@
         "aboveMa20": true,
         "rsiOverbought": false,
         "macdGoldenCross": true,
-        "volumeExpansion": true,
+        "volumeExpansion": false,
         "indicatorComputable": true
       }
     },
@@ -350,9 +394,9 @@
       "symbol": "1232",
       "name": "大統益",
       "path": "data/twse-stock-history/stocks/1232.json",
-      "firstTradeDate": "2025-07-01",
-      "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
       "status": "official",
       "stale": false,
       "warnings": [],
@@ -360,7 +404,7 @@
         "aboveMa20": true,
         "rsiOverbought": true,
         "macdGoldenCross": false,
-        "volumeExpansion": true,
+        "volumeExpansion": false,
         "indicatorComputable": true
       }
     },
@@ -368,9 +412,9 @@
       "symbol": "1233",
       "name": "天仁",
       "path": "data/twse-stock-history/stocks/1233.json",
-      "firstTradeDate": "2025-07-01",
-      "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
       "status": "official",
       "stale": false,
       "warnings": [],
@@ -378,6 +422,24 @@
         "aboveMa20": true,
         "rsiOverbought": false,
         "macdGoldenCross": false,
+        "volumeExpansion": false,
+        "indicatorComputable": true
+      }
+    },
+    {
+      "symbol": "1234",
+      "name": "黑松",
+      "path": "data/twse-stock-history/stocks/1234.json",
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
+      "status": "official",
+      "stale": false,
+      "warnings": [],
+      "technical": {
+        "aboveMa20": true,
+        "rsiOverbought": false,
+        "macdGoldenCross": true,
         "volumeExpansion": false,
         "indicatorComputable": true
       }
@@ -388,14 +450,16 @@
       "path": "data/twse-stock-history/stocks/1235.json",
       "firstTradeDate": "2025-07-01",
       "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
-      "status": "official",
+      "recordCount": 251,
+      "status": "partial",
       "stale": false,
-      "warnings": [],
+      "warnings": [
+        "排除 3 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
+      ],
       "technical": {
         "aboveMa20": true,
         "rsiOverbought": false,
-        "macdGoldenCross": null,
+        "macdGoldenCross": false,
         "volumeExpansion": false,
         "indicatorComputable": true
       }
@@ -406,14 +470,16 @@
       "path": "data/twse-stock-history/stocks/1236.json",
       "firstTradeDate": "2025-07-01",
       "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
-      "status": "official",
+      "recordCount": 253,
+      "status": "partial",
       "stale": false,
-      "warnings": [],
+      "warnings": [
+        "排除 1 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
+      ],
       "technical": {
         "aboveMa20": false,
         "rsiOverbought": false,
-        "macdGoldenCross": null,
+        "macdGoldenCross": false,
         "volumeExpansion": false,
         "indicatorComputable": true
       }
@@ -586,10 +652,12 @@
       "path": "data/twse-stock-history/stocks/1314.json",
       "firstTradeDate": "2025-07-01",
       "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
-      "status": "official",
+      "recordCount": 253,
+      "status": "partial",
       "stale": false,
-      "warnings": [],
+      "warnings": [
+        "排除 1 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
+      ],
       "technical": {
         "aboveMa20": true,
         "rsiOverbought": false,
@@ -604,14 +672,16 @@
       "path": "data/twse-stock-history/stocks/1315.json",
       "firstTradeDate": "2025-07-01",
       "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
-      "status": "official",
+      "recordCount": 247,
+      "status": "partial",
       "stale": false,
-      "warnings": [],
+      "warnings": [
+        "排除 7 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
+      ],
       "technical": {
         "aboveMa20": true,
         "rsiOverbought": true,
-        "macdGoldenCross": null,
+        "macdGoldenCross": false,
         "volumeExpansion": false,
         "indicatorComputable": true
       }
@@ -683,7 +753,7 @@
       "technical": {
         "aboveMa20": true,
         "rsiOverbought": false,
-        "macdGoldenCross": false,
+        "macdGoldenCross": true,
         "volumeExpansion": true,
         "indicatorComputable": true
       }
@@ -766,14 +836,16 @@
       "path": "data/twse-stock-history/stocks/1341.json",
       "firstTradeDate": "2025-07-01",
       "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
-      "status": "official",
+      "recordCount": 247,
+      "status": "partial",
       "stale": false,
-      "warnings": [],
+      "warnings": [
+        "排除 7 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
+      ],
       "technical": {
-        "aboveMa20": null,
+        "aboveMa20": false,
         "rsiOverbought": false,
-        "macdGoldenCross": null,
+        "macdGoldenCross": true,
         "volumeExpansion": false,
         "indicatorComputable": true
       }
@@ -820,14 +892,16 @@
       "path": "data/twse-stock-history/stocks/1410.json",
       "firstTradeDate": "2025-07-01",
       "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
-      "status": "official",
+      "recordCount": 250,
+      "status": "partial",
       "stale": false,
-      "warnings": [],
+      "warnings": [
+        "排除 4 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
+      ],
       "technical": {
         "aboveMa20": true,
         "rsiOverbought": false,
-        "macdGoldenCross": null,
+        "macdGoldenCross": false,
         "volumeExpansion": false,
         "indicatorComputable": true
       }
@@ -892,10 +966,12 @@
       "path": "data/twse-stock-history/stocks/1418.json",
       "firstTradeDate": "2025-07-01",
       "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
-      "status": "official",
+      "recordCount": 252,
+      "status": "partial",
       "stale": false,
-      "warnings": [],
+      "warnings": [
+        "排除 2 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
+      ],
       "technical": {
         "aboveMa20": true,
         "rsiOverbought": false,
@@ -928,14 +1004,16 @@
       "path": "data/twse-stock-history/stocks/1423.json",
       "firstTradeDate": "2025-07-01",
       "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
-      "status": "official",
+      "recordCount": 247,
+      "status": "partial",
       "stale": false,
-      "warnings": [],
+      "warnings": [
+        "排除 7 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
+      ],
       "technical": {
         "aboveMa20": false,
         "rsiOverbought": false,
-        "macdGoldenCross": null,
+        "macdGoldenCross": true,
         "volumeExpansion": false,
         "indicatorComputable": true
       }
@@ -982,16 +1060,17 @@
       "path": "data/twse-stock-history/stocks/1435.json",
       "firstTradeDate": "2025-05-02",
       "lastTradeDate": "2026-07-16",
-      "recordCount": 260,
+      "recordCount": 226,
       "status": "partial",
       "stale": false,
       "warnings": [
-        "202605：很抱歉，沒有符合條件的資料!"
+        "202605：很抱歉，沒有符合條件的資料!",
+        "排除 34 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
       ],
       "technical": {
         "aboveMa20": true,
         "rsiOverbought": false,
-        "macdGoldenCross": null,
+        "macdGoldenCross": false,
         "volumeExpansion": false,
         "indicatorComputable": true
       }
@@ -1056,14 +1135,16 @@
       "path": "data/twse-stock-history/stocks/1439.json",
       "firstTradeDate": "2025-07-01",
       "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
-      "status": "official",
+      "recordCount": 251,
+      "status": "partial",
       "stale": false,
-      "warnings": [],
+      "warnings": [
+        "排除 3 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
+      ],
       "technical": {
         "aboveMa20": true,
         "rsiOverbought": false,
-        "macdGoldenCross": false,
+        "macdGoldenCross": true,
         "volumeExpansion": true,
         "indicatorComputable": true
       }
@@ -1110,10 +1191,12 @@
       "path": "data/twse-stock-history/stocks/1443.json",
       "firstTradeDate": "2025-07-01",
       "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
-      "status": "official",
+      "recordCount": 249,
+      "status": "partial",
       "stale": false,
-      "warnings": [],
+      "warnings": [
+        "排除 5 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
+      ],
       "technical": {
         "aboveMa20": true,
         "rsiOverbought": false,
@@ -1254,14 +1337,16 @@
       "path": "data/twse-stock-history/stocks/1454.json",
       "firstTradeDate": "2025-07-01",
       "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
-      "status": "official",
+      "recordCount": 252,
+      "status": "partial",
       "stale": false,
-      "warnings": [],
+      "warnings": [
+        "排除 2 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
+      ],
       "technical": {
         "aboveMa20": true,
         "rsiOverbought": false,
-        "macdGoldenCross": null,
+        "macdGoldenCross": true,
         "volumeExpansion": false,
         "indicatorComputable": true
       }
@@ -1290,14 +1375,16 @@
       "path": "data/twse-stock-history/stocks/1456.json",
       "firstTradeDate": "2025-07-01",
       "lastTradeDate": "2026-07-16",
-      "recordCount": 254,
-      "status": "official",
+      "recordCount": 253,
+      "status": "partial",
       "stale": false,
-      "warnings": [],
+      "warnings": [
+        "排除 1 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
+      ],
       "technical": {
         "aboveMa20": false,
         "rsiOverbought": false,
-        "macdGoldenCross": null,
+        "macdGoldenCross": false,
         "volumeExpansion": false,
         "indicatorComputable": true
       }
@@ -1477,7 +1564,7 @@
       "technical": {
         "aboveMa20": true,
         "rsiOverbought": false,
-        "macdGoldenCross": false,
+        "macdGoldenCross": true,
         "volumeExpansion": false,
         "indicatorComputable": true
       }
@@ -1488,10 +1575,12 @@
       "path": "data/twse-stock-history/stocks/2317.json",
       "firstTradeDate": "2025-02-03",
       "lastTradeDate": "2026-07-16",
-      "recordCount": 355,
+      "recordCount": 354,
       "status": "official",
       "stale": false,
-      "warnings": [],
+      "warnings": [
+        "排除 1 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
+      ],
       "technical": {
         "aboveMa20": false,
         "rsiOverbought": false,
@@ -1585,7 +1674,7 @@
       "technical": {
         "aboveMa20": true,
         "rsiOverbought": false,
-        "macdGoldenCross": false,
+        "macdGoldenCross": true,
         "volumeExpansion": false,
         "indicatorComputable": true
       }
@@ -1657,7 +1746,7 @@
       "technical": {
         "aboveMa20": false,
         "rsiOverbought": false,
-        "macdGoldenCross": false,
+        "macdGoldenCross": true,
         "volumeExpansion": false,
         "indicatorComputable": true
       }
@@ -1700,15 +1789,16 @@
     }
   ],
   "summary": {
-    "availableSymbols": 94,
-    "averageRecordCount": 259,
-    "complete250Count": 94,
+    "availableSymbols": 97,
+    "averageRecordCount": 271,
+    "complete250Count": 92,
+    "complete300Count": 24,
     "staleCount": 0,
     "failedSymbols": [],
-    "technicalSampleSize": 93,
+    "technicalSampleSize": 97,
     "aboveMa20Count": 54,
     "rsiOverboughtCount": 5,
-    "macdGoldenCrossCount": 7,
-    "volumeExpansionCount": 10
+    "macdGoldenCrossCount": 18,
+    "volumeExpansionCount": 7
   }
 }

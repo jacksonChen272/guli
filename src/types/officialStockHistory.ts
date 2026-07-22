@@ -95,3 +95,43 @@ export interface StockHistoryBackfillProgress {
   status: 'running' | 'completed' | 'partial'
 }
 
+export type StockHistoryManifestStatus = 'complete' | 'partial' | 'failed' | 'pending' | 'unsupported'
+
+export interface StockHistoryManifestItem {
+  symbol: string
+  name: string
+  status: StockHistoryManifestStatus
+  recordCount: number
+  firstDate: string | null
+  lastDate: string | null
+  lastUpdatedAt: string | null
+  source: 'TWSE'
+  isOfficial: boolean
+  validationStatus: 'valid' | 'invalid' | 'pending' | 'unsupported'
+  errors: string[]
+  securityType: string
+  eligibleForTechnical: boolean
+  path: string | null
+}
+
+export interface StockHistoryManifest {
+  schemaVersion: 'history-manifest-v1'
+  updatedAt: string
+  targetTradingDays: number
+  technicalMinimumDays: number
+  source: 'TWSE'
+  storageRoot: 'data/twse-stock-history/stocks'
+  summary: {
+    total: number
+    commonStocks: number
+    complete: number
+    partial: number
+    failed: number
+    pending: number
+    unsupported: number
+    officialValid: number
+    technicalEligible: number
+  }
+  items: StockHistoryManifestItem[]
+}
+

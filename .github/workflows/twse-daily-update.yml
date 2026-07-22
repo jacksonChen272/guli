@@ -1,0 +1,80 @@
+name: TWSE official daily update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 7 * * 1-5'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: market-data-update
+  cancel-in-progress: false
+
+env:
+  DATA_UPDATE_BRANCH: automation/data-updates
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Prepare automation branch
+        shell: bash
+        run: |
+          git fetch origin main
+          if git ls-remote --exit-code --heads origin "$DATA_UPDATE_BRANCH" >/dev/null 2>&1; then
+            git fetch origin "$DATA_UPDATE_BRANCH:refs/remotes/origin/$DATA_UPDATE_BRANCH"
+            git checkout -B "$DATA_UPDATE_BRANCH" "origin/$DATA_UPDATE_BRANCH"
+            git merge --no-edit -X ours origin/main
+          else
+            git checkout -b "$DATA_UPDATE_BRANCH" origin/main
+          fi
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run data:twse
+      - run: npm run data:twse:stocks
+      - run: npm run data:twse:institutional
+      - name: Merge the latest official day into completed history files
+        run: npm run data:history:backfill -- --incremental --limit=1082 --batch-size=20 --request-delay=1200 --batch-delay=7000
+      - run: npm run data:technical:rebuild
+      - run: npm run data:history:validate
+      - run: npm run stock:snapshot:generate
+      - run: npm run industry:snapshot:generate
+      - run: npm run snapshot:generate
+      - run: npm run decision:generate
+      - run: npm run screener:generate
+      - run: npm run heatmap:generate
+      - run: npm run data:validate
+      - run: npm run test:run
+      - run: npm run build
+      - name: Commit generated data to automation branch
+        id: commit
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data data/history reports
+          if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git commit -m "chore(data): update GULI market datasets"
+          git push origin "HEAD:$DATA_UPDATE_BRANCH"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Create or update pull request
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh pr view "$DATA_UPDATE_BRANCH" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh pr edit "$DATA_UPDATE_BRANCH" --repo "$GITHUB_REPOSITORY" --title "chore(data): update GULI market datasets" --body "更新 TWSE 官方盤後資料、增量歷史、技術索引與覆蓋率。"
+          else
+            gh pr create --repo "$GITHUB_REPOSITORY" --base main --head "$DATA_UPDATE_BRANCH" --title "chore(data): update GULI market datasets" --body "更新 TWSE 官方盤後資料、增量歷史、技術索引與覆蓋率。"
+          fi
