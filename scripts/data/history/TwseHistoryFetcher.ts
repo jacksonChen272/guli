@@ -1,4 +1,4 @@
-import type { HistoryPricePoint } from './types.ts'
+import type { HistoryFailureCategory, HistoryPricePoint } from './types.ts'
 import { HistoryRateLimiter } from './HistoryRateLimiter.ts'
 import { HistoryRequestError, HistoryRetryQueue } from './HistoryRetryQueue.ts'
 
@@ -62,6 +62,8 @@ export class TwseHistoryFetcher {
   private readonly limiter: HistoryRateLimiter
   private readonly retries: HistoryRetryQueue
   private readonly timeoutMs: number
+  private totalRetries = 0
+  private readonly errorCounts: Record<HistoryFailureCategory, number> = { RATE_LIMIT: 0, NETWORK_ERROR: 0, INVALID_RESPONSE: 0, NO_DATA: 0, PARSE_ERROR: 0, VALIDATION_ERROR: 0, UNKNOWN: 0 }
   constructor(
     fetcher: Fetcher = fetch,
     limiter = new HistoryRateLimiter(),
@@ -71,7 +73,10 @@ export class TwseHistoryFetcher {
 
   async fetchMonth(symbol: string, month: string) {
     const url = `${TWSE_HISTORY_ENDPOINT}?date=${month}&stockNo=${symbol}&response=json`
-    const result = await this.retries.run(async () => {
+    let attempts = 0
+    try {
+      const result = await this.retries.run(async () => {
+      attempts += 1
       await this.limiter.beforeRequest()
       const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), this.timeoutMs)
       try {
@@ -82,8 +87,18 @@ export class TwseHistoryFetcher {
         if (!text.trim().startsWith('{')) throw new HistoryRequestError('INVALID_RESPONSE', 'TWSE 回應不是 JSON')
         try { return normalizeTwseHistoryMonth(JSON.parse(text)) }
         catch (error) { if (error instanceof HistoryRequestError) throw error; throw new HistoryRequestError('PARSE_ERROR', 'TWSE JSON 解析失敗') }
+      } catch (error) {
+        this.errorCounts[error instanceof HistoryRequestError ? error.category : 'UNKNOWN'] += 1
+        throw error
       } finally { clearTimeout(timer); this.limiter.afterRequest() }
-    })
-    return result.value
+      })
+      this.totalRetries += Math.max(0, result.attempts - 1)
+      return result.value
+    } catch (error) {
+      this.totalRetries += Math.max(0, attempts - 1)
+      throw error
+    }
   }
+
+  getMetrics() { return { totalRetries: this.totalRetries, errorCounts: { ...this.errorCounts } } }
 }

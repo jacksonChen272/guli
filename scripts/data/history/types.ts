@@ -61,6 +61,9 @@ export interface HistoryProgress {
   pendingSymbols: string[]
   lastProcessedSymbol: string | null
   status: 'idle' | 'running' | 'completed' | 'partial'
+  phase?: string
+  plannedSymbols?: string[]
+  phaseCompletedSymbols?: string[]
 }
 
 export interface HistoryManifestItem {
@@ -77,6 +80,7 @@ export interface HistoryManifestItem {
   errors: string[]
   securityType: string
   eligibleForTechnical: boolean
+  technicalDataReady: boolean
   path: string | null
 }
 
@@ -88,6 +92,9 @@ export interface HistoryManifest {
   source: 'TWSE'
   storageRoot: 'data/twse-stock-history/stocks'
   summary: {
+    totalSecurities: number
+    eligibleCommonStocks: number
+    unsupportedSecurities: number
     total: number
     commonStocks: number
     complete: number
@@ -97,6 +104,8 @@ export interface HistoryManifest {
     unsupported: number
     officialValid: number
     technicalEligible: number
+    technicalReady: number
+    coverageInvariantValid: boolean
   }
   items: HistoryManifestItem[]
 }

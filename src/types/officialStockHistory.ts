@@ -111,6 +111,7 @@ export interface StockHistoryManifestItem {
   errors: string[]
   securityType: string
   eligibleForTechnical: boolean
+  technicalDataReady: boolean
   path: string | null
 }
 
@@ -122,6 +123,9 @@ export interface StockHistoryManifest {
   source: 'TWSE'
   storageRoot: 'data/twse-stock-history/stocks'
   summary: {
+    totalSecurities: number
+    eligibleCommonStocks: number
+    unsupportedSecurities: number
     total: number
     commonStocks: number
     complete: number
@@ -131,6 +135,8 @@ export interface StockHistoryManifest {
     unsupported: number
     officialValid: number
     technicalEligible: number
+    technicalReady: number
+    coverageInvariantValid: boolean
   }
   items: StockHistoryManifestItem[]
 }

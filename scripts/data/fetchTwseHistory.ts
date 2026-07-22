@@ -28,13 +28,15 @@ export function parseHistoryArgs(argv: string[], root = process.cwd()): HistoryB
     targetDays: positive(optionValue(argv, '--target-days'), 300, 60),
     technicalMinimumDays: positive(optionValue(argv, '--technical-minimum-days'), 120, 60),
     requestDelay: positive(optionValue(argv, '--request-delay') ?? optionValue(argv, '--rate-limit'), 1_200, 350),
-    batchDelay: positive(optionValue(argv, '--batch-delay'), 7_000, 0),
+    batchDelay: positive(optionValue(argv, '--batch-delay'), 8_000, 0),
     maxRetries: positive(optionValue(argv, '--max-retries') ?? optionValue(argv, '--retries'), 3, 0),
     timeout: positive(optionValue(argv, '--timeout'), 15_000, 5_000),
     forceRefresh: argv.includes('--force-refresh'),
     retryFailedOnly: argv.includes('--retry-failed-only'),
     dryRun: argv.includes('--dry-run'),
     incremental: argv.includes('--incremental'),
+    phase: optionValue(argv, '--phase') ?? 'manual-backfill',
+    partialRefetchReason: optionValue(argv, '--partial-refetch-reason') ?? null,
   }
 }
 

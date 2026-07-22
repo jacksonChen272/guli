@@ -9,7 +9,8 @@ describe('History Manifest', () => {
   it('classifies complete, partial, pending and unsupported', () => {
     const manifest = buildHistoryManifest([{ symbol: '1101', name: 'A', instrumentType: 'stock' }, { symbol: '1102', name: 'B', instrumentType: 'stock' }, { symbol: '0050', name: 'ETF', instrumentType: 'etf' }, { symbol: '1103', name: 'C', instrumentType: 'stock' }], new Map([['1101', data('1101', 305)], ['1102', data('1102', 150)]]), [], 300, 120, '2026-01-01T00:00:00.000Z')
     expect(manifest.items.map((item) => item.status)).toEqual(['unsupported', 'complete', 'partial', 'pending'])
-    expect(manifest.summary).toMatchObject({ commonStocks: 3, complete: 1, partial: 1, pending: 1, unsupported: 1, technicalEligible: 2 })
+    expect(manifest.summary).toMatchObject({ totalSecurities: 4, eligibleCommonStocks: 3, unsupportedSecurities: 1, commonStocks: 3, complete: 1, partial: 1, pending: 1, failed: 0, unsupported: 1, technicalEligible: 3, technicalReady: 2, coverageInvariantValid: true })
+    expect(manifest.items.find((item) => item.symbol === '1103')).toMatchObject({ status: 'pending', eligibleForTechnical: true, technicalDataReady: false })
   })
   it('builds resumable progress arrays', () => { const manifest = buildHistoryManifest([{ symbol: '1101', name: 'A', instrumentType: 'stock' }], new Map([['1101', data('1101', 150)]]), []); expect(buildProgress(manifest, '2026-01-01T00:00:00.000Z', '1101', 'partial').completedSymbols).toEqual(['1101']) })
 })

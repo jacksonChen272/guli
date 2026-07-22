@@ -16,7 +16,7 @@ describe('GULI v1.1.1 history architecture contract', () => {
   it('uses history-progress-v1', async () => expect(await source('scripts/data/history/types.ts')).toContain("version: 'history-progress-v1'"))
   it('tracks complete, partial, failed, pending and unsupported', async () => { const text = await source('scripts/data/history/types.ts'); for (const value of ['complete', 'partial', 'failed', 'pending', 'unsupported']) expect(text).toContain(value) })
   it('keeps the existing per-stock storage root', async () => expect(await source('scripts/data/history/types.ts')).toContain("storageRoot: 'data/twse-stock-history/stocks'"))
-  it('uses atomic JSON rename', async () => expect(await source('scripts/data/history/HistoryManifestWriter.ts')).toContain('rename(temporary, file)'))
+  it('uses validated atomic JSON rename with transient lock retry', async () => { const text = await source('scripts/data/history/HistoryManifestWriter.ts'); expect(text).toContain("JSON.parse(await readFile(temporary, 'utf8'))"); expect(text).toContain('renameWithTransientLockRetry(temporary, file)'); expect(text).toContain("code !== 'EPERM'") })
   it('uses the required retry categories', async () => { const text = await source('scripts/data/history/types.ts'); for (const value of ['RATE_LIMIT', 'NETWORK_ERROR', 'INVALID_RESPONSE', 'NO_DATA', 'PARSE_ERROR', 'VALIDATION_ERROR', 'UNKNOWN']) expect(text).toContain(value) })
   it('uses 5, 15 and 45 second retry delays', async () => expect(await source('scripts/data/history/HistoryRetryQueue.ts')).toContain('[5_000, 15_000, 45_000]'))
   it('does not use Math.random in the history pipeline', async () => expect(await source('scripts/data/history/HistoryBatchRunner.ts')).not.toContain('Math.random'))
