@@ -141,3 +141,67 @@ export interface StockHistoryManifest {
   items: StockHistoryManifestItem[]
 }
 
+export interface HistoryProgressSummary {
+  version: 'history-progress-summary-v1'
+  schemaVersion: 'history-progress-summary-v1'
+  generatedAt: string
+  updatedAt: string
+  source: 'TWSE Official History'
+  phase: string | null
+  status: 'idle' | 'running' | 'completed' | 'partial'
+  stale: boolean
+  lastUpdatedAt: string
+  eligibleCommonStocks: number
+  complete: number
+  partial: number
+  pending: number
+  failed: number
+  unsupported: number
+  technicalDataReady: number
+  coverage: {
+    totalSecurities: number
+    eligibleCommonStocks: number
+    unsupportedSecurities: number
+    complete: number
+    partial: number
+    pending: number
+    failed: number
+    technicalDataReady: number
+    completionPercent: number
+    analyzablePercent: number
+    remainingBatches: number
+    estimatedCompletionDays: number
+  }
+  lastBatch: {
+    planned: number
+    processed: number
+    success: number
+    complete: number
+    partial: number
+    failed: number
+    retries: number
+    errorCounts: Record<string, number>
+    startedAt: string | null
+    completedAt: string | null
+    durationMs: number
+    durationSeconds: number
+    historicalRecordsAdded: number
+    newRecords: number
+  }
+  capacity: {
+    batchDeltaBytes: number
+    totalHistoryBytes: number
+    technicalIndexBytes: number
+    gitWorkingTreeDeltaBytes: number
+    largestStockFileBytes: number
+    averageStockFileBytes: number
+    largestStockSymbol: string | null
+    maxBatchDeltaBytes: number
+    maxStockFileBytes: number
+    allowPullRequest: boolean
+    warnings: string[]
+    errors: string[]
+  }
+  invariants: { valid: boolean; errors: string[] }
+}
+

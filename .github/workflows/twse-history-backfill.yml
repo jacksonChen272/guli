@@ -3,35 +3,51 @@ name: TWSE history backfill
 on:
   workflow_dispatch:
     inputs:
-      batchSize:
-        description: Stocks per internal batch (recommended 20)
+      limit:
+        description: Pending common stocks locked into this run
+        required: true
+        default: '100'
+      batch_size:
+        description: Stocks processed before a checkpoint
         required: true
         default: '20'
-      startSymbol:
-        description: Start from this listed common-stock symbol
-        required: false
-        default: ''
-      limit:
-        description: Stocks in this run (recommended 50-100)
+      request_delay:
+        description: Delay between TWSE requests in milliseconds
         required: true
-        default: '50'
-      forceRefresh:
-        description: Refresh already valid files
+        default: '1200'
+      batch_delay:
+        description: Delay between checkpoints in milliseconds
+        required: true
+        default: '8000'
+      max_retries:
+        description: Maximum retries with 5s, 15s and 45s backoff
+        required: true
+        default: '3'
+      retry_failed_only:
+        description: Retry only explicitly recorded failures
         type: boolean
         required: true
         default: false
-      retryFailedOnly:
-        description: Retry only failures recorded by history-progress-v1
+      force_refresh:
+        description: Explicitly refresh selected symbols
         type: boolean
         required: true
         default: false
+      dry_run:
+        description: Preview the deterministic 100-symbol plan without writing data
+        type: boolean
+        required: true
+        default: false
+  # Intentionally disabled. If enabled later, 18:00 UTC is 02:00 Asia/Taipei.
+  # schedule:
+  #   - cron: '0 18 * * *'
 
 permissions:
   contents: write
   pull-requests: write
 
 concurrency:
-  group: stock-history-backfill
+  group: twse-history-backfill
   cancel-in-progress: false
 
 env:
@@ -40,67 +56,139 @@ env:
 jobs:
   backfill:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
-      - name: Prepare automation branch
+
+      - name: Stop when a history backfill pull request is already open
+        id: pr_guard
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          OPEN_COUNT="$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$BACKFILL_BRANCH" --state open --json number --jq 'length')"
+          if [[ "$OPEN_COUNT" != "0" ]]; then
+            echo "An open automation/history-backfill PR already exists; stopping before any data request."
+            echo "allowed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "allowed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Prepare the single stable automation branch
+        if: steps.pr_guard.outputs.allowed == 'true'
         shell: bash
         run: |
           git fetch origin main
           if git ls-remote --exit-code --heads origin "$BACKFILL_BRANCH" >/dev/null 2>&1; then
             git fetch origin "$BACKFILL_BRANCH:refs/remotes/origin/$BACKFILL_BRANCH"
             git checkout -B "$BACKFILL_BRANCH" "origin/$BACKFILL_BRANCH"
-            git merge --no-edit -X ours origin/main
+            git merge --no-edit origin/main
           else
             git checkout -b "$BACKFILL_BRANCH" origin/main
           fi
+
       - uses: actions/setup-node@v4
+        if: steps.pr_guard.outputs.allowed == 'true'
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
-      - name: Backfill one bounded batch
+
+      - if: steps.pr_guard.outputs.allowed == 'true'
+        run: npm ci
+
+      - name: Resolve or create the resumable phase
+        if: steps.pr_guard.outputs.allowed == 'true'
         shell: bash
-        env:
-          BATCH_SIZE: ${{ inputs.batchSize }}
-          START_SYMBOL: ${{ inputs.startSymbol }}
-          LIMIT: ${{ inputs.limit }}
-          FORCE: ${{ inputs.forceRefresh }}
-          RETRY_FAILED: ${{ inputs.retryFailedOnly }}
         run: |
-          ARGS=(--batch-size="$BATCH_SIZE" --limit="$LIMIT" --target-days=500 --resume)
-          if [[ -n "$START_SYMBOL" ]]; then ARGS+=(--start-symbol="$START_SYMBOL"); fi
-          if [[ "$FORCE" == "true" ]]; then ARGS+=(--force-refresh); fi
-          if [[ "$RETRY_FAILED" == "true" ]]; then ARGS+=(--retry-failed-only); fi
-          npm run data:history:backfill -- "${ARGS[@]}"
-      - run: npm run data:technical:rebuild
-      - run: npm run data:history:validate
-      - run: npm run screener:generate
-      - run: npm run heatmap:generate
-      - run: npm run data:validate
-      - run: npm run test:run
-      - run: npm run build
-      - name: Commit generated data to automation branch
-        id: commit
+          PHASE="$(node -e "const fs=require('fs');try{const p=JSON.parse(fs.readFileSync('data/history/history-progress.json','utf8'));if(p.status==='running'&&p.phase&&p.plannedSymbols?.length)process.stdout.write(p.phase)}catch{}")"
+          if [[ -z "$PHASE" ]]; then PHASE="daily-100-${GITHUB_RUN_ID}"; fi
+          echo "BACKFILL_PHASE=$PHASE" >> "$GITHUB_ENV"
+
+      - name: Dry-run deterministic selection
+        if: steps.pr_guard.outputs.allowed == 'true' && inputs.dry_run
+        shell: bash
+        run: |
+          npm run data:history:backfill -- --plan-only --dry-run --phase="$BACKFILL_PHASE" --limit="${{ inputs.limit }}" --batch-size="${{ inputs.batch_size }}" --request-delay="${{ inputs.request_delay }}" --batch-delay="${{ inputs.batch_delay }}" --max-retries="${{ inputs.max_retries }}"
+
+      - name: Lock planned symbols
+        if: steps.pr_guard.outputs.allowed == 'true' && !inputs.dry_run
+        shell: bash
+        run: |
+          npm run data:history:backfill -- --plan-only --phase="$BACKFILL_PHASE" --limit="${{ inputs.limit }}" --batch-size="${{ inputs.batch_size }}" --request-delay="${{ inputs.request_delay }}" --batch-delay="${{ inputs.batch_delay }}" --max-retries="${{ inputs.max_retries }}"
+
+      - name: Backfill exactly one locked 100-stock phase
+        if: steps.pr_guard.outputs.allowed == 'true' && !inputs.dry_run
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data data/history reports
+          for SEGMENT in 1 2 3 4 5; do
+            ARGS=(--phase="$BACKFILL_PHASE" --limit="${{ inputs.limit }}" --execution-limit="${{ inputs.batch_size }}" --batch-size="${{ inputs.batch_size }}" --request-delay="${{ inputs.request_delay }}" --batch-delay="${{ inputs.batch_delay }}" --max-retries="${{ inputs.max_retries }}")
+            if [[ "${{ inputs.retry_failed_only }}" == "true" ]]; then ARGS+=(--retry-failed-only); fi
+            if [[ "${{ inputs.force_refresh }}" == "true" ]]; then ARGS+=(--force-refresh); fi
+            npm run data:history:backfill -- "${ARGS[@]}"
+            git add public/data/twse-stock-history public/data/history data/history reports/history-backfill-summary.json
+            if ! git diff --cached --quiet; then
+              git commit -m "chore(data): checkpoint TWSE history ${SEGMENT}/5"
+              git push origin "HEAD:$BACKFILL_BRANCH"
+            fi
+            STATUS="$(node -e "const p=require('./data/history/history-progress.json');process.stdout.write(p.status)")"
+            if [[ "$STATUS" != "running" ]]; then break; fi
+            sleep "$((${{ inputs.batch_delay }} / 1000))"
+          done
+          STATUS="$(node -e "const p=require('./data/history/history-progress.json');process.stdout.write(p.status)")"
+          if [[ "$STATUS" == "running" ]]; then echo "Locked plan did not finish within five 20-stock checkpoints"; exit 1; fi
+
+      - if: steps.pr_guard.outputs.allowed == 'true' && !inputs.dry_run
+        run: npm run data:technical:rebuild
+      - if: steps.pr_guard.outputs.allowed == 'true' && !inputs.dry_run
+        run: npm run data:history:validate
+      - if: steps.pr_guard.outputs.allowed == 'true' && !inputs.dry_run
+        run: npm run data:history:audit
+      - if: steps.pr_guard.outputs.allowed == 'true' && !inputs.dry_run
+        run: npm run data:history:coverage
+      - if: steps.pr_guard.outputs.allowed == 'true' && !inputs.dry_run
+        run: npm run data:validate
+      - if: steps.pr_guard.outputs.allowed == 'true' && !inputs.dry_run
+        run: npm run test:run
+      - name: Build and record elapsed time
+        if: steps.pr_guard.outputs.allowed == 'true' && !inputs.dry_run
+        shell: bash
+        run: |
+          START_MS="$(date +%s%3N)"
+          npm run build
+          END_MS="$(date +%s%3N)"
+          echo "BUILD_TIME_MS=$((END_MS - START_MS))" >> "$GITHUB_ENV"
+      - if: steps.pr_guard.outputs.allowed == 'true' && !inputs.dry_run
+        run: npm audit --audit-level=high
+      - if: steps.pr_guard.outputs.allowed == 'true' && !inputs.dry_run
+        run: npm run data:history:finalize -- --build-time-ms="$BUILD_TIME_MS"
+      - if: steps.pr_guard.outputs.allowed == 'true' && !inputs.dry_run
+        run: npm run data:history:pr-summary
+
+      - name: Guard automation-only file scope
+        if: steps.pr_guard.outputs.allowed == 'true' && !inputs.dry_run
+        shell: bash
+        run: |
+          FORBIDDEN="$(git diff --name-only origin/main -- CHANGELOG.md ROADMAP.md README.md package.json src/components/layout/Sidebar.tsx src/pages/Settings.tsx)"
+          if [[ -n "$FORBIDDEN" ]]; then echo "Automation branch contains forbidden product/document changes:"; echo "$FORBIDDEN"; exit 1; fi
+
+      - name: Commit validated generated data
+        if: steps.pr_guard.outputs.allowed == 'true' && !inputs.dry_run
+        id: commit
+        shell: bash
+        run: |
+          git add public/data/twse-stock-history public/data/history public/data/technical-index public/data/technical data/history reports
           if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
-          git commit -m "chore(data): backfill TWSE stock history"
+          git commit -m "chore(data): update TWSE stock history coverage"
           git push origin "HEAD:$BACKFILL_BRANCH"
           echo "changed=true" >> "$GITHUB_OUTPUT"
-      - name: Create or update pull request
+
+      - name: Create the single history coverage pull request
         if: steps.commit.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: |
-          if gh pr view "$BACKFILL_BRANCH" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-            gh pr edit "$BACKFILL_BRANCH" --repo "$GITHUB_REPOSITORY" --title "chore(data): backfill TWSE stock history" --body "分批回補 TWSE 官方歷史行情；已完成驗證、技術指標、測試與建置。"
-          else
-            gh pr create --repo "$GITHUB_REPOSITORY" --base main --head "$BACKFILL_BRANCH" --title "chore(data): backfill TWSE stock history" --body "分批回補 TWSE 官方歷史行情；已完成驗證、技術指標、測試與建置。"
-          fi
+        run: gh pr create --repo "$GITHUB_REPOSITORY" --base main --head "$BACKFILL_BRANCH" --title "data: update TWSE stock history coverage" --body-file reports/history-backfill-pr.md

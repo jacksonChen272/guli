@@ -27,6 +27,8 @@ for (const file of (await readdir(stockDir).catch(() => [])).filter((item) => /^
 const manifest = buildHistoryManifest(securities, datasets, failures, 300, 120)
 const technical = await readJson<{ records?: Array<Record<string, unknown>> }>(path.join(root, 'public', 'data', 'technical-index', 'latest.json'), {})
 const technicalBySymbol = new Map((technical.records ?? []).map((item) => [String(item.symbol), item]))
+for (const item of manifest.items) item.technicalDataReady = item.isOfficial && technicalBySymbol.has(item.symbol)
+manifest.summary.technicalReady = manifest.items.filter((item) => item.technicalDataReady).length
 const symbols = manifest.items.filter((item) => item.isOfficial && item.path).map((item) => {
   const dataset = datasets.get(item.symbol) as TwseHistoryDataset; const row = technicalBySymbol.get(item.symbol)
   return { symbol: item.symbol, name: item.name, path: item.path, firstTradeDate: item.firstDate, lastTradeDate: item.lastDate, recordCount: item.recordCount, status: dataset.status, stale: dataset.status === 'stale', warnings: dataset.warnings, technical: { aboveMa20: typeof row?.aboveMa20 === 'boolean' ? row.aboveMa20 : null, rsiOverbought: typeof row?.rsi14 === 'number' ? row.rsi14 >= 70 : null, macdGoldenCross: typeof row?.macdCrossDays === 'number', volumeExpansion: typeof row?.volumeRatio === 'number' ? row.volumeRatio >= 1.5 : null, indicatorComputable: item.technicalDataReady } }
@@ -39,7 +41,16 @@ if (!manifest.summary.coverageInvariantValid) throw new Error(`Coverage invarian
 await atomicWriteJson(path.join(root, 'public', 'data', 'history', 'history-manifest.json'), manifest)
 const priorProgress = await readJson<HistoryProgress | null>(path.join(root, 'data', 'history', 'history-progress.json'), null)
 const refreshedProgress = buildProgress(manifest, priorProgress?.startedAt ?? manifest.updatedAt, priorProgress?.lastProcessedSymbol ?? null, priorProgress?.status ?? 'idle')
-await atomicWriteJson(path.join(root, 'data', 'history', 'history-progress.json'), { ...refreshedProgress, ...(priorProgress?.phase ? { phase: priorProgress.phase } : {}), ...(priorProgress?.plannedSymbols ? { plannedSymbols: priorProgress.plannedSymbols, phaseCompletedSymbols: priorProgress.plannedSymbols.filter((symbol) => datasets.has(symbol)) } : {}) })
+await atomicWriteJson(path.join(root, 'data', 'history', 'history-progress.json'), {
+  ...refreshedProgress,
+  ...(priorProgress?.phase ? { phase: priorProgress.phase } : {}),
+  ...(priorProgress?.plannedSymbols ? { plannedSymbols: priorProgress.plannedSymbols, phaseCompletedSymbols: priorProgress.plannedSymbols.filter((symbol) => datasets.has(symbol)) } : {}),
+  ...(priorProgress?.phaseStartedAt ? { phaseStartedAt: priorProgress.phaseStartedAt } : {}),
+  ...(typeof priorProgress?.phaseHistoryBytesBefore === 'number' ? { phaseHistoryBytesBefore: priorProgress.phaseHistoryBytesBefore } : {}),
+  ...(typeof priorProgress?.phaseManifestBytesBefore === 'number' ? { phaseManifestBytesBefore: priorProgress.phaseManifestBytesBefore } : {}),
+  ...(priorProgress?.phaseCoverageBefore ? { phaseCoverageBefore: priorProgress.phaseCoverageBefore } : {}),
+  ...(priorProgress?.phaseMetrics ? { phaseMetrics: priorProgress.phaseMetrics } : {}),
+})
 await atomicWriteJson(path.join(root, 'public', 'data', 'twse-stock-history', 'index.json'), index)
 await atomicWriteJson(path.join(root, 'public', 'data', 'twse-stock-history', 'latest.json'), index)
 await atomicWriteJson(path.join(root, 'reports', 'history-validation-summary.json'), report)

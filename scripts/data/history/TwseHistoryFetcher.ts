@@ -63,7 +63,7 @@ export class TwseHistoryFetcher {
   private readonly retries: HistoryRetryQueue
   private readonly timeoutMs: number
   private totalRetries = 0
-  private readonly errorCounts: Record<HistoryFailureCategory, number> = { RATE_LIMIT: 0, NETWORK_ERROR: 0, INVALID_RESPONSE: 0, NO_DATA: 0, PARSE_ERROR: 0, VALIDATION_ERROR: 0, UNKNOWN: 0 }
+  private readonly errorCounts: Record<HistoryFailureCategory, number> = { RATE_LIMIT: 0, NETWORK_ERROR: 0, INVALID_RESPONSE: 0, NO_DATA: 0, PARSE_ERROR: 0, VALIDATION_ERROR: 0, WRITE_ERROR: 0, UNKNOWN: 0 }
   constructor(
     fetcher: Fetcher = fetch,
     limiter = new HistoryRateLimiter(),

@@ -20,6 +20,7 @@ export function categorizeHistoryError(error: unknown): HistoryFailureCategory {
   if (/JSON|parse/i.test(message)) return 'PARSE_ERROR'
   if (/no data|查無資料|沒有符合/i.test(message)) return 'NO_DATA'
   if (/validation|驗證/i.test(message)) return 'VALIDATION_ERROR'
+  if (/write|rename|EPERM|EBUSY|EACCES|ENOSPC/i.test(message)) return 'WRITE_ERROR'
   return 'UNKNOWN'
 }
 

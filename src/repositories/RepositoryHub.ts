@@ -29,6 +29,7 @@ import { WatchlistDashboardRepository } from './WatchlistDashboardRepository'
 import { WatchlistRepository } from './WatchlistRepository'
 import { MarketSentimentRepository } from './MarketSentimentRepository'
 import { HotStocksRepository } from './HotStocksRepository'
+import { HistoryProgressRepository } from './HistoryProgressRepository'
 import { RecentSearchRepository } from './RecentSearchRepository'
 import { DashboardLayoutRepository } from './DashboardLayoutRepository'
 import { SearchRepository } from './SearchRepository'
@@ -50,6 +51,7 @@ export class RepositoryHub {
   market!: MarketRepository
   stocks!: StockRepository
   stockHistory!: StockHistoryRepository
+  historyProgress!: HistoryProgressRepository
   readonly screener = new ScreenerRepository()
   readonly marketHeatmap = new MarketHeatmapRepository()
   readonly industryMapping = new IndustryMappingRepository()
@@ -79,7 +81,9 @@ export class RepositoryHub {
     this.cache = new MemoryCache()
     this.market = new MarketRepository(provider, this.cache, this.policy)
     this.stocks = new StockRepository(mockProvider, this.cache, this.policy)
-    this.stockHistory = new StockHistoryRepository(new TWSEStockHistoryProvider(), this.cache, this.policy)
+    const stockHistoryProvider = new TWSEStockHistoryProvider()
+    this.stockHistory = new StockHistoryRepository(stockHistoryProvider, this.cache, this.policy)
+    this.historyProgress = new HistoryProgressRepository(stockHistoryProvider)
     this.industries = new IndustryRepository(mockProvider, this.cache, this.policy)
     this.institutions = new InstitutionRepository(this.cache, this.policy)
     this.watchlist = new WatchlistRepository(this.cache, this.policy, (symbols) => this.stocks.getOfficialStocks(symbols))

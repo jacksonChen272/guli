@@ -13,7 +13,11 @@ const manifest = await readJson<HistoryManifest | null>(path.join(root, 'public'
 const technical = await readJson<TechnicalIndex>(path.join(root, 'public', 'data', 'technical-index', 'latest.json'), {})
 if (!manifest) throw new Error('History Manifest 不存在')
 
-const pool = [...new Set(report.selectedSymbols ?? [])]
+const manifestBySymbol = new Map(manifest.items.map((item) => [item.symbol, item]))
+const pool = [...new Set(report.selectedSymbols ?? [])].filter((symbol) => {
+  const status = manifestBySymbol.get(symbol)?.status
+  return status === 'complete' || status === 'partial'
+})
 const shuffled = [...pool]
 for (let index = shuffled.length - 1; index > 0; index -= 1) {
   const swap = randomInt(index + 1); [shuffled[index], shuffled[swap]] = [shuffled[swap], shuffled[index]]
@@ -22,7 +26,6 @@ const sampledSymbols = shuffled.slice(0, Math.min(10, shuffled.length))
 if (sampledSymbols.length < Math.min(10, pool.length)) throw new Error('抽查樣本不足')
 
 const technicalBySymbol = new Map((technical.records ?? []).map((item) => [item.symbol, item]))
-const manifestBySymbol = new Map(manifest.items.map((item) => [item.symbol, item]))
 const checks = []
 for (const symbol of sampledSymbols) {
   const filename = `${symbol}.json`
@@ -50,6 +53,6 @@ for (const symbol of sampledSymbols) {
 
 const passed = checks.filter((item) => item.symbolMatchesFilename && item.noDuplicateDates && item.ascendingDates && item.validOhlc && item.recordCountMatchesManifest && item.technicalLatestDateMatchesHistory).length
 const output = { schemaVersion: 'history-phase-audit-v1', phase: report.phase ?? 'unknown', generatedAt: new Date().toISOString(), sampleMethod: 'cryptographically shuffled without replacement', requestedSampleSize: 10, sampledSymbols, passed, failed: checks.length - passed, checks }
-await atomicWriteJson(path.join(root, 'reports', 'history-phase2-audit.json'), output)
+await atomicWriteJson(path.join(root, 'reports', 'history-backfill-audit.json'), output)
 console.log(`[history:audit] ${passed}/${checks.length} 檔通過隨機抽查。`)
 if (passed !== checks.length) process.exitCode = 1

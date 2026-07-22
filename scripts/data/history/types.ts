@@ -5,6 +5,7 @@ export type HistoryFailureCategory =
   | 'NO_DATA'
   | 'PARSE_ERROR'
   | 'VALIDATION_ERROR'
+  | 'WRITE_ERROR'
   | 'UNKNOWN'
 
 export type HistoryItemStatus = 'complete' | 'partial' | 'failed' | 'pending' | 'unsupported'
@@ -64,6 +65,31 @@ export interface HistoryProgress {
   phase?: string
   plannedSymbols?: string[]
   phaseCompletedSymbols?: string[]
+  phaseStartedAt?: string
+  phaseHistoryBytesBefore?: number
+  phaseManifestBytesBefore?: number
+  phaseCoverageBefore?: HistoryCoverageCounts
+  phaseMetrics?: {
+    executionSegments: number
+    processedSymbols: number
+    updatedSymbols: number
+    skippedSymbols: number
+    historicalRecordsAdded: number
+    totalExecutionMs: number
+    totalRetries: number
+    errorCounts: Record<HistoryFailureCategory, number>
+  }
+}
+
+export interface HistoryCoverageCounts {
+  totalSecurities: number
+  eligibleCommonStocks: number
+  unsupportedSecurities: number
+  complete: number
+  partial: number
+  pending: number
+  failed: number
+  technicalDataReady: number
 }
 
 export interface HistoryManifestItem {
