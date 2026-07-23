@@ -1,0 +1,53 @@
+{
+  "symbol": "6691",
+  "name": "洋基工程",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 730,
+    "high": 748,
+    "low": 722,
+    "close": 726,
+    "change": 5,
+    "changePercent": 0.69,
+    "tradeVolume": 542694,
+    "transactionCount": 1178,
+    "tradeValue": 397441819,
+    "peRatio": 26.9
+  },
+  "dailyRangePercent": 3.6,
+  "turnoverAverageValue": 337386.94,
+  "pricePosition": 15.4,
+  "liquidityScore": 66.6,
+  "priceStrengthScore": 35.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 48.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

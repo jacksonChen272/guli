@@ -1,0 +1,53 @@
+{
+  "symbol": "2618",
+  "name": "長榮航",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 42.6,
+    "high": 43.65,
+    "low": 41.95,
+    "close": 42.1,
+    "change": -0.2,
+    "changePercent": -0.47,
+    "tradeVolume": 39206315,
+    "transactionCount": 13481,
+    "tradeValue": 1665803302,
+    "peRatio": 7.99
+  },
+  "dailyRangePercent": 4.05,
+  "turnoverAverageValue": 123566.75,
+  "pricePosition": 8.8,
+  "liquidityScore": 94.4,
+  "priceStrengthScore": 30.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 62.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

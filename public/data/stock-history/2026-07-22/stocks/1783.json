@@ -1,0 +1,53 @@
+{
+  "symbol": "1783",
+  "name": "和康生",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 40.05,
+    "high": 40.25,
+    "low": 39.85,
+    "close": 39.9,
+    "change": -0.25,
+    "changePercent": -0.62,
+    "tradeVolume": 84642,
+    "transactionCount": 100,
+    "tradeValue": 3389092,
+    "peRatio": 13.21
+  },
+  "dailyRangePercent": 1,
+  "turnoverAverageValue": 33890.92,
+  "pricePosition": 12.5,
+  "liquidityScore": 20.2,
+  "priceStrengthScore": 31.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 37.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

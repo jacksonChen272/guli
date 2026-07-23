@@ -1,0 +1,53 @@
+{
+  "symbol": "5607",
+  "name": "遠雄港",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 50,
+    "high": 50.8,
+    "low": 49.05,
+    "close": 49.05,
+    "change": -1.85,
+    "changePercent": -3.63,
+    "tradeVolume": 636724,
+    "transactionCount": 511,
+    "tradeValue": 31632943,
+    "peRatio": 15.09
+  },
+  "dailyRangePercent": 3.57,
+  "turnoverAverageValue": 61904,
+  "pricePosition": 0,
+  "liquidityScore": 43.8,
+  "priceStrengthScore": 20.4,
+  "valuationRiskScore": 35,
+  "snapshotScore": 37.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

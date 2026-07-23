@@ -1,0 +1,53 @@
+{
+  "symbol": "7821",
+  "name": "神數",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 41.5,
+    "high": 41.55,
+    "low": 40.4,
+    "close": 40.5,
+    "change": -0.5,
+    "changePercent": -1.22,
+    "tradeVolume": 132624,
+    "transactionCount": 248,
+    "tradeValue": 5392761,
+    "peRatio": 13.55
+  },
+  "dailyRangePercent": 2.85,
+  "turnoverAverageValue": 21745,
+  "pricePosition": 8.7,
+  "liquidityScore": 28.6,
+  "priceStrengthScore": 28.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 39,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

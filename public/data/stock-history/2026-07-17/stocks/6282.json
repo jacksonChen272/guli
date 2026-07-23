@@ -1,0 +1,67 @@
+{
+  "symbol": "6282",
+  "name": "康舒",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 50.6,
+    "high": 51.1,
+    "low": 48.6,
+    "close": 48.8,
+    "change": -4.2,
+    "changePercent": -7.92,
+    "tradeVolume": 23945206,
+    "transactionCount": 16524,
+    "tradeValue": 1186588838,
+    "peRatio": 97.6
+  },
+  "dailyRangePercent": 5.14,
+  "turnoverAverageValue": 71810.02,
+  "pricePosition": 8,
+  "liquidityScore": 91.7,
+  "priceStrengthScore": 13.5,
+  "valuationRiskScore": 90,
+  "snapshotScore": 40.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.92% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 97.60 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

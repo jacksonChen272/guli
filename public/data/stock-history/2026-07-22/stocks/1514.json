@@ -1,0 +1,53 @@
+{
+  "symbol": "1514",
+  "name": "亞力",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 108,
+    "high": 110.5,
+    "low": 108,
+    "close": 108.5,
+    "change": 1,
+    "changePercent": 0.93,
+    "tradeVolume": 5802121,
+    "transactionCount": 3632,
+    "tradeValue": 633182892,
+    "peRatio": 31.63
+  },
+  "dailyRangePercent": 2.31,
+  "turnoverAverageValue": 174334.5,
+  "pricePosition": 20,
+  "liquidityScore": 84.5,
+  "priceStrengthScore": 45.6,
+  "valuationRiskScore": 55,
+  "snapshotScore": 59.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

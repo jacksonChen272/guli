@@ -1,0 +1,60 @@
+{
+  "symbol": "3229",
+  "name": "晟鈦",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 41.9,
+    "high": 44.9,
+    "low": 41,
+    "close": 42.7,
+    "change": 1.85,
+    "changePercent": 4.53,
+    "tradeVolume": 717257,
+    "transactionCount": 637,
+    "tradeValue": 30897150,
+    "peRatio": 854
+  },
+  "dailyRangePercent": 9.51,
+  "turnoverAverageValue": 48504.16,
+  "pricePosition": 43.6,
+  "liquidityScore": 54.3,
+  "priceStrengthScore": 62,
+  "valuationRiskScore": 90,
+  "snapshotScore": 48.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.51% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 854.00 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

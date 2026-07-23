@@ -1,0 +1,53 @@
+{
+  "symbol": "3019",
+  "name": "亞光",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 139,
+    "high": 142,
+    "low": 138.5,
+    "close": 139,
+    "change": 1.5,
+    "changePercent": 1.09,
+    "tradeVolume": 2085584,
+    "transactionCount": 2278,
+    "tradeValue": 291475559,
+    "peRatio": 20.26
+  },
+  "dailyRangePercent": 2.53,
+  "turnoverAverageValue": 127952.4,
+  "pricePosition": 14.3,
+  "liquidityScore": 75.6,
+  "priceStrengthScore": 40,
+  "valuationRiskScore": 35,
+  "snapshotScore": 57.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

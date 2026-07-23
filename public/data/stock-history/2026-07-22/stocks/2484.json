@@ -1,0 +1,60 @@
+{
+  "symbol": "2484",
+  "name": "希華",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 74,
+    "high": 76.8,
+    "low": 72,
+    "close": 72.1,
+    "change": 0.6,
+    "changePercent": 0.84,
+    "tradeVolume": 18356321,
+    "transactionCount": 13319,
+    "tradeValue": 1356953723,
+    "peRatio": 97.43
+  },
+  "dailyRangePercent": 6.67,
+  "turnoverAverageValue": 101881.05,
+  "pricePosition": 2.1,
+  "liquidityScore": 92.4,
+  "priceStrengthScore": 31.1,
+  "valuationRiskScore": 90,
+  "snapshotScore": 48.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 2.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 97.43 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

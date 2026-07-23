@@ -1,0 +1,62 @@
+{
+  "symbol": "8215",
+  "name": "明基材",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 26.3,
+    "high": 26.55,
+    "low": 25.2,
+    "close": 25.3,
+    "change": -1.85,
+    "changePercent": -6.81,
+    "tradeVolume": 1353118,
+    "transactionCount": 1037,
+    "tradeValue": 34728287,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.36,
+  "turnoverAverageValue": 33489.19,
+  "pricePosition": 7.4,
+  "liquidityScore": 52.7,
+  "priceStrengthScore": 15.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 31.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.4 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

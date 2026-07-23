@@ -1,0 +1,55 @@
+{
+  "symbol": "6230",
+  "name": "尼得科超眾",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 118,
+    "high": 118,
+    "low": 111.5,
+    "close": 113,
+    "change": -5,
+    "changePercent": -4.24,
+    "tradeVolume": 65826,
+    "transactionCount": 115,
+    "tradeValue": 7447279,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.83,
+  "turnoverAverageValue": 64758.95,
+  "pricePosition": 23.1,
+  "liquidityScore": 17.3,
+  "priceStrengthScore": 27,
+  "valuationRiskScore": null,
+  "snapshotScore": 22.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

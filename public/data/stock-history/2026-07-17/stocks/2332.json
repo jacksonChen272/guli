@@ -1,0 +1,76 @@
+{
+  "symbol": "2332",
+  "name": "友訊",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 21.65,
+    "high": 22.25,
+    "low": 20.45,
+    "close": 20.5,
+    "change": -2,
+    "changePercent": -8.89,
+    "tradeVolume": 33710835,
+    "transactionCount": 11188,
+    "tradeValue": 713322301,
+    "peRatio": null
+  },
+  "dailyRangePercent": 8.8,
+  "turnoverAverageValue": 63757.8,
+  "pricePosition": 2.8,
+  "liquidityScore": 89.7,
+  "priceStrengthScore": 9.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 44.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.89% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.80% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 2.8 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

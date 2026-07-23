@@ -1,0 +1,67 @@
+{
+  "symbol": "3308",
+  "name": "聯德",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 21,
+    "high": 21,
+    "low": 20.5,
+    "close": 20.5,
+    "change": -0.15,
+    "changePercent": -0.73,
+    "tradeVolume": 49525,
+    "transactionCount": 57,
+    "tradeValue": 1025625,
+    "peRatio": 170.83
+  },
+  "dailyRangePercent": 2.44,
+  "turnoverAverageValue": 17993.42,
+  "pricePosition": 0,
+  "liquidityScore": 10.7,
+  "priceStrengthScore": 26.9,
+  "valuationRiskScore": 90,
+  "snapshotScore": 17.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.7 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 170.83 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

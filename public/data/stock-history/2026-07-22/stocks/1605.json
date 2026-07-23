@@ -1,0 +1,53 @@
+{
+  "symbol": "1605",
+  "name": "華新",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 33.45,
+    "high": 34.25,
+    "low": 33.45,
+    "close": 33.5,
+    "change": 0.55,
+    "changePercent": 1.67,
+    "tradeVolume": 15428804,
+    "transactionCount": 7155,
+    "tradeValue": 522553162,
+    "peRatio": 24.45
+  },
+  "dailyRangePercent": 2.39,
+  "turnoverAverageValue": 73033.29,
+  "pricePosition": 6.2,
+  "liquidityScore": 87.8,
+  "priceStrengthScore": 42.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 62.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.2 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

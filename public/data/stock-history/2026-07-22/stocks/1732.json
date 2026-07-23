@@ -1,0 +1,53 @@
+{
+  "symbol": "1732",
+  "name": "毛寶",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 27,
+    "high": 28.05,
+    "low": 27,
+    "close": 27,
+    "change": 0.4,
+    "changePercent": 1.5,
+    "tradeVolume": 1001481,
+    "transactionCount": 614,
+    "tradeValue": 27422144,
+    "peRatio": 30
+  },
+  "dailyRangePercent": 3.89,
+  "turnoverAverageValue": 44661.47,
+  "pricePosition": 0,
+  "liquidityScore": 55.6,
+  "priceStrengthScore": 35.9,
+  "valuationRiskScore": 55,
+  "snapshotScore": 44.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

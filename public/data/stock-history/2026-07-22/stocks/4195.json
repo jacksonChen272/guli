@@ -1,0 +1,55 @@
+{
+  "symbol": "4195",
+  "name": "基米-創",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.8,
+    "high": 16.8,
+    "low": 16.3,
+    "close": 16.7,
+    "change": -0.1,
+    "changePercent": -0.6,
+    "tradeVolume": 97958,
+    "transactionCount": 126,
+    "tradeValue": 1609968,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.07,
+  "turnoverAverageValue": 12777.52,
+  "pricePosition": 80,
+  "liquidityScore": 17.7,
+  "priceStrengthScore": 55.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 38.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

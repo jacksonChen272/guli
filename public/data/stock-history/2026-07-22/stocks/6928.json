@@ -1,0 +1,69 @@
+{
+  "symbol": "6928",
+  "name": "攸泰科技",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 57.7,
+    "high": 59.8,
+    "low": 53.9,
+    "close": 54.9,
+    "change": -2.8,
+    "changePercent": -4.85,
+    "tradeVolume": 1296936,
+    "transactionCount": 1221,
+    "tradeValue": 74024678,
+    "peRatio": null
+  },
+  "dailyRangePercent": 10.95,
+  "turnoverAverageValue": 60626.27,
+  "pricePosition": 16.9,
+  "liquidityScore": 64.2,
+  "priceStrengthScore": 23.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 41.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.95% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.9 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

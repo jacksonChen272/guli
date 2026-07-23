@@ -1,0 +1,53 @@
+{
+  "symbol": "2328",
+  "name": "廣宇",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 47.4,
+    "high": 48.3,
+    "low": 47,
+    "close": 47,
+    "change": 0.4,
+    "changePercent": 0.86,
+    "tradeVolume": 2123621,
+    "transactionCount": 1668,
+    "tradeValue": 101156971,
+    "peRatio": 47.96
+  },
+  "dailyRangePercent": 2.77,
+  "turnoverAverageValue": 60645.67,
+  "pricePosition": 0,
+  "liquidityScore": 69.2,
+  "priceStrengthScore": 30.4,
+  "valuationRiskScore": 75,
+  "snapshotScore": 42.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

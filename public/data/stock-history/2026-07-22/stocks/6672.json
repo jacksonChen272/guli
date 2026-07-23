@@ -1,0 +1,53 @@
+{
+  "symbol": "6672",
+  "name": "騰輝電子-KY",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 240.5,
+    "high": 244,
+    "low": 234,
+    "close": 235,
+    "change": 5.5,
+    "changePercent": 2.4,
+    "tradeVolume": 4344132,
+    "transactionCount": 4207,
+    "tradeValue": 1039557996,
+    "peRatio": 42.5
+  },
+  "dailyRangePercent": 4.27,
+  "turnoverAverageValue": 247101.97,
+  "pricePosition": 10,
+  "liquidityScore": 85.5,
+  "priceStrengthScore": 37.4,
+  "valuationRiskScore": 75,
+  "snapshotScore": 51.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

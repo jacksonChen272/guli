@@ -1,0 +1,53 @@
+{
+  "symbol": "2897",
+  "name": "王道銀行",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.45,
+    "high": 10.55,
+    "low": 10.4,
+    "close": 10.4,
+    "change": -0.15,
+    "changePercent": -1.42,
+    "tradeVolume": 6677357,
+    "transactionCount": 1338,
+    "tradeValue": 69883464,
+    "peRatio": 15.29
+  },
+  "dailyRangePercent": 1.44,
+  "turnoverAverageValue": 52229.79,
+  "pricePosition": 0,
+  "liquidityScore": 67.6,
+  "priceStrengthScore": 25.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 48,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "5706",
+  "name": "鳳凰",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 46.85,
+    "high": 46.85,
+    "low": 45.7,
+    "close": 45.9,
+    "change": -1.05,
+    "changePercent": -2.24,
+    "tradeVolume": 335111,
+    "transactionCount": 369,
+    "tradeValue": 15420285,
+    "peRatio": 12.89
+  },
+  "dailyRangePercent": 2.52,
+  "turnoverAverageValue": 41789.39,
+  "pricePosition": 17.4,
+  "liquidityScore": 33,
+  "priceStrengthScore": 29.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 40.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

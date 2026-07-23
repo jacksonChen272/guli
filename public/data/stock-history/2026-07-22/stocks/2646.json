@@ -1,0 +1,60 @@
+{
+  "symbol": "2646",
+  "name": "星宇航空",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 22,
+    "high": 22.2,
+    "low": 21.35,
+    "close": 21.4,
+    "change": -0.6,
+    "changePercent": -2.73,
+    "tradeVolume": 8176169,
+    "transactionCount": 4581,
+    "tradeValue": 176760982,
+    "peRatio": 237.78
+  },
+  "dailyRangePercent": 3.98,
+  "turnoverAverageValue": 38585.68,
+  "pricePosition": 5.9,
+  "liquidityScore": 81.1,
+  "priceStrengthScore": 24.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 41.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.9 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 237.78 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

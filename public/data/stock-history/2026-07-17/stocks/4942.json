@@ -1,0 +1,53 @@
+{
+  "symbol": "4942",
+  "name": "嘉彰",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 37.6,
+    "high": 37.7,
+    "low": 36.7,
+    "close": 36.7,
+    "change": -0.9,
+    "changePercent": -2.39,
+    "tradeVolume": 226766,
+    "transactionCount": 168,
+    "tradeValue": 8391465,
+    "peRatio": 12.4
+  },
+  "dailyRangePercent": 2.72,
+  "turnoverAverageValue": 49949.2,
+  "pricePosition": 0,
+  "liquidityScore": 24.4,
+  "priceStrengthScore": 23.1,
+  "valuationRiskScore": 20,
+  "snapshotScore": 34.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

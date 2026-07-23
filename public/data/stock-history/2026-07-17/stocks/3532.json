@@ -1,0 +1,74 @@
+{
+  "symbol": "3532",
+  "name": "台勝科",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 424,
+    "high": 470,
+    "low": 424,
+    "close": 424,
+    "change": -47,
+    "changePercent": -9.98,
+    "tradeVolume": 9795006,
+    "transactionCount": 11142,
+    "tradeValue": 4317382701,
+    "peRatio": 536.71
+  },
+  "dailyRangePercent": 10.85,
+  "turnoverAverageValue": 387487.23,
+  "pricePosition": 0,
+  "liquidityScore": 92.5,
+  "priceStrengthScore": 10,
+  "valuationRiskScore": 90,
+  "snapshotScore": 38.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.98% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.85% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 536.71 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

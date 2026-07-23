@@ -1,0 +1,74 @@
+{
+  "symbol": "6921",
+  "name": "嘉雨思-創",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 68.8,
+    "high": 68.8,
+    "low": 63.5,
+    "close": 64.4,
+    "change": -3.4,
+    "changePercent": -5.01,
+    "tradeVolume": 34242,
+    "transactionCount": 29,
+    "tradeValue": 2230893,
+    "peRatio": 189.41
+  },
+  "dailyRangePercent": 8.35,
+  "turnoverAverageValue": 76927.34,
+  "pricePosition": 17,
+  "liquidityScore": 7.3,
+  "priceStrengthScore": 23.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 15,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.35% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.3 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 189.41 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

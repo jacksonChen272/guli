@@ -1,0 +1,62 @@
+{
+  "symbol": "2337",
+  "name": "旺宏",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 129.5,
+    "high": 135,
+    "low": 129.5,
+    "close": 135,
+    "change": 12,
+    "changePercent": 9.76,
+    "tradeVolume": 54882537,
+    "transactionCount": 23751,
+    "tradeValue": 7384301758,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.25,
+  "turnoverAverageValue": 310904.88,
+  "pricePosition": 100,
+  "liquidityScore": 97.5,
+  "priceStrengthScore": 93.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 95.3,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.76% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

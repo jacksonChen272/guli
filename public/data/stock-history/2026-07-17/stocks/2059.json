@@ -1,0 +1,74 @@
+{
+  "symbol": "2059",
+  "name": "川湖",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 8575,
+    "high": 8575,
+    "low": 7835,
+    "close": 7890,
+    "change": -765,
+    "changePercent": -8.84,
+    "tradeVolume": 859138,
+    "transactionCount": 7403,
+    "tradeValue": 6978750095,
+    "peRatio": 69.55
+  },
+  "dailyRangePercent": 9.44,
+  "turnoverAverageValue": 942692.16,
+  "pricePosition": 7.4,
+  "liquidityScore": 78.8,
+  "priceStrengthScore": 11.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 34.6,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.84% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.44% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.4 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 69.55 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

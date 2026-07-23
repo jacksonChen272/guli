@@ -1,0 +1,53 @@
+{
+  "symbol": "6197",
+  "name": "佳必琪",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 312,
+    "high": 320.5,
+    "low": 302.5,
+    "close": 304.5,
+    "change": -21,
+    "changePercent": -6.45,
+    "tradeVolume": 2735728,
+    "transactionCount": 4531,
+    "tradeValue": 848359200,
+    "peRatio": 29.71
+  },
+  "dailyRangePercent": 5.95,
+  "turnoverAverageValue": 187234.43,
+  "pricePosition": 11.1,
+  "liquidityScore": 79.3,
+  "priceStrengthScore": 17.9,
+  "valuationRiskScore": 55,
+  "snapshotScore": 44.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

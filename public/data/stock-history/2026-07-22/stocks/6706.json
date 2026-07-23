@@ -1,0 +1,55 @@
+{
+  "symbol": "6706",
+  "name": "惠特",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 112.5,
+    "high": 120,
+    "low": 112.5,
+    "close": 116.5,
+    "change": 7,
+    "changePercent": 6.39,
+    "tradeVolume": 1893507,
+    "transactionCount": 1594,
+    "tradeValue": 218049650,
+    "peRatio": null
+  },
+  "dailyRangePercent": 6.67,
+  "turnoverAverageValue": 136794.01,
+  "pricePosition": 53.3,
+  "liquidityScore": 72.9,
+  "priceStrengthScore": 69.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 71,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2884",
+  "name": "玉山金",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 36.75,
+    "high": 37.2,
+    "low": 36.05,
+    "close": 36.05,
+    "change": -0.9,
+    "changePercent": -2.44,
+    "tradeVolume": 35080404,
+    "transactionCount": 14541,
+    "tradeValue": 1278554949,
+    "peRatio": 16.39
+  },
+  "dailyRangePercent": 3.19,
+  "turnoverAverageValue": 87927.58,
+  "pricePosition": 0,
+  "liquidityScore": 93.5,
+  "priceStrengthScore": 23,
+  "valuationRiskScore": 35,
+  "snapshotScore": 56.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

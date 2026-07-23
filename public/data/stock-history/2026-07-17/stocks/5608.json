@@ -1,0 +1,53 @@
+{
+  "symbol": "5608",
+  "name": "四維航",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 14.25,
+    "high": 14.25,
+    "low": 13.55,
+    "close": 13.55,
+    "change": -0.75,
+    "changePercent": -5.24,
+    "tradeVolume": 3361883,
+    "transactionCount": 1734,
+    "tradeValue": 46481568,
+    "peRatio": 58.91
+  },
+  "dailyRangePercent": 5.17,
+  "turnoverAverageValue": 26805.98,
+  "pricePosition": 0,
+  "liquidityScore": 62.5,
+  "priceStrengthScore": 16.7,
+  "valuationRiskScore": 75,
+  "snapshotScore": 34.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

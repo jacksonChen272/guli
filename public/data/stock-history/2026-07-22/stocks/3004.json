@@ -1,0 +1,53 @@
+{
+  "symbol": "3004",
+  "name": "豐達科",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 142,
+    "high": 145.5,
+    "low": 137.5,
+    "close": 138,
+    "change": -3.5,
+    "changePercent": -2.47,
+    "tradeVolume": 704594,
+    "transactionCount": 989,
+    "tradeValue": 98989534,
+    "peRatio": 25.84
+  },
+  "dailyRangePercent": 5.82,
+  "turnoverAverageValue": 100090.53,
+  "pricePosition": 6.3,
+  "liquidityScore": 61.3,
+  "priceStrengthScore": 25.2,
+  "valuationRiskScore": 55,
+  "snapshotScore": 41.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,62 @@
+{
+  "symbol": "1536",
+  "name": "和大",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 52,
+    "high": 52.4,
+    "low": 49.1,
+    "close": 49.45,
+    "change": -3.35,
+    "changePercent": -6.34,
+    "tradeVolume": 2940729,
+    "transactionCount": 2442,
+    "tradeValue": 148070974,
+    "peRatio": null
+  },
+  "dailyRangePercent": 6.72,
+  "turnoverAverageValue": 60635.12,
+  "pricePosition": 10.6,
+  "liquidityScore": 69.8,
+  "priceStrengthScore": 17.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 40.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.6 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

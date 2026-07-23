@@ -1,0 +1,53 @@
+{
+  "symbol": "1231",
+  "name": "聯華食",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 92.5,
+    "high": 93,
+    "low": 90.7,
+    "close": 90.8,
+    "change": -1.4,
+    "changePercent": -1.52,
+    "tradeVolume": 435358,
+    "transactionCount": 967,
+    "tradeValue": 39887216,
+    "peRatio": 20.64
+  },
+  "dailyRangePercent": 2.54,
+  "turnoverAverageValue": 41248.41,
+  "pricePosition": 4.3,
+  "liquidityScore": 54.1,
+  "priceStrengthScore": 26.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 43.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 4.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

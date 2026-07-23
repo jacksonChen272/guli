@@ -1,0 +1,55 @@
+{
+  "symbol": "3056",
+  "name": "富華新",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 14.75,
+    "high": 14.8,
+    "low": 14.3,
+    "close": 14.45,
+    "change": -0.35,
+    "changePercent": -2.36,
+    "tradeVolume": 1486001,
+    "transactionCount": 855,
+    "tradeValue": 21593063,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.5,
+  "turnoverAverageValue": 25255.04,
+  "pricePosition": 30,
+  "liquidityScore": 49.8,
+  "priceStrengthScore": 33.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 40.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

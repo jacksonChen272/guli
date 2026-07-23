@@ -1,0 +1,53 @@
+{
+  "symbol": "2453",
+  "name": "凌群",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 52.2,
+    "high": 52.7,
+    "low": 51.1,
+    "close": 51.1,
+    "change": -1.7,
+    "changePercent": -3.22,
+    "tradeVolume": 723353,
+    "transactionCount": 601,
+    "tradeValue": 37440133,
+    "peRatio": 16.27
+  },
+  "dailyRangePercent": 3.13,
+  "turnoverAverageValue": 62296.39,
+  "pricePosition": 0,
+  "liquidityScore": 46.8,
+  "priceStrengthScore": 21.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 39,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

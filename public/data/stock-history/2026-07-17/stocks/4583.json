@@ -1,0 +1,60 @@
+{
+  "symbol": "4583",
+  "name": "台灣精銳",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 577,
+    "high": 589,
+    "low": 557,
+    "close": 560,
+    "change": -43,
+    "changePercent": -7.13,
+    "tradeVolume": 89867,
+    "transactionCount": 457,
+    "tradeValue": 51373165,
+    "peRatio": 49.12
+  },
+  "dailyRangePercent": 5.75,
+  "turnoverAverageValue": 112413.93,
+  "pricePosition": 9.4,
+  "liquidityScore": 36.1,
+  "priceStrengthScore": 15.8,
+  "valuationRiskScore": 75,
+  "snapshotScore": 24.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.13% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

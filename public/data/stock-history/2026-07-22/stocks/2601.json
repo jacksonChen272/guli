@@ -1,0 +1,62 @@
+{
+  "symbol": "2601",
+  "name": "益航",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 6.85,
+    "high": 7.02,
+    "low": 6.75,
+    "close": 6.75,
+    "change": -0.1,
+    "changePercent": -1.46,
+    "tradeVolume": 3066050,
+    "transactionCount": 1652,
+    "tradeValue": 21036678,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4,
+  "turnoverAverageValue": 12734.07,
+  "pricePosition": 0,
+  "liquidityScore": 62.8,
+  "priceStrengthScore": 25.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 41.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

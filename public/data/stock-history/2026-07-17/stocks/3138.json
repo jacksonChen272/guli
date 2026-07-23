@@ -1,0 +1,74 @@
+{
+  "symbol": "3138",
+  "name": "耀登",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 109.5,
+    "high": 109.5,
+    "low": 100,
+    "close": 100.5,
+    "change": -8.5,
+    "changePercent": -7.8,
+    "tradeVolume": 616262,
+    "transactionCount": 800,
+    "tradeValue": 62598489,
+    "peRatio": 65.26
+  },
+  "dailyRangePercent": 9.5,
+  "turnoverAverageValue": 78248.11,
+  "pricePosition": 5.3,
+  "liquidityScore": 50.8,
+  "priceStrengthScore": 12.8,
+  "valuationRiskScore": 90,
+  "snapshotScore": 25.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.80% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.50% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 65.26 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

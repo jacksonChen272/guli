@@ -1,0 +1,53 @@
+{
+  "symbol": "1104",
+  "name": "環泥",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 26.9,
+    "high": 27.05,
+    "low": 26.5,
+    "close": 26.5,
+    "change": -0.4,
+    "changePercent": -1.49,
+    "tradeVolume": 793276,
+    "transactionCount": 798,
+    "tradeValue": 21121951,
+    "peRatio": 10.35
+  },
+  "dailyRangePercent": 2.08,
+  "turnoverAverageValue": 26468.61,
+  "pricePosition": 0,
+  "liquidityScore": 53.2,
+  "priceStrengthScore": 25.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 46,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

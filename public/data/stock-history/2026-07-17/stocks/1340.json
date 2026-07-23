@@ -1,0 +1,62 @@
+{
+  "symbol": "1340",
+  "name": "勝悅-KY",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 5.29,
+    "high": 5.32,
+    "low": 5.2,
+    "close": 5.25,
+    "change": -0.08,
+    "changePercent": -1.5,
+    "tradeVolume": 154297,
+    "transactionCount": 204,
+    "tradeValue": 808489,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.31,
+  "turnoverAverageValue": 3963.18,
+  "pricePosition": 41.7,
+  "liquidityScore": 13.1,
+  "priceStrengthScore": 39.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 28.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.1 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

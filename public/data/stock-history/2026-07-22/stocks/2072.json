@@ -1,0 +1,53 @@
+{
+  "symbol": "2072",
+  "name": "世紀風電",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 146.5,
+    "high": 146.5,
+    "low": 143.5,
+    "close": 143.5,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 160300,
+    "transactionCount": 221,
+    "tradeValue": 23249866,
+    "peRatio": 10.98
+  },
+  "dailyRangePercent": 2.09,
+  "turnoverAverageValue": 105203.01,
+  "pricePosition": 0,
+  "liquidityScore": 38.6,
+  "priceStrengthScore": 28.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 42.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

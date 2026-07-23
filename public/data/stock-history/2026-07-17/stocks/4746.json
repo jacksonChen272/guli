@@ -1,0 +1,53 @@
+{
+  "symbol": "4746",
+  "name": "台耀",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 53,
+    "high": 53,
+    "low": 51.9,
+    "close": 52,
+    "change": -1,
+    "changePercent": -1.89,
+    "tradeVolume": 500995,
+    "transactionCount": 464,
+    "tradeValue": 26217226,
+    "peRatio": 18.44
+  },
+  "dailyRangePercent": 2.12,
+  "turnoverAverageValue": 56502.64,
+  "pricePosition": 9.1,
+  "liquidityScore": 40.5,
+  "priceStrengthScore": 27.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 39.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2347",
+  "name": "聯強",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 85.9,
+    "high": 88.2,
+    "low": 85.2,
+    "close": 85.3,
+    "change": -2,
+    "changePercent": -2.29,
+    "tradeVolume": 9156645,
+    "transactionCount": 5132,
+    "tradeValue": 786839105,
+    "peRatio": 14.83
+  },
+  "dailyRangePercent": 3.52,
+  "turnoverAverageValue": 153320.17,
+  "pricePosition": 3.3,
+  "liquidityScore": 85.3,
+  "priceStrengthScore": 24.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 56.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 3.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

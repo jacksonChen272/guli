@@ -1,0 +1,74 @@
+{
+  "symbol": "8028",
+  "name": "昇陽半導體",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 331,
+    "high": 351.5,
+    "low": 315,
+    "close": 315,
+    "change": -35,
+    "changePercent": -10,
+    "tradeVolume": 14239467,
+    "transactionCount": 14304,
+    "tradeValue": 4752488131,
+    "peRatio": 69.69
+  },
+  "dailyRangePercent": 11.59,
+  "turnoverAverageValue": 332248.89,
+  "pricePosition": 0,
+  "liquidityScore": 93.9,
+  "priceStrengthScore": 6,
+  "valuationRiskScore": 90,
+  "snapshotScore": 37.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -10.00% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.59% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 69.69 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

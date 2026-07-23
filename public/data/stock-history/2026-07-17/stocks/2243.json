@@ -1,0 +1,53 @@
+{
+  "symbol": "2243",
+  "name": "宏旭-KY",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 51.9,
+    "high": 54.5,
+    "low": 51.6,
+    "close": 52,
+    "change": -1,
+    "changePercent": -1.89,
+    "tradeVolume": 772791,
+    "transactionCount": 920,
+    "tradeValue": 40800653,
+    "peRatio": 20.88
+  },
+  "dailyRangePercent": 5.62,
+  "turnoverAverageValue": 44348.54,
+  "pricePosition": 13.8,
+  "liquidityScore": 49.9,
+  "priceStrengthScore": 37.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 47.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 13.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

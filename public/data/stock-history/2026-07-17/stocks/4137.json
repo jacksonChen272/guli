@@ -1,0 +1,53 @@
+{
+  "symbol": "4137",
+  "name": "麗豐-KY",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 96.7,
+    "high": 97,
+    "low": 95,
+    "close": 95,
+    "change": -1.7,
+    "changePercent": -1.76,
+    "tradeVolume": 158255,
+    "transactionCount": 224,
+    "tradeValue": 15172493,
+    "peRatio": 12.09
+  },
+  "dailyRangePercent": 2.11,
+  "turnoverAverageValue": 67734.34,
+  "pricePosition": 0,
+  "liquidityScore": 26.7,
+  "priceStrengthScore": 24.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 36.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

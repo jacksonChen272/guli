@@ -1,0 +1,55 @@
+{
+  "symbol": "2460",
+  "name": "建通",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 31.5,
+    "high": 32.5,
+    "low": 30.5,
+    "close": 31.65,
+    "change": -0.5,
+    "changePercent": -1.56,
+    "tradeVolume": 928046,
+    "transactionCount": 688,
+    "tradeValue": 28976994,
+    "peRatio": null
+  },
+  "dailyRangePercent": 6.56,
+  "turnoverAverageValue": 42117.72,
+  "pricePosition": 57.5,
+  "liquidityScore": 47.4,
+  "priceStrengthScore": 53.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 50.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

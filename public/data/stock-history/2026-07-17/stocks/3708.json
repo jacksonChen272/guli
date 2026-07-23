@@ -1,0 +1,53 @@
+{
+  "symbol": "3708",
+  "name": "上緯投控",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 99.8,
+    "high": 99.9,
+    "low": 95.1,
+    "close": 95.1,
+    "change": -6.4,
+    "changePercent": -6.31,
+    "tradeVolume": 835237,
+    "transactionCount": 979,
+    "tradeValue": 81498639,
+    "peRatio": 2.33
+  },
+  "dailyRangePercent": 5.05,
+  "turnoverAverageValue": 83246.82,
+  "pricePosition": 0,
+  "liquidityScore": 55.3,
+  "priceStrengthScore": 14.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 41.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

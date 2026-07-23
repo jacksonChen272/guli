@@ -1,0 +1,53 @@
+{
+  "symbol": "8467",
+  "name": "波力-KY",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 106.5,
+    "high": 107,
+    "low": 100,
+    "close": 102.5,
+    "change": -4,
+    "changePercent": -3.76,
+    "tradeVolume": 30935,
+    "transactionCount": 52,
+    "tradeValue": 3158946,
+    "peRatio": 11.9
+  },
+  "dailyRangePercent": 7,
+  "turnoverAverageValue": 60748.96,
+  "pricePosition": 35.7,
+  "liquidityScore": 9.3,
+  "priceStrengthScore": 32.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 33.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 9.3 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

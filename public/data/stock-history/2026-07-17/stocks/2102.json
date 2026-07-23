@@ -1,0 +1,53 @@
+{
+  "symbol": "2102",
+  "name": "泰豐",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 18.9,
+    "high": 18.95,
+    "low": 18.5,
+    "close": 18.5,
+    "change": -0.5,
+    "changePercent": -2.63,
+    "tradeVolume": 262426,
+    "transactionCount": 274,
+    "tradeValue": 4893300,
+    "peRatio": 2.86
+  },
+  "dailyRangePercent": 2.43,
+  "turnoverAverageValue": 17858.76,
+  "pricePosition": 0,
+  "liquidityScore": 23.5,
+  "priceStrengthScore": 22.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 34.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

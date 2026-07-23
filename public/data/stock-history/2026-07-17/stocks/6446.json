@@ -1,0 +1,60 @@
+{
+  "symbol": "6446",
+  "name": "藥華藥",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 1225,
+    "high": 1260,
+    "low": 1190,
+    "close": 1195,
+    "change": -65,
+    "changePercent": -5.16,
+    "tradeVolume": 3377763,
+    "transactionCount": 8261,
+    "tradeValue": 4108886810,
+    "peRatio": 74.92
+  },
+  "dailyRangePercent": 5.88,
+  "turnoverAverageValue": 497383.71,
+  "pricePosition": 7.1,
+  "liquidityScore": 86.8,
+  "priceStrengthScore": 19.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 41.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 74.92 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

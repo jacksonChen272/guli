@@ -1,0 +1,53 @@
+{
+  "symbol": "2903",
+  "name": "遠百",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 22.35,
+    "high": 22.65,
+    "low": 22.1,
+    "close": 22.1,
+    "change": -0.5,
+    "changePercent": -2.21,
+    "tradeVolume": 2134904,
+    "transactionCount": 1139,
+    "tradeValue": 47543743,
+    "peRatio": 13.64
+  },
+  "dailyRangePercent": 2.49,
+  "turnoverAverageValue": 41741.65,
+  "pricePosition": 0,
+  "liquidityScore": 64.7,
+  "priceStrengthScore": 23.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 49.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

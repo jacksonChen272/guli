@@ -1,0 +1,53 @@
+{
+  "symbol": "3023",
+  "name": "信邦",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 315,
+    "high": 319.5,
+    "low": 302,
+    "close": 303,
+    "change": -12,
+    "changePercent": -3.81,
+    "tradeVolume": 1832154,
+    "transactionCount": 2264,
+    "tradeValue": 566228106,
+    "peRatio": 23.73
+  },
+  "dailyRangePercent": 5.79,
+  "turnoverAverageValue": 250100.75,
+  "pricePosition": 5.7,
+  "liquidityScore": 73.2,
+  "priceStrengthScore": 21.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 48.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

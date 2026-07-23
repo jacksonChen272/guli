@@ -1,0 +1,53 @@
+{
+  "symbol": "9940",
+  "name": "信義",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.3,
+    "high": 20.45,
+    "low": 19.9,
+    "close": 19.95,
+    "change": -0.35,
+    "changePercent": -1.72,
+    "tradeVolume": 813786,
+    "transactionCount": 521,
+    "tradeValue": 16359299,
+    "peRatio": 53.92
+  },
+  "dailyRangePercent": 2.76,
+  "turnoverAverageValue": 31399.81,
+  "pricePosition": 9.1,
+  "liquidityScore": 41.3,
+  "priceStrengthScore": 27.8,
+  "valuationRiskScore": 75,
+  "snapshotScore": 32,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

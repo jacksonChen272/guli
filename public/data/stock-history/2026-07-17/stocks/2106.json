@@ -1,0 +1,60 @@
+{
+  "symbol": "2106",
+  "name": "建大",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 18.2,
+    "high": 18.65,
+    "low": 18,
+    "close": 18.1,
+    "change": -0.2,
+    "changePercent": -1.09,
+    "tradeVolume": 1658114,
+    "transactionCount": 1030,
+    "tradeValue": 30279652,
+    "peRatio": 106.47
+  },
+  "dailyRangePercent": 3.61,
+  "turnoverAverageValue": 29397.72,
+  "pricePosition": 15.4,
+  "liquidityScore": 53.3,
+  "priceStrengthScore": 31.5,
+  "valuationRiskScore": 90,
+  "snapshotScore": 34.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.4 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 106.47 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

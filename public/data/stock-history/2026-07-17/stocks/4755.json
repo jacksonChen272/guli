@@ -1,0 +1,53 @@
+{
+  "symbol": "4755",
+  "name": "三福化",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 131,
+    "high": 132,
+    "low": 126,
+    "close": 126.5,
+    "change": -9,
+    "changePercent": -6.64,
+    "tradeVolume": 555614,
+    "transactionCount": 660,
+    "tradeValue": 71436055,
+    "peRatio": 35.04
+  },
+  "dailyRangePercent": 4.76,
+  "turnoverAverageValue": 108236.45,
+  "pricePosition": 8.3,
+  "liquidityScore": 49.6,
+  "priceStrengthScore": 16.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 33.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

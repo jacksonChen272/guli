@@ -1,0 +1,53 @@
+{
+  "symbol": "5521",
+  "name": "工信",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.3,
+    "high": 10.3,
+    "low": 9.99,
+    "close": 10.05,
+    "change": -0.3,
+    "changePercent": -2.9,
+    "tradeVolume": 6467763,
+    "transactionCount": 1646,
+    "tradeValue": 65150727,
+    "peRatio": 15.23
+  },
+  "dailyRangePercent": 3.1,
+  "turnoverAverageValue": 39581.24,
+  "pricePosition": 19.4,
+  "liquidityScore": 67.8,
+  "priceStrengthScore": 28.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 49.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 19.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

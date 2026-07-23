@@ -1,0 +1,53 @@
+{
+  "symbol": "7740",
+  "name": "熙特爾-創",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 156,
+    "high": 159,
+    "low": 152,
+    "close": 153,
+    "change": -5.5,
+    "changePercent": -3.47,
+    "tradeVolume": 303480,
+    "transactionCount": 350,
+    "tradeValue": 46939572,
+    "peRatio": 21.43
+  },
+  "dailyRangePercent": 4.61,
+  "turnoverAverageValue": 134113.06,
+  "pricePosition": 14.3,
+  "liquidityScore": 40.2,
+  "priceStrengthScore": 25.7,
+  "valuationRiskScore": 35,
+  "snapshotScore": 38.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

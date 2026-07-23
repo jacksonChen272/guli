@@ -1,0 +1,53 @@
+{
+  "symbol": "1733",
+  "name": "五鼎",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 32.1,
+    "high": 32.15,
+    "low": 31.6,
+    "close": 31.6,
+    "change": -0.35,
+    "changePercent": -1.1,
+    "tradeVolume": 202531,
+    "transactionCount": 150,
+    "tradeValue": 6445957,
+    "peRatio": 17.36
+  },
+  "dailyRangePercent": 1.74,
+  "turnoverAverageValue": 42973.05,
+  "pricePosition": 0,
+  "liquidityScore": 30.1,
+  "priceStrengthScore": 26,
+  "valuationRiskScore": 35,
+  "snapshotScore": 35.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

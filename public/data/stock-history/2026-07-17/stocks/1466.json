@@ -1,0 +1,76 @@
+{
+  "symbol": "1466",
+  "name": "聚隆",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.9,
+    "high": 18.5,
+    "low": 17,
+    "close": 17.1,
+    "change": -1.6,
+    "changePercent": -8.56,
+    "tradeVolume": 1231209,
+    "transactionCount": 759,
+    "tradeValue": 21501355,
+    "peRatio": null
+  },
+  "dailyRangePercent": 8.82,
+  "turnoverAverageValue": 28328.53,
+  "pricePosition": 6.7,
+  "liquidityScore": 47.9,
+  "priceStrengthScore": 11.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 27.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.56% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.82% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.7 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

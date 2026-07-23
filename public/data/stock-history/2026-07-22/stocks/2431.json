@@ -1,0 +1,62 @@
+{
+  "symbol": "2431",
+  "name": "聯昌",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.75,
+    "high": 11,
+    "low": 10.65,
+    "close": 10.7,
+    "change": 0.05,
+    "changePercent": 0.47,
+    "tradeVolume": 231521,
+    "transactionCount": 110,
+    "tradeValue": 2500824,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.29,
+  "turnoverAverageValue": 22734.76,
+  "pricePosition": 14.3,
+  "liquidityScore": 24.8,
+  "priceStrengthScore": 34.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 30.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

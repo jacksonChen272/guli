@@ -1,0 +1,53 @@
+{
+  "symbol": "6412",
+  "name": "群電",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 82,
+    "high": 82.7,
+    "low": 78.7,
+    "close": 78.9,
+    "change": -4.6,
+    "changePercent": -5.51,
+    "tradeVolume": 1759405,
+    "transactionCount": 1928,
+    "tradeValue": 141278485,
+    "peRatio": 15.17
+  },
+  "dailyRangePercent": 5.08,
+  "turnoverAverageValue": 73277.22,
+  "pricePosition": 5,
+  "liquidityScore": 65.8,
+  "priceStrengthScore": 17.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 44.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

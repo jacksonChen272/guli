@@ -1,0 +1,60 @@
+{
+  "symbol": "3135",
+  "name": "凌航",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 149.5,
+    "high": 153.5,
+    "low": 143.5,
+    "close": 144.5,
+    "change": -11.5,
+    "changePercent": -7.37,
+    "tradeVolume": 1411681,
+    "transactionCount": 1840,
+    "tradeValue": 207647133,
+    "peRatio": 10.23
+  },
+  "dailyRangePercent": 6.97,
+  "turnoverAverageValue": 112851.7,
+  "pricePosition": 10,
+  "liquidityScore": 66.7,
+  "priceStrengthScore": 15.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 46.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.37% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

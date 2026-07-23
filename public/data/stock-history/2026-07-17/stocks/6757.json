@@ -1,0 +1,53 @@
+{
+  "symbol": "6757",
+  "name": "台灣虎航",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 57.5,
+    "high": 57.5,
+    "low": 56.1,
+    "close": 56.2,
+    "change": -1.7,
+    "changePercent": -2.94,
+    "tradeVolume": 1658124,
+    "transactionCount": 1748,
+    "tradeValue": 93950728,
+    "peRatio": 9.04
+  },
+  "dailyRangePercent": 2.5,
+  "turnoverAverageValue": 53747.56,
+  "pricePosition": 7.1,
+  "liquidityScore": 62.5,
+  "priceStrengthScore": 24.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 48.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

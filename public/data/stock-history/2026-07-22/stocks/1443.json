@@ -1,0 +1,60 @@
+{
+  "symbol": "1443",
+  "name": "立益物流",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 26.55,
+    "high": 26.6,
+    "low": 26,
+    "close": 26,
+    "change": -0.9,
+    "changePercent": -3.35,
+    "tradeVolume": 19825,
+    "transactionCount": 28,
+    "tradeValue": 520603,
+    "peRatio": 23.64
+  },
+  "dailyRangePercent": 2.31,
+  "turnoverAverageValue": 18592.96,
+  "pricePosition": 0,
+  "liquidityScore": 4.5,
+  "priceStrengthScore": 21,
+  "valuationRiskScore": 35,
+  "snapshotScore": 24,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 4.5 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

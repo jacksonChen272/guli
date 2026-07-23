@@ -1,0 +1,53 @@
+{
+  "symbol": "6873",
+  "name": "泓德能源",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 86.8,
+    "high": 86.8,
+    "low": 80.4,
+    "close": 81.4,
+    "change": -5.4,
+    "changePercent": -6.22,
+    "tradeVolume": 557052,
+    "transactionCount": 652,
+    "tradeValue": 46130608,
+    "peRatio": 25.36
+  },
+  "dailyRangePercent": 7.96,
+  "turnoverAverageValue": 70752.47,
+  "pricePosition": 15.6,
+  "liquidityScore": 46.9,
+  "priceStrengthScore": 20,
+  "valuationRiskScore": 55,
+  "snapshotScore": 34.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.6 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

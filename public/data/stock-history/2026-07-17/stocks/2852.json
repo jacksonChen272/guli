@@ -1,0 +1,53 @@
+{
+  "symbol": "2852",
+  "name": "第一保",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 26.9,
+    "high": 26.9,
+    "low": 26.45,
+    "close": 26.5,
+    "change": -0.4,
+    "changePercent": -1.49,
+    "tradeVolume": 415069,
+    "transactionCount": 266,
+    "tradeValue": 11044741,
+    "peRatio": 8.6
+  },
+  "dailyRangePercent": 1.7,
+  "turnoverAverageValue": 41521.58,
+  "pricePosition": 11.1,
+  "liquidityScore": 31.6,
+  "priceStrengthScore": 29.1,
+  "valuationRiskScore": 20,
+  "snapshotScore": 40.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

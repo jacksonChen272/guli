@@ -1,0 +1,53 @@
+{
+  "symbol": "7780",
+  "name": "大研生醫*",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.8,
+    "high": 17.95,
+    "low": 17.25,
+    "close": 17.3,
+    "change": -0.6,
+    "changePercent": -3.35,
+    "tradeVolume": 3000830,
+    "transactionCount": 1656,
+    "tradeValue": 52514647,
+    "peRatio": 41.19
+  },
+  "dailyRangePercent": 4.06,
+  "turnoverAverageValue": 31711.74,
+  "pricePosition": 7.1,
+  "liquidityScore": 62.6,
+  "priceStrengthScore": 23.5,
+  "valuationRiskScore": 75,
+  "snapshotScore": 37.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

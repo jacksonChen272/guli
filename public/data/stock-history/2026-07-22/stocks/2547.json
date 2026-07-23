@@ -1,0 +1,60 @@
+{
+  "symbol": "2547",
+  "name": "日勝生",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.35,
+    "high": 10.35,
+    "low": 10.15,
+    "close": 10.15,
+    "change": -0.15,
+    "changePercent": -1.46,
+    "tradeVolume": 1931187,
+    "transactionCount": 574,
+    "tradeValue": 19751777,
+    "peRatio": 72.5
+  },
+  "dailyRangePercent": 1.97,
+  "turnoverAverageValue": 34410.76,
+  "pricePosition": 0,
+  "liquidityScore": 56.3,
+  "priceStrengthScore": 25.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 33,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 72.50 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

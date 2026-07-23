@@ -1,0 +1,60 @@
+{
+  "symbol": "4585",
+  "name": "達明",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 318,
+    "high": 324,
+    "low": 301,
+    "close": 301.5,
+    "change": -22.5,
+    "changePercent": -6.94,
+    "tradeVolume": 573405,
+    "transactionCount": 1629,
+    "tradeValue": 177374432,
+    "peRatio": 228.41
+  },
+  "dailyRangePercent": 7.64,
+  "turnoverAverageValue": 108885.47,
+  "pricePosition": 2.2,
+  "liquidityScore": 58.6,
+  "priceStrengthScore": 13.7,
+  "valuationRiskScore": 90,
+  "snapshotScore": 28.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 2.2 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 228.41 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

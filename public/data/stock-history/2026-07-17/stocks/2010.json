@@ -1,0 +1,53 @@
+{
+  "symbol": "2010",
+  "name": "春源",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 21.25,
+    "high": 21.25,
+    "low": 20.85,
+    "close": 20.9,
+    "change": -0.35,
+    "changePercent": -1.65,
+    "tradeVolume": 1388307,
+    "transactionCount": 889,
+    "tradeValue": 29165553,
+    "peRatio": 8.97
+  },
+  "dailyRangePercent": 1.92,
+  "turnoverAverageValue": 32807.15,
+  "pricePosition": 12.5,
+  "liquidityScore": 51.1,
+  "priceStrengthScore": 29.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 47,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

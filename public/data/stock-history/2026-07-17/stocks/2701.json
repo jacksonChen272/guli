@@ -1,0 +1,53 @@
+{
+  "symbol": "2701",
+  "name": "萬企",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.75,
+    "high": 10.85,
+    "low": 10.65,
+    "close": 10.85,
+    "change": 0.05,
+    "changePercent": 0.46,
+    "tradeVolume": 157316,
+    "transactionCount": 107,
+    "tradeValue": 1691232,
+    "peRatio": 19.04
+  },
+  "dailyRangePercent": 1.88,
+  "turnoverAverageValue": 15805.91,
+  "pricePosition": 100,
+  "liquidityScore": 13.4,
+  "priceStrengthScore": 72.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 50.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.4 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

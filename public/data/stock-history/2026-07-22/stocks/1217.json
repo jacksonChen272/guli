@@ -1,0 +1,53 @@
+{
+  "symbol": "1217",
+  "name": "愛之味",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 9.97,
+    "high": 10.05,
+    "low": 9.91,
+    "close": 9.92,
+    "change": -0.08,
+    "changePercent": -0.8,
+    "tradeVolume": 439351,
+    "transactionCount": 542,
+    "tradeValue": 4380841,
+    "peRatio": 20.67
+  },
+  "dailyRangePercent": 1.41,
+  "turnoverAverageValue": 8082.73,
+  "pricePosition": 7.1,
+  "liquidityScore": 38.3,
+  "priceStrengthScore": 29.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 39.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "3413",
+  "name": "京鼎",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 339,
+    "high": 368,
+    "low": 335,
+    "close": 363,
+    "change": 28,
+    "changePercent": 8.36,
+    "tradeVolume": 5417380,
+    "transactionCount": 6708,
+    "tradeValue": 1898433718,
+    "peRatio": 19.28
+  },
+  "dailyRangePercent": 9.85,
+  "turnoverAverageValue": 283010.39,
+  "pricePosition": 84.8,
+  "liquidityScore": 89.4,
+  "priceStrengthScore": 85,
+  "valuationRiskScore": 35,
+  "snapshotScore": 82.5,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 8.36% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.85% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

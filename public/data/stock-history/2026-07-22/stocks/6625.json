@@ -1,0 +1,53 @@
+{
+  "symbol": "6625",
+  "name": "必應",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 76,
+    "high": 76,
+    "low": 74.9,
+    "close": 75.1,
+    "change": -0.8,
+    "changePercent": -1.05,
+    "tradeVolume": 140721,
+    "transactionCount": 250,
+    "tradeValue": 10585366,
+    "peRatio": 7.49
+  },
+  "dailyRangePercent": 1.47,
+  "turnoverAverageValue": 42341.46,
+  "pricePosition": 18.2,
+  "liquidityScore": 32.1,
+  "priceStrengthScore": 32.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 41.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.2 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

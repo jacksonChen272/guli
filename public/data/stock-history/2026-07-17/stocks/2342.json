@@ -1,0 +1,69 @@
+{
+  "symbol": "2342",
+  "name": "茂矽",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 45,
+    "high": 45.65,
+    "low": 42.3,
+    "close": 42.3,
+    "change": -4.7,
+    "changePercent": -10,
+    "tradeVolume": 4174574,
+    "transactionCount": 3266,
+    "tradeValue": 181157039,
+    "peRatio": null
+  },
+  "dailyRangePercent": 7.92,
+  "turnoverAverageValue": 55467.56,
+  "pricePosition": 0,
+  "liquidityScore": 74.1,
+  "priceStrengthScore": 6,
+  "valuationRiskScore": null,
+  "snapshotScore": 35.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -10.00% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

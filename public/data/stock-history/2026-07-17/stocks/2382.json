@@ -1,0 +1,60 @@
+{
+  "symbol": "2382",
+  "name": "廣達",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 346,
+    "high": 349,
+    "low": 324.5,
+    "close": 325.5,
+    "change": -26.5,
+    "changePercent": -7.53,
+    "tradeVolume": 33474930,
+    "transactionCount": 42597,
+    "tradeValue": 11172132520,
+    "peRatio": 16.37
+  },
+  "dailyRangePercent": 7.55,
+  "turnoverAverageValue": 262275.1,
+  "pricePosition": 4.1,
+  "liquidityScore": 97.3,
+  "priceStrengthScore": 13,
+  "valuationRiskScore": 35,
+  "snapshotScore": 52.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.53% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 4.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

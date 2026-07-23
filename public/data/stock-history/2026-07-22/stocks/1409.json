@@ -1,0 +1,53 @@
+{
+  "symbol": "1409",
+  "name": "新纖",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 24.35,
+    "high": 25,
+    "low": 24.3,
+    "close": 24.4,
+    "change": 0.3,
+    "changePercent": 1.24,
+    "tradeVolume": 10455213,
+    "transactionCount": 5024,
+    "tradeValue": 256396539,
+    "peRatio": 18.07
+  },
+  "dailyRangePercent": 2.88,
+  "turnoverAverageValue": 51034.34,
+  "pricePosition": 14.3,
+  "liquidityScore": 83.5,
+  "priceStrengthScore": 44.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 62.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

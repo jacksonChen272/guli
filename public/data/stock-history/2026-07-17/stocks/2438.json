@@ -1,0 +1,62 @@
+{
+  "symbol": "2438",
+  "name": "翔耀",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.55,
+    "high": 19.55,
+    "low": 18.55,
+    "close": 18.55,
+    "change": -1,
+    "changePercent": -5.12,
+    "tradeVolume": 174181,
+    "transactionCount": 165,
+    "tradeValue": 3277578,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.39,
+  "turnoverAverageValue": 19864.11,
+  "pricePosition": 0,
+  "liquidityScore": 17.7,
+  "priceStrengthScore": 17,
+  "valuationRiskScore": null,
+  "snapshotScore": 17.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "3716",
+  "name": "中化控股",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 34.4,
+    "high": 34.5,
+    "low": 33.9,
+    "close": 33.9,
+    "change": -0.6,
+    "changePercent": -1.74,
+    "tradeVolume": 193666,
+    "transactionCount": 516,
+    "tradeValue": 6604261,
+    "peRatio": 13.09
+  },
+  "dailyRangePercent": 1.77,
+  "turnoverAverageValue": 12798.96,
+  "pricePosition": 0,
+  "liquidityScore": 26,
+  "priceStrengthScore": 24.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 36.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

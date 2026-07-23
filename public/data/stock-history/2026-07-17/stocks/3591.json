@@ -1,0 +1,76 @@
+{
+  "symbol": "3591",
+  "name": "艾笛森",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 22.8,
+    "high": 22.8,
+    "low": 21.1,
+    "close": 21.25,
+    "change": -2.1,
+    "changePercent": -8.99,
+    "tradeVolume": 1554684,
+    "transactionCount": 1025,
+    "tradeValue": 33875794,
+    "peRatio": null
+  },
+  "dailyRangePercent": 8.06,
+  "turnoverAverageValue": 33049.56,
+  "pricePosition": 8.8,
+  "liquidityScore": 53.4,
+  "priceStrengthScore": 11.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 29.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.99% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.06% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.8 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "2014",
+  "name": "中鴻",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17,
+    "high": 17.35,
+    "low": 17,
+    "close": 17.15,
+    "change": 0.2,
+    "changePercent": 1.18,
+    "tradeVolume": 2764821,
+    "transactionCount": 1045,
+    "tradeValue": 47380989,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.06,
+  "turnoverAverageValue": 45340.66,
+  "pricePosition": 42.9,
+  "liquidityScore": 65.7,
+  "priceStrengthScore": 54.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 59.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

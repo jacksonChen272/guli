@@ -1,0 +1,60 @@
+{
+  "symbol": "3024",
+  "name": "憶聲",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.75,
+    "high": 14.05,
+    "low": 12.7,
+    "close": 13.2,
+    "change": -0.55,
+    "changePercent": -4,
+    "tradeVolume": 5902302,
+    "transactionCount": 2382,
+    "tradeValue": 77450183,
+    "peRatio": 146.67
+  },
+  "dailyRangePercent": 10.63,
+  "turnoverAverageValue": 32514.77,
+  "pricePosition": 37,
+  "liquidityScore": 73.9,
+  "priceStrengthScore": 32.5,
+  "valuationRiskScore": 90,
+  "snapshotScore": 42.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.63% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 146.67 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,74 @@
+{
+  "symbol": "8222",
+  "name": "寶一",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 39.45,
+    "high": 41,
+    "low": 37.05,
+    "close": 37.25,
+    "change": -2.95,
+    "changePercent": -7.34,
+    "tradeVolume": 1385183,
+    "transactionCount": 1606,
+    "tradeValue": 53173040,
+    "peRatio": 61.07
+  },
+  "dailyRangePercent": 10.66,
+  "turnoverAverageValue": 33108.99,
+  "pricePosition": 5.1,
+  "liquidityScore": 58.1,
+  "priceStrengthScore": 13.8,
+  "valuationRiskScore": 90,
+  "snapshotScore": 28.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.34% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.66% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 61.07 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2731",
+  "name": "雄獅",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 146.5,
+    "high": 146.5,
+    "low": 143,
+    "close": 143,
+    "change": -3.5,
+    "changePercent": -2.39,
+    "tradeVolume": 543723,
+    "transactionCount": 940,
+    "tradeValue": 78431246,
+    "peRatio": 8.37
+  },
+  "dailyRangePercent": 2.45,
+  "turnoverAverageValue": 83437.5,
+  "pricePosition": 0,
+  "liquidityScore": 51.4,
+  "priceStrengthScore": 23.1,
+  "valuationRiskScore": 20,
+  "snapshotScore": 44.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

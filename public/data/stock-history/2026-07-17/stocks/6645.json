@@ -1,0 +1,69 @@
+{
+  "symbol": "6645",
+  "name": "金萬林-創",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 14.35,
+    "high": 14.35,
+    "low": 13.4,
+    "close": 13.45,
+    "change": -0.85,
+    "changePercent": -5.94,
+    "tradeVolume": 106268,
+    "transactionCount": 64,
+    "tradeValue": 1478703,
+    "peRatio": null
+  },
+  "dailyRangePercent": 7.09,
+  "turnoverAverageValue": 23104.73,
+  "pricePosition": 5.3,
+  "liquidityScore": 10.1,
+  "priceStrengthScore": 17,
+  "valuationRiskScore": null,
+  "snapshotScore": 14,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.1 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

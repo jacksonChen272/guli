@@ -1,0 +1,53 @@
+{
+  "symbol": "1110",
+  "name": "東泥",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 15.95,
+    "high": 16.25,
+    "low": 15.65,
+    "close": 15.7,
+    "change": -0.4,
+    "changePercent": -2.48,
+    "tradeVolume": 344020,
+    "transactionCount": 178,
+    "tradeValue": 5477064,
+    "peRatio": 49.06
+  },
+  "dailyRangePercent": 3.83,
+  "turnoverAverageValue": 30770.02,
+  "pricePosition": 8.3,
+  "liquidityScore": 25,
+  "priceStrengthScore": 25.8,
+  "valuationRiskScore": 75,
+  "snapshotScore": 25.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2204",
+  "name": "中華",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 56.1,
+    "high": 56.3,
+    "low": 55.5,
+    "close": 55.5,
+    "change": -0.6,
+    "changePercent": -1.07,
+    "tradeVolume": 2323064,
+    "transactionCount": 1722,
+    "tradeValue": 129598334,
+    "peRatio": 10.24
+  },
+  "dailyRangePercent": 1.44,
+  "turnoverAverageValue": 75260.36,
+  "pricePosition": 0,
+  "liquidityScore": 71.4,
+  "priceStrengthScore": 26.1,
+  "valuationRiskScore": 20,
+  "snapshotScore": 52.7,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

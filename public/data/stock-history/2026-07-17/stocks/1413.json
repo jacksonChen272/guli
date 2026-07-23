@@ -1,0 +1,53 @@
+{
+  "symbol": "1413",
+  "name": "宏洲",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 9.46,
+    "high": 9.5,
+    "low": 9.35,
+    "close": 9.5,
+    "change": 0.03,
+    "changePercent": 0.32,
+    "tradeVolume": 14033,
+    "transactionCount": 12,
+    "tradeValue": 132801,
+    "peRatio": 22.62
+  },
+  "dailyRangePercent": 1.6,
+  "turnoverAverageValue": 11066.75,
+  "pricePosition": 100,
+  "liquidityScore": 1.2,
+  "priceStrengthScore": 72.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 45.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 1.2 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

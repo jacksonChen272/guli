@@ -1,0 +1,53 @@
+{
+  "symbol": "2393",
+  "name": "億光",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 68.8,
+    "high": 69.1,
+    "low": 66.5,
+    "close": 66.5,
+    "change": -3,
+    "changePercent": -4.32,
+    "tradeVolume": 3865261,
+    "transactionCount": 3183,
+    "tradeValue": 261076694,
+    "peRatio": 15.87
+  },
+  "dailyRangePercent": 3.91,
+  "turnoverAverageValue": 82022.21,
+  "pricePosition": 0,
+  "liquidityScore": 75.5,
+  "priceStrengthScore": 18.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 47.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

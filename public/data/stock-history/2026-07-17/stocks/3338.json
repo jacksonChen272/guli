@@ -1,0 +1,53 @@
+{
+  "symbol": "3338",
+  "name": "泰碩",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 67.7,
+    "high": 67.7,
+    "low": 63.8,
+    "close": 63.8,
+    "change": -4.4,
+    "changePercent": -6.45,
+    "tradeVolume": 587746,
+    "transactionCount": 731,
+    "tradeValue": 38230035,
+    "peRatio": 43.7
+  },
+  "dailyRangePercent": 6.11,
+  "turnoverAverageValue": 52298.27,
+  "pricePosition": 0,
+  "liquidityScore": 46.1,
+  "priceStrengthScore": 14,
+  "valuationRiskScore": 75,
+  "snapshotScore": 27.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "1540",
+  "name": "喬福",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 22.15,
+    "high": 22.3,
+    "low": 21.95,
+    "close": 22,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 160776,
+    "transactionCount": 142,
+    "tradeValue": 3556644,
+    "peRatio": 23.66
+  },
+  "dailyRangePercent": 1.59,
+  "turnoverAverageValue": 25046.79,
+  "pricePosition": 14.3,
+  "liquidityScore": 25.4,
+  "priceStrengthScore": 33.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 37,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

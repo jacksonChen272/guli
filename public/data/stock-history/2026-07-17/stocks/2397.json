@@ -1,0 +1,53 @@
+{
+  "symbol": "2397",
+  "name": "友通",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 57.1,
+    "high": 57.2,
+    "low": 54.7,
+    "close": 54.8,
+    "change": -3.5,
+    "changePercent": -6,
+    "tradeVolume": 723159,
+    "transactionCount": 559,
+    "tradeValue": 40381389,
+    "peRatio": 23.62
+  },
+  "dailyRangePercent": 4.57,
+  "turnoverAverageValue": 72238.62,
+  "pricePosition": 4,
+  "liquidityScore": 47.3,
+  "priceStrengthScore": 16.4,
+  "valuationRiskScore": 35,
+  "snapshotScore": 36.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 4.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

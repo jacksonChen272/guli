@@ -1,0 +1,67 @@
+{
+  "symbol": "6168",
+  "name": "宏齊",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 26,
+    "high": 26.05,
+    "low": 24.5,
+    "close": 24.75,
+    "change": -2,
+    "changePercent": -7.48,
+    "tradeVolume": 2864289,
+    "transactionCount": 1799,
+    "tradeValue": 71912447,
+    "peRatio": 353.57
+  },
+  "dailyRangePercent": 6.33,
+  "turnoverAverageValue": 39973.57,
+  "pricePosition": 16.1,
+  "liquidityScore": 64.3,
+  "priceStrengthScore": 17.3,
+  "valuationRiskScore": 90,
+  "snapshotScore": 32.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.48% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 353.57 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

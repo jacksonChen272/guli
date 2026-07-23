@@ -1,0 +1,53 @@
+{
+  "symbol": "6177",
+  "name": "達麗",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 47.5,
+    "high": 48.95,
+    "low": 47.3,
+    "close": 47.5,
+    "change": -0.5,
+    "changePercent": -1.04,
+    "tradeVolume": 2462112,
+    "transactionCount": 2104,
+    "tradeValue": 118467408,
+    "peRatio": 6.36
+  },
+  "dailyRangePercent": 3.49,
+  "turnoverAverageValue": 56305.8,
+  "pricePosition": 12.1,
+  "liquidityScore": 66.9,
+  "priceStrengthScore": 34.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 54.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

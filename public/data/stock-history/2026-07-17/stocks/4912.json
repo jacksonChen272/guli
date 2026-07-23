@@ -1,0 +1,53 @@
+{
+  "symbol": "4912",
+  "name": "聯德控股-KY",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 86,
+    "high": 86,
+    "low": 82,
+    "close": 82.4,
+    "change": -5.1,
+    "changePercent": -5.83,
+    "tradeVolume": 391678,
+    "transactionCount": 438,
+    "tradeValue": 32700458,
+    "peRatio": 37.63
+  },
+  "dailyRangePercent": 4.88,
+  "turnoverAverageValue": 74658.58,
+  "pricePosition": 10,
+  "liquidityScore": 40.1,
+  "priceStrengthScore": 18.9,
+  "valuationRiskScore": 55,
+  "snapshotScore": 31.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

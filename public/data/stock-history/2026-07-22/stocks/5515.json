@@ -1,0 +1,60 @@
+{
+  "symbol": "5515",
+  "name": "建國",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 44.6,
+    "high": 45.25,
+    "low": 41.55,
+    "close": 41.9,
+    "change": -2.35,
+    "changePercent": -5.31,
+    "tradeVolume": 1624468,
+    "transactionCount": 1450,
+    "tradeValue": 69966374,
+    "peRatio": 7.02
+  },
+  "dailyRangePercent": 8.9,
+  "turnoverAverageValue": 48252.67,
+  "pricePosition": 9.5,
+  "liquidityScore": 65.8,
+  "priceStrengthScore": 19.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 48,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.90% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

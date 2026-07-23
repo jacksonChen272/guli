@@ -1,0 +1,53 @@
+{
+  "symbol": "5534",
+  "name": "長虹",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 80.6,
+    "high": 81.5,
+    "low": 79.6,
+    "close": 79.9,
+    "change": -1,
+    "changePercent": -1.24,
+    "tradeVolume": 685223,
+    "transactionCount": 792,
+    "tradeValue": 54999041,
+    "peRatio": 16.31
+  },
+  "dailyRangePercent": 2.39,
+  "turnoverAverageValue": 69443.23,
+  "pricePosition": 15.8,
+  "liquidityScore": 57.7,
+  "priceStrengthScore": 31.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 47.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

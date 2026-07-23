@@ -1,0 +1,53 @@
+{
+  "symbol": "2247",
+  "name": "汎德永業",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 221.5,
+    "high": 222,
+    "low": 220,
+    "close": 220,
+    "change": -1.5,
+    "changePercent": -0.68,
+    "tradeVolume": 24830,
+    "transactionCount": 91,
+    "tradeValue": 5480750,
+    "peRatio": 13.85
+  },
+  "dailyRangePercent": 0.91,
+  "turnoverAverageValue": 60228.02,
+  "pricePosition": 0,
+  "liquidityScore": 18.6,
+  "priceStrengthScore": 27,
+  "valuationRiskScore": 20,
+  "snapshotScore": 34.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

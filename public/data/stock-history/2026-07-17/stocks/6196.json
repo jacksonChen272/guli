@@ -1,0 +1,67 @@
+{
+  "symbol": "6196",
+  "name": "帆宣",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 557,
+    "high": 580,
+    "low": 535,
+    "close": 542,
+    "change": -48,
+    "changePercent": -8.14,
+    "tradeVolume": 2481756,
+    "transactionCount": 6757,
+    "tradeValue": 1381423360,
+    "peRatio": 34.52
+  },
+  "dailyRangePercent": 8.41,
+  "turnoverAverageValue": 204443.3,
+  "pricePosition": 15.6,
+  "liquidityScore": 82.1,
+  "priceStrengthScore": 15.6,
+  "valuationRiskScore": 55,
+  "snapshotScore": 44.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.14% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.41% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.6 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

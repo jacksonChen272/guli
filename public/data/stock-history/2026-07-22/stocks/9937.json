@@ -1,0 +1,60 @@
+{
+  "symbol": "9937",
+  "name": "全國",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 55.6,
+    "high": 56.2,
+    "low": 55.1,
+    "close": 55.1,
+    "change": -0.9,
+    "changePercent": -1.61,
+    "tradeVolume": 43200,
+    "transactionCount": 49,
+    "tradeValue": 2395955,
+    "peRatio": 22.13
+  },
+  "dailyRangePercent": 2,
+  "turnoverAverageValue": 48897.04,
+  "pricePosition": 0,
+  "liquidityScore": 14.3,
+  "priceStrengthScore": 24.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 29.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.3 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

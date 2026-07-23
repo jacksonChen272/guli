@@ -1,0 +1,53 @@
+{
+  "symbol": "3406",
+  "name": "玉晶光",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 543,
+    "high": 547,
+    "low": 515,
+    "close": 519,
+    "change": -38,
+    "changePercent": -6.82,
+    "tradeVolume": 1723470,
+    "transactionCount": 3359,
+    "tradeValue": 913045364,
+    "peRatio": 15.73
+  },
+  "dailyRangePercent": 6.21,
+  "turnoverAverageValue": 271820.59,
+  "pricePosition": 12.5,
+  "liquidityScore": 76.4,
+  "priceStrengthScore": 17.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 47.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "3257",
+  "name": "虹冠電",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 56.2,
+    "high": 56.2,
+    "low": 54.1,
+    "close": 54.1,
+    "change": -2.7,
+    "changePercent": -4.75,
+    "tradeVolume": 750002,
+    "transactionCount": 584,
+    "tradeValue": 41306434,
+    "peRatio": 18.22
+  },
+  "dailyRangePercent": 3.88,
+  "turnoverAverageValue": 70730.2,
+  "pricePosition": 0,
+  "liquidityScore": 47.8,
+  "priceStrengthScore": 17.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 37.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

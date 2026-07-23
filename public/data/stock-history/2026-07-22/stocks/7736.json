@@ -1,0 +1,53 @@
+{
+  "symbol": "7736",
+  "name": "虎山",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 70.5,
+    "high": 70.5,
+    "low": 70.1,
+    "close": 70.2,
+    "change": -0.1,
+    "changePercent": -0.14,
+    "tradeVolume": 23000,
+    "transactionCount": 16,
+    "tradeValue": 1615900,
+    "peRatio": 15.36
+  },
+  "dailyRangePercent": 0.57,
+  "turnoverAverageValue": 100993.75,
+  "pricePosition": 25,
+  "liquidityScore": 8.6,
+  "priceStrengthScore": 36.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 32.6,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.6 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

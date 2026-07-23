@@ -1,0 +1,60 @@
+{
+  "symbol": "7610",
+  "name": "聯友金屬-創",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 1805,
+    "high": 1960,
+    "low": 1765,
+    "close": 1835,
+    "change": -120,
+    "changePercent": -6.14,
+    "tradeVolume": 1446339,
+    "transactionCount": 6702,
+    "tradeValue": 2699345940,
+    "peRatio": 113.62
+  },
+  "dailyRangePercent": 11.05,
+  "turnoverAverageValue": 402767.22,
+  "pricePosition": 35.9,
+  "liquidityScore": 83.7,
+  "priceStrengthScore": 35.3,
+  "valuationRiskScore": 90,
+  "snapshotScore": 47.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.05% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 113.62 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}
