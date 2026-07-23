@@ -1,0 +1,62 @@
+{
+  "symbol": "1473",
+  "name": "台南",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.5,
+    "high": 20.5,
+    "low": 20.05,
+    "close": 20.15,
+    "change": -0.25,
+    "changePercent": -1.23,
+    "tradeVolume": 63515,
+    "transactionCount": 112,
+    "tradeValue": 1283294,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.24,
+  "turnoverAverageValue": 11457.98,
+  "pricePosition": 22.2,
+  "liquidityScore": 14.6,
+  "priceStrengthScore": 33.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 25.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.6 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

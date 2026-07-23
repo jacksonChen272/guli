@@ -1,0 +1,60 @@
+{
+  "symbol": "2308",
+  "name": "台達電",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 1920,
+    "high": 1950,
+    "low": 1870,
+    "close": 1880,
+    "change": 45,
+    "changePercent": 2.45,
+    "tradeVolume": 11813364,
+    "transactionCount": 36000,
+    "tradeValue": 22585771450,
+    "peRatio": 69.32
+  },
+  "dailyRangePercent": 4.28,
+  "turnoverAverageValue": 627382.54,
+  "pricePosition": 12.5,
+  "liquidityScore": 96.3,
+  "priceStrengthScore": 38.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 53,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 69.32 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

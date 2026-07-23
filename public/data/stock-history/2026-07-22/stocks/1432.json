@@ -1,0 +1,53 @@
+{
+  "symbol": "1432",
+  "name": "大魯閣",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 15.1,
+    "high": 15.1,
+    "low": 15.05,
+    "close": 15.05,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 99138,
+    "transactionCount": 303,
+    "tradeValue": 1494724,
+    "peRatio": 2.76
+  },
+  "dailyRangePercent": 0.33,
+  "turnoverAverageValue": 4933.08,
+  "pricePosition": 0,
+  "liquidityScore": 20.8,
+  "priceStrengthScore": 28.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 36.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

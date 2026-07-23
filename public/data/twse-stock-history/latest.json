@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.0",
   "source": "TWSE",
-  "updatedAt": "2026-07-20T11:56:52.055Z",
-  "targetTradingDays": 250,
+  "updatedAt": "2026-07-23T02:33:12.741Z",
+  "targetTradingDays": 300,
   "symbols": [
     {
       "symbol": "1101",
@@ -4949,7 +4949,7 @@
       "technical": {
         "aboveMa20": false,
         "rsiOverbought": false,
-        "macdGoldenCross": true,
+        "macdGoldenCross": false,
         "volumeExpansion": false,
         "indicatorComputable": true
       }
@@ -4996,7 +4996,119 @@
       "path": "data/twse-stock-history/stocks/2317.json",
       "firstTradeDate": "2025-02-03",
       "lastTradeDate": "2026-07-20",
-      "recordCount": 357,
+      "recordCount": 356,
+      "status": "official",
+      "stale": false,
+      "warnings": [
+        "排除 1 筆缺少有效 OHLC 的 TWSE 原始列；未以 0 或模擬值補入"
+      ],
+      "technical": {
+        "aboveMa20": false,
+        "rsiOverbought": false,
+        "macdGoldenCross": false,
+        "volumeExpansion": false,
+        "indicatorComputable": true
+      }
+    },
+    {
+      "symbol": "2321",
+      "name": "東訊",
+      "path": "data/twse-stock-history/stocks/2321.json",
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 255,
+      "status": "partial",
+      "stale": false,
+      "warnings": [
+        "Removed 63 invalid OHLC records; missing values were not fabricated"
+      ],
+      "technical": {
+        "aboveMa20": true,
+        "rsiOverbought": false,
+        "macdGoldenCross": false,
+        "volumeExpansion": false,
+        "indicatorComputable": true
+      }
+    },
+    {
+      "symbol": "2323",
+      "name": "中環",
+      "path": "data/twse-stock-history/stocks/2323.json",
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
+      "status": "official",
+      "stale": false,
+      "warnings": [],
+      "technical": {
+        "aboveMa20": false,
+        "rsiOverbought": false,
+        "macdGoldenCross": false,
+        "volumeExpansion": false,
+        "indicatorComputable": true
+      }
+    },
+    {
+      "symbol": "2324",
+      "name": "仁寶",
+      "path": "data/twse-stock-history/stocks/2324.json",
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
+      "status": "official",
+      "stale": false,
+      "warnings": [],
+      "technical": {
+        "aboveMa20": true,
+        "rsiOverbought": false,
+        "macdGoldenCross": false,
+        "volumeExpansion": false,
+        "indicatorComputable": true
+      }
+    },
+    {
+      "symbol": "2327",
+      "name": "國巨*",
+      "path": "data/twse-stock-history/stocks/2327.json",
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 311,
+      "status": "official",
+      "stale": false,
+      "warnings": [],
+      "technical": {
+        "aboveMa20": false,
+        "rsiOverbought": false,
+        "macdGoldenCross": false,
+        "volumeExpansion": true,
+        "indicatorComputable": true
+      }
+    },
+    {
+      "symbol": "2328",
+      "name": "廣宇",
+      "path": "data/twse-stock-history/stocks/2328.json",
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
+      "status": "official",
+      "stale": false,
+      "warnings": [],
+      "technical": {
+        "aboveMa20": false,
+        "rsiOverbought": false,
+        "macdGoldenCross": false,
+        "volumeExpansion": false,
+        "indicatorComputable": true
+      }
+    },
+    {
+      "symbol": "2329",
+      "name": "華泰",
+      "path": "data/twse-stock-history/stocks/2329.json",
+      "firstTradeDate": "2025-04-01",
+      "lastTradeDate": "2026-07-21",
+      "recordCount": 318,
       "status": "official",
       "stale": false,
       "warnings": [],
@@ -5237,7 +5349,7 @@
       "technical": {
         "aboveMa20": true,
         "rsiOverbought": false,
-        "macdGoldenCross": false,
+        "macdGoldenCross": true,
         "volumeExpansion": true,
         "indicatorComputable": true
       }
@@ -5358,10 +5470,10 @@
     "complete300Count": 219,
     "staleCount": 0,
     "failedSymbols": [],
-    "technicalSampleSize": 93,
-    "aboveMa20Count": 52,
-    "rsiOverboughtCount": 4,
-    "macdGoldenCrossCount": 7,
-    "volumeExpansionCount": 10
+    "technicalSampleSize": 297,
+    "aboveMa20Count": 126,
+    "rsiOverboughtCount": 16,
+    "macdGoldenCrossCount": 32,
+    "volumeExpansionCount": 28
   }
 }

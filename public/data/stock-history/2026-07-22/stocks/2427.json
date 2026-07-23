@@ -1,0 +1,53 @@
+{
+  "symbol": "2427",
+  "name": "三商電",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 24.25,
+    "high": 24.65,
+    "low": 23.9,
+    "close": 23.9,
+    "change": -0.55,
+    "changePercent": -2.25,
+    "tradeVolume": 690836,
+    "transactionCount": 835,
+    "tradeValue": 16716913,
+    "peRatio": 18.67
+  },
+  "dailyRangePercent": 3.14,
+  "turnoverAverageValue": 20020.26,
+  "pricePosition": 0,
+  "liquidityScore": 50.7,
+  "priceStrengthScore": 23.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 41.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

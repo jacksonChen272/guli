@@ -1,0 +1,53 @@
+{
+  "symbol": "4590",
+  "name": "富田-創",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 90.7,
+    "high": 91.8,
+    "low": 83.1,
+    "close": 87.5,
+    "change": -3.9,
+    "changePercent": -4.27,
+    "tradeVolume": 550754,
+    "transactionCount": 491,
+    "tradeValue": 48448838,
+    "peRatio": 34.45
+  },
+  "dailyRangePercent": 10.47,
+  "turnoverAverageValue": 98673.8,
+  "pricePosition": 50.6,
+  "liquidityScore": 53.6,
+  "priceStrengthScore": 36.6,
+  "valuationRiskScore": 55,
+  "snapshotScore": 44.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.47% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

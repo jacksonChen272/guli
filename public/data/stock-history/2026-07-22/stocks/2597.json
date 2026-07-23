@@ -1,0 +1,53 @@
+{
+  "symbol": "2597",
+  "name": "潤弘",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 162,
+    "high": 165,
+    "low": 157.5,
+    "close": 158,
+    "change": -3,
+    "changePercent": -1.86,
+    "tradeVolume": 741310,
+    "transactionCount": 1145,
+    "tradeValue": 118674038,
+    "peRatio": 13.91
+  },
+  "dailyRangePercent": 4.76,
+  "turnoverAverageValue": 103645.45,
+  "pricePosition": 6.7,
+  "liquidityScore": 63.1,
+  "priceStrengthScore": 26.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 50.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

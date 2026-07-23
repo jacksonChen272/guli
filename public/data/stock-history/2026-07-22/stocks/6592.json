@@ -1,0 +1,53 @@
+{
+  "symbol": "6592",
+  "name": "和潤企業",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 60.6,
+    "high": 61.2,
+    "low": 60.5,
+    "close": 60.5,
+    "change": -0.4,
+    "changePercent": -0.66,
+    "tradeVolume": 327885,
+    "transactionCount": 272,
+    "tradeValue": 19919301,
+    "peRatio": 12.3
+  },
+  "dailyRangePercent": 1.16,
+  "turnoverAverageValue": 73232.72,
+  "pricePosition": 0,
+  "liquidityScore": 42.6,
+  "priceStrengthScore": 27,
+  "valuationRiskScore": 20,
+  "snapshotScore": 43.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

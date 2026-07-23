@@ -1,0 +1,53 @@
+{
+  "symbol": "2408",
+  "name": "南亞科",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 435,
+    "high": 445.5,
+    "low": 431.5,
+    "close": 445.5,
+    "change": 40.5,
+    "changePercent": 10,
+    "tradeVolume": 63907084,
+    "transactionCount": 63830,
+    "tradeValue": 28190910149,
+    "peRatio": 39.88
+  },
+  "dailyRangePercent": 3.24,
+  "turnoverAverageValue": 441656.12,
+  "pricePosition": 100,
+  "liquidityScore": 99.2,
+  "priceStrengthScore": 94,
+  "valuationRiskScore": 55,
+  "snapshotScore": 86,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 10.00% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

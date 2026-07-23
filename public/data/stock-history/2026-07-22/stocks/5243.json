@@ -1,0 +1,53 @@
+{
+  "symbol": "5243",
+  "name": "乙盛-KY",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 90.8,
+    "high": 92.4,
+    "low": 90.3,
+    "close": 90.7,
+    "change": 1.7,
+    "changePercent": 1.91,
+    "tradeVolume": 836718,
+    "transactionCount": 905,
+    "tradeValue": 76269978,
+    "peRatio": 18.62
+  },
+  "dailyRangePercent": 2.33,
+  "turnoverAverageValue": 84276.22,
+  "pricePosition": 19,
+  "liquidityScore": 60.9,
+  "priceStrengthScore": 39.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 52.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 19.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

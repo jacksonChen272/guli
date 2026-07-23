@@ -1,0 +1,53 @@
+{
+  "symbol": "2753",
+  "name": "八方雲集",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 179,
+    "high": 179,
+    "low": 176.5,
+    "close": 176.5,
+    "change": -2.5,
+    "changePercent": -1.4,
+    "tradeVolume": 182952,
+    "transactionCount": 458,
+    "tradeValue": 32455768,
+    "peRatio": 13.1
+  },
+  "dailyRangePercent": 1.42,
+  "turnoverAverageValue": 70864.12,
+  "pricePosition": 0,
+  "liquidityScore": 44.7,
+  "priceStrengthScore": 25.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 43.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

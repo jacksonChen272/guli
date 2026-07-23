@@ -1,0 +1,53 @@
+{
+  "symbol": "9941",
+  "name": "裕融",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 83.5,
+    "high": 84.1,
+    "low": 82,
+    "close": 82,
+    "change": -1.4,
+    "changePercent": -1.68,
+    "tradeVolume": 988246,
+    "transactionCount": 1110,
+    "tradeValue": 81813284,
+    "peRatio": 12.01
+  },
+  "dailyRangePercent": 2.56,
+  "turnoverAverageValue": 73705.66,
+  "pricePosition": 0,
+  "liquidityScore": 62.7,
+  "priceStrengthScore": 24.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 49.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

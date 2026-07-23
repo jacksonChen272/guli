@@ -1,0 +1,53 @@
+{
+  "symbol": "8081",
+  "name": "致新",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 252,
+    "high": 259,
+    "low": 252,
+    "close": 253,
+    "change": 6,
+    "changePercent": 2.43,
+    "tradeVolume": 1386762,
+    "transactionCount": 1931,
+    "tradeValue": 354235696,
+    "peRatio": 14.4
+  },
+  "dailyRangePercent": 2.78,
+  "turnoverAverageValue": 183446.76,
+  "pricePosition": 14.3,
+  "liquidityScore": 73.6,
+  "priceStrengthScore": 47,
+  "valuationRiskScore": 20,
+  "snapshotScore": 62.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

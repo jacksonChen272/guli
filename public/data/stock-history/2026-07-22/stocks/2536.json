@@ -1,0 +1,53 @@
+{
+  "symbol": "2536",
+  "name": "宏普",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.5,
+    "high": 19.5,
+    "low": 18.9,
+    "close": 18.9,
+    "change": -0.6,
+    "changePercent": -3.08,
+    "tradeVolume": 2125894,
+    "transactionCount": 814,
+    "tradeValue": 40746641,
+    "peRatio": 5.71
+  },
+  "dailyRangePercent": 3.17,
+  "turnoverAverageValue": 50057.3,
+  "pricePosition": 0,
+  "liquidityScore": 62.7,
+  "priceStrengthScore": 21.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 47.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

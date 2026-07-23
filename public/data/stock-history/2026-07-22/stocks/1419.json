@@ -1,0 +1,53 @@
+{
+  "symbol": "1419",
+  "name": "新紡",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 66.9,
+    "high": 67,
+    "low": 65.9,
+    "close": 65.9,
+    "change": -1,
+    "changePercent": -1.49,
+    "tradeVolume": 101466,
+    "transactionCount": 328,
+    "tradeValue": 6725532,
+    "peRatio": 5.01
+  },
+  "dailyRangePercent": 1.67,
+  "turnoverAverageValue": 20504.67,
+  "pricePosition": 0,
+  "liquidityScore": 29.5,
+  "priceStrengthScore": 25.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 37.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

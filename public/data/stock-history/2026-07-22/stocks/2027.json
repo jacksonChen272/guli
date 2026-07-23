@@ -1,0 +1,53 @@
+{
+  "symbol": "2027",
+  "name": "大成鋼",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 41.35,
+    "high": 44.75,
+    "low": 41.35,
+    "close": 43.75,
+    "change": 2.6,
+    "changePercent": 6.32,
+    "tradeVolume": 50852028,
+    "transactionCount": 20171,
+    "tradeValue": 2201319613,
+    "peRatio": 12.79
+  },
+  "dailyRangePercent": 8.22,
+  "turnoverAverageValue": 109132.89,
+  "pricePosition": 70.6,
+  "liquidityScore": 95.5,
+  "priceStrengthScore": 75.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 83.4,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.22% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

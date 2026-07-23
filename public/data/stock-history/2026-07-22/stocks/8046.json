@@ -1,0 +1,60 @@
+{
+  "symbol": "8046",
+  "name": "南電",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 1255,
+    "high": 1305,
+    "low": 1215,
+    "close": 1305,
+    "change": 115,
+    "changePercent": 9.66,
+    "tradeVolume": 17115866,
+    "transactionCount": 20785,
+    "tradeValue": 21731597030,
+    "peRatio": 276.48
+  },
+  "dailyRangePercent": 7.41,
+  "turnoverAverageValue": 1045542.32,
+  "pricePosition": 100,
+  "liquidityScore": 96.6,
+  "priceStrengthScore": 93.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 77.8,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.66% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 276.48 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

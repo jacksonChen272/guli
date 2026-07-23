@@ -1,0 +1,53 @@
+{
+  "symbol": "6214",
+  "name": "精誠",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 142,
+    "high": 143.5,
+    "low": 141.5,
+    "close": 141.5,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 1121168,
+    "transactionCount": 1227,
+    "tradeValue": 159854443,
+    "peRatio": 14.83
+  },
+  "dailyRangePercent": 1.41,
+  "turnoverAverageValue": 130280.72,
+  "pricePosition": 0,
+  "liquidityScore": 67.7,
+  "priceStrengthScore": 28.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 52.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

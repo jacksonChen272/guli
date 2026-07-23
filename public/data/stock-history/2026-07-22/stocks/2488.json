@@ -1,0 +1,53 @@
+{
+  "symbol": "2488",
+  "name": "漢平",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 49.7,
+    "high": 49.7,
+    "low": 49.4,
+    "close": 49.4,
+    "change": -0.2,
+    "changePercent": -0.4,
+    "tradeVolume": 106794,
+    "transactionCount": 114,
+    "tradeValue": 5293798,
+    "peRatio": 10.65
+  },
+  "dailyRangePercent": 0.61,
+  "turnoverAverageValue": 46436.82,
+  "pricePosition": 0,
+  "liquidityScore": 24.5,
+  "priceStrengthScore": 27.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 37,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

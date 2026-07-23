@@ -1,0 +1,62 @@
+{
+  "symbol": "4919",
+  "name": "新唐",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 145.5,
+    "high": 148,
+    "low": 142.5,
+    "close": 143,
+    "change": 2,
+    "changePercent": 1.42,
+    "tradeVolume": 5316638,
+    "transactionCount": 5261,
+    "tradeValue": 771377784,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.86,
+  "turnoverAverageValue": 146621.89,
+  "pricePosition": 9.1,
+  "liquidityScore": 85.9,
+  "priceStrengthScore": 34.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 57.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

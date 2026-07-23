@@ -1,0 +1,62 @@
+{
+  "symbol": "4976",
+  "name": "佳凌",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 32.4,
+    "high": 32.9,
+    "low": 32.05,
+    "close": 32.2,
+    "change": 0.5,
+    "changePercent": 1.58,
+    "tradeVolume": 493434,
+    "transactionCount": 435,
+    "tradeValue": 15981853,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.65,
+  "turnoverAverageValue": 36739.89,
+  "pricePosition": 17.6,
+  "liquidityScore": 45.5,
+  "priceStrengthScore": 38.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 41.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.6 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

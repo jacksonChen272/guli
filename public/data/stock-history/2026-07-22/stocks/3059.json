@@ -1,0 +1,53 @@
+{
+  "symbol": "3059",
+  "name": "華晶科",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 41.8,
+    "high": 42.35,
+    "low": 41.4,
+    "close": 41.45,
+    "change": 0.15,
+    "changePercent": 0.36,
+    "tradeVolume": 2176591,
+    "transactionCount": 1663,
+    "tradeValue": 90779469,
+    "peRatio": 33.7
+  },
+  "dailyRangePercent": 2.29,
+  "turnoverAverageValue": 54587.77,
+  "pricePosition": 5.3,
+  "liquidityScore": 68.8,
+  "priceStrengthScore": 31.2,
+  "valuationRiskScore": 55,
+  "snapshotScore": 47.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

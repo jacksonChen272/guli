@@ -1,0 +1,53 @@
+{
+  "symbol": "1434",
+  "name": "福懋",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.15,
+    "high": 19.85,
+    "low": 19.05,
+    "close": 19.2,
+    "change": 0.2,
+    "changePercent": 1.05,
+    "tradeVolume": 15919780,
+    "transactionCount": 6299,
+    "tradeValue": 310024287,
+    "peRatio": 32
+  },
+  "dailyRangePercent": 4.2,
+  "turnoverAverageValue": 49218.02,
+  "pricePosition": 18.7,
+  "liquidityScore": 85.5,
+  "priceStrengthScore": 45.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 59.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

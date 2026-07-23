@@ -1,0 +1,53 @@
+{
+  "symbol": "6534",
+  "name": "正瀚-創",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 93,
+    "high": 93.8,
+    "low": 91.7,
+    "close": 91.7,
+    "change": -1.8,
+    "changePercent": -1.93,
+    "tradeVolume": 156102,
+    "transactionCount": 152,
+    "tradeValue": 14437599,
+    "peRatio": 19.18
+  },
+  "dailyRangePercent": 2.29,
+  "turnoverAverageValue": 94984.2,
+  "pricePosition": 0,
+  "liquidityScore": 33.2,
+  "priceStrengthScore": 24.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 35.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

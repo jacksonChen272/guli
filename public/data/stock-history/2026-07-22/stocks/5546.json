@@ -1,0 +1,69 @@
+{
+  "symbol": "5546",
+  "name": "永固-KY",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.1,
+    "high": 17.15,
+    "low": 16.75,
+    "close": 16.8,
+    "change": -0.3,
+    "changePercent": -1.75,
+    "tradeVolume": 20001,
+    "transactionCount": 29,
+    "tradeValue": 340185,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.39,
+  "turnoverAverageValue": 11730.52,
+  "pricePosition": 12.5,
+  "liquidityScore": 3.8,
+  "priceStrengthScore": 29,
+  "valuationRiskScore": null,
+  "snapshotScore": 18,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 3.8 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

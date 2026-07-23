@@ -1,0 +1,148 @@
+{
+  "entityType": "stock",
+  "entityId": "4551",
+  "entityName": "智伸科",
+  "tradeDate": "2026-07-22",
+  "score": 52.6,
+  "label": "中性",
+  "direction": "neutral",
+  "confidence": 82,
+  "summary": "中性，風險控制為主要貢獻。",
+  "factors": [
+    {
+      "code": "stock_health",
+      "name": "既有健康分數",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.25,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "daily_price_strength",
+      "name": "當日價格強度",
+      "rawValue": 31.2,
+      "normalizedScore": 31.2,
+      "weight": 0.2,
+      "contribution": -6.27,
+      "direction": "negative",
+      "explanation": "當日價格強度: 31.2",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "liquidity",
+      "name": "流動性",
+      "rawValue": 64.2,
+      "normalizedScore": 64.2,
+      "weight": 0.15,
+      "contribution": 3.55,
+      "direction": "positive",
+      "explanation": "流動性: 64.2",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "market_environment",
+      "name": "市場環境",
+      "rawValue": 46.1,
+      "normalizedScore": 46.1,
+      "weight": 0.15,
+      "contribution": -0.97,
+      "direction": "neutral",
+      "explanation": "市場環境: 46.1",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "industry_environment",
+      "name": "產業環境",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0.15,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "missing"
+    },
+    {
+      "code": "risk_control",
+      "name": "風險控制",
+      "rawValue": 88,
+      "normalizedScore": 88,
+      "weight": 0.1,
+      "contribution": 6.33,
+      "direction": "positive",
+      "explanation": "風險控制: 88",
+      "evidence": [],
+      "sourceType": "derived"
+    },
+    {
+      "code": "data_quality",
+      "name": "資料品質",
+      "rawValue": null,
+      "normalizedScore": null,
+      "weight": 0,
+      "contribution": null,
+      "direction": "unknown",
+      "explanation": "Missing verified data.",
+      "evidence": [],
+      "sourceType": "derived"
+    }
+  ],
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "explanation": "收盤位於當日區間第 9.5 百分位。",
+      "sourceType": "derived"
+    }
+  ],
+  "trace": {
+    "formulaVersion": "decision-v1.0",
+    "totalPositiveContribution": 9.88,
+    "totalNegativeContribution": -7.24,
+    "totalContribution": 2.64,
+    "availableWeight": 0.6,
+    "missingWeight": 0.4,
+    "normalizationApplied": true,
+    "calculationSteps": [
+      "availableWeight=0.6",
+      "missingWeight=0.4",
+      "normalized=true"
+    ]
+  },
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    },
+    {
+      "id": "twse-institutional",
+      "name": "TWSE official institutional trades",
+      "type": "official",
+      "tradeDate": "2026-07-22",
+      "fields": [
+        "foreignNetShares",
+        "trustNetShares",
+        "dealerNetShares",
+        "totalNetShares"
+      ]
+    }
+  ],
+  "warnings": [
+    "Static generation has no verified industry mapping or mock health input; weights were normalized.",
+    "Official institutional data is attached to trace; decision-v1.0 score weights are unchanged."
+  ]
+}

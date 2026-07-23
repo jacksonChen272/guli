@@ -1,0 +1,53 @@
+{
+  "symbol": "6606",
+  "name": "建德工業",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 25.65,
+    "high": 25.9,
+    "low": 25.4,
+    "close": 25.7,
+    "change": -0.1,
+    "changePercent": -0.39,
+    "tradeVolume": 65030,
+    "transactionCount": 55,
+    "tradeValue": 1664477,
+    "peRatio": 23.58
+  },
+  "dailyRangePercent": 1.97,
+  "turnoverAverageValue": 30263.22,
+  "pricePosition": 60,
+  "liquidityScore": 14.1,
+  "priceStrengthScore": 56.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 43.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.1 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

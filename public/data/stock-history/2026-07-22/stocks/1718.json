@@ -1,0 +1,60 @@
+{
+  "symbol": "1718",
+  "name": "中纖",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.5,
+    "high": 13.95,
+    "low": 12.35,
+    "close": 12.35,
+    "change": -0.85,
+    "changePercent": -6.44,
+    "tradeVolume": 102414990,
+    "transactionCount": 28815,
+    "tradeValue": 1334171463,
+    "peRatio": 51.46
+  },
+  "dailyRangePercent": 12.96,
+  "turnoverAverageValue": 46301.28,
+  "pricePosition": 0,
+  "liquidityScore": 94.9,
+  "priceStrengthScore": 14,
+  "valuationRiskScore": 75,
+  "snapshotScore": 44.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 12.96% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

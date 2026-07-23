@@ -1,0 +1,53 @@
+{
+  "symbol": "2545",
+  "name": "皇翔",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 34.05,
+    "high": 34.15,
+    "low": 33.8,
+    "close": 33.8,
+    "change": -0.35,
+    "changePercent": -1.02,
+    "tradeVolume": 427030,
+    "transactionCount": 409,
+    "tradeValue": 14498989,
+    "peRatio": 22.84
+  },
+  "dailyRangePercent": 1.04,
+  "turnoverAverageValue": 35449.85,
+  "pricePosition": 0,
+  "liquidityScore": 43.8,
+  "priceStrengthScore": 26.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 40.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

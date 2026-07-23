@@ -1,0 +1,60 @@
+{
+  "symbol": "2417",
+  "name": "圓剛",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 41.15,
+    "high": 41.8,
+    "low": 40.85,
+    "close": 40.9,
+    "change": 0.55,
+    "changePercent": 1.36,
+    "tradeVolume": 890972,
+    "transactionCount": 647,
+    "tradeValue": 36858753,
+    "peRatio": 157.31
+  },
+  "dailyRangePercent": 2.33,
+  "turnoverAverageValue": 56968.71,
+  "pricePosition": 5.3,
+  "liquidityScore": 56.6,
+  "priceStrengthScore": 33.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 36.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 157.31 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

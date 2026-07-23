@@ -1,0 +1,62 @@
+{
+  "symbol": "2424",
+  "name": "隴華",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 8.6,
+    "high": 8.6,
+    "low": 8.5,
+    "close": 8.55,
+    "change": -0.05,
+    "changePercent": -0.58,
+    "tradeVolume": 26282,
+    "transactionCount": 25,
+    "tradeValue": 223976,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.18,
+  "turnoverAverageValue": 8959.04,
+  "pricePosition": 50,
+  "liquidityScore": 3.7,
+  "priceStrengthScore": 44.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 26.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 3.7 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

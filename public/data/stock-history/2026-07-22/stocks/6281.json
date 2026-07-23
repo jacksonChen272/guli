@@ -1,0 +1,60 @@
+{
+  "symbol": "6281",
+  "name": "全國電",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 51.9,
+    "high": 52.1,
+    "low": 51.3,
+    "close": 51.3,
+    "change": -0.5,
+    "changePercent": -0.97,
+    "tradeVolume": 39472,
+    "transactionCount": 56,
+    "tradeValue": 2039528,
+    "peRatio": 13.75
+  },
+  "dailyRangePercent": 1.56,
+  "turnoverAverageValue": 36420.14,
+  "pricePosition": 0,
+  "liquidityScore": 13.4,
+  "priceStrengthScore": 26.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 32.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.4 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

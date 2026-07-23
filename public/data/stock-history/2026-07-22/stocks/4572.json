@@ -1,0 +1,53 @@
+{
+  "symbol": "4572",
+  "name": "駐龍",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 150,
+    "high": 150,
+    "low": 143.5,
+    "close": 144,
+    "change": -5,
+    "changePercent": -3.36,
+    "tradeVolume": 49296,
+    "transactionCount": 359,
+    "tradeValue": 7176022,
+    "peRatio": 54.34
+  },
+  "dailyRangePercent": 4.53,
+  "turnoverAverageValue": 19988.92,
+  "pricePosition": 7.7,
+  "liquidityScore": 27.3,
+  "priceStrengthScore": 23.6,
+  "valuationRiskScore": 75,
+  "snapshotScore": 25.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

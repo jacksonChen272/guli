@@ -1,0 +1,53 @@
+{
+  "symbol": "4441",
+  "name": "振大環球",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 177,
+    "high": 178,
+    "low": 174,
+    "close": 174,
+    "change": -3.5,
+    "changePercent": -1.97,
+    "tradeVolume": 224335,
+    "transactionCount": 195,
+    "tradeValue": 39409532,
+    "peRatio": 12.2
+  },
+  "dailyRangePercent": 2.3,
+  "turnoverAverageValue": 202100.16,
+  "pricePosition": 0,
+  "liquidityScore": 43.4,
+  "priceStrengthScore": 24.1,
+  "valuationRiskScore": 20,
+  "snapshotScore": 42,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}
