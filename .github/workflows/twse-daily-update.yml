@@ -47,8 +47,12 @@ jobs:
       - run: npm run data:twse
       - run: npm run data:twse:stocks
       - run: npm run data:twse:institutional
+      - name: Repair existing stock history metadata before incremental selection
+        run: npm run data:history:repair
       - name: Merge the latest official day into completed history files
         run: npm run data:history:backfill -- --incremental --phase="daily-${GITHUB_RUN_ID}" --limit=1082 --batch-size=20 --request-delay=1200 --batch-delay=8000 --max-retries=3
+      - name: Verify and repair stock history metadata after merge
+        run: npm run data:history:repair
       - run: npm run data:technical:rebuild
       - run: npm run data:history:validate
       - run: npm run data:history:coverage

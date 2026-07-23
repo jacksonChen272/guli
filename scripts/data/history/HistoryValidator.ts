@@ -10,6 +10,55 @@ export interface HistoryValidationResult {
   recordCount: number
 }
 
+export type HistoryMetadataField =
+  | 'symbol'
+  | 'name'
+  | 'source'
+  | 'fetchedAt'
+  | 'recordCount'
+  | 'firstTradeDate'
+  | 'lastTradeDate'
+
+export interface HistoryMetadataDifference {
+  field: HistoryMetadataField
+  before: string | number | null
+  after: string | number | null
+}
+
+export interface HistoryMetadataOptions {
+  symbol?: string
+  name?: string
+  fetchedAt?: string
+}
+
+/**
+ * Rebuild metadata after prices have been normalized, de-duplicated, and
+ * sorted. The prices array is deliberately retained by reference so a
+ * metadata-only repair cannot alter official observations.
+ */
+export function synchronizeHistoryMetadata(
+  dataset: TwseHistoryDataset,
+  options: HistoryMetadataOptions = {},
+): { dataset: TwseHistoryDataset; differences: HistoryMetadataDifference[] } {
+  const next: TwseHistoryDataset = {
+    ...dataset,
+    symbol: options.symbol ?? dataset.symbol,
+    name: options.name?.trim() || dataset.name,
+    source: 'TWSE',
+    fetchedAt: options.fetchedAt ?? dataset.fetchedAt,
+    recordCount: dataset.prices.length,
+    firstTradeDate: dataset.prices[0]?.tradeDate ?? null,
+    lastTradeDate: dataset.prices.at(-1)?.tradeDate ?? null,
+  }
+  const fields: HistoryMetadataField[] = [
+    'symbol', 'name', 'source', 'fetchedAt', 'recordCount', 'firstTradeDate', 'lastTradeDate',
+  ]
+  const differences = fields
+    .filter((field) => dataset[field] !== next[field])
+    .map((field) => ({ field, before: dataset[field], after: next[field] }))
+  return { dataset: next, differences }
+}
+
 export function validateHistoryPoint(point: HistoryPricePoint, index: number): string[] {
   const errors: string[] = []
   const prefix = `prices[${index}]`

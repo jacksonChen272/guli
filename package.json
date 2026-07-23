@@ -18,6 +18,7 @@
     "data:history:coverage": "node --experimental-strip-types scripts/data/generateHistoryProgressSummary.ts",
     "data:history:pr-summary": "node --experimental-strip-types scripts/data/generateHistoryPullRequestSummary.ts",
     "data:history:finalize": "node --experimental-strip-types scripts/data/finalizeHistoryBackfill.ts",
+    "data:history:repair": "node --experimental-strip-types scripts/data/history/repairHistoryMetadata.ts",
     "data:history:validate": "node --experimental-strip-types scripts/data/validateHistory.ts",
     "data:technical:rebuild": "node scripts/generate-technical-index.mjs && node --experimental-strip-types scripts/data/buildTechnicalManifests.ts",
     "data:update-daily": "node --experimental-strip-types scripts/data/updateDaily.ts",

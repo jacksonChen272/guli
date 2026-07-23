@@ -4,7 +4,7 @@ import { resolvePlannedSymbols, selectPendingHistoryBatch, validateHistoryCovera
 import { TwseHistoryFetcher, TWSE_HISTORY_ENDPOINT, buildMonthKeys } from './TwseHistoryFetcher.ts'
 import { categorizeHistoryError, HistoryRetryQueue } from './HistoryRetryQueue.ts'
 import { HistoryRateLimiter } from './HistoryRateLimiter.ts'
-import { mergeHistoryPoints, sanitizeHistoryPoints, validateHistoryDataset } from './HistoryValidator.ts'
+import { mergeHistoryPoints, sanitizeHistoryPoints, synchronizeHistoryMetadata, validateHistoryDataset } from './HistoryValidator.ts'
 import { atomicWriteJson, buildHistoryManifest, buildProgress, readJson } from './HistoryManifestWriter.ts'
 import type {
   HistoryCoverageCounts,
@@ -284,16 +284,16 @@ export class HistoryBatchRunner {
     if (sanitized.rejected) warnings.push(`Removed ${sanitized.rejected} invalid OHLC records; missing values were not fabricated`)
     const fetchedAt = new Date().toISOString()
     const prices = sanitized.points
-    dataset = {
+    dataset = synchronizeHistoryMetadata({
       ...dataset,
-      fetchedAt,
       prices,
-      firstTradeDate: prices[0]?.tradeDate ?? null,
-      lastTradeDate: prices.at(-1)?.tradeDate ?? null,
-      recordCount: prices.length,
       status: isStale(prices.at(-1)?.tradeDate ?? null) ? 'stale' : prices.length >= this.options.targetDays ? 'official' : 'partial',
       warnings: [...new Set(warnings)],
-    }
+    }, {
+      symbol: security.symbol,
+      name: dataset.name || security.name,
+      fetchedAt,
+    }).dataset
     const validation = validateHistoryDataset(dataset, security.symbol)
     if (!validation.valid) throw new Error(`VALIDATION_ERROR: ${validation.errors.slice(0, 3).join('; ')}`)
     if (!prices.length) throw new Error('NO_DATA: TWSE returned no valid history rows')
