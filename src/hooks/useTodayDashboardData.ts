@@ -7,6 +7,9 @@ import type { IndustrySnapshot } from '../types/industrySnapshot'
 import type { MarketHeatmapDataset } from '../types/marketHeatmap'
 import type { InstitutionalMarketTotals } from '../types/officialInstitutionalData'
 import type { ScreenerDataset } from '../types/screener'
+import type { HotStockItem, MarketSentimentResult, TodaySummaryResult, WatchlistPreviewItem } from '../types/dashboardIntelligence'
+import { generateTodaySummary } from '../services/dashboard/TodaySummaryService'
+import { calculateMarketSentiment } from '../services/dashboard/MarketSentimentService'
 
 export interface TodayCoverage {
   totalCommonStocks: number
@@ -32,6 +35,11 @@ export interface TodayDashboardData {
   heatmap: MarketHeatmapDataset | null
   heatmapError: string | null
   narrative: TodayMarketNarrative
+  sentiment: MarketSentimentResult
+  todaySummary: TodaySummaryResult
+  hotStocks: HotStockItem[]
+  recentSearches: string[]
+  watchlist: WatchlistPreviewItem[]
 }
 
 const emptyCoverage: TodayCoverage = {
@@ -58,6 +66,11 @@ const emptyData: TodayDashboardData = {
   heatmap: null,
   heatmapError: null,
   narrative: generateTodayMarketNarrative({ market: null, decision: null, institutions: null, industries: null, screener: null }),
+  sentiment: calculateMarketSentiment({ market: null, institutions: null, decision: null }),
+  todaySummary: generateTodaySummary({ sentiment: calculateMarketSentiment({ market: null, institutions: null, decision: null }), market: null, institutions: null }),
+  hotStocks: [],
+  recentSearches: [],
+  watchlist: [],
 }
 
 export function useTodayDashboardData() {
@@ -69,7 +82,7 @@ export function useTodayDashboardData() {
     setLoading(true)
     setError(null)
     let heatmapError: string | null = null
-    const [marketDecision, institutionTotals, screener, industries, platform, stocks, history, institutionStatus, heatmap, industryMapping] = await Promise.all([
+    const [marketDecision, institutionTotals, screener, industries, platform, stocks, history, institutionStatus, heatmap, industryMapping, sentiment, hotStocks, watchlist] = await Promise.all([
       repositoryHub.decisions.getMarketDecision().catch(() => null),
       repositoryHub.institutions.getMarketTotals().catch(() => null),
       repositoryHub.screener.getDataset().catch(() => null),
@@ -83,6 +96,9 @@ export function useTodayDashboardData() {
         return null
       }),
       repositoryHub.industryMapping.getStatus(),
+      repositoryHub.marketSentiment.getLatest().catch(() => calculateMarketSentiment({ market: null, institutions: null, decision: null })),
+      repositoryHub.hotStocks.getTop(5).catch(() => []),
+      repositoryHub.watchlist.getPreview(5).catch(() => []),
     ])
 
     const commonStocks = stocks.filter((stock) => /^\d{4}$/.test(stock.symbol) && stock.instrumentType === 'stock')
@@ -96,6 +112,11 @@ export function useTodayDashboardData() {
       heatmap,
       heatmapError,
       narrative: generateTodayMarketNarrative({ market, decision: marketDecision, institutions: institutionTotals, industries, screener }),
+      sentiment,
+      todaySummary: generateTodaySummary({ sentiment, market, institutions: institutionTotals }),
+      hotStocks,
+      recentSearches: repositoryHub.searchRepository.getRecentSymbols(10),
+      watchlist,
       coverage: {
         totalCommonStocks: industryMapping.totalStocks || commonStocks.length,
         officialStockCount: commonStocks.length,
@@ -115,5 +136,6 @@ export function useTodayDashboardData() {
   }, [])
 
   useEffect(() => { void load() }, [load])
+  useEffect(() => repositoryHub.searchRepository.subscribeRecent((recentSearches) => setData((current) => ({ ...current, recentSearches }))), [])
   return { data, loading, error, reload: load }
 }

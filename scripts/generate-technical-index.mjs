@@ -35,7 +35,7 @@ function technicalScore(entry) {
     risk: score([entry.volatility20 === null ? null : clamp(100 - Math.max(0, entry.volatility20 - 15) * 1.7), entry.atr14 === null || entry.close === null || entry.close <= 0 ? null : clamp(100 - Math.max(0, entry.atr14 / entry.close * 100 - 1.5) * 18), entry.rsi14 === null ? null : entry.rsi14 >= 80 ? 25 : entry.rsi14 >= 70 ? 55 : 82, binary(entry.aboveMa20, 82, 38), binary(entry.aboveMa60, 85, 32)]),
   }
   const availableWeight = Object.entries(weights).reduce((sum, [key, weight]) => sum + (factors[key] === null ? 0 : weight), 0)
-  return { score: availableWeight < 0.5 ? null : round(Object.entries(weights).reduce((sum, [key, weight]) => sum + (factors[key] === null ? 0 : factors[key] * weight / availableWeight), 0), 1), confidence: Math.round(availableWeight * 100) }
+  return { score: availableWeight < 0.5 ? null : round(Object.entries(weights).reduce((sum, [key, weight]) => sum + (factors[key] === null ? 0 : factors[key] * weight / availableWeight), 0), 1), confidence: Math.round(availableWeight * 100), factors }
 }
 
 function calculate(dataset) {
@@ -59,16 +59,21 @@ function calculate(dataset) {
   const returnAt = (period) => closes.length <= period || last(closes) === null || closes.at(-1 - period) === null || closes.at(-1 - period) === 0 ? null : (last(closes) / closes.at(-1 - period) - 1) * 100
   const volatility20 = last(volatility(closes))
   const close = last(closes), previousClose = closes.at(-2) ?? null
+  const structureWindow = prices.slice(-60)
+  const validLows = structureWindow.map((point) => point.low).filter((value) => value !== null && Number.isFinite(value))
+  const validHighs = structureWindow.map((point) => point.high).filter((value) => value !== null && Number.isFinite(value))
+  const support = validLows.length ? Math.min(...validLows) : null
+  const resistance = validHighs.length ? Math.max(...validHighs) : null
   let macdCrossDays = null
   for (let days = 0; days <= 3 && macd.length - 1 - days > 0; days += 1) { const index = macd.length - 1 - days; if (macd[index] !== null && signalFull[index] !== null && macd[index - 1] !== null && signalFull[index - 1] !== null && macd[index] > signalFull[index] && macd[index - 1] <= signalFull[index - 1]) { macdCrossDays = days; break } }
   const base = {
     symbol: dataset.symbol, name: dataset.name, tradeDate: dataset.lastTradeDate, historyRecordCount: dataset.recordCount,
     close, change: last(prices)?.change ?? (close !== null && previousClose !== null ? close - previousClose : null), changePercent: close !== null && previousClose !== null && previousClose !== 0 ? (close / previousClose - 1) * 100 : null,
     volume: last(volumes), averageVolume20: last(averageVolume20), volumeRatio: last(volumes) !== null && last(averageVolume20) ? last(volumes) / last(averageVolume20) : null,
-    ma5: last(ma5), ma10: last(ma10), ma20: last(ma20), ma60: last(ma60), ma120: last(ma120), rsi14: last(rsi14), k: last(kd.k), d: last(kd.d),
+    ma5: last(ma5), ma10: last(ma10), ma20: last(ma20), ma60: last(ma60), ma120: last(ma120), ema12: last(ema12), ema26: last(ema26), rsi14: last(rsi14), k: last(kd.k), d: last(kd.d),
     macd: last(macd), macdSignal: last(signalFull), macdHistogram: last(histogram), bollingerUpper: last(upper), bollingerMiddle: last(middle), bollingerLower: last(lower), atr14: last(atr14),
     return20: returnAt(20), return60: returnAt(60), volatility20, aboveMa20: close === null || last(ma20) === null ? null : close > last(ma20), aboveMa60: close === null || last(ma60) === null ? null : close > last(ma60), ma20Slope: slope(ma20), ma60Slope: slope(ma60), macdCrossDays,
-    kdImproving: last(kd.k) === null || last(kd.d) === null ? null : last(kd.k) > last(kd.d) || (kd.k.at(-2) !== null && last(kd.k) > kd.k.at(-2)),
+    kdImproving: last(kd.k) === null || last(kd.d) === null ? null : last(kd.k) > last(kd.d) || (kd.k.at(-2) !== null && last(kd.k) > kd.k.at(-2)), support, resistance,
   }
   const scored = technicalScore(base)
   const signalIds = []

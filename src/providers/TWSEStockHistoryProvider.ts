@@ -1,5 +1,5 @@
 import { validateOfficialStockHistory } from '../services/stockHistory/StockHistoryValidator'
-import type { OfficialStockHistory, StockHistoryBackfillProgress, StockHistoryDatasetStatus, StockHistoryIndex } from '../types/officialStockHistory'
+import type { HistoryProgressSummary, OfficialStockHistory, StockHistoryBackfillProgress, StockHistoryDatasetStatus, StockHistoryIndex, StockHistoryManifest } from '../types/officialStockHistory'
 
 type Fetcher = (input: RequestInfo | URL, init?: RequestInit) => Promise<Response>
 
@@ -14,6 +14,22 @@ const isIndex = (value: unknown): value is StockHistoryIndex => {
   if (!value || typeof value !== 'object') return false
   const index = value as Partial<StockHistoryIndex>
   return index.schemaVersion === '1.0' && index.source === 'TWSE' && Array.isArray(index.symbols) && Boolean(index.summary)
+}
+
+const isManifest = (value: unknown): value is StockHistoryManifest => {
+  if (!value || typeof value !== 'object') return false
+  const manifest = value as Partial<StockHistoryManifest>
+  return manifest.schemaVersion === 'history-manifest-v1' && manifest.source === 'TWSE' && Array.isArray(manifest.items) && Boolean(manifest.summary)
+}
+
+const isProgressSummary = (value: unknown): value is HistoryProgressSummary => {
+  if (!value || typeof value !== 'object') return false
+  const summary = value as Partial<HistoryProgressSummary>
+  return summary.version === 'history-progress-summary-v1'
+    && summary.source === 'TWSE Official History'
+    && Boolean(summary.coverage)
+    && Boolean(summary.lastBatch)
+    && Boolean(summary.capacity)
 }
 
 export class TWSEStockHistoryProvider {
@@ -55,6 +71,10 @@ export class TWSEStockHistoryProvider {
   }
 
   getIndex() { return this.read('data/twse-stock-history/index.json', isIndex) }
+
+  getManifest() { return this.read('data/history/history-manifest.json', isManifest) }
+
+  getProgressSummary() { return this.read('data/history/history-progress-summary.json', isProgressSummary) }
 
   getBackfillProgress() { return this.read('data/twse-stock-history/backfill-progress.json', (value): value is StockHistoryBackfillProgress => Boolean(value && typeof value === 'object' && 'totalSymbols' in value && 'completedSymbols' in value && 'status' in value)) }
 

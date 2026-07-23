@@ -1,5 +1,38 @@
 # Changelog
 
+## [1.1.1]
+
+- 建立可分批、限流、重試、續跑與單檔執行的 TWSE 上市普通股歷史行情回補管線；沿用既有 `twse-stock-history` 單一資料架構。
+- 新增 `history-progress-v1`、History Manifest、Technical Manifest，以及回補、驗證、技術產生與 94/92 技術缺口報告。
+- 新增每日增量合併、去重與完整技術索引重建；`technical-v1.0` 權重及既有 Decision、Health、Snapshot 公式不變。
+- GitHub Actions 分離限量 backfill 與每日同步，資料只提交至 automation 分支並以 Pull Request 合併，不直接推送 main。
+- 第一階段僅執行 20 檔，後續依 100、300、600、全市場分階段驗證後擴大。
+
+## [1.1.0-beta.2]
+
+- 既有 `GlobalStockSearch` 升級為全站智慧搜尋中心，支援股票與功能命令、Ctrl/⌘+K、完整鍵盤操作及桌面 Quick Preview。
+- 新增 `SearchRepository`、`StockDataStatusRepository`、`SearchRankingService` 與啟動時全市場索引；元件不再逐次篩選 Mock 股票清單。
+- 搜尋排序固定為代碼完全符合、代碼開頭、名稱開頭、名稱包含與模糊搜尋，並使用可重現的熱門權重穩定同層級順序。
+- 最近搜尋統一由 SearchRepository 管理，保留最近 10 筆、去重、最新置頂，首頁與搜尋中心同步。
+- 搜尋資訊卡與預覽揭露 TWSE 行情、產業、四項既有分數與資料可用狀態；缺值顯示「等待資料」，不輸出 null、undefined 或 NaN。
+- Settings 新增由實際 Repository Index 即時計算的上市、歷史、Technical、Decision 與 Snapshot 覆蓋數量。
+- Decision、Technical、Health、Snapshot 既有公式與權重未變更；GitHub Pages base 與 Router basename 維持 `/guli`。
+
+## [1.1.0-beta.1]
+
+- 首頁升級為 Market Intelligence Dashboard，依「市場情緒、今日摘要、熱門股票、最近搜尋、自選股、今日觀察、熱力圖、族群、技術機會、排行、事件與資料覆蓋」形成每日資訊流。
+- 新增 `market-sentiment-v1` 固定規則、ECharts 半圓儀表、規則型今日摘要，以及以 TWSE 官方成交值、成交量與漲跌幅計算的熱門股票 Top 5。
+- 最近搜尋改由 `RecentSearchRepository` 保存最近 10 筆；自選股預覽由既有 `WatchlistRepository` 取得官方盤後行情。
+- Dashboard 全部 Widget 支援拖曳、鍵盤／觸控排序按鈕與 LocalStorage 排列持久化。
+- Today Events 僅提供 Coming Soon 類別，不建立虛構事件；Decision、Technical、Health 與 Snapshot 既有公式均未變更。
+
+## [1.0.0-rc.1]
+
+- 個股頁整併為唯一的 Stock Analysis 2.0 實際路由，集中載入官方行情、歷史、法人、產業與既有四項分數。
+- 新增固定規則個股判讀、價格結構、支撐壓力區、風險評估與完整資料來源揭露。
+- 既有 Lightweight Charts 加入 MA120、支撐壓力區、指標切換與完整 Tooltip，維持個股頁 lazy load。
+- Decision v1.0、Technical、Health 與 Stock Snapshot 既有權重及商業邏輯維持不變。
+
 ## [1.0.0-beta.4]
 
 - 新增 TWSE 上市公司基本資料同步腳本，產出可追溯、可驗證的官方產業分類靜態 JSON。

@@ -26,8 +26,8 @@ const EmptyPage = lazy(() => import('./pages/EmptyPage').then((module) => ({ def
 type Resource = 'overview' | 'stocks' | 'industries' | 'events'
 const completedPaths = new Set(['/capital-flow', '/market-focus', '/watchlist', '/ai', '/settings', '/history', '/industries', '/data-status/stocks', '/stock-snapshots', '/decisions', '/data-coverage', '/screener'])
 
-function RouteShell({ resource, children }: { resource: Resource; children: ReactNode }) {
-  return <AppErrorBoundary><Suspense fallback={<div className="panel"><LoadingState rows={6}/></div>}><PageDataGate resource={resource}>{children}</PageDataGate></Suspense></AppErrorBoundary>
+function RouteShell({ resource, children, dataGate = true }: { resource: Resource; children: ReactNode; dataGate?: boolean }) {
+  return <AppErrorBoundary><Suspense fallback={<div className="panel"><LoadingState rows={6}/></div>}>{dataGate ? <PageDataGate resource={resource}>{children}</PageDataGate> : children}</Suspense></AppErrorBoundary>
 }
 
 export default function App() {
@@ -35,7 +35,7 @@ export default function App() {
     <Route index element={<RouteShell resource="overview"><Dashboard/></RouteShell>}/>
     <Route path="/capital-flow" element={<RouteShell resource="industries"><CapitalRotation/></RouteShell>}/>
     <Route path="/market-focus" element={<RouteShell resource="events"><MarketFocus/></RouteShell>}/>
-    <Route path="/stock/:symbol" element={<RouteShell resource="stocks"><StockDetailWithSnapshot/></RouteShell>}/>
+    <Route path="/stock/:symbol" element={<RouteShell resource="stocks" dataGate={false}><StockDetailWithSnapshot/></RouteShell>}/>
     <Route path="/watchlist" element={<RouteShell resource="stocks"><WatchlistDashboard/></RouteShell>}/>
     <Route path="/ai" element={<RouteShell resource="overview"><GubaoPageWithDecision/></RouteShell>}/>
     <Route path="/settings" element={<RouteShell resource="overview"><SettingsWithDecision/></RouteShell>}/>

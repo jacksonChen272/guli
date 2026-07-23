@@ -1,5 +1,40 @@
 # GULI Roadmap
 
+## GULI v1.1.1
+
+- [x] 建立 TWSE 歷史行情批次、限流、重試、續跑、驗證、Manifest 與報告基礎。
+- [x] 建立技術索引完整重建與 94/92 缺口診斷，維持 `technical-v1.0` 分數權重。
+- [x] 完成第一階段 20 檔實際回補與驗證。
+- [ ] 第二階段擴大至累計 100 檔，先觀察官方端點限流與 Action 執行時間。
+- [ ] 依序擴大至 300、600 與全部上市普通股；新上市股票維持 Partial，不補虛構資料。
+- [ ] 完成全市場後，持續以每日增量更新歷史行情、技術索引、Screener 與 Heatmap 覆蓋率。
+
+## GULI v1.1.0-beta.2
+
+- [x] 單一全市場 Search Index 與 RepositoryHub 搜尋資料入口。
+- [x] 五層固定排序規則、股票／功能命令搜尋及熱門搜尋管理。
+- [x] Ctrl/⌘+K Command Palette、方向鍵、Tab、Enter、Escape 與焦點樣式。
+- [x] 股票資訊卡、四項分數、Hover Quick Preview 與加入自選股。
+- [x] 最近 10 筆搜尋跨首頁同步，僅由 SearchRepository 操作 LocalStorage。
+- [x] Official Data、History、Technical、Decision 狀態與即時計算覆蓋率。
+- [ ] 待官方英文公司名稱資料源可驗證後，再補齊英文名稱索引；目前不推測或虛構英文名稱。
+
+## GULI v1.1.0-beta.1
+
+- [x] Market Intelligence Dashboard 單一首頁資訊流與 Widget Layout。
+- [x] `market-sentiment-v1`、固定規則今日摘要與完整來源揭露。
+- [x] TWSE Official 熱門股票 Top 5、最近 10 筆搜尋與自選股盤後預覽。
+- [x] 全部 Dashboard Widget 拖曳／按鈕排序及 LocalStorage 持久化。
+- [x] Today Events Coming Soon，不虛構事件。
+- [ ] 後續版本串接可驗證的官方事件與新聞來源；本版不推測事件內容。
+
+## GULI v1.0.0-rc.1
+
+- [x] 個股分析 2.0 單一路由與集中資料 hook。
+- [x] 四項獨立分數、規則判讀、專業 K 線、價格結構、法人、產業、風險與 Decision Trace 完整資訊流。
+- [x] 官方／推導／模擬／缺失來源與日期一致性揭露。
+- [ ] 後續版本再評估除權息還原、更多法人歷史與 TPEX 行情；本版不變更既有分析權重。
+
 ## GULI v1.0.0-beta.4
 
 - [x] 接入 TWSE 上市公司官方產業分類，保留 MOPS 官方 CSV 備援。

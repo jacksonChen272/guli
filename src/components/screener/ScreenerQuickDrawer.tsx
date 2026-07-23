@@ -10,7 +10,7 @@ import { Drawer } from '../ui/Drawer'
 import { LoadingState } from '../ui/LoadingState'
 
 const CandlestickPriceChart = lazy(() => import('../charts/lightweight/CandlestickPriceChart'))
-const visibility = { ma5: true, ma20: true, ma60: false, bollinger: false, volume: true }
+const visibility = { ma5: true, ma20: true, ma60: false, ma120: false, bollinger: false, volume: true, zones: false }
 
 export function ScreenerQuickDrawer({ row, onClose }: { row: ScreenerResult | null; onClose: () => void }) {
   const navigate = useNavigate()

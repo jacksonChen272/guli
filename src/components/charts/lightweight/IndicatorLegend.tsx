@@ -1,12 +1,3 @@
-const items = [
-  ['MA5', '#f59e0b'], ['MA20', '#38bdf8'], ['MA60', '#a78bfa'], ['布林上／下軌', '#64748b'],
-] as const
-
-export function IndicatorLegend({ visible }: { visible: ChartVisibility }) {
-  const enabled = (key: string) => key.startsWith('布林') ? visible.bollinger : visible[key.toLowerCase() as 'ma5' | 'ma20' | 'ma60']
-  return <div className="flex flex-wrap gap-x-4 gap-y-2 text-[11px] text-slate-400">
-    {items.filter(([key]) => enabled(key)).map(([label, color]) => <span key={label} className="flex items-center gap-1.5"><span className="h-0.5 w-4 rounded" style={{ backgroundColor: color }}/>{label}</span>)}
-  </div>
-}
 import type { ChartVisibility } from './ChartToolbar'
-
+const items: Array<[keyof ChartVisibility, string, string]> = [['ma5', 'MA5', '#f59e0b'], ['ma20', 'MA20', '#38bdf8'], ['ma60', 'MA60', '#a78bfa'], ['ma120', 'MA120', '#fb7185'], ['bollinger', '布林上／下軌', '#64748b'], ['zones', '支撐／壓力區', '#2fc59a']]
+export function IndicatorLegend({ visible }: { visible: ChartVisibility }) { return <div className="flex min-w-0 gap-x-4 gap-y-2 overflow-x-auto pb-1 text-[11px] text-slate-400">{items.filter(([key]) => visible[key]).map(([key, label, color]) => <span key={key} className="flex shrink-0 items-center gap-1.5"><span className="h-0.5 w-4 rounded" style={{ backgroundColor: color }}/>{label}</span>)}</div> }
