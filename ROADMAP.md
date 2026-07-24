@@ -1,5 +1,21 @@
 # GULI Roadmap
 
+<<<<<<< HEAD
+## Completed
+
+### GULI v1.2.0 — Dashboard 3.0
+
+- [x] 完成首屏資訊層級、Market Command Center、市場情緒、市場廣度與 Heatmap 整合。
+- [x] 完成 Official／Derived／Partial／Stale／Missing 資料語意與日期標示。
+- [x] 完成 360px 至 2560px 響應式、鍵盤操作、reduced motion、44px 觸控區與無水平溢出驗收。
+- [x] 保留 `guli-dashboard-widget-layout-v1` 與既有 Widget 排序相容性。
+- [x] 完成單一 Widget 錯誤隔離、Loading／Empty／Error／Stale 狀態及 GitHub Pages 路由檢查。
+- [x] Dashboard 3.0 已正式發布。
+
+## Pre-release Archive
+
+=======
+>>>>>>> origin/main
 ## GULI v1.2.0-beta.1 — Dashboard 3.0 Release Candidate
 
 - [x] 完成首屏資訊層級、Market Command Center、市場情緒、廣度與 Heatmap 整合驗收。

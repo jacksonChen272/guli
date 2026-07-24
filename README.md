@@ -1,5 +1,28 @@
 # 股勵 GULI
 
+<<<<<<< HEAD
+目前版本：**GULI v1.2.0**
+
+GULI 是以 React、TypeScript、Vite 建立的台股盤後資料與規則分析平台。網站部署於 GitHub Pages，Vite `base` 固定為 `/guli/`，React Router `basename` 固定為 `/guli`。
+
+## Dashboard 3.0
+
+Dashboard 3.0 已正式發布，以每日市場判讀為首屏主軸，讓使用者依序掌握資料可信度、Market Overview、市場情緒、市場廣度、Heatmap、今日機會與個人化 Widgets。所有資料仍由 `RepositoryHub` 統一提供；Dashboard 元件不直接讀取公開 JSON 或呼叫外部 API。
+
+- Market Command Center 集中顯示指數、成交值、市場方向、情緒、廣度與規則式摘要。
+- 資料狀態清楚區分 Official、Mixed、Partial、Stale、Missing，規則推導資訊另以 Derived 標示。
+- Market Breadth 與 Heatmap 提供市場多空結構及產業／個股強弱觀察。
+- 固定首屏區塊維持一致資訊層級；既有 Widgets 沿用 `guli-dashboard-widget-layout-v1` 保存排序。
+- 單一 Widget 讀取或渲染失敗時，只影響該區塊，並提供 Loading、Empty、Error、Stale 與重試狀態。
+- 響應式支援 360px 至 2560px，並包含鍵盤操作、焦點樣式、44px 觸控區及 `prefers-reduced-motion`。
+- GitHub Pages 維持 Vite `base: '/guli/'` 與 React Router `basename="/guli"`。
+
+本版本不調整 Decision、Technical、Health、Snapshot 公式，也不包含 Stock Page 3.0。
+
+## 發布歷程
+
+=======
+>>>>>>> origin/main
 ## Dashboard 3.0 Release Candidate
 
 Dashboard 3.0 以每日市場判讀為首屏主軸，依序呈現資料可信度、Market Overview、市場情緒、市場廣度、Heatmap、今日機會與既有個人化 Widgets。所有資料仍由 `RepositoryHub` 統一提供；Dashboard 元件不直接讀取公開 JSON 或呼叫外部 API。

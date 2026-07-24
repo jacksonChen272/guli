@@ -1,6 +1,19 @@
 # Changelog
 
+<<<<<<< HEAD
+## [1.2.0] - Dashboard 3.0 正式發布
+
+- Dashboard 3.0 正式上線，以 Market Overview、市場情緒、市場廣度與 Heatmap 建立清楚的首屏判讀流程。
+- 資料狀態明確區分 Official、Mixed、Partial、Stale、Missing，規則推導資訊另以 Derived 標示。
+- 固定首屏區塊保留一致的資訊層級；既有可拖曳 Widgets 繼續沿用 `guli-dashboard-widget-layout-v1` 與使用者排序。
+- 每個 Dashboard Widget 具備獨立 Loading、Empty、Error、Stale 狀態與錯誤隔離，單一區塊失敗不影響整頁。
+- 完成 360px 至 2560px 響應式、鍵盤操作、44px 觸控區與 `prefers-reduced-motion` 驗收。
+- 保留 RepositoryHub、Provider、Cache、Decision／Technical／Health／Snapshot 公式及 GitHub Pages 路由設定。
+
+## [1.2.0-beta.1] - Dashboard 3.0 Release Candidate（歷史紀錄）
+=======
 ## [1.2.0-beta.1] - Dashboard 3.0 Release Candidate
+>>>>>>> origin/main
 
 - 完成 Dashboard 3.0 首屏、資料狀態、Market Overview、市場廣度、Heatmap 與原有可拖曳 Widgets 的 release candidate 驗收。
 - 修正 Partial 資料被誤標為 Stale／Mixed 的狀態語意；Official、Mixed、Partial、Stale、Missing 現在各自獨立。
