@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.0-beta.1] - Dashboard 3.0 Release Candidate
+
+- 完成 Dashboard 3.0 首屏、資料狀態、Market Overview、市場廣度、Heatmap 與原有可拖曳 Widgets 的 release candidate 驗收。
+- 修正 Partial 資料被誤標為 Stale／Mixed 的狀態語意；Official、Mixed、Partial、Stale、Missing 現在各自獨立。
+- 為每個可拖曳 Dashboard Widget 加入錯誤隔離與區塊重試，單一 Widget 失敗不再影響整頁。
+- 強化既有 `guli-dashboard-widget-layout-v1` 的損壞 JSON、重設與 LocalStorage 封鎖相容測試。
+- 保留 RepositoryHub、Provider、Cache、Decision／Technical／Health／Snapshot 公式、GitHub Pages 路由與既有資料來源。
+- 本項為 Dashboard 3.0 發布候選文件；`package.json` 與 Sidebar 正式版本仍維持 1.1.1，待人工驗收後再升版。
+
 ## [1.1.1]
 
 - 建立可分批、限流、重試、續跑與單檔執行的 TWSE 上市普通股歷史行情回補管線；沿用既有 `twse-stock-history` 單一資料架構。
