@@ -1,4 +1,5 @@
 import { ArrowUpToLine } from 'lucide-react'
+import type { ReactNode } from 'react'
 import type { HeatmapColorMetric, HeatmapSizingMetric } from '../../types/marketHeatmap'
 import { Button } from '../ui/Button'
 import { Select } from '../ui/Select'
@@ -33,7 +34,7 @@ export function MarketHeatmapToolbar({
   onBack: () => void
 }) {
   return (
-    <div className="flex min-w-0 flex-col gap-3 border-b border-white/[.06] p-3 sm:flex-row sm:flex-wrap sm:items-end sm:p-4">
+    <div className="heatmap-toolbar flex min-w-0 flex-col gap-3 border-b border-white/[.06] p-3 sm:flex-row sm:flex-wrap sm:items-end sm:p-4">
       <Control label="顯示模式">
         <Select aria-label="熱力圖顯示模式" value={mode} onChange={(event) => onModeChange(event.target.value as HeatmapDisplayMode)}>
           <option value="industry">產業</option>
@@ -55,14 +56,14 @@ export function MarketHeatmapToolbar({
       </Control>
       {mode === 'stock' && (
         <Control label="個股範圍">
-          <div className="flex rounded-xl border border-white/[.07] p-1" role="group" aria-label="熱力圖個股數量">
+          <div className="heatmap-segment-control" role="group" aria-label="熱力圖個股數量">
             {[50, 100].map((limit) => (
               <button
                 key={limit}
                 type="button"
                 aria-pressed={stockLimit === limit}
                 onClick={() => onStockLimitChange(limit as 50 | 100)}
-                className={`min-h-11 flex-1 rounded-lg px-3 text-xs transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400/60 ${stockLimit === limit ? 'bg-brand-400/10 text-brand-300' : 'text-slate-500 hover:text-slate-300'}`}
+                className="heatmap-segment-control__button min-h-11"
               >
                 Top {limit}
               </button>
@@ -70,7 +71,16 @@ export function MarketHeatmapToolbar({
           </div>
         </Control>
       )}
-      {industryName && <Button className="sm:ml-auto" variant="ghost" onClick={onBack} icon={<ArrowUpToLine size={16}/>}>返回產業層級</Button>}
+      {industryName && (
+        <Button
+          className="sm:ml-auto"
+          variant="ghost"
+          onClick={onBack}
+          icon={<ArrowUpToLine size={16} strokeWidth={1.8} />}
+        >
+          返回產業層級
+        </Button>
+      )}
       {(!technicalAvailable || !decisionAvailable) && (
         <p className="w-full text-[11px] leading-5 text-slate-600">
           {!technicalAvailable && 'Technical 色彩停用：目前樣本沒有可用技術分數。 '}
@@ -81,6 +91,11 @@ export function MarketHeatmapToolbar({
   )
 }
 
-function Control({ label, children }: { label: string; children: React.ReactNode }) {
-  return <label className="min-w-0 flex-1 sm:max-w-48"><span className="mb-1.5 block text-xs text-slate-500">{label}</span>{children}</label>
+function Control({ label, children }: { label: string; children: ReactNode }) {
+  return (
+    <div className="min-w-0 flex-1 sm:max-w-48">
+      <span className="dashboard-label mb-1.5 block">{label}</span>
+      {children}
+    </div>
+  )
 }

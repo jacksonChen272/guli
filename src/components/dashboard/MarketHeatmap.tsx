@@ -24,6 +24,7 @@ interface ChartDatum {
   name: string
   value: number
   node: MarketHeatmapNode
+  marketRank: number
   itemStyle: { color: string }
 }
 
@@ -73,6 +74,8 @@ export function MarketHeatmap({
   const option = useMemo<EChartsOption>(() => ({
     animationDuration: 220,
     animationDurationUpdate: 180,
+    animationEasing: 'cubicOut',
+    animationEasingUpdate: 'cubicOut',
     tooltip: {
       trigger: 'item',
       confine: true,
@@ -81,8 +84,8 @@ export function MarketHeatmap({
       borderColor: 'rgba(255,255,255,.12)',
       textStyle: { color: '#dbe4e2', fontSize: 12 },
       formatter: (raw: unknown) => {
-        const node = (raw as { data?: ChartDatum }).data?.node
-        return node ? formatHeatmapTooltipHtml(node, colorMetric) : ''
+        const datum = (raw as { data?: ChartDatum }).data
+        return datum ? formatHeatmapTooltipHtml(datum.node, colorMetric, datum.marketRank) : ''
       },
     },
     series: [{
@@ -106,16 +109,23 @@ export function MarketHeatmap({
           return `${node.symbol ? `${node.symbol} ` : ''}${node.name}\n${percent}`
         },
       },
-      itemStyle: { borderColor: '#0a1114', borderWidth: 2, gapWidth: 2 },
+      itemStyle: { borderColor: '#0a1114', borderWidth: 2, gapWidth: 3, borderRadius: 4 },
       emphasis: {
         label: { color: '#fff', fontWeight: 'bold' },
-        itemStyle: { borderColor: 'rgba(255,255,255,.55)', borderWidth: 2 },
+        itemStyle: {
+          borderColor: 'rgba(83,217,178,.9)',
+          borderWidth: 3,
+          shadowBlur: 20,
+          shadowColor: 'rgba(0,0,0,.55)',
+          shadowOffsetY: 5,
+        },
       },
-      data: visualNodes.map((item): ChartDatum => ({
+      data: visualNodes.map((item, index): ChartDatum => ({
         id: item.id,
         name: item.name,
         value: item.value,
         node: item.node,
+        marketRank: index + 1,
         itemStyle: { color: resolveHeatmapColor(item.node, colorMetric).color },
       })),
     }],
