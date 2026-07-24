@@ -5,10 +5,19 @@ import type { DataPlatformStatus } from '../types/dataPlatformStatus'
 import type { DecisionResult } from '../types/decision'
 import type { IndustrySnapshot } from '../types/industrySnapshot'
 import type { MarketHeatmapDataset } from '../types/marketHeatmap'
-import type { InstitutionalMarketTotals } from '../types/officialInstitutionalData'
+import type { OfficialMarketOverview } from '../types/marketData'
+import type {
+  InstitutionalDatasetStatus,
+  InstitutionalMarketTotals,
+  OfficialStockInstitutionalRecord,
+} from '../types/officialInstitutionalData'
 import type { ScreenerDataset } from '../types/screener'
 import type { HotStockItem, MarketSentimentResult, TodaySummaryResult, WatchlistPreviewItem } from '../types/dashboardIntelligence'
-import { generateTodaySummary } from '../services/dashboard/TodaySummaryService'
+import {
+  generateDashboardSummaryItems,
+  generateTodaySummary,
+  type DashboardSummaryItem,
+} from '../services/dashboard/TodaySummaryService'
 import { calculateMarketSentiment } from '../services/dashboard/MarketSentimentService'
 
 export interface TodayCoverage {
@@ -26,8 +35,11 @@ export interface TodayCoverage {
 }
 
 export interface TodayDashboardData {
+  market: OfficialMarketOverview | null
   marketDecision: DecisionResult | null
   institutionTotals: InstitutionalMarketTotals | null
+  institutionalTopBuy: OfficialStockInstitutionalRecord[]
+  institutionStatus: InstitutionalDatasetStatus | null
   screener: ScreenerDataset | null
   industries: IndustrySnapshot | null
   platform: DataPlatformStatus | null
@@ -37,6 +49,7 @@ export interface TodayDashboardData {
   narrative: TodayMarketNarrative
   sentiment: MarketSentimentResult
   todaySummary: TodaySummaryResult
+  commandSummary: DashboardSummaryItem[]
   hotStocks: HotStockItem[]
   recentSearches: string[]
   watchlist: WatchlistPreviewItem[]
@@ -57,8 +70,11 @@ const emptyCoverage: TodayCoverage = {
 }
 
 const emptyData: TodayDashboardData = {
+  market: null,
   marketDecision: null,
   institutionTotals: null,
+  institutionalTopBuy: [],
+  institutionStatus: null,
   screener: null,
   industries: null,
   platform: null,
@@ -68,6 +84,7 @@ const emptyData: TodayDashboardData = {
   narrative: generateTodayMarketNarrative({ market: null, decision: null, institutions: null, industries: null, screener: null }),
   sentiment: calculateMarketSentiment({ market: null, institutions: null, decision: null }),
   todaySummary: generateTodaySummary({ sentiment: calculateMarketSentiment({ market: null, institutions: null, decision: null }), market: null, institutions: null }),
+  commandSummary: [],
   hotStocks: [],
   recentSearches: [],
   watchlist: [],
@@ -82,9 +99,10 @@ export function useTodayDashboardData() {
     setLoading(true)
     setError(null)
     let heatmapError: string | null = null
-    const [marketDecision, institutionTotals, screener, industries, platform, stocks, history, institutionStatus, heatmap, industryMapping, sentiment, hotStocks, watchlist] = await Promise.all([
+    const [marketDecision, institutionTotals, institutionalTopBuy, screener, industries, platform, stocks, history, institutionStatus, heatmap, industryMapping, sentiment, hotStocks, watchlist] = await Promise.all([
       repositoryHub.decisions.getMarketDecision().catch(() => null),
       repositoryHub.institutions.getMarketTotals().catch(() => null),
+      repositoryHub.institutions.getTopNetBuy('total', 5).catch(() => []),
       repositoryHub.screener.getDataset().catch(() => null),
       repositoryHub.industrySnapshots.getLatest().catch(() => null),
       repositoryHub.getPlatformDataStatus().catch(() => null),
@@ -104,8 +122,11 @@ export function useTodayDashboardData() {
     const commonStocks = stocks.filter((stock) => /^\d{4}$/.test(stock.symbol) && stock.instrumentType === 'stock')
     const market = repositoryHub.getSnapshot().overview.officialMarket ?? null
     setData({
+      market,
       marketDecision,
       institutionTotals,
+      institutionalTopBuy,
+      institutionStatus,
       screener,
       industries,
       platform,
@@ -114,6 +135,12 @@ export function useTodayDashboardData() {
       narrative: generateTodayMarketNarrative({ market, decision: marketDecision, institutions: institutionTotals, industries, screener }),
       sentiment,
       todaySummary: generateTodaySummary({ sentiment, market, institutions: institutionTotals }),
+      commandSummary: generateDashboardSummaryItems({
+        sentiment,
+        market,
+        institutions: institutionTotals,
+        industries,
+      }),
       hotStocks,
       recentSearches: repositoryHub.searchRepository.getRecentSymbols(10),
       watchlist,

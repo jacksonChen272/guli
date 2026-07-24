@@ -123,6 +123,11 @@ body::before {
   .page-enter { animation: page-enter var(--duration-normal) ease-out both; }
   .card-interactive { transition: transform var(--duration-normal), border-color var(--duration-normal), box-shadow var(--duration-normal); }
   .card-interactive:hover { transform: translateY(-2px); border-color: var(--border-strong); box-shadow: var(--shadow-card); }
+  .dashboard-card { border: 1px solid var(--border-subtle); border-radius: 20px; background: color-mix(in srgb, var(--bg-card) 97%, transparent); box-shadow: 0 16px 42px rgba(0,0,0,.18); }
+  .dashboard-card[data-state='stale'] { border-color: color-mix(in srgb, var(--warning) 24%, var(--border-subtle)); }
+  .dashboard-card[data-state='error'] { border-color: rgba(251,191,36,.22); }
+  .dashboard-card-enter { animation: dashboard-card-enter var(--duration-normal) ease-out both; }
+  .dashboard-number-enter { animation: dashboard-number-enter var(--duration-normal) ease-out both; }
 }
 
 @media (min-width: 640px) {
@@ -132,12 +137,33 @@ body::before {
 }
 
 .app-main-content { min-width: 0; overflow-x: clip; }
+.dashboard-alpha2,
+.dashboard-alpha2 > *,
+.dashboard-status-bar { max-width: 100%; }
+
+@media (min-width: 1280px) {
+  .dashboard-command-center > header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .dashboard-command-center > header p {
+    margin-top: 4px;
+    line-height: 1.35;
+  }
+  .dashboard-command-center {
+    min-height: 420px;
+  }
+}
 
 @media (max-width: 639px) {
   :root { --type-page-title: 1.75rem; }
   body { font-size: .9375rem; }
   .ui-card--spacious .ui-card__content { padding: var(--space-5); }
   .app-main-content { padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
+  .dashboard-alpha2 { gap: 16px; }
+  .dashboard-page-header p { max-width: 34ch; }
+  .dashboard-status-bar { overflow: hidden; }
+  .dashboard-command-center [class*='text-3xl'] { font-size: 1.65rem; }
 }
 
 @media (min-width: 1024px) {
@@ -145,6 +171,8 @@ body::before {
 }
 
 @keyframes page-enter { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes dashboard-card-enter { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes dashboard-number-enter { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes live-pulse { 0%,100% { opacity: 1; } 50% { opacity: .45; } }
 .live-dot { animation: live-pulse 2.2s ease-in-out infinite; }
 
