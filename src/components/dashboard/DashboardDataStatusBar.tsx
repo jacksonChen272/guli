@@ -5,15 +5,16 @@ import type { DataPlatformStatus } from '../../types/dataPlatformStatus'
 import type { DataStatus } from '../../types/api'
 import { Badge } from '../ui/Badge'
 
-export type DashboardOverallDataStatus = 'Official' | 'Mixed' | 'Stale' | 'Missing'
+export type DashboardOverallDataStatus = 'Official' | 'Mixed' | 'Partial' | 'Stale' | 'Missing'
 
 export function resolveDashboardOverallStatus(
   platform: DataPlatformStatus | null,
   resourceStatus: DataStatus,
 ): DashboardOverallDataStatus {
+  if (resourceStatus === 'stale') return 'Stale'
   if (!platform) return resourceStatus === 'loading' ? 'Mixed' : 'Missing'
-  if (resourceStatus === 'stale' || platform.stocks === 'Partial' || platform.institutions === 'Partial') return 'Stale'
   if (platform.market === 'Missing' && platform.stocks === 'Missing' && platform.institutions === 'Missing') return 'Missing'
+  if (platform.stocks === 'Partial' || platform.institutions === 'Partial' || platform.industry === 'Partial') return 'Partial'
   if (platform.allCoreOfficial && platform.industry === 'Official') return 'Official'
   return 'Mixed'
 }

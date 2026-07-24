@@ -7,7 +7,7 @@ const styles = readFileSync(new URL('../../../styles/index.css', import.meta.url
 
 describe('Dashboard alpha.3 visual regression contract', () => {
   it('keeps the single Dashboard 3.0 hierarchy and identifies the alpha.3 surface', () => {
-    expect(dashboard).toContain('data-dashboard-version="dashboard-3.0-alpha.3"')
+    expect(dashboard).toContain('data-dashboard-version="dashboard-3.0-beta.1"')
     expect(dashboard.match(/<MarketCommandCenter/g)).toHaveLength(1)
     expect(dashboard.indexOf('<MarketCommandCenter')).toBeLessThan(dashboard.indexOf('<MarketBreadthCard'))
     expect(dashboard.indexOf('<MarketBreadthCard')).toBeLessThan(dashboard.indexOf('<TodayOpportunitiesSection'))

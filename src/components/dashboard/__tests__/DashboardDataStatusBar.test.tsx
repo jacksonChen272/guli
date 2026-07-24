@@ -13,6 +13,16 @@ describe('DashboardDataStatusBar', () => {
     expect(resolveDashboardOverallStatus(null, 'error')).toBe('Missing')
   })
 
+  it('keeps partial coverage distinct from stale data', () => {
+    expect(resolveDashboardOverallStatus({ ...platformFixture, stocks: 'Partial' }, 'success')).toBe('Partial')
+    expect(resolveDashboardOverallStatus({ ...platformFixture, institutions: 'Partial' }, 'success')).toBe('Partial')
+    expect(resolveDashboardOverallStatus({ ...platformFixture, industry: 'Partial' }, 'success')).toBe('Partial')
+  })
+
+  it('only reports Official when every displayed dataset is official', () => {
+    expect(resolveDashboardOverallStatus({ ...platformFixture, industry: 'Official' }, 'success')).toBe('Official')
+  })
+
   it('renders one accessible disclosure with source and alert metadata', () => {
     const html = renderToStaticMarkup(
       <DashboardDataStatusBar

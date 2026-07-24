@@ -2,6 +2,8 @@ import { ArrowDown, ArrowUp, GripVertical } from 'lucide-react'
 import { useMemo, useState, type ReactNode } from 'react'
 import { repositoryHub } from '../../repositories/RepositoryHub'
 import type { DashboardWidgetId } from '../../types/dashboardIntelligence'
+import { DashboardDeferredWidget } from './DashboardDeferredWidget'
+import { DashboardWidgetErrorBoundary } from './DashboardWidgetErrorBoundary'
 
 export function mergeVisibleWidgetOrder(
   current: DashboardWidgetId[],
@@ -89,7 +91,11 @@ export function DashboardWidgetLayout({
               <ArrowDown size={16} aria-hidden="true" />
             </button>
           </div>
-          {renderWidget(id)}
+          <DashboardWidgetErrorBoundary widgetId={id}>
+            <DashboardDeferredWidget>
+              {renderWidget(id)}
+            </DashboardDeferredWidget>
+          </DashboardWidgetErrorBoundary>
         </section>
       ))}
     </div>

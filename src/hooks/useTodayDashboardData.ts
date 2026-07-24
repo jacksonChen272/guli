@@ -120,6 +120,11 @@ export function useTodayDashboardData() {
     ])
 
     const commonStocks = stocks.filter((stock) => /^\d{4}$/.test(stock.symbol) && stock.instrumentType === 'stock')
+    const coverageUniverse = Math.max(
+      commonStocks.length,
+      industryMapping.totalStocks,
+      institutionStatus?.recordCount ?? 0,
+    )
     const market = repositoryHub.getSnapshot().overview.officialMarket ?? null
     setData({
       market,
@@ -145,7 +150,7 @@ export function useTodayDashboardData() {
       recentSearches: repositoryHub.searchRepository.getRecentSymbols(10),
       watchlist,
       coverage: {
-        totalCommonStocks: industryMapping.totalStocks || commonStocks.length,
+        totalCommonStocks: coverageUniverse,
         officialStockCount: commonStocks.length,
         institutionalStockCount: institutionStatus?.recordCount ?? 0,
         historyStockCount: history?.availableSymbols ?? 0,

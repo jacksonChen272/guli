@@ -1,5 +1,15 @@
 # GULI Roadmap
 
+## GULI v1.2.0-beta.1 — Dashboard 3.0 Release Candidate
+
+- [x] 完成首屏資訊層級、Market Command Center、市場情緒、廣度與 Heatmap 整合驗收。
+- [x] 驗證 Official／Derived／Partial／Stale／Missing 資料語意與日期標示。
+- [x] 驗證 12 組指定 viewport、鍵盤操作、reduced motion、44px 觸控區與無水平溢出。
+- [x] 保留 `guli-dashboard-widget-layout-v1` 與既有 Widget 排序相容性。
+- [x] 完成單一 Widget 錯誤隔離、Loading／Empty／Error／Stale 狀態與 GitHub Pages 路由檢查。
+- [ ] 人工確認桌面、平板、手機截圖後，才可升級正式版本與合併 `main`。
+- [ ] Stock Page 3.0 留待後續獨立 Sprint，本階段不開發。
+
 ## GULI v1.1.1
 
 - [x] 建立 TWSE 歷史行情批次、限流、重試、續跑、驗證、Manifest 與報告基礎。

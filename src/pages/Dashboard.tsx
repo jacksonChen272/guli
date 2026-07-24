@@ -1,24 +1,25 @@
 import { AlertTriangle, CalendarDays, Clock3, LayoutDashboard, ShieldCheck } from 'lucide-react'
-import type { ReactNode } from 'react'
+import { lazy, type ReactNode } from 'react'
 import { DashboardWidgetLayout } from '../components/dashboard/DashboardWidgetLayout'
-import { DataCoverageSummary } from '../components/dashboard/DataCoverageSummary'
-import { HotStocksCard } from '../components/dashboard/HotStocksCard'
 import { MarketBreadthCard } from '../components/dashboard/MarketBreadthCard'
 import { MarketCommandCenter } from '../components/dashboard/MarketCommandCenter'
 import { MarketHeatmapSection } from '../components/dashboard/MarketHeatmapSection'
-import { MarketRanking } from '../components/dashboard/MarketRanking'
-import { RecentSearchCard } from '../components/dashboard/RecentSearchCard'
-import { TechnicalScreenerPreview } from '../components/dashboard/TechnicalScreenerPreview'
-import { TodayEventsCard } from '../components/dashboard/TodayEventsCard'
 import { TodayOpportunitiesSection } from '../components/dashboard/TodayOpportunitiesSection'
-import { TodayRecommendations } from '../components/dashboard/TodayRecommendations'
-import { WatchlistPreview } from '../components/dashboard/WatchlistPreview'
-import { IndustryRotationPreview } from '../components/industry/IndustryRotationPreview'
 import { Badge } from '../components/ui/Badge'
 import { Card } from '../components/ui/Card'
 import { useTodayDashboardData } from '../hooks/useTodayDashboardData'
 import { formatDate, formatDateTime } from '../lib/formatters'
 import type { DashboardWidgetId } from '../types/dashboardIntelligence'
+
+const DataCoverageSummary = lazy(() => import('../components/dashboard/DataCoverageSummary').then((module) => ({ default: module.DataCoverageSummary })))
+const HotStocksCard = lazy(() => import('../components/dashboard/HotStocksCard').then((module) => ({ default: module.HotStocksCard })))
+const MarketRanking = lazy(() => import('../components/dashboard/MarketRanking').then((module) => ({ default: module.MarketRanking })))
+const RecentSearchCard = lazy(() => import('../components/dashboard/RecentSearchCard').then((module) => ({ default: module.RecentSearchCard })))
+const TechnicalScreenerPreview = lazy(() => import('../components/dashboard/TechnicalScreenerPreview').then((module) => ({ default: module.TechnicalScreenerPreview })))
+const TodayEventsCard = lazy(() => import('../components/dashboard/TodayEventsCard').then((module) => ({ default: module.TodayEventsCard })))
+const TodayRecommendations = lazy(() => import('../components/dashboard/TodayRecommendations').then((module) => ({ default: module.TodayRecommendations })))
+const WatchlistPreview = lazy(() => import('../components/dashboard/WatchlistPreview').then((module) => ({ default: module.WatchlistPreview })))
+const IndustryRotationPreview = lazy(() => import('../components/industry/IndustryRotationPreview').then((module) => ({ default: module.IndustryRotationPreview })))
 
 const FIXED_WIDGETS: DashboardWidgetId[] = ['hero', 'sentiment', 'summary', 'heatmap']
 
@@ -28,9 +29,11 @@ export function Dashboard() {
     ? 'Partial'
     : data.platform.allCoreOfficial && data.platform.industry === 'Official'
       ? 'Official'
-      : data.platform.market === 'Official' && data.platform.stocks !== 'Missing' && data.platform.institutions !== 'Missing'
-        ? 'Mixed'
-        : 'Partial'
+      : data.platform.stocks === 'Partial' || data.platform.institutions === 'Partial' || data.platform.industry === 'Partial'
+        ? 'Partial'
+        : data.platform.market === 'Missing' && data.platform.stocks === 'Missing' && data.platform.institutions === 'Missing'
+          ? 'Missing'
+          : 'Mixed'
   const dataStatusTone = dataStatus === 'Official' ? 'info' : dataStatus === 'Mixed' ? 'brand' : 'warning'
 
   const renderWidget = (id: DashboardWidgetId): ReactNode => {
@@ -47,7 +50,7 @@ export function Dashboard() {
   }
 
   return (
-    <div className="dashboard-alpha2 dashboard-alpha3 min-w-0 space-y-6 page-enter" data-testid="today-dashboard" data-dashboard-version="dashboard-3.0-alpha.3">
+    <div className="dashboard-alpha2 dashboard-alpha3 min-w-0 space-y-6 page-enter" data-testid="today-dashboard" data-dashboard-version="dashboard-3.0-beta.1">
       <header className="dashboard-page-header flex min-w-0 flex-col gap-4 sm:flex-row sm:items-end sm:justify-between" aria-labelledby="dashboard-title">
         <div className="min-w-0">
           <nav aria-label="麵包屑">
@@ -58,7 +61,7 @@ export function Dashboard() {
             </ol>
           </nav>
           <div className="mt-2 flex flex-wrap items-center gap-2">
-            <Badge tone="brand">Dashboard 3.0 Alpha</Badge>
+            <Badge tone="brand">Dashboard 3.0 Beta</Badge>
             <Badge tone={dataStatusTone}>{dataStatus}</Badge>
           </div>
           <div className="mt-2 flex items-center gap-3">
