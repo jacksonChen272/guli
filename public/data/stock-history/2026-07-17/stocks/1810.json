@@ -1,0 +1,60 @@
+{
+  "symbol": "1810",
+  "name": "和成",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 27.5,
+    "high": 29.6,
+    "low": 27,
+    "close": 27.15,
+    "change": -1.75,
+    "changePercent": -6.06,
+    "tradeVolume": 19243717,
+    "transactionCount": 10294,
+    "tradeValue": 534445244,
+    "peRatio": 7.18
+  },
+  "dailyRangePercent": 9.63,
+  "turnoverAverageValue": 51918.13,
+  "pricePosition": 5.8,
+  "liquidityScore": 87.1,
+  "priceStrengthScore": 16.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 54.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.63% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

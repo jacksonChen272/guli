@@ -1,0 +1,53 @@
+{
+  "symbol": "2439",
+  "name": "美律",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 84.7,
+    "high": 85.5,
+    "low": 82.1,
+    "close": 82.1,
+    "change": -3.7,
+    "changePercent": -4.31,
+    "tradeVolume": 2247959,
+    "transactionCount": 2501,
+    "tradeValue": 187666447,
+    "peRatio": 16.69
+  },
+  "dailyRangePercent": 4.14,
+  "turnoverAverageValue": 75036.56,
+  "pricePosition": 0,
+  "liquidityScore": 70.1,
+  "priceStrengthScore": 18.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 46,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

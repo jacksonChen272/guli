@@ -1,0 +1,55 @@
+{
+  "symbol": "1531",
+  "name": "高林股",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.9,
+    "high": 13,
+    "low": 12.85,
+    "close": 12.9,
+    "change": -0.2,
+    "changePercent": -1.53,
+    "tradeVolume": 197732,
+    "transactionCount": 132,
+    "tradeValue": 2552665,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.17,
+  "turnoverAverageValue": 19338.37,
+  "pricePosition": 33.3,
+  "liquidityScore": 16.7,
+  "priceStrengthScore": 40.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 30.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

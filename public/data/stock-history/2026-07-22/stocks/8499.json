@@ -1,0 +1,53 @@
+{
+  "symbol": "8499",
+  "name": "鼎炫-KY",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 270,
+    "high": 275.5,
+    "low": 269.5,
+    "close": 269.5,
+    "change": 1,
+    "changePercent": 0.37,
+    "tradeVolume": 37767,
+    "transactionCount": 68,
+    "tradeValue": 10236618,
+    "peRatio": 27
+  },
+  "dailyRangePercent": 2.23,
+  "turnoverAverageValue": 150538.5,
+  "pricePosition": 0,
+  "liquidityScore": 22.1,
+  "priceStrengthScore": 29.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 30,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

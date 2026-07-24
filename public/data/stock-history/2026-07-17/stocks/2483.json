@@ -1,0 +1,67 @@
+{
+  "symbol": "2483",
+  "name": "百容",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 45.35,
+    "high": 47.25,
+    "low": 43.5,
+    "close": 43.5,
+    "change": -4.8,
+    "changePercent": -9.94,
+    "tradeVolume": 4113165,
+    "transactionCount": 2614,
+    "tradeValue": 184616649,
+    "peRatio": 47.28
+  },
+  "dailyRangePercent": 8.62,
+  "turnoverAverageValue": 70626.11,
+  "pricePosition": 0,
+  "liquidityScore": 73.6,
+  "priceStrengthScore": 6.1,
+  "valuationRiskScore": 75,
+  "snapshotScore": 33.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.94% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.62% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

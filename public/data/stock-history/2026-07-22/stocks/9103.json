@@ -1,0 +1,55 @@
+{
+  "symbol": "9103",
+  "name": "美德醫療-DR",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 5.36,
+    "high": 5.72,
+    "low": 5.34,
+    "close": 5.5,
+    "change": 0.21,
+    "changePercent": 3.97,
+    "tradeVolume": 4184405,
+    "transactionCount": 1237,
+    "tradeValue": 23272508,
+    "peRatio": null
+  },
+  "dailyRangePercent": 7.12,
+  "turnoverAverageValue": 18813.67,
+  "pricePosition": 42.1,
+  "liquidityScore": 64.2,
+  "priceStrengthScore": 60.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 62,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

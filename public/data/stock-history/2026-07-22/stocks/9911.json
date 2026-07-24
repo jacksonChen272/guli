@@ -1,0 +1,53 @@
+{
+  "symbol": "9911",
+  "name": "櫻花",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 83.2,
+    "high": 83.7,
+    "low": 82.3,
+    "close": 82.4,
+    "change": -0.8,
+    "changePercent": -0.96,
+    "tradeVolume": 547389,
+    "transactionCount": 1110,
+    "tradeValue": 45200947,
+    "peRatio": 12.96
+  },
+  "dailyRangePercent": 1.7,
+  "turnoverAverageValue": 40721.57,
+  "pricePosition": 7.1,
+  "liquidityScore": 56.1,
+  "priceStrengthScore": 28.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 48.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

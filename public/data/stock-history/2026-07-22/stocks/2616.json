@@ -1,0 +1,55 @@
+{
+  "symbol": "2616",
+  "name": "山隆",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.7,
+    "high": 13.7,
+    "low": 13.55,
+    "close": 13.6,
+    "change": -0.1,
+    "changePercent": -0.73,
+    "tradeVolume": 157901,
+    "transactionCount": 230,
+    "tradeValue": 2150811,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.11,
+  "turnoverAverageValue": 9351.35,
+  "pricePosition": 33.3,
+  "liquidityScore": 24.3,
+  "priceStrengthScore": 38.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 32.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

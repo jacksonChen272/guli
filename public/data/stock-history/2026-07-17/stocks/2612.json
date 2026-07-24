@@ -1,0 +1,53 @@
+{
+  "symbol": "2612",
+  "name": "中航",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 53.8,
+    "high": 53.8,
+    "low": 51.2,
+    "close": 51.3,
+    "change": -2.9,
+    "changePercent": -5.35,
+    "tradeVolume": 825924,
+    "transactionCount": 634,
+    "tradeValue": 42879298,
+    "peRatio": 9.34
+  },
+  "dailyRangePercent": 5.08,
+  "turnoverAverageValue": 67632.96,
+  "pricePosition": 3.8,
+  "liquidityScore": 49.5,
+  "priceStrengthScore": 17.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 41.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 3.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

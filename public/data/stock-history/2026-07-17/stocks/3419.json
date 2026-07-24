@@ -1,0 +1,55 @@
+{
+  "symbol": "3419",
+  "name": "譁裕",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.35,
+    "high": 12.65,
+    "low": 12.3,
+    "close": 12.55,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 373426,
+    "transactionCount": 163,
+    "tradeValue": 4660065,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.85,
+  "turnoverAverageValue": 28589.36,
+  "pricePosition": 71.4,
+  "liquidityScore": 24.3,
+  "priceStrengthScore": 61.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 45.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

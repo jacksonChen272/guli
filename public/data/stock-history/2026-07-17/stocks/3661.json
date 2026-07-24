@@ -1,0 +1,60 @@
+{
+  "symbol": "3661",
+  "name": "世芯-KY",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 3585,
+    "high": 3655,
+    "low": 3480,
+    "close": 3480,
+    "change": -290,
+    "changePercent": -7.69,
+    "tradeVolume": 2162718,
+    "transactionCount": 23420,
+    "tradeValue": 7695166250,
+    "peRatio": 51
+  },
+  "dailyRangePercent": 5.03,
+  "turnoverAverageValue": 328572.43,
+  "pricePosition": 0,
+  "liquidityScore": 86.9,
+  "priceStrengthScore": 11.2,
+  "valuationRiskScore": 75,
+  "snapshotScore": 40.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.69% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

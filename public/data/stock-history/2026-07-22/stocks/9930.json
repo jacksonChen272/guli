@@ -1,0 +1,53 @@
+{
+  "symbol": "9930",
+  "name": "中聯資源",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 63.8,
+    "high": 64,
+    "low": 62.7,
+    "close": 62.8,
+    "change": -1.3,
+    "changePercent": -2.03,
+    "tradeVolume": 369373,
+    "transactionCount": 417,
+    "tradeValue": 23347747,
+    "peRatio": 13.28
+  },
+  "dailyRangePercent": 2.07,
+  "turnoverAverageValue": 55989.8,
+  "pricePosition": 7.7,
+  "liquidityScore": 46.6,
+  "priceStrengthScore": 26.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 44.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

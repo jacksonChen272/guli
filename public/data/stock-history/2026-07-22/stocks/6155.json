@@ -1,0 +1,60 @@
+{
+  "symbol": "6155",
+  "name": "鈞寶",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 64.1,
+    "high": 64.8,
+    "low": 60.1,
+    "close": 60.2,
+    "change": 0.7,
+    "changePercent": 1.18,
+    "tradeVolume": 2083955,
+    "transactionCount": 1774,
+    "tradeValue": 128300162,
+    "peRatio": 120.4
+  },
+  "dailyRangePercent": 7.82,
+  "turnoverAverageValue": 72322.53,
+  "pricePosition": 2.1,
+  "liquidityScore": 70.7,
+  "priceStrengthScore": 31.9,
+  "valuationRiskScore": 90,
+  "snapshotScore": 41.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 2.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 120.40 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

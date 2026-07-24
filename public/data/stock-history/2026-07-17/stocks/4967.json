@@ -1,0 +1,60 @@
+{
+  "symbol": "4967",
+  "name": "十銓",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 217,
+    "high": 224.5,
+    "low": 208,
+    "close": 209,
+    "change": -16.5,
+    "changePercent": -7.32,
+    "tradeVolume": 3409697,
+    "transactionCount": 4135,
+    "tradeValue": 728633903,
+    "peRatio": 5.35
+  },
+  "dailyRangePercent": 7.93,
+  "turnoverAverageValue": 176211.34,
+  "pricePosition": 6.1,
+  "liquidityScore": 79.8,
+  "priceStrengthScore": 14.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 50.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.32% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

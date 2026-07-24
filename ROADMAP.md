@@ -1,5 +1,6 @@
 # GULI Roadmap
 
+<<<<<<< HEAD
 ## Completed
 
 ### GULI v1.2.0 — Dashboard 3.0
@@ -13,6 +14,8 @@
 
 ## Pre-release Archive
 
+=======
+>>>>>>> origin/main
 ## GULI v1.2.0-beta.1 — Dashboard 3.0 Release Candidate
 
 - [x] 完成首屏資訊層級、Market Command Center、市場情緒、廣度與 Heatmap 整合驗收。

@@ -1,0 +1,60 @@
+{
+  "symbol": "5484",
+  "name": "慧友",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 43.4,
+    "high": 43.4,
+    "low": 41.8,
+    "close": 42.05,
+    "change": 0.35,
+    "changePercent": 0.84,
+    "tradeVolume": 320190,
+    "transactionCount": 586,
+    "tradeValue": 13593319,
+    "peRatio": 113.65
+  },
+  "dailyRangePercent": 3.83,
+  "turnoverAverageValue": 23196.79,
+  "pricePosition": 15.6,
+  "liquidityScore": 42.5,
+  "priceStrengthScore": 35.9,
+  "valuationRiskScore": 90,
+  "snapshotScore": 33,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.6 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 113.65 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

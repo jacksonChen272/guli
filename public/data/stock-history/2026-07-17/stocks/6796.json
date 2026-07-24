@@ -1,0 +1,69 @@
+{
+  "symbol": "6796",
+  "name": "晉弘",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 59.2,
+    "high": 59.9,
+    "low": 57.3,
+    "close": 57.4,
+    "change": -1.6,
+    "changePercent": -2.71,
+    "tradeVolume": 72728,
+    "transactionCount": 64,
+    "tradeValue": 4218435,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.54,
+  "turnoverAverageValue": 65913.05,
+  "pricePosition": 3.8,
+  "liquidityScore": 13.2,
+  "priceStrengthScore": 23.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 19.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 3.8 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.2 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

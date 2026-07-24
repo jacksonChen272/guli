@@ -1,0 +1,53 @@
+{
+  "symbol": "2451",
+  "name": "創見",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 242.5,
+    "high": 252.5,
+    "low": 241.5,
+    "close": 241.5,
+    "change": 6.5,
+    "changePercent": 2.77,
+    "tradeVolume": 3962363,
+    "transactionCount": 3863,
+    "tradeValue": 971794460,
+    "peRatio": 7.81
+  },
+  "dailyRangePercent": 4.55,
+  "turnoverAverageValue": 251564.71,
+  "pricePosition": 0,
+  "liquidityScore": 84.6,
+  "priceStrengthScore": 34.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 61.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

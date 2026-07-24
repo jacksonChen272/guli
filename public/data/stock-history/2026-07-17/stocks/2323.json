@@ -1,0 +1,53 @@
+{
+  "symbol": "2323",
+  "name": "中環",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.7,
+    "high": 10.75,
+    "low": 10.2,
+    "close": 10.25,
+    "change": -0.7,
+    "changePercent": -6.39,
+    "tradeVolume": 12749640,
+    "transactionCount": 3033,
+    "tradeValue": 132474010,
+    "peRatio": 4.7
+  },
+  "dailyRangePercent": 5.39,
+  "turnoverAverageValue": 43677.55,
+  "pricePosition": 9.1,
+  "liquidityScore": 76.2,
+  "priceStrengthScore": 17.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 50.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

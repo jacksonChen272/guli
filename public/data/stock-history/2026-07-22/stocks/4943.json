@@ -1,0 +1,62 @@
+{
+  "symbol": "4943",
+  "name": "康控-KY",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 8.71,
+    "high": 8.71,
+    "low": 8.5,
+    "close": 8.7,
+    "change": -0.01,
+    "changePercent": -0.11,
+    "tradeVolume": 17202,
+    "transactionCount": 15,
+    "tradeValue": 147346,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.47,
+  "turnoverAverageValue": 9823.07,
+  "pricePosition": 95.2,
+  "liquidityScore": 2,
+  "priceStrengthScore": 61.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 35.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 2.0 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

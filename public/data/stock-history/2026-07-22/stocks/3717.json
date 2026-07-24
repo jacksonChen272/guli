@@ -1,0 +1,60 @@
+{
+  "symbol": "3717",
+  "name": "聯嘉投控",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 22.05,
+    "high": 22.5,
+    "low": 21.8,
+    "close": 21.85,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 2475953,
+    "transactionCount": 1101,
+    "tradeValue": 54457462,
+    "peRatio": 273.13
+  },
+  "dailyRangePercent": 3.21,
+  "turnoverAverageValue": 49461.82,
+  "pricePosition": 7.1,
+  "liquidityScore": 66.1,
+  "priceStrengthScore": 31,
+  "valuationRiskScore": 90,
+  "snapshotScore": 39.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 273.13 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

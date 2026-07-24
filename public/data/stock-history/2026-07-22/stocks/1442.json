@@ -1,0 +1,53 @@
+{
+  "symbol": "1442",
+  "name": "名軒",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 30.2,
+    "high": 30.2,
+    "low": 29.1,
+    "close": 29.15,
+    "change": -0.9,
+    "changePercent": -3,
+    "tradeVolume": 459186,
+    "transactionCount": 439,
+    "tradeValue": 13566534,
+    "peRatio": 14.87
+  },
+  "dailyRangePercent": 3.78,
+  "turnoverAverageValue": 30903.27,
+  "pricePosition": 4.5,
+  "liquidityScore": 43.8,
+  "priceStrengthScore": 23.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 41.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 4.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

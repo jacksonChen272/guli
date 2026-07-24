@@ -1,0 +1,67 @@
+{
+  "symbol": "3665",
+  "name": "貿聯-KY",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 1855,
+    "high": 1915,
+    "low": 1765,
+    "close": 1765,
+    "change": -190,
+    "changePercent": -9.72,
+    "tradeVolume": 3375931,
+    "transactionCount": 8976,
+    "tradeValue": 6200655565,
+    "peRatio": 35.62
+  },
+  "dailyRangePercent": 8.5,
+  "turnoverAverageValue": 690803.87,
+  "pricePosition": 0,
+  "liquidityScore": 87.5,
+  "priceStrengthScore": 6.6,
+  "valuationRiskScore": 55,
+  "snapshotScore": 42.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.72% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.50% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

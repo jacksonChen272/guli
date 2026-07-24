@@ -1,0 +1,55 @@
+{
+  "symbol": "2929",
+  "name": "淘帝-KY",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 6,
+    "high": 6.05,
+    "low": 5.91,
+    "close": 6,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 176060,
+    "transactionCount": 111,
+    "tradeValue": 1051228,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.37,
+  "turnoverAverageValue": 9470.52,
+  "pricePosition": 64.3,
+  "liquidityScore": 18.6,
+  "priceStrengthScore": 55,
+  "valuationRiskScore": null,
+  "snapshotScore": 39.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

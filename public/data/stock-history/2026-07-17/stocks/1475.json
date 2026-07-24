@@ -1,0 +1,53 @@
+{
+  "symbol": "1475",
+  "name": "業旺",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 27.3,
+    "high": 27.3,
+    "low": 27.3,
+    "close": 27.3,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 10648,
+    "transactionCount": 11,
+    "tradeValue": 293767,
+    "peRatio": 10.71
+  },
+  "dailyRangePercent": 0,
+  "turnoverAverageValue": 26706.09,
+  "pricePosition": 50,
+  "liquidityScore": 1.2,
+  "priceStrengthScore": 50,
+  "valuationRiskScore": 20,
+  "snapshotScore": 38.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 1.2 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

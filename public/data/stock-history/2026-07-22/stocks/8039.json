@@ -1,0 +1,60 @@
+{
+  "symbol": "8039",
+  "name": "台虹",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 226.5,
+    "high": 233,
+    "low": 219,
+    "close": 233,
+    "change": 21,
+    "changePercent": 9.91,
+    "tradeVolume": 27683012,
+    "transactionCount": 18445,
+    "tradeValue": 6252560702,
+    "peRatio": 98.31
+  },
+  "dailyRangePercent": 6.39,
+  "turnoverAverageValue": 338984.04,
+  "pricePosition": 100,
+  "liquidityScore": 96.2,
+  "priceStrengthScore": 93.8,
+  "valuationRiskScore": 90,
+  "snapshotScore": 77.9,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.91% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 98.31 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

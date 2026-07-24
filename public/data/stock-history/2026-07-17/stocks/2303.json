@@ -1,0 +1,60 @@
+{
+  "symbol": "2303",
+  "name": "聯電",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 145.5,
+    "high": 148,
+    "low": 144,
+    "close": 144,
+    "change": -16,
+    "changePercent": -10,
+    "tradeVolume": 252067369,
+    "transactionCount": 122581,
+    "tradeValue": 36420104789,
+    "peRatio": 36.18
+  },
+  "dailyRangePercent": 2.78,
+  "turnoverAverageValue": 297110.52,
+  "pricePosition": 0,
+  "liquidityScore": 99.7,
+  "priceStrengthScore": 6,
+  "valuationRiskScore": 55,
+  "snapshotScore": 46.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -10.00% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

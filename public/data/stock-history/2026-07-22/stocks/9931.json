@@ -1,0 +1,60 @@
+{
+  "symbol": "9931",
+  "name": "欣高",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 33.75,
+    "high": 33.8,
+    "low": 33.55,
+    "close": 33.6,
+    "change": -0.3,
+    "changePercent": -0.88,
+    "tradeVolume": 33551,
+    "transactionCount": 47,
+    "tradeValue": 1129563,
+    "peRatio": 14.12
+  },
+  "dailyRangePercent": 0.75,
+  "turnoverAverageValue": 24033.26,
+  "pricePosition": 20,
+  "liquidityScore": 9.5,
+  "priceStrengthScore": 33.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 34.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 9.5 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

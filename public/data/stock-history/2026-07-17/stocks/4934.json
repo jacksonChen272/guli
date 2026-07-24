@@ -1,0 +1,62 @@
+{
+  "symbol": "4934",
+  "name": "太極",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.05,
+    "high": 16.05,
+    "low": 15.2,
+    "close": 15.25,
+    "change": -1.05,
+    "changePercent": -6.44,
+    "tradeVolume": 1266801,
+    "transactionCount": 689,
+    "tradeValue": 19585832,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.59,
+  "turnoverAverageValue": 28426.46,
+  "pricePosition": 5.9,
+  "liquidityScore": 47.2,
+  "priceStrengthScore": 16.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 29.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.9 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

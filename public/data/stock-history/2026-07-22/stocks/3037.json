@@ -1,0 +1,60 @@
+{
+  "symbol": "3037",
+  "name": "欣興",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 876,
+    "high": 907,
+    "low": 876,
+    "close": 907,
+    "change": 82,
+    "changePercent": 9.94,
+    "tradeVolume": 25034100,
+    "transactionCount": 37806,
+    "tradeValue": 22400818846,
+    "peRatio": 133.38
+  },
+  "dailyRangePercent": 3.54,
+  "turnoverAverageValue": 592520.2,
+  "pricePosition": 100,
+  "liquidityScore": 97.8,
+  "priceStrengthScore": 93.9,
+  "valuationRiskScore": 90,
+  "snapshotScore": 78.5,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.94% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 133.38 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

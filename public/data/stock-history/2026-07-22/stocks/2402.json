@@ -1,0 +1,53 @@
+{
+  "symbol": "2402",
+  "name": "毅嘉",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 59.4,
+    "high": 59.8,
+    "low": 58.6,
+    "close": 58.6,
+    "change": 0.6,
+    "changePercent": 1.03,
+    "tradeVolume": 1100959,
+    "transactionCount": 1050,
+    "tradeValue": 65154322,
+    "peRatio": 30.05
+  },
+  "dailyRangePercent": 2.05,
+  "turnoverAverageValue": 62051.74,
+  "pricePosition": 0,
+  "liquidityScore": 62.2,
+  "priceStrengthScore": 30.8,
+  "valuationRiskScore": 55,
+  "snapshotScore": 44.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "7791",
+  "name": "皇家可口",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 62.3,
+    "high": 62.3,
+    "low": 62,
+    "close": 62.1,
+    "change": -0.8,
+    "changePercent": -1.27,
+    "tradeVolume": 27365,
+    "transactionCount": 50,
+    "tradeValue": 1700996,
+    "peRatio": 13.56
+  },
+  "dailyRangePercent": 0.48,
+  "turnoverAverageValue": 34019.92,
+  "pricePosition": 33.3,
+  "liquidityScore": 10.9,
+  "priceStrengthScore": 37.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 36.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.9 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

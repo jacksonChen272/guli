@@ -1,0 +1,60 @@
+{
+  "symbol": "2462",
+  "name": "良得電",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 21.2,
+    "high": 21.2,
+    "low": 20.4,
+    "close": 20.45,
+    "change": -0.9,
+    "changePercent": -4.22,
+    "tradeVolume": 416678,
+    "transactionCount": 556,
+    "tradeValue": 8607009,
+    "peRatio": 292.14
+  },
+  "dailyRangePercent": 3.92,
+  "turnoverAverageValue": 15480.23,
+  "pricePosition": 6.3,
+  "liquidityScore": 33.1,
+  "priceStrengthScore": 21.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 23.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 292.14 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

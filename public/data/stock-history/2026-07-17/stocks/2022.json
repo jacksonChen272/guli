@@ -1,0 +1,62 @@
+{
+  "symbol": "2022",
+  "name": "聚亨",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 7.91,
+    "high": 7.91,
+    "low": 7.6,
+    "close": 7.62,
+    "change": -0.29,
+    "changePercent": -3.67,
+    "tradeVolume": 941354,
+    "transactionCount": 720,
+    "tradeValue": 7227711,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.08,
+  "turnoverAverageValue": 10038.49,
+  "pricePosition": 6.5,
+  "liquidityScore": 39,
+  "priceStrengthScore": 22.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 29.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.5 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

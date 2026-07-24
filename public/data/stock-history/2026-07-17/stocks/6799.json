@@ -1,0 +1,67 @@
+{
+  "symbol": "6799",
+  "name": "來頡",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 88.8,
+    "high": 88.8,
+    "low": 82,
+    "close": 82.2,
+    "change": -7.6,
+    "changePercent": -8.46,
+    "tradeVolume": 606495,
+    "transactionCount": 715,
+    "tradeValue": 51443095,
+    "peRatio": 22.64
+  },
+  "dailyRangePercent": 8.29,
+  "turnoverAverageValue": 71948.38,
+  "pricePosition": 2.9,
+  "liquidityScore": 48.9,
+  "priceStrengthScore": 10.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 34.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.46% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.29% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 2.9 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

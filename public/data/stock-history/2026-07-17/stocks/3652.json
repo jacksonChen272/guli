@@ -1,0 +1,53 @@
+{
+  "symbol": "3652",
+  "name": "精聯",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 30.05,
+    "high": 30.05,
+    "low": 28.8,
+    "close": 29,
+    "change": -1.8,
+    "changePercent": -5.84,
+    "tradeVolume": 260971,
+    "transactionCount": 206,
+    "tradeValue": 7620869,
+    "peRatio": 20.71
+  },
+  "dailyRangePercent": 4.34,
+  "turnoverAverageValue": 36994.51,
+  "pricePosition": 16,
+  "liquidityScore": 25.2,
+  "priceStrengthScore": 21,
+  "valuationRiskScore": 35,
+  "snapshotScore": 31.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

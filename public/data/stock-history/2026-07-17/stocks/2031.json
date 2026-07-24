@@ -1,0 +1,53 @@
+{
+  "symbol": "2031",
+  "name": "新光鋼",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 40.4,
+    "high": 40.45,
+    "low": 39.15,
+    "close": 39.35,
+    "change": -1.1,
+    "changePercent": -2.72,
+    "tradeVolume": 894588,
+    "transactionCount": 736,
+    "tradeValue": 35564044,
+    "peRatio": 8.61
+  },
+  "dailyRangePercent": 3.32,
+  "turnoverAverageValue": 48320.71,
+  "pricePosition": 15.4,
+  "liquidityScore": 48.7,
+  "priceStrengthScore": 27.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 45.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

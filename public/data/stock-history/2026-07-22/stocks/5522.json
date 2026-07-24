@@ -1,0 +1,53 @@
+{
+  "symbol": "5522",
+  "name": "遠雄",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 68.8,
+    "high": 68.9,
+    "low": 66.1,
+    "close": 66.1,
+    "change": -2.5,
+    "changePercent": -3.64,
+    "tradeVolume": 1041341,
+    "transactionCount": 1043,
+    "tradeValue": 69774314,
+    "peRatio": 6.99
+  },
+  "dailyRangePercent": 4.24,
+  "turnoverAverageValue": 66897.71,
+  "pricePosition": 0,
+  "liquidityScore": 62,
+  "priceStrengthScore": 20.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 46.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

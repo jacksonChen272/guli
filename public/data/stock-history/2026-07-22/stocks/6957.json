@@ -1,0 +1,53 @@
+{
+  "symbol": "6957",
+  "name": "裕慶-KY",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 254,
+    "high": 257.5,
+    "low": 252.5,
+    "close": 252.5,
+    "change": -0.5,
+    "changePercent": -0.2,
+    "tradeVolume": 209467,
+    "transactionCount": 237,
+    "tradeValue": 53351078,
+    "peRatio": 23.91
+  },
+  "dailyRangePercent": 1.98,
+  "turnoverAverageValue": 225110.03,
+  "pricePosition": 0,
+  "liquidityScore": 45.3,
+  "priceStrengthScore": 28.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 41.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

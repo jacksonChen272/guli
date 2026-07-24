@@ -1,0 +1,53 @@
+{
+  "symbol": "2428",
+  "name": "興勤",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 262,
+    "high": 265.5,
+    "low": 255.5,
+    "close": 257,
+    "change": 4.5,
+    "changePercent": 1.78,
+    "tradeVolume": 1183534,
+    "transactionCount": 1848,
+    "tradeValue": 309594268,
+    "peRatio": 23.36
+  },
+  "dailyRangePercent": 3.91,
+  "turnoverAverageValue": 167529.37,
+  "pricePosition": 15,
+  "liquidityScore": 71.9,
+  "priceStrengthScore": 37.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 55.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

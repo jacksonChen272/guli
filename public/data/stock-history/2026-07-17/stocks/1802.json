@@ -1,0 +1,67 @@
+{
+  "symbol": "1802",
+  "name": "台玻",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 59.5,
+    "high": 59.5,
+    "low": 56.6,
+    "close": 56.6,
+    "change": -5.1,
+    "changePercent": -8.27,
+    "tradeVolume": 34186803,
+    "transactionCount": 25057,
+    "tradeValue": 1981840216,
+    "peRatio": 435.38
+  },
+  "dailyRangePercent": 5.12,
+  "turnoverAverageValue": 79093.28,
+  "pricePosition": 0,
+  "liquidityScore": 94.4,
+  "priceStrengthScore": 9.9,
+  "valuationRiskScore": 90,
+  "snapshotScore": 39.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.27% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 435.38 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

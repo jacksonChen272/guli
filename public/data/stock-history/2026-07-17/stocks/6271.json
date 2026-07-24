@@ -1,0 +1,67 @@
+{
+  "symbol": "6271",
+  "name": "同欣電",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 214.5,
+    "high": 220,
+    "low": 202,
+    "close": 203,
+    "change": -21,
+    "changePercent": -9.37,
+    "tradeVolume": 8637163,
+    "transactionCount": 8420,
+    "tradeValue": 1786869153,
+    "peRatio": 30.12
+  },
+  "dailyRangePercent": 8.91,
+  "turnoverAverageValue": 212217.24,
+  "pricePosition": 5.6,
+  "liquidityScore": 89.5,
+  "priceStrengthScore": 9.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 44.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.37% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.91% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.6 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

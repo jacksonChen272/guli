@@ -1,0 +1,67 @@
+{
+  "symbol": "1515",
+  "name": "力山",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 42,
+    "high": 43.65,
+    "low": 40.4,
+    "close": 40.95,
+    "change": -3.9,
+    "changePercent": -8.7,
+    "tradeVolume": 2601593,
+    "transactionCount": 1958,
+    "tradeValue": 108186729,
+    "peRatio": 41.79
+  },
+  "dailyRangePercent": 8.04,
+  "turnoverAverageValue": 55253.69,
+  "pricePosition": 16.9,
+  "liquidityScore": 66.4,
+  "priceStrengthScore": 14.8,
+  "valuationRiskScore": 75,
+  "snapshotScore": 34.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.70% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.04% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.9 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

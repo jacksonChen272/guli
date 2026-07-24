@@ -1,0 +1,53 @@
+{
+  "symbol": "2908",
+  "name": "特力",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 21.8,
+    "high": 21.9,
+    "low": 21.4,
+    "close": 21.5,
+    "change": -0.4,
+    "changePercent": -1.83,
+    "tradeVolume": 307374,
+    "transactionCount": 129,
+    "tradeValue": 6655274,
+    "peRatio": 53.75
+  },
+  "dailyRangePercent": 2.34,
+  "turnoverAverageValue": 51591.27,
+  "pricePosition": 20,
+  "liquidityScore": 32.2,
+  "priceStrengthScore": 31.4,
+  "valuationRiskScore": 75,
+  "snapshotScore": 30.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

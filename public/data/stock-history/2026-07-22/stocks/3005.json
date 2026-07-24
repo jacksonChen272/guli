@@ -1,0 +1,53 @@
+{
+  "symbol": "3005",
+  "name": "神基",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 115.5,
+    "high": 118.5,
+    "low": 114,
+    "close": 114.5,
+    "change": -2,
+    "changePercent": -1.72,
+    "tradeVolume": 5193842,
+    "transactionCount": 4105,
+    "tradeValue": 600915710,
+    "peRatio": 14.05
+  },
+  "dailyRangePercent": 3.95,
+  "turnoverAverageValue": 146386.29,
+  "pricePosition": 11.1,
+  "liquidityScore": 84.3,
+  "priceStrengthScore": 28.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 58.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

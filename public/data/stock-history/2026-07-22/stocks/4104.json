@@ -1,0 +1,53 @@
+{
+  "symbol": "4104",
+  "name": "佳醫",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 71.5,
+    "high": 71.5,
+    "low": 70.9,
+    "close": 70.9,
+    "change": -0.6,
+    "changePercent": -0.84,
+    "tradeVolume": 142616,
+    "transactionCount": 218,
+    "tradeValue": 10130197,
+    "peRatio": 16.37
+  },
+  "dailyRangePercent": 0.85,
+  "turnoverAverageValue": 46468.79,
+  "pricePosition": 0,
+  "liquidityScore": 31.3,
+  "priceStrengthScore": 26.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 35.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

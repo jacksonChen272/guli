@@ -1,0 +1,60 @@
+{
+  "symbol": "1326",
+  "name": "台化",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 67.5,
+    "high": 70.5,
+    "low": 65.4,
+    "close": 66.1,
+    "change": -2.8,
+    "changePercent": -4.06,
+    "tradeVolume": 81696148,
+    "transactionCount": 45444,
+    "tradeValue": 5527380970,
+    "peRatio": 440.67
+  },
+  "dailyRangePercent": 7.8,
+  "turnoverAverageValue": 121630.6,
+  "pricePosition": 13.7,
+  "liquidityScore": 97.7,
+  "priceStrengthScore": 24.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 47.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 13.7 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 440.67 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

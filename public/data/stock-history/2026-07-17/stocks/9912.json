@@ -1,0 +1,62 @@
+{
+  "symbol": "9912",
+  "name": "偉聯",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.45,
+    "high": 12.6,
+    "low": 12.35,
+    "close": 12.6,
+    "change": -0.1,
+    "changePercent": -0.79,
+    "tradeVolume": 36758,
+    "transactionCount": 55,
+    "tradeValue": 459548,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.02,
+  "turnoverAverageValue": 8355.42,
+  "pricePosition": 100,
+  "liquidityScore": 4.2,
+  "priceStrengthScore": 69.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 41,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 4.2 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

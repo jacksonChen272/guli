@@ -1,0 +1,53 @@
+{
+  "symbol": "1617",
+  "name": "榮星",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.9,
+    "high": 20.95,
+    "low": 19.5,
+    "close": 19.7,
+    "change": 0.45,
+    "changePercent": 2.34,
+    "tradeVolume": 1293654,
+    "transactionCount": 809,
+    "tradeValue": 25868314,
+    "peRatio": 22.39
+  },
+  "dailyRangePercent": 7.44,
+  "turnoverAverageValue": 31975.67,
+  "pricePosition": 13.8,
+  "liquidityScore": 57.8,
+  "priceStrengthScore": 38.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 50.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 13.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

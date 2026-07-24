@@ -1,0 +1,53 @@
+{
+  "symbol": "1773",
+  "name": "勝一",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 178,
+    "high": 181.5,
+    "low": 173,
+    "close": 174.5,
+    "change": -7,
+    "changePercent": -3.86,
+    "tradeVolume": 801968,
+    "transactionCount": 1084,
+    "tradeValue": 141583458,
+    "peRatio": 24.07
+  },
+  "dailyRangePercent": 4.91,
+  "turnoverAverageValue": 130612.05,
+  "pricePosition": 17.6,
+  "liquidityScore": 58.5,
+  "priceStrengthScore": 26,
+  "valuationRiskScore": 35,
+  "snapshotScore": 45.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.6 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

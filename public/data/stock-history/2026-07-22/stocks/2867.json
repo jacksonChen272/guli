@@ -1,0 +1,60 @@
+{
+  "symbol": "2867",
+  "name": "三商壽",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 9.52,
+    "high": 9.63,
+    "low": 9.26,
+    "close": 9.28,
+    "change": -0.23,
+    "changePercent": -2.42,
+    "tradeVolume": 13727294,
+    "transactionCount": 4527,
+    "tradeValue": 129019942,
+    "peRatio": 66.29
+  },
+  "dailyRangePercent": 4,
+  "turnoverAverageValue": 28500.1,
+  "pricePosition": 5.4,
+  "liquidityScore": 80.4,
+  "priceStrengthScore": 24.9,
+  "valuationRiskScore": 90,
+  "snapshotScore": 41.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.4 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 66.29 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

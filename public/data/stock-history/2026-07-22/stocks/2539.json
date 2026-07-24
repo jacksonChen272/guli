@@ -1,0 +1,53 @@
+{
+  "symbol": "2539",
+  "name": "櫻花建",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 40.1,
+    "high": 40.5,
+    "low": 39.95,
+    "close": 40,
+    "change": -0.25,
+    "changePercent": -0.62,
+    "tradeVolume": 801812,
+    "transactionCount": 542,
+    "tradeValue": 32155823,
+    "peRatio": 14.13
+  },
+  "dailyRangePercent": 1.38,
+  "turnoverAverageValue": 59328.09,
+  "pricePosition": 9.1,
+  "liquidityScore": 54.9,
+  "priceStrengthScore": 30.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 48.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

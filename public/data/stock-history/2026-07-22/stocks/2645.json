@@ -1,0 +1,67 @@
+{
+  "symbol": "2645",
+  "name": "長榮航太",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 215,
+    "high": 220.5,
+    "low": 193.5,
+    "close": 195,
+    "change": -20,
+    "changePercent": -9.3,
+    "tradeVolume": 10806628,
+    "transactionCount": 11932,
+    "tradeValue": 2177532741,
+    "peRatio": 29.77
+  },
+  "dailyRangePercent": 13.95,
+  "turnoverAverageValue": 182495.2,
+  "pricePosition": 5.6,
+  "liquidityScore": 92.3,
+  "priceStrengthScore": 9.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 45.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.30% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 13.95% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.6 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

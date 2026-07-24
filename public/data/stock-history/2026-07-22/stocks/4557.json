@@ -1,0 +1,62 @@
+{
+  "symbol": "4557",
+  "name": "永新-KY",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 53,
+    "high": 53.1,
+    "low": 51.4,
+    "close": 52.3,
+    "change": -0.9,
+    "changePercent": -1.69,
+    "tradeVolume": 40384,
+    "transactionCount": 60,
+    "tradeValue": 2114399,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.31,
+  "turnoverAverageValue": 35239.98,
+  "pricePosition": 52.9,
+  "liquidityScore": 13.8,
+  "priceStrengthScore": 43.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 30.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.8 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "symbol": "3021",
+  "name": "鴻名",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.2,
+    "high": 23.2,
+    "low": 21.45,
+    "close": 21.75,
+    "change": -1.85,
+    "changePercent": -7.84,
+    "tradeVolume": 334896,
+    "transactionCount": 320,
+    "tradeValue": 7372084,
+    "peRatio": 37.5
+  },
+  "dailyRangePercent": 8.16,
+  "turnoverAverageValue": 23037.76,
+  "pricePosition": 17.1,
+  "liquidityScore": 28.4,
+  "priceStrengthScore": 16.8,
+  "valuationRiskScore": 55,
+  "snapshotScore": 26.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.84% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.16% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

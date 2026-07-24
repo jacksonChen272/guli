@@ -1,0 +1,60 @@
+{
+  "symbol": "7769",
+  "name": "鴻勁",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 6690,
+    "high": 6710,
+    "low": 6375,
+    "close": 6405,
+    "change": -95,
+    "changePercent": -1.46,
+    "tradeVolume": 519468,
+    "transactionCount": 5231,
+    "tradeValue": 3383280655,
+    "peRatio": 79.92
+  },
+  "dailyRangePercent": 5.25,
+  "turnoverAverageValue": 646775.12,
+  "pricePosition": 9,
+  "liquidityScore": 77.2,
+  "priceStrengthScore": 28.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 41.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 79.92 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "6792",
+  "name": "詠業",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 56,
+    "high": 56,
+    "low": 53,
+    "close": 53.5,
+    "change": -3.4,
+    "changePercent": -5.98,
+    "tradeVolume": 175200,
+    "transactionCount": 155,
+    "tradeValue": 9522500,
+    "peRatio": 23.78
+  },
+  "dailyRangePercent": 5.66,
+  "turnoverAverageValue": 61435.48,
+  "pricePosition": 16.7,
+  "liquidityScore": 23.7,
+  "priceStrengthScore": 20.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 30.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

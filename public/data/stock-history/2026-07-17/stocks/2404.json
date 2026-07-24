@@ -1,0 +1,60 @@
+{
+  "symbol": "2404",
+  "name": "漢唐",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 1210,
+    "high": 1250,
+    "low": 1160,
+    "close": 1160,
+    "change": -90,
+    "changePercent": -7.2,
+    "tradeVolume": 3355987,
+    "transactionCount": 9228,
+    "tradeValue": 4017226545,
+    "peRatio": 21.56
+  },
+  "dailyRangePercent": 7.76,
+  "turnoverAverageValue": 435330.14,
+  "pricePosition": 0,
+  "liquidityScore": 86.8,
+  "priceStrengthScore": 12.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 48.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.20% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

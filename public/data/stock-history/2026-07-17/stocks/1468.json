@@ -1,0 +1,74 @@
+{
+  "symbol": "1468",
+  "name": "昶和",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.6,
+    "high": 13.8,
+    "low": 12.35,
+    "close": 13.6,
+    "change": 0.95,
+    "changePercent": 7.51,
+    "tradeVolume": 79075,
+    "transactionCount": 64,
+    "tradeValue": 1039782,
+    "peRatio": 113.33
+  },
+  "dailyRangePercent": 11.74,
+  "turnoverAverageValue": 16246.59,
+  "pricePosition": 86.2,
+  "liquidityScore": 8.1,
+  "priceStrengthScore": 83.6,
+  "valuationRiskScore": 90,
+  "snapshotScore": 42.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 7.51% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.74% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.1 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 113.33 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

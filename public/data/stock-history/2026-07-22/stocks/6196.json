@@ -1,0 +1,53 @@
+{
+  "symbol": "6196",
+  "name": "帆宣",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 554,
+    "high": 561,
+    "low": 545,
+    "close": 548,
+    "change": 8,
+    "changePercent": 1.48,
+    "tradeVolume": 1322410,
+    "transactionCount": 2553,
+    "tradeValue": 727974855,
+    "peRatio": 34.9
+  },
+  "dailyRangePercent": 2.94,
+  "turnoverAverageValue": 285144.87,
+  "pricePosition": 18.8,
+  "liquidityScore": 77.1,
+  "priceStrengthScore": 38.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 53.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

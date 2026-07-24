@@ -1,5 +1,6 @@
 # 股勵 GULI
 
+<<<<<<< HEAD
 目前版本：**GULI v1.2.0**
 
 GULI 是以 React、TypeScript、Vite 建立的台股盤後資料與規則分析平台。網站部署於 GitHub Pages，Vite `base` 固定為 `/guli/`，React Router `basename` 固定為 `/guli`。
@@ -20,6 +21,8 @@ Dashboard 3.0 已正式發布，以每日市場判讀為首屏主軸，讓使用
 
 ## 發布歷程
 
+=======
+>>>>>>> origin/main
 ## Dashboard 3.0 Release Candidate
 
 Dashboard 3.0 以每日市場判讀為首屏主軸，依序呈現資料可信度、Market Overview、市場情緒、市場廣度、Heatmap、今日機會與既有個人化 Widgets。所有資料仍由 `RepositoryHub` 統一提供；Dashboard 元件不直接讀取公開 JSON 或呼叫外部 API。

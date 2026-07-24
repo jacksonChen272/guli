@@ -1,0 +1,69 @@
+{
+  "symbol": "6949",
+  "name": "沛爾生醫-創",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 1100,
+    "high": 1120,
+    "low": 1025,
+    "close": 1030,
+    "change": -75,
+    "changePercent": -6.79,
+    "tradeVolume": 450939,
+    "transactionCount": 943,
+    "tradeValue": 479378855,
+    "peRatio": null
+  },
+  "dailyRangePercent": 9.27,
+  "turnoverAverageValue": 508355.1,
+  "pricePosition": 5.3,
+  "liquidityScore": 59.8,
+  "priceStrengthScore": 15.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 34.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.27% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

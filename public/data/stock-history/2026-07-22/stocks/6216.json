@@ -1,0 +1,60 @@
+{
+  "symbol": "6216",
+  "name": "居易",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 22.3,
+    "high": 22.3,
+    "low": 22.05,
+    "close": 22.05,
+    "change": -0.15,
+    "changePercent": -0.68,
+    "tradeVolume": 80755,
+    "transactionCount": 103,
+    "tradeValue": 1787252,
+    "peRatio": 367.5
+  },
+  "dailyRangePercent": 1.13,
+  "turnoverAverageValue": 17351.96,
+  "pricePosition": 0,
+  "liquidityScore": 16.7,
+  "priceStrengthScore": 27,
+  "valuationRiskScore": 90,
+  "snapshotScore": 20,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 367.50 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

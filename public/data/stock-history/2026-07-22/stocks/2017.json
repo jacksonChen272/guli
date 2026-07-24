@@ -1,0 +1,55 @@
+{
+  "symbol": "2017",
+  "name": "官田鋼",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 8.93,
+    "high": 9,
+    "low": 8.91,
+    "close": 8.94,
+    "change": 0.03,
+    "changePercent": 0.34,
+    "tradeVolume": 297187,
+    "transactionCount": 177,
+    "tradeValue": 2661719,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.01,
+  "turnoverAverageValue": 15037.96,
+  "pricePosition": 33.3,
+  "liquidityScore": 28.3,
+  "priceStrengthScore": 48.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 39.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

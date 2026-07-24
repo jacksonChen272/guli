@@ -1,0 +1,60 @@
+{
+  "symbol": "8114",
+  "name": "振樺電",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 200,
+    "high": 221,
+    "low": 200,
+    "close": 221,
+    "change": 20,
+    "changePercent": 9.95,
+    "tradeVolume": 1842127,
+    "transactionCount": 2626,
+    "tradeValue": 397788768,
+    "peRatio": 14.73
+  },
+  "dailyRangePercent": 10.5,
+  "turnoverAverageValue": 151480.87,
+  "pricePosition": 100,
+  "liquidityScore": 76.7,
+  "priceStrengthScore": 93.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 85.1,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.95% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.50% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "6112",
+  "name": "邁達特",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 42.15,
+    "high": 42.6,
+    "low": 41.3,
+    "close": 41.55,
+    "change": -0.7,
+    "changePercent": -1.66,
+    "tradeVolume": 502268,
+    "transactionCount": 527,
+    "tradeValue": 20966035,
+    "peRatio": 24.44
+  },
+  "dailyRangePercent": 3.15,
+  "turnoverAverageValue": 39783.75,
+  "pricePosition": 19.2,
+  "liquidityScore": 39.8,
+  "priceStrengthScore": 31.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 41.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 19.2 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

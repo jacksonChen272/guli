@@ -1,0 +1,55 @@
+{
+  "symbol": "1455",
+  "name": "集盛",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 9.28,
+    "high": 9.36,
+    "low": 9.12,
+    "close": 9.18,
+    "change": -0.15,
+    "changePercent": -1.61,
+    "tradeVolume": 1703970,
+    "transactionCount": 630,
+    "tradeValue": 15726611,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.63,
+  "turnoverAverageValue": 24962.87,
+  "pricePosition": 25,
+  "liquidityScore": 46.8,
+  "priceStrengthScore": 33.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 39.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

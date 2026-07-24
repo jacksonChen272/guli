@@ -1,0 +1,53 @@
+{
+  "symbol": "6614",
+  "name": "資拓宏宇",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 39,
+    "high": 39.05,
+    "low": 38.1,
+    "close": 38.2,
+    "change": -0.85,
+    "changePercent": -2.18,
+    "tradeVolume": 125814,
+    "transactionCount": 106,
+    "tradeValue": 4848817,
+    "peRatio": 15.34
+  },
+  "dailyRangePercent": 2.49,
+  "turnoverAverageValue": 45743.56,
+  "pricePosition": 10.5,
+  "liquidityScore": 17.1,
+  "priceStrengthScore": 27.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 31.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

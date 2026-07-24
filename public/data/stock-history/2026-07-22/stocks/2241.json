@@ -1,0 +1,62 @@
+{
+  "symbol": "2241",
+  "name": "艾姆勒",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 35.45,
+    "high": 36.4,
+    "low": 34.95,
+    "close": 35.05,
+    "change": -0.15,
+    "changePercent": -0.43,
+    "tradeVolume": 700727,
+    "transactionCount": 459,
+    "tradeValue": 24748876,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.15,
+  "turnoverAverageValue": 53919.12,
+  "pricePosition": 6.9,
+  "liquidityScore": 51.5,
+  "priceStrengthScore": 30,
+  "valuationRiskScore": null,
+  "snapshotScore": 39.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.9 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

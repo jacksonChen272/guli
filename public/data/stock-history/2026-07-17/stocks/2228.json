@@ -1,0 +1,53 @@
+{
+  "symbol": "2228",
+  "name": "劍麟",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 80.3,
+    "high": 81.2,
+    "low": 78,
+    "close": 78.3,
+    "change": -2.4,
+    "changePercent": -2.97,
+    "tradeVolume": 202231,
+    "transactionCount": 300,
+    "tradeValue": 15995279,
+    "peRatio": 18.34
+  },
+  "dailyRangePercent": 4.1,
+  "turnoverAverageValue": 53317.6,
+  "pricePosition": 9.4,
+  "liquidityScore": 29.6,
+  "priceStrengthScore": 25.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 34.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

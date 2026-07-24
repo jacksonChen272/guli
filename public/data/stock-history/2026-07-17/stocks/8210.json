@@ -1,0 +1,53 @@
+{
+  "symbol": "8210",
+  "name": "勤誠",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 1125,
+    "high": 1175,
+    "low": 1095,
+    "close": 1095,
+    "change": -80,
+    "changePercent": -6.81,
+    "tradeVolume": 1157719,
+    "transactionCount": 3207,
+    "tradeValue": 1299228505,
+    "peRatio": 32.46
+  },
+  "dailyRangePercent": 7.31,
+  "turnoverAverageValue": 405122.7,
+  "pricePosition": 0,
+  "liquidityScore": 75,
+  "priceStrengthScore": 13.2,
+  "valuationRiskScore": 55,
+  "snapshotScore": 41.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

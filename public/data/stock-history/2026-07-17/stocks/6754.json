@@ -1,0 +1,53 @@
+{
+  "symbol": "6754",
+  "name": "匯僑設計",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 43.4,
+    "high": 43.4,
+    "low": 42,
+    "close": 42.45,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 16678,
+    "transactionCount": 20,
+    "tradeValue": 705098,
+    "peRatio": 13.1
+  },
+  "dailyRangePercent": 3.33,
+  "turnoverAverageValue": 35254.9,
+  "pricePosition": 32.1,
+  "liquidityScore": 2.7,
+  "priceStrengthScore": 39.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 34.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 2.7 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

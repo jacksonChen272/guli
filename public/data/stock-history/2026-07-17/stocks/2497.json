@@ -1,0 +1,53 @@
+{
+  "symbol": "2497",
+  "name": "怡利電",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 58.5,
+    "high": 59,
+    "low": 55.8,
+    "close": 55.8,
+    "change": -3.8,
+    "changePercent": -6.38,
+    "tradeVolume": 611701,
+    "transactionCount": 568,
+    "tradeValue": 34947789,
+    "peRatio": 24.69
+  },
+  "dailyRangePercent": 5.73,
+  "turnoverAverageValue": 61527.8,
+  "pricePosition": 0,
+  "liquidityScore": 44.6,
+  "priceStrengthScore": 14.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 35,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "6743",
+  "name": "安普新",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 30.05,
+    "high": 30.4,
+    "low": 29.4,
+    "close": 29.5,
+    "change": -0.8,
+    "changePercent": -2.64,
+    "tradeVolume": 361715,
+    "transactionCount": 357,
+    "tradeValue": 10763157,
+    "peRatio": 35.98
+  },
+  "dailyRangePercent": 3.4,
+  "turnoverAverageValue": 30148.9,
+  "pricePosition": 10,
+  "liquidityScore": 31.7,
+  "priceStrengthScore": 26.1,
+  "valuationRiskScore": 55,
+  "snapshotScore": 31.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

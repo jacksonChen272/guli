@@ -1,0 +1,55 @@
+{
+  "symbol": "1309",
+  "name": "台達化",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 14.6,
+    "high": 15.15,
+    "low": 14.6,
+    "close": 14.8,
+    "change": 0.2,
+    "changePercent": 1.37,
+    "tradeVolume": 3223191,
+    "transactionCount": 1220,
+    "tradeValue": 48048416,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.77,
+  "turnoverAverageValue": 39383.95,
+  "pricePosition": 36.4,
+  "liquidityScore": 67.1,
+  "priceStrengthScore": 52.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 58.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

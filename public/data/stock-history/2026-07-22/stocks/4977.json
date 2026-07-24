@@ -1,0 +1,53 @@
+{
+  "symbol": "4977",
+  "name": "眾達-KY",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 135.5,
+    "high": 138,
+    "low": 133.5,
+    "close": 134,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 1808745,
+    "transactionCount": 1872,
+    "tradeValue": 244877606,
+    "peRatio": 29.71
+  },
+  "dailyRangePercent": 3.37,
+  "turnoverAverageValue": 130810.69,
+  "pricePosition": 11.1,
+  "liquidityScore": 73.6,
+  "priceStrengthScore": 32.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 49.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

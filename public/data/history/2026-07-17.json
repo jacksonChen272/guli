@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0",
+  "snapshotId": "twse-2026-07-17",
+  "tradeDate": "2026-07-17",
+  "generatedAt": "2026-07-20T11:56:04.295Z",
+  "market": "TWSE",
+  "marketStatus": "偏強",
+  "marketTemperature": 72,
+  "confidence": 82,
+  "headline": "市場偏強，資金聚焦 AI 伺服器與 PCB，航運動能轉弱。",
+  "overview": {
+    "indexValue": 42671.27,
+    "change": -2953.71,
+    "changePercent": -6.47,
+    "tradingAmount": 1333156652944,
+    "advanceCount": 88,
+    "declineCount": 963,
+    "unchangedCount": 30
+  },
+  "stockBreadth": {
+    "strongCount": 37,
+    "weakCount": 915,
+    "highRiskCount": 220
+  },
+  "topIndustries": [
+    {
+      "name": "油電燃氣業",
+      "changePercent": 0.0182,
+      "capitalFlow": 53.3,
+      "momentum": 50.1,
+      "rank": 1,
+      "source": "derived"
+    },
+    {
+      "name": "居家生活",
+      "changePercent": -1.0848,
+      "capitalFlow": 59.3,
+      "momentum": 43.5,
+      "rank": 2,
+      "source": "derived"
+    },
+    {
+      "name": "貿易百貨",
+      "changePercent": -1.1404,
+      "capitalFlow": 55.5,
+      "momentum": 43.2,
+      "rank": 3,
+      "source": "derived"
+    }
+  ],
+  "weakIndustries": [
+    {
+      "name": "半導體業",
+      "changePercent": -7.4647,
+      "capitalFlow": 48.3,
+      "momentum": 0,
+      "rank": 1,
+      "source": "derived"
+    },
+    {
+      "name": "電子零組件業",
+      "changePercent": -6.555,
+      "capitalFlow": 52.3,
+      "momentum": 0,
+      "rank": 2,
+      "source": "derived"
+    },
+    {
+      "name": "其他電子業",
+      "changePercent": -5.2515,
+      "capitalFlow": 52.2,
+      "momentum": 2.7,
+      "rank": 3,
+      "source": "derived"
+    }
+  ],
+  "risks": [
+    {
+      "id": "shipping-weak",
+      "level": "中",
+      "title": "航運動能轉弱",
+      "description": "模擬產業資料顯示資金動能降溫。",
+      "source": "derived"
+    },
+    {
+      "id": "breadth-partial",
+      "level": "中",
+      "title": "市場廣度資料不完整",
+      "description": "官方漲跌家數尚未更新至相同交易日。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "油電燃氣業",
+    "居家生活"
+  ],
+  "sources": [
+    {
+      "id": "twse-overview",
+      "name": "臺灣證券交易所（TWSE）",
+      "type": "official",
+      "fields": [
+        "overview"
+      ],
+      "tradeDate": "2026-07-17",
+      "status": "official"
+    },
+    {
+      "id": "industry-snapshot",
+      "name": "GULI Industry Snapshot Engine",
+      "type": "derived",
+      "fields": [
+        "topIndustries",
+        "weakIndustries"
+      ],
+      "tradeDate": "2026-07-17"
+    },
+    {
+      "id": "stock-snapshot",
+      "name": "GULI Stock Snapshot Engine",
+      "type": "derived",
+      "fields": [
+        "stockBreadth"
+      ],
+      "tradeDate": "2026-07-17"
+    },
+    {
+      "id": "guli-rules",
+      "name": "GULI Rules Engine",
+      "type": "derived",
+      "fields": [
+        "marketStatus",
+        "confidence",
+        "headline",
+        "risks",
+        "tags"
+      ]
+    }
+  ],
+  "warnings": [
+    "twtazu_od 尚未發布同交易日統計；市場廣度由 TWSE STOCK_DAY_ALL 官方股票資料彙整，漲跌停家數依漲跌幅 9.5% 門檻推導。",
+    "技術資料與行情交易日不一致，僅聚合可用樣本。",
+    "Decision 資料與行情交易日不一致，僅聚合可用樣本。",
+    "Market temperature and non-official fields still use mock data and deterministic rules."
+  ]
+}

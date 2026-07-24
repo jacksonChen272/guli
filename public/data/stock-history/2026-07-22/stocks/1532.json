@@ -1,0 +1,53 @@
+{
+  "symbol": "1532",
+  "name": "勤美",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.35,
+    "high": 23.45,
+    "low": 23.15,
+    "close": 23.15,
+    "change": -0.05,
+    "changePercent": -0.22,
+    "tradeVolume": 291182,
+    "transactionCount": 238,
+    "tradeValue": 6777645,
+    "peRatio": 19.79
+  },
+  "dailyRangePercent": 1.3,
+  "turnoverAverageValue": 28477.5,
+  "pricePosition": 0,
+  "liquidityScore": 34.4,
+  "priceStrengthScore": 28,
+  "valuationRiskScore": 35,
+  "snapshotScore": 37.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

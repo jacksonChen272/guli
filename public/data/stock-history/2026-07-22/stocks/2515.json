@@ -1,0 +1,53 @@
+{
+  "symbol": "2515",
+  "name": "中工",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.4,
+    "high": 12.55,
+    "low": 12.2,
+    "close": 12.2,
+    "change": -0.1,
+    "changePercent": -0.81,
+    "tradeVolume": 10207442,
+    "transactionCount": 1698,
+    "tradeValue": 125929946,
+    "peRatio": 25.42
+  },
+  "dailyRangePercent": 2.87,
+  "turnoverAverageValue": 74163.69,
+  "pricePosition": 0,
+  "liquidityScore": 76.6,
+  "priceStrengthScore": 26.7,
+  "valuationRiskScore": 55,
+  "snapshotScore": 47.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

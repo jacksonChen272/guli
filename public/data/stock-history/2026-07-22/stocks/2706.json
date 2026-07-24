@@ -1,0 +1,53 @@
+{
+  "symbol": "2706",
+  "name": "第一店",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.85,
+    "high": 12.95,
+    "low": 12.75,
+    "close": 12.8,
+    "change": -0.1,
+    "changePercent": -0.78,
+    "tradeVolume": 85671,
+    "transactionCount": 99,
+    "tradeValue": 1098789,
+    "peRatio": 19.1
+  },
+  "dailyRangePercent": 1.57,
+  "turnoverAverageValue": 11098.88,
+  "pricePosition": 25,
+  "liquidityScore": 14.4,
+  "priceStrengthScore": 35.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 34,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.4 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

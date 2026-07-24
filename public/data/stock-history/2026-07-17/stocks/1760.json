@@ -1,0 +1,53 @@
+{
+  "symbol": "1760",
+  "name": "寶齡富錦",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 61.5,
+    "high": 61.5,
+    "low": 59.9,
+    "close": 60,
+    "change": -1.5,
+    "changePercent": -2.44,
+    "tradeVolume": 300944,
+    "transactionCount": 479,
+    "tradeValue": 18170282,
+    "peRatio": 24.1
+  },
+  "dailyRangePercent": 2.67,
+  "turnoverAverageValue": 37933.78,
+  "pricePosition": 6.3,
+  "liquidityScore": 34.6,
+  "priceStrengthScore": 25.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 36.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

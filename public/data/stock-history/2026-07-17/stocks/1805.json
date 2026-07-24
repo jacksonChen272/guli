@@ -1,0 +1,60 @@
+{
+  "symbol": "1805",
+  "name": "寶徠",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.2,
+    "high": 10.2,
+    "low": 10,
+    "close": 10.2,
+    "change": 0.05,
+    "changePercent": 0.49,
+    "tradeVolume": 162843,
+    "transactionCount": 75,
+    "tradeValue": 1638666,
+    "peRatio": 78.46
+  },
+  "dailyRangePercent": 2,
+  "turnoverAverageValue": 21848.88,
+  "pricePosition": 100,
+  "liquidityScore": 12.7,
+  "priceStrengthScore": 68.6,
+  "valuationRiskScore": 90,
+  "snapshotScore": 37.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.7 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 78.46 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "1702",
+  "name": "南僑",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 33.95,
+    "high": 34.15,
+    "low": 33.45,
+    "close": 33.5,
+    "change": -0.45,
+    "changePercent": -1.33,
+    "tradeVolume": 311695,
+    "transactionCount": 348,
+    "tradeValue": 10478784,
+    "peRatio": 46.53
+  },
+  "dailyRangePercent": 2.09,
+  "turnoverAverageValue": 30111.45,
+  "pricePosition": 7.1,
+  "liquidityScore": 38.4,
+  "priceStrengthScore": 28,
+  "valuationRiskScore": 75,
+  "snapshotScore": 31,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

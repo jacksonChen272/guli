@@ -1,0 +1,53 @@
+{
+  "symbol": "1219",
+  "name": "福壽",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.3,
+    "high": 12.35,
+    "low": 12.1,
+    "close": 12.15,
+    "change": -0.25,
+    "changePercent": -2.02,
+    "tradeVolume": 722125,
+    "transactionCount": 361,
+    "tradeValue": 8788795,
+    "peRatio": 25.85
+  },
+  "dailyRangePercent": 2.07,
+  "turnoverAverageValue": 24345.69,
+  "pricePosition": 20,
+  "liquidityScore": 35.2,
+  "priceStrengthScore": 31,
+  "valuationRiskScore": 55,
+  "snapshotScore": 35.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

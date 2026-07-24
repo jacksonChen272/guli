@@ -1,0 +1,53 @@
+{
+  "symbol": "1609",
+  "name": "大亞",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 37.9,
+    "high": 38.2,
+    "low": 36.75,
+    "close": 36.8,
+    "change": -1.8,
+    "changePercent": -4.66,
+    "tradeVolume": 6772370,
+    "transactionCount": 4664,
+    "tradeValue": 252208303,
+    "peRatio": 15.4
+  },
+  "dailyRangePercent": 3.95,
+  "turnoverAverageValue": 54075.54,
+  "pricePosition": 3.4,
+  "liquidityScore": 79.3,
+  "priceStrengthScore": 19.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 49.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 3.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

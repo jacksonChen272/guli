@@ -1,0 +1,55 @@
+{
+  "symbol": "2434",
+  "name": "統懋",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 75,
+    "high": 75,
+    "low": 70.4,
+    "close": 71.8,
+    "change": 1.7,
+    "changePercent": 2.43,
+    "tradeVolume": 160516,
+    "transactionCount": 205,
+    "tradeValue": 11607916,
+    "peRatio": null
+  },
+  "dailyRangePercent": 6.53,
+  "turnoverAverageValue": 56623.98,
+  "pricePosition": 30.4,
+  "liquidityScore": 32.8,
+  "priceStrengthScore": 44.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 39.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

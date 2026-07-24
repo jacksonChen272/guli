@@ -1,0 +1,53 @@
+{
+  "symbol": "4771",
+  "name": "望隼",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 197.5,
+    "high": 199,
+    "low": 196,
+    "close": 196.5,
+    "change": -0.5,
+    "changePercent": -0.25,
+    "tradeVolume": 176286,
+    "transactionCount": 180,
+    "tradeValue": 34814127,
+    "peRatio": 15.13
+  },
+  "dailyRangePercent": 1.53,
+  "turnoverAverageValue": 193411.82,
+  "pricePosition": 16.7,
+  "liquidityScore": 41.3,
+  "priceStrengthScore": 33.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 42.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

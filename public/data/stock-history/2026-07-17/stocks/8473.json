@@ -1,0 +1,53 @@
+{
+  "symbol": "8473",
+  "name": "山林水",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 46.3,
+    "high": 46.3,
+    "low": 43.9,
+    "close": 44,
+    "change": -2.7,
+    "changePercent": -5.78,
+    "tradeVolume": 773860,
+    "transactionCount": 752,
+    "tradeValue": 34743470,
+    "peRatio": 15.44
+  },
+  "dailyRangePercent": 5.47,
+  "turnoverAverageValue": 46201.42,
+  "pricePosition": 4.2,
+  "liquidityScore": 47.4,
+  "priceStrengthScore": 17,
+  "valuationRiskScore": 35,
+  "snapshotScore": 37.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 4.2 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

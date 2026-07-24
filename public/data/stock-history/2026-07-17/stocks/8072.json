@@ -1,0 +1,53 @@
+{
+  "symbol": "8072",
+  "name": "陞泰",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 28.05,
+    "high": 28.5,
+    "low": 27,
+    "close": 27.05,
+    "change": -1.15,
+    "changePercent": -4.08,
+    "tradeVolume": 327289,
+    "transactionCount": 395,
+    "tradeValue": 8953624,
+    "peRatio": 26.52
+  },
+  "dailyRangePercent": 5.56,
+  "turnoverAverageValue": 22667.4,
+  "pricePosition": 3.3,
+  "liquidityScore": 30.1,
+  "priceStrengthScore": 20.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 28.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 3.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

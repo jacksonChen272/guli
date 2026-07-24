@@ -1,0 +1,74 @@
+{
+  "symbol": "8033",
+  "name": "雷虎",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 214.5,
+    "high": 214.5,
+    "low": 193,
+    "close": 196.5,
+    "change": -17.5,
+    "changePercent": -8.18,
+    "tradeVolume": 22040043,
+    "transactionCount": 22923,
+    "tradeValue": 4447522426,
+    "peRatio": 293.28
+  },
+  "dailyRangePercent": 11.14,
+  "turnoverAverageValue": 194020.09,
+  "pricePosition": 16.3,
+  "liquidityScore": 95.7,
+  "priceStrengthScore": 15.8,
+  "valuationRiskScore": 90,
+  "snapshotScore": 42.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.18% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.14% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 293.28 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

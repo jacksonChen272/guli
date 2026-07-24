@@ -1,0 +1,53 @@
+{
+  "symbol": "3706",
+  "name": "神達",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 92.7,
+    "high": 92.7,
+    "low": 91,
+    "close": 91.2,
+    "change": -0.1,
+    "changePercent": -0.11,
+    "tradeVolume": 17123720,
+    "transactionCount": 13058,
+    "tradeValue": 1573676476,
+    "peRatio": 17.4
+  },
+  "dailyRangePercent": 1.87,
+  "turnoverAverageValue": 120514.36,
+  "pricePosition": 11.8,
+  "liquidityScore": 92.8,
+  "priceStrengthScore": 32.4,
+  "valuationRiskScore": 35,
+  "snapshotScore": 60.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2101",
+  "name": "南港",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 34.55,
+    "high": 35,
+    "low": 33.75,
+    "close": 34,
+    "change": -0.55,
+    "changePercent": -1.59,
+    "tradeVolume": 3003610,
+    "transactionCount": 2127,
+    "tradeValue": 103189109,
+    "peRatio": 10.97
+  },
+  "dailyRangePercent": 3.7,
+  "turnoverAverageValue": 48513.92,
+  "pricePosition": 20,
+  "liquidityScore": 67.1,
+  "priceStrengthScore": 31.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 53.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

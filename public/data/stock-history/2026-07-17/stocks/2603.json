@@ -1,0 +1,53 @@
+{
+  "symbol": "2603",
+  "name": "長榮",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 200,
+    "high": 202.5,
+    "low": 198,
+    "close": 198,
+    "change": -2,
+    "changePercent": -1,
+    "tradeVolume": 17211340,
+    "transactionCount": 14128,
+    "tradeValue": 3443689371,
+    "peRatio": 8.65
+  },
+  "dailyRangePercent": 2.27,
+  "turnoverAverageValue": 243749.25,
+  "pricePosition": 0,
+  "liquidityScore": 94,
+  "priceStrengthScore": 26.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 60.7,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

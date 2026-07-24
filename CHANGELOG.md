@@ -1,5 +1,6 @@
 # Changelog
 
+<<<<<<< HEAD
 ## [1.2.0] - Dashboard 3.0 正式發布
 
 - Dashboard 3.0 正式上線，以 Market Overview、市場情緒、市場廣度與 Heatmap 建立清楚的首屏判讀流程。
@@ -10,6 +11,9 @@
 - 保留 RepositoryHub、Provider、Cache、Decision／Technical／Health／Snapshot 公式及 GitHub Pages 路由設定。
 
 ## [1.2.0-beta.1] - Dashboard 3.0 Release Candidate（歷史紀錄）
+=======
+## [1.2.0-beta.1] - Dashboard 3.0 Release Candidate
+>>>>>>> origin/main
 
 - 完成 Dashboard 3.0 首屏、資料狀態、Market Overview、市場廣度、Heatmap 與原有可拖曳 Widgets 的 release candidate 驗收。
 - 修正 Partial 資料被誤標為 Stale／Mixed 的狀態語意；Official、Mixed、Partial、Stale、Missing 現在各自獨立。

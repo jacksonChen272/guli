@@ -1,0 +1,53 @@
+{
+  "symbol": "2357",
+  "name": "華碩",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 705,
+    "high": 719,
+    "low": 700,
+    "close": 700,
+    "change": -15,
+    "changePercent": -2.1,
+    "tradeVolume": 4776948,
+    "transactionCount": 7818,
+    "tradeValue": 3386699668,
+    "peRatio": 12.51
+  },
+  "dailyRangePercent": 2.71,
+  "turnoverAverageValue": 433192.59,
+  "pricePosition": 0,
+  "liquidityScore": 88.1,
+  "priceStrengthScore": 23.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 57.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

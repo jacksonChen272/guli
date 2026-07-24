@@ -1,0 +1,53 @@
+{
+  "symbol": "1210",
+  "name": "大成",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 57.5,
+    "high": 57.8,
+    "low": 57,
+    "close": 57,
+    "change": -0.5,
+    "changePercent": -0.87,
+    "tradeVolume": 1628639,
+    "transactionCount": 1538,
+    "tradeValue": 93197322,
+    "peRatio": 13.51
+  },
+  "dailyRangePercent": 1.4,
+  "turnoverAverageValue": 60596.44,
+  "pricePosition": 0,
+  "liquidityScore": 67.4,
+  "priceStrengthScore": 26.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 51.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

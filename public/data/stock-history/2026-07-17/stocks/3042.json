@@ -1,0 +1,60 @@
+{
+  "symbol": "3042",
+  "name": "晶技",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 177.5,
+    "high": 179.5,
+    "low": 168,
+    "close": 168.5,
+    "change": -18,
+    "changePercent": -9.65,
+    "tradeVolume": 12317985,
+    "transactionCount": 11923,
+    "tradeValue": 2112203555,
+    "peRatio": 32.16
+  },
+  "dailyRangePercent": 6.85,
+  "turnoverAverageValue": 177153.7,
+  "pricePosition": 4.3,
+  "liquidityScore": 91.6,
+  "priceStrengthScore": 8.3,
+  "valuationRiskScore": 55,
+  "snapshotScore": 44.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.65% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 4.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "6831",
+  "name": "邁科",
+  "tradeDate": "2026-07-22",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 600,
+    "high": 650,
+    "low": 600,
+    "close": 635,
+    "change": 35,
+    "changePercent": 5.83,
+    "tradeVolume": 670290,
+    "transactionCount": 938,
+    "tradeValue": 416875757,
+    "peRatio": 129.07
+  },
+  "dailyRangePercent": 8.33,
+  "turnoverAverageValue": 444430.44,
+  "pricePosition": 70,
+  "liquidityScore": 67.6,
+  "priceStrengthScore": 74.1,
+  "valuationRiskScore": 90,
+  "snapshotScore": 59,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.33% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 129.07 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

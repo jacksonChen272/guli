@@ -1,0 +1,60 @@
+{
+  "symbol": "8105",
+  "name": "凌巨",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.3,
+    "high": 17.3,
+    "low": 16.55,
+    "close": 16.65,
+    "change": -1,
+    "changePercent": -5.67,
+    "tradeVolume": 5047309,
+    "transactionCount": 2283,
+    "tradeValue": 84779914,
+    "peRatio": 555
+  },
+  "dailyRangePercent": 4.53,
+  "turnoverAverageValue": 37135.31,
+  "pricePosition": 13.3,
+  "liquidityScore": 69.4,
+  "priceStrengthScore": 20.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 35.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 13.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 555.00 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

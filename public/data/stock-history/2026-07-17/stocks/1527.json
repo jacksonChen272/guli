@@ -1,0 +1,53 @@
+{
+  "symbol": "1527",
+  "name": "鑽全",
+  "tradeDate": "2026-07-17",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 34.2,
+    "high": 34.2,
+    "low": 33.5,
+    "close": 33.55,
+    "change": -0.6,
+    "changePercent": -1.76,
+    "tradeVolume": 204628,
+    "transactionCount": 194,
+    "tradeValue": 6900436,
+    "peRatio": 36.87
+  },
+  "dailyRangePercent": 2.09,
+  "turnoverAverageValue": 35569.26,
+  "pricePosition": 7.1,
+  "liquidityScore": 23.1,
+  "priceStrengthScore": 27,
+  "valuationRiskScore": 55,
+  "snapshotScore": 29.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}
