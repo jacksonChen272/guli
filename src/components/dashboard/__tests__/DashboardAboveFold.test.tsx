@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest'
 const dashboard = readFileSync(new URL('../../../pages/Dashboard.tsx', import.meta.url), 'utf8')
 const styles = readFileSync(new URL('../../../styles/index.css', import.meta.url), 'utf8')
 
-describe('Dashboard alpha.2 above-fold order', () => {
+describe('Dashboard above-fold order', () => {
   it('uses the requested fixed information order before draggable widgets', () => {
     const command = dashboard.indexOf('<MarketCommandCenter')
     const breadth = dashboard.indexOf('<MarketBreadthCard')

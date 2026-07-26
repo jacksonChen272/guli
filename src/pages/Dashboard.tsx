@@ -50,7 +50,7 @@ export function Dashboard() {
   }
 
   return (
-    <div className="dashboard-alpha2 dashboard-alpha3 min-w-0 space-y-6 page-enter" data-testid="today-dashboard" data-dashboard-version="dashboard-3.0-beta.1">
+    <div className="dashboard-v3 min-w-0 space-y-6 page-enter" data-testid="today-dashboard" data-dashboard-version="dashboard-3.0">
       <header className="dashboard-page-header flex min-w-0 flex-col gap-4 sm:flex-row sm:items-end sm:justify-between" aria-labelledby="dashboard-title">
         <div className="min-w-0">
           <nav aria-label="麵包屑">
@@ -61,7 +61,7 @@ export function Dashboard() {
             </ol>
           </nav>
           <div className="mt-2 flex flex-wrap items-center gap-2">
-            <Badge tone="brand">Dashboard 3.0 Beta</Badge>
+            <Badge tone="brand">Dashboard 3.0</Badge>
             <Badge tone={dataStatusTone}>{dataStatus}</Badge>
           </div>
           <div className="mt-2 flex items-center gap-3">

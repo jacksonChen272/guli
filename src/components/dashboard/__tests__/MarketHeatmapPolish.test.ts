@@ -7,7 +7,7 @@ const heatmap = readFileSync(new URL('../MarketHeatmap.tsx', import.meta.url), '
 const toolbar = readFileSync(new URL('../MarketHeatmapToolbar.tsx', import.meta.url), 'utf8')
 const legend = readFileSync(new URL('../MarketHeatmapLegend.tsx', import.meta.url), 'utf8')
 
-describe('Market Heatmap alpha.3 polish', () => {
+describe('Market Heatmap polish', () => {
   it('adds hover elevation and a highlighted border without changing grouping logic', () => {
     expect(heatmap).toContain("borderColor: 'rgba(83,217,178,.9)'")
     expect(heatmap).toContain('shadowBlur: 20')

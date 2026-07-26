@@ -7,7 +7,7 @@ const command = readFileSync(new URL('../MarketCommandCenter.tsx', import.meta.u
 const dashboard = readFileSync(new URL('../../../pages/Dashboard.tsx', import.meta.url), 'utf8')
 const styles = readFileSync(new URL('../../../styles/index.css', import.meta.url), 'utf8')
 
-describe('Dashboard alpha.3 animation and accessibility', () => {
+describe('Dashboard animation and accessibility', () => {
   it('animates numeric values once and cleans up its animation frame', () => {
     expect(countUp).toContain('hasAnimated.current')
     expect(countUp).toContain('requestAnimationFrame(update)')

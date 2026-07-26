@@ -146,27 +146,27 @@ body::before {
 }
 
 .app-main-content { min-width: 0; overflow-x: clip; }
-.dashboard-alpha2,
-.dashboard-alpha2 > *,
+.dashboard-v3,
+.dashboard-v3 > *,
 .dashboard-status-bar { max-width: 100%; }
 
-.dashboard-alpha3 {
+.dashboard-v3 {
   color: var(--text-primary);
   font-variant-numeric: tabular-nums;
 }
 
-.dashboard-alpha3 .dashboard-card-header {
+.dashboard-v3 .dashboard-card-header {
   min-height: 78px;
   align-content: center;
   background: linear-gradient(180deg, rgba(255,255,255,.014), transparent);
 }
 
-.dashboard-alpha3 .dashboard-card-title {
+.dashboard-v3 .dashboard-card-title {
   font-weight: 600;
   letter-spacing: -.015em;
 }
 
-.dashboard-alpha3 .dashboard-label {
+.dashboard-v3 .dashboard-label {
   color: var(--text-tertiary);
   font-size: .75rem;
   font-weight: 600;
@@ -175,13 +175,13 @@ body::before {
   text-transform: uppercase;
 }
 
-.dashboard-alpha3 .dashboard-updated {
+.dashboard-v3 .dashboard-updated {
   color: color-mix(in srgb, var(--text-tertiary) 78%, transparent);
   font-size: .75rem;
   line-height: 1.45;
 }
 
-.dashboard-alpha3 .dashboard-metric-primary {
+.dashboard-v3 .dashboard-metric-primary {
   font-family: 'DM Mono', monospace;
   font-size: clamp(2rem, 3vw, 2.5rem);
   font-variant-numeric: tabular-nums;
@@ -189,7 +189,7 @@ body::before {
   text-align: right;
 }
 
-.dashboard-alpha3 [data-dashboard-card] svg[data-lucide] {
+.dashboard-v3 [data-dashboard-card] svg[data-lucide] {
   stroke-width: 1.8;
 }
 
@@ -409,13 +409,13 @@ body::before {
   body { font-size: .9375rem; }
   .ui-card--spacious .ui-card__content { padding: var(--space-5); }
   .app-main-content { padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
-  .dashboard-alpha2 { gap: 18px; }
+  .dashboard-v3 { gap: 18px; }
   .dashboard-page-header p { max-width: 34ch; }
   .dashboard-status-bar { overflow: hidden; }
   .dashboard-command-center [class*='text-3xl'] { font-size: 1.65rem; }
-  .dashboard-alpha3 .dashboard-card-header { min-height: auto; }
-  .dashboard-alpha3 .dashboard-card { border-radius: 16px; }
-  .dashboard-alpha3 .dashboard-metric-primary { font-size: 2rem; }
+  .dashboard-v3 .dashboard-card-header { min-height: auto; }
+  .dashboard-v3 .dashboard-card { border-radius: 16px; }
+  .dashboard-v3 .dashboard-metric-primary { font-size: 2rem; }
   .market-command-actions .dashboard-cta { flex: 1 1 calc(50% - 4px); }
   .market-command-actions .dashboard-cta--primary { flex-basis: 100%; }
   .heatmap-segment-control { width: 100%; min-width: 0; }

@@ -5,7 +5,7 @@ const dashboard = readFileSync(new URL('../../../pages/Dashboard.tsx', import.me
 const opportunities = readFileSync(new URL('../TodayOpportunitiesSection.tsx', import.meta.url), 'utf8')
 const styles = readFileSync(new URL('../../../styles/index.css', import.meta.url), 'utf8')
 
-describe('Dashboard alpha.2 responsive contract', () => {
+describe('Dashboard responsive contract', () => {
   it('stacks breadth and heatmap below xl and uses 4:8 on desktop', () => {
     expect(dashboard).toContain('grid-cols-1')
     expect(dashboard).toContain('xl:col-span-4')

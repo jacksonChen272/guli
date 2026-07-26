@@ -5,9 +5,9 @@ const dashboard = readFileSync(new URL('../../../pages/Dashboard.tsx', import.me
 const command = readFileSync(new URL('../MarketCommandCenter.tsx', import.meta.url), 'utf8')
 const styles = readFileSync(new URL('../../../styles/index.css', import.meta.url), 'utf8')
 
-describe('Dashboard alpha.3 visual regression contract', () => {
-  it('keeps the single Dashboard 3.0 hierarchy and identifies the alpha.3 surface', () => {
-    expect(dashboard).toContain('data-dashboard-version="dashboard-3.0-beta.1"')
+describe('Dashboard visual regression contract', () => {
+  it('keeps the single Dashboard 3.0 hierarchy and identifies the released surface', () => {
+    expect(dashboard).toContain('data-dashboard-version="dashboard-3.0"')
     expect(dashboard.match(/<MarketCommandCenter/g)).toHaveLength(1)
     expect(dashboard.indexOf('<MarketCommandCenter')).toBeLessThan(dashboard.indexOf('<MarketBreadthCard'))
     expect(dashboard.indexOf('<MarketBreadthCard')).toBeLessThan(dashboard.indexOf('<TodayOpportunitiesSection'))

@@ -1,41 +1,24 @@
 # 股勵 GULI
 
-<<<<<<< HEAD
 目前版本：**GULI v1.2.0**
 
 GULI 是以 React、TypeScript、Vite 建立的台股盤後資料與規則分析平台。網站部署於 GitHub Pages，Vite `base` 固定為 `/guli/`，React Router `basename` 固定為 `/guli`。
 
 ## Dashboard 3.0
 
-Dashboard 3.0 已正式發布，以每日市場判讀為首屏主軸，讓使用者依序掌握資料可信度、Market Overview、市場情緒、市場廣度、Heatmap、今日機會與個人化 Widgets。所有資料仍由 `RepositoryHub` 統一提供；Dashboard 元件不直接讀取公開 JSON 或呼叫外部 API。
+Dashboard 3.0 已正式發布，以每日市場判讀為首屏主軸，讓使用者依序掌握市場方向、資料可信度、市場廣度、資金焦點與個人化觀察。
 
-- Market Command Center 集中顯示指數、成交值、市場方向、情緒、廣度與規則式摘要。
-- 資料狀態清楚區分 Official、Mixed、Partial、Stale、Missing，規則推導資訊另以 Derived 標示。
-- Market Breadth 與 Heatmap 提供市場多空結構及產業／個股強弱觀察。
-- 固定首屏區塊維持一致資訊層級；既有 Widgets 沿用 `guli-dashboard-widget-layout-v1` 保存排序。
-- 單一 Widget 讀取或渲染失敗時，只影響該區塊，並提供 Loading、Empty、Error、Stale 與重試狀態。
-- 響應式支援 360px 至 2560px，並包含鍵盤操作、焦點樣式、44px 觸控區及 `prefers-reduced-motion`。
-- GitHub Pages 維持 Vite `base: '/guli/'` 與 React Router `basename="/guli"`。
+- **Market Command Center**：集中顯示加權指數、漲跌、成交值、法人方向、市場情緒與今日規則式摘要。
+- **Market Breadth**：呈現上漲、下跌、平盤與極端漲跌比例，搭配文字判讀。
+- **Market Heatmap**：支援產業／個股模式、Top 50／Top 100 切換、互動 Tooltip 與既有分析路由。
+- **資料可信度**：區分 Official、Mixed、Partial、Stale、Missing，規則推導資訊另以 Derived 標示。
+- **Widget 體驗**：固定首屏維持一致層級；既有可拖曳 Widgets 延續 LocalStorage 排列與個人化設定。
+- **穩定性**：下方 Widgets 採 lazy loading，單一區塊失敗不影響整頁，並提供 Loading、Empty、Error、Stale 與重試狀態。
+- **響應式與可及性**：支援 360px 至 2560px、鍵盤操作、焦點樣式、44px 觸控區與 `prefers-reduced-motion`。
 
 本版本不調整 Decision、Technical、Health、Snapshot 公式，也不包含 Stock Page 3.0。
 
-## 發布歷程
-
-=======
->>>>>>> origin/main
-## Dashboard 3.0 Release Candidate
-
-Dashboard 3.0 以每日市場判讀為首屏主軸，依序呈現資料可信度、Market Overview、市場情緒、市場廣度、Heatmap、今日機會與既有個人化 Widgets。所有資料仍由 `RepositoryHub` 統一提供；Dashboard 元件不直接讀取公開 JSON 或呼叫外部 API。
-
-- 資料狀態明確區分 Official、Mixed、Partial、Stale、Missing，推導資訊另以 Derived 標示。
-- 固定首屏區塊不可拖曳；原有 Widgets 沿用 `guli-dashboard-widget-layout-v1` 保存排序。
-- 單一 Widget 讀取或渲染失敗時，僅顯示該區塊錯誤與重試操作，不造成整頁白畫面。
-- 響應式驗收涵蓋 360px 至 2560px，並支援鍵盤、焦點樣式及 `prefers-reduced-motion`。
-- GitHub Pages 維持 Vite `base: '/guli/'` 與 React Router `basename="/guli"`。
-
-此發布候選不調整 Decision、Technical、Health、Snapshot 公式，也不包含 Stock Page 3.0。正式版本與 Sidebar 版本字樣需待人工驗收後再更新。
-
-GULI 是以 React、TypeScript、Vite 建立的台股盤後資料與規則分析平台。網站部署於 GitHub Pages，Vite `base` 固定為 `/guli/`，React Router `basename` 固定為 `/guli`。
+## 版本歷程
 
 ## GULI v1.1.1 — TWSE Data Completion
 

@@ -7,7 +7,7 @@ const breadth = readFileSync(new URL('../MarketBreadthCard.tsx', import.meta.url
 const toolbar = readFileSync(new URL('../MarketHeatmapToolbar.tsx', import.meta.url), 'utf8')
 const styles = readFileSync(new URL('../../../styles/index.css', import.meta.url), 'utf8')
 
-describe('Dashboard alpha.2 accessibility', () => {
+describe('Dashboard accessibility contract', () => {
   it('supports keyboard disclosures and toggle state', () => {
     expect(status).toContain('aria-expanded={expanded}')
     expect(status).toContain('aria-controls={detailsId}')

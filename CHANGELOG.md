@@ -1,26 +1,20 @@
 # Changelog
 
-<<<<<<< HEAD
-## [1.2.0] - Dashboard 3.0 正式發布
+## [1.2.0] - 2026-07-24
 
-- Dashboard 3.0 正式上線，以 Market Overview、市場情緒、市場廣度與 Heatmap 建立清楚的首屏判讀流程。
-- 資料狀態明確區分 Official、Mixed、Partial、Stale、Missing，規則推導資訊另以 Derived 標示。
-- 固定首屏區塊保留一致的資訊層級；既有可拖曳 Widgets 繼續沿用 `guli-dashboard-widget-layout-v1` 與使用者排序。
-- 每個 Dashboard Widget 具備獨立 Loading、Empty、Error、Stale 狀態與錯誤隔離，單一區塊失敗不影響整頁。
-- 完成 360px 至 2560px 響應式、鍵盤操作、44px 觸控區與 `prefers-reduced-motion` 驗收。
-- 保留 RepositoryHub、Provider、Cache、Decision／Technical／Health／Snapshot 公式及 GitHub Pages 路由設定。
+### Dashboard 3.0 正式發布
+
+- 正式推出 Market Command Center，集中呈現加權指數、成交值、市場方向、情緒、廣度及規則式摘要。
+- 新增 Market Breadth 與產業／個股 Heatmap 首屏整合，保留既有 RepositoryHub 與路由行為。
+- 資料狀態明確區分 Official、Mixed、Partial、Stale、Missing；規則推導內容另以 Derived 標示。
+- 既有可拖曳 Widgets 繼續沿用 `guli-dashboard-widget-layout-v1`，不清除使用者 LocalStorage 排列。
+- 每個 Widget 具備 lazy loading、錯誤隔離及 Loading／Empty／Error／Stale 狀態。
+- 完成 360px 至 2560px 響應式、鍵盤操作、44px 觸控區及 `prefers-reduced-motion` 驗收。
+- 保留 Decision／Technical／Health／Snapshot 公式、TWSE 資料來源及 GitHub Pages 設定。
 
 ## [1.2.0-beta.1] - Dashboard 3.0 Release Candidate（歷史紀錄）
-=======
-## [1.2.0-beta.1] - Dashboard 3.0 Release Candidate
->>>>>>> origin/main
 
-- 完成 Dashboard 3.0 首屏、資料狀態、Market Overview、市場廣度、Heatmap 與原有可拖曳 Widgets 的 release candidate 驗收。
-- 修正 Partial 資料被誤標為 Stale／Mixed 的狀態語意；Official、Mixed、Partial、Stale、Missing 現在各自獨立。
-- 為每個可拖曳 Dashboard Widget 加入錯誤隔離與區塊重試，單一 Widget 失敗不再影響整頁。
-- 強化既有 `guli-dashboard-widget-layout-v1` 的損壞 JSON、重設與 LocalStorage 封鎖相容測試。
-- 保留 RepositoryHub、Provider、Cache、Decision／Technical／Health／Snapshot 公式、GitHub Pages 路由與既有資料來源。
-- 本項為 Dashboard 3.0 發布候選文件；`package.json` 與 Sidebar 正式版本仍維持 1.1.1，待人工驗收後再升版。
+- 完成 Dashboard 3.0 發布候選驗收，正式版未變更核心分析公式或資料架構。
 
 ## [1.1.1]
 

@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest'
 
 const source = (path: string) => readFileSync(new URL(path, import.meta.url), 'utf8')
 
-describe('Dashboard 3.0 beta release safeguards', () => {
+describe('Dashboard 3.0 release safeguards', () => {
   const dashboard = source('../../../pages/Dashboard.tsx')
   const statusBar = source('../DashboardDataStatusBar.tsx')
   const layout = source('../DashboardWidgetLayout.tsx')
@@ -15,9 +15,10 @@ describe('Dashboard 3.0 beta release safeguards', () => {
   const app = source('../../../App.tsx')
   const vite = source('../../../../vite.config.ts')
 
-  it('exposes the beta Dashboard marker without changing the application version', () => {
-    expect(dashboard).toContain('data-dashboard-version="dashboard-3.0-beta.1"')
-    expect(dashboard).toContain('Dashboard 3.0 Beta')
+  it('exposes the final Dashboard marker and product version', () => {
+    expect(dashboard).toContain('data-dashboard-version="dashboard-3.0"')
+    expect(dashboard).toContain('Dashboard 3.0')
+    expect(dashboard).not.toMatch(/Dashboard 3\.0 (?:Alpha|Beta|RC)/)
   })
 
   it('distinguishes Partial from Stale and Mixed coverage', () => {

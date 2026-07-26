@@ -5,7 +5,7 @@ const command = readFileSync(new URL('../MarketCommandCenter.tsx', import.meta.u
 const countUp = readFileSync(new URL('../DashboardCountUpValue.tsx', import.meta.url), 'utf8')
 const styles = readFileSync(new URL('../../../styles/index.css', import.meta.url), 'utf8')
 
-describe('Dashboard alpha.3 typography', () => {
+describe('Dashboard typography', () => {
   it('uses tabular financial numbers across the Dashboard', () => {
     expect(styles).toContain('font-variant-numeric: tabular-nums')
     expect(countUp).toContain('data-numeric')
@@ -18,7 +18,7 @@ describe('Dashboard alpha.3 typography', () => {
   })
 
   it('uses a consistent 12 pixel updated-time treatment', () => {
-    expect(styles).toMatch(/\.dashboard-alpha3 \.dashboard-updated[\s\S]*font-size: \.75rem/)
+    expect(styles).toMatch(/\.dashboard-v3 \.dashboard-updated[\s\S]*font-size: \.75rem/)
     expect(command).toContain('dashboard-updated')
   })
 
