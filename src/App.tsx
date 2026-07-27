@@ -26,13 +26,13 @@ const EmptyPage = lazy(() => import('./pages/EmptyPage').then((module) => ({ def
 type Resource = 'overview' | 'stocks' | 'industries' | 'events'
 const completedPaths = new Set(['/capital-flow', '/market-focus', '/watchlist', '/ai', '/settings', '/history', '/industries', '/data-status/stocks', '/stock-snapshots', '/decisions', '/data-coverage', '/screener'])
 
-function RouteShell({ resource, children, dataGate = true }: { resource: Resource; children: ReactNode; dataGate?: boolean }) {
-  return <AppErrorBoundary><Suspense fallback={<div className="panel"><LoadingState rows={6}/></div>}>{dataGate ? <PageDataGate resource={resource}>{children}</PageDataGate> : children}</Suspense></AppErrorBoundary>
+function RouteShell({ resource, children, dataGate = true, dashboard = false }: { resource: Resource; children: ReactNode; dataGate?: boolean; dashboard?: boolean }) {
+  return <AppErrorBoundary><Suspense fallback={<div className="panel"><LoadingState rows={6}/></div>}>{dataGate ? <PageDataGate resource={resource} variant={dashboard ? 'dashboard' : 'default'}>{children}</PageDataGate> : children}</Suspense></AppErrorBoundary>
 }
 
 export default function App() {
   return <Routes><Route element={<AppLayout/>}>
-    <Route index element={<RouteShell resource="overview"><Dashboard/></RouteShell>}/>
+    <Route index element={<RouteShell resource="overview" dashboard><Dashboard/></RouteShell>}/>
     <Route path="/capital-flow" element={<RouteShell resource="industries"><CapitalRotation/></RouteShell>}/>
     <Route path="/market-focus" element={<RouteShell resource="events"><MarketFocus/></RouteShell>}/>
     <Route path="/stock/:symbol" element={<RouteShell resource="stocks" dataGate={false}><StockDetailWithSnapshot/></RouteShell>}/>

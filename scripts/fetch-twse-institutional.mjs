@@ -18,7 +18,7 @@ const fieldIndex = (response, patterns, fallback) => { const fields = Array.isAr
 async function fetchJson(url) {
   const controller = new AbortController(); const timeout = setTimeout(() => controller.abort(), TIMEOUT_MS)
   try {
-    const response = await fetch(url, { signal: controller.signal, headers: { accept: 'application/json', 'user-agent': 'GULI-Data-Sync/0.8.0-beta.1' } })
+    const response = await fetch(url, { signal: controller.signal, headers: { accept: 'application/json', 'user-agent': 'GULI-Data-Sync/1.2.0' } })
     if (!response.ok) throw new Error(`HTTP ${response.status}`)
     const text = await response.text(); try { return JSON.parse(text) } catch { throw new Error('回應不是有效 JSON') }
   } finally { clearTimeout(timeout) }
