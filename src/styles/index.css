@@ -146,6 +146,30 @@ body::before {
 }
 
 .app-main-content { min-width: 0; overflow-x: clip; }
+.heatmap-tooltip-content {
+  box-sizing: border-box;
+  width: 300px;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.heatmap-tooltip-row {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+}
+.heatmap-tooltip-label {
+  width: 72px;
+  min-width: 72px;
+}
+.heatmap-tooltip-value {
+  min-width: 0;
+  text-align: right;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
 .dashboard-v3,
 .dashboard-v3 > *,
 .dashboard-status-bar { max-width: 100%; }
@@ -412,6 +436,7 @@ body::before {
   .dashboard-v3 { gap: 18px; }
   .dashboard-page-header p { max-width: 34ch; }
   .dashboard-status-bar { overflow: hidden; }
+  .heatmap-tooltip-content { width: min(300px, calc(100vw - 52px)); }
   .dashboard-command-center [class*='text-3xl'] { font-size: 1.65rem; }
   .dashboard-v3 .dashboard-card-header { min-height: auto; }
   .dashboard-v3 .dashboard-card { border-radius: 16px; }

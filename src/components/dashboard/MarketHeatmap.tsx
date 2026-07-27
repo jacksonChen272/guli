@@ -17,7 +17,7 @@ import { Card } from '../ui/Card'
 import { MarketHeatmapEmptyState } from './MarketHeatmapEmptyState'
 import { MarketHeatmapLegend } from './MarketHeatmapLegend'
 import { type HeatmapDisplayMode, MarketHeatmapToolbar } from './MarketHeatmapToolbar'
-import { formatHeatmapTooltipHtml } from './MarketHeatmapTooltip'
+import { formatHeatmapTooltipHtml, resolveHeatmapTooltipPosition } from './MarketHeatmapTooltip'
 
 interface ChartDatum {
   id: string
@@ -42,6 +42,7 @@ export function MarketHeatmap({
   const navigate = useNavigate()
   const chartRef = useRef<ReactECharts>(null)
   const containerRef = useRef<HTMLDivElement>(null)
+  const chartViewportRef = useRef<HTMLDivElement>(null)
   const [mode, setMode] = useState<HeatmapDisplayMode>('industry')
   const [sizingMetric, setSizingMetric] = useState<HeatmapSizingMetric>('tradingAmount')
   const [colorMetric, setColorMetric] = useState<HeatmapColorMetric>('changePercent')
@@ -78,11 +79,32 @@ export function MarketHeatmap({
     animationEasingUpdate: 'cubicOut',
     tooltip: {
       trigger: 'item',
+      triggerOn: 'mousemove|click',
       confine: true,
       appendToBody: false,
+      enterable: true,
+      hideDelay: 1_600,
+      z: 100,
       backgroundColor: 'rgba(8,14,17,.97)',
       borderColor: 'rgba(255,255,255,.12)',
       textStyle: { color: '#dbe4e2', fontSize: 12 },
+      extraCssText: 'box-sizing:border-box;max-width:min(320px,calc(100vw - 32px));white-space:normal;overflow-wrap:anywhere;word-break:normal;z-index:100;',
+      position: (
+        point: readonly number[],
+        _params: unknown,
+        _dom: unknown,
+        _rect: unknown,
+        size: { contentSize: readonly number[]; viewSize: readonly number[] },
+      ) => {
+        const chartRect = chartViewportRef.current?.getBoundingClientRect()
+        return resolveHeatmapTooltipPosition(
+          point,
+          size,
+          chartRect && typeof window !== 'undefined'
+            ? { left: chartRect.left, top: chartRect.top, width: window.innerWidth, height: window.innerHeight }
+            : undefined,
+        )
+      },
       formatter: (raw: unknown) => {
         const datum = (raw as { data?: ChartDatum }).data
         return datum ? formatHeatmapTooltipHtml(datum.node, colorMetric, datum.marketRank) : ''
@@ -174,6 +196,7 @@ export function MarketHeatmap({
             面積依{sizingMetric === 'tradingAmount' ? '成交值' : '成交量'}由大到小；顏色依{colorMetric === 'changePercent' ? '漲跌幅' : colorMetric === 'technicalScore' ? ' Technical Score' : ' Decision Score'}。
           </p>
           <div
+            ref={chartViewportRef}
             role="img"
             aria-label={`${industry?.name ?? (mode === 'industry' ? '產業' : '個股')}市場熱力圖`}
             className="min-w-0 overflow-hidden"
