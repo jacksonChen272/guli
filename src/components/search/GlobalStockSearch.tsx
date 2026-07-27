@@ -132,7 +132,7 @@ export function GlobalStockSearch({ variant = 'topbar' }: { variant?: 'topbar' |
       onChange={(event) => { setQuery(event.target.value); setActiveIndex(0); if (!palette) setOpen(true) }}
       onFocus={() => { if (!palette) setOpen(true) }}
       onKeyDown={(event) => onKeyDown(event, palette)}
-      className="w-full bg-transparent text-[15px] text-slate-100 outline-none placeholder:text-slate-500"
+      className="h-full w-full bg-transparent text-[15px] text-slate-100 outline-none placeholder:text-slate-500"
       placeholder="搜尋股票、代碼或功能"
       aria-label="全域智慧搜尋"
       aria-expanded={palette ? paletteOpen : open}

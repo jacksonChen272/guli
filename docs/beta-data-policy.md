@@ -1,6 +1,6 @@
 # GULI 公開測試資料政策
 
-GULI v0.8.0-beta.1 預設啟用 Public Beta Mode。核心頁面使用以下狀態：
+GULI v1.2.0 預設啟用 Public Beta Mode。核心頁面使用以下狀態：
 
 - `Official`：欄位直接來自已驗證的 TWSE 官方盤後資料。
 - `Mixed`：同頁同時包含官方、GULI 規則推導或 Mock 資料。
