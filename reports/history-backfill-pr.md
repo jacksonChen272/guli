@@ -5,13 +5,13 @@
 - Complete: 98
 - Partial: 2
 - Failed: 0
-- New records: 31,434
-- Retries: 0
-- Duration: 2365 seconds
-- History coverage: 121/1,082 -> 219/1,082
-- Technical coverage: 197/1,082 -> 297/1,082
-- Pending: 885 -> 785
-- Batch payload delta: 7,445,339 bytes
+- New records: 31,189
+- Retries: 1
+- Duration: 2683 seconds
+- History coverage: 219/1,082 -> 317/1,082
+- Technical coverage: 297/1,082 -> 397/1,082
+- Pending: 785 -> 685
+- Batch payload delta: 7,395,183 bytes
 - Audit sample: 10/10
 - Tests: passed
 - Build: passed
@@ -21,7 +21,7 @@
 - None
 
 ### Partial symbols
-- 2072: 78/300 trading days available
-- 2321: 255/300 trading days available
+- 2432: 298/300 trading days available
+- 2438: 299/300 trading days available
 
 Failure categories tracked: RATE_LIMIT, NETWORK_ERROR, INVALID_RESPONSE, NO_DATA, PARSE_ERROR, VALIDATION_ERROR, WRITE_ERROR, UNKNOWN

@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.2.0] - 2026-07-24
+
+### Dashboard 3.0 正式發布
+
+- 正式推出 Market Command Center，集中呈現加權指數、成交值、市場方向、情緒、廣度及規則式摘要。
+- 新增 Market Breadth 與產業／個股 Heatmap 首屏整合，保留既有 RepositoryHub 與路由行為。
+- 資料狀態明確區分 Official、Mixed、Partial、Stale、Missing；規則推導內容另以 Derived 標示。
+- 既有可拖曳 Widgets 繼續沿用 `guli-dashboard-widget-layout-v1`，不清除使用者 LocalStorage 排列。
+- 每個 Widget 具備 lazy loading、錯誤隔離及 Loading／Empty／Error／Stale 狀態。
+- 完成 360px 至 2560px 響應式、鍵盤操作、44px 觸控區及 `prefers-reduced-motion` 驗收。
+- 保留 Decision／Technical／Health／Snapshot 公式、TWSE 資料來源及 GitHub Pages 設定。
+
+## [1.2.0-beta.1] - Dashboard 3.0 Release Candidate（歷史紀錄）
+
+- 完成 Dashboard 3.0 發布候選驗收，正式版未變更核心分析公式或資料架構。
+
 ## [1.1.1]
 
 - 建立可分批、限流、重試、續跑與單檔執行的 TWSE 上市普通股歷史行情回補管線；沿用既有 `twse-stock-history` 單一資料架構。

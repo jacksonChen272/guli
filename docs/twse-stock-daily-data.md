@@ -1,6 +1,6 @@
 # TWSE 上市個股每日盤後資料
 
-GULI v0.5.5-alpha.1 只接入臺灣證券交易所上市證券盤後日資料，不包含 TPEX、Yahoo、FinMind 或即時行情。
+GULI v1.2.0 只接入臺灣證券交易所上市證券盤後日資料，不包含 TPEX、Yahoo、FinMind 或即時行情。
 
 ## 官方端點
 
