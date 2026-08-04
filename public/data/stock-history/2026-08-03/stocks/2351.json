@@ -1,0 +1,67 @@
+{
+  "symbol": "2351",
+  "name": "順德",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 142.5,
+    "high": 159.5,
+    "low": 142.5,
+    "close": 156.5,
+    "change": 11,
+    "changePercent": 7.56,
+    "tradeVolume": 3145124,
+    "transactionCount": 3088,
+    "tradeValue": 489209258,
+    "peRatio": 69.25
+  },
+  "dailyRangePercent": 11.93,
+  "turnoverAverageValue": 158422.69,
+  "pricePosition": 82.4,
+  "liquidityScore": 82.8,
+  "priceStrengthScore": 82.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 68.1,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 7.56% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.93% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 69.25 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

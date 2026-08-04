@@ -1,0 +1,53 @@
+{
+  "symbol": "5234",
+  "name": "達興材料",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 311,
+    "high": 330,
+    "low": 301.5,
+    "close": 325,
+    "change": 13.5,
+    "changePercent": 4.33,
+    "tradeVolume": 292785,
+    "transactionCount": 596,
+    "tradeValue": 94061589,
+    "peRatio": 42.21
+  },
+  "dailyRangePercent": 9.45,
+  "turnoverAverageValue": 157821.46,
+  "pricePosition": 82.5,
+  "liquidityScore": 56,
+  "priceStrengthScore": 75.1,
+  "valuationRiskScore": 75,
+  "snapshotScore": 58.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.45% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

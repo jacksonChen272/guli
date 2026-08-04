@@ -1,0 +1,60 @@
+{
+  "symbol": "6166",
+  "name": "凌華",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 111.5,
+    "high": 124,
+    "low": 110,
+    "close": 124,
+    "change": 11,
+    "changePercent": 9.73,
+    "tradeVolume": 6286079,
+    "transactionCount": 4884,
+    "tradeValue": 745982671,
+    "peRatio": 34.35
+  },
+  "dailyRangePercent": 12.73,
+  "turnoverAverageValue": 152740.1,
+  "pricePosition": 100,
+  "liquidityScore": 88.2,
+  "priceStrengthScore": 93.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 81.9,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.73% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 12.73% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

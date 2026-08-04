@@ -1,0 +1,62 @@
+{
+  "symbol": "3550",
+  "name": "聯穎",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.8,
+    "high": 21.3,
+    "low": 19.5,
+    "close": 20.9,
+    "change": 1.15,
+    "changePercent": 5.82,
+    "tradeVolume": 1416394,
+    "transactionCount": 1009,
+    "tradeValue": 29439988,
+    "peRatio": null
+  },
+  "dailyRangePercent": 9.23,
+  "turnoverAverageValue": 29177.39,
+  "pricePosition": 77.8,
+  "liquidityScore": 61.2,
+  "priceStrengthScore": 76.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 70,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.23% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

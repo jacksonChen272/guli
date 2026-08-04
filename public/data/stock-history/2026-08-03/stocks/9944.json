@@ -1,0 +1,60 @@
+{
+  "symbol": "9944",
+  "name": "新麗",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.75,
+    "high": 17.75,
+    "low": 17.55,
+    "close": 17.75,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 23129,
+    "transactionCount": 46,
+    "tradeValue": 408891,
+    "peRatio": 355
+  },
+  "dailyRangePercent": 1.14,
+  "turnoverAverageValue": 8888.93,
+  "pricePosition": 100,
+  "liquidityScore": 6.2,
+  "priceStrengthScore": 67.5,
+  "valuationRiskScore": 90,
+  "snapshotScore": 34.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 6.2 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 355.00 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

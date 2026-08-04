@@ -1,0 +1,69 @@
+{
+  "symbol": "6431",
+  "name": "光麗-KY",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.5,
+    "high": 18.25,
+    "low": 16.35,
+    "close": 18.25,
+    "change": 1.65,
+    "changePercent": 9.94,
+    "tradeVolume": 101000,
+    "transactionCount": 45,
+    "tradeValue": 1743000,
+    "peRatio": null
+  },
+  "dailyRangePercent": 11.62,
+  "turnoverAverageValue": 38733.33,
+  "pricePosition": 100,
+  "liquidityScore": 17.6,
+  "priceStrengthScore": 93.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 60.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.94% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.62% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

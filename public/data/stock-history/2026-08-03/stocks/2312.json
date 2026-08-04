@@ -1,0 +1,53 @@
+{
+  "symbol": "2312",
+  "name": "金寶",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 29.75,
+    "high": 32.8,
+    "low": 29.35,
+    "close": 31.75,
+    "change": 1.75,
+    "changePercent": 5.83,
+    "tradeVolume": 24054773,
+    "transactionCount": 11558,
+    "tradeValue": 758040231,
+    "peRatio": 30.53
+  },
+  "dailyRangePercent": 11.75,
+  "turnoverAverageValue": 65585.76,
+  "pricePosition": 69.6,
+  "liquidityScore": 92.3,
+  "priceStrengthScore": 74,
+  "valuationRiskScore": 55,
+  "snapshotScore": 74.6,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.75% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

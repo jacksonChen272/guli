@@ -1,0 +1,67 @@
+{
+  "symbol": "4576",
+  "name": "大銀微系統",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 176,
+    "high": 198.5,
+    "low": 176,
+    "close": 197,
+    "change": 16.5,
+    "changePercent": 9.14,
+    "tradeVolume": 1328444,
+    "transactionCount": 1735,
+    "tradeValue": 256636388,
+    "peRatio": 77.56
+  },
+  "dailyRangePercent": 12.78,
+  "turnoverAverageValue": 147917.23,
+  "pricePosition": 93.3,
+  "liquidityScore": 73.4,
+  "priceStrengthScore": 89.7,
+  "valuationRiskScore": 90,
+  "snapshotScore": 68.1,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.14% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 12.78% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 77.56 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

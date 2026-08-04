@@ -1,0 +1,55 @@
+{
+  "symbol": "6885",
+  "name": "全福生技",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.95,
+    "high": 21.1,
+    "low": 20.75,
+    "close": 21.1,
+    "change": 0.15,
+    "changePercent": 0.72,
+    "tradeVolume": 94516,
+    "transactionCount": 77,
+    "tradeValue": 1979535,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.69,
+  "turnoverAverageValue": 25708.25,
+  "pricePosition": 100,
+  "liquidityScore": 19.2,
+  "priceStrengthScore": 73.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 49.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

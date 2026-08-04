@@ -1,0 +1,60 @@
+{
+  "symbol": "2493",
+  "name": "揚博",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 184,
+    "high": 200,
+    "low": 180,
+    "close": 200,
+    "change": 18,
+    "changePercent": 9.89,
+    "tradeVolume": 2989858,
+    "transactionCount": 2713,
+    "tradeValue": 579365749,
+    "peRatio": 47.28
+  },
+  "dailyRangePercent": 11.11,
+  "turnoverAverageValue": 213551.7,
+  "pricePosition": 100,
+  "liquidityScore": 82.9,
+  "priceStrengthScore": 93.8,
+  "valuationRiskScore": 75,
+  "snapshotScore": 76.2,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.89% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.11% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

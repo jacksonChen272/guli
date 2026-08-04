@@ -1,0 +1,60 @@
+{
+  "symbol": "5906",
+  "name": "台南-KY",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 41.25,
+    "high": 41.25,
+    "low": 37.8,
+    "close": 41,
+    "change": -0.25,
+    "changePercent": -0.61,
+    "tradeVolume": 6003,
+    "transactionCount": 7,
+    "tradeValue": 239967,
+    "peRatio": 56.94
+  },
+  "dailyRangePercent": 9.13,
+  "turnoverAverageValue": 34281,
+  "pricePosition": 92.8,
+  "liquidityScore": 1.6,
+  "priceStrengthScore": 59.6,
+  "valuationRiskScore": 75,
+  "snapshotScore": 32.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.13% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 1.6 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

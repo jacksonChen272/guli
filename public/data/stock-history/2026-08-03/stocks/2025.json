@@ -1,0 +1,53 @@
+{
+  "symbol": "2025",
+  "name": "千興",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.15,
+    "high": 12.15,
+    "low": 11.8,
+    "close": 11.9,
+    "change": -0.25,
+    "changePercent": -2.06,
+    "tradeVolume": 312477,
+    "transactionCount": 176,
+    "tradeValue": 3721948,
+    "peRatio": 74.38
+  },
+  "dailyRangePercent": 2.97,
+  "turnoverAverageValue": 21147.43,
+  "pricePosition": 28.6,
+  "liquidityScore": 32.3,
+  "priceStrengthScore": 33.9,
+  "valuationRiskScore": 90,
+  "snapshotScore": 28.6,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 74.38 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

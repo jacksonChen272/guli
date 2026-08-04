@@ -1,0 +1,53 @@
+{
+  "symbol": "6965",
+  "name": "中傑-KY",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 77.4,
+    "high": 79.2,
+    "low": 77,
+    "close": 77,
+    "change": -2.2,
+    "changePercent": -2.78,
+    "tradeVolume": 39108,
+    "transactionCount": 59,
+    "tradeValue": 3038587,
+    "peRatio": 47.83
+  },
+  "dailyRangePercent": 2.86,
+  "turnoverAverageValue": 51501.47,
+  "pricePosition": 0,
+  "liquidityScore": 16.8,
+  "priceStrengthScore": 22.2,
+  "valuationRiskScore": 75,
+  "snapshotScore": 20.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

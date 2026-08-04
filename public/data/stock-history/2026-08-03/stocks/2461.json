@@ -1,0 +1,55 @@
+{
+  "symbol": "2461",
+  "name": "光群雷",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16,
+    "high": 16.3,
+    "low": 15.95,
+    "close": 16.2,
+    "change": 0.2,
+    "changePercent": 1.25,
+    "tradeVolume": 360953,
+    "transactionCount": 204,
+    "tradeValue": 5830640,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.19,
+  "turnoverAverageValue": 28581.57,
+  "pricePosition": 71.4,
+  "liquidityScore": 36.9,
+  "priceStrengthScore": 64.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 52.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

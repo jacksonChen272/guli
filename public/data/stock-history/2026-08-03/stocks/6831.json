@@ -1,0 +1,67 @@
+{
+  "symbol": "6831",
+  "name": "邁科",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 524,
+    "high": 577,
+    "low": 524,
+    "close": 565,
+    "change": 40,
+    "changePercent": 7.62,
+    "tradeVolume": 1858112,
+    "transactionCount": 3616,
+    "tradeValue": 1058100087,
+    "peRatio": 114.84
+  },
+  "dailyRangePercent": 10.11,
+  "turnoverAverageValue": 292616.17,
+  "pricePosition": 77.4,
+  "liquidityScore": 82.8,
+  "priceStrengthScore": 80.7,
+  "valuationRiskScore": 90,
+  "snapshotScore": 67.3,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 7.62% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.11% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 114.84 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

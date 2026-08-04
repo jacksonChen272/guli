@@ -1,0 +1,62 @@
+{
+  "symbol": "2012",
+  "name": "春雨",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 15.05,
+    "high": 15.7,
+    "low": 15.05,
+    "close": 15.65,
+    "change": -0.2,
+    "changePercent": -1.26,
+    "tradeVolume": 21523,
+    "transactionCount": 39,
+    "tradeValue": 334324,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.32,
+  "turnoverAverageValue": 8572.41,
+  "pricePosition": 92.3,
+  "liquidityScore": 5.4,
+  "priceStrengthScore": 66,
+  "valuationRiskScore": null,
+  "snapshotScore": 39.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 5.4 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

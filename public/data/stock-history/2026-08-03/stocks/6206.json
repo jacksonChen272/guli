@@ -1,0 +1,53 @@
+{
+  "symbol": "6206",
+  "name": "飛捷",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 123.5,
+    "high": 137.5,
+    "low": 123,
+    "close": 133.5,
+    "change": 8.5,
+    "changePercent": 6.8,
+    "tradeVolume": 4603504,
+    "transactionCount": 3612,
+    "tradeValue": 610541964,
+    "peRatio": 18.72
+  },
+  "dailyRangePercent": 11.79,
+  "turnoverAverageValue": 169031.55,
+  "pricePosition": 72.4,
+  "liquidityScore": 85.7,
+  "priceStrengthScore": 77.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 77.7,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.79% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

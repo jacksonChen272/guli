@@ -1,0 +1,53 @@
+{
+  "symbol": "1736",
+  "name": "喬山",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 123.5,
+    "high": 131,
+    "low": 120,
+    "close": 130,
+    "change": 7,
+    "changePercent": 5.69,
+    "tradeVolume": 704732,
+    "transactionCount": 681,
+    "tradeValue": 90306611,
+    "peRatio": 15.8
+  },
+  "dailyRangePercent": 9.17,
+  "turnoverAverageValue": 132608.83,
+  "pricePosition": 90.9,
+  "liquidityScore": 62.7,
+  "priceStrengthScore": 81.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 71.4,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.17% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

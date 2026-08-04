@@ -1,0 +1,53 @@
+{
+  "symbol": "6277",
+  "name": "宏正",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 78.8,
+    "high": 79.3,
+    "low": 77.4,
+    "close": 77.4,
+    "change": -2.8,
+    "changePercent": -3.49,
+    "tradeVolume": 382768,
+    "transactionCount": 1002,
+    "tradeValue": 29873620,
+    "peRatio": 23.82
+  },
+  "dailyRangePercent": 2.45,
+  "turnoverAverageValue": 29813.99,
+  "pricePosition": 0,
+  "liquidityScore": 53.9,
+  "priceStrengthScore": 20.7,
+  "valuationRiskScore": 35,
+  "snapshotScore": 41.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

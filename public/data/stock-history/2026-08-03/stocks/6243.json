@@ -1,0 +1,62 @@
+{
+  "symbol": "6243",
+  "name": "迅杰",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 50,
+    "high": 51.7,
+    "low": 47.9,
+    "close": 48.1,
+    "change": -2.6,
+    "changePercent": -5.13,
+    "tradeVolume": 3658995,
+    "transactionCount": 2808,
+    "tradeValue": 182408603,
+    "peRatio": null
+  },
+  "dailyRangePercent": 7.93,
+  "turnoverAverageValue": 64960.33,
+  "pricePosition": 5.3,
+  "liquidityScore": 79.1,
+  "priceStrengthScore": 18.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 45.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

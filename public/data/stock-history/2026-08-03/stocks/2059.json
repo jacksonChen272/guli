@@ -1,0 +1,60 @@
+{
+  "symbol": "2059",
+  "name": "川湖",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 8380,
+    "high": 8635,
+    "low": 8165,
+    "close": 8635,
+    "change": 785,
+    "changePercent": 10,
+    "tradeVolume": 613639,
+    "transactionCount": 4863,
+    "tradeValue": 5253958290,
+    "peRatio": 76.11
+  },
+  "dailyRangePercent": 5.76,
+  "turnoverAverageValue": 1080394.47,
+  "pricePosition": 100,
+  "liquidityScore": 81,
+  "priceStrengthScore": 94,
+  "valuationRiskScore": 90,
+  "snapshotScore": 72.7,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 10.00% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 76.11 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,62 @@
+{
+  "symbol": "6582",
+  "name": "申豐",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 32.15,
+    "high": 32.15,
+    "low": 31.6,
+    "close": 31.9,
+    "change": -0.25,
+    "changePercent": -0.78,
+    "tradeVolume": 34945,
+    "transactionCount": 64,
+    "tradeValue": 1111902,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.74,
+  "turnoverAverageValue": 17373.47,
+  "pricePosition": 54.5,
+  "liquidityScore": 11.5,
+  "priceStrengthScore": 45.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 30.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 11.5 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

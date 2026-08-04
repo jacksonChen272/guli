@@ -1,0 +1,60 @@
+{
+  "symbol": "6887",
+  "name": "寶綠特-KY",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 36.05,
+    "high": 36.6,
+    "low": 35.9,
+    "close": 36,
+    "change": -0.6,
+    "changePercent": -1.64,
+    "tradeVolume": 33013,
+    "transactionCount": 16,
+    "tradeValue": 1191260,
+    "peRatio": 15.19
+  },
+  "dailyRangePercent": 1.95,
+  "turnoverAverageValue": 74453.75,
+  "pricePosition": 14.3,
+  "liquidityScore": 9.3,
+  "priceStrengthScore": 29.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 29.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 9.3 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

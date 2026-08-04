@@ -1,0 +1,53 @@
+{
+  "symbol": "3030",
+  "name": "德律",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 266.5,
+    "high": 292.5,
+    "low": 266,
+    "close": 286.5,
+    "change": 18,
+    "changePercent": 6.7,
+    "tradeVolume": 1554401,
+    "transactionCount": 2368,
+    "tradeValue": 440126872,
+    "peRatio": 24.81
+  },
+  "dailyRangePercent": 9.96,
+  "turnoverAverageValue": 185864.39,
+  "pricePosition": 77.4,
+  "liquidityScore": 77.7,
+  "priceStrengthScore": 78.7,
+  "valuationRiskScore": 35,
+  "snapshotScore": 75.6,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.96% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

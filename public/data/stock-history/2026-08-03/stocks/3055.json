@@ -1,0 +1,62 @@
+{
+  "symbol": "3055",
+  "name": "蔚華科",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 87.8,
+    "high": 95,
+    "low": 87.8,
+    "close": 93.1,
+    "change": 2.7,
+    "changePercent": 2.99,
+    "tradeVolume": 552718,
+    "transactionCount": 648,
+    "tradeValue": 50865295,
+    "peRatio": null
+  },
+  "dailyRangePercent": 8.2,
+  "turnoverAverageValue": 78495.83,
+  "pricePosition": 73.6,
+  "liquidityScore": 58.1,
+  "priceStrengthScore": 69,
+  "valuationRiskScore": null,
+  "snapshotScore": 64.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.20% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

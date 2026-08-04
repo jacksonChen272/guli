@@ -1,0 +1,62 @@
+{
+  "symbol": "1445",
+  "name": "大宇",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.85,
+    "high": 10.85,
+    "low": 10.5,
+    "close": 10.75,
+    "change": -0.15,
+    "changePercent": -1.38,
+    "tradeVolume": 41114,
+    "transactionCount": 40,
+    "tradeValue": 438125,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.33,
+  "turnoverAverageValue": 10953.13,
+  "pricePosition": 71.4,
+  "liquidityScore": 8,
+  "priceStrengthScore": 50.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 31.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.0 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

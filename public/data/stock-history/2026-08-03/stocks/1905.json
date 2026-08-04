@@ -1,0 +1,55 @@
+{
+  "symbol": "1905",
+  "name": "華紙",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.55,
+    "high": 12.95,
+    "low": 12.45,
+    "close": 12.8,
+    "change": 0.15,
+    "changePercent": 1.19,
+    "tradeVolume": 2147958,
+    "transactionCount": 918,
+    "tradeValue": 27370698,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.02,
+  "turnoverAverageValue": 29815.58,
+  "pricePosition": 70,
+  "liquidityScore": 63.1,
+  "priceStrengthScore": 63.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 63.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

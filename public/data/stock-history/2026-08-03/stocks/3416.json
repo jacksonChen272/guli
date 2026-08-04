@@ -1,0 +1,53 @@
+{
+  "symbol": "3416",
+  "name": "融程電",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 164.5,
+    "high": 176.5,
+    "low": 163,
+    "close": 173.5,
+    "change": 8,
+    "changePercent": 4.83,
+    "tradeVolume": 597915,
+    "transactionCount": 658,
+    "tradeValue": 102809439,
+    "peRatio": 23.77
+  },
+  "dailyRangePercent": 8.28,
+  "turnoverAverageValue": 156245.35,
+  "pricePosition": 77.8,
+  "liquidityScore": 62.5,
+  "priceStrengthScore": 74.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 68.4,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.28% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

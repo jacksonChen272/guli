@@ -1,0 +1,53 @@
+{
+  "symbol": "6257",
+  "name": "矽格",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 184,
+    "high": 199.5,
+    "low": 184,
+    "close": 195.5,
+    "change": 9,
+    "changePercent": 4.83,
+    "tradeVolume": 5335963,
+    "transactionCount": 4861,
+    "tradeValue": 1042546188,
+    "peRatio": 29.22
+  },
+  "dailyRangePercent": 8.42,
+  "turnoverAverageValue": 214471.55,
+  "pricePosition": 74.2,
+  "liquidityScore": 88.1,
+  "priceStrengthScore": 73.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 72.9,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.42% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

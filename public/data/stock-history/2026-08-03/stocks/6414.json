@@ -1,0 +1,60 @@
+{
+  "symbol": "6414",
+  "name": "樺漢",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 399,
+    "high": 443.5,
+    "low": 393.5,
+    "close": 437.5,
+    "change": 32.5,
+    "changePercent": 8.02,
+    "tradeVolume": 3126183,
+    "transactionCount": 4162,
+    "tradeValue": 1334821592,
+    "peRatio": 20.33
+  },
+  "dailyRangePercent": 12.71,
+  "turnoverAverageValue": 320716.38,
+  "pricePosition": 88,
+  "liquidityScore": 86.8,
+  "priceStrengthScore": 85.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 81.8,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 8.02% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 12.71% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

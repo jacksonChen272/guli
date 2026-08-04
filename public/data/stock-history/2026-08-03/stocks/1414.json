@@ -1,0 +1,53 @@
+{
+  "symbol": "1414",
+  "name": "東和",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.1,
+    "high": 19.1,
+    "low": 18.3,
+    "close": 18.9,
+    "change": -0.1,
+    "changePercent": -0.53,
+    "tradeVolume": 256582,
+    "transactionCount": 234,
+    "tradeValue": 4781678,
+    "peRatio": 65.17
+  },
+  "dailyRangePercent": 4.37,
+  "turnoverAverageValue": 20434.52,
+  "pricePosition": 75,
+  "liquidityScore": 33.8,
+  "priceStrengthScore": 53.6,
+  "valuationRiskScore": 90,
+  "snapshotScore": 38,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 65.17 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

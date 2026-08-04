@@ -1,0 +1,55 @@
+{
+  "symbol": "1449",
+  "name": "佳和",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.95,
+    "high": 12.2,
+    "low": 11.95,
+    "close": 12.2,
+    "change": 0.1,
+    "changePercent": 0.83,
+    "tradeVolume": 422809,
+    "transactionCount": 198,
+    "tradeValue": 5104167,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.09,
+  "turnoverAverageValue": 25778.62,
+  "pricePosition": 100,
+  "liquidityScore": 37.4,
+  "priceStrengthScore": 73.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 57.7,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

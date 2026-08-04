@@ -1,0 +1,53 @@
+{
+  "symbol": "9926",
+  "name": "新海",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 49.05,
+    "high": 49.7,
+    "low": 49.05,
+    "close": 49.7,
+    "change": 0.4,
+    "changePercent": 0.81,
+    "tradeVolume": 11054,
+    "transactionCount": 18,
+    "tradeValue": 545659,
+    "peRatio": 18.21
+  },
+  "dailyRangePercent": 1.33,
+  "turnoverAverageValue": 30314.39,
+  "pricePosition": 100,
+  "liquidityScore": 4.2,
+  "priceStrengthScore": 73.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 47.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 4.2 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

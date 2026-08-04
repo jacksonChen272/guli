@@ -1,0 +1,53 @@
+{
+  "symbol": "6581",
+  "name": "鋼聯",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 108,
+    "high": 108.5,
+    "low": 108,
+    "close": 108.5,
+    "change": -0.5,
+    "changePercent": -0.46,
+    "tradeVolume": 14464,
+    "transactionCount": 27,
+    "tradeValue": 1565379,
+    "peRatio": 17.9
+  },
+  "dailyRangePercent": 0.46,
+  "turnoverAverageValue": 57977,
+  "pricePosition": 100,
+  "liquidityScore": 9.6,
+  "priceStrengthScore": 70.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 48.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 9.6 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

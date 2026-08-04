@@ -1,0 +1,55 @@
+{
+  "symbol": "1465",
+  "name": "偉全",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.75,
+    "high": 12.75,
+    "low": 12.35,
+    "close": 12.6,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 132692,
+    "transactionCount": 140,
+    "tradeValue": 1667717,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.24,
+  "turnoverAverageValue": 11912.26,
+  "pricePosition": 62.5,
+  "liquidityScore": 21.8,
+  "priceStrengthScore": 50.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 37.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

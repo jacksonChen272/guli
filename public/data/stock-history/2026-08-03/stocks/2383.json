@@ -1,0 +1,60 @@
+{
+  "symbol": "2383",
+  "name": "台光電",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 5135,
+    "high": 5195,
+    "low": 4930,
+    "close": 4980,
+    "change": 235,
+    "changePercent": 4.95,
+    "tradeVolume": 4183768,
+    "transactionCount": 15611,
+    "tradeValue": 21241674925,
+    "peRatio": 77.87
+  },
+  "dailyRangePercent": 5.38,
+  "turnoverAverageValue": 1360686.37,
+  "pricePosition": 18.9,
+  "liquidityScore": 93.4,
+  "priceStrengthScore": 46.3,
+  "valuationRiskScore": 90,
+  "snapshotScore": 55.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.9 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 77.87 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

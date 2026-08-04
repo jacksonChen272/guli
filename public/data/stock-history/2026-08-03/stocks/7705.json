@@ -1,0 +1,53 @@
+{
+  "symbol": "7705",
+  "name": "三商餐飲",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 30,
+    "high": 30.35,
+    "low": 30,
+    "close": 30.2,
+    "change": -0.2,
+    "changePercent": -0.66,
+    "tradeVolume": 14032,
+    "transactionCount": 78,
+    "tradeValue": 424634,
+    "peRatio": 13.54
+  },
+  "dailyRangePercent": 1.17,
+  "turnoverAverageValue": 5444.03,
+  "pricePosition": 57.1,
+  "liquidityScore": 6.9,
+  "priceStrengthScore": 55,
+  "valuationRiskScore": 20,
+  "snapshotScore": 43.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 6.9 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

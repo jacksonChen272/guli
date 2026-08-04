@@ -1,0 +1,53 @@
+{
+  "symbol": "2362",
+  "name": "藍天",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 41.5,
+    "high": 45.45,
+    "low": 41.5,
+    "close": 44.75,
+    "change": 2.8,
+    "changePercent": 6.67,
+    "tradeVolume": 1638307,
+    "transactionCount": 1576,
+    "tradeValue": 72756814,
+    "peRatio": 19.98
+  },
+  "dailyRangePercent": 9.52,
+  "turnoverAverageValue": 46165.49,
+  "pricePosition": 82.3,
+  "liquidityScore": 68.3,
+  "priceStrengthScore": 80.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 73,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.52% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

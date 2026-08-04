@@ -1,0 +1,55 @@
+{
+  "symbol": "6552",
+  "name": "易華電",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.4,
+    "high": 24.5,
+    "low": 23.15,
+    "close": 23.8,
+    "change": -0.3,
+    "changePercent": -1.24,
+    "tradeVolume": 156244,
+    "transactionCount": 139,
+    "tradeValue": 3722058,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.83,
+  "turnoverAverageValue": 26777.4,
+  "pricePosition": 48.1,
+  "liquidityScore": 27.2,
+  "priceStrengthScore": 50.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 40.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

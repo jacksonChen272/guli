@@ -1,0 +1,53 @@
+{
+  "symbol": "7765",
+  "name": "中華資安",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 226.5,
+    "high": 227,
+    "low": 222,
+    "close": 222.5,
+    "change": -3,
+    "changePercent": -1.33,
+    "tradeVolume": 53478,
+    "transactionCount": 1115,
+    "tradeValue": 11971808,
+    "peRatio": 19.4
+  },
+  "dailyRangePercent": 2.25,
+  "turnoverAverageValue": 10737.05,
+  "pricePosition": 10,
+  "liquidityScore": 37,
+  "priceStrengthScore": 29,
+  "valuationRiskScore": 35,
+  "snapshotScore": 39,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "6666",
+  "name": "羅麗芬-KY",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 43.5,
+    "high": 44.9,
+    "low": 43.5,
+    "close": 44.85,
+    "change": 0.1,
+    "changePercent": 0.22,
+    "tradeVolume": 23188,
+    "transactionCount": 27,
+    "tradeValue": 1030866,
+    "peRatio": 20.76
+  },
+  "dailyRangePercent": 3.22,
+  "turnoverAverageValue": 38180.22,
+  "pricePosition": 96.4,
+  "liquidityScore": 8.2,
+  "priceStrengthScore": 70.7,
+  "valuationRiskScore": 35,
+  "snapshotScore": 47.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.2 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

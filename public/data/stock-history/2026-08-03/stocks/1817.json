@@ -1,0 +1,53 @@
+{
+  "symbol": "1817",
+  "name": "凱撒衛",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 38.5,
+    "high": 38.5,
+    "low": 38.25,
+    "close": 38.5,
+    "change": -0.15,
+    "changePercent": -0.39,
+    "tradeVolume": 23159,
+    "transactionCount": 28,
+    "tradeValue": 887633,
+    "peRatio": 9.19
+  },
+  "dailyRangePercent": 0.65,
+  "turnoverAverageValue": 31701.18,
+  "pricePosition": 100,
+  "liquidityScore": 7.6,
+  "priceStrengthScore": 66.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 48.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.6 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

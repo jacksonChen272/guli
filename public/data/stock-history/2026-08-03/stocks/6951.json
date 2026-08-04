@@ -1,0 +1,53 @@
+{
+  "symbol": "6951",
+  "name": "青新-創",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 71.4,
+    "high": 71.5,
+    "low": 71,
+    "close": 71.3,
+    "change": -0.1,
+    "changePercent": -0.14,
+    "tradeVolume": 20043,
+    "transactionCount": 44,
+    "tradeValue": 1430374,
+    "peRatio": 12.4
+  },
+  "dailyRangePercent": 0.7,
+  "turnoverAverageValue": 32508.5,
+  "pricePosition": 60,
+  "liquidityScore": 10.3,
+  "priceStrengthScore": 49.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 41.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.3 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

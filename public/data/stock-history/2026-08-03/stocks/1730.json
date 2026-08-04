@@ -1,0 +1,53 @@
+{
+  "symbol": "1730",
+  "name": "花仙子",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 51,
+    "high": 51.7,
+    "low": 51,
+    "close": 51.3,
+    "change": 0.1,
+    "changePercent": 0.2,
+    "tradeVolume": 18772,
+    "transactionCount": 46,
+    "tradeValue": 964228,
+    "peRatio": 11.08
+  },
+  "dailyRangePercent": 1.37,
+  "turnoverAverageValue": 20961.48,
+  "pricePosition": 42.9,
+  "liquidityScore": 8.4,
+  "priceStrengthScore": 52,
+  "valuationRiskScore": 20,
+  "snapshotScore": 42.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.4 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

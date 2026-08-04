@@ -1,0 +1,55 @@
+{
+  "symbol": "2440",
+  "name": "太空梭",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 15.15,
+    "high": 15.75,
+    "low": 15.15,
+    "close": 15.6,
+    "change": 0.35,
+    "changePercent": 2.3,
+    "tradeVolume": 219631,
+    "transactionCount": 169,
+    "tradeValue": 3390858,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.96,
+  "turnoverAverageValue": 20064.25,
+  "pricePosition": 75,
+  "liquidityScore": 29.3,
+  "priceStrengthScore": 67.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 51,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

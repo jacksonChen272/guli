@@ -1,0 +1,55 @@
+{
+  "symbol": "2258",
+  "name": "鴻華先進-創",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 31.75,
+    "high": 31.75,
+    "low": 31.25,
+    "close": 31.4,
+    "change": -0.6,
+    "changePercent": -1.87,
+    "tradeVolume": 410281,
+    "transactionCount": 295,
+    "tradeValue": 12876859,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.6,
+  "turnoverAverageValue": 43650.37,
+  "pricePosition": 30,
+  "liquidityScore": 44.5,
+  "priceStrengthScore": 34.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 39,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

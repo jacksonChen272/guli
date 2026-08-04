@@ -1,0 +1,69 @@
+{
+  "symbol": "2369",
+  "name": "菱生",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 29.05,
+    "high": 32.25,
+    "low": 29,
+    "close": 32,
+    "change": 2.6,
+    "changePercent": 8.84,
+    "tradeVolume": 12348090,
+    "transactionCount": 7032,
+    "tradeValue": 384723526,
+    "peRatio": null
+  },
+  "dailyRangePercent": 11.21,
+  "turnoverAverageValue": 54710.4,
+  "pricePosition": 92.3,
+  "liquidityScore": 88.3,
+  "priceStrengthScore": 88.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 88.5,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 8.84% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.21% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "3583",
+  "name": "辛耘",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 629,
+    "high": 689,
+    "low": 626,
+    "close": 670,
+    "change": 20,
+    "changePercent": 3.08,
+    "tradeVolume": 1486441,
+    "transactionCount": 1856,
+    "tradeValue": 976796318,
+    "peRatio": 45.42
+  },
+  "dailyRangePercent": 10.06,
+  "turnoverAverageValue": 526291.12,
+  "pricePosition": 69.8,
+  "liquidityScore": 79.2,
+  "priceStrengthScore": 67.9,
+  "valuationRiskScore": 75,
+  "snapshotScore": 63.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.06% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

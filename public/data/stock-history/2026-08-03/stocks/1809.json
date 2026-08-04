@@ -1,0 +1,60 @@
+{
+  "symbol": "1809",
+  "name": "中釉",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 31.6,
+    "high": 34.35,
+    "low": 31.5,
+    "close": 34.3,
+    "change": 2.1,
+    "changePercent": 6.52,
+    "tradeVolume": 1519259,
+    "transactionCount": 1296,
+    "tradeValue": 50702978,
+    "peRatio": 180.53
+  },
+  "dailyRangePercent": 9.05,
+  "turnoverAverageValue": 39122.67,
+  "pricePosition": 98.2,
+  "liquidityScore": 65.6,
+  "priceStrengthScore": 85.5,
+  "valuationRiskScore": 90,
+  "snapshotScore": 63.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.05% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 180.53 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "8476",
+  "name": "台境*",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.35,
+    "high": 19.6,
+    "low": 19.15,
+    "close": 19.2,
+    "change": -0.15,
+    "changePercent": -0.78,
+    "tradeVolume": 280590,
+    "transactionCount": 176,
+    "tradeValue": 5427706,
+    "peRatio": 45.71
+  },
+  "dailyRangePercent": 2.35,
+  "turnoverAverageValue": 30839.24,
+  "pricePosition": 11.1,
+  "liquidityScore": 34,
+  "priceStrengthScore": 30.6,
+  "valuationRiskScore": 75,
+  "snapshotScore": 30.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

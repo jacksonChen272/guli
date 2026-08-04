@@ -1,0 +1,53 @@
+{
+  "symbol": "3311",
+  "name": "閎暉",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 32.25,
+    "high": 32.3,
+    "low": 31.8,
+    "close": 31.85,
+    "change": -0.8,
+    "changePercent": -2.45,
+    "tradeVolume": 302704,
+    "transactionCount": 288,
+    "tradeValue": 9690267,
+    "peRatio": 17.6
+  },
+  "dailyRangePercent": 1.57,
+  "turnoverAverageValue": 33646.76,
+  "pricePosition": 10,
+  "liquidityScore": 40.1,
+  "priceStrengthScore": 26.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 39,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

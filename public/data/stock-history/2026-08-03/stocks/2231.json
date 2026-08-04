@@ -1,0 +1,55 @@
+{
+  "symbol": "2231",
+  "name": "為升",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 92.5,
+    "high": 96.4,
+    "low": 92.5,
+    "close": 96.4,
+    "change": 0.7,
+    "changePercent": 0.73,
+    "tradeVolume": 240494,
+    "transactionCount": 678,
+    "tradeValue": 22834028,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.22,
+  "turnoverAverageValue": 33678.51,
+  "pricePosition": 100,
+  "liquidityScore": 47.5,
+  "priceStrengthScore": 73.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 62,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

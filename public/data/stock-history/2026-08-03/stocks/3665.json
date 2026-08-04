@@ -1,0 +1,60 @@
+{
+  "symbol": "3665",
+  "name": "貿聯-KY",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 2100,
+    "high": 2300,
+    "low": 2060,
+    "close": 2095,
+    "change": -5,
+    "changePercent": -0.24,
+    "tradeVolume": 4972466,
+    "transactionCount": 10151,
+    "tradeValue": 10785231120,
+    "peRatio": 42.28
+  },
+  "dailyRangePercent": 11.65,
+  "turnoverAverageValue": 1062479.67,
+  "pricePosition": 14.6,
+  "liquidityScore": 93,
+  "priceStrengthScore": 33.1,
+  "valuationRiskScore": 75,
+  "snapshotScore": 52.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.65% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.6 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

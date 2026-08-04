@@ -1,0 +1,60 @@
+{
+  "symbol": "2313",
+  "name": "華通",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 170,
+    "high": 185.5,
+    "low": 169.5,
+    "close": 185.5,
+    "change": 16.5,
+    "changePercent": 9.76,
+    "tradeVolume": 22355372,
+    "transactionCount": 15084,
+    "tradeValue": 4065448958,
+    "peRatio": 32.72
+  },
+  "dailyRangePercent": 9.44,
+  "turnoverAverageValue": 269520.62,
+  "pricePosition": 100,
+  "liquidityScore": 96.4,
+  "priceStrengthScore": 93.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 84.8,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.76% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.44% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

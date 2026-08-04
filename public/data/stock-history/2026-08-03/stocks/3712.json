@@ -1,0 +1,55 @@
+{
+  "symbol": "3712",
+  "name": "永崴投控",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.85,
+    "high": 18.25,
+    "low": 17.55,
+    "close": 18.2,
+    "change": 0.2,
+    "changePercent": 1.11,
+    "tradeVolume": 479230,
+    "transactionCount": 291,
+    "tradeValue": 8638645,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.99,
+  "turnoverAverageValue": 29686.07,
+  "pricePosition": 92.9,
+  "liquidityScore": 43,
+  "priceStrengthScore": 71.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 59,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

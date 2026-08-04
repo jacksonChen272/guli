@@ -1,0 +1,55 @@
+{
+  "symbol": "3701",
+  "name": "大眾控",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 35.5,
+    "high": 37.2,
+    "low": 35.5,
+    "close": 36.25,
+    "change": 0.25,
+    "changePercent": 0.69,
+    "tradeVolume": 454270,
+    "transactionCount": 444,
+    "tradeValue": 16600943,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.79,
+  "turnoverAverageValue": 37389.51,
+  "pricePosition": 44.1,
+  "liquidityScore": 49.2,
+  "priceStrengthScore": 53.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 51.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

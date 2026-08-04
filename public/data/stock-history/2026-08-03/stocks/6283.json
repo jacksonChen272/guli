@@ -1,0 +1,55 @@
+{
+  "symbol": "6283",
+  "name": "淳安",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20,
+    "high": 20.35,
+    "low": 19.9,
+    "close": 20.35,
+    "change": 0.1,
+    "changePercent": 0.49,
+    "tradeVolume": 87590,
+    "transactionCount": 70,
+    "tradeValue": 1764130,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.26,
+  "turnoverAverageValue": 25201.86,
+  "pricePosition": 100,
+  "liquidityScore": 17.9,
+  "priceStrengthScore": 72.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 48.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

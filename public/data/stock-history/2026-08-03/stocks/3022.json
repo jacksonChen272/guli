@@ -1,0 +1,60 @@
+{
+  "symbol": "3022",
+  "name": "威強電",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 85,
+    "high": 92.5,
+    "low": 84.1,
+    "close": 92,
+    "change": 7,
+    "changePercent": 8.24,
+    "tradeVolume": 2317657,
+    "transactionCount": 2114,
+    "tradeValue": 209594079,
+    "peRatio": 26.06
+  },
+  "dailyRangePercent": 9.99,
+  "turnoverAverageValue": 99145.73,
+  "pricePosition": 94,
+  "liquidityScore": 76.9,
+  "priceStrengthScore": 87.9,
+  "valuationRiskScore": 55,
+  "snapshotScore": 75.5,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 8.24% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.99% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

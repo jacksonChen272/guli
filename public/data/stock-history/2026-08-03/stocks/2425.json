@@ -1,0 +1,55 @@
+{
+  "symbol": "2425",
+  "name": "承啟",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 48,
+    "high": 49.65,
+    "low": 46.4,
+    "close": 48.3,
+    "change": 1.35,
+    "changePercent": 2.88,
+    "tradeVolume": 10094913,
+    "transactionCount": 6437,
+    "tradeValue": 482339436,
+    "peRatio": null
+  },
+  "dailyRangePercent": 7,
+  "turnoverAverageValue": 74932.33,
+  "pricePosition": 58.5,
+  "liquidityScore": 88.7,
+  "priceStrengthScore": 63.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 74.5,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

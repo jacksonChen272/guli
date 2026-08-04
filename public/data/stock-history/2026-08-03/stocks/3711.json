@@ -1,0 +1,53 @@
+{
+  "symbol": "3711",
+  "name": "日月光投控",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 610,
+    "high": 610,
+    "low": 592,
+    "close": 610,
+    "change": 55,
+    "changePercent": 9.91,
+    "tradeVolume": 16977392,
+    "transactionCount": 14846,
+    "tradeValue": 10339260120,
+    "peRatio": 56.64
+  },
+  "dailyRangePercent": 3.04,
+  "turnoverAverageValue": 696434.06,
+  "pricePosition": 100,
+  "liquidityScore": 96.5,
+  "priceStrengthScore": 89.8,
+  "valuationRiskScore": 75,
+  "snapshotScore": 79.2,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.91% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

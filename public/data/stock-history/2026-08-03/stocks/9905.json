@@ -1,0 +1,53 @@
+{
+  "symbol": "9905",
+  "name": "大華",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.6,
+    "high": 20.7,
+    "low": 20.55,
+    "close": 20.7,
+    "change": 0.05,
+    "changePercent": 0.24,
+    "tradeVolume": 60637,
+    "transactionCount": 62,
+    "tradeValue": 1250195,
+    "peRatio": 14.68
+  },
+  "dailyRangePercent": 0.73,
+  "turnoverAverageValue": 20164.44,
+  "pricePosition": 100,
+  "liquidityScore": 14.2,
+  "priceStrengthScore": 72,
+  "valuationRiskScore": 20,
+  "snapshotScore": 53.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.2 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

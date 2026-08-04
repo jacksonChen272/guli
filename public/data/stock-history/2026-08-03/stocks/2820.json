@@ -1,0 +1,53 @@
+{
+  "symbol": "2820",
+  "name": "華票",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.7,
+    "high": 16.8,
+    "low": 16.45,
+    "close": 16.5,
+    "change": -0.25,
+    "changePercent": -1.49,
+    "tradeVolume": 2927554,
+    "transactionCount": 1118,
+    "tradeValue": 48491201,
+    "peRatio": 10.86
+  },
+  "dailyRangePercent": 2.13,
+  "turnoverAverageValue": 43373.17,
+  "pricePosition": 14.3,
+  "liquidityScore": 68.3,
+  "priceStrengthScore": 30.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 53.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

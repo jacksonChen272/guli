@@ -1,0 +1,62 @@
+{
+  "symbol": "3150",
+  "name": "鈺寶-創",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 15.6,
+    "high": 16.15,
+    "low": 15.6,
+    "close": 16.05,
+    "change": -0.15,
+    "changePercent": -0.93,
+    "tradeVolume": 20100,
+    "transactionCount": 20,
+    "tradeValue": 320355,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.53,
+  "turnoverAverageValue": 16017.75,
+  "pricePosition": 81.8,
+  "liquidityScore": 4.1,
+  "priceStrengthScore": 63.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 37.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 4.1 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

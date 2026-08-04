@@ -1,0 +1,53 @@
+{
+  "symbol": "7786",
+  "name": "東方風能",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 126.5,
+    "high": 127.5,
+    "low": 124.5,
+    "close": 125,
+    "change": -1.5,
+    "changePercent": -1.19,
+    "tradeVolume": 87292,
+    "transactionCount": 371,
+    "tradeValue": 10982616,
+    "peRatio": 12.77
+  },
+  "dailyRangePercent": 2.41,
+  "turnoverAverageValue": 29602.74,
+  "pricePosition": 16.7,
+  "liquidityScore": 34.8,
+  "priceStrengthScore": 31.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 42.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "2722",
+  "name": "夏都",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 21.75,
+    "high": 22.4,
+    "low": 21.25,
+    "close": 22.15,
+    "change": 0.4,
+    "changePercent": 1.84,
+    "tradeVolume": 67510,
+    "transactionCount": 64,
+    "tradeValue": 1486072,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.41,
+  "turnoverAverageValue": 23219.88,
+  "pricePosition": 78.3,
+  "liquidityScore": 15.8,
+  "priceStrengthScore": 68,
+  "valuationRiskScore": null,
+  "snapshotScore": 45.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "3167",
+  "name": "大量",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 513,
+    "high": 534,
+    "low": 513,
+    "close": 534,
+    "change": 48,
+    "changePercent": 9.88,
+    "tradeVolume": 945883,
+    "transactionCount": 1212,
+    "tradeValue": 499706048,
+    "peRatio": 52.05
+  },
+  "dailyRangePercent": 4.09,
+  "turnoverAverageValue": 412298.72,
+  "pricePosition": 100,
+  "liquidityScore": 73.4,
+  "priceStrengthScore": 93.7,
+  "valuationRiskScore": 75,
+  "snapshotScore": 72.9,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.88% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

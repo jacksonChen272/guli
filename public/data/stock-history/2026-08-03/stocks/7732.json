@@ -1,0 +1,53 @@
+{
+  "symbol": "7732",
+  "name": "金興精密",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 34.95,
+    "high": 35.85,
+    "low": 34.8,
+    "close": 35.55,
+    "change": -0.1,
+    "changePercent": -0.28,
+    "tradeVolume": 11000,
+    "transactionCount": 10,
+    "tradeValue": 386700,
+    "peRatio": 20.55
+  },
+  "dailyRangePercent": 3.02,
+  "turnoverAverageValue": 38670,
+  "pricePosition": 71.4,
+  "liquidityScore": 3,
+  "priceStrengthScore": 60.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 41.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 3.0 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

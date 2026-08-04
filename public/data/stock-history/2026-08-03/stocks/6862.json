@@ -1,0 +1,60 @@
+{
+  "symbol": "6862",
+  "name": "三集瑞-KY",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 125,
+    "high": 137.5,
+    "low": 125,
+    "close": 137.5,
+    "change": 12.5,
+    "changePercent": 10,
+    "tradeVolume": 363408,
+    "transactionCount": 453,
+    "tradeValue": 49078987,
+    "peRatio": 22.54
+  },
+  "dailyRangePercent": 10,
+  "turnoverAverageValue": 108342.13,
+  "pricePosition": 100,
+  "liquidityScore": 53.5,
+  "priceStrengthScore": 94,
+  "valuationRiskScore": 35,
+  "snapshotScore": 74,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 10.00% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.00% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

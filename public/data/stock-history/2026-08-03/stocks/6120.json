@@ -1,0 +1,55 @@
+{
+  "symbol": "6120",
+  "name": "達運",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.55,
+    "high": 12.85,
+    "low": 12.5,
+    "close": 12.8,
+    "change": 0.15,
+    "changePercent": 1.19,
+    "tradeVolume": 1994215,
+    "transactionCount": 881,
+    "tradeValue": 25358205,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.8,
+  "turnoverAverageValue": 28783.43,
+  "pricePosition": 85.7,
+  "liquidityScore": 61.9,
+  "priceStrengthScore": 69.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 66,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "symbol": "2049",
+  "name": "上銀",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 299.5,
+    "high": 334.5,
+    "low": 295.5,
+    "close": 332,
+    "change": 27.5,
+    "changePercent": 9.03,
+    "tradeVolume": 4393315,
+    "transactionCount": 5993,
+    "tradeValue": 1424838868,
+    "peRatio": 72.33
+  },
+  "dailyRangePercent": 13.2,
+  "turnoverAverageValue": 237750.52,
+  "pricePosition": 93.6,
+  "liquidityScore": 89.2,
+  "priceStrengthScore": 89.6,
+  "valuationRiskScore": 90,
+  "snapshotScore": 73.5,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.03% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 13.20% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 72.33 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

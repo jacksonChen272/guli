@@ -1,0 +1,53 @@
+{
+  "symbol": "5876",
+  "name": "上海商銀",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 44.7,
+    "high": 45.35,
+    "low": 44.5,
+    "close": 44.65,
+    "change": -0.8,
+    "changePercent": -1.76,
+    "tradeVolume": 8604284,
+    "transactionCount": 3810,
+    "tradeValue": 384380630,
+    "peRatio": 14.17
+  },
+  "dailyRangePercent": 1.91,
+  "turnoverAverageValue": 100887.3,
+  "pricePosition": 17.6,
+  "liquidityScore": 86.1,
+  "priceStrengthScore": 30.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 60,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.6 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

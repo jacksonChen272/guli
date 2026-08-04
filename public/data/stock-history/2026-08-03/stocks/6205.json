@@ -1,0 +1,53 @@
+{
+  "symbol": "6205",
+  "name": "詮欣",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 54.1,
+    "high": 58.7,
+    "low": 53.8,
+    "close": 57.3,
+    "change": 2.8,
+    "changePercent": 5.14,
+    "tradeVolume": 629253,
+    "transactionCount": 549,
+    "tradeValue": 36073107,
+    "peRatio": 34.11
+  },
+  "dailyRangePercent": 9.11,
+  "turnoverAverageValue": 65706.93,
+  "pricePosition": 71.4,
+  "liquidityScore": 56.3,
+  "priceStrengthScore": 73.1,
+  "valuationRiskScore": 55,
+  "snapshotScore": 61.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.11% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

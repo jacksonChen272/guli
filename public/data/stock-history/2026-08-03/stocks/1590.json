@@ -1,0 +1,53 @@
+{
+  "symbol": "1590",
+  "name": "亞德客-KY",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 1325,
+    "high": 1435,
+    "low": 1305,
+    "close": 1415,
+    "change": 90,
+    "changePercent": 6.79,
+    "tradeVolume": 878931,
+    "transactionCount": 1432,
+    "tradeValue": 1225590220,
+    "peRatio": 30.98
+  },
+  "dailyRangePercent": 9.96,
+  "turnoverAverageValue": 855859.09,
+  "pricePosition": 84.6,
+  "liquidityScore": 76.4,
+  "priceStrengthScore": 81.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 72.4,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.96% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

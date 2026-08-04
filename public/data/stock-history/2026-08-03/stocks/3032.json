@@ -1,0 +1,55 @@
+{
+  "symbol": "3032",
+  "name": "偉訓",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 78.2,
+    "high": 80.6,
+    "low": 77.9,
+    "close": 79,
+    "change": 0.8,
+    "changePercent": 1.02,
+    "tradeVolume": 339180,
+    "transactionCount": 356,
+    "tradeValue": 26899791,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.47,
+  "turnoverAverageValue": 75561.21,
+  "pricePosition": 40.7,
+  "liquidityScore": 48.5,
+  "priceStrengthScore": 53,
+  "valuationRiskScore": null,
+  "snapshotScore": 51,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

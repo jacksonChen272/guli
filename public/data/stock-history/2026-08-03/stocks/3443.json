@@ -1,0 +1,60 @@
+{
+  "symbol": "3443",
+  "name": "創意",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 4150,
+    "high": 4185,
+    "low": 4030,
+    "close": 4185,
+    "change": 380,
+    "changePercent": 9.99,
+    "tradeVolume": 1306441,
+    "transactionCount": 3290,
+    "tradeValue": 5437655585,
+    "peRatio": 107.28
+  },
+  "dailyRangePercent": 3.85,
+  "turnoverAverageValue": 1652782.85,
+  "pricePosition": 100,
+  "liquidityScore": 83.5,
+  "priceStrengthScore": 94,
+  "valuationRiskScore": 90,
+  "snapshotScore": 73.5,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.99% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 107.28 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

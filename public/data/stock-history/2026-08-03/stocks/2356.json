@@ -1,0 +1,53 @@
+{
+  "symbol": "2356",
+  "name": "英業達",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 60.7,
+    "high": 64.6,
+    "low": 59.6,
+    "close": 63.9,
+    "change": 2.1,
+    "changePercent": 3.4,
+    "tradeVolume": 33847058,
+    "transactionCount": 17861,
+    "tradeValue": 2141510901,
+    "peRatio": 24.3
+  },
+  "dailyRangePercent": 8.39,
+  "turnoverAverageValue": 119898.71,
+  "pricePosition": 86,
+  "liquidityScore": 96.3,
+  "priceStrengthScore": 74.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 80.1,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.39% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

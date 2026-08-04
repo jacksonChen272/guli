@@ -1,0 +1,53 @@
+{
+  "symbol": "2636",
+  "name": "台驊控股",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 66.7,
+    "high": 66.7,
+    "low": 66.1,
+    "close": 66.1,
+    "change": -0.2,
+    "changePercent": -0.3,
+    "tradeVolume": 232758,
+    "transactionCount": 312,
+    "tradeValue": 15426830,
+    "peRatio": 9.68
+  },
+  "dailyRangePercent": 0.91,
+  "turnoverAverageValue": 49444.97,
+  "pricePosition": 0,
+  "liquidityScore": 42,
+  "priceStrengthScore": 27.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 43.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

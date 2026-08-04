@@ -1,0 +1,53 @@
+{
+  "symbol": "2514",
+  "name": "龍邦",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.65,
+    "high": 12.7,
+    "low": 12.55,
+    "close": 12.6,
+    "change": -0.2,
+    "changePercent": -1.56,
+    "tradeVolume": 62276,
+    "transactionCount": 103,
+    "tradeValue": 784424,
+    "peRatio": 7.16
+  },
+  "dailyRangePercent": 1.2,
+  "turnoverAverageValue": 7615.77,
+  "pricePosition": 33.3,
+  "liquidityScore": 13.7,
+  "priceStrengthScore": 36.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 37.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.7 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

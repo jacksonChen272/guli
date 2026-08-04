@@ -1,0 +1,67 @@
+{
+  "symbol": "2480",
+  "name": "敦陽科",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 163,
+    "high": 163.5,
+    "low": 151,
+    "close": 152.5,
+    "change": -13.5,
+    "changePercent": -8.13,
+    "tradeVolume": 2014142,
+    "transactionCount": 2753,
+    "tradeValue": 310316596,
+    "peRatio": 17.41
+  },
+  "dailyRangePercent": 8.28,
+  "turnoverAverageValue": 112719.43,
+  "pricePosition": 12,
+  "liquidityScore": 78.6,
+  "priceStrengthScore": 14.4,
+  "valuationRiskScore": 35,
+  "snapshotScore": 47,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.13% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.28% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

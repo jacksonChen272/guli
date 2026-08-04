@@ -1,0 +1,62 @@
+{
+  "symbol": "3011",
+  "name": "今皓",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.5,
+    "high": 11.95,
+    "low": 11.3,
+    "close": 11.4,
+    "change": -0.2,
+    "changePercent": -1.72,
+    "tradeVolume": 640137,
+    "transactionCount": 295,
+    "tradeValue": 7310827,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.75,
+  "turnoverAverageValue": 24782.46,
+  "pricePosition": 15.4,
+  "liquidityScore": 43.7,
+  "priceStrengthScore": 30,
+  "valuationRiskScore": null,
+  "snapshotScore": 36,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.4 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

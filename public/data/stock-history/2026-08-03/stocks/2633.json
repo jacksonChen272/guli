@@ -1,0 +1,53 @@
+{
+  "symbol": "2633",
+  "name": "台灣高鐵",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 26,
+    "high": 26.15,
+    "low": 25.9,
+    "close": 25.9,
+    "change": -0.15,
+    "changePercent": -0.58,
+    "tradeVolume": 6421448,
+    "transactionCount": 2420,
+    "tradeValue": 166691864,
+    "peRatio": 21.4
+  },
+  "dailyRangePercent": 0.97,
+  "turnoverAverageValue": 68880.94,
+  "pricePosition": 0,
+  "liquidityScore": 80.6,
+  "priceStrengthScore": 27.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 53.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

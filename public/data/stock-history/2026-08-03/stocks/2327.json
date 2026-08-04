@@ -1,0 +1,53 @@
+{
+  "symbol": "2327",
+  "name": "國巨*",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 534,
+    "high": 552,
+    "low": 526,
+    "close": 552,
+    "change": 50,
+    "changePercent": 9.96,
+    "tradeVolume": 22438342,
+    "transactionCount": 19826,
+    "tradeValue": 12160960784,
+    "peRatio": 43.46
+  },
+  "dailyRangePercent": 4.94,
+  "turnoverAverageValue": 613384.48,
+  "pricePosition": 100,
+  "liquidityScore": 97.5,
+  "priceStrengthScore": 93.9,
+  "valuationRiskScore": 75,
+  "snapshotScore": 81.4,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.96% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

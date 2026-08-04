@@ -1,0 +1,53 @@
+{
+  "symbol": "3045",
+  "name": "台灣大",
+  "tradeDate": "2026-08-03",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 113,
+    "high": 114,
+    "low": 111.5,
+    "close": 112,
+    "change": -0.5,
+    "changePercent": -0.44,
+    "tradeVolume": 10929038,
+    "transactionCount": 3609,
+    "tradeValue": 1229632387,
+    "peRatio": 22.72
+  },
+  "dailyRangePercent": 2.24,
+  "turnoverAverageValue": 340712.77,
+  "pricePosition": 20,
+  "liquidityScore": 90.2,
+  "priceStrengthScore": 34.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 60.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}
