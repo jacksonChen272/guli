@@ -1,0 +1,53 @@
+{
+  "symbol": "3356",
+  "name": "奇偶",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 57.9,
+    "high": 59.6,
+    "low": 57.1,
+    "close": 57.1,
+    "change": -0.5,
+    "changePercent": -0.87,
+    "tradeVolume": 467085,
+    "transactionCount": 757,
+    "tradeValue": 27185370,
+    "peRatio": 5.63
+  },
+  "dailyRangePercent": 4.38,
+  "turnoverAverageValue": 35911.98,
+  "pricePosition": 0,
+  "liquidityScore": 51.9,
+  "priceStrengthScore": 26.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 46.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

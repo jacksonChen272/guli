@@ -1,0 +1,53 @@
+{
+  "symbol": "2013",
+  "name": "中鋼構",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 40.6,
+    "high": 40.6,
+    "low": 40.5,
+    "close": 40.5,
+    "change": -0.1,
+    "changePercent": -0.25,
+    "tradeVolume": 62835,
+    "transactionCount": 106,
+    "tradeValue": 2548518,
+    "peRatio": 12.39
+  },
+  "dailyRangePercent": 0.25,
+  "turnoverAverageValue": 24042.62,
+  "pricePosition": 0,
+  "liquidityScore": 18.7,
+  "priceStrengthScore": 28,
+  "valuationRiskScore": 20,
+  "snapshotScore": 35.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

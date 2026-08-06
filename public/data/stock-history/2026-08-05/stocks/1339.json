@@ -1,0 +1,53 @@
+{
+  "symbol": "1339",
+  "name": "昭輝",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 44.65,
+    "high": 44.95,
+    "low": 44.4,
+    "close": 44.45,
+    "change": 0.05,
+    "changePercent": 0.11,
+    "tradeVolume": 77289,
+    "transactionCount": 86,
+    "tradeValue": 3449861,
+    "peRatio": 10.51
+  },
+  "dailyRangePercent": 1.24,
+  "turnoverAverageValue": 40114.66,
+  "pricePosition": 9.1,
+  "liquidityScore": 20.6,
+  "priceStrengthScore": 32,
+  "valuationRiskScore": 20,
+  "snapshotScore": 37.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

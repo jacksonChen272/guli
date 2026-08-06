@@ -1,0 +1,60 @@
+{
+  "symbol": "6835",
+  "name": "圓裕",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 31.55,
+    "high": 31.55,
+    "low": 30.5,
+    "close": 30.75,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 30133,
+    "transactionCount": 17,
+    "tradeValue": 928236,
+    "peRatio": 236.54
+  },
+  "dailyRangePercent": 3.44,
+  "turnoverAverageValue": 54602.12,
+  "pricePosition": 23.8,
+  "liquidityScore": 7.6,
+  "priceStrengthScore": 36.8,
+  "valuationRiskScore": 90,
+  "snapshotScore": 21.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.6 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 236.54 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

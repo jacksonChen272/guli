@@ -1,0 +1,53 @@
+{
+  "symbol": "9904",
+  "name": "寶成",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.85,
+    "high": 23.9,
+    "low": 23.4,
+    "close": 23.45,
+    "change": -0.3,
+    "changePercent": -1.26,
+    "tradeVolume": 39365698,
+    "transactionCount": 13311,
+    "tradeValue": 927788862,
+    "peRatio": 6.46
+  },
+  "dailyRangePercent": 2.14,
+  "turnoverAverageValue": 69700.91,
+  "pricePosition": 10,
+  "liquidityScore": 92.7,
+  "priceStrengthScore": 29.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 61.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "3049",
+  "name": "精金",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.6,
+    "high": 10.9,
+    "low": 10.4,
+    "close": 10.75,
+    "change": 0.55,
+    "changePercent": 5.39,
+    "tradeVolume": 2943848,
+    "transactionCount": 1686,
+    "tradeValue": 31475885,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.81,
+  "turnoverAverageValue": 18668.97,
+  "pricePosition": 70,
+  "liquidityScore": 65.7,
+  "priceStrengthScore": 73.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 69.9,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "4927",
+  "name": "泰鼎-KY",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 32.2,
+    "high": 32.45,
+    "low": 31.45,
+    "close": 31.9,
+    "change": 1.45,
+    "changePercent": 4.76,
+    "tradeVolume": 2866179,
+    "transactionCount": 1699,
+    "tradeValue": 91698540,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.18,
+  "turnoverAverageValue": 53972.07,
+  "pricePosition": 45,
+  "liquidityScore": 70.8,
+  "priceStrengthScore": 55,
+  "valuationRiskScore": null,
+  "snapshotScore": 61.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

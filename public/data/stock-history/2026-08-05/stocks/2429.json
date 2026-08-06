@@ -1,0 +1,62 @@
+{
+  "symbol": "2429",
+  "name": "銘旺科",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 32.1,
+    "high": 33.6,
+    "low": 31.95,
+    "close": 32.15,
+    "change": 1.15,
+    "changePercent": 3.71,
+    "tradeVolume": 572065,
+    "transactionCount": 473,
+    "tradeValue": 18656179,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.16,
+  "turnoverAverageValue": 39442.24,
+  "pricePosition": 12.1,
+  "liquidityScore": 48.7,
+  "priceStrengthScore": 49.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 48.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

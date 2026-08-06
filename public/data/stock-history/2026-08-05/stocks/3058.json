@@ -1,0 +1,62 @@
+{
+  "symbol": "3058",
+  "name": "立德",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 8.24,
+    "high": 8.32,
+    "low": 8.18,
+    "close": 8.19,
+    "change": -0.04,
+    "changePercent": -0.49,
+    "tradeVolume": 385963,
+    "transactionCount": 245,
+    "tradeValue": 3174715,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.71,
+  "turnoverAverageValue": 12958.02,
+  "pricePosition": 7.1,
+  "liquidityScore": 33.4,
+  "priceStrengthScore": 29.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 31.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

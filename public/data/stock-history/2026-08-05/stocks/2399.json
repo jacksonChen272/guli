@@ -1,0 +1,53 @@
+{
+  "symbol": "2399",
+  "name": "映泰",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 39.95,
+    "high": 40.6,
+    "low": 39.1,
+    "close": 39.35,
+    "change": -0.5,
+    "changePercent": -1.25,
+    "tradeVolume": 7939136,
+    "transactionCount": 4874,
+    "tradeValue": 316281964,
+    "peRatio": 25.22
+  },
+  "dailyRangePercent": 3.84,
+  "turnoverAverageValue": 64891.66,
+  "pricePosition": 16.7,
+  "liquidityScore": 83.1,
+  "priceStrengthScore": 31.6,
+  "valuationRiskScore": 55,
+  "snapshotScore": 52.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

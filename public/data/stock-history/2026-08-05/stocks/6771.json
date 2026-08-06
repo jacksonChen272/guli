@@ -1,0 +1,60 @@
+{
+  "symbol": "6771",
+  "name": "平和環保-創",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 38.2,
+    "high": 38.35,
+    "low": 38,
+    "close": 38,
+    "change": -0.65,
+    "changePercent": -1.68,
+    "tradeVolume": 14002,
+    "transactionCount": 12,
+    "tradeValue": 534176,
+    "peRatio": 12.75
+  },
+  "dailyRangePercent": 0.92,
+  "turnoverAverageValue": 44514.67,
+  "pricePosition": 0,
+  "liquidityScore": 4.2,
+  "priceStrengthScore": 24.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 28.6,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 4.2 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

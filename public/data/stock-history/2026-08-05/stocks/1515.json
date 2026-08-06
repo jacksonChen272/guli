@@ -1,0 +1,53 @@
+{
+  "symbol": "1515",
+  "name": "力山",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 29.25,
+    "high": 30.9,
+    "low": 29.05,
+    "close": 30.9,
+    "change": 2.8,
+    "changePercent": 9.96,
+    "tradeVolume": 540386,
+    "transactionCount": 436,
+    "tradeValue": 16340603,
+    "peRatio": 31.53
+  },
+  "dailyRangePercent": 6.37,
+  "turnoverAverageValue": 37478.45,
+  "pricePosition": 100,
+  "liquidityScore": 47,
+  "priceStrengthScore": 93.9,
+  "valuationRiskScore": 55,
+  "snapshotScore": 67.7,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.96% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

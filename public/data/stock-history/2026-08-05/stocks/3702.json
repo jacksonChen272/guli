@@ -1,0 +1,60 @@
+{
+  "symbol": "3702",
+  "name": "大聯大",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 119,
+    "high": 129,
+    "low": 119,
+    "close": 129,
+    "change": 11.5,
+    "changePercent": 9.79,
+    "tradeVolume": 17747015,
+    "transactionCount": 9620,
+    "tradeValue": 2244298943,
+    "peRatio": 15.75
+  },
+  "dailyRangePercent": 8.4,
+  "turnoverAverageValue": 233295.11,
+  "pricePosition": 100,
+  "liquidityScore": 93,
+  "priceStrengthScore": 93.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 87.6,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.79% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.40% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

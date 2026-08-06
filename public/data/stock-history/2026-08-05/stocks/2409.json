@@ -1,0 +1,60 @@
+{
+  "symbol": "2409",
+  "name": "友達",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 25.25,
+    "high": 25.55,
+    "low": 24.35,
+    "close": 24.45,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 205885267,
+    "transactionCount": 59981,
+    "tradeValue": 5133287956,
+    "peRatio": 76.41
+  },
+  "dailyRangePercent": 4.93,
+  "turnoverAverageValue": 85581.9,
+  "pricePosition": 8.3,
+  "liquidityScore": 97.9,
+  "priceStrengthScore": 31.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 50.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 76.41 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

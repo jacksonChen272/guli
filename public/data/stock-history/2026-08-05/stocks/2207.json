@@ -1,0 +1,53 @@
+{
+  "symbol": "2207",
+  "name": "和泰車",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 530,
+    "high": 530,
+    "low": 509,
+    "close": 509,
+    "change": -8,
+    "changePercent": -1.55,
+    "tradeVolume": 444979,
+    "transactionCount": 6677,
+    "tradeValue": 228019243,
+    "peRatio": 14.91
+  },
+  "dailyRangePercent": 4.13,
+  "turnoverAverageValue": 34149.95,
+  "pricePosition": 0,
+  "liquidityScore": 67.9,
+  "priceStrengthScore": 25,
+  "valuationRiskScore": 20,
+  "snapshotScore": 51,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

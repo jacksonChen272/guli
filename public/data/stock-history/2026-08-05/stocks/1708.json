@@ -1,0 +1,53 @@
+{
+  "symbol": "1708",
+  "name": "東鹼",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 50.5,
+    "high": 51.1,
+    "low": 50,
+    "close": 50.1,
+    "change": 0.4,
+    "changePercent": 0.8,
+    "tradeVolume": 3120464,
+    "transactionCount": 2517,
+    "tradeValue": 157353339,
+    "peRatio": 14.87
+  },
+  "dailyRangePercent": 2.2,
+  "turnoverAverageValue": 62516.23,
+  "pricePosition": 9.1,
+  "liquidityScore": 75.1,
+  "priceStrengthScore": 33.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 57.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

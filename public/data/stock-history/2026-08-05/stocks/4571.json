@@ -1,0 +1,53 @@
+{
+  "symbol": "4571",
+  "name": "鈞興-KY",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 156.5,
+    "high": 165.5,
+    "low": 155.5,
+    "close": 163,
+    "change": 11,
+    "changePercent": 7.24,
+    "tradeVolume": 343811,
+    "transactionCount": 713,
+    "tradeValue": 55356462,
+    "peRatio": 18.09
+  },
+  "dailyRangePercent": 6.43,
+  "turnoverAverageValue": 77638.8,
+  "pricePosition": 75,
+  "liquidityScore": 54.1,
+  "priceStrengthScore": 79,
+  "valuationRiskScore": 35,
+  "snapshotScore": 67.5,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 7.24% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

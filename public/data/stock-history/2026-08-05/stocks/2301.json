@@ -1,0 +1,60 @@
+{
+  "symbol": "2301",
+  "name": "光寶科",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 260,
+    "high": 268.5,
+    "low": 247,
+    "close": 249,
+    "change": -3,
+    "changePercent": -1.19,
+    "tradeVolume": 90355678,
+    "transactionCount": 84772,
+    "tradeValue": 23289138860,
+    "peRatio": 29.12
+  },
+  "dailyRangePercent": 8.7,
+  "turnoverAverageValue": 274726.78,
+  "pricePosition": 9.3,
+  "liquidityScore": 99.2,
+  "priceStrengthScore": 29.1,
+  "valuationRiskScore": 55,
+  "snapshotScore": 56.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.70% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

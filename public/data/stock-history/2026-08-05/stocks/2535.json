@@ -1,0 +1,53 @@
+{
+  "symbol": "2535",
+  "name": "達欣工",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 88.4,
+    "high": 89.5,
+    "low": 87.7,
+    "close": 87.9,
+    "change": -0.4,
+    "changePercent": -0.45,
+    "tradeVolume": 267225,
+    "transactionCount": 376,
+    "tradeValue": 23720991,
+    "peRatio": 10.54
+  },
+  "dailyRangePercent": 2.05,
+  "turnoverAverageValue": 63087.74,
+  "pricePosition": 11.1,
+  "liquidityScore": 44.9,
+  "priceStrengthScore": 31.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 45.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

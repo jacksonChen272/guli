@@ -1,0 +1,53 @@
+{
+  "symbol": "1776",
+  "name": "展宇",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.45,
+    "high": 16.85,
+    "low": 16.4,
+    "close": 16.7,
+    "change": 0.05,
+    "changePercent": 0.3,
+    "tradeVolume": 65548,
+    "transactionCount": 55,
+    "tradeValue": 1091569,
+    "peRatio": 34.08
+  },
+  "dailyRangePercent": 2.74,
+  "turnoverAverageValue": 19846.71,
+  "pricePosition": 66.7,
+  "liquidityScore": 12.9,
+  "priceStrengthScore": 60.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 40.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.9 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

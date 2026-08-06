@@ -1,0 +1,53 @@
+{
+  "symbol": "6579",
+  "name": "研揚",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 166.5,
+    "high": 179.5,
+    "low": 166.5,
+    "close": 179.5,
+    "change": 16,
+    "changePercent": 9.79,
+    "tradeVolume": 1892307,
+    "transactionCount": 3025,
+    "tradeValue": 334975729,
+    "peRatio": 32.94
+  },
+  "dailyRangePercent": 7.81,
+  "turnoverAverageValue": 110735.78,
+  "pricePosition": 100,
+  "liquidityScore": 75.8,
+  "priceStrengthScore": 93.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 77.6,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.79% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

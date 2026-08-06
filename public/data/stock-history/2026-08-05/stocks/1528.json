@@ -1,0 +1,55 @@
+{
+  "symbol": "1528",
+  "name": "恩德",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 18.55,
+    "high": 18.65,
+    "low": 18.25,
+    "close": 18.4,
+    "change": 0.25,
+    "changePercent": 1.38,
+    "tradeVolume": 941743,
+    "transactionCount": 644,
+    "tradeValue": 17391319,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.19,
+  "turnoverAverageValue": 27005.15,
+  "pricePosition": 37.5,
+  "liquidityScore": 52.1,
+  "priceStrengthScore": 44.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 47.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

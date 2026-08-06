@@ -1,0 +1,60 @@
+{
+  "symbol": "2465",
+  "name": "麗臺",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 80.1,
+    "high": 85.8,
+    "low": 79.6,
+    "close": 85.8,
+    "change": 7.8,
+    "changePercent": 10,
+    "tradeVolume": 3001815,
+    "transactionCount": 3217,
+    "tradeValue": 254394870,
+    "peRatio": 65
+  },
+  "dailyRangePercent": 7.79,
+  "turnoverAverageValue": 79078.29,
+  "pricePosition": 100,
+  "liquidityScore": 77.4,
+  "priceStrengthScore": 94,
+  "valuationRiskScore": 90,
+  "snapshotScore": 71.4,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 10.00% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 65.00 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

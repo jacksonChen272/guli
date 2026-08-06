@@ -1,0 +1,53 @@
+{
+  "symbol": "6947",
+  "name": "台鎔科技",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 75,
+    "high": 82,
+    "low": 73.5,
+    "close": 80.9,
+    "change": 4.2,
+    "changePercent": 5.48,
+    "tradeVolume": 1236575,
+    "transactionCount": 1432,
+    "tradeValue": 98313616,
+    "peRatio": 40.65
+  },
+  "dailyRangePercent": 11.56,
+  "turnoverAverageValue": 68654.76,
+  "pricePosition": 87.1,
+  "liquidityScore": 66,
+  "priceStrengthScore": 79.3,
+  "valuationRiskScore": 75,
+  "snapshotScore": 63.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.56% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2395",
+  "name": "研華",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 590,
+    "high": 633,
+    "low": 590,
+    "close": 633,
+    "change": 57,
+    "changePercent": 9.9,
+    "tradeVolume": 4139154,
+    "transactionCount": 5393,
+    "tradeValue": 2583740144,
+    "peRatio": 40.09
+  },
+  "dailyRangePercent": 7.29,
+  "turnoverAverageValue": 479091.44,
+  "pricePosition": 100,
+  "liquidityScore": 88.1,
+  "priceStrengthScore": 93.8,
+  "valuationRiskScore": 75,
+  "snapshotScore": 78,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.90% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

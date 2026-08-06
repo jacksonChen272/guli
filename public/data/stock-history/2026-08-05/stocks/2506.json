@@ -1,0 +1,62 @@
+{
+  "symbol": "2506",
+  "name": "太設",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 8.61,
+    "high": 8.66,
+    "low": 8.52,
+    "close": 8.53,
+    "change": -0.03,
+    "changePercent": -0.35,
+    "tradeVolume": 126998,
+    "transactionCount": 98,
+    "tradeValue": 1090060,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.64,
+  "turnoverAverageValue": 11123.06,
+  "pricePosition": 7.1,
+  "liquidityScore": 17.6,
+  "priceStrengthScore": 30.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 24.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

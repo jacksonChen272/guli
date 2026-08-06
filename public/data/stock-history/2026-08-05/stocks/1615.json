@@ -1,0 +1,53 @@
+{
+  "symbol": "1615",
+  "name": "大山",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 42.3,
+    "high": 42.7,
+    "low": 41.95,
+    "close": 42.05,
+    "change": -0.25,
+    "changePercent": -0.59,
+    "tradeVolume": 161381,
+    "transactionCount": 99,
+    "tradeValue": 6818440,
+    "peRatio": 8.87
+  },
+  "dailyRangePercent": 1.79,
+  "turnoverAverageValue": 68873.13,
+  "pricePosition": 13.3,
+  "liquidityScore": 29.5,
+  "priceStrengthScore": 31.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 40.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 13.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

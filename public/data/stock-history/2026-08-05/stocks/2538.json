@@ -1,0 +1,53 @@
+{
+  "symbol": "2538",
+  "name": "基泰",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 9.35,
+    "high": 9.35,
+    "low": 9.28,
+    "close": 9.29,
+    "change": -0.05,
+    "changePercent": -0.54,
+    "tradeVolume": 230290,
+    "transactionCount": 214,
+    "tradeValue": 2142719,
+    "peRatio": 25.81
+  },
+  "dailyRangePercent": 0.75,
+  "turnoverAverageValue": 10012.71,
+  "pricePosition": 14.3,
+  "liquidityScore": 27.6,
+  "priceStrengthScore": 32.3,
+  "valuationRiskScore": 55,
+  "snapshotScore": 33.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

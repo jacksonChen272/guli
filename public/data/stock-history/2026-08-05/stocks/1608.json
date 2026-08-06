@@ -1,0 +1,53 @@
+{
+  "symbol": "1608",
+  "name": "華榮",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 33.95,
+    "high": 35.5,
+    "low": 33.25,
+    "close": 33.4,
+    "change": -0.85,
+    "changePercent": -2.48,
+    "tradeVolume": 22414576,
+    "transactionCount": 10536,
+    "tradeValue": 768040627,
+    "peRatio": 2.9
+  },
+  "dailyRangePercent": 6.77,
+  "turnoverAverageValue": 72896.79,
+  "pricePosition": 6.7,
+  "liquidityScore": 90.8,
+  "priceStrengthScore": 25.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 59.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

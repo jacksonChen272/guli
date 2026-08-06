@@ -1,0 +1,53 @@
+{
+  "symbol": "2380",
+  "name": "虹光",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 18.9,
+    "high": 19,
+    "low": 18.85,
+    "close": 19,
+    "change": 0.2,
+    "changePercent": 1.06,
+    "tradeVolume": 58104,
+    "transactionCount": 110,
+    "tradeValue": 1097605,
+    "peRatio": 18.1
+  },
+  "dailyRangePercent": 0.8,
+  "turnoverAverageValue": 9978.23,
+  "pricePosition": 100,
+  "liquidityScore": 14.3,
+  "priceStrengthScore": 73.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 51.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.3 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

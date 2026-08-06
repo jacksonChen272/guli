@@ -1,0 +1,69 @@
+{
+  "symbol": "6243",
+  "name": "迅杰",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 51.8,
+    "high": 53.6,
+    "low": 49.25,
+    "close": 49.5,
+    "change": -1,
+    "changePercent": -1.98,
+    "tradeVolume": 4758193,
+    "transactionCount": 3595,
+    "tradeValue": 244299124,
+    "peRatio": null
+  },
+  "dailyRangePercent": 8.83,
+  "turnoverAverageValue": 67955.25,
+  "pricePosition": 5.7,
+  "liquidityScore": 79.6,
+  "priceStrengthScore": 26,
+  "valuationRiskScore": null,
+  "snapshotScore": 49.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.83% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.7 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

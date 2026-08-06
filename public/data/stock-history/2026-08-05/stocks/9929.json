@@ -1,0 +1,53 @@
+{
+  "symbol": "9929",
+  "name": "秋雨",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.3,
+    "high": 11.3,
+    "low": 11.1,
+    "close": 11.15,
+    "change": -0.15,
+    "changePercent": -1.33,
+    "tradeVolume": 9401,
+    "transactionCount": 14,
+    "tradeValue": 104874,
+    "peRatio": 41.3
+  },
+  "dailyRangePercent": 1.8,
+  "turnoverAverageValue": 7491,
+  "pricePosition": 25,
+  "liquidityScore": 1.9,
+  "priceStrengthScore": 34.3,
+  "valuationRiskScore": 75,
+  "snapshotScore": 21.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 1.9 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

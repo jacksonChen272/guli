@@ -1,0 +1,53 @@
+{
+  "symbol": "2020",
+  "name": "美亞",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 21.1,
+    "high": 21.1,
+    "low": 20.95,
+    "close": 20.95,
+    "change": -0.1,
+    "changePercent": -0.48,
+    "tradeVolume": 181599,
+    "transactionCount": 189,
+    "tradeValue": 3814277,
+    "peRatio": 10.8
+  },
+  "dailyRangePercent": 0.72,
+  "turnoverAverageValue": 20181.36,
+  "pricePosition": 0,
+  "liquidityScore": 28.8,
+  "priceStrengthScore": 27.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 38.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

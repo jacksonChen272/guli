@@ -1,0 +1,53 @@
+{
+  "symbol": "1806",
+  "name": "冠軍",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 8.03,
+    "high": 8.03,
+    "low": 7.96,
+    "close": 7.97,
+    "change": -0.03,
+    "changePercent": -0.37,
+    "tradeVolume": 195211,
+    "transactionCount": 186,
+    "tradeValue": 1558797,
+    "peRatio": 56.93
+  },
+  "dailyRangePercent": 0.88,
+  "turnoverAverageValue": 8380.63,
+  "pricePosition": 14.3,
+  "liquidityScore": 24.2,
+  "priceStrengthScore": 32.7,
+  "valuationRiskScore": 75,
+  "snapshotScore": 28.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

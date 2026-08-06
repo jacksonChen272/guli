@@ -1,0 +1,62 @@
+{
+  "symbol": "4414",
+  "name": "如興",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 8.45,
+    "high": 8.45,
+    "low": 8.32,
+    "close": 8.35,
+    "change": -0.03,
+    "changePercent": -0.36,
+    "tradeVolume": 88329,
+    "transactionCount": 74,
+    "tradeValue": 738562,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.56,
+  "turnoverAverageValue": 9980.57,
+  "pricePosition": 23.1,
+  "liquidityScore": 13.4,
+  "priceStrengthScore": 35.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 26,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.4 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

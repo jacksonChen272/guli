@@ -1,0 +1,62 @@
+{
+  "symbol": "6116",
+  "name": "彩晶",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.35,
+    "high": 14.2,
+    "low": 13.2,
+    "close": 14.2,
+    "change": 1.25,
+    "changePercent": 9.65,
+    "tradeVolume": 36172134,
+    "transactionCount": 9790,
+    "tradeValue": 502580329,
+    "peRatio": null
+  },
+  "dailyRangePercent": 7.58,
+  "turnoverAverageValue": 51336.09,
+  "pricePosition": 100,
+  "liquidityScore": 89.8,
+  "priceStrengthScore": 93.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 91.7,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.65% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

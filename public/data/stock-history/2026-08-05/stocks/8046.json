@@ -1,0 +1,67 @@
+{
+  "symbol": "8046",
+  "name": "南電",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 1140,
+    "high": 1145,
+    "low": 1055,
+    "close": 1060,
+    "change": 15,
+    "changePercent": 1.44,
+    "tradeVolume": 5440142,
+    "transactionCount": 9743,
+    "tradeValue": 6034363105,
+    "peRatio": 224.58
+  },
+  "dailyRangePercent": 8.53,
+  "turnoverAverageValue": 619353.7,
+  "pricePosition": 5.6,
+  "liquidityScore": 91.5,
+  "priceStrengthScore": 33.7,
+  "valuationRiskScore": 90,
+  "snapshotScore": 49.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.53% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.6 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 224.58 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

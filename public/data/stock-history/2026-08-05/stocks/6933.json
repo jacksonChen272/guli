@@ -1,0 +1,53 @@
+{
+  "symbol": "6933",
+  "name": "AMAX-KY",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 170,
+    "high": 171.5,
+    "low": 165,
+    "close": 165.5,
+    "change": -3.5,
+    "changePercent": -2.07,
+    "tradeVolume": 819365,
+    "transactionCount": 1377,
+    "tradeValue": 138030854,
+    "peRatio": 27.77
+  },
+  "dailyRangePercent": 3.94,
+  "turnoverAverageValue": 100240.27,
+  "pricePosition": 7.7,
+  "liquidityScore": 65.3,
+  "priceStrengthScore": 26.6,
+  "valuationRiskScore": 55,
+  "snapshotScore": 43.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

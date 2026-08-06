@@ -1,0 +1,53 @@
+{
+  "symbol": "6176",
+  "name": "瑞儀",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 87.2,
+    "high": 87.6,
+    "low": 83.9,
+    "close": 84.6,
+    "change": -2.5,
+    "changePercent": -2.87,
+    "tradeVolume": 7119793,
+    "transactionCount": 6971,
+    "tradeValue": 606926453,
+    "peRatio": 10.46
+  },
+  "dailyRangePercent": 4.41,
+  "turnoverAverageValue": 87064.47,
+  "pricePosition": 18.9,
+  "liquidityScore": 86.6,
+  "priceStrengthScore": 28.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 59.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.9 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

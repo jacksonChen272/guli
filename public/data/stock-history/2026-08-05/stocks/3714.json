@@ -1,0 +1,55 @@
+{
+  "symbol": "3714",
+  "name": "富采",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 55.2,
+    "high": 55.9,
+    "low": 54.8,
+    "close": 55.1,
+    "change": 1.4,
+    "changePercent": 2.61,
+    "tradeVolume": 5965991,
+    "transactionCount": 5238,
+    "tradeValue": 329325855,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.01,
+  "turnoverAverageValue": 62872.44,
+  "pricePosition": 27.3,
+  "liquidityScore": 82.5,
+  "priceStrengthScore": 44,
+  "valuationRiskScore": null,
+  "snapshotScore": 60.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

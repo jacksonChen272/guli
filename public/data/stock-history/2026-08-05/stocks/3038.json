@@ -1,0 +1,53 @@
+{
+  "symbol": "3038",
+  "name": "全台",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.9,
+    "high": 21.05,
+    "low": 20.8,
+    "close": 20.85,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 219737,
+    "transactionCount": 157,
+    "tradeValue": 4597853,
+    "peRatio": 22.18
+  },
+  "dailyRangePercent": 1.2,
+  "turnoverAverageValue": 29285.69,
+  "pricePosition": 20,
+  "liquidityScore": 30.1,
+  "priceStrengthScore": 35.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 39.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

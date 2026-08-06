@@ -1,0 +1,69 @@
+{
+  "symbol": "1310",
+  "name": "台苯",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 7.5,
+    "high": 8.17,
+    "low": 7.5,
+    "close": 8.17,
+    "change": 0.74,
+    "changePercent": 9.96,
+    "tradeVolume": 7230149,
+    "transactionCount": 2739,
+    "tradeValue": 57956865,
+    "peRatio": null
+  },
+  "dailyRangePercent": 8.93,
+  "turnoverAverageValue": 21159.86,
+  "pricePosition": 100,
+  "liquidityScore": 74.2,
+  "priceStrengthScore": 93.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 85.3,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.96% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.93% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

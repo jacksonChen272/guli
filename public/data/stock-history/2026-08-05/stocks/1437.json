@@ -1,0 +1,53 @@
+{
+  "symbol": "1437",
+  "name": "勤益控",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 30.35,
+    "high": 30.5,
+    "low": 29.75,
+    "close": 29.75,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 222324,
+    "transactionCount": 272,
+    "tradeValue": 6687169,
+    "peRatio": 10.74
+  },
+  "dailyRangePercent": 2.52,
+  "turnoverAverageValue": 24585.18,
+  "pricePosition": 0,
+  "liquidityScore": 35,
+  "priceStrengthScore": 28.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 41.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

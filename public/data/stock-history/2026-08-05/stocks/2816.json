@@ -1,0 +1,53 @@
+{
+  "symbol": "2816",
+  "name": "旺旺保",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 33.9,
+    "high": 33.9,
+    "low": 33.6,
+    "close": 33.65,
+    "change": 0.05,
+    "changePercent": 0.15,
+    "tradeVolume": 245773,
+    "transactionCount": 112,
+    "tradeValue": 8287452,
+    "peRatio": 5.34
+  },
+  "dailyRangePercent": 0.89,
+  "turnoverAverageValue": 73995.11,
+  "pricePosition": 16.7,
+  "liquidityScore": 33.7,
+  "priceStrengthScore": 34.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 43.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

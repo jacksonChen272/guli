@@ -1,0 +1,55 @@
+{
+  "symbol": "2023",
+  "name": "燁輝",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.65,
+    "high": 13.7,
+    "low": 13.6,
+    "close": 13.65,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 1253974,
+    "transactionCount": 454,
+    "tradeValue": 17113516,
+    "peRatio": null
+  },
+  "dailyRangePercent": 0.74,
+  "turnoverAverageValue": 37694.97,
+  "pricePosition": 50,
+  "liquidityScore": 52.4,
+  "priceStrengthScore": 50,
+  "valuationRiskScore": null,
+  "snapshotScore": 51.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

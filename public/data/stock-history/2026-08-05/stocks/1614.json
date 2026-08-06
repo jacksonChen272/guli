@@ -1,0 +1,53 @@
+{
+  "symbol": "1614",
+  "name": "三洋電",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 30.95,
+    "high": 31.15,
+    "low": 30.9,
+    "close": 31.05,
+    "change": 0.1,
+    "changePercent": 0.32,
+    "tradeVolume": 22161,
+    "transactionCount": 18,
+    "tradeValue": 686954,
+    "peRatio": 23.52
+  },
+  "dailyRangePercent": 0.81,
+  "turnoverAverageValue": 38164.11,
+  "pricePosition": 60,
+  "liquidityScore": 5.9,
+  "priceStrengthScore": 58.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 41.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 5.9 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

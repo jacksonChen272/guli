@@ -1,0 +1,53 @@
+{
+  "symbol": "1712",
+  "name": "興農",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 39.2,
+    "high": 39.2,
+    "low": 38.6,
+    "close": 38.6,
+    "change": -0.35,
+    "changePercent": -0.9,
+    "tradeVolume": 919669,
+    "transactionCount": 911,
+    "tradeValue": 35566955,
+    "peRatio": 15.56
+  },
+  "dailyRangePercent": 1.55,
+  "turnoverAverageValue": 39041.66,
+  "pricePosition": 0,
+  "liquidityScore": 58,
+  "priceStrengthScore": 26.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 45.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

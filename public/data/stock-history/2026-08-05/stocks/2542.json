@@ -1,0 +1,53 @@
+{
+  "symbol": "2542",
+  "name": "興富發",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 44.05,
+    "high": 44.25,
+    "low": 44.05,
+    "close": 44.05,
+    "change": -0.1,
+    "changePercent": -0.23,
+    "tradeVolume": 3837912,
+    "transactionCount": 1780,
+    "tradeValue": 169282384,
+    "peRatio": 13.55
+  },
+  "dailyRangePercent": 0.45,
+  "turnoverAverageValue": 95102.46,
+  "pricePosition": 0,
+  "liquidityScore": 75.3,
+  "priceStrengthScore": 32,
+  "valuationRiskScore": 20,
+  "snapshotScore": 56.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

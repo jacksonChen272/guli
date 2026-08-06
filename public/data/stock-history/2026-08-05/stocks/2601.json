@@ -1,0 +1,55 @@
+{
+  "symbol": "2601",
+  "name": "益航",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 6.3,
+    "high": 6.65,
+    "low": 6.3,
+    "close": 6.5,
+    "change": 0.24,
+    "changePercent": 3.83,
+    "tradeVolume": 3416146,
+    "transactionCount": 1188,
+    "tradeValue": 22015845,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.56,
+  "turnoverAverageValue": 18531.86,
+  "pricePosition": 57.1,
+  "liquidityScore": 62.7,
+  "priceStrengthScore": 65.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 64.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

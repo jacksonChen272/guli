@@ -1,0 +1,53 @@
+{
+  "symbol": "9918",
+  "name": "欣天然",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 42.8,
+    "high": 42.8,
+    "low": 42.4,
+    "close": 42.6,
+    "change": -0.2,
+    "changePercent": -0.47,
+    "tradeVolume": 39273,
+    "transactionCount": 47,
+    "tradeValue": 1670458,
+    "peRatio": 25.21
+  },
+  "dailyRangePercent": 0.94,
+  "turnoverAverageValue": 35541.66,
+  "pricePosition": 50,
+  "liquidityScore": 13.1,
+  "priceStrengthScore": 45,
+  "valuationRiskScore": 55,
+  "snapshotScore": 33.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.1 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

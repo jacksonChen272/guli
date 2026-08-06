@@ -1,0 +1,69 @@
+{
+  "symbol": "3701",
+  "name": "大眾控",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 40.6,
+    "high": 43,
+    "low": 39.1,
+    "close": 42.9,
+    "change": 3.8,
+    "changePercent": 9.72,
+    "tradeVolume": 2476328,
+    "transactionCount": 2617,
+    "tradeValue": 103964393,
+    "peRatio": null
+  },
+  "dailyRangePercent": 9.97,
+  "turnoverAverageValue": 39726.55,
+  "pricePosition": 97.4,
+  "liquidityScore": 71.8,
+  "priceStrengthScore": 92.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 83.4,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.72% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.97% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

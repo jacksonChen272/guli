@@ -1,0 +1,60 @@
+{
+  "symbol": "3532",
+  "name": "台勝科",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 310,
+    "high": 319,
+    "low": 300,
+    "close": 316.5,
+    "change": 25,
+    "changePercent": 8.58,
+    "tradeVolume": 1134407,
+    "transactionCount": 1421,
+    "tradeValue": 350444318,
+    "peRatio": 243.46
+  },
+  "dailyRangePercent": 6.33,
+  "turnoverAverageValue": 246618.1,
+  "pricePosition": 86.8,
+  "liquidityScore": 71,
+  "priceStrengthScore": 86.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 65.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 8.58% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 243.46 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

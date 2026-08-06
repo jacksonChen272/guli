@@ -1,0 +1,53 @@
+{
+  "symbol": "3533",
+  "name": "嘉澤",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 2020,
+    "high": 2045,
+    "low": 1935,
+    "close": 1955,
+    "change": -55,
+    "changePercent": -2.74,
+    "tradeVolume": 1462364,
+    "transactionCount": 5796,
+    "tradeValue": 2886790860,
+    "peRatio": 27.47
+  },
+  "dailyRangePercent": 5.68,
+  "turnoverAverageValue": 498066.06,
+  "pricePosition": 18.2,
+  "liquidityScore": 83.3,
+  "priceStrengthScore": 28.7,
+  "valuationRiskScore": 55,
+  "snapshotScore": 51.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.2 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

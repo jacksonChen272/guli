@@ -1,0 +1,69 @@
+{
+  "symbol": "4195",
+  "name": "基米-創",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 15.45,
+    "high": 15.45,
+    "low": 15.1,
+    "close": 15.15,
+    "change": 0.15,
+    "changePercent": 1,
+    "tradeVolume": 33580,
+    "transactionCount": 44,
+    "tradeValue": 512298,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.32,
+  "turnoverAverageValue": 11643.14,
+  "pricePosition": 14.3,
+  "liquidityScore": 7.8,
+  "priceStrengthScore": 35.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 23.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.8 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

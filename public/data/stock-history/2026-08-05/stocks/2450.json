@@ -1,0 +1,53 @@
+{
+  "symbol": "2450",
+  "name": "神腦",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 28.65,
+    "high": 28.65,
+    "low": 28.45,
+    "close": 28.45,
+    "change": -0.05,
+    "changePercent": -0.18,
+    "tradeVolume": 177181,
+    "transactionCount": 213,
+    "tradeValue": 5053338,
+    "peRatio": 17.56
+  },
+  "dailyRangePercent": 0.7,
+  "turnoverAverageValue": 23724.59,
+  "pricePosition": 0,
+  "liquidityScore": 30.6,
+  "priceStrengthScore": 28.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 36.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

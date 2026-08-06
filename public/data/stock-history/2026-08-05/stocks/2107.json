@@ -1,0 +1,53 @@
+{
+  "symbol": "2107",
+  "name": "厚生",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 25.4,
+    "high": 25.7,
+    "low": 25.35,
+    "close": 25.4,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 225247,
+    "transactionCount": 178,
+    "tradeValue": 5747794,
+    "peRatio": 17.64
+  },
+  "dailyRangePercent": 1.38,
+  "turnoverAverageValue": 32290.98,
+  "pricePosition": 14.3,
+  "liquidityScore": 32.2,
+  "priceStrengthScore": 37.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 41.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

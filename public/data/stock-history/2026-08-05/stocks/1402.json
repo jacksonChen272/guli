@@ -1,0 +1,53 @@
+{
+  "symbol": "1402",
+  "name": "遠東新",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 27.1,
+    "high": 27.15,
+    "low": 26.6,
+    "close": 26.7,
+    "change": -0.45,
+    "changePercent": -1.66,
+    "tradeVolume": 21225465,
+    "transactionCount": 6232,
+    "tradeValue": 568032452,
+    "peRatio": 16.58
+  },
+  "dailyRangePercent": 2.07,
+  "turnoverAverageValue": 91147.7,
+  "pricePosition": 18.2,
+  "liquidityScore": 88.6,
+  "priceStrengthScore": 31.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 58,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.2 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

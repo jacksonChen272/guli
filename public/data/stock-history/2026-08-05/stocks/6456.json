@@ -1,0 +1,55 @@
+{
+  "symbol": "6456",
+  "name": "GIS-KY",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 59.9,
+    "high": 62,
+    "low": 59.6,
+    "close": 60.3,
+    "change": 2.3,
+    "changePercent": 3.97,
+    "tradeVolume": 2626270,
+    "transactionCount": 1761,
+    "tradeValue": 159641696,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.03,
+  "turnoverAverageValue": 90654,
+  "pricePosition": 29.2,
+  "liquidityScore": 73.1,
+  "priceStrengthScore": 55.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 63.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

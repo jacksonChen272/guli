@@ -1,0 +1,53 @@
+{
+  "symbol": "5225",
+  "name": "東科-KY",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 76.1,
+    "high": 79.4,
+    "low": 75.1,
+    "close": 75.5,
+    "change": 1.9,
+    "changePercent": 2.58,
+    "tradeVolume": 722639,
+    "transactionCount": 586,
+    "tradeValue": 55314980,
+    "peRatio": 8.16
+  },
+  "dailyRangePercent": 5.73,
+  "turnoverAverageValue": 94394.16,
+  "pricePosition": 9.3,
+  "liquidityScore": 57.7,
+  "priceStrengthScore": 37.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 53.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "1513",
+  "name": "中興電",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 161.5,
+    "high": 163,
+    "low": 160.5,
+    "close": 161,
+    "change": 2,
+    "changePercent": 1.26,
+    "tradeVolume": 2416786,
+    "transactionCount": 2988,
+    "tradeValue": 390898818,
+    "peRatio": 19.56
+  },
+  "dailyRangePercent": 1.56,
+  "turnoverAverageValue": 130822.9,
+  "pricePosition": 20,
+  "liquidityScore": 77.8,
+  "priceStrengthScore": 38.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 57.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

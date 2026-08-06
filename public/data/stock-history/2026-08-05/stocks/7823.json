@@ -1,0 +1,62 @@
+{
+  "symbol": "7823",
+  "name": "奧義賽博-KY創",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 81,
+    "high": 84.5,
+    "low": 80.6,
+    "close": 84.5,
+    "change": 3.5,
+    "changePercent": 4.32,
+    "tradeVolume": 36170,
+    "transactionCount": 36,
+    "tradeValue": 2999410,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.84,
+  "turnoverAverageValue": 83316.94,
+  "pricePosition": 100,
+  "liquidityScore": 15,
+  "priceStrengthScore": 81.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 52.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 15.0 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

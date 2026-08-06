@@ -1,0 +1,53 @@
+{
+  "symbol": "2302",
+  "name": "麗正",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 43.5,
+    "high": 44.5,
+    "low": 42.25,
+    "close": 42.4,
+    "change": 0.5,
+    "changePercent": 1.19,
+    "tradeVolume": 4716984,
+    "transactionCount": 3178,
+    "tradeValue": 204118027,
+    "peRatio": 53.67
+  },
+  "dailyRangePercent": 5.33,
+  "turnoverAverageValue": 64228.45,
+  "pricePosition": 6.7,
+  "liquidityScore": 78.2,
+  "priceStrengthScore": 33.5,
+  "valuationRiskScore": 75,
+  "snapshotScore": 47.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

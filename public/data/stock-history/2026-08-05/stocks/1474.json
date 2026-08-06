@@ -1,0 +1,60 @@
+{
+  "symbol": "1474",
+  "name": "弘裕",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10,
+    "high": 10.05,
+    "low": 9.95,
+    "close": 9.96,
+    "change": -0.04,
+    "changePercent": -0.4,
+    "tradeVolume": 54538,
+    "transactionCount": 72,
+    "tradeValue": 543969,
+    "peRatio": 41.5
+  },
+  "dailyRangePercent": 1.01,
+  "turnoverAverageValue": 7555.13,
+  "pricePosition": 10,
+  "liquidityScore": 10.9,
+  "priceStrengthScore": 31.1,
+  "valuationRiskScore": 75,
+  "snapshotScore": 22.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.9 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

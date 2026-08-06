@@ -1,0 +1,53 @@
+{
+  "symbol": "1109",
+  "name": "信大",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.6,
+    "high": 13.7,
+    "low": 13.55,
+    "close": 13.55,
+    "change": -0.05,
+    "changePercent": -0.37,
+    "tradeVolume": 78991,
+    "transactionCount": 156,
+    "tradeValue": 1076905,
+    "peRatio": 17.15
+  },
+  "dailyRangePercent": 1.11,
+  "turnoverAverageValue": 6903.24,
+  "pricePosition": 0,
+  "liquidityScore": 16.4,
+  "priceStrengthScore": 27.7,
+  "valuationRiskScore": 35,
+  "snapshotScore": 31.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

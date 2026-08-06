@@ -1,0 +1,53 @@
+{
+  "symbol": "2546",
+  "name": "根基",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 100,
+    "high": 101,
+    "low": 98.9,
+    "close": 99.2,
+    "change": -0.7,
+    "changePercent": -0.7,
+    "tradeVolume": 346686,
+    "transactionCount": 1064,
+    "tradeValue": 34466343,
+    "peRatio": 10.43
+  },
+  "dailyRangePercent": 2.12,
+  "turnoverAverageValue": 32393.18,
+  "pricePosition": 14.3,
+  "liquidityScore": 52.7,
+  "priceStrengthScore": 31.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 48.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

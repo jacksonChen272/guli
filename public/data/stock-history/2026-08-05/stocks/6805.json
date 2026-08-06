@@ -1,0 +1,60 @@
+{
+  "symbol": "6805",
+  "name": "富世達",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 1720,
+    "high": 1725,
+    "low": 1570,
+    "close": 1600,
+    "change": 10,
+    "changePercent": 0.63,
+    "tradeVolume": 3251236,
+    "transactionCount": 5721,
+    "tradeValue": 5288033480,
+    "peRatio": 40.84
+  },
+  "dailyRangePercent": 9.87,
+  "turnoverAverageValue": 924319.78,
+  "pricePosition": 19.4,
+  "liquidityScore": 88.3,
+  "priceStrengthScore": 36.7,
+  "valuationRiskScore": 75,
+  "snapshotScore": 52.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.87% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 19.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "3164",
+  "name": "景岳",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.2,
+    "high": 16.2,
+    "low": 16.2,
+    "close": 16.2,
+    "change": 0.05,
+    "changePercent": 0.31,
+    "tradeVolume": 14106,
+    "transactionCount": 37,
+    "tradeValue": 228518,
+    "peRatio": 31.15
+  },
+  "dailyRangePercent": 0,
+  "turnoverAverageValue": 6176.16,
+  "pricePosition": 50,
+  "liquidityScore": 3.9,
+  "priceStrengthScore": 50.7,
+  "valuationRiskScore": 55,
+  "snapshotScore": 33.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 3.9 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

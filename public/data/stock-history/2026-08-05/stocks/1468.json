@@ -1,0 +1,60 @@
+{
+  "symbol": "1468",
+  "name": "昶和",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.95,
+    "high": 14,
+    "low": 13.5,
+    "close": 13.85,
+    "change": -0.15,
+    "changePercent": -1.07,
+    "tradeVolume": 67004,
+    "transactionCount": 44,
+    "tradeValue": 918050,
+    "peRatio": 115.42
+  },
+  "dailyRangePercent": 3.7,
+  "turnoverAverageValue": 20864.77,
+  "pricePosition": 70,
+  "liquidityScore": 11.8,
+  "priceStrengthScore": 50.6,
+  "valuationRiskScore": 90,
+  "snapshotScore": 28.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 11.8 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 115.42 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

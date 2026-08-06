@@ -1,0 +1,53 @@
+{
+  "symbol": "2459",
+  "name": "敦吉",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 64.3,
+    "high": 64.9,
+    "low": 64.3,
+    "close": 64.3,
+    "change": 0.4,
+    "changePercent": 0.63,
+    "tradeVolume": 99092,
+    "transactionCount": 78,
+    "tradeValue": 6390662,
+    "peRatio": 12.29
+  },
+  "dailyRangePercent": 0.93,
+  "turnoverAverageValue": 81931.56,
+  "pricePosition": 0,
+  "liquidityScore": 25.3,
+  "priceStrengthScore": 33.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 40.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

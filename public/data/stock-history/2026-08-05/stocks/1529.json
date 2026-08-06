@@ -1,0 +1,53 @@
+{
+  "symbol": "1529",
+  "name": "樂事綠能",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.35,
+    "high": 17.45,
+    "low": 17.1,
+    "close": 17.15,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 312249,
+    "transactionCount": 279,
+    "tradeValue": 5371872,
+    "peRatio": 15.04
+  },
+  "dailyRangePercent": 2.05,
+  "turnoverAverageValue": 19254.02,
+  "pricePosition": 14.3,
+  "liquidityScore": 35.8,
+  "priceStrengthScore": 33.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 40.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

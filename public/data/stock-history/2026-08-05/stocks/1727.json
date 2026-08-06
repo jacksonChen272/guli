@@ -1,0 +1,60 @@
+{
+  "symbol": "1727",
+  "name": "中華化",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 74.2,
+    "high": 78.4,
+    "low": 73.6,
+    "close": 73.9,
+    "change": 1.5,
+    "changePercent": 2.07,
+    "tradeVolume": 2592772,
+    "transactionCount": 2105,
+    "tradeValue": 195942516,
+    "peRatio": 199.73
+  },
+  "dailyRangePercent": 6.52,
+  "turnoverAverageValue": 93084.33,
+  "pricePosition": 6.3,
+  "liquidityScore": 74.1,
+  "priceStrengthScore": 35.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 43.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 199.73 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

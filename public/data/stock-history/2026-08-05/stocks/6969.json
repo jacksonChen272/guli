@@ -1,0 +1,55 @@
+{
+  "symbol": "6969",
+  "name": "成信實業*-創",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 35.2,
+    "high": 35.25,
+    "low": 33.7,
+    "close": 34.1,
+    "change": -0.35,
+    "changePercent": -1.02,
+    "tradeVolume": 206182,
+    "transactionCount": 187,
+    "tradeValue": 7116844,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.6,
+  "turnoverAverageValue": 38057.99,
+  "pricePosition": 25.8,
+  "liquidityScore": 33.4,
+  "priceStrengthScore": 35.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 34.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

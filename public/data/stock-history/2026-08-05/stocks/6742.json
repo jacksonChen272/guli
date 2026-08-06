@@ -1,0 +1,55 @@
+{
+  "symbol": "6742",
+  "name": "澤米",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 45.75,
+    "high": 45.95,
+    "low": 44.65,
+    "close": 45.55,
+    "change": 0.75,
+    "changePercent": 1.67,
+    "tradeVolume": 564154,
+    "transactionCount": 625,
+    "tradeValue": 25529198,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.91,
+  "turnoverAverageValue": 40846.72,
+  "pricePosition": 69.2,
+  "liquidityScore": 51.7,
+  "priceStrengthScore": 56.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 54.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

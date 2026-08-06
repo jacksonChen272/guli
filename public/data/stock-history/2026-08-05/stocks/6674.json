@@ -1,0 +1,62 @@
+{
+  "symbol": "6674",
+  "name": "鋐寶科技",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 15.45,
+    "high": 15.7,
+    "low": 15.3,
+    "close": 15.4,
+    "change": -0.05,
+    "changePercent": -0.32,
+    "tradeVolume": 24021,
+    "transactionCount": 26,
+    "tradeValue": 371369,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.61,
+  "turnoverAverageValue": 14283.42,
+  "pricePosition": 25,
+  "liquidityScore": 5.1,
+  "priceStrengthScore": 36.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 22.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 5.1 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

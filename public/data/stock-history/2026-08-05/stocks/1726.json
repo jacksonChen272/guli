@@ -1,0 +1,53 @@
+{
+  "symbol": "1726",
+  "name": "永記",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 76.6,
+    "high": 77,
+    "low": 76.5,
+    "close": 77,
+    "change": 0.1,
+    "changePercent": 0.13,
+    "tradeVolume": 12085,
+    "transactionCount": 15,
+    "tradeValue": 927720,
+    "peRatio": 12.98
+  },
+  "dailyRangePercent": 0.65,
+  "turnoverAverageValue": 61848,
+  "pricePosition": 100,
+  "liquidityScore": 5.7,
+  "priceStrengthScore": 71.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 50.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 5.7 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "3021",
+  "name": "鴻名",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 21.3,
+    "high": 22,
+    "low": 20.95,
+    "close": 21.05,
+    "change": -0.25,
+    "changePercent": -1.17,
+    "tradeVolume": 290172,
+    "transactionCount": 202,
+    "tradeValue": 6172176,
+    "peRatio": 36.29
+  },
+  "dailyRangePercent": 5.01,
+  "turnoverAverageValue": 30555.33,
+  "pricePosition": 9.5,
+  "liquidityScore": 35.1,
+  "priceStrengthScore": 29.2,
+  "valuationRiskScore": 55,
+  "snapshotScore": 34.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

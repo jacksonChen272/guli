@@ -1,0 +1,55 @@
+{
+  "symbol": "3321",
+  "name": "同泰",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19,
+    "high": 19.55,
+    "low": 18.9,
+    "close": 19.2,
+    "change": 0.7,
+    "changePercent": 3.78,
+    "tradeVolume": 346525,
+    "transactionCount": 172,
+    "tradeValue": 6660359,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.44,
+  "turnoverAverageValue": 38723.02,
+  "pricePosition": 46.2,
+  "liquidityScore": 36.4,
+  "priceStrengthScore": 61.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 50.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "6515",
+  "name": "穎崴",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 7015,
+    "high": 7220,
+    "low": 6825,
+    "close": 6885,
+    "change": 310,
+    "changePercent": 4.71,
+    "tradeVolume": 496898,
+    "transactionCount": 4542,
+    "tradeValue": 3486099965,
+    "peRatio": 141.09
+  },
+  "dailyRangePercent": 5.79,
+  "turnoverAverageValue": 767525.31,
+  "pricePosition": 15.2,
+  "liquidityScore": 76.8,
+  "priceStrengthScore": 44.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 48.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.2 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 141.09 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

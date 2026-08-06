@@ -1,0 +1,55 @@
+{
+  "symbol": "3047",
+  "name": "訊舟",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 14.6,
+    "high": 14.8,
+    "low": 14.5,
+    "close": 14.65,
+    "change": 0.15,
+    "changePercent": 1.03,
+    "tradeVolume": 511141,
+    "transactionCount": 340,
+    "tradeValue": 7484354,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.07,
+  "turnoverAverageValue": 22012.81,
+  "pricePosition": 50,
+  "liquidityScore": 41.8,
+  "priceStrengthScore": 56.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 50,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

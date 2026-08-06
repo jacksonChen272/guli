@@ -1,0 +1,53 @@
+{
+  "symbol": "1436",
+  "name": "華友聯",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 36.2,
+    "high": 36.2,
+    "low": 35.6,
+    "close": 35.7,
+    "change": -0.5,
+    "changePercent": -1.38,
+    "tradeVolume": 254132,
+    "transactionCount": 270,
+    "tradeValue": 9104173,
+    "peRatio": 8.3
+  },
+  "dailyRangePercent": 1.69,
+  "turnoverAverageValue": 33719.16,
+  "pricePosition": 16.7,
+  "liquidityScore": 38,
+  "priceStrengthScore": 31.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 43.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

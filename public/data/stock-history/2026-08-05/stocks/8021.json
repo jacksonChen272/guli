@@ -1,0 +1,67 @@
+{
+  "symbol": "8021",
+  "name": "尖點",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 429.5,
+    "high": 429.5,
+    "low": 392,
+    "close": 396,
+    "change": 5.5,
+    "changePercent": 1.41,
+    "tradeVolume": 11219384,
+    "transactionCount": 13815,
+    "tradeValue": 4624427124,
+    "peRatio": 113.47
+  },
+  "dailyRangePercent": 9.57,
+  "turnoverAverageValue": 334739.57,
+  "pricePosition": 10.7,
+  "liquidityScore": 94,
+  "priceStrengthScore": 35.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 50.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.57% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.7 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 113.47 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

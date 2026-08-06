@@ -1,0 +1,60 @@
+{
+  "symbol": "2454",
+  "name": "聯發科",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 4095,
+    "high": 4125,
+    "low": 3980,
+    "close": 4000,
+    "change": 135,
+    "changePercent": 3.49,
+    "tradeVolume": 12935125,
+    "transactionCount": 64713,
+    "tradeValue": 52565983817,
+    "peRatio": 66.06
+  },
+  "dailyRangePercent": 3.64,
+  "turnoverAverageValue": 812294.03,
+  "pricePosition": 13.8,
+  "liquidityScore": 96.9,
+  "priceStrengthScore": 41.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 54.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 13.8 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 66.06 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

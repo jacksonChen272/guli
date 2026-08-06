@@ -1,0 +1,55 @@
+{
+  "symbol": "6550",
+  "name": "北極星藥業-KY",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.1,
+    "high": 11.35,
+    "low": 11.1,
+    "close": 11.25,
+    "change": 0.2,
+    "changePercent": 1.81,
+    "tradeVolume": 1038015,
+    "transactionCount": 482,
+    "tradeValue": 11660881,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.25,
+  "turnoverAverageValue": 24192.7,
+  "pricePosition": 60,
+  "liquidityScore": 49.7,
+  "priceStrengthScore": 61.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 56.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

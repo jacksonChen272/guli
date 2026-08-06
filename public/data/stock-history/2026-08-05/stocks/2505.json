@@ -1,0 +1,53 @@
+{
+  "symbol": "2505",
+  "name": "國揚",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.85,
+    "high": 17.9,
+    "low": 17.65,
+    "close": 17.7,
+    "change": -0.1,
+    "changePercent": -0.56,
+    "tradeVolume": 270039,
+    "transactionCount": 148,
+    "tradeValue": 4799709,
+    "peRatio": 8.89
+  },
+  "dailyRangePercent": 1.42,
+  "turnoverAverageValue": 32430.47,
+  "pricePosition": 20,
+  "liquidityScore": 31.8,
+  "priceStrengthScore": 34.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 42.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

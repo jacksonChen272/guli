@@ -1,0 +1,53 @@
+{
+  "symbol": "3010",
+  "name": "華立",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 119,
+    "high": 121,
+    "low": 118.5,
+    "close": 119,
+    "change": 2,
+    "changePercent": 1.71,
+    "tradeVolume": 798930,
+    "transactionCount": 778,
+    "tradeValue": 95774147,
+    "peRatio": 12.69
+  },
+  "dailyRangePercent": 2.11,
+  "turnoverAverageValue": 123103.02,
+  "pricePosition": 20,
+  "liquidityScore": 61.5,
+  "priceStrengthScore": 43.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 57.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2611",
+  "name": "志信",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.5,
+    "high": 13.5,
+    "low": 13.4,
+    "close": 13.4,
+    "change": 0.05,
+    "changePercent": 0.37,
+    "tradeVolume": 137203,
+    "transactionCount": 138,
+    "tradeValue": 1844556,
+    "peRatio": 10.23
+  },
+  "dailyRangePercent": 0.75,
+  "turnoverAverageValue": 13366.35,
+  "pricePosition": 0,
+  "liquidityScore": 22.4,
+  "priceStrengthScore": 29.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 37.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

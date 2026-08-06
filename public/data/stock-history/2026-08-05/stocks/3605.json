@@ -1,0 +1,60 @@
+{
+  "symbol": "3605",
+  "name": "宏致",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 93.2,
+    "high": 101.5,
+    "low": 92,
+    "close": 101.5,
+    "change": 8.9,
+    "changePercent": 9.61,
+    "tradeVolume": 23451330,
+    "transactionCount": 17515,
+    "tradeValue": 2333651837,
+    "peRatio": 29.34
+  },
+  "dailyRangePercent": 10.33,
+  "turnoverAverageValue": 133237.33,
+  "pricePosition": 100,
+  "liquidityScore": 94.9,
+  "priceStrengthScore": 93.1,
+  "valuationRiskScore": 55,
+  "snapshotScore": 84.1,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.61% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.33% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

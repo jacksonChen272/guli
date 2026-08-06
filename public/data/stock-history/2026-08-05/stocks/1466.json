@@ -1,0 +1,55 @@
+{
+  "symbol": "1466",
+  "name": "聚隆",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16,
+    "high": 16.3,
+    "low": 15.85,
+    "close": 16.25,
+    "change": 0.4,
+    "changePercent": 2.52,
+    "tradeVolume": 485190,
+    "transactionCount": 216,
+    "tradeValue": 7815266,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.84,
+  "turnoverAverageValue": 36181.79,
+  "pricePosition": 88.9,
+  "liquidityScore": 40.1,
+  "priceStrengthScore": 73.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 58.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

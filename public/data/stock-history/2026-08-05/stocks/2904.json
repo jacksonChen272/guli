@@ -1,0 +1,53 @@
+{
+  "symbol": "2904",
+  "name": "匯僑",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.25,
+    "high": 13.35,
+    "low": 12.8,
+    "close": 13.2,
+    "change": -0.05,
+    "changePercent": -0.38,
+    "tradeVolume": 33812,
+    "transactionCount": 39,
+    "tradeValue": 443371,
+    "peRatio": 22.76
+  },
+  "dailyRangePercent": 4.3,
+  "turnoverAverageValue": 11368.49,
+  "pricePosition": 72.7,
+  "liquidityScore": 7.3,
+  "priceStrengthScore": 53.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 39.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.3 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

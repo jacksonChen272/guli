@@ -1,0 +1,55 @@
+{
+  "symbol": "2405",
+  "name": "輔信",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.5,
+    "high": 16.6,
+    "low": 16.2,
+    "close": 16.3,
+    "change": 0.1,
+    "changePercent": 0.62,
+    "tradeVolume": 1240343,
+    "transactionCount": 719,
+    "tradeValue": 20328541,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.47,
+  "turnoverAverageValue": 28273.35,
+  "pricePosition": 25,
+  "liquidityScore": 55.3,
+  "priceStrengthScore": 38.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 45.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

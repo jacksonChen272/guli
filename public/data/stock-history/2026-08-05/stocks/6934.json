@@ -1,0 +1,55 @@
+{
+  "symbol": "6934",
+  "name": "心誠鎂",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 73.3,
+    "high": 75.5,
+    "low": 72,
+    "close": 74.8,
+    "change": 0.9,
+    "changePercent": 1.22,
+    "tradeVolume": 40245,
+    "transactionCount": 35,
+    "tradeValue": 2946486,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.86,
+  "turnoverAverageValue": 84185.31,
+  "pricePosition": 80,
+  "liquidityScore": 15.3,
+  "priceStrengthScore": 67.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 44.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

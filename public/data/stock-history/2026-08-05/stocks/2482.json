@@ -1,0 +1,55 @@
+{
+  "symbol": "2482",
+  "name": "連宇",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.35,
+    "high": 16.7,
+    "low": 16.35,
+    "close": 16.5,
+    "change": 0.25,
+    "changePercent": 1.54,
+    "tradeVolume": 94818,
+    "transactionCount": 116,
+    "tradeValue": 1565880,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.14,
+  "turnoverAverageValue": 13498.97,
+  "pricePosition": 42.9,
+  "liquidityScore": 18.2,
+  "priceStrengthScore": 55,
+  "valuationRiskScore": null,
+  "snapshotScore": 38.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

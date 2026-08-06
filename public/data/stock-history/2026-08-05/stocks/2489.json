@@ -1,0 +1,53 @@
+{
+  "symbol": "2489",
+  "name": "瑞軒",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 31.15,
+    "high": 33.1,
+    "low": 31,
+    "close": 33.1,
+    "change": 3,
+    "changePercent": 9.97,
+    "tradeVolume": 23176014,
+    "transactionCount": 11148,
+    "tradeValue": 749450009,
+    "peRatio": 30.37
+  },
+  "dailyRangePercent": 6.77,
+  "turnoverAverageValue": 67227.31,
+  "pricePosition": 100,
+  "liquidityScore": 91.1,
+  "priceStrengthScore": 94,
+  "valuationRiskScore": 55,
+  "snapshotScore": 83.2,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.97% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

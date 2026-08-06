@@ -1,0 +1,53 @@
+{
+  "symbol": "2614",
+  "name": "東森",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 18.3,
+    "high": 18.4,
+    "low": 17.9,
+    "close": 17.95,
+    "change": -0.25,
+    "changePercent": -1.37,
+    "tradeVolume": 1267142,
+    "transactionCount": 1213,
+    "tradeValue": 22810661,
+    "peRatio": 8.8
+  },
+  "dailyRangePercent": 2.79,
+  "turnoverAverageValue": 18805.16,
+  "pricePosition": 10,
+  "liquidityScore": 57.8,
+  "priceStrengthScore": 28.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 49.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

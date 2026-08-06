@@ -1,0 +1,53 @@
+{
+  "symbol": "4938",
+  "name": "和碩",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 89.3,
+    "high": 91.2,
+    "low": 89.3,
+    "close": 89.5,
+    "change": 1.1,
+    "changePercent": 1.24,
+    "tradeVolume": 14584438,
+    "transactionCount": 8493,
+    "tradeValue": 1313661553,
+    "peRatio": 20.57
+  },
+  "dailyRangePercent": 2.13,
+  "turnoverAverageValue": 154675.8,
+  "pricePosition": 10.5,
+  "liquidityScore": 90.9,
+  "priceStrengthScore": 43,
+  "valuationRiskScore": 35,
+  "snapshotScore": 64.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

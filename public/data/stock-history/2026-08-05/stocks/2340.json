@@ -1,0 +1,55 @@
+{
+  "symbol": "2340",
+  "name": "台亞",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 32.7,
+    "high": 34.2,
+    "low": 32.4,
+    "close": 33.35,
+    "change": 1.65,
+    "changePercent": 5.21,
+    "tradeVolume": 6546394,
+    "transactionCount": 4551,
+    "tradeValue": 219152012,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.56,
+  "turnoverAverageValue": 48154.69,
+  "pricePosition": 52.8,
+  "liquidityScore": 80.9,
+  "priceStrengthScore": 66.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 72.9,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

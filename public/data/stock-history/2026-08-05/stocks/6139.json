@@ -1,0 +1,53 @@
+{
+  "symbol": "6139",
+  "name": "亞翔",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 811,
+    "high": 830,
+    "low": 800,
+    "close": 800,
+    "change": 14,
+    "changePercent": 1.78,
+    "tradeVolume": 3060692,
+    "transactionCount": 6366,
+    "tradeValue": 2491440127,
+    "peRatio": 22.2
+  },
+  "dailyRangePercent": 3.75,
+  "turnoverAverageValue": 391366.66,
+  "pricePosition": 0,
+  "liquidityScore": 87.1,
+  "priceStrengthScore": 32.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 58.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

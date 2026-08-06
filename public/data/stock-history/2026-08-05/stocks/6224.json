@@ -1,0 +1,60 @@
+{
+  "symbol": "6224",
+  "name": "聚鼎",
+  "tradeDate": "2026-08-05",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 57.5,
+    "high": 57.7,
+    "low": 55.3,
+    "close": 55.7,
+    "change": -0.3,
+    "changePercent": -0.54,
+    "tradeVolume": 296936,
+    "transactionCount": 342,
+    "tradeValue": 16682172,
+    "peRatio": 64.02
+  },
+  "dailyRangePercent": 4.34,
+  "turnoverAverageValue": 48778.28,
+  "pricePosition": 16.7,
+  "liquidityScore": 42.8,
+  "priceStrengthScore": 33.1,
+  "valuationRiskScore": 90,
+  "snapshotScore": 31.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 64.02 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}
