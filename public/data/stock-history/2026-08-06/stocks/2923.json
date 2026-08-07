@@ -1,0 +1,55 @@
+{
+  "symbol": "2923",
+  "name": "鼎固-KY",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 28.7,
+    "high": 29.1,
+    "low": 27.4,
+    "close": 28.2,
+    "change": -1.1,
+    "changePercent": -3.75,
+    "tradeVolume": 400226,
+    "transactionCount": 364,
+    "tradeValue": 11236791,
+    "peRatio": null
+  },
+  "dailyRangePercent": 6.2,
+  "turnoverAverageValue": 30870.3,
+  "pricePosition": 47.1,
+  "liquidityScore": 43.5,
+  "priceStrengthScore": 36.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 39.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

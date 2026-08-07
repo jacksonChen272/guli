@@ -1,0 +1,55 @@
+{
+  "symbol": "1710",
+  "name": "東聯",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.9,
+    "high": 14.1,
+    "low": 13.6,
+    "close": 13.85,
+    "change": -0.05,
+    "changePercent": -0.36,
+    "tradeVolume": 3993662,
+    "transactionCount": 2217,
+    "tradeValue": 55337213,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.68,
+  "turnoverAverageValue": 24960.4,
+  "pricePosition": 50,
+  "liquidityScore": 72,
+  "priceStrengthScore": 45.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 56.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

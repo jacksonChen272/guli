@@ -1,0 +1,53 @@
+{
+  "symbol": "2433",
+  "name": "互盛電",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 41.65,
+    "high": 41.85,
+    "low": 41.6,
+    "close": 41.8,
+    "change": 0.05,
+    "changePercent": 0.12,
+    "tradeVolume": 22315,
+    "transactionCount": 26,
+    "tradeValue": 931641,
+    "peRatio": 13.7
+  },
+  "dailyRangePercent": 0.6,
+  "turnoverAverageValue": 35832.35,
+  "pricePosition": 80,
+  "liquidityScore": 8,
+  "priceStrengthScore": 64.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 48,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.0 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

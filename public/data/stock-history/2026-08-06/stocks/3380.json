@@ -1,0 +1,53 @@
+{
+  "symbol": "3380",
+  "name": "明泰",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 28.8,
+    "high": 28.9,
+    "low": 27.8,
+    "close": 28.55,
+    "change": -0.35,
+    "changePercent": -1.21,
+    "tradeVolume": 1581414,
+    "transactionCount": 1225,
+    "tradeValue": 44718143,
+    "peRatio": 203.93
+  },
+  "dailyRangePercent": 3.96,
+  "turnoverAverageValue": 36504.61,
+  "pricePosition": 68.2,
+  "liquidityScore": 64.3,
+  "priceStrengthScore": 49.7,
+  "valuationRiskScore": 90,
+  "snapshotScore": 46.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 203.93 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

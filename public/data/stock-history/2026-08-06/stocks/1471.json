@@ -1,0 +1,55 @@
+{
+  "symbol": "1471",
+  "name": "首利",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 9.4,
+    "high": 9.45,
+    "low": 9.24,
+    "close": 9.45,
+    "change": -0.05,
+    "changePercent": -0.53,
+    "tradeVolume": 328337,
+    "transactionCount": 303,
+    "tradeValue": 3059051,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.27,
+  "turnoverAverageValue": 10095.88,
+  "pricePosition": 100,
+  "liquidityScore": 33.5,
+  "priceStrengthScore": 70.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 54.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

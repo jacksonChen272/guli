@@ -1,0 +1,53 @@
+{
+  "symbol": "2885",
+  "name": "元大金",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 68.4,
+    "high": 69.3,
+    "low": 67.1,
+    "close": 67.1,
+    "change": -2.3,
+    "changePercent": -3.31,
+    "tradeVolume": 26961877,
+    "transactionCount": 34854,
+    "tradeValue": 1824852425,
+    "peRatio": 20.65
+  },
+  "dailyRangePercent": 3.28,
+  "turnoverAverageValue": 52357.04,
+  "pricePosition": 0,
+  "liquidityScore": 95.3,
+  "priceStrengthScore": 21.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 55.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

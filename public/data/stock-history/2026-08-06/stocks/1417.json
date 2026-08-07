@@ -1,0 +1,53 @@
+{
+  "symbol": "1417",
+  "name": "嘉裕",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 8.35,
+    "high": 8.35,
+    "low": 8.18,
+    "close": 8.25,
+    "change": -0.05,
+    "changePercent": -0.6,
+    "tradeVolume": 88092,
+    "transactionCount": 86,
+    "tradeValue": 724651,
+    "peRatio": 18.33
+  },
+  "dailyRangePercent": 2.08,
+  "turnoverAverageValue": 8426.17,
+  "pricePosition": 41.2,
+  "liquidityScore": 13.9,
+  "priceStrengthScore": 41.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 36.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.9 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

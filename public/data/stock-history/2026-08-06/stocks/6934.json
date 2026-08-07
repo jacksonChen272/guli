@@ -1,0 +1,69 @@
+{
+  "symbol": "6934",
+  "name": "心誠鎂",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 74.8,
+    "high": 75.5,
+    "low": 73.2,
+    "close": 73.2,
+    "change": -1.6,
+    "changePercent": -2.14,
+    "tradeVolume": 34300,
+    "transactionCount": 29,
+    "tradeValue": 2554340,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.14,
+  "turnoverAverageValue": 88080.69,
+  "pricePosition": 0,
+  "liquidityScore": 13.8,
+  "priceStrengthScore": 23.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 19.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.8 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

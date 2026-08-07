@@ -1,0 +1,53 @@
+{
+  "symbol": "1720",
+  "name": "生達",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 56.4,
+    "high": 57,
+    "low": 56.1,
+    "close": 56.2,
+    "change": -0.4,
+    "changePercent": -0.71,
+    "tradeVolume": 839367,
+    "transactionCount": 495,
+    "tradeValue": 47321077,
+    "peRatio": 10.41
+  },
+  "dailyRangePercent": 1.6,
+  "turnoverAverageValue": 95598.14,
+  "pricePosition": 11.1,
+  "liquidityScore": 57.6,
+  "priceStrengthScore": 30.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 50,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

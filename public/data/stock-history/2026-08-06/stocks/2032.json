@@ -1,0 +1,53 @@
+{
+  "symbol": "2032",
+  "name": "新鋼",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.4,
+    "high": 17.2,
+    "low": 16.25,
+    "close": 16.9,
+    "change": 1.25,
+    "changePercent": 7.99,
+    "tradeVolume": 2016910,
+    "transactionCount": 1258,
+    "tradeValue": 33936710,
+    "peRatio": 11.58
+  },
+  "dailyRangePercent": 5.85,
+  "turnoverAverageValue": 26976.72,
+  "pricePosition": 68.4,
+  "liquidityScore": 64.6,
+  "priceStrengthScore": 78.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 73.9,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 7.99% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

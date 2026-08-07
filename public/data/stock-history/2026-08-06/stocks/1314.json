@@ -1,0 +1,62 @@
+{
+  "symbol": "1314",
+  "name": "中石化",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 7.84,
+    "high": 8,
+    "low": 7.79,
+    "close": 7.81,
+    "change": -0.03,
+    "changePercent": -0.38,
+    "tradeVolume": 19233156,
+    "transactionCount": 5046,
+    "tradeValue": 151001274,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.7,
+  "turnoverAverageValue": 29924.95,
+  "pricePosition": 9.5,
+  "liquidityScore": 82.9,
+  "priceStrengthScore": 31,
+  "valuationRiskScore": null,
+  "snapshotScore": 53.7,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.5 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

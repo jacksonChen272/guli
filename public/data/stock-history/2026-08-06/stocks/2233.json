@@ -1,0 +1,60 @@
+{
+  "symbol": "2233",
+  "name": "宇隆",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 211.5,
+    "high": 213.5,
+    "low": 202,
+    "close": 204,
+    "change": -20,
+    "changePercent": -8.93,
+    "tradeVolume": 3180382,
+    "transactionCount": 3626,
+    "tradeValue": 657567352,
+    "peRatio": 32.54
+  },
+  "dailyRangePercent": 5.69,
+  "turnoverAverageValue": 181347.86,
+  "pricePosition": 17.4,
+  "liquidityScore": 83,
+  "priceStrengthScore": 14.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 44.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.93% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "2421",
+  "name": "建準",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 142,
+    "high": 154.5,
+    "low": 141.5,
+    "close": 154.5,
+    "change": 14,
+    "changePercent": 9.96,
+    "tradeVolume": 11894125,
+    "transactionCount": 12005,
+    "tradeValue": 1809587203,
+    "peRatio": 18.86
+  },
+  "dailyRangePercent": 9.19,
+  "turnoverAverageValue": 150736.13,
+  "pricePosition": 100,
+  "liquidityScore": 92.6,
+  "priceStrengthScore": 93.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 87.7,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.96% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.19% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

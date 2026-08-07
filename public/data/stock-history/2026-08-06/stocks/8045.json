@@ -1,0 +1,60 @@
+{
+  "symbol": "8045",
+  "name": "達運光電",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 56,
+    "high": 56,
+    "low": 54,
+    "close": 54.4,
+    "change": -1,
+    "changePercent": -1.81,
+    "tradeVolume": 96885,
+    "transactionCount": 241,
+    "tradeValue": 5268845,
+    "peRatio": 77.71
+  },
+  "dailyRangePercent": 3.7,
+  "turnoverAverageValue": 21862.43,
+  "pricePosition": 20,
+  "liquidityScore": 28.5,
+  "priceStrengthScore": 31.5,
+  "valuationRiskScore": 90,
+  "snapshotScore": 26.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 77.71 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

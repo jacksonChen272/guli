@@ -1,0 +1,53 @@
+{
+  "symbol": "3679",
+  "name": "新至陞",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 109,
+    "high": 110.5,
+    "low": 109,
+    "close": 110.5,
+    "change": 1,
+    "changePercent": 0.91,
+    "tradeVolume": 10428,
+    "transactionCount": 131,
+    "tradeValue": 1144220,
+    "peRatio": 13.02
+  },
+  "dailyRangePercent": 1.38,
+  "turnoverAverageValue": 8734.5,
+  "pricePosition": 100,
+  "liquidityScore": 11,
+  "priceStrengthScore": 73.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 53,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 11.0 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

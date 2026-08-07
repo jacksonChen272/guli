@@ -1,0 +1,55 @@
+{
+  "symbol": "3149",
+  "name": "正達",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 65,
+    "high": 65.4,
+    "low": 62.2,
+    "close": 63.1,
+    "change": -2.3,
+    "changePercent": -3.52,
+    "tradeVolume": 9856775,
+    "transactionCount": 6689,
+    "tradeValue": 625291775,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.14,
+  "turnoverAverageValue": 93480.61,
+  "pricePosition": 28.1,
+  "liquidityScore": 88,
+  "priceStrengthScore": 30.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 55.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

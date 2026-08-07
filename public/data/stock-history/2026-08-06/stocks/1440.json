@@ -1,0 +1,55 @@
+{
+  "symbol": "1440",
+  "name": "南紡",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.2,
+    "high": 12.6,
+    "low": 12.2,
+    "close": 12.5,
+    "change": 0.2,
+    "changePercent": 1.63,
+    "tradeVolume": 1733059,
+    "transactionCount": 700,
+    "tradeValue": 21559832,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.28,
+  "turnoverAverageValue": 30799.76,
+  "pricePosition": 75,
+  "liquidityScore": 58.5,
+  "priceStrengthScore": 66.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 62.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "3308",
+  "name": "聯德",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.6,
+    "high": 19.95,
+    "low": 19.5,
+    "close": 19.85,
+    "change": 0.05,
+    "changePercent": 0.25,
+    "tradeVolume": 22743,
+    "transactionCount": 46,
+    "tradeValue": 447565,
+    "peRatio": 165.42
+  },
+  "dailyRangePercent": 2.31,
+  "turnoverAverageValue": 9729.67,
+  "pricePosition": 77.8,
+  "liquidityScore": 6.3,
+  "priceStrengthScore": 64.3,
+  "valuationRiskScore": 90,
+  "snapshotScore": 33.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 6.3 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 165.42 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

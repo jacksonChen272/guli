@@ -1,0 +1,53 @@
+{
+  "symbol": "1233",
+  "name": "天仁",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 28.8,
+    "high": 28.9,
+    "low": 28.6,
+    "close": 28.75,
+    "change": 0.05,
+    "changePercent": 0.17,
+    "tradeVolume": 26409,
+    "transactionCount": 24,
+    "tradeValue": 760229,
+    "peRatio": 35.06
+  },
+  "dailyRangePercent": 1.05,
+  "turnoverAverageValue": 31676.21,
+  "pricePosition": 50,
+  "liquidityScore": 7.5,
+  "priceStrengthScore": 46.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 32.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.5 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

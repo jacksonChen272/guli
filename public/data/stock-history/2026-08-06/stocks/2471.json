@@ -1,0 +1,53 @@
+{
+  "symbol": "2471",
+  "name": "資通",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 49,
+    "high": 49.25,
+    "low": 48.25,
+    "close": 48.45,
+    "change": -0.55,
+    "changePercent": -1.12,
+    "tradeVolume": 98979,
+    "transactionCount": 165,
+    "tradeValue": 4802136,
+    "peRatio": 12.65
+  },
+  "dailyRangePercent": 2.07,
+  "turnoverAverageValue": 29103.85,
+  "pricePosition": 20,
+  "liquidityScore": 26.5,
+  "priceStrengthScore": 33,
+  "valuationRiskScore": 20,
+  "snapshotScore": 40.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

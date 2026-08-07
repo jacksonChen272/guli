@@ -1,0 +1,53 @@
+{
+  "symbol": "2834",
+  "name": "臺企銀",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.7,
+    "high": 16.8,
+    "low": 16.55,
+    "close": 16.55,
+    "change": -0.2,
+    "changePercent": -1.19,
+    "tradeVolume": 39111359,
+    "transactionCount": 11846,
+    "tradeValue": 651494176,
+    "peRatio": 12.63
+  },
+  "dailyRangePercent": 1.51,
+  "turnoverAverageValue": 54996.98,
+  "pricePosition": 0,
+  "liquidityScore": 91.7,
+  "priceStrengthScore": 25.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 59.7,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

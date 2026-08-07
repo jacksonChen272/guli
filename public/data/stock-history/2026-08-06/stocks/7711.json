@@ -1,0 +1,53 @@
+{
+  "symbol": "7711",
+  "name": "永擎",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 361.5,
+    "high": 361.5,
+    "low": 361.5,
+    "close": 361.5,
+    "change": 32.5,
+    "changePercent": 9.88,
+    "tradeVolume": 191485,
+    "transactionCount": 466,
+    "tradeValue": 69221776,
+    "peRatio": 15.91
+  },
+  "dailyRangePercent": 0,
+  "turnoverAverageValue": 148544.58,
+  "pricePosition": 50,
+  "liquidityScore": 50.3,
+  "priceStrengthScore": 72.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 63.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.88% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

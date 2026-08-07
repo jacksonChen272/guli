@@ -1,0 +1,60 @@
+{
+  "symbol": "4722",
+  "name": "國精化",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 218,
+    "high": 234,
+    "low": 210,
+    "close": 230,
+    "change": 12,
+    "changePercent": 5.5,
+    "tradeVolume": 1415999,
+    "transactionCount": 1588,
+    "tradeValue": 315249184,
+    "peRatio": 136.09
+  },
+  "dailyRangePercent": 11.43,
+  "turnoverAverageValue": 198519.64,
+  "pricePosition": 83.3,
+  "liquidityScore": 73.6,
+  "priceStrengthScore": 78,
+  "valuationRiskScore": 90,
+  "snapshotScore": 62.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.43% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 136.09 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

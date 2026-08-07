@@ -1,0 +1,60 @@
+{
+  "symbol": "8271",
+  "name": "宇瞻",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 225,
+    "high": 249.5,
+    "low": 221.5,
+    "close": 247,
+    "change": 20,
+    "changePercent": 8.81,
+    "tradeVolume": 17296783,
+    "transactionCount": 19615,
+    "tradeValue": 4177172376,
+    "peRatio": 6.14
+  },
+  "dailyRangePercent": 12.64,
+  "turnoverAverageValue": 212958.06,
+  "pricePosition": 91.1,
+  "liquidityScore": 95.3,
+  "priceStrengthScore": 88.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 89,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 8.81% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 12.64% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

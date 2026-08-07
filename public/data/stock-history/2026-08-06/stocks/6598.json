@@ -1,0 +1,62 @@
+{
+  "symbol": "6598",
+  "name": "ABC-KY",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 31.2,
+    "high": 31.6,
+    "low": 30,
+    "close": 30.15,
+    "change": -0.95,
+    "changePercent": -3.05,
+    "tradeVolume": 569668,
+    "transactionCount": 726,
+    "tradeValue": 17443835,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.33,
+  "turnoverAverageValue": 24027.32,
+  "pricePosition": 9.4,
+  "liquidityScore": 51.1,
+  "priceStrengthScore": 25,
+  "valuationRiskScore": null,
+  "snapshotScore": 36.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.4 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

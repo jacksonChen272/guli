@@ -1,0 +1,53 @@
+{
+  "symbol": "1541",
+  "name": "錩泰",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 21.2,
+    "high": 21.7,
+    "low": 21.2,
+    "close": 21.7,
+    "change": 0.2,
+    "changePercent": 0.93,
+    "tradeVolume": 24010,
+    "transactionCount": 19,
+    "tradeValue": 515516,
+    "peRatio": 9.56
+  },
+  "dailyRangePercent": 2.36,
+  "turnoverAverageValue": 27132.42,
+  "pricePosition": 100,
+  "liquidityScore": 5.7,
+  "priceStrengthScore": 73.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 51.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 5.7 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

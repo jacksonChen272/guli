@@ -1,0 +1,69 @@
+{
+  "symbol": "6226",
+  "name": "光鼎",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.85,
+    "high": 22.85,
+    "low": 20.85,
+    "close": 22.85,
+    "change": 2.05,
+    "changePercent": 9.86,
+    "tradeVolume": 13176289,
+    "transactionCount": 5532,
+    "tradeValue": 294598205,
+    "peRatio": null
+  },
+  "dailyRangePercent": 9.59,
+  "turnoverAverageValue": 53253.47,
+  "pricePosition": 100,
+  "liquidityScore": 85.5,
+  "priceStrengthScore": 93.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 90.1,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.86% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.59% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

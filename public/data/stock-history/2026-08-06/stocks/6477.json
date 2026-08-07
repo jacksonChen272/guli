@@ -1,0 +1,60 @@
+{
+  "symbol": "6477",
+  "name": "安集",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 36.35,
+    "high": 36.8,
+    "low": 35.2,
+    "close": 35.25,
+    "change": -1.05,
+    "changePercent": -2.89,
+    "tradeVolume": 1141088,
+    "transactionCount": 983,
+    "tradeValue": 40617122,
+    "peRatio": 391.67
+  },
+  "dailyRangePercent": 4.55,
+  "turnoverAverageValue": 41319.55,
+  "pricePosition": 3.1,
+  "liquidityScore": 61.4,
+  "priceStrengthScore": 23.1,
+  "valuationRiskScore": 90,
+  "snapshotScore": 33.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 3.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 391.67 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

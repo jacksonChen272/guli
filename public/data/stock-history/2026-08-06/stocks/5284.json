@@ -1,0 +1,53 @@
+{
+  "symbol": "5284",
+  "name": "jpp-KY",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 310,
+    "high": 320,
+    "low": 302.5,
+    "close": 303.5,
+    "change": -9.5,
+    "changePercent": -3.04,
+    "tradeVolume": 495993,
+    "transactionCount": 714,
+    "tradeValue": 152942931,
+    "peRatio": 22.65
+  },
+  "dailyRangePercent": 5.79,
+  "turnoverAverageValue": 214205.79,
+  "pricePosition": 5.7,
+  "liquidityScore": 61.5,
+  "priceStrengthScore": 23.7,
+  "valuationRiskScore": 35,
+  "snapshotScore": 45.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "6409",
+  "name": "旭隼",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 962,
+    "high": 1025,
+    "low": 939,
+    "close": 1010,
+    "change": 47,
+    "changePercent": 4.88,
+    "tradeVolume": 554607,
+    "transactionCount": 1624,
+    "tradeValue": 547555693,
+    "peRatio": 28.93
+  },
+  "dailyRangePercent": 9.16,
+  "turnoverAverageValue": 337164.84,
+  "pricePosition": 82.6,
+  "liquidityScore": 70.4,
+  "priceStrengthScore": 76.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 68,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.16% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

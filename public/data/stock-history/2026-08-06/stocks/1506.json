@@ -1,0 +1,53 @@
+{
+  "symbol": "1506",
+  "name": "正道",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.25,
+    "high": 10.35,
+    "low": 10.2,
+    "close": 10.3,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 122222,
+    "transactionCount": 83,
+    "tradeValue": 1252782,
+    "peRatio": 147.14
+  },
+  "dailyRangePercent": 1.47,
+  "turnoverAverageValue": 15093.76,
+  "pricePosition": 66.7,
+  "liquidityScore": 17.9,
+  "priceStrengthScore": 59.8,
+  "valuationRiskScore": 90,
+  "snapshotScore": 35.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 147.14 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

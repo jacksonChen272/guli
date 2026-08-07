@@ -1,0 +1,62 @@
+{
+  "symbol": "6657",
+  "name": "華安",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 30.25,
+    "high": 31,
+    "low": 30.05,
+    "close": 31,
+    "change": 0.5,
+    "changePercent": 1.64,
+    "tradeVolume": 51093,
+    "transactionCount": 48,
+    "tradeValue": 1547070,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.16,
+  "turnoverAverageValue": 32230.63,
+  "pricePosition": 100,
+  "liquidityScore": 13.5,
+  "priceStrengthScore": 75.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 48.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.5 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

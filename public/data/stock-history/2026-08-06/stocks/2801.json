@@ -1,0 +1,53 @@
+{
+  "symbol": "2801",
+  "name": "彰銀",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.5,
+    "high": 23.75,
+    "low": 23.15,
+    "close": 23.15,
+    "change": -0.5,
+    "changePercent": -2.11,
+    "tradeVolume": 36697237,
+    "transactionCount": 13077,
+    "tradeValue": 856580911,
+    "peRatio": 14.47
+  },
+  "dailyRangePercent": 2.59,
+  "turnoverAverageValue": 65502.86,
+  "pricePosition": 0,
+  "liquidityScore": 92.8,
+  "priceStrengthScore": 23.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 59.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

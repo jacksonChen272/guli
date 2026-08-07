@@ -1,0 +1,53 @@
+{
+  "symbol": "2610",
+  "name": "華航",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 22.6,
+    "high": 22.7,
+    "low": 22.1,
+    "close": 22.15,
+    "change": -0.45,
+    "changePercent": -1.99,
+    "tradeVolume": 23718012,
+    "transactionCount": 9007,
+    "tradeValue": 527807974,
+    "peRatio": 8.65
+  },
+  "dailyRangePercent": 2.71,
+  "turnoverAverageValue": 58599.75,
+  "pricePosition": 8.3,
+  "liquidityScore": 89.7,
+  "priceStrengthScore": 27,
+  "valuationRiskScore": 20,
+  "snapshotScore": 59.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

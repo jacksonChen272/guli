@@ -1,0 +1,53 @@
+{
+  "symbol": "4581",
+  "name": "光隆精密-KY",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 51,
+    "high": 51.3,
+    "low": 50.9,
+    "close": 51.3,
+    "change": 0.3,
+    "changePercent": 0.59,
+    "tradeVolume": 12314,
+    "transactionCount": 39,
+    "tradeValue": 629315,
+    "peRatio": 12.27
+  },
+  "dailyRangePercent": 0.79,
+  "turnoverAverageValue": 16136.28,
+  "pricePosition": 100,
+  "liquidityScore": 6,
+  "priceStrengthScore": 72.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 50.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 6.0 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

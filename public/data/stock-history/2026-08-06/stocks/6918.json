@@ -1,0 +1,53 @@
+{
+  "symbol": "6918",
+  "name": "愛派司",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 72.1,
+    "high": 72.1,
+    "low": 70.6,
+    "close": 71.1,
+    "change": -1,
+    "changePercent": -1.39,
+    "tradeVolume": 17002,
+    "transactionCount": 16,
+    "tradeValue": 1209843,
+    "peRatio": 14
+  },
+  "dailyRangePercent": 2.12,
+  "turnoverAverageValue": 75615.19,
+  "pricePosition": 33.3,
+  "liquidityScore": 7.8,
+  "priceStrengthScore": 37.1,
+  "valuationRiskScore": 20,
+  "snapshotScore": 35.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.8 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2615",
+  "name": "萬海",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 85.1,
+    "high": 85.6,
+    "low": 84,
+    "close": 84.3,
+    "change": -1.1,
+    "changePercent": -1.29,
+    "tradeVolume": 4915353,
+    "transactionCount": 6872,
+    "tradeValue": 414954345,
+    "peRatio": 7.78
+  },
+  "dailyRangePercent": 1.9,
+  "turnoverAverageValue": 60383.34,
+  "pricePosition": 18.7,
+  "liquidityScore": 84.4,
+  "priceStrengthScore": 32.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 60,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

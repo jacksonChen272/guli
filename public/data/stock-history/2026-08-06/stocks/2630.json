@@ -1,0 +1,60 @@
+{
+  "symbol": "2630",
+  "name": "亞航",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 49.95,
+    "high": 50.4,
+    "low": 48.7,
+    "close": 49,
+    "change": -0.9,
+    "changePercent": -1.8,
+    "tradeVolume": 1805900,
+    "transactionCount": 1442,
+    "tradeValue": 88839364,
+    "peRatio": 85.96
+  },
+  "dailyRangePercent": 3.49,
+  "turnoverAverageValue": 61608.44,
+  "pricePosition": 17.6,
+  "liquidityScore": 69.3,
+  "priceStrengthScore": 30.6,
+  "valuationRiskScore": 90,
+  "snapshotScore": 40,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.6 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 85.96 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

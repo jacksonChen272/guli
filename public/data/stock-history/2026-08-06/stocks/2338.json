@@ -1,0 +1,55 @@
+{
+  "symbol": "2338",
+  "name": "光罩",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 39.5,
+    "high": 39.85,
+    "low": 38.3,
+    "close": 39.65,
+    "change": -0.05,
+    "changePercent": -0.13,
+    "tradeVolume": 1606031,
+    "transactionCount": 1081,
+    "tradeValue": 63098350,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.05,
+  "turnoverAverageValue": 58370.35,
+  "pricePosition": 87.1,
+  "liquidityScore": 65.7,
+  "priceStrengthScore": 66.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 66.3,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

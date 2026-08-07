@@ -1,0 +1,53 @@
+{
+  "symbol": "2901",
+  "name": "欣欣",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.85,
+    "high": 24,
+    "low": 23.7,
+    "close": 24,
+    "change": 0.15,
+    "changePercent": 0.63,
+    "tradeVolume": 13416,
+    "transactionCount": 34,
+    "tradeValue": 320300,
+    "peRatio": 58.54
+  },
+  "dailyRangePercent": 1.27,
+  "turnoverAverageValue": 9420.59,
+  "pricePosition": 100,
+  "liquidityScore": 4.1,
+  "priceStrengthScore": 72.9,
+  "valuationRiskScore": 75,
+  "snapshotScore": 39.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 4.1 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

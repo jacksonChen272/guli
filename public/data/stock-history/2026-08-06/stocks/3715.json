@@ -1,0 +1,60 @@
+{
+  "symbol": "3715",
+  "name": "定穎投控",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 109.5,
+    "high": 120,
+    "low": 106,
+    "close": 116.5,
+    "change": 7,
+    "changePercent": 6.39,
+    "tradeVolume": 9057965,
+    "transactionCount": 7720,
+    "tradeValue": 1038674292,
+    "peRatio": 120.1
+  },
+  "dailyRangePercent": 13.21,
+  "turnoverAverageValue": 134543.3,
+  "pricePosition": 75,
+  "liquidityScore": 89.8,
+  "priceStrengthScore": 77.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 68.2,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 13.21% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 120.10 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2330",
+  "name": "台積電",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 2395,
+    "high": 2395,
+    "low": 2360,
+    "close": 2365,
+    "change": -40,
+    "changePercent": -1.66,
+    "tradeVolume": 25536816,
+    "transactionCount": 89846,
+    "tradeValue": 60600738669,
+    "peRatio": 31.8
+  },
+  "dailyRangePercent": 1.48,
+  "turnoverAverageValue": 674495.68,
+  "pricePosition": 14.3,
+  "liquidityScore": 98.6,
+  "priceStrengthScore": 29.8,
+  "valuationRiskScore": 55,
+  "snapshotScore": 56.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

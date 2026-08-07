@@ -1,0 +1,60 @@
+{
+  "symbol": "2006",
+  "name": "東和鋼鐵",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 78.4,
+    "high": 86.2,
+    "low": 78,
+    "close": 86.2,
+    "change": 7.8,
+    "changePercent": 9.95,
+    "tradeVolume": 11103363,
+    "transactionCount": 11771,
+    "tradeValue": 935369127,
+    "peRatio": 11.45
+  },
+  "dailyRangePercent": 10.51,
+  "turnoverAverageValue": 79463.86,
+  "pricePosition": 100,
+  "liquidityScore": 90.9,
+  "priceStrengthScore": 93.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 90.1,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.95% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.51% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "3041",
+  "name": "揚智",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 22.9,
+    "high": 22.9,
+    "low": 22.25,
+    "close": 22.7,
+    "change": -0.2,
+    "changePercent": -0.87,
+    "tradeVolume": 576998,
+    "transactionCount": 430,
+    "tradeValue": 12986060,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.92,
+  "turnoverAverageValue": 30200.14,
+  "pricePosition": 69.2,
+  "liquidityScore": 47.4,
+  "priceStrengthScore": 50.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 49.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

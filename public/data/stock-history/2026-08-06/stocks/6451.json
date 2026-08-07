@@ -1,0 +1,62 @@
+{
+  "symbol": "6451",
+  "name": "訊芯-KY",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 428,
+    "high": 468.5,
+    "low": 411.5,
+    "close": 452,
+    "change": 22,
+    "changePercent": 5.12,
+    "tradeVolume": 9222816,
+    "transactionCount": 9622,
+    "tradeValue": 4060250150,
+    "peRatio": null
+  },
+  "dailyRangePercent": 13.85,
+  "turnoverAverageValue": 421975.7,
+  "pricePosition": 71.1,
+  "liquidityScore": 92.9,
+  "priceStrengthScore": 72.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 81.7,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 13.85% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

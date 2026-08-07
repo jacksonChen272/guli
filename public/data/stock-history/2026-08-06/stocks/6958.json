@@ -1,0 +1,62 @@
+{
+  "symbol": "6958",
+  "name": "日盛台駿",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 18.55,
+    "high": 18.55,
+    "low": 18.1,
+    "close": 18.45,
+    "change": -0.25,
+    "changePercent": -1.34,
+    "tradeVolume": 53900,
+    "transactionCount": 81,
+    "tradeValue": 990501,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.49,
+  "turnoverAverageValue": 12228.41,
+  "pricePosition": 77.8,
+  "liquidityScore": 12.8,
+  "priceStrengthScore": 52.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 35.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.8 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

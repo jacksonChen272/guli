@@ -1,0 +1,55 @@
+{
+  "symbol": "2401",
+  "name": "凌陽",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 27.7,
+    "high": 27.7,
+    "low": 26.55,
+    "close": 27.4,
+    "change": -0.35,
+    "changePercent": -1.26,
+    "tradeVolume": 2839260,
+    "transactionCount": 1954,
+    "tradeValue": 76917649,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.33,
+  "turnoverAverageValue": 39364.2,
+  "pricePosition": 73.9,
+  "liquidityScore": 71.3,
+  "priceStrengthScore": 51.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 60.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "6582",
+  "name": "申豐",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 31.35,
+    "high": 31.6,
+    "low": 31.15,
+    "close": 31.6,
+    "change": 0.25,
+    "changePercent": 0.8,
+    "tradeVolume": 35191,
+    "transactionCount": 63,
+    "tradeValue": 1105502,
+    "peRatio": 83.16
+  },
+  "dailyRangePercent": 1.44,
+  "turnoverAverageValue": 17547.65,
+  "pricePosition": 100,
+  "liquidityScore": 11.5,
+  "priceStrengthScore": 73.3,
+  "valuationRiskScore": 90,
+  "snapshotScore": 39,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 11.5 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 83.16 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

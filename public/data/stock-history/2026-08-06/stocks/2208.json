@@ -1,0 +1,55 @@
+{
+  "symbol": "2208",
+  "name": "台船",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.05,
+    "high": 19.15,
+    "low": 18.8,
+    "close": 18.9,
+    "change": -0.2,
+    "changePercent": -1.05,
+    "tradeVolume": 1781289,
+    "transactionCount": 1247,
+    "tradeValue": 33680718,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.86,
+  "turnoverAverageValue": 27009.4,
+  "pricePosition": 28.6,
+  "liquidityScore": 63.8,
+  "priceStrengthScore": 36.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 48.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

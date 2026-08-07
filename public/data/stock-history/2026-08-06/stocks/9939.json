@@ -1,0 +1,53 @@
+{
+  "symbol": "9939",
+  "name": "宏全",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 133,
+    "high": 144.5,
+    "low": 133,
+    "close": 142.5,
+    "change": 8.5,
+    "changePercent": 6.34,
+    "tradeVolume": 5263566,
+    "transactionCount": 4944,
+    "tradeValue": 744269306,
+    "peRatio": 15.8
+  },
+  "dailyRangePercent": 8.65,
+  "turnoverAverageValue": 150539.91,
+  "pricePosition": 82.6,
+  "liquidityScore": 86.7,
+  "priceStrengthScore": 79.7,
+  "valuationRiskScore": 35,
+  "snapshotScore": 79.2,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.65% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

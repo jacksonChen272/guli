@@ -1,0 +1,62 @@
+{
+  "symbol": "1463",
+  "name": "強盛新",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.55,
+    "high": 17.9,
+    "low": 17.5,
+    "close": 17.9,
+    "change": 0.2,
+    "changePercent": 1.13,
+    "tradeVolume": 30026,
+    "transactionCount": 37,
+    "tradeValue": 531603,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.29,
+  "turnoverAverageValue": 14367.65,
+  "pricePosition": 100,
+  "liquidityScore": 7.2,
+  "priceStrengthScore": 74.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 44.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.2 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

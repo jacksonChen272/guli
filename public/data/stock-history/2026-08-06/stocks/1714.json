@@ -1,0 +1,53 @@
+{
+  "symbol": "1714",
+  "name": "和桐",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 15.95,
+    "high": 16.2,
+    "low": 15.9,
+    "close": 16.2,
+    "change": 1.45,
+    "changePercent": 9.83,
+    "tradeVolume": 19116072,
+    "transactionCount": 3437,
+    "tradeValue": 309009382,
+    "peRatio": 13.73
+  },
+  "dailyRangePercent": 1.89,
+  "turnoverAverageValue": 89906.72,
+  "pricePosition": 100,
+  "liquidityScore": 85.3,
+  "priceStrengthScore": 93.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 88,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.83% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

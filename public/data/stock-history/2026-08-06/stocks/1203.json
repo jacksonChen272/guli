@@ -1,0 +1,53 @@
+{
+  "symbol": "1203",
+  "name": "味王",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 46.75,
+    "high": 47.5,
+    "low": 46.75,
+    "close": 47.5,
+    "change": -0.3,
+    "changePercent": -0.63,
+    "tradeVolume": 20724,
+    "transactionCount": 39,
+    "tradeValue": 975988,
+    "peRatio": 27.62
+  },
+  "dailyRangePercent": 1.6,
+  "turnoverAverageValue": 25025.33,
+  "pricePosition": 100,
+  "liquidityScore": 8.4,
+  "priceStrengthScore": 70.1,
+  "valuationRiskScore": 55,
+  "snapshotScore": 43.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.4 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

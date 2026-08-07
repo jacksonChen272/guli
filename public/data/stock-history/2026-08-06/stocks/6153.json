@@ -1,0 +1,55 @@
+{
+  "symbol": "6153",
+  "name": "嘉聯益",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16,
+    "high": 16.35,
+    "low": 15.5,
+    "close": 16.3,
+    "change": 0.3,
+    "changePercent": 1.88,
+    "tradeVolume": 3220245,
+    "transactionCount": 1806,
+    "tradeValue": 51724791,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.48,
+  "turnoverAverageValue": 28640.53,
+  "pricePosition": 94.1,
+  "liquidityScore": 70,
+  "priceStrengthScore": 73.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 72.1,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

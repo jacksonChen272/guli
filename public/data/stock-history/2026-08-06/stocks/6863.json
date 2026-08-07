@@ -1,0 +1,60 @@
+{
+  "symbol": "6863",
+  "name": "永道-KY",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 137,
+    "high": 137,
+    "low": 129.5,
+    "close": 131,
+    "change": -4,
+    "changePercent": -2.96,
+    "tradeVolume": 337504,
+    "transactionCount": 408,
+    "tradeValue": 44772870,
+    "peRatio": 120.18
+  },
+  "dailyRangePercent": 5.79,
+  "turnoverAverageValue": 109737.43,
+  "pricePosition": 20,
+  "liquidityScore": 51.3,
+  "priceStrengthScore": 28.8,
+  "valuationRiskScore": 90,
+  "snapshotScore": 32.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 120.18 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2910",
+  "name": "統領",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 24.05,
+    "high": 24.45,
+    "low": 24.05,
+    "close": 24.45,
+    "change": -0.25,
+    "changePercent": -1.01,
+    "tradeVolume": 55025,
+    "transactionCount": 64,
+    "tradeValue": 1333185,
+    "peRatio": 20.04
+  },
+  "dailyRangePercent": 1.66,
+  "turnoverAverageValue": 20831.02,
+  "pricePosition": 100,
+  "liquidityScore": 13.6,
+  "priceStrengthScore": 69.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 48.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.6 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

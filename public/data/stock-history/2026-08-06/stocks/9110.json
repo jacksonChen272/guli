@@ -1,0 +1,62 @@
+{
+  "symbol": "9110",
+  "name": "越南控-DR",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 3,
+    "high": 3.3,
+    "low": 2.97,
+    "close": 3.13,
+    "change": -0.17,
+    "changePercent": -5.15,
+    "tradeVolume": 212151,
+    "transactionCount": 40,
+    "tradeValue": 634888,
+    "peRatio": null
+  },
+  "dailyRangePercent": 11.11,
+  "turnoverAverageValue": 15872.2,
+  "pricePosition": 48.5,
+  "liquidityScore": 17.3,
+  "priceStrengthScore": 41.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 31.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.11% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

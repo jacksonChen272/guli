@@ -1,0 +1,53 @@
+{
+  "symbol": "2432",
+  "name": "倚天酷碁-創",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 28.6,
+    "high": 29.35,
+    "low": 28.35,
+    "close": 28.4,
+    "change": -0.1,
+    "changePercent": -0.35,
+    "tradeVolume": 202161,
+    "transactionCount": 117,
+    "tradeValue": 5823371,
+    "peRatio": 12.91
+  },
+  "dailyRangePercent": 3.53,
+  "turnoverAverageValue": 49772.4,
+  "pricePosition": 5,
+  "liquidityScore": 30.7,
+  "priceStrengthScore": 29.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 40,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "5880",
+  "name": "合庫金",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 26.45,
+    "high": 26.7,
+    "low": 26.1,
+    "close": 26.1,
+    "change": -0.5,
+    "changePercent": -1.88,
+    "tradeVolume": 27088992,
+    "transactionCount": 20327,
+    "tradeValue": 712412250,
+    "peRatio": 18.64
+  },
+  "dailyRangePercent": 2.3,
+  "turnoverAverageValue": 35047.58,
+  "pricePosition": 0,
+  "liquidityScore": 92.2,
+  "priceStrengthScore": 24.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 56.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

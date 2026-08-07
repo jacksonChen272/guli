@@ -1,0 +1,53 @@
+{
+  "symbol": "2883",
+  "name": "凱基金",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 31.15,
+    "high": 31.35,
+    "low": 30.5,
+    "close": 30.6,
+    "change": -1,
+    "changePercent": -3.16,
+    "tradeVolume": 45983382,
+    "transactionCount": 16185,
+    "tradeValue": 1417163438,
+    "peRatio": 17.19
+  },
+  "dailyRangePercent": 2.79,
+  "turnoverAverageValue": 87560.3,
+  "pricePosition": 11.8,
+  "liquidityScore": 94.6,
+  "priceStrengthScore": 25.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 57.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "3653",
+  "name": "健策",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 4295,
+    "high": 4595,
+    "low": 4230,
+    "close": 4450,
+    "change": 110,
+    "changePercent": 2.53,
+    "tradeVolume": 2141656,
+    "transactionCount": 13000,
+    "tradeValue": 9497430975,
+    "peRatio": 123.1
+  },
+  "dailyRangePercent": 8.63,
+  "turnoverAverageValue": 730571.61,
+  "pricePosition": 60.3,
+  "liquidityScore": 88.8,
+  "priceStrengthScore": 63.3,
+  "valuationRiskScore": 90,
+  "snapshotScore": 61.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.63% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 123.10 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "1623",
+  "name": "大東電",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 215.5,
+    "high": 215.5,
+    "low": 208,
+    "close": 209,
+    "change": -3.5,
+    "changePercent": -1.65,
+    "tradeVolume": 131239,
+    "transactionCount": 204,
+    "tradeValue": 27577727,
+    "peRatio": 16.88
+  },
+  "dailyRangePercent": 3.61,
+  "turnoverAverageValue": 135184.94,
+  "pricePosition": 13.3,
+  "liquidityScore": 40.4,
+  "priceStrengthScore": 29.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 40.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 13.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

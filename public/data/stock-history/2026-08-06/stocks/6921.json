@@ -1,0 +1,60 @@
+{
+  "symbol": "6921",
+  "name": "嘉雨思-創",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 63.9,
+    "high": 65.6,
+    "low": 63.9,
+    "close": 64.5,
+    "change": 0.7,
+    "changePercent": 1.1,
+    "tradeVolume": 41020,
+    "transactionCount": 28,
+    "tradeValue": 2637900,
+    "peRatio": 189.71
+  },
+  "dailyRangePercent": 2.66,
+  "turnoverAverageValue": 94210.71,
+  "pricePosition": 35.3,
+  "liquidityScore": 14.7,
+  "priceStrengthScore": 51.3,
+  "valuationRiskScore": 90,
+  "snapshotScore": 30.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.7 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 189.71 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

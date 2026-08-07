@@ -1,0 +1,55 @@
+{
+  "symbol": "8215",
+  "name": "明基材",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.7,
+    "high": 24.2,
+    "low": 23.35,
+    "close": 24.2,
+    "change": 0.35,
+    "changePercent": 1.47,
+    "tradeVolume": 591361,
+    "transactionCount": 524,
+    "tradeValue": 14117215,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.64,
+  "turnoverAverageValue": 26941.25,
+  "pricePosition": 100,
+  "liquidityScore": 48.9,
+  "priceStrengthScore": 74.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 63.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

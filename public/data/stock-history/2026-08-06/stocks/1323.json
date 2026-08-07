@@ -1,0 +1,53 @@
+{
+  "symbol": "1323",
+  "name": "永裕",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.75,
+    "high": 19.9,
+    "low": 19.6,
+    "close": 19.85,
+    "change": 0.1,
+    "changePercent": 0.51,
+    "tradeVolume": 28134,
+    "transactionCount": 85,
+    "tradeValue": 555744,
+    "peRatio": 35.45
+  },
+  "dailyRangePercent": 1.53,
+  "turnoverAverageValue": 6538.16,
+  "pricePosition": 83.3,
+  "liquidityScore": 9,
+  "priceStrengthScore": 66.8,
+  "valuationRiskScore": 55,
+  "snapshotScore": 42.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 9.0 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

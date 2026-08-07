@@ -1,0 +1,55 @@
+{
+  "symbol": "3060",
+  "name": "銘異",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 29.1,
+    "high": 29.2,
+    "low": 28.15,
+    "close": 29.15,
+    "change": 0.1,
+    "changePercent": 0.34,
+    "tradeVolume": 906546,
+    "transactionCount": 733,
+    "tradeValue": 26099850,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.73,
+  "turnoverAverageValue": 35606.89,
+  "pricePosition": 95.2,
+  "liquidityScore": 56.6,
+  "priceStrengthScore": 70.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 64.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

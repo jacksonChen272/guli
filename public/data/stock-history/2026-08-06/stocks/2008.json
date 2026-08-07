@@ -1,0 +1,53 @@
+{
+  "symbol": "2008",
+  "name": "高興昌",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 30.75,
+    "high": 31.1,
+    "low": 30.6,
+    "close": 30.85,
+    "change": -0.3,
+    "changePercent": -0.96,
+    "tradeVolume": 37195,
+    "transactionCount": 24,
+    "tradeValue": 1143416,
+    "peRatio": 41.13
+  },
+  "dailyRangePercent": 1.63,
+  "turnoverAverageValue": 47642.33,
+  "pricePosition": 50,
+  "liquidityScore": 10.1,
+  "priceStrengthScore": 51.8,
+  "valuationRiskScore": 75,
+  "snapshotScore": 31.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.1 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

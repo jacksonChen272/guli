@@ -1,0 +1,55 @@
+{
+  "symbol": "1321",
+  "name": "大洋",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 31.6,
+    "high": 31.85,
+    "low": 31.55,
+    "close": 31.7,
+    "change": 0.1,
+    "changePercent": 0.32,
+    "tradeVolume": 110004,
+    "transactionCount": 52,
+    "tradeValue": 3481676,
+    "peRatio": null
+  },
+  "dailyRangePercent": 0.95,
+  "turnoverAverageValue": 66955.31,
+  "pricePosition": 50,
+  "liquidityScore": 21.6,
+  "priceStrengthScore": 54.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 40.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

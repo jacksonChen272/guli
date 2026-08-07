@@ -1,0 +1,62 @@
+{
+  "symbol": "2426",
+  "name": "鼎元",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 61.3,
+    "high": 67,
+    "low": 61.1,
+    "close": 63.9,
+    "change": 1.4,
+    "changePercent": 2.24,
+    "tradeVolume": 16913151,
+    "transactionCount": 11652,
+    "tradeValue": 1083843221,
+    "peRatio": null
+  },
+  "dailyRangePercent": 9.66,
+  "turnoverAverageValue": 93017.78,
+  "pricePosition": 47.5,
+  "liquidityScore": 91.8,
+  "priceStrengthScore": 58.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 72.9,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.66% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

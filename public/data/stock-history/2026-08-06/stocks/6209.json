@@ -1,0 +1,53 @@
+{
+  "symbol": "6209",
+  "name": "今國光",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 71.6,
+    "high": 77.3,
+    "low": 70.5,
+    "close": 76.7,
+    "change": 4.8,
+    "changePercent": 6.68,
+    "tradeVolume": 7667860,
+    "transactionCount": 4796,
+    "tradeValue": 565177318,
+    "peRatio": 44.34
+  },
+  "dailyRangePercent": 9.65,
+  "turnoverAverageValue": 117843.48,
+  "pricePosition": 91.2,
+  "liquidityScore": 86.4,
+  "priceStrengthScore": 83.5,
+  "valuationRiskScore": 75,
+  "snapshotScore": 72.8,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.65% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

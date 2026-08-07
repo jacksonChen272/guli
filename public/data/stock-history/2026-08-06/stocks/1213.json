@@ -1,0 +1,62 @@
+{
+  "symbol": "1213",
+  "name": "大飲",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 7.49,
+    "high": 7.49,
+    "low": 7.41,
+    "close": 7.48,
+    "change": -0.02,
+    "changePercent": -0.27,
+    "tradeVolume": 6135,
+    "transactionCount": 11,
+    "tradeValue": 45808,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.08,
+  "turnoverAverageValue": 4164.36,
+  "pricePosition": 87.5,
+  "liquidityScore": 1,
+  "priceStrengthScore": 58.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 33.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 1.0 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

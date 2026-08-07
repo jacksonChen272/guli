@@ -1,0 +1,55 @@
+{
+  "symbol": "6142",
+  "name": "友勁",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 9.6,
+    "high": 9.68,
+    "low": 9.43,
+    "close": 9.53,
+    "change": -0.19,
+    "changePercent": -1.95,
+    "tradeVolume": 736811,
+    "transactionCount": 300,
+    "tradeValue": 7007956,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.65,
+  "turnoverAverageValue": 23359.85,
+  "pricePosition": 40,
+  "liquidityScore": 43.2,
+  "priceStrengthScore": 38.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 40.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

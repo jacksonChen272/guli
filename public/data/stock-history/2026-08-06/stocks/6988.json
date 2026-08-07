@@ -1,0 +1,62 @@
+{
+  "symbol": "6988",
+  "name": "威力暘-創",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.95,
+    "high": 12.65,
+    "low": 11.95,
+    "close": 12.65,
+    "change": 0.75,
+    "changePercent": 6.3,
+    "tradeVolume": 40000,
+    "transactionCount": 25,
+    "tradeValue": 491200,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.86,
+  "turnoverAverageValue": 19648,
+  "pricePosition": 100,
+  "liquidityScore": 7.6,
+  "priceStrengthScore": 85.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 51.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.6 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "2062",
+  "name": "橋椿",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 18.75,
+    "high": 18.85,
+    "low": 18.6,
+    "close": 18.6,
+    "change": -0.2,
+    "changePercent": -1.06,
+    "tradeVolume": 109403,
+    "transactionCount": 91,
+    "tradeValue": 2045353,
+    "peRatio": 88.57
+  },
+  "dailyRangePercent": 1.34,
+  "turnoverAverageValue": 22476.41,
+  "pricePosition": 0,
+  "liquidityScore": 20,
+  "priceStrengthScore": 26.1,
+  "valuationRiskScore": 90,
+  "snapshotScore": 20.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 88.57 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

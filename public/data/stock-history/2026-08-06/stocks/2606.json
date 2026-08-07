@@ -1,0 +1,53 @@
+{
+  "symbol": "2606",
+  "name": "裕民",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 65.2,
+    "high": 65.6,
+    "low": 64.1,
+    "close": 64.4,
+    "change": -0.1,
+    "changePercent": -0.16,
+    "tradeVolume": 2642998,
+    "transactionCount": 2312,
+    "tradeValue": 170767396,
+    "peRatio": 12.36
+  },
+  "dailyRangePercent": 2.34,
+  "turnoverAverageValue": 73861.33,
+  "pricePosition": 20,
+  "liquidityScore": 75.6,
+  "priceStrengthScore": 35.1,
+  "valuationRiskScore": 20,
+  "snapshotScore": 58.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

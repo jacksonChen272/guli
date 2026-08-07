@@ -1,0 +1,55 @@
+{
+  "symbol": "1447",
+  "name": "力鵬",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 6.95,
+    "high": 7.4,
+    "low": 6.87,
+    "close": 7.18,
+    "change": 0.25,
+    "changePercent": 3.61,
+    "tradeVolume": 3835372,
+    "transactionCount": 1341,
+    "tradeValue": 27573420,
+    "peRatio": null
+  },
+  "dailyRangePercent": 7.71,
+  "turnoverAverageValue": 20561.83,
+  "pricePosition": 58.5,
+  "liquidityScore": 66.8,
+  "priceStrengthScore": 65.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 65.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

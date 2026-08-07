@@ -1,0 +1,53 @@
+{
+  "symbol": "2845",
+  "name": "遠東銀",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.2,
+    "high": 13.35,
+    "low": 13.15,
+    "close": 13.15,
+    "change": -0.15,
+    "changePercent": -1.13,
+    "tradeVolume": 8102345,
+    "transactionCount": 2675,
+    "tradeValue": 106943093,
+    "peRatio": 14.94
+  },
+  "dailyRangePercent": 1.52,
+  "turnoverAverageValue": 39978.73,
+  "pricePosition": 0,
+  "liquidityScore": 78.2,
+  "priceStrengthScore": 26,
+  "valuationRiskScore": 20,
+  "snapshotScore": 55.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

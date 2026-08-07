@@ -1,0 +1,62 @@
+{
+  "symbol": "1460",
+  "name": "宏遠",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 6.62,
+    "high": 6.7,
+    "low": 6.54,
+    "close": 6.54,
+    "change": -0.08,
+    "changePercent": -1.21,
+    "tradeVolume": 429339,
+    "transactionCount": 260,
+    "tradeValue": 2829446,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.45,
+  "turnoverAverageValue": 10882.48,
+  "pricePosition": 0,
+  "liquidityScore": 34.1,
+  "priceStrengthScore": 25.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 29.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

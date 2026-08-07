@@ -1,0 +1,55 @@
+{
+  "symbol": "5244",
+  "name": "弘凱",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 33.05,
+    "high": 33.95,
+    "low": 32.6,
+    "close": 33.6,
+    "change": 1.55,
+    "changePercent": 4.84,
+    "tradeVolume": 328661,
+    "transactionCount": 335,
+    "tradeValue": 10971554,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.14,
+  "turnoverAverageValue": 32750.91,
+  "pricePosition": 74.1,
+  "liquidityScore": 41.7,
+  "priceStrengthScore": 73.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 59.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

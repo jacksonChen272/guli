@@ -1,0 +1,62 @@
+{
+  "symbol": "4178",
+  "name": "永笙-KY",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.75,
+    "high": 19,
+    "low": 17.45,
+    "close": 18.85,
+    "change": 0.8,
+    "changePercent": 4.43,
+    "tradeVolume": 287714,
+    "transactionCount": 230,
+    "tradeValue": 5205315,
+    "peRatio": null
+  },
+  "dailyRangePercent": 8.88,
+  "turnoverAverageValue": 22631.8,
+  "pricePosition": 90.3,
+  "liquidityScore": 34.9,
+  "priceStrengthScore": 78.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 59.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.88% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

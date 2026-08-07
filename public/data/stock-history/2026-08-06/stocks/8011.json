@@ -1,0 +1,53 @@
+{
+  "symbol": "8011",
+  "name": "台通",
+  "tradeDate": "2026-08-06",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.7,
+    "high": 16.7,
+    "low": 16.35,
+    "close": 16.4,
+    "change": -0.3,
+    "changePercent": -1.8,
+    "tradeVolume": 281404,
+    "transactionCount": 316,
+    "tradeValue": 4622214,
+    "peRatio": 19.29
+  },
+  "dailyRangePercent": 2.14,
+  "turnoverAverageValue": 14627.26,
+  "pricePosition": 14.3,
+  "liquidityScore": 35.2,
+  "priceStrengthScore": 29.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 38.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}
