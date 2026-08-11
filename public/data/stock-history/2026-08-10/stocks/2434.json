@@ -1,0 +1,62 @@
+{
+  "symbol": "2434",
+  "name": "統懋",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 52.8,
+    "high": 55.1,
+    "low": 52.6,
+    "close": 52.9,
+    "change": -0.3,
+    "changePercent": -0.56,
+    "tradeVolume": 541737,
+    "transactionCount": 600,
+    "tradeValue": 29078061,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.75,
+  "turnoverAverageValue": 48463.44,
+  "pricePosition": 12,
+  "liquidityScore": 50.8,
+  "priceStrengthScore": 39.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 44.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2049",
+  "name": "上銀",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 381,
+    "high": 389,
+    "low": 365,
+    "close": 387,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 9126898,
+    "transactionCount": 13334,
+    "tradeValue": 3462621885,
+    "peRatio": 84.31
+  },
+  "dailyRangePercent": 6.58,
+  "turnoverAverageValue": 259683.66,
+  "pricePosition": 91.7,
+  "liquidityScore": 93.6,
+  "priceStrengthScore": 68.6,
+  "valuationRiskScore": 90,
+  "snapshotScore": 65.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 84.31 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,62 @@
+{
+  "symbol": "4190",
+  "name": "佐登-KY",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 25.3,
+    "high": 25.6,
+    "low": 25.3,
+    "close": 25.4,
+    "change": -0.1,
+    "changePercent": -0.39,
+    "tradeVolume": 7746,
+    "transactionCount": 25,
+    "tradeValue": 197338,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.19,
+  "turnoverAverageValue": 7893.52,
+  "pricePosition": 33.3,
+  "liquidityScore": 2.8,
+  "priceStrengthScore": 47.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 27.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 2.8 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

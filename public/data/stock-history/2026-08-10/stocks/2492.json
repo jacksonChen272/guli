@@ -1,0 +1,53 @@
+{
+  "symbol": "2492",
+  "name": "華新科",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 255,
+    "high": 273.5,
+    "low": 255,
+    "close": 273.5,
+    "change": 22.5,
+    "changePercent": 8.96,
+    "tradeVolume": 27531473,
+    "transactionCount": 26047,
+    "tradeValue": 7275201713,
+    "peRatio": 30.73
+  },
+  "dailyRangePercent": 7.25,
+  "turnoverAverageValue": 279310.54,
+  "pricePosition": 100,
+  "liquidityScore": 97.3,
+  "priceStrengthScore": 91.7,
+  "valuationRiskScore": 55,
+  "snapshotScore": 84.3,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 8.96% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

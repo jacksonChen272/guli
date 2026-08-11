@@ -1,0 +1,62 @@
+{
+  "symbol": "2254",
+  "name": "巨鎧精密-創",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 61.2,
+    "high": 61.2,
+    "low": 60.3,
+    "close": 60.7,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 4003,
+    "transactionCount": 6,
+    "tradeValue": 242665,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.49,
+  "turnoverAverageValue": 40444.17,
+  "pricePosition": 44.4,
+  "liquidityScore": 2,
+  "priceStrengthScore": 44,
+  "valuationRiskScore": null,
+  "snapshotScore": 25.6,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 2.0 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

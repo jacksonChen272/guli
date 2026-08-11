@@ -1,0 +1,53 @@
+{
+  "symbol": "9908",
+  "name": "大台北",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 29.25,
+    "high": 29.25,
+    "low": 29,
+    "close": 29.05,
+    "change": -0.1,
+    "changePercent": -0.34,
+    "tradeVolume": 109985,
+    "transactionCount": 109,
+    "tradeValue": 3196559,
+    "peRatio": 13.83
+  },
+  "dailyRangePercent": 0.86,
+  "turnoverAverageValue": 29326.23,
+  "pricePosition": 20,
+  "liquidityScore": 23,
+  "priceStrengthScore": 34.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 39.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

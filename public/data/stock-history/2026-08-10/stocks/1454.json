@@ -1,0 +1,62 @@
+{
+  "symbol": "1454",
+  "name": "台富",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 12.8,
+    "high": 12.8,
+    "low": 12.65,
+    "close": 12.75,
+    "change": -0.05,
+    "changePercent": -0.39,
+    "tradeVolume": 24462,
+    "transactionCount": 104,
+    "tradeValue": 311673,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.19,
+  "turnoverAverageValue": 2996.86,
+  "pricePosition": 66.7,
+  "liquidityScore": 7.9,
+  "priceStrengthScore": 51,
+  "valuationRiskScore": null,
+  "snapshotScore": 32.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.9 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

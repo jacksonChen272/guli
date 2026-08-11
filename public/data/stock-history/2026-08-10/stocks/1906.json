@@ -1,0 +1,53 @@
+{
+  "symbol": "1906",
+  "name": "寶隆",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.1,
+    "high": 11.15,
+    "low": 10.95,
+    "close": 11.05,
+    "change": 0.1,
+    "changePercent": 0.91,
+    "tradeVolume": 91517,
+    "transactionCount": 58,
+    "tradeValue": 1011446,
+    "peRatio": 18.11
+  },
+  "dailyRangePercent": 1.83,
+  "turnoverAverageValue": 17438.72,
+  "pricePosition": 50,
+  "liquidityScore": 14.7,
+  "priceStrengthScore": 48.1,
+  "valuationRiskScore": 35,
+  "snapshotScore": 39.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.7 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2478",
+  "name": "大毅",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 117.5,
+    "high": 124,
+    "low": 117.5,
+    "close": 122,
+    "change": 8,
+    "changePercent": 7.02,
+    "tradeVolume": 4025012,
+    "transactionCount": 2961,
+    "tradeValue": 487467489,
+    "peRatio": 32.88
+  },
+  "dailyRangePercent": 5.53,
+  "turnoverAverageValue": 164629.34,
+  "pricePosition": 69.2,
+  "liquidityScore": 81,
+  "priceStrengthScore": 76.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 71.8,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 7.02% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

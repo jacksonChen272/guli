@@ -1,0 +1,53 @@
+{
+  "symbol": "2030",
+  "name": "彰源",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.45,
+    "high": 20.45,
+    "low": 20.15,
+    "close": 20.45,
+    "change": 1.85,
+    "changePercent": 9.95,
+    "tradeVolume": 8910591,
+    "transactionCount": 2843,
+    "tradeValue": 182142541,
+    "peRatio": 10.43
+  },
+  "dailyRangePercent": 1.49,
+  "turnoverAverageValue": 64067.02,
+  "pricePosition": 100,
+  "liquidityScore": 79.6,
+  "priceStrengthScore": 89.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 84.3,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.95% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

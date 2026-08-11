@@ -1,0 +1,60 @@
+{
+  "symbol": "8454",
+  "name": "富邦媒",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 295,
+    "high": 295.5,
+    "low": 272.5,
+    "close": 274.5,
+    "change": -9,
+    "changePercent": -3.17,
+    "tradeVolume": 2664217,
+    "transactionCount": 3899,
+    "tradeValue": 745523253,
+    "peRatio": 26.42
+  },
+  "dailyRangePercent": 8.44,
+  "turnoverAverageValue": 191208.84,
+  "pricePosition": 8.7,
+  "liquidityScore": 81.6,
+  "priceStrengthScore": 24.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 48.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.44% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

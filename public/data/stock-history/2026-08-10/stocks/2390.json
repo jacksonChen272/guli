@@ -1,0 +1,55 @@
+{
+  "symbol": "2390",
+  "name": "云辰",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.6,
+    "high": 10.65,
+    "low": 10.55,
+    "close": 10.6,
+    "change": 0.05,
+    "changePercent": 0.47,
+    "tradeVolume": 447850,
+    "transactionCount": 229,
+    "tradeValue": 4740240,
+    "peRatio": null
+  },
+  "dailyRangePercent": 0.95,
+  "turnoverAverageValue": 20699.74,
+  "pricePosition": 50,
+  "liquidityScore": 35.6,
+  "priceStrengthScore": 51.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 44.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

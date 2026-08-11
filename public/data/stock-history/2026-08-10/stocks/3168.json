@@ -1,0 +1,53 @@
+{
+  "symbol": "3168",
+  "name": "眾福科",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 43,
+    "high": 43.5,
+    "low": 42.2,
+    "close": 42.65,
+    "change": 0.2,
+    "changePercent": 0.47,
+    "tradeVolume": 27356,
+    "transactionCount": 31,
+    "tradeValue": 1166436,
+    "peRatio": 14.76
+  },
+  "dailyRangePercent": 3.08,
+  "turnoverAverageValue": 37626.97,
+  "pricePosition": 34.6,
+  "liquidityScore": 9.1,
+  "priceStrengthScore": 41.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 38,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 9.1 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

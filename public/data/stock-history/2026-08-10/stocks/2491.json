@@ -1,0 +1,53 @@
+{
+  "symbol": "2491",
+  "name": "吉祥全",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 34.9,
+    "high": 34.9,
+    "low": 34.9,
+    "close": 34.9,
+    "change": 3.15,
+    "changePercent": 9.92,
+    "tradeVolume": 303552,
+    "transactionCount": 190,
+    "tradeValue": 10593945,
+    "peRatio": 10.15
+  },
+  "dailyRangePercent": 0,
+  "turnoverAverageValue": 55757.61,
+  "pricePosition": 50,
+  "liquidityScore": 37.2,
+  "priceStrengthScore": 72.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 61.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.92% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

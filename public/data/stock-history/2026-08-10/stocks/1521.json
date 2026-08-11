@@ -1,0 +1,53 @@
+{
+  "symbol": "1521",
+  "name": "大億",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 25.2,
+    "high": 25.3,
+    "low": 25.2,
+    "close": 25.3,
+    "change": 0.1,
+    "changePercent": 0.4,
+    "tradeVolume": 9006,
+    "transactionCount": 14,
+    "tradeValue": 227346,
+    "peRatio": 35.63
+  },
+  "dailyRangePercent": 0.4,
+  "turnoverAverageValue": 16239,
+  "pricePosition": 100,
+  "liquidityScore": 2.8,
+  "priceStrengthScore": 72.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 42.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 2.8 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2436",
+  "name": "偉詮電",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 64.9,
+    "high": 67.5,
+    "low": 64.8,
+    "close": 67.4,
+    "change": 5.8,
+    "changePercent": 9.42,
+    "tradeVolume": 10797573,
+    "transactionCount": 7690,
+    "tradeValue": 719283099,
+    "peRatio": 12.39
+  },
+  "dailyRangePercent": 4.17,
+  "turnoverAverageValue": 93534.86,
+  "pricePosition": 96.3,
+  "liquidityScore": 88.5,
+  "priceStrengthScore": 91.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 88.1,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.42% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

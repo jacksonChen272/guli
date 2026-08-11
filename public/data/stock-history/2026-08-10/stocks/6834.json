@@ -1,0 +1,53 @@
+{
+  "symbol": "6834",
+  "name": "天二科技",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 94.8,
+    "high": 96.6,
+    "low": 93.4,
+    "close": 96.6,
+    "change": 8.7,
+    "changePercent": 9.9,
+    "tradeVolume": 4556631,
+    "transactionCount": 3737,
+    "tradeValue": 437630014,
+    "peRatio": 42
+  },
+  "dailyRangePercent": 3.43,
+  "turnoverAverageValue": 117107.31,
+  "pricePosition": 100,
+  "liquidityScore": 81.8,
+  "priceStrengthScore": 93.8,
+  "valuationRiskScore": 75,
+  "snapshotScore": 75.8,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.90% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

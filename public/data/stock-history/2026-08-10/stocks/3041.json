@@ -1,0 +1,69 @@
+{
+  "symbol": "3041",
+  "name": "揚智",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.05,
+    "high": 24.7,
+    "low": 22.7,
+    "close": 24.55,
+    "change": 2.05,
+    "changePercent": 9.11,
+    "tradeVolume": 1450593,
+    "transactionCount": 1235,
+    "tradeValue": 34490617,
+    "peRatio": null
+  },
+  "dailyRangePercent": 8.81,
+  "turnoverAverageValue": 27927.63,
+  "pricePosition": 92.5,
+  "liquidityScore": 60.3,
+  "priceStrengthScore": 89.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 76.7,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.11% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.81% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

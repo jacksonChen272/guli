@@ -1,0 +1,62 @@
+{
+  "symbol": "4426",
+  "name": "利勤",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 7.9,
+    "high": 7.93,
+    "low": 7.88,
+    "close": 7.92,
+    "change": 0.02,
+    "changePercent": 0.25,
+    "tradeVolume": 85052,
+    "transactionCount": 52,
+    "tradeValue": 672591,
+    "peRatio": null
+  },
+  "dailyRangePercent": 0.63,
+  "turnoverAverageValue": 12934.44,
+  "pricePosition": 80,
+  "liquidityScore": 12.7,
+  "priceStrengthScore": 65.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 42.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.7 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "4169",
+  "name": "泰宗",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 157,
+    "high": 160,
+    "low": 153,
+    "close": 153.5,
+    "change": -3.5,
+    "changePercent": -2.23,
+    "tradeVolume": 362281,
+    "transactionCount": 949,
+    "tradeValue": 56487342,
+    "peRatio": 479.69
+  },
+  "dailyRangePercent": 4.58,
+  "turnoverAverageValue": 59523.02,
+  "pricePosition": 7.1,
+  "liquidityScore": 54.3,
+  "priceStrengthScore": 26,
+  "valuationRiskScore": 90,
+  "snapshotScore": 32.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 479.69 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

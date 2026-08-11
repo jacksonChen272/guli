@@ -1,0 +1,53 @@
+{
+  "symbol": "5269",
+  "name": "祥碩",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 1380,
+    "high": 1435,
+    "low": 1325,
+    "close": 1400,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 809715,
+    "transactionCount": 2605,
+    "tradeValue": 1121164940,
+    "peRatio": 17.18
+  },
+  "dailyRangePercent": 8.3,
+  "turnoverAverageValue": 430389.61,
+  "pricePosition": 68.2,
+  "liquidityScore": 75,
+  "priceStrengthScore": 60.4,
+  "valuationRiskScore": 35,
+  "snapshotScore": 66.4,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.30% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "6789",
+  "name": "采鈺",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 427,
+    "high": 444.5,
+    "low": 425.5,
+    "close": 441.5,
+    "change": 24.5,
+    "changePercent": 5.88,
+    "tradeVolume": 1734196,
+    "transactionCount": 3282,
+    "tradeValue": 760360505,
+    "peRatio": 84.26
+  },
+  "dailyRangePercent": 4.47,
+  "turnoverAverageValue": 231675.96,
+  "pricePosition": 84.2,
+  "liquidityScore": 78.5,
+  "priceStrengthScore": 79.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 65.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 84.26 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

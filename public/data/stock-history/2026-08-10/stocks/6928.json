@@ -1,0 +1,55 @@
+{
+  "symbol": "6928",
+  "name": "攸泰科技",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 47.75,
+    "high": 48.7,
+    "low": 47.75,
+    "close": 48.2,
+    "change": 0.45,
+    "changePercent": 0.94,
+    "tradeVolume": 61253,
+    "transactionCount": 73,
+    "tradeValue": 2959383,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.99,
+  "turnoverAverageValue": 40539.49,
+  "pricePosition": 47.4,
+  "liquidityScore": 18.9,
+  "priceStrengthScore": 55.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 39.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "3029",
+  "name": "零壹",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 112,
+    "high": 112.5,
+    "low": 108.5,
+    "close": 109,
+    "change": -0.5,
+    "changePercent": -0.46,
+    "tradeVolume": 1175558,
+    "transactionCount": 1530,
+    "tradeValue": 129092784,
+    "peRatio": 15.55
+  },
+  "dailyRangePercent": 3.69,
+  "turnoverAverageValue": 84374.37,
+  "pricePosition": 12.5,
+  "liquidityScore": 66.5,
+  "priceStrengthScore": 31.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 50.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

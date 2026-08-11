@@ -1,0 +1,53 @@
+{
+  "symbol": "8481",
+  "name": "政伸",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 40.2,
+    "high": 40.7,
+    "low": 40.2,
+    "close": 40.4,
+    "change": -0.1,
+    "changePercent": -0.25,
+    "tradeVolume": 17670,
+    "transactionCount": 68,
+    "tradeValue": 713667,
+    "peRatio": 11.92
+  },
+  "dailyRangePercent": 1.24,
+  "turnoverAverageValue": 10495.1,
+  "pricePosition": 40,
+  "liquidityScore": 8.1,
+  "priceStrengthScore": 50,
+  "valuationRiskScore": 20,
+  "snapshotScore": 41.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.1 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2423",
+  "name": "固緯",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 76.3,
+    "high": 76.9,
+    "low": 72.4,
+    "close": 72.5,
+    "change": -4,
+    "changePercent": -5.23,
+    "tradeVolume": 385769,
+    "transactionCount": 370,
+    "tradeValue": 28364116,
+    "peRatio": 17.18
+  },
+  "dailyRangePercent": 6.22,
+  "turnoverAverageValue": 76659.77,
+  "pricePosition": 2.2,
+  "liquidityScore": 46.8,
+  "priceStrengthScore": 17.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 37.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 2.2 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

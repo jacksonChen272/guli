@@ -1,0 +1,62 @@
+{
+  "symbol": "1235",
+  "name": "興泰",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 36,
+    "high": 36.55,
+    "low": 36,
+    "close": 36.55,
+    "change": -0.15,
+    "changePercent": -0.41,
+    "tradeVolume": 2220,
+    "transactionCount": 4,
+    "tradeValue": 80544,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.53,
+  "turnoverAverageValue": 20136,
+  "pricePosition": 100,
+  "liquidityScore": 1,
+  "priceStrengthScore": 70.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 40.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 1.0 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

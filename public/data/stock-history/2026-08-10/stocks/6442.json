@@ -1,0 +1,53 @@
+{
+  "symbol": "6442",
+  "name": "光聖",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 1380,
+    "high": 1455,
+    "low": 1375,
+    "close": 1425,
+    "change": 100,
+    "changePercent": 7.55,
+    "tradeVolume": 2940773,
+    "transactionCount": 8183,
+    "tradeValue": 4196778510,
+    "peRatio": 53.75
+  },
+  "dailyRangePercent": 5.82,
+  "turnoverAverageValue": 512865.52,
+  "pricePosition": 62.5,
+  "liquidityScore": 88.2,
+  "priceStrengthScore": 75.4,
+  "valuationRiskScore": 75,
+  "snapshotScore": 69.8,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 7.55% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "3501",
+  "name": "維熹",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 39.2,
+    "high": 39.2,
+    "low": 38.6,
+    "close": 38.75,
+    "change": 0.35,
+    "changePercent": 0.91,
+    "tradeVolume": 35540,
+    "transactionCount": 63,
+    "tradeValue": 1378171,
+    "peRatio": 21.65
+  },
+  "dailyRangePercent": 1.55,
+  "turnoverAverageValue": 21875.73,
+  "pricePosition": 25,
+  "liquidityScore": 12.3,
+  "priceStrengthScore": 39.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 35,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.3 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

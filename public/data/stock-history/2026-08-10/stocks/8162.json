@@ -1,0 +1,53 @@
+{
+  "symbol": "8162",
+  "name": "微矽電子-創",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 54.5,
+    "high": 56.1,
+    "low": 54.2,
+    "close": 54.4,
+    "change": 1.6,
+    "changePercent": 3.03,
+    "tradeVolume": 227023,
+    "transactionCount": 213,
+    "tradeValue": 12521713,
+    "peRatio": 40.6
+  },
+  "dailyRangePercent": 3.51,
+  "turnoverAverageValue": 58787.38,
+  "pricePosition": 10.5,
+  "liquidityScore": 36.6,
+  "priceStrengthScore": 39,
+  "valuationRiskScore": 75,
+  "snapshotScore": 35.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

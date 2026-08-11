@@ -1,0 +1,55 @@
+{
+  "symbol": "9105",
+  "name": "泰金寶-DR",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 8.19,
+    "high": 8.36,
+    "low": 8.15,
+    "close": 8.28,
+    "change": 0.2,
+    "changePercent": 2.48,
+    "tradeVolume": 11922514,
+    "transactionCount": 3168,
+    "tradeValue": 98608296,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.58,
+  "turnoverAverageValue": 31126.36,
+  "pricePosition": 61.9,
+  "liquidityScore": 77.8,
+  "priceStrengthScore": 63.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 69.9,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

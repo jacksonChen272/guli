@@ -1,0 +1,53 @@
+{
+  "symbol": "6201",
+  "name": "亞弘電",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 45.45,
+    "high": 45.5,
+    "low": 45.3,
+    "close": 45.45,
+    "change": -0.05,
+    "changePercent": -0.11,
+    "tradeVolume": 28041,
+    "transactionCount": 30,
+    "tradeValue": 1273470,
+    "peRatio": 14.11
+  },
+  "dailyRangePercent": 0.44,
+  "turnoverAverageValue": 42449,
+  "pricePosition": 75,
+  "liquidityScore": 9.7,
+  "priceStrengthScore": 58.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 45.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 9.7 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

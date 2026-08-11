@@ -1,0 +1,53 @@
+{
+  "symbol": "4770",
+  "name": "上品",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 221.5,
+    "high": 227,
+    "low": 221,
+    "close": 221,
+    "change": 4.5,
+    "changePercent": 2.08,
+    "tradeVolume": 506138,
+    "transactionCount": 649,
+    "tradeValue": 112995848,
+    "peRatio": 21.84
+  },
+  "dailyRangePercent": 2.71,
+  "turnoverAverageValue": 174107.62,
+  "pricePosition": 0,
+  "liquidityScore": 58,
+  "priceStrengthScore": 33.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 48.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

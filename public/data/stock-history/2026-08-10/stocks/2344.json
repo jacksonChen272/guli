@@ -1,0 +1,53 @@
+{
+  "symbol": "2344",
+  "name": "華邦電",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 169,
+    "high": 179.5,
+    "low": 168.5,
+    "close": 179.5,
+    "change": 16,
+    "changePercent": 9.79,
+    "tradeVolume": 154758322,
+    "transactionCount": 89424,
+    "tradeValue": 27206284042,
+    "peRatio": 19.79
+  },
+  "dailyRangePercent": 6.53,
+  "turnoverAverageValue": 304239.18,
+  "pricePosition": 100,
+  "liquidityScore": 99.7,
+  "priceStrengthScore": 93.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 90,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.79% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

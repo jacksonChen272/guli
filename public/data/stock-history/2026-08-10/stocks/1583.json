@@ -1,0 +1,53 @@
+{
+  "symbol": "1583",
+  "name": "程泰",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 49.7,
+    "high": 49.7,
+    "low": 49.7,
+    "close": 49.7,
+    "change": 0.7,
+    "changePercent": 1.43,
+    "tradeVolume": 1030,
+    "transactionCount": 2,
+    "tradeValue": 51191,
+    "peRatio": 17.81
+  },
+  "dailyRangePercent": 0,
+  "turnoverAverageValue": 25595.5,
+  "pricePosition": 50,
+  "liquidityScore": 0.5,
+  "priceStrengthScore": 53.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 37.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 0.5 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

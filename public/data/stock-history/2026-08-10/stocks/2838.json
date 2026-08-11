@@ -1,0 +1,53 @@
+{
+  "symbol": "2838",
+  "name": "聯邦銀",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.55,
+    "high": 20.55,
+    "low": 20.05,
+    "close": 20.15,
+    "change": -0.45,
+    "changePercent": -2.18,
+    "tradeVolume": 3220990,
+    "transactionCount": 1661,
+    "tradeValue": 64971931,
+    "peRatio": 14.29
+  },
+  "dailyRangePercent": 2.49,
+  "turnoverAverageValue": 39116.15,
+  "pricePosition": 20,
+  "liquidityScore": 69.1,
+  "priceStrengthScore": 30.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 54,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

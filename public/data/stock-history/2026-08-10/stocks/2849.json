@@ -1,0 +1,53 @@
+{
+  "symbol": "2849",
+  "name": "安泰銀",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 14.6,
+    "high": 14.7,
+    "low": 14.55,
+    "close": 14.7,
+    "change": 0.2,
+    "changePercent": 1.38,
+    "tradeVolume": 32460,
+    "transactionCount": 43,
+    "tradeValue": 475897,
+    "peRatio": 17.09
+  },
+  "dailyRangePercent": 1.03,
+  "turnoverAverageValue": 11067.37,
+  "pricePosition": 100,
+  "liquidityScore": 7.2,
+  "priceStrengthScore": 74.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 49.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.2 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

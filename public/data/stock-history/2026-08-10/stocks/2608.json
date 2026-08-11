@@ -1,0 +1,53 @@
+{
+  "symbol": "2608",
+  "name": "嘉里大榮",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 28.7,
+    "high": 28.95,
+    "low": 28.55,
+    "close": 28.6,
+    "change": -0.05,
+    "changePercent": -0.17,
+    "tradeVolume": 221822,
+    "transactionCount": 161,
+    "tradeValue": 6355947,
+    "peRatio": 14.23
+  },
+  "dailyRangePercent": 1.4,
+  "turnoverAverageValue": 39477.93,
+  "pricePosition": 12.5,
+  "liquidityScore": 31.2,
+  "priceStrengthScore": 32.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 41.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

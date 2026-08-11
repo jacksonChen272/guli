@@ -1,0 +1,62 @@
+{
+  "symbol": "2227",
+  "name": "裕日車",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 49.2,
+    "high": 49.75,
+    "low": 49.05,
+    "close": 49.05,
+    "change": -0.35,
+    "changePercent": -0.71,
+    "tradeVolume": 47683,
+    "transactionCount": 77,
+    "tradeValue": 2344810,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.43,
+  "turnoverAverageValue": 30452.08,
+  "pricePosition": 0,
+  "liquidityScore": 16.9,
+  "priceStrengthScore": 26.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 22.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

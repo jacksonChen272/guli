@@ -1,0 +1,53 @@
+{
+  "symbol": "4935",
+  "name": "茂林-KY",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 34.8,
+    "high": 34.95,
+    "low": 34.65,
+    "close": 34.9,
+    "change": 0.1,
+    "changePercent": 0.29,
+    "tradeVolume": 45088,
+    "transactionCount": 40,
+    "tradeValue": 1569658,
+    "peRatio": 25.47
+  },
+  "dailyRangePercent": 0.87,
+  "turnoverAverageValue": 39241.45,
+  "pricePosition": 83.3,
+  "liquidityScore": 12.7,
+  "priceStrengthScore": 66.3,
+  "valuationRiskScore": 55,
+  "snapshotScore": 43.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.7 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

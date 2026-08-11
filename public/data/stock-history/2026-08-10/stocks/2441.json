@@ -1,0 +1,53 @@
+{
+  "symbol": "2441",
+  "name": "超豐",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 121,
+    "high": 129,
+    "low": 121,
+    "close": 129,
+    "change": 11.5,
+    "changePercent": 9.79,
+    "tradeVolume": 11495066,
+    "transactionCount": 8805,
+    "tradeValue": 1460494901,
+    "peRatio": 23.89
+  },
+  "dailyRangePercent": 6.61,
+  "turnoverAverageValue": 165871.08,
+  "pricePosition": 100,
+  "liquidityScore": 91.6,
+  "priceStrengthScore": 93.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 87.1,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.79% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

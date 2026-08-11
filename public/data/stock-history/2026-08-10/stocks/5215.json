@@ -1,0 +1,53 @@
+{
+  "symbol": "5215",
+  "name": "科嘉-KY",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 38.6,
+    "high": 38.6,
+    "low": 37.85,
+    "close": 38.2,
+    "change": 0.35,
+    "changePercent": 0.92,
+    "tradeVolume": 24106,
+    "transactionCount": 22,
+    "tradeValue": 917033,
+    "peRatio": 15.59
+  },
+  "dailyRangePercent": 1.98,
+  "turnoverAverageValue": 41683.32,
+  "pricePosition": 46.7,
+  "liquidityScore": 7.5,
+  "priceStrengthScore": 46.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 36.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.5 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "2305",
+  "name": "全友",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 28.5,
+    "high": 29.15,
+    "low": 27.4,
+    "close": 29.05,
+    "change": 2.55,
+    "changePercent": 9.62,
+    "tradeVolume": 8522216,
+    "transactionCount": 5209,
+    "tradeValue": 244751830,
+    "peRatio": 107.59
+  },
+  "dailyRangePercent": 6.39,
+  "turnoverAverageValue": 46986.34,
+  "pricePosition": 94.3,
+  "liquidityScore": 82.3,
+  "priceStrengthScore": 91.2,
+  "valuationRiskScore": 90,
+  "snapshotScore": 71.8,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.62% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 107.59 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

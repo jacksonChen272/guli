@@ -1,0 +1,55 @@
+{
+  "symbol": "3043",
+  "name": "科風",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.2,
+    "high": 20.8,
+    "low": 20.2,
+    "close": 20.6,
+    "change": 0.65,
+    "changePercent": 3.26,
+    "tradeVolume": 85052,
+    "transactionCount": 95,
+    "tradeValue": 1744091,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.97,
+  "turnoverAverageValue": 18358.85,
+  "pricePosition": 66.7,
+  "liquidityScore": 18,
+  "priceStrengthScore": 67.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 45.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

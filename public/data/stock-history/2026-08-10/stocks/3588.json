@@ -1,0 +1,60 @@
+{
+  "symbol": "3588",
+  "name": "通嘉",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 55.7,
+    "high": 59.4,
+    "low": 54.9,
+    "close": 57.9,
+    "change": 3.6,
+    "changePercent": 6.63,
+    "tradeVolume": 551927,
+    "transactionCount": 937,
+    "tradeValue": 31452530,
+    "peRatio": 96.5
+  },
+  "dailyRangePercent": 8.2,
+  "turnoverAverageValue": 33567.27,
+  "pricePosition": 66.7,
+  "liquidityScore": 52.9,
+  "priceStrengthScore": 74.8,
+  "valuationRiskScore": 90,
+  "snapshotScore": 54.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.20% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 96.50 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

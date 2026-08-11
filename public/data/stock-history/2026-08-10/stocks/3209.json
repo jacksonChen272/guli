@@ -1,0 +1,53 @@
+{
+  "symbol": "3209",
+  "name": "全科",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 58.2,
+    "high": 58.5,
+    "low": 55.5,
+    "close": 55.8,
+    "change": -1.8,
+    "changePercent": -3.13,
+    "tradeVolume": 2650860,
+    "transactionCount": 2051,
+    "tradeValue": 149817442,
+    "peRatio": 15.54
+  },
+  "dailyRangePercent": 5.41,
+  "turnoverAverageValue": 73046.05,
+  "pricePosition": 10,
+  "liquidityScore": 72.9,
+  "priceStrengthScore": 25,
+  "valuationRiskScore": 35,
+  "snapshotScore": 49.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

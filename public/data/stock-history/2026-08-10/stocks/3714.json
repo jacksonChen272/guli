@@ -1,0 +1,62 @@
+{
+  "symbol": "3714",
+  "name": "富采",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 56.5,
+    "high": 59.9,
+    "low": 54.6,
+    "close": 59,
+    "change": -0.4,
+    "changePercent": -0.67,
+    "tradeVolume": 18853571,
+    "transactionCount": 12017,
+    "tradeValue": 1087000996,
+    "peRatio": null
+  },
+  "dailyRangePercent": 9.71,
+  "turnoverAverageValue": 90455.27,
+  "pricePosition": 83,
+  "liquidityScore": 92.2,
+  "priceStrengthScore": 64.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 76.4,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.71% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

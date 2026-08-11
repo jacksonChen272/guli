@@ -1,0 +1,55 @@
+{
+  "symbol": "1305",
+  "name": "華夏",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.6,
+    "high": 11.7,
+    "low": 11.35,
+    "close": 11.7,
+    "change": 0.15,
+    "changePercent": 1.3,
+    "tradeVolume": 881563,
+    "transactionCount": 539,
+    "tradeValue": 10226672,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.08,
+  "turnoverAverageValue": 18973.42,
+  "pricePosition": 100,
+  "liquidityScore": 47.3,
+  "priceStrengthScore": 74.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 62.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "8482",
+  "name": "商億-KY",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 50.5,
+    "high": 50.5,
+    "low": 49.6,
+    "close": 49.6,
+    "change": 0.8,
+    "changePercent": 1.64,
+    "tradeVolume": 2000,
+    "transactionCount": 2,
+    "tradeValue": 100100,
+    "peRatio": 21.02
+  },
+  "dailyRangePercent": 1.81,
+  "turnoverAverageValue": 50050,
+  "pricePosition": 0,
+  "liquidityScore": 0.9,
+  "priceStrengthScore": 32.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 27.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 0.9 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

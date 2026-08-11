@@ -1,0 +1,53 @@
+{
+  "symbol": "1512",
+  "name": "瑞利",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 6.61,
+    "high": 6.63,
+    "low": 6.54,
+    "close": 6.57,
+    "change": -0.04,
+    "changePercent": -0.61,
+    "tradeVolume": 41945,
+    "transactionCount": 41,
+    "tradeValue": 275878,
+    "peRatio": 24.33
+  },
+  "dailyRangePercent": 1.38,
+  "turnoverAverageValue": 6728.73,
+  "pricePosition": 33.3,
+  "liquidityScore": 7.1,
+  "priceStrengthScore": 38.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 32.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.1 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "5285",
+  "name": "界霖",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 80,
+    "high": 80.5,
+    "low": 77.5,
+    "close": 77.9,
+    "change": 0.8,
+    "changePercent": 1.04,
+    "tradeVolume": 938042,
+    "transactionCount": 1156,
+    "tradeValue": 73437136,
+    "peRatio": 37.1
+  },
+  "dailyRangePercent": 3.87,
+  "turnoverAverageValue": 63526.93,
+  "pricePosition": 13.3,
+  "liquidityScore": 61.4,
+  "priceStrengthScore": 35.5,
+  "valuationRiskScore": 55,
+  "snapshotScore": 46.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 13.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "4737",
+  "name": "華廣",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 55,
+    "high": 55.8,
+    "low": 54.9,
+    "close": 55.7,
+    "change": 0.7,
+    "changePercent": 1.27,
+    "tradeVolume": 46351,
+    "transactionCount": 52,
+    "tradeValue": 2570941,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.64,
+  "turnoverAverageValue": 49441.17,
+  "pricePosition": 88.9,
+  "liquidityScore": 16.1,
+  "priceStrengthScore": 70.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 46.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

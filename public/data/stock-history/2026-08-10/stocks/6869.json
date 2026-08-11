@@ -1,0 +1,55 @@
+{
+  "symbol": "6869",
+  "name": "雲豹能源",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 66.6,
+    "high": 71.5,
+    "low": 66.6,
+    "close": 70.2,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 621876,
+    "transactionCount": 714,
+    "tradeValue": 43316912,
+    "peRatio": null
+  },
+  "dailyRangePercent": 7.36,
+  "turnoverAverageValue": 60667.94,
+  "pricePosition": 73.5,
+  "liquidityScore": 55.2,
+  "priceStrengthScore": 62.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 59.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

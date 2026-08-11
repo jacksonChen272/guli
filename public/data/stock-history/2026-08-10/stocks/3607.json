@@ -1,0 +1,53 @@
+{
+  "symbol": "3607",
+  "name": "谷崧",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 14.45,
+    "high": 14.45,
+    "low": 14.3,
+    "close": 14.35,
+    "change": 0.05,
+    "changePercent": 0.35,
+    "tradeVolume": 78191,
+    "transactionCount": 70,
+    "tradeValue": 1123077,
+    "peRatio": 36.79
+  },
+  "dailyRangePercent": 1.05,
+  "turnoverAverageValue": 16043.96,
+  "pricePosition": 33.3,
+  "liquidityScore": 14.9,
+  "priceStrengthScore": 41,
+  "valuationRiskScore": 55,
+  "snapshotScore": 32.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.9 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

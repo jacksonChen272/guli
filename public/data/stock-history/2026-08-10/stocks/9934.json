@@ -1,0 +1,62 @@
+{
+  "symbol": "9934",
+  "name": "成霖",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.7,
+    "high": 12,
+    "low": 11.5,
+    "close": 12,
+    "change": 1.05,
+    "changePercent": 9.59,
+    "tradeVolume": 7763295,
+    "transactionCount": 2287,
+    "tradeValue": 92659915,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.35,
+  "turnoverAverageValue": 40515.92,
+  "pricePosition": 100,
+  "liquidityScore": 75.5,
+  "priceStrengthScore": 93.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 85.4,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.59% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

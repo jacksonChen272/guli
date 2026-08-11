@@ -1,0 +1,69 @@
+{
+  "symbol": "1435",
+  "name": "中福",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.15,
+    "high": 24.65,
+    "low": 22.1,
+    "close": 24.65,
+    "change": 1.35,
+    "changePercent": 5.79,
+    "tradeVolume": 38963,
+    "transactionCount": 129,
+    "tradeValue": 883970,
+    "peRatio": null
+  },
+  "dailyRangePercent": 11.54,
+  "turnoverAverageValue": 6852.48,
+  "pricePosition": 100,
+  "liquidityScore": 12.8,
+  "priceStrengthScore": 84.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 53.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.54% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.8 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

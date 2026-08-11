@@ -1,0 +1,55 @@
+{
+  "symbol": "6668",
+  "name": "中揚光",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 34.55,
+    "high": 35.5,
+    "low": 34.35,
+    "close": 35.25,
+    "change": 0.85,
+    "changePercent": 2.47,
+    "tradeVolume": 282106,
+    "transactionCount": 244,
+    "tradeValue": 9880392,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.35,
+  "turnoverAverageValue": 40493.41,
+  "pricePosition": 78.3,
+  "liquidityScore": 37,
+  "priceStrengthScore": 69.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 55.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

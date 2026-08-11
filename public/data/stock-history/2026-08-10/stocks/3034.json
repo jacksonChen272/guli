@@ -1,0 +1,53 @@
+{
+  "symbol": "3034",
+  "name": "聯詠",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 546,
+    "high": 557,
+    "low": 541,
+    "close": 544,
+    "change": 2,
+    "changePercent": 0.37,
+    "tradeVolume": 3004623,
+    "transactionCount": 4025,
+    "tradeValue": 1643710357,
+    "peRatio": 18.98
+  },
+  "dailyRangePercent": 2.96,
+  "turnoverAverageValue": 408375.24,
+  "pricePosition": 18.8,
+  "liquidityScore": 85.1,
+  "priceStrengthScore": 35.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 58.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.8 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

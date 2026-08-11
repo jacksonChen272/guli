@@ -1,0 +1,60 @@
+{
+  "symbol": "6756",
+  "name": "威鋒電子",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 101,
+    "high": 103,
+    "low": 99.7,
+    "close": 99.9,
+    "change": 0.4,
+    "changePercent": 0.4,
+    "tradeVolume": 112846,
+    "transactionCount": 596,
+    "tradeValue": 11395826,
+    "peRatio": 65.72
+  },
+  "dailyRangePercent": 3.31,
+  "turnoverAverageValue": 19120.51,
+  "pricePosition": 6.1,
+  "liquidityScore": 36.6,
+  "priceStrengthScore": 31.5,
+  "valuationRiskScore": 90,
+  "snapshotScore": 29,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 65.72 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "2002",
+  "name": "中鋼",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 19.25,
+    "high": 19.65,
+    "low": 19.15,
+    "close": 19.65,
+    "change": 0.6,
+    "changePercent": 3.15,
+    "tradeVolume": 115957493,
+    "transactionCount": 29211,
+    "tradeValue": 2249751844,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.61,
+  "turnoverAverageValue": 77017.28,
+  "pricePosition": 100,
+  "liquidityScore": 96.6,
+  "priceStrengthScore": 78.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 86.5,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

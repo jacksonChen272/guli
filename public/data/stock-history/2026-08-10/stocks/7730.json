@@ -1,0 +1,60 @@
+{
+  "symbol": "7730",
+  "name": "暉盛-創",
+  "tradeDate": "2026-08-10",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 162,
+    "high": 162,
+    "low": 156,
+    "close": 156,
+    "change": 3,
+    "changePercent": 1.96,
+    "tradeVolume": 65489,
+    "transactionCount": 68,
+    "tradeValue": 10407484,
+    "peRatio": 80.83
+  },
+  "dailyRangePercent": 3.85,
+  "turnoverAverageValue": 153051.24,
+  "pricePosition": 0,
+  "liquidityScore": 26,
+  "priceStrengthScore": 32.9,
+  "valuationRiskScore": 90,
+  "snapshotScore": 25.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 80.83 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}
