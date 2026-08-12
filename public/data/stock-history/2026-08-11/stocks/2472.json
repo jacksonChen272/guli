@@ -1,0 +1,53 @@
+{
+  "symbol": "2472",
+  "name": "立隆電",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 237.5,
+    "high": 257.5,
+    "low": 236.5,
+    "close": 244.5,
+    "change": 4,
+    "changePercent": 1.66,
+    "tradeVolume": 6116074,
+    "transactionCount": 6816,
+    "tradeValue": 1511195050,
+    "peRatio": 28.27
+  },
+  "dailyRangePercent": 8.88,
+  "turnoverAverageValue": 221712.89,
+  "pricePosition": 38.1,
+  "liquidityScore": 89.7,
+  "priceStrengthScore": 53.6,
+  "valuationRiskScore": 55,
+  "snapshotScore": 64.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.88% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

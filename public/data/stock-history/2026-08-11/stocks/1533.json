@@ -1,0 +1,53 @@
+{
+  "symbol": "1533",
+  "name": "車王電",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 33.65,
+    "high": 33.65,
+    "low": 31.8,
+    "close": 32.1,
+    "change": -1,
+    "changePercent": -3.02,
+    "tradeVolume": 172216,
+    "transactionCount": 170,
+    "tradeValue": 5526398,
+    "peRatio": 19.69
+  },
+  "dailyRangePercent": 5.82,
+  "turnoverAverageValue": 32508.22,
+  "pricePosition": 16.2,
+  "liquidityScore": 29.9,
+  "priceStrengthScore": 27.4,
+  "valuationRiskScore": 35,
+  "snapshotScore": 35.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.2 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

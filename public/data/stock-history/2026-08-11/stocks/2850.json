@@ -1,0 +1,53 @@
+{
+  "symbol": "2850",
+  "name": "新產",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 161,
+    "high": 161.5,
+    "low": 158.5,
+    "close": 159,
+    "change": -2.5,
+    "changePercent": -1.55,
+    "tradeVolume": 158225,
+    "transactionCount": 458,
+    "tradeValue": 25227653,
+    "peRatio": 11.35
+  },
+  "dailyRangePercent": 1.89,
+  "turnoverAverageValue": 55082.21,
+  "pricePosition": 16.7,
+  "liquidityScore": 42.3,
+  "priceStrengthScore": 30.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 44.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

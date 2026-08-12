@@ -1,0 +1,53 @@
+{
+  "symbol": "2707",
+  "name": "晶華",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 181,
+    "high": 182,
+    "low": 179.5,
+    "close": 180,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 226769,
+    "transactionCount": 329,
+    "tradeValue": 41007221,
+    "peRatio": 12.47
+  },
+  "dailyRangePercent": 1.39,
+  "turnoverAverageValue": 124642.01,
+  "pricePosition": 20,
+  "liquidityScore": 46.7,
+  "priceStrengthScore": 35.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 48.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

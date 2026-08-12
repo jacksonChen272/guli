@@ -1,0 +1,55 @@
+{
+  "symbol": "2392",
+  "name": "正崴",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 38.5,
+    "high": 40,
+    "low": 38.05,
+    "close": 39.6,
+    "change": 1.65,
+    "changePercent": 4.35,
+    "tradeVolume": 4060833,
+    "transactionCount": 2607,
+    "tradeValue": 158852204,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.12,
+  "turnoverAverageValue": 60932.95,
+  "pricePosition": 79.5,
+  "liquidityScore": 76.9,
+  "priceStrengthScore": 74.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 75.3,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

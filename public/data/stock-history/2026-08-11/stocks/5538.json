@@ -1,0 +1,53 @@
+{
+  "symbol": "5538",
+  "name": "東明-KY",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 36.3,
+    "high": 36.3,
+    "low": 33.95,
+    "close": 33.95,
+    "change": -1.45,
+    "changePercent": -4.1,
+    "tradeVolume": 230760,
+    "transactionCount": 150,
+    "tradeValue": 7894944,
+    "peRatio": 9.84
+  },
+  "dailyRangePercent": 6.92,
+  "turnoverAverageValue": 52632.96,
+  "pricePosition": 0,
+  "liquidityScore": 34.2,
+  "priceStrengthScore": 19.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 36.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

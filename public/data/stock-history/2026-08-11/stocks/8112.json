@@ -1,0 +1,53 @@
+{
+  "symbol": "8112",
+  "name": "至上",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 95,
+    "high": 100.5,
+    "low": 94.7,
+    "close": 100,
+    "change": 7.6,
+    "changePercent": 8.23,
+    "tradeVolume": 72928524,
+    "transactionCount": 51588,
+    "tradeValue": 7201664502,
+    "peRatio": 7.56
+  },
+  "dailyRangePercent": 6.12,
+  "turnoverAverageValue": 139599.61,
+  "pricePosition": 91.4,
+  "liquidityScore": 98.3,
+  "priceStrengthScore": 87,
+  "valuationRiskScore": 20,
+  "snapshotScore": 89.6,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 8.23% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

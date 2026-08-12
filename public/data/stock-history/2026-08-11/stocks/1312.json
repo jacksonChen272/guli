@@ -1,0 +1,55 @@
+{
+  "symbol": "1312",
+  "name": "國喬",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.85,
+    "high": 11.9,
+    "low": 11.55,
+    "close": 11.85,
+    "change": -0.05,
+    "changePercent": -0.42,
+    "tradeVolume": 6436126,
+    "transactionCount": 1909,
+    "tradeValue": 75467033,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.03,
+  "turnoverAverageValue": 39532.23,
+  "pricePosition": 85.7,
+  "liquidityScore": 73.8,
+  "priceStrengthScore": 61.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 66.9,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

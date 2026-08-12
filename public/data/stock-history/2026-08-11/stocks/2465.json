@@ -1,0 +1,67 @@
+{
+  "symbol": "2465",
+  "name": "麗臺",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 94.6,
+    "high": 95.8,
+    "low": 86.8,
+    "close": 86.9,
+    "change": -6.7,
+    "changePercent": -7.16,
+    "tradeVolume": 5914780,
+    "transactionCount": 13052,
+    "tradeValue": 533592361,
+    "peRatio": 32.07
+  },
+  "dailyRangePercent": 10.37,
+  "turnoverAverageValue": 40882.04,
+  "pricePosition": 1.1,
+  "liquidityScore": 87.1,
+  "priceStrengthScore": 12.8,
+  "valuationRiskScore": 55,
+  "snapshotScore": 45.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -7.16% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.37% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 1.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

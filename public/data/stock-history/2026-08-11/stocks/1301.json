@@ -1,0 +1,55 @@
+{
+  "symbol": "1301",
+  "name": "台塑",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 55.6,
+    "high": 55.9,
+    "low": 54.3,
+    "close": 55.6,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 17036831,
+    "transactionCount": 8453,
+    "tradeValue": 938186487,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.95,
+  "turnoverAverageValue": 110988.58,
+  "pricePosition": 81.3,
+  "liquidityScore": 91,
+  "priceStrengthScore": 61,
+  "valuationRiskScore": null,
+  "snapshotScore": 74.1,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "3167",
+  "name": "大量",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 650,
+    "high": 665,
+    "low": 635,
+    "close": 635,
+    "change": -20,
+    "changePercent": -3.05,
+    "tradeVolume": 429408,
+    "transactionCount": 1232,
+    "tradeValue": 279395789,
+    "peRatio": 61.89
+  },
+  "dailyRangePercent": 4.72,
+  "turnoverAverageValue": 226782.3,
+  "pricePosition": 0,
+  "liquidityScore": 64.9,
+  "priceStrengthScore": 21.7,
+  "valuationRiskScore": 90,
+  "snapshotScore": 34.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 61.89 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

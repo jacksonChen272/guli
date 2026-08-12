@@ -1,0 +1,74 @@
+{
+  "symbol": "5484",
+  "name": "慧友",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 43.1,
+    "high": 44.8,
+    "low": 41.3,
+    "close": 41.7,
+    "change": -3.65,
+    "changePercent": -8.05,
+    "tradeVolume": 670318,
+    "transactionCount": 1244,
+    "tradeValue": 28384552,
+    "peRatio": 112.7
+  },
+  "dailyRangePercent": 8.47,
+  "turnoverAverageValue": 22817.16,
+  "pricePosition": 11.4,
+  "liquidityScore": 55.4,
+  "priceStrengthScore": 14.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 27.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -8.05% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.47% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.4 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 112.70 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

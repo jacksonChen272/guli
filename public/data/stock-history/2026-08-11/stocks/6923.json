@@ -1,0 +1,53 @@
+{
+  "symbol": "6923",
+  "name": "中台",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 76.5,
+    "high": 76.7,
+    "low": 74.7,
+    "close": 74.9,
+    "change": -1.8,
+    "changePercent": -2.35,
+    "tradeVolume": 60529,
+    "transactionCount": 74,
+    "tradeValue": 4567739,
+    "peRatio": 18.31
+  },
+  "dailyRangePercent": 2.68,
+  "turnoverAverageValue": 61726.2,
+  "pricePosition": 10,
+  "liquidityScore": 21,
+  "priceStrengthScore": 26.7,
+  "valuationRiskScore": 35,
+  "snapshotScore": 32.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

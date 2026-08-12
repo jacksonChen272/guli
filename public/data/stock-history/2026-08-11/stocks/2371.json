@@ -1,0 +1,55 @@
+{
+  "symbol": "2371",
+  "name": "大同",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 26,
+    "high": 26.6,
+    "low": 24.9,
+    "close": 25.95,
+    "change": -0.85,
+    "changePercent": -3.17,
+    "tradeVolume": 15969288,
+    "transactionCount": 8355,
+    "tradeValue": 408531896,
+    "peRatio": null
+  },
+  "dailyRangePercent": 6.83,
+  "turnoverAverageValue": 48896.7,
+  "pricePosition": 61.8,
+  "liquidityScore": 87.9,
+  "priceStrengthScore": 43,
+  "valuationRiskScore": null,
+  "snapshotScore": 62.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

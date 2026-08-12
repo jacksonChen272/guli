@@ -1,0 +1,53 @@
+{
+  "symbol": "6136",
+  "name": "富爾特",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 25.25,
+    "high": 25.95,
+    "low": 24.95,
+    "close": 25.05,
+    "change": -0.2,
+    "changePercent": -0.79,
+    "tradeVolume": 268888,
+    "transactionCount": 177,
+    "tradeValue": 6804200,
+    "peRatio": 29.82
+  },
+  "dailyRangePercent": 4.01,
+  "turnoverAverageValue": 38441.81,
+  "pricePosition": 10,
+  "liquidityScore": 34.7,
+  "priceStrengthScore": 30.2,
+  "valuationRiskScore": 55,
+  "snapshotScore": 34.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

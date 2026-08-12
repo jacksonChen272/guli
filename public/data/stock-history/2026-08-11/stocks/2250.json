@@ -1,0 +1,53 @@
+{
+  "symbol": "2250",
+  "name": "IKKA-KY",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 60,
+    "high": 60.8,
+    "low": 59.6,
+    "close": 59.7,
+    "change": -0.5,
+    "changePercent": -0.83,
+    "tradeVolume": 48693,
+    "transactionCount": 52,
+    "tradeValue": 2912614,
+    "peRatio": 17.72
+  },
+  "dailyRangePercent": 2.01,
+  "turnoverAverageValue": 56011.81,
+  "pricePosition": 8.3,
+  "liquidityScore": 16.9,
+  "priceStrengthScore": 29.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 32.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

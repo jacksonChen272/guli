@@ -1,0 +1,60 @@
+{
+  "symbol": "2466",
+  "name": "冠西電",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 95,
+    "high": 95.2,
+    "low": 87.4,
+    "close": 92,
+    "change": -5.1,
+    "changePercent": -5.25,
+    "tradeVolume": 2823804,
+    "transactionCount": 2665,
+    "tradeValue": 254241001,
+    "peRatio": 124.32
+  },
+  "dailyRangePercent": 8.92,
+  "turnoverAverageValue": 95400,
+  "pricePosition": 59,
+  "liquidityScore": 77.2,
+  "priceStrengthScore": 37.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 45.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.92% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 124.32 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "2360",
+  "name": "致茂",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 2025,
+    "high": 2130,
+    "low": 1965,
+    "close": 2080,
+    "change": 50,
+    "changePercent": 2.46,
+    "tradeVolume": 1801664,
+    "transactionCount": 4271,
+    "tradeValue": 3714234570,
+    "peRatio": 53.06
+  },
+  "dailyRangePercent": 8.4,
+  "turnoverAverageValue": 869640.5,
+  "pricePosition": 69.7,
+  "liquidityScore": 84.4,
+  "priceStrengthScore": 66.4,
+  "valuationRiskScore": 75,
+  "snapshotScore": 64.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.40% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

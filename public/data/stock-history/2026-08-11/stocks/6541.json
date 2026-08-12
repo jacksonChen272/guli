@@ -1,0 +1,55 @@
+{
+  "symbol": "6541",
+  "name": "泰福-KY",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 38.65,
+    "high": 39.5,
+    "low": 38.5,
+    "close": 39.2,
+    "change": 0.4,
+    "changePercent": 1.03,
+    "tradeVolume": 191326,
+    "transactionCount": 171,
+    "tradeValue": 7436556,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.6,
+  "turnoverAverageValue": 43488.63,
+  "pricePosition": 70,
+  "liquidityScore": 32.7,
+  "priceStrengthScore": 63.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 49.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

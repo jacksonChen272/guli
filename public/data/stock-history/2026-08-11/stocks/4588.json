@@ -1,0 +1,53 @@
+{
+  "symbol": "4588",
+  "name": "玖鼎電力",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 52.3,
+    "high": 52.5,
+    "low": 51.7,
+    "close": 52.1,
+    "change": -0.2,
+    "changePercent": -0.38,
+    "tradeVolume": 31374,
+    "transactionCount": 67,
+    "tradeValue": 1637558,
+    "peRatio": 14.43
+  },
+  "dailyRangePercent": 1.55,
+  "turnoverAverageValue": 24441.16,
+  "pricePosition": 50,
+  "liquidityScore": 13.7,
+  "priceStrengthScore": 45.1,
+  "valuationRiskScore": 20,
+  "snapshotScore": 41.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.7 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

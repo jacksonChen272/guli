@@ -1,0 +1,55 @@
+{
+  "symbol": "2457",
+  "name": "飛宏",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.9,
+    "high": 23.9,
+    "low": 23.05,
+    "close": 23.25,
+    "change": -0.3,
+    "changePercent": -1.27,
+    "tradeVolume": 1164104,
+    "transactionCount": 653,
+    "tradeValue": 27079276,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.69,
+  "turnoverAverageValue": 41469.03,
+  "pricePosition": 23.5,
+  "liquidityScore": 56,
+  "priceStrengthScore": 33.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 43.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

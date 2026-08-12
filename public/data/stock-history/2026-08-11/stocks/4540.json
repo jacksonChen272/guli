@@ -1,0 +1,55 @@
+{
+  "symbol": "4540",
+  "name": "全球傳動",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 59.6,
+    "high": 59.6,
+    "low": 57.6,
+    "close": 58.3,
+    "change": -1.5,
+    "changePercent": -2.51,
+    "tradeVolume": 2552482,
+    "transactionCount": 2363,
+    "tradeValue": 148962809,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.47,
+  "turnoverAverageValue": 63039.7,
+  "pricePosition": 35,
+  "liquidityScore": 74,
+  "priceStrengthScore": 35.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 52.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

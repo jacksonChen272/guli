@@ -1,0 +1,69 @@
+{
+  "symbol": "8101",
+  "name": "華冠",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.75,
+    "high": 11.75,
+    "low": 11.25,
+    "close": 11.35,
+    "change": -0.4,
+    "changePercent": -3.4,
+    "tradeVolume": 20790,
+    "transactionCount": 32,
+    "tradeValue": 236697,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.44,
+  "turnoverAverageValue": 7396.78,
+  "pricePosition": 20,
+  "liquidityScore": 5.2,
+  "priceStrengthScore": 27.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 18,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 5.2 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

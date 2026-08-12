@@ -1,0 +1,53 @@
+{
+  "symbol": "1102",
+  "name": "亞泥",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 32.85,
+    "high": 33,
+    "low": 32.35,
+    "close": 32.45,
+    "change": -0.5,
+    "changePercent": -1.52,
+    "tradeVolume": 8219126,
+    "transactionCount": 3547,
+    "tradeValue": 267063749,
+    "peRatio": 10.89
+  },
+  "dailyRangePercent": 2.01,
+  "turnoverAverageValue": 75292.85,
+  "pricePosition": 15.4,
+  "liquidityScore": 82.2,
+  "priceStrengthScore": 30.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 58.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "6405",
+  "name": "悅城",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 39.95,
+    "high": 40.85,
+    "low": 39,
+    "close": 40.4,
+    "change": 0.45,
+    "changePercent": 1.13,
+    "tradeVolume": 471940,
+    "transactionCount": 507,
+    "tradeValue": 18883810,
+    "peRatio": null
+  },
+  "dailyRangePercent": 4.74,
+  "turnoverAverageValue": 37246.17,
+  "pricePosition": 75.7,
+  "liquidityScore": 48.6,
+  "priceStrengthScore": 65.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 58.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

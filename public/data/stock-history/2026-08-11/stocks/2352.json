@@ -1,0 +1,53 @@
+{
+  "symbol": "2352",
+  "name": "佳世達",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 29.7,
+    "high": 29.85,
+    "low": 28.7,
+    "close": 28.9,
+    "change": -0.7,
+    "changePercent": -2.36,
+    "tradeVolume": 8208214,
+    "transactionCount": 4903,
+    "tradeValue": 237430866,
+    "peRatio": 37.53
+  },
+  "dailyRangePercent": 4.01,
+  "turnoverAverageValue": 48425.63,
+  "pricePosition": 17.4,
+  "liquidityScore": 82.3,
+  "priceStrengthScore": 29.3,
+  "valuationRiskScore": 55,
+  "snapshotScore": 51,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

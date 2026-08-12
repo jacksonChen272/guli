@@ -1,0 +1,53 @@
+{
+  "symbol": "2892",
+  "name": "第一金",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 33.55,
+    "high": 33.7,
+    "low": 32.6,
+    "close": 32.7,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 85137348,
+    "transactionCount": 40706,
+    "tradeValue": 2801856557,
+    "peRatio": 16.77
+  },
+  "dailyRangePercent": 3.37,
+  "turnoverAverageValue": 68831.54,
+  "pricePosition": 9.1,
+  "liquidityScore": 97.5,
+  "priceStrengthScore": 31.7,
+  "valuationRiskScore": 35,
+  "snapshotScore": 61.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

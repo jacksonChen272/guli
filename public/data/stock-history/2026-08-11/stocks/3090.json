@@ -1,0 +1,60 @@
+{
+  "symbol": "3090",
+  "name": "日電貿",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 158,
+    "high": 177,
+    "low": 158,
+    "close": 174.5,
+    "change": 13.5,
+    "changePercent": 8.39,
+    "tradeVolume": 32414204,
+    "transactionCount": 28999,
+    "tradeValue": 5508468764,
+    "peRatio": 23.11
+  },
+  "dailyRangePercent": 12.03,
+  "turnoverAverageValue": 189953.75,
+  "pricePosition": 86.8,
+  "liquidityScore": 97.2,
+  "priceStrengthScore": 85.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 85.6,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 8.39% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 12.03% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

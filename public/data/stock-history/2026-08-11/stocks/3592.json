@@ -1,0 +1,53 @@
+{
+  "symbol": "3592",
+  "name": "瑞鼎",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 243,
+    "high": 244,
+    "low": 238.5,
+    "close": 239,
+    "change": -5,
+    "changePercent": -2.05,
+    "tradeVolume": 647882,
+    "transactionCount": 893,
+    "tradeValue": 155526887,
+    "peRatio": 14.03
+  },
+  "dailyRangePercent": 2.31,
+  "turnoverAverageValue": 174162.25,
+  "pricePosition": 9.1,
+  "liquidityScore": 63,
+  "priceStrengthScore": 27.1,
+  "valuationRiskScore": 20,
+  "snapshotScore": 50.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

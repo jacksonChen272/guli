@@ -1,0 +1,60 @@
+{
+  "symbol": "2321",
+  "name": "東訊",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 15.4,
+    "high": 15.95,
+    "low": 15.05,
+    "close": 15.6,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 39097,
+    "transactionCount": 21,
+    "tradeValue": 614758,
+    "peRatio": 390
+  },
+  "dailyRangePercent": 5.98,
+  "turnoverAverageValue": 29274.19,
+  "pricePosition": 61.1,
+  "liquidityScore": 8.7,
+  "priceStrengthScore": 57.9,
+  "valuationRiskScore": 90,
+  "snapshotScore": 31.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.7 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 390.00 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

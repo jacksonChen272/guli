@@ -1,0 +1,53 @@
+{
+  "symbol": "2748",
+  "name": "雲品",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 38.4,
+    "high": 38.5,
+    "low": 38.2,
+    "close": 38.5,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 34434,
+    "transactionCount": 86,
+    "tradeValue": 1319274,
+    "peRatio": 18.51
+  },
+  "dailyRangePercent": 0.79,
+  "turnoverAverageValue": 15340.4,
+  "pricePosition": 100,
+  "liquidityScore": 13.7,
+  "priceStrengthScore": 71.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 50,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.7 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

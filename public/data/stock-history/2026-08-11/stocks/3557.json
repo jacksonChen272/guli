@@ -1,0 +1,55 @@
+{
+  "symbol": "3557",
+  "name": "嘉威",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 25.15,
+    "high": 25.35,
+    "low": 24.8,
+    "close": 25.15,
+    "change": -0.95,
+    "changePercent": -3.64,
+    "tradeVolume": 78285,
+    "transactionCount": 118,
+    "tradeValue": 1962895,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.22,
+  "turnoverAverageValue": 16634.7,
+  "pricePosition": 63.6,
+  "liquidityScore": 19.1,
+  "priceStrengthScore": 46.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 34.6,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

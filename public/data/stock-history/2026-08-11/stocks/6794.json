@@ -1,0 +1,62 @@
+{
+  "symbol": "6794",
+  "name": "向榮生技",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 75,
+    "high": 75,
+    "low": 73.8,
+    "close": 74.7,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 30000,
+    "transactionCount": 25,
+    "tradeValue": 2221200,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.63,
+  "turnoverAverageValue": 88848,
+  "pricePosition": 75,
+  "liquidityScore": 12.9,
+  "priceStrengthScore": 54.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 36.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.9 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

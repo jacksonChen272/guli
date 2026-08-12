@@ -1,0 +1,60 @@
+{
+  "symbol": "4764",
+  "name": "雙鍵",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 234,
+    "high": 243.5,
+    "low": 224,
+    "close": 240.5,
+    "change": 8.5,
+    "changePercent": 3.66,
+    "tradeVolume": 1523858,
+    "transactionCount": 2391,
+    "tradeValue": 359104987,
+    "peRatio": 127.93
+  },
+  "dailyRangePercent": 8.71,
+  "turnoverAverageValue": 150190.29,
+  "pricePosition": 84.6,
+  "liquidityScore": 74.8,
+  "priceStrengthScore": 74.3,
+  "valuationRiskScore": 90,
+  "snapshotScore": 61.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.71% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 127.93 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

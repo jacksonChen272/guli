@@ -1,0 +1,62 @@
+{
+  "symbol": "2332",
+  "name": "友訊",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.75,
+    "high": 23.8,
+    "low": 22.55,
+    "close": 22.6,
+    "change": -1,
+    "changePercent": -4.24,
+    "tradeVolume": 38661980,
+    "transactionCount": 15053,
+    "tradeValue": 885501260,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.54,
+  "turnoverAverageValue": 58825.57,
+  "pricePosition": 4,
+  "liquidityScore": 92.7,
+  "priceStrengthScore": 20.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 52,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 4.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

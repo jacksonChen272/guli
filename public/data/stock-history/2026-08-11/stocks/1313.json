@@ -1,0 +1,55 @@
+{
+  "symbol": "1313",
+  "name": "聯成",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.6,
+    "high": 11.6,
+    "low": 11.2,
+    "close": 11.3,
+    "change": -0.3,
+    "changePercent": -2.59,
+    "tradeVolume": 2767970,
+    "transactionCount": 922,
+    "tradeValue": 31402668,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.57,
+  "turnoverAverageValue": 34059.29,
+  "pricePosition": 25,
+  "liquidityScore": 62.9,
+  "priceStrengthScore": 31.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 45.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

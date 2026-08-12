@@ -1,0 +1,53 @@
+{
+  "symbol": "4148",
+  "name": "全宇生技-KY",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 30.95,
+    "high": 33.4,
+    "low": 30.8,
+    "close": 32.5,
+    "change": 1.85,
+    "changePercent": 6.04,
+    "tradeVolume": 166245,
+    "transactionCount": 192,
+    "tradeValue": 5336745,
+    "peRatio": 15.05
+  },
+  "dailyRangePercent": 8.44,
+  "turnoverAverageValue": 27795.55,
+  "pricePosition": 65.4,
+  "liquidityScore": 29.9,
+  "priceStrengthScore": 73,
+  "valuationRiskScore": 35,
+  "snapshotScore": 56.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.44% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

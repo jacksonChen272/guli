@@ -1,0 +1,53 @@
+{
+  "symbol": "8021",
+  "name": "尖點",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 424.5,
+    "high": 444,
+    "low": 414,
+    "close": 439,
+    "change": 4.5,
+    "changePercent": 1.04,
+    "tradeVolume": 1335242,
+    "transactionCount": 2227,
+    "tradeValue": 571880624,
+    "peRatio": 125.79
+  },
+  "dailyRangePercent": 7.25,
+  "turnoverAverageValue": 256794.17,
+  "pricePosition": 83.3,
+  "liquidityScore": 76,
+  "priceStrengthScore": 68,
+  "valuationRiskScore": 90,
+  "snapshotScore": 59.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 125.79 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

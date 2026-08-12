@@ -1,0 +1,67 @@
+{
+  "symbol": "6206",
+  "name": "飛捷",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 154,
+    "high": 156,
+    "low": 142.5,
+    "close": 143,
+    "change": -15,
+    "changePercent": -9.49,
+    "tradeVolume": 6401165,
+    "transactionCount": 8657,
+    "tradeValue": 926962141,
+    "peRatio": 15.8
+  },
+  "dailyRangePercent": 9.47,
+  "turnoverAverageValue": 107076.6,
+  "pricePosition": 3.7,
+  "liquidityScore": 88.4,
+  "priceStrengthScore": 8.4,
+  "valuationRiskScore": 35,
+  "snapshotScore": 47.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "extreme_daily_loss",
+      "severity": "high",
+      "title": "單日跌幅偏大",
+      "reason": "單日跌幅 -9.49% 達 -7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.47% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 3.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "8404",
+  "name": "百和興業-KY",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.3,
+    "high": 16.5,
+    "low": 16.1,
+    "close": 16.15,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 247537,
+    "transactionCount": 187,
+    "tradeValue": 4027101,
+    "peRatio": 14.82
+  },
+  "dailyRangePercent": 2.48,
+  "turnoverAverageValue": 21535.3,
+  "pricePosition": 12.5,
+  "liquidityScore": 31.3,
+  "priceStrengthScore": 32.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 41.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

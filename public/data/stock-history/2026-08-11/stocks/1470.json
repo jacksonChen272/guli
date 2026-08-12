@@ -1,0 +1,53 @@
+{
+  "symbol": "1470",
+  "name": "大統新創",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.35,
+    "high": 23.5,
+    "low": 23.35,
+    "close": 23.4,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 22100,
+    "transactionCount": 14,
+    "tradeValue": 517060,
+    "peRatio": 26.9
+  },
+  "dailyRangePercent": 0.64,
+  "turnoverAverageValue": 36932.86,
+  "pricePosition": 33.3,
+  "liquidityScore": 5.8,
+  "priceStrengthScore": 48.2,
+  "valuationRiskScore": 55,
+  "snapshotScore": 32.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 5.8 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

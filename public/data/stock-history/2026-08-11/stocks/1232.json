@@ -1,0 +1,53 @@
+{
+  "symbol": "1232",
+  "name": "大統益",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 156.5,
+    "high": 158.5,
+    "low": 154.5,
+    "close": 154.5,
+    "change": -1.5,
+    "changePercent": -0.96,
+    "tradeVolume": 327386,
+    "transactionCount": 471,
+    "tradeValue": 51252494,
+    "peRatio": 17.11
+  },
+  "dailyRangePercent": 2.59,
+  "turnoverAverageValue": 108816.34,
+  "pricePosition": 0,
+  "liquidityScore": 52,
+  "priceStrengthScore": 26.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 43,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,62 @@
+{
+  "symbol": "8488",
+  "name": "吉源-KY",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.25,
+    "high": 10.6,
+    "low": 10.05,
+    "close": 10.15,
+    "change": 0.15,
+    "changePercent": 1.5,
+    "tradeVolume": 299050,
+    "transactionCount": 44,
+    "tradeValue": 3088314,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.47,
+  "turnoverAverageValue": 70188.95,
+  "pricePosition": 18.2,
+  "liquidityScore": 26.8,
+  "priceStrengthScore": 38.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 33.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.2 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

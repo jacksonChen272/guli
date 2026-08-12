@@ -1,0 +1,60 @@
+{
+  "symbol": "1516",
+  "name": "川飛",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 14.5,
+    "high": 15.4,
+    "low": 14.5,
+    "close": 15.4,
+    "change": 0.75,
+    "changePercent": 5.12,
+    "tradeVolume": 45980,
+    "transactionCount": 50,
+    "tradeValue": 685252,
+    "peRatio": 770
+  },
+  "dailyRangePercent": 6.21,
+  "turnoverAverageValue": 13705.04,
+  "pricePosition": 100,
+  "liquidityScore": 10.8,
+  "priceStrengthScore": 83,
+  "valuationRiskScore": 90,
+  "snapshotScore": 43.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.8 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 770.00 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

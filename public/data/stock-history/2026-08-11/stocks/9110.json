@@ -1,0 +1,69 @@
+{
+  "symbol": "9110",
+  "name": "越南控-DR",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 2.9,
+    "high": 3.14,
+    "low": 2.9,
+    "close": 3.14,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 11000,
+    "transactionCount": 8,
+    "tradeValue": 33190,
+    "peRatio": null
+  },
+  "dailyRangePercent": 8.28,
+  "turnoverAverageValue": 4148.75,
+  "pricePosition": 100,
+  "liquidityScore": 1.6,
+  "priceStrengthScore": 71.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 40.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.28% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 1.6 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "symbol": "6443",
+  "name": "元晶",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 27,
+    "high": 27.3,
+    "low": 26.55,
+    "close": 26.9,
+    "change": -0.15,
+    "changePercent": -0.55,
+    "tradeVolume": 2702826,
+    "transactionCount": 2119,
+    "tradeValue": 72588243,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.82,
+  "turnoverAverageValue": 34255.9,
+  "pricePosition": 46.7,
+  "liquidityScore": 70.1,
+  "priceStrengthScore": 43.6,
+  "valuationRiskScore": null,
+  "snapshotScore": 55.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

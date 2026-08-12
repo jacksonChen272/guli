@@ -1,0 +1,53 @@
+{
+  "symbol": "5519",
+  "name": "隆大",
+  "tradeDate": "2026-08-11",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 27.9,
+    "high": 27.9,
+    "low": 27.75,
+    "close": 27.75,
+    "change": -0.1,
+    "changePercent": -0.36,
+    "tradeVolume": 179677,
+    "transactionCount": 202,
+    "tradeValue": 4999109,
+    "peRatio": 5.57
+  },
+  "dailyRangePercent": 0.54,
+  "turnoverAverageValue": 24748.06,
+  "pricePosition": 0,
+  "liquidityScore": 30.2,
+  "priceStrengthScore": 27.7,
+  "valuationRiskScore": 20,
+  "snapshotScore": 39,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}
