@@ -1,0 +1,60 @@
+{
+  "symbol": "2363",
+  "name": "矽統",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 56.9,
+    "high": 58.5,
+    "low": 55.3,
+    "close": 55.4,
+    "change": -1.6,
+    "changePercent": -2.81,
+    "tradeVolume": 7614052,
+    "transactionCount": 5641,
+    "tradeValue": 428761971,
+    "peRatio": 102.59
+  },
+  "dailyRangePercent": 5.79,
+  "turnoverAverageValue": 76008.15,
+  "pricePosition": 3.1,
+  "liquidityScore": 86,
+  "priceStrengthScore": 23.3,
+  "valuationRiskScore": 90,
+  "snapshotScore": 42.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 3.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 102.59 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

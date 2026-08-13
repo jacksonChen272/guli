@@ -1,0 +1,53 @@
+{
+  "symbol": "1539",
+  "name": "巨庭",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.35,
+    "high": 16.4,
+    "low": 16.15,
+    "close": 16.25,
+    "change": -0.15,
+    "changePercent": -0.91,
+    "tradeVolume": 44220,
+    "transactionCount": 86,
+    "tradeValue": 718316,
+    "peRatio": 19.35
+  },
+  "dailyRangePercent": 1.55,
+  "turnoverAverageValue": 8352.51,
+  "pricePosition": 40,
+  "liquidityScore": 11.5,
+  "priceStrengthScore": 40.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 35.3,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 11.5 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

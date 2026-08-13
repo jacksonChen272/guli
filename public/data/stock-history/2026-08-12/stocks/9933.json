@@ -1,0 +1,53 @@
+{
+  "symbol": "9933",
+  "name": "中鼎",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 40.6,
+    "high": 42.5,
+    "low": 40.6,
+    "close": 42,
+    "change": 3.35,
+    "changePercent": 8.67,
+    "tradeVolume": 9813810,
+    "transactionCount": 7755,
+    "tradeValue": 411393212,
+    "peRatio": 7.75
+  },
+  "dailyRangePercent": 4.68,
+  "turnoverAverageValue": 53048.77,
+  "pricePosition": 73.7,
+  "liquidityScore": 87.1,
+  "priceStrengthScore": 81.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 83.3,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 8.67% 達 7% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

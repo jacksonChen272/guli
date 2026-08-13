@@ -1,0 +1,60 @@
+{
+  "symbol": "2492",
+  "name": "華新科",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 298,
+    "high": 312,
+    "low": 288,
+    "close": 288,
+    "change": -12.5,
+    "changePercent": -4.16,
+    "tradeVolume": 66915986,
+    "transactionCount": 70817,
+    "tradeValue": 19864853592,
+    "peRatio": 32.36
+  },
+  "dailyRangePercent": 8.33,
+  "turnoverAverageValue": 280509.67,
+  "pricePosition": 0,
+  "liquidityScore": 99.2,
+  "priceStrengthScore": 19.1,
+  "valuationRiskScore": 55,
+  "snapshotScore": 52.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.33% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

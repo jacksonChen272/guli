@@ -1,0 +1,53 @@
+{
+  "symbol": "3694",
+  "name": "海華",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 53.7,
+    "high": 54.3,
+    "low": 53.1,
+    "close": 53.2,
+    "change": -0.6,
+    "changePercent": -1.12,
+    "tradeVolume": 767686,
+    "transactionCount": 1037,
+    "tradeValue": 41084509,
+    "peRatio": 13.47
+  },
+  "dailyRangePercent": 2.26,
+  "turnoverAverageValue": 39618.62,
+  "pricePosition": 8.3,
+  "liquidityScore": 58.2,
+  "priceStrengthScore": 28.9,
+  "valuationRiskScore": 20,
+  "snapshotScore": 49.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

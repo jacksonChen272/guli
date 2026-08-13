@@ -1,0 +1,53 @@
+{
+  "symbol": "3645",
+  "name": "達邁",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 67.8,
+    "high": 73.3,
+    "low": 67.8,
+    "close": 71.2,
+    "change": 3.4,
+    "changePercent": 5.01,
+    "tradeVolume": 2153066,
+    "transactionCount": 1758,
+    "tradeValue": 153687898,
+    "peRatio": 27.49
+  },
+  "dailyRangePercent": 8.11,
+  "turnoverAverageValue": 87422.01,
+  "pricePosition": 61.8,
+  "liquidityScore": 72.9,
+  "priceStrengthScore": 69.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 65.7,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.11% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

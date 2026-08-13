@@ -1,0 +1,62 @@
+{
+  "symbol": "6916",
+  "name": "華凌",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 18.9,
+    "high": 19.15,
+    "low": 18.8,
+    "close": 18.95,
+    "change": 0.25,
+    "changePercent": 1.34,
+    "tradeVolume": 18006,
+    "transactionCount": 17,
+    "tradeValue": 342413,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.86,
+  "turnoverAverageValue": 20141.94,
+  "pricePosition": 42.9,
+  "liquidityScore": 4.3,
+  "priceStrengthScore": 54.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 32.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 4.3 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

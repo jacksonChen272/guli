@@ -1,0 +1,55 @@
+{
+  "symbol": "3591",
+  "name": "艾笛森",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 21.25,
+    "high": 21.6,
+    "low": 21.15,
+    "close": 21.25,
+    "change": -0.2,
+    "changePercent": -0.93,
+    "tradeVolume": 711412,
+    "transactionCount": 1645,
+    "tradeValue": 15200328,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.13,
+  "turnoverAverageValue": 9240.32,
+  "pricePosition": 22.2,
+  "liquidityScore": 53.2,
+  "priceStrengthScore": 38.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 44.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

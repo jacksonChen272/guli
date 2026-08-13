@@ -1,0 +1,53 @@
+{
+  "symbol": "9924",
+  "name": "福興",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 38.5,
+    "high": 38.65,
+    "low": 38.4,
+    "close": 38.45,
+    "change": -0.05,
+    "changePercent": -0.13,
+    "tradeVolume": 198840,
+    "transactionCount": 201,
+    "tradeValue": 7651483,
+    "peRatio": 10.53
+  },
+  "dailyRangePercent": 0.65,
+  "turnoverAverageValue": 38067.08,
+  "pricePosition": 20,
+  "liquidityScore": 34.2,
+  "priceStrengthScore": 35.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 43.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

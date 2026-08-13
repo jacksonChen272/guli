@@ -1,0 +1,53 @@
+{
+  "symbol": "2206",
+  "name": "三陽工業",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 61.6,
+    "high": 62,
+    "low": 60.5,
+    "close": 60.8,
+    "change": -1.2,
+    "changePercent": -1.94,
+    "tradeVolume": 1016665,
+    "transactionCount": 1319,
+    "tradeValue": 62110482,
+    "peRatio": 10.72
+  },
+  "dailyRangePercent": 2.48,
+  "turnoverAverageValue": 47089.07,
+  "pricePosition": 20,
+  "liquidityScore": 62.6,
+  "priceStrengthScore": 31.1,
+  "valuationRiskScore": 20,
+  "snapshotScore": 51.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

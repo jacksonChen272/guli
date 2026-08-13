@@ -1,0 +1,55 @@
+{
+  "symbol": "1526",
+  "name": "日馳",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 18.5,
+    "high": 18.65,
+    "low": 18.2,
+    "close": 18.55,
+    "change": -0.45,
+    "changePercent": -2.37,
+    "tradeVolume": 740211,
+    "transactionCount": 481,
+    "tradeValue": 13624628,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.47,
+  "turnoverAverageValue": 28325.63,
+  "pricePosition": 77.8,
+  "liquidityScore": 48.7,
+  "priceStrengthScore": 58.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 54.2,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

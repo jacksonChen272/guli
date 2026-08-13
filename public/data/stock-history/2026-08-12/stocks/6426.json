@@ -1,0 +1,60 @@
+{
+  "symbol": "6426",
+  "name": "統新",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 233,
+    "high": 233,
+    "low": 220,
+    "close": 222,
+    "change": 4,
+    "changePercent": 1.83,
+    "tradeVolume": 824448,
+    "transactionCount": 1018,
+    "tradeValue": 185960631,
+    "peRatio": 426.92
+  },
+  "dailyRangePercent": 5.91,
+  "turnoverAverageValue": 182672.53,
+  "pricePosition": 15.4,
+  "liquidityScore": 66.4,
+  "priceStrengthScore": 38,
+  "valuationRiskScore": 90,
+  "snapshotScore": 42.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.4 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 426.92 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

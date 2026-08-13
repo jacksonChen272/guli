@@ -1,0 +1,60 @@
+{
+  "symbol": "1315",
+  "name": "達新",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 64.7,
+    "high": 64.7,
+    "low": 63.5,
+    "close": 63.6,
+    "change": -0.8,
+    "changePercent": -1.24,
+    "tradeVolume": 20139,
+    "transactionCount": 67,
+    "tradeValue": 1286742,
+    "peRatio": 41.3
+  },
+  "dailyRangePercent": 1.89,
+  "turnoverAverageValue": 19205.1,
+  "pricePosition": 8.3,
+  "liquidityScore": 10.8,
+  "priceStrengthScore": 28.6,
+  "valuationRiskScore": 75,
+  "snapshotScore": 21.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.8 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

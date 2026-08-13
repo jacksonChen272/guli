@@ -1,0 +1,60 @@
+{
+  "symbol": "3296",
+  "name": "勝德",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.2,
+    "high": 23.55,
+    "low": 23.15,
+    "close": 23.35,
+    "change": 0.25,
+    "changePercent": 1.08,
+    "tradeVolume": 17156,
+    "transactionCount": 28,
+    "tradeValue": 400531,
+    "peRatio": 179.62
+  },
+  "dailyRangePercent": 1.73,
+  "turnoverAverageValue": 14304.68,
+  "pricePosition": 50,
+  "liquidityScore": 5,
+  "priceStrengthScore": 56.4,
+  "valuationRiskScore": 90,
+  "snapshotScore": 29.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 5.0 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 179.62 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

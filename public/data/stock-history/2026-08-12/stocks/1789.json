@@ -1,0 +1,60 @@
+{
+  "symbol": "1789",
+  "name": "神隆",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 18.8,
+    "high": 19.15,
+    "low": 18.8,
+    "close": 18.85,
+    "change": -0.1,
+    "changePercent": -0.53,
+    "tradeVolume": 306458,
+    "transactionCount": 219,
+    "tradeValue": 5799473,
+    "peRatio": 377
+  },
+  "dailyRangePercent": 1.86,
+  "turnoverAverageValue": 26481.61,
+  "pricePosition": 14.3,
+  "liquidityScore": 36,
+  "priceStrengthScore": 40.3,
+  "valuationRiskScore": 90,
+  "snapshotScore": 32.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 377.00 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

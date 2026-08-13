@@ -1,0 +1,67 @@
+{
+  "symbol": "8996",
+  "name": "高力",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 1070,
+    "high": 1170,
+    "low": 1065,
+    "close": 1170,
+    "change": 105,
+    "changePercent": 9.86,
+    "tradeVolume": 2782316,
+    "transactionCount": 3384,
+    "tradeValue": 3198814440,
+    "peRatio": 83.45
+  },
+  "dailyRangePercent": 9.86,
+  "turnoverAverageValue": 945276.13,
+  "pricePosition": 100,
+  "liquidityScore": 86.3,
+  "priceStrengthScore": 93.7,
+  "valuationRiskScore": 90,
+  "snapshotScore": 74.4,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.86% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.86% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 83.45 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

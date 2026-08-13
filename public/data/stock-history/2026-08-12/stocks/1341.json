@@ -1,0 +1,53 @@
+{
+  "symbol": "1341",
+  "name": "富林-KY",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 58.9,
+    "high": 59.8,
+    "low": 58.9,
+    "close": 59.7,
+    "change": 1,
+    "changePercent": 1.7,
+    "tradeVolume": 13053,
+    "transactionCount": 14,
+    "tradeValue": 775413,
+    "peRatio": 14.63
+  },
+  "dailyRangePercent": 1.53,
+  "turnoverAverageValue": 55386.64,
+  "pricePosition": 88.9,
+  "liquidityScore": 6,
+  "priceStrengthScore": 71.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 50.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 6.0 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

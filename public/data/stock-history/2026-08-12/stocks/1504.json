@@ -1,0 +1,53 @@
+{
+  "symbol": "1504",
+  "name": "東元",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 67.4,
+    "high": 68.2,
+    "low": 67.2,
+    "close": 67.3,
+    "change": -0.1,
+    "changePercent": -0.15,
+    "tradeVolume": 5838546,
+    "transactionCount": 4331,
+    "tradeValue": 394695256,
+    "peRatio": 24.38
+  },
+  "dailyRangePercent": 1.49,
+  "turnoverAverageValue": 91132.59,
+  "pricePosition": 10,
+  "liquidityScore": 84,
+  "priceStrengthScore": 31.7,
+  "valuationRiskScore": 35,
+  "snapshotScore": 56.7,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

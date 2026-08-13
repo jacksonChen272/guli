@@ -1,0 +1,53 @@
+{
+  "symbol": "2364",
+  "name": "倫飛",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 79.8,
+    "high": 81.4,
+    "low": 77.9,
+    "close": 78.5,
+    "change": 2.5,
+    "changePercent": 3.29,
+    "tradeVolume": 1033839,
+    "transactionCount": 1501,
+    "tradeValue": 82116499,
+    "peRatio": 20.08
+  },
+  "dailyRangePercent": 4.49,
+  "turnoverAverageValue": 54707.86,
+  "pricePosition": 17.1,
+  "liquidityScore": 65,
+  "priceStrengthScore": 41.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 54.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

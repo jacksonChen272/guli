@@ -1,0 +1,60 @@
+{
+  "symbol": "2464",
+  "name": "盟立",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 185.5,
+    "high": 205,
+    "low": 185.5,
+    "close": 196.5,
+    "change": 9,
+    "changePercent": 4.8,
+    "tradeVolume": 29018273,
+    "transactionCount": 34008,
+    "tradeValue": 5737541592,
+    "peRatio": 517.11
+  },
+  "dailyRangePercent": 10.51,
+  "turnoverAverageValue": 168711.53,
+  "pricePosition": 56.4,
+  "liquidityScore": 97.1,
+  "priceStrengthScore": 67,
+  "valuationRiskScore": 90,
+  "snapshotScore": 66.1,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 10.51% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 517.11 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

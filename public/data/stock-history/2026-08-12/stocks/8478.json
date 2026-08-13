@@ -1,0 +1,53 @@
+{
+  "symbol": "8478",
+  "name": "東哥遊艇",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 148,
+    "high": 148,
+    "low": 145.5,
+    "close": 146,
+    "change": -1,
+    "changePercent": -0.68,
+    "tradeVolume": 153471,
+    "transactionCount": 247,
+    "tradeValue": 22480476,
+    "peRatio": 10.15
+  },
+  "dailyRangePercent": 1.72,
+  "turnoverAverageValue": 91014.07,
+  "pricePosition": 20,
+  "liquidityScore": 39.1,
+  "priceStrengthScore": 34,
+  "valuationRiskScore": 20,
+  "snapshotScore": 45,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

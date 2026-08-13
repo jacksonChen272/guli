@@ -1,0 +1,53 @@
+{
+  "symbol": "7722",
+  "name": "LINEPAY",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 298,
+    "high": 309,
+    "low": 291.5,
+    "close": 291.5,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 157901,
+    "transactionCount": 621,
+    "tradeValue": 47380975,
+    "peRatio": 41.35
+  },
+  "dailyRangePercent": 6,
+  "turnoverAverageValue": 76297.87,
+  "pricePosition": 0,
+  "liquidityScore": 47.4,
+  "priceStrengthScore": 28.5,
+  "valuationRiskScore": 75,
+  "snapshotScore": 34.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

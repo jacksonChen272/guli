@@ -1,0 +1,69 @@
+{
+  "symbol": "3055",
+  "name": "蔚華科",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 109.5,
+    "high": 117,
+    "low": 107,
+    "close": 117,
+    "change": 10.5,
+    "changePercent": 9.86,
+    "tradeVolume": 1896034,
+    "transactionCount": 2155,
+    "tradeValue": 216400001,
+    "peRatio": null
+  },
+  "dailyRangePercent": 9.35,
+  "turnoverAverageValue": 100417.63,
+  "pricePosition": 100,
+  "liquidityScore": 74.3,
+  "priceStrengthScore": 93.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 85.2,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.86% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.35% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

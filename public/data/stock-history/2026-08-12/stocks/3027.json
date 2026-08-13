@@ -1,0 +1,55 @@
+{
+  "symbol": "3027",
+  "name": "盛達",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 18.2,
+    "high": 18.65,
+    "low": 18.2,
+    "close": 18.4,
+    "change": 0.05,
+    "changePercent": 0.27,
+    "tradeVolume": 183600,
+    "transactionCount": 156,
+    "tradeValue": 3396018,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.47,
+  "turnoverAverageValue": 21769.35,
+  "pricePosition": 44.4,
+  "liquidityScore": 27.3,
+  "priceStrengthScore": 52.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 41.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

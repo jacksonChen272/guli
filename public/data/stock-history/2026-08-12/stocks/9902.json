@@ -1,0 +1,53 @@
+{
+  "symbol": "9902",
+  "name": "台火",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.85,
+    "high": 13.9,
+    "low": 13.75,
+    "close": 13.85,
+    "change": 0.05,
+    "changePercent": 0.36,
+    "tradeVolume": 77653,
+    "transactionCount": 65,
+    "tradeValue": 1074681,
+    "peRatio": 23.88
+  },
+  "dailyRangePercent": 1.09,
+  "turnoverAverageValue": 16533.55,
+  "pricePosition": 66.7,
+  "liquidityScore": 14.6,
+  "priceStrengthScore": 56.7,
+  "valuationRiskScore": 35,
+  "snapshotScore": 43.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.6 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

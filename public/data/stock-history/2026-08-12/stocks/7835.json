@@ -1,0 +1,62 @@
+{
+  "symbol": "7835",
+  "name": "永悅健康-創",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 25,
+    "high": 25.5,
+    "low": 24.8,
+    "close": 25,
+    "change": 0.2,
+    "changePercent": 0.81,
+    "tradeVolume": 66102,
+    "transactionCount": 36,
+    "tradeValue": 1671206,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.82,
+  "turnoverAverageValue": 46422.39,
+  "pricePosition": 28.6,
+  "liquidityScore": 14,
+  "priceStrengthScore": 44.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 31.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.0 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

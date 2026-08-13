@@ -1,0 +1,62 @@
+{
+  "symbol": "1324",
+  "name": "地球",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.05,
+    "high": 10.05,
+    "low": 10.05,
+    "close": 10.05,
+    "change": 0.05,
+    "changePercent": 0.5,
+    "tradeVolume": 6671,
+    "transactionCount": 28,
+    "tradeValue": 67023,
+    "peRatio": null
+  },
+  "dailyRangePercent": 0,
+  "turnoverAverageValue": 2393.68,
+  "pricePosition": 50,
+  "liquidityScore": 1.9,
+  "priceStrengthScore": 51.1,
+  "valuationRiskScore": null,
+  "snapshotScore": 29.6,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 1.9 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

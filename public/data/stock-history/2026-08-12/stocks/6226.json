@@ -1,0 +1,55 @@
+{
+  "symbol": "6226",
+  "name": "光鼎",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.85,
+    "high": 20.9,
+    "low": 20.1,
+    "close": 20.3,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 5919505,
+    "transactionCount": 3201,
+    "tradeValue": 120524812,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.98,
+  "turnoverAverageValue": 37652.24,
+  "pricePosition": 25,
+  "liquidityScore": 77.9,
+  "priceStrengthScore": 37.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 55.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

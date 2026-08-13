@@ -1,0 +1,53 @@
+{
+  "symbol": "6670",
+  "name": "復盛應用",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 270,
+    "high": 273,
+    "low": 263,
+    "close": 264,
+    "change": -5,
+    "changePercent": -1.86,
+    "tradeVolume": 236862,
+    "transactionCount": 3544,
+    "tradeValue": 62967876,
+    "peRatio": 12.81
+  },
+  "dailyRangePercent": 3.8,
+  "turnoverAverageValue": 17767.46,
+  "pricePosition": 10,
+  "liquidityScore": 57.3,
+  "priceStrengthScore": 27.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 48.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 10.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

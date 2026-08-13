@@ -1,0 +1,53 @@
+{
+  "symbol": "6202",
+  "name": "盛群",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 64.5,
+    "high": 65.8,
+    "low": 63.5,
+    "close": 63.8,
+    "change": -0.5,
+    "changePercent": -0.78,
+    "tradeVolume": 2281587,
+    "transactionCount": 3285,
+    "tradeValue": 146471300,
+    "peRatio": 53.17
+  },
+  "dailyRangePercent": 3.62,
+  "turnoverAverageValue": 44587.91,
+  "pricePosition": 13,
+  "liquidityScore": 75,
+  "priceStrengthScore": 31.3,
+  "valuationRiskScore": 75,
+  "snapshotScore": 45.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 13.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

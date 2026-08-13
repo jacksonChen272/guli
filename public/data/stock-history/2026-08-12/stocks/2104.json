@@ -1,0 +1,55 @@
+{
+  "symbol": "2104",
+  "name": "國際中橡",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 10.4,
+    "high": 10.4,
+    "low": 10.3,
+    "close": 10.35,
+    "change": -0.05,
+    "changePercent": -0.48,
+    "tradeVolume": 2402530,
+    "transactionCount": 773,
+    "tradeValue": 24842754,
+    "peRatio": null
+  },
+  "dailyRangePercent": 0.97,
+  "turnoverAverageValue": 32138.1,
+  "pricePosition": 50,
+  "liquidityScore": 60.5,
+  "priceStrengthScore": 44.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 51.7,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

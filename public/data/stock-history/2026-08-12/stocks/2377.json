@@ -1,0 +1,60 @@
+{
+  "symbol": "2377",
+  "name": "微星",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 157,
+    "high": 169,
+    "low": 152,
+    "close": 169,
+    "change": 15,
+    "changePercent": 9.74,
+    "tradeVolume": 46112297,
+    "transactionCount": 26145,
+    "tradeValue": 7675204152,
+    "peRatio": 14.66
+  },
+  "dailyRangePercent": 11.18,
+  "turnoverAverageValue": 293562.98,
+  "pricePosition": 100,
+  "liquidityScore": 97.7,
+  "priceStrengthScore": 93.4,
+  "valuationRiskScore": 20,
+  "snapshotScore": 92.2,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.74% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 11.18% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

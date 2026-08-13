@@ -1,0 +1,53 @@
+{
+  "symbol": "6192",
+  "name": "巨路",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 122,
+    "high": 122.5,
+    "low": 120,
+    "close": 120.5,
+    "change": -0.5,
+    "changePercent": -0.41,
+    "tradeVolume": 238080,
+    "transactionCount": 244,
+    "tradeValue": 28822726,
+    "peRatio": 11.65
+  },
+  "dailyRangePercent": 2.08,
+  "turnoverAverageValue": 118125.93,
+  "pricePosition": 20,
+  "liquidityScore": 43.9,
+  "priceStrengthScore": 34.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 46.9,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "6776",
+  "name": "展碁國際",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 54.2,
+    "high": 54.2,
+    "low": 53.7,
+    "close": 53.8,
+    "change": 0.1,
+    "changePercent": 0.19,
+    "tradeVolume": 72056,
+    "transactionCount": 91,
+    "tradeValue": 3883526,
+    "peRatio": 12.28
+  },
+  "dailyRangePercent": 0.93,
+  "turnoverAverageValue": 42676.11,
+  "pricePosition": 20,
+  "liquidityScore": 21.2,
+  "priceStrengthScore": 36,
+  "valuationRiskScore": 20,
+  "snapshotScore": 39.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

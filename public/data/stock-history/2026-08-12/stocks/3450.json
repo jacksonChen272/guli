@@ -1,0 +1,60 @@
+{
+  "symbol": "3450",
+  "name": "聯鈞",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 484.5,
+    "high": 508,
+    "low": 484.5,
+    "close": 507,
+    "change": 33.5,
+    "changePercent": 7.07,
+    "tradeVolume": 1389799,
+    "transactionCount": 2544,
+    "tradeValue": 690045129,
+    "peRatio": 150.89
+  },
+  "dailyRangePercent": 4.85,
+  "turnoverAverageValue": 271244.15,
+  "pricePosition": 95.7,
+  "liquidityScore": 77.6,
+  "priceStrengthScore": 85.9,
+  "valuationRiskScore": 90,
+  "snapshotScore": 67.8,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 7.07% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 150.89 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

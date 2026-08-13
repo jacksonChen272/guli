@@ -1,0 +1,55 @@
+{
+  "symbol": "1337",
+  "name": "再生-KY",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 4.71,
+    "high": 4.76,
+    "low": 4.67,
+    "close": 4.69,
+    "change": -0.02,
+    "changePercent": -0.42,
+    "tradeVolume": 228320,
+    "transactionCount": 177,
+    "tradeValue": 1072896,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.93,
+  "turnoverAverageValue": 6061.56,
+  "pricePosition": 22.2,
+  "liquidityScore": 24.3,
+  "priceStrengthScore": 35.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 30.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

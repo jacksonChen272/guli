@@ -1,0 +1,60 @@
+{
+  "symbol": "1535",
+  "name": "中宇",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 46,
+    "high": 46.65,
+    "low": 46,
+    "close": 46.1,
+    "change": 0.05,
+    "changePercent": 0.11,
+    "tradeVolume": 43190,
+    "transactionCount": 39,
+    "tradeValue": 1998963,
+    "peRatio": 12.2
+  },
+  "dailyRangePercent": 1.41,
+  "turnoverAverageValue": 51255.46,
+  "pricePosition": 15.4,
+  "liquidityScore": 13.6,
+  "priceStrengthScore": 42.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 39.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.4 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 13.6 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

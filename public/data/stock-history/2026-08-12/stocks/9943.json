@@ -1,0 +1,53 @@
+{
+  "symbol": "9943",
+  "name": "好樂迪",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 51.9,
+    "high": 52.1,
+    "low": 51.4,
+    "close": 51.5,
+    "change": -0.4,
+    "changePercent": -0.77,
+    "tradeVolume": 113579,
+    "transactionCount": 142,
+    "tradeValue": 5868983,
+    "peRatio": 12.56
+  },
+  "dailyRangePercent": 1.36,
+  "turnoverAverageValue": 41330.87,
+  "pricePosition": 14.3,
+  "liquidityScore": 27.8,
+  "priceStrengthScore": 31.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 40,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

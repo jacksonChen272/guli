@@ -1,0 +1,62 @@
+{
+  "symbol": "8201",
+  "name": "無敵",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.95,
+    "high": 12.1,
+    "low": 11.75,
+    "close": 11.9,
+    "change": -0.1,
+    "changePercent": -0.83,
+    "tradeVolume": 24024,
+    "transactionCount": 22,
+    "tradeValue": 285076,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.98,
+  "turnoverAverageValue": 12958,
+  "pricePosition": 42.9,
+  "liquidityScore": 4.8,
+  "priceStrengthScore": 41.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 25.6,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 4.8 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

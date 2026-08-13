@@ -1,0 +1,60 @@
+{
+  "symbol": "6464",
+  "name": "台數科",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 76.5,
+    "high": 77.1,
+    "low": 76.2,
+    "close": 76.2,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 13135,
+    "transactionCount": 23,
+    "tradeValue": 1005430,
+    "peRatio": 18.72
+  },
+  "dailyRangePercent": 1.18,
+  "turnoverAverageValue": 43714.35,
+  "pricePosition": 0,
+  "liquidityScore": 7.4,
+  "priceStrengthScore": 28.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 28.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.4 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

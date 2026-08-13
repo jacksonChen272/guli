@@ -1,0 +1,60 @@
+{
+  "symbol": "7760",
+  "name": "享溫馨",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 33,
+    "high": 33.1,
+    "low": 32.4,
+    "close": 32.45,
+    "change": -0.15,
+    "changePercent": -0.46,
+    "tradeVolume": 68000,
+    "transactionCount": 20,
+    "tradeValue": 2238700,
+    "peRatio": 48.43
+  },
+  "dailyRangePercent": 2.16,
+  "turnoverAverageValue": 111935,
+  "pricePosition": 7.1,
+  "liquidityScore": 14.8,
+  "priceStrengthScore": 30,
+  "valuationRiskScore": 75,
+  "snapshotScore": 23.7,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.1 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.8 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

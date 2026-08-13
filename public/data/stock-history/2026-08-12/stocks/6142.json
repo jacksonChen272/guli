@@ -1,0 +1,62 @@
+{
+  "symbol": "6142",
+  "name": "友勁",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 9.52,
+    "high": 9.52,
+    "low": 9.26,
+    "close": 9.28,
+    "change": -0.07,
+    "changePercent": -0.75,
+    "tradeVolume": 425637,
+    "transactionCount": 219,
+    "tradeValue": 3967672,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.81,
+  "turnoverAverageValue": 18117.22,
+  "pricePosition": 7.7,
+  "liquidityScore": 35.3,
+  "priceStrengthScore": 29.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 32,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 7.7 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

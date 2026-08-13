@@ -1,0 +1,53 @@
+{
+  "symbol": "4582",
+  "name": "聚恆-創",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 26.8,
+    "high": 26.8,
+    "low": 25.15,
+    "close": 25.35,
+    "change": -1.85,
+    "changePercent": -6.8,
+    "tradeVolume": 875337,
+    "transactionCount": 428,
+    "tradeValue": 22379768,
+    "peRatio": 16.46
+  },
+  "dailyRangePercent": 6.56,
+  "turnoverAverageValue": 52289.18,
+  "pricePosition": 12.1,
+  "liquidityScore": 51.8,
+  "priceStrengthScore": 17.4,
+  "valuationRiskScore": 35,
+  "snapshotScore": 39,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 12.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

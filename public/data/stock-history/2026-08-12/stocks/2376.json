@@ -1,0 +1,60 @@
+{
+  "symbol": "2376",
+  "name": "技嘉",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 352,
+    "high": 381,
+    "low": 352,
+    "close": 375.5,
+    "change": 25,
+    "changePercent": 7.13,
+    "tradeVolume": 17992451,
+    "transactionCount": 20000,
+    "tradeValue": 6713381030,
+    "peRatio": 17.54
+  },
+  "dailyRangePercent": 8.24,
+  "turnoverAverageValue": 335669.05,
+  "pricePosition": 81,
+  "liquidityScore": 96.2,
+  "priceStrengthScore": 80.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 83.1,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 7.13% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.24% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

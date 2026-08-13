@@ -1,0 +1,53 @@
+{
+  "symbol": "1530",
+  "name": "亞崴",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 29.2,
+    "high": 29.45,
+    "low": 28.55,
+    "close": 28.65,
+    "change": -0.15,
+    "changePercent": -0.52,
+    "tradeVolume": 69767,
+    "transactionCount": 122,
+    "tradeValue": 2018631,
+    "peRatio": 24.91
+  },
+  "dailyRangePercent": 3.15,
+  "turnoverAverageValue": 16546.16,
+  "pricePosition": 11.1,
+  "liquidityScore": 18.1,
+  "priceStrengthScore": 31.2,
+  "valuationRiskScore": 35,
+  "snapshotScore": 33.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

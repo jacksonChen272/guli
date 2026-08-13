@@ -1,0 +1,53 @@
+{
+  "symbol": "2881",
+  "name": "富邦金",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 127.5,
+    "high": 129.5,
+    "low": 126.5,
+    "close": 127,
+    "change": -1,
+    "changePercent": -0.78,
+    "tradeVolume": 9181394,
+    "transactionCount": 6163,
+    "tradeValue": 1168803026,
+    "peRatio": 17.47
+  },
+  "dailyRangePercent": 2.37,
+  "turnoverAverageValue": 189648.39,
+  "pricePosition": 16.7,
+  "liquidityScore": 90.3,
+  "priceStrengthScore": 32.6,
+  "valuationRiskScore": 35,
+  "snapshotScore": 59.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

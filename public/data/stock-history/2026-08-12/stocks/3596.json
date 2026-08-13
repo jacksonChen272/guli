@@ -1,0 +1,53 @@
+{
+  "symbol": "3596",
+  "name": "智易",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 170.5,
+    "high": 172,
+    "low": 168.5,
+    "close": 168.5,
+    "change": -0.5,
+    "changePercent": -0.3,
+    "tradeVolume": 1451667,
+    "transactionCount": 1504,
+    "tradeValue": 246740239,
+    "peRatio": 12.96
+  },
+  "dailyRangePercent": 2.08,
+  "turnoverAverageValue": 164056.01,
+  "pricePosition": 0,
+  "liquidityScore": 71.7,
+  "priceStrengthScore": 27.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 53.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

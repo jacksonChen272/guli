@@ -1,0 +1,53 @@
+{
+  "symbol": "9802",
+  "name": "鈺齊-KY",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 74.7,
+    "high": 75.2,
+    "low": 72.3,
+    "close": 72.8,
+    "change": -2.1,
+    "changePercent": -2.8,
+    "tradeVolume": 882607,
+    "transactionCount": 1594,
+    "tradeValue": 64571244,
+    "peRatio": 12.84
+  },
+  "dailyRangePercent": 4.01,
+  "turnoverAverageValue": 40508.94,
+  "pricePosition": 17.2,
+  "liquidityScore": 63.1,
+  "priceStrengthScore": 28.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 50.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 17.2 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "6282",
+  "name": "康舒",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 47.4,
+    "high": 48.1,
+    "low": 47.05,
+    "close": 47.15,
+    "change": -2.7,
+    "changePercent": -5.42,
+    "tradeVolume": 22228971,
+    "transactionCount": 16036,
+    "tradeValue": 1054921948,
+    "peRatio": 38.65
+  },
+  "dailyRangePercent": 2.23,
+  "turnoverAverageValue": 65784.61,
+  "pricePosition": 9.5,
+  "liquidityScore": 93.3,
+  "priceStrengthScore": 19.6,
+  "valuationRiskScore": 55,
+  "snapshotScore": 50.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.5 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

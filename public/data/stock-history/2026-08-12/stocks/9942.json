@@ -1,0 +1,53 @@
+{
+  "symbol": "9942",
+  "name": "茂順",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 118,
+    "high": 118.5,
+    "low": 115.5,
+    "close": 116,
+    "change": -1.5,
+    "changePercent": -1.28,
+    "tradeVolume": 176049,
+    "transactionCount": 196,
+    "tradeValue": 20551081,
+    "peRatio": 14.13
+  },
+  "dailyRangePercent": 2.6,
+  "turnoverAverageValue": 104852.45,
+  "pricePosition": 16.7,
+  "liquidityScore": 38.6,
+  "priceStrengthScore": 31.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 43.7,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

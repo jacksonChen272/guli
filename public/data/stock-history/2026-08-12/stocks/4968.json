@@ -1,0 +1,53 @@
+{
+  "symbol": "4968",
+  "name": "立積",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 97.7,
+    "high": 97.7,
+    "low": 96.7,
+    "close": 96.9,
+    "change": 0.2,
+    "changePercent": 0.21,
+    "tradeVolume": 288155,
+    "transactionCount": 371,
+    "tradeValue": 27983800,
+    "peRatio": 26.19
+  },
+  "dailyRangePercent": 1.03,
+  "turnoverAverageValue": 75428.03,
+  "pricePosition": 20,
+  "liquidityScore": 46.7,
+  "priceStrengthScore": 36,
+  "valuationRiskScore": 55,
+  "snapshotScore": 41.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

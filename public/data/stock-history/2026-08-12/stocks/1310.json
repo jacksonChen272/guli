@@ -1,0 +1,55 @@
+{
+  "symbol": "1310",
+  "name": "台苯",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 8.08,
+    "high": 8.1,
+    "low": 8.01,
+    "close": 8.09,
+    "change": 0.08,
+    "changePercent": 1,
+    "tradeVolume": 2178167,
+    "transactionCount": 945,
+    "tradeValue": 17563090,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.12,
+  "turnoverAverageValue": 18585.28,
+  "pricePosition": 88.9,
+  "liquidityScore": 58.9,
+  "priceStrengthScore": 69.9,
+  "valuationRiskScore": null,
+  "snapshotScore": 65.1,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

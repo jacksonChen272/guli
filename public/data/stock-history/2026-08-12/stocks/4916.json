@@ -1,0 +1,53 @@
+{
+  "symbol": "4916",
+  "name": "事欣科",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 105,
+    "high": 105,
+    "low": 102.5,
+    "close": 103,
+    "change": -1.5,
+    "changePercent": -1.44,
+    "tradeVolume": 2747205,
+    "transactionCount": 2581,
+    "tradeValue": 283791786,
+    "peRatio": 15.77
+  },
+  "dailyRangePercent": 2.44,
+  "turnoverAverageValue": 109954.2,
+  "pricePosition": 20,
+  "liquidityScore": 78.1,
+  "priceStrengthScore": 32.3,
+  "valuationRiskScore": 35,
+  "snapshotScore": 54.9,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

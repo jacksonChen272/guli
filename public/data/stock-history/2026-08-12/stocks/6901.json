@@ -1,0 +1,53 @@
+{
+  "symbol": "6901",
+  "name": "鑽石投資",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 16.9,
+    "high": 17.4,
+    "low": 16.8,
+    "close": 16.9,
+    "change": 0.05,
+    "changePercent": 0.3,
+    "tradeVolume": 3765013,
+    "transactionCount": 2009,
+    "tradeValue": 64233570,
+    "peRatio": 4.93
+  },
+  "dailyRangePercent": 3.57,
+  "turnoverAverageValue": 31972.91,
+  "pricePosition": 16.7,
+  "liquidityScore": 71.5,
+  "priceStrengthScore": 39,
+  "valuationRiskScore": 20,
+  "snapshotScore": 58.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 16.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

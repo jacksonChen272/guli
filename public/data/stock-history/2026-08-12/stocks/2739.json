@@ -1,0 +1,53 @@
+{
+  "symbol": "2739",
+  "name": "寒舍",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 34.5,
+    "high": 34.6,
+    "low": 34.45,
+    "close": 34.5,
+    "change": 0.2,
+    "changePercent": 0.58,
+    "tradeVolume": 51211,
+    "transactionCount": 47,
+    "tradeValue": 1767651,
+    "peRatio": 8.56
+  },
+  "dailyRangePercent": 0.44,
+  "turnoverAverageValue": 37609.6,
+  "pricePosition": 33.3,
+  "liquidityScore": 14.3,
+  "priceStrengthScore": 45.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 41.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 14.3 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "5871",
+  "name": "中租-KY",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 115,
+    "high": 115.5,
+    "low": 113,
+    "close": 113.5,
+    "change": -2,
+    "changePercent": -1.73,
+    "tradeVolume": 4338230,
+    "transactionCount": 3289,
+    "tradeValue": 494186295,
+    "peRatio": 10.63
+  },
+  "dailyRangePercent": 2.21,
+  "turnoverAverageValue": 150254.27,
+  "pricePosition": 20,
+  "liquidityScore": 83.3,
+  "priceStrengthScore": 31.6,
+  "valuationRiskScore": 20,
+  "snapshotScore": 59.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

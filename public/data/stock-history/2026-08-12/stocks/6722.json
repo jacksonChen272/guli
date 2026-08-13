@@ -1,0 +1,53 @@
+{
+  "symbol": "6722",
+  "name": "輝創",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 33.05,
+    "high": 33.3,
+    "low": 32.95,
+    "close": 33.1,
+    "change": 0.05,
+    "changePercent": 0.15,
+    "tradeVolume": 18162,
+    "transactionCount": 24,
+    "tradeValue": 600501,
+    "peRatio": 16.23
+  },
+  "dailyRangePercent": 1.06,
+  "turnoverAverageValue": 25020.88,
+  "pricePosition": 42.9,
+  "liquidityScore": 6.1,
+  "priceStrengthScore": 51.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 38.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 6.1 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

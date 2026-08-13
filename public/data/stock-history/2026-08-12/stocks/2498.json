@@ -1,0 +1,53 @@
+{
+  "symbol": "2498",
+  "name": "宏達電",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 40.5,
+    "high": 41.2,
+    "low": 40.45,
+    "close": 40.5,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 2550995,
+    "transactionCount": 1652,
+    "tradeValue": 103970162,
+    "peRatio": 15.64
+  },
+  "dailyRangePercent": 1.85,
+  "turnoverAverageValue": 62935.93,
+  "pricePosition": 6.7,
+  "liquidityScore": 71.7,
+  "priceStrengthScore": 34.8,
+  "valuationRiskScore": 35,
+  "snapshotScore": 53.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.7 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

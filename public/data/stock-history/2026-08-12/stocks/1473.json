@@ -1,0 +1,53 @@
+{
+  "symbol": "1473",
+  "name": "台南",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.1,
+    "high": 20.2,
+    "low": 19.95,
+    "close": 20.15,
+    "change": -0.05,
+    "changePercent": -0.25,
+    "tradeVolume": 37882,
+    "transactionCount": 54,
+    "tradeValue": 760053,
+    "peRatio": 57.57
+  },
+  "dailyRangePercent": 1.25,
+  "turnoverAverageValue": 14075.06,
+  "pricePosition": 80,
+  "liquidityScore": 10.2,
+  "priceStrengthScore": 64,
+  "valuationRiskScore": 75,
+  "snapshotScore": 37.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 10.2 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

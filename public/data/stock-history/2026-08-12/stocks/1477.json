@@ -1,0 +1,53 @@
+{
+  "symbol": "1477",
+  "name": "聚陽",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 223.5,
+    "high": 224,
+    "low": 218.5,
+    "close": 219,
+    "change": -2.5,
+    "changePercent": -1.13,
+    "tradeVolume": 2507163,
+    "transactionCount": 3136,
+    "tradeValue": 553002343,
+    "peRatio": 14.95
+  },
+  "dailyRangePercent": 2.52,
+  "turnoverAverageValue": 176340.03,
+  "pricePosition": 9.1,
+  "liquidityScore": 81.1,
+  "priceStrengthScore": 29.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 57.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 9.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

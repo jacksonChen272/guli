@@ -1,0 +1,53 @@
+{
+  "symbol": "1472",
+  "name": "三洋實業",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 88.9,
+    "high": 89.5,
+    "low": 88.9,
+    "close": 89.5,
+    "change": 0.5,
+    "changePercent": 0.56,
+    "tradeVolume": 2282,
+    "transactionCount": 20,
+    "tradeValue": 203510,
+    "peRatio": 13.98
+  },
+  "dailyRangePercent": 0.67,
+  "turnoverAverageValue": 10175.5,
+  "pricePosition": 100,
+  "liquidityScore": 1.9,
+  "priceStrengthScore": 72.8,
+  "valuationRiskScore": 20,
+  "snapshotScore": 49.4,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 1.9 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

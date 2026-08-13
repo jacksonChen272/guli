@@ -1,0 +1,53 @@
+{
+  "symbol": "2248",
+  "name": "華勝-KY",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 58.3,
+    "high": 58.5,
+    "low": 55.9,
+    "close": 56.4,
+    "change": -0.5,
+    "changePercent": -0.88,
+    "tradeVolume": 127511,
+    "transactionCount": 126,
+    "tradeValue": 7226640,
+    "peRatio": 9.53
+  },
+  "dailyRangePercent": 4.65,
+  "turnoverAverageValue": 57354.29,
+  "pricePosition": 19.2,
+  "liquidityScore": 29.1,
+  "priceStrengthScore": 33.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 41.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 19.2 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

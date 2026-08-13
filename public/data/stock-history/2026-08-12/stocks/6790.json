@@ -1,0 +1,53 @@
+{
+  "symbol": "6790",
+  "name": "永豐實",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 38.4,
+    "high": 38.4,
+    "low": 38.05,
+    "close": 38.05,
+    "change": -0.2,
+    "changePercent": -0.52,
+    "tradeVolume": 129332,
+    "transactionCount": 126,
+    "tradeValue": 4935697,
+    "peRatio": 12.35
+  },
+  "dailyRangePercent": 0.92,
+  "turnoverAverageValue": 39172.2,
+  "pricePosition": 0,
+  "liquidityScore": 26.7,
+  "priceStrengthScore": 27.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 37.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

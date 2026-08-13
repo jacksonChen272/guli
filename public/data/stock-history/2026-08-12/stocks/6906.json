@@ -1,0 +1,53 @@
+{
+  "symbol": "6906",
+  "name": "現觀科",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 73,
+    "high": 74.3,
+    "low": 70.6,
+    "close": 71.3,
+    "change": -1.2,
+    "changePercent": -1.66,
+    "tradeVolume": 69035,
+    "transactionCount": 98,
+    "tradeValue": 5002295,
+    "peRatio": 29.71
+  },
+  "dailyRangePercent": 5.24,
+  "turnoverAverageValue": 51043.83,
+  "pricePosition": 18.9,
+  "liquidityScore": 22.8,
+  "priceStrengthScore": 31.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 31.1,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 18.9 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

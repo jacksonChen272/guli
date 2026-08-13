@@ -1,0 +1,69 @@
+{
+  "symbol": "6152",
+  "name": "百一",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 14.9,
+    "high": 16.2,
+    "low": 14.85,
+    "close": 16.1,
+    "change": 1.3,
+    "changePercent": 8.78,
+    "tradeVolume": 5533782,
+    "transactionCount": 2934,
+    "tradeValue": 86559585,
+    "peRatio": null
+  },
+  "dailyRangePercent": 9.09,
+  "turnoverAverageValue": 29502.24,
+  "pricePosition": 92.6,
+  "liquidityScore": 76.4,
+  "priceStrengthScore": 88.7,
+  "valuationRiskScore": null,
+  "snapshotScore": 83.3,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 8.78% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.09% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

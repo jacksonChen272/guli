@@ -1,0 +1,60 @@
+{
+  "symbol": "8367",
+  "name": "建新國際",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 40.45,
+    "high": 40.75,
+    "low": 40.15,
+    "close": 40.2,
+    "change": -0.25,
+    "changePercent": -0.62,
+    "tradeVolume": 22014,
+    "transactionCount": 20,
+    "tradeValue": 889214,
+    "peRatio": 12.76
+  },
+  "dailyRangePercent": 1.49,
+  "turnoverAverageValue": 44460.7,
+  "pricePosition": 8.3,
+  "liquidityScore": 7.8,
+  "priceStrengthScore": 30,
+  "valuationRiskScore": 20,
+  "snapshotScore": 32.2,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 8.3 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 7.8 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

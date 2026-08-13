@@ -1,0 +1,62 @@
+{
+  "symbol": "2405",
+  "name": "輔信",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 15.95,
+    "high": 16.1,
+    "low": 15.85,
+    "close": 15.9,
+    "change": -0.05,
+    "changePercent": -0.31,
+    "tradeVolume": 1325357,
+    "transactionCount": 699,
+    "tradeValue": 21120384,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.58,
+  "turnoverAverageValue": 30215.14,
+  "pricePosition": 20,
+  "liquidityScore": 55.3,
+  "priceStrengthScore": 34.8,
+  "valuationRiskScore": null,
+  "snapshotScore": 43.8,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 20.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

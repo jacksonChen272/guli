@@ -1,0 +1,55 @@
+{
+  "symbol": "1444",
+  "name": "力麗",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 7.15,
+    "high": 7.3,
+    "low": 7.1,
+    "close": 7.25,
+    "change": 0.11,
+    "changePercent": 1.54,
+    "tradeVolume": 1627073,
+    "transactionCount": 622,
+    "tradeValue": 11671116,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.82,
+  "turnoverAverageValue": 18763.85,
+  "pricePosition": 75,
+  "liquidityScore": 52.8,
+  "priceStrengthScore": 66.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 60.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

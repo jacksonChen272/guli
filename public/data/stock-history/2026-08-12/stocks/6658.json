@@ -1,0 +1,53 @@
+{
+  "symbol": "6658",
+  "name": "聯策",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 161,
+    "high": 167.5,
+    "low": 161,
+    "close": 167,
+    "change": 7,
+    "changePercent": 4.38,
+    "tradeVolume": 281250,
+    "transactionCount": 365,
+    "tradeValue": 46565684,
+    "peRatio": 63.98
+  },
+  "dailyRangePercent": 4.04,
+  "turnoverAverageValue": 127577.22,
+  "pricePosition": 92.3,
+  "liquidityScore": 49.7,
+  "priceStrengthScore": 78.7,
+  "valuationRiskScore": 90,
+  "snapshotScore": 54.8,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 63.98 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

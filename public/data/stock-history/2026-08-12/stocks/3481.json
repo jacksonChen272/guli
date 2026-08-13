@@ -1,0 +1,60 @@
+{
+  "symbol": "3481",
+  "name": "群創",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 51,
+    "high": 52.1,
+    "low": 50.3,
+    "close": 50.4,
+    "change": 0.3,
+    "changePercent": 0.6,
+    "tradeVolume": 189190471,
+    "transactionCount": 80256,
+    "tradeValue": 9643239785,
+    "peRatio": 458.18
+  },
+  "dailyRangePercent": 3.58,
+  "turnoverAverageValue": 120156,
+  "pricePosition": 5.6,
+  "liquidityScore": 99,
+  "priceStrengthScore": 31.8,
+  "valuationRiskScore": 90,
+  "snapshotScore": 51,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.6 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 458.18 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

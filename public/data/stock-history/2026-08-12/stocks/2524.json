@@ -1,0 +1,53 @@
+{
+  "symbol": "2524",
+  "name": "京城",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 34.4,
+    "high": 34.7,
+    "low": 34.2,
+    "close": 34.65,
+    "change": 0.05,
+    "changePercent": 0.14,
+    "tradeVolume": 69839,
+    "transactionCount": 88,
+    "tradeValue": 2407587,
+    "peRatio": 60.79
+  },
+  "dailyRangePercent": 1.46,
+  "turnoverAverageValue": 27358.94,
+  "pricePosition": 90,
+  "liquidityScore": 18.2,
+  "priceStrengthScore": 68.3,
+  "valuationRiskScore": 90,
+  "snapshotScore": 39.1,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 60.79 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "1451",
+  "name": "年興",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 17.5,
+    "high": 17.5,
+    "low": 17.4,
+    "close": 17.4,
+    "change": -0.1,
+    "changePercent": -0.57,
+    "tradeVolume": 52152,
+    "transactionCount": 57,
+    "tradeValue": 908704,
+    "peRatio": 11.52
+  },
+  "dailyRangePercent": 0.57,
+  "turnoverAverageValue": 15942.18,
+  "pricePosition": 0,
+  "liquidityScore": 12,
+  "priceStrengthScore": 27.2,
+  "valuationRiskScore": 20,
+  "snapshotScore": 32.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.0 不高於 15。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

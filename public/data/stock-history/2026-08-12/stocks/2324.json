@@ -1,0 +1,60 @@
+{
+  "symbol": "2324",
+  "name": "仁寶",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 36.75,
+    "high": 39.9,
+    "low": 36.6,
+    "close": 39.9,
+    "change": 3.6,
+    "changePercent": 9.92,
+    "tradeVolume": 171747289,
+    "transactionCount": 73364,
+    "tradeValue": 6715851903,
+    "peRatio": 30
+  },
+  "dailyRangePercent": 9.02,
+  "turnoverAverageValue": 91541.52,
+  "pricePosition": 100,
+  "liquidityScore": 98.5,
+  "priceStrengthScore": 93.8,
+  "valuationRiskScore": 55,
+  "snapshotScore": 85.7,
+  "status": "強勢",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.92% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.02% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "強勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

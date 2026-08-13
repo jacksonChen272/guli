@@ -1,0 +1,62 @@
+{
+  "symbol": "6589",
+  "name": "台康生技",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 52.6,
+    "high": 52.7,
+    "low": 51,
+    "close": 51.1,
+    "change": -1.5,
+    "changePercent": -2.85,
+    "tradeVolume": 863904,
+    "transactionCount": 1646,
+    "tradeValue": 44569207,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.33,
+  "turnoverAverageValue": 27077.28,
+  "pricePosition": 5.9,
+  "liquidityScore": 60.9,
+  "priceStrengthScore": 24.2,
+  "valuationRiskScore": null,
+  "snapshotScore": 40.3,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.9 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

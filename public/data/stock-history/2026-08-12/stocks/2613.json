@@ -1,0 +1,53 @@
+{
+  "symbol": "2613",
+  "name": "中櫃",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 20.75,
+    "high": 20.75,
+    "low": 20.4,
+    "close": 20.45,
+    "change": -0.05,
+    "changePercent": -0.24,
+    "tradeVolume": 99383,
+    "transactionCount": 112,
+    "tradeValue": 2037907,
+    "peRatio": 18.76
+  },
+  "dailyRangePercent": 1.72,
+  "turnoverAverageValue": 18195.6,
+  "pricePosition": 14.3,
+  "liquidityScore": 20,
+  "priceStrengthScore": 33,
+  "valuationRiskScore": 35,
+  "snapshotScore": 34.9,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 14.3 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

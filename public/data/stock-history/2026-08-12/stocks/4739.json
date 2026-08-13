@@ -1,0 +1,53 @@
+{
+  "symbol": "4739",
+  "name": "康普",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 87.7,
+    "high": 89.2,
+    "low": 86.6,
+    "close": 87,
+    "change": -0.4,
+    "changePercent": -0.46,
+    "tradeVolume": 1650883,
+    "transactionCount": 1295,
+    "tradeValue": 144649261,
+    "peRatio": 16.86
+  },
+  "dailyRangePercent": 3,
+  "turnoverAverageValue": 111698.27,
+  "pricePosition": 15.4,
+  "liquidityScore": 69.9,
+  "priceStrengthScore": 32.9,
+  "valuationRiskScore": 35,
+  "snapshotScore": 52.3,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 15.4 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

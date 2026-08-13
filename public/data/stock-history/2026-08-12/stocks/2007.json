@@ -1,0 +1,62 @@
+{
+  "symbol": "2007",
+  "name": "燁興",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 7.03,
+    "high": 7.13,
+    "low": 7.03,
+    "close": 7.07,
+    "change": -0.07,
+    "changePercent": -0.98,
+    "tradeVolume": 81570,
+    "transactionCount": 63,
+    "tradeValue": 577340,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.42,
+  "turnoverAverageValue": 9164.13,
+  "pricePosition": 40,
+  "liquidityScore": 12.1,
+  "priceStrengthScore": 48.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 32.5,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 12.1 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

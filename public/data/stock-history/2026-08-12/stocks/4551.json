@@ -1,0 +1,60 @@
+{
+  "symbol": "4551",
+  "name": "智伸科",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 157.5,
+    "high": 172.5,
+    "low": 157,
+    "close": 172.5,
+    "change": 15.5,
+    "changePercent": 9.87,
+    "tradeVolume": 1652649,
+    "transactionCount": 1357,
+    "tradeValue": 278901739,
+    "peRatio": 18.1
+  },
+  "dailyRangePercent": 9.87,
+  "turnoverAverageValue": 205528.18,
+  "pricePosition": 100,
+  "liquidityScore": 72.9,
+  "priceStrengthScore": 93.7,
+  "valuationRiskScore": 35,
+  "snapshotScore": 80.7,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "extreme_daily_gain",
+      "severity": "high",
+      "title": "單日漲幅偏大",
+      "reason": "單日漲幅 9.87% 達 7% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 9.87% 達 8% 門檻。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

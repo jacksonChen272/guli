@@ -1,0 +1,55 @@
+{
+  "symbol": "3092",
+  "name": "鴻碩",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 23.9,
+    "high": 24.15,
+    "low": 23.75,
+    "close": 23.95,
+    "change": 0.45,
+    "changePercent": 1.91,
+    "tradeVolume": 73115,
+    "transactionCount": 103,
+    "tradeValue": 1751999,
+    "peRatio": null
+  },
+  "dailyRangePercent": 1.68,
+  "turnoverAverageValue": 17009.7,
+  "pricePosition": 50,
+  "liquidityScore": 17.6,
+  "priceStrengthScore": 58.3,
+  "valuationRiskScore": null,
+  "snapshotScore": 40.5,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

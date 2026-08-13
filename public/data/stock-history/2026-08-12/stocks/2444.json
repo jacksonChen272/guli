@@ -1,0 +1,55 @@
+{
+  "symbol": "2444",
+  "name": "兆勁",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 11.5,
+    "high": 11.75,
+    "low": 11.4,
+    "close": 11.5,
+    "change": 0.3,
+    "changePercent": 2.68,
+    "tradeVolume": 245628,
+    "transactionCount": 136,
+    "tradeValue": 2842781,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.07,
+  "turnoverAverageValue": 20902.8,
+  "pricePosition": 28.6,
+  "liquidityScore": 28.1,
+  "priceStrengthScore": 48.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 39.6,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

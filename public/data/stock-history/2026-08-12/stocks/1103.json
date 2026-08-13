@@ -1,0 +1,53 @@
+{
+  "symbol": "1103",
+  "name": "嘉泥",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.3,
+    "high": 13.3,
+    "low": 13.2,
+    "close": 13.2,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 278554,
+    "transactionCount": 196,
+    "tradeValue": 3694203,
+    "peRatio": 16.5
+  },
+  "dailyRangePercent": 0.76,
+  "turnoverAverageValue": 18847.97,
+  "pricePosition": 0,
+  "liquidityScore": 31.9,
+  "priceStrengthScore": 28.5,
+  "valuationRiskScore": 35,
+  "snapshotScore": 37,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

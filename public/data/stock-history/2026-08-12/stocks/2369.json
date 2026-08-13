@@ -1,0 +1,62 @@
+{
+  "symbol": "2369",
+  "name": "菱生",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 33.3,
+    "high": 33.9,
+    "low": 33.1,
+    "close": 33.15,
+    "change": 0.05,
+    "changePercent": 0.15,
+    "tradeVolume": 4470329,
+    "transactionCount": 3082,
+    "tradeValue": 149533520,
+    "peRatio": null
+  },
+  "dailyRangePercent": 2.42,
+  "turnoverAverageValue": 48518.34,
+  "pricePosition": 6.2,
+  "liquidityScore": 78.1,
+  "priceStrengthScore": 31,
+  "valuationRiskScore": null,
+  "snapshotScore": 51.6,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 6.2 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

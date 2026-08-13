@@ -1,0 +1,53 @@
+{
+  "symbol": "8341",
+  "name": "日友",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 76.9,
+    "high": 77.4,
+    "low": 76.5,
+    "close": 76.6,
+    "change": -0.3,
+    "changePercent": -0.39,
+    "tradeVolume": 175308,
+    "transactionCount": 558,
+    "tradeValue": 13489149,
+    "peRatio": 14.62
+  },
+  "dailyRangePercent": 1.18,
+  "turnoverAverageValue": 24174.1,
+  "pricePosition": 11.1,
+  "liquidityScore": 40.1,
+  "priceStrengthScore": 31.5,
+  "valuationRiskScore": 20,
+  "snapshotScore": 44.2,
+  "status": "偏弱",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "偏弱",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

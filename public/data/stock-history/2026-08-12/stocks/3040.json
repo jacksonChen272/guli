@@ -1,0 +1,55 @@
+{
+  "symbol": "3040",
+  "name": "遠見",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 37.3,
+    "high": 38.5,
+    "low": 37.3,
+    "close": 37.7,
+    "change": -0.3,
+    "changePercent": -0.79,
+    "tradeVolume": 72937,
+    "transactionCount": 207,
+    "tradeValue": 2760967,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.22,
+  "turnoverAverageValue": 13338,
+  "pricePosition": 33.3,
+  "liquidityScore": 22.1,
+  "priceStrengthScore": 46.4,
+  "valuationRiskScore": null,
+  "snapshotScore": 35.8,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

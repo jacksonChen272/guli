@@ -1,0 +1,53 @@
+{
+  "symbol": "2906",
+  "name": "高林",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 13.65,
+    "high": 13.65,
+    "low": 13.5,
+    "close": 13.5,
+    "change": 0.05,
+    "changePercent": 0.37,
+    "tradeVolume": 106315,
+    "transactionCount": 82,
+    "tradeValue": 1442118,
+    "peRatio": 30
+  },
+  "dailyRangePercent": 1.11,
+  "turnoverAverageValue": 17586.8,
+  "pricePosition": 0,
+  "liquidityScore": 17.7,
+  "priceStrengthScore": 29.4,
+  "valuationRiskScore": 55,
+  "snapshotScore": 28.4,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 0.0 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

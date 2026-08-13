@@ -1,0 +1,53 @@
+{
+  "symbol": "2474",
+  "name": "可成",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 206,
+    "high": 209,
+    "low": 204.5,
+    "close": 205,
+    "change": -1,
+    "changePercent": -0.49,
+    "tradeVolume": 3646933,
+    "transactionCount": 3473,
+    "tradeValue": 751920828,
+    "peRatio": 13.64
+  },
+  "dailyRangePercent": 2.2,
+  "turnoverAverageValue": 216504.7,
+  "pricePosition": 11.1,
+  "liquidityScore": 83.9,
+  "priceStrengthScore": 31.3,
+  "valuationRiskScore": 20,
+  "snapshotScore": 59.5,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 11.1 百分位。",
+      "source": "derived"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,60 @@
+{
+  "symbol": "9921",
+  "name": "巨大",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 111.5,
+    "high": 113.5,
+    "low": 104.5,
+    "close": 109,
+    "change": -2.5,
+    "changePercent": -2.24,
+    "tradeVolume": 9956584,
+    "transactionCount": 10515,
+    "tradeValue": 1083746498,
+    "peRatio": 70.32
+  },
+  "dailyRangePercent": 8.61,
+  "turnoverAverageValue": 103066.71,
+  "pricePosition": 50,
+  "liquidityScore": 91.3,
+  "priceStrengthScore": 41,
+  "valuationRiskScore": 90,
+  "snapshotScore": 52.4,
+  "status": "中性",
+  "risks": [
+    {
+      "code": "wide_daily_range",
+      "severity": "medium",
+      "title": "單日振幅偏大",
+      "reason": "單日振幅 8.61% 達 8% 門檻。",
+      "source": "derived"
+    },
+    {
+      "code": "unusually_high_pe",
+      "severity": "medium",
+      "title": "本益比偏高",
+      "reason": "官方本益比 70.32 達一般性 60 倍門檻；未做產業比較。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "中性",
+    "下跌"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": []
+}

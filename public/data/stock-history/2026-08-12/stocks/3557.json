@@ -1,0 +1,69 @@
+{
+  "symbol": "3557",
+  "name": "嘉威",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 26,
+    "high": 26,
+    "low": 25.1,
+    "close": 25.15,
+    "change": 0,
+    "changePercent": 0,
+    "tradeVolume": 30091,
+    "transactionCount": 31,
+    "tradeValue": 769429,
+    "peRatio": null
+  },
+  "dailyRangePercent": 3.59,
+  "turnoverAverageValue": 24820.29,
+  "pricePosition": 5.6,
+  "liquidityScore": 8.7,
+  "priceStrengthScore": 30.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 21,
+  "status": "弱勢",
+  "risks": [
+    {
+      "code": "close_near_low",
+      "severity": "medium",
+      "title": "收盤接近低點",
+      "reason": "收盤位於當日區間第 5.6 百分位。",
+      "source": "derived"
+    },
+    {
+      "code": "low_liquidity",
+      "severity": "medium",
+      "title": "流動性偏低",
+      "reason": "當日流動性分數 8.7 不高於 15。",
+      "source": "derived"
+    },
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "弱勢",
+    "平盤"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}

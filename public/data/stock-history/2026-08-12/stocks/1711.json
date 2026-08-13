@@ -1,0 +1,55 @@
+{
+  "symbol": "1711",
+  "name": "永光",
+  "tradeDate": "2026-08-12",
+  "market": "TWSE",
+  "instrumentType": "stock",
+  "quote": {
+    "open": 38.2,
+    "high": 40.3,
+    "low": 38.05,
+    "close": 39.25,
+    "change": 1.4,
+    "changePercent": 3.7,
+    "tradeVolume": 10152394,
+    "transactionCount": 5931,
+    "tradeValue": 400688019,
+    "peRatio": null
+  },
+  "dailyRangePercent": 5.91,
+  "turnoverAverageValue": 67558.26,
+  "pricePosition": 53.3,
+  "liquidityScore": 86.6,
+  "priceStrengthScore": 63.5,
+  "valuationRiskScore": null,
+  "snapshotScore": 73.6,
+  "status": "偏強",
+  "risks": [
+    {
+      "code": "missing_pe",
+      "severity": "low",
+      "title": "本益比未提供",
+      "reason": "官方資料未提供本益比，估值風險不計分。",
+      "source": "official"
+    }
+  ],
+  "tags": [
+    "偏強",
+    "上漲"
+  ],
+  "sources": [
+    {
+      "type": "official",
+      "name": "TWSE",
+      "field": "quote"
+    },
+    {
+      "type": "derived",
+      "name": "GULI deterministic rules",
+      "field": "scores"
+    }
+  ],
+  "warnings": [
+    "本益比缺值，snapshotScore 以可用權重重新正規化。"
+  ]
+}
